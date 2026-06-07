@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest";
+import { parseUnits } from "viem";
 import {
   BPS,
   STEP_BPS,
@@ -61,6 +62,23 @@ describe("difficultyFractionBaseUnits", () => {
     const maxStake = 5_000_000_000_000_000_000n;
     const overEff = (maxStake * 2n * 9700n) / 10000n; // 2x the cap, post-rake
     expect(difficultyFractionBaseUnits(overEff, maxStake, DEFAULT_RAKE_BPS)).toBe(1);
+  });
+
+  // Multi-token: USDC/USDT are 6-decimal, so the maxStakeBase the /api/round route feeds into the
+  // base-unit difficulty math must be parsed with 6 decimals (5e6), NOT cUSD's 18. Using the wrong
+  // decimals would mis-scale difficulty for those tokens.
+  it("works for a 6-decimal token (USDC/USDT): maxStakeBase is 5_000_000 and d scales correctly", () => {
+    const maxStakeBase6 = parseUnits(String(MAX_STAKE.celo), 6);
+    expect(maxStakeBase6).toBe(5_000_000n);
+
+    const eff = (s: bigint) => (s * BigInt(10000 - DEFAULT_RAKE_BPS)) / 10000n;
+    expect(
+      difficultyFractionBaseUnits(eff(maxStakeBase6), maxStakeBase6, DEFAULT_RAKE_BPS)
+    ).toBeCloseTo(1, 4);
+    expect(
+      difficultyFractionBaseUnits(eff(maxStakeBase6 / 2n), maxStakeBase6, DEFAULT_RAKE_BPS)
+    ).toBeCloseTo(0.5, 4);
+    expect(difficultyFractionBaseUnits(0n, maxStakeBase6, DEFAULT_RAKE_BPS)).toBe(0);
   });
 });
 

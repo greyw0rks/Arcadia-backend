@@ -4,18 +4,27 @@ import { createSession, type ChainId } from "../../../server/sessions";
 import { isAddress } from "viem";
 import { validateStacksAddress } from "@stacks/transactions";
 import { MAX_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
+import { CELO_TOKENS, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
-// POST /api/session  { game: string, player: "0x.."|"ST..", chain?: "celo"|"stacks", stake?: number }
+// POST /api/session  { game, player, chain?: "celo"|"stacks", token?: "cusd"|"usdc"|"usdt", stake? }
 // Creates a pending session and returns its on-chain sessionId + the maxRounds to stake against.
 // The client then calls start-session(sessionId, stake, maxRounds) on-chain before fetching rounds.
 // The round count scales with the bet (higher stake => more rounds), capped by the game's bank so a
 // session never repeats a question. The contract enforces the $5 cap; we reject here too to save gas.
+// `token` selects the Celo stake token (cUSD/USDC/USDT) — i.e. which QuizArcade instance the session
+// settles against; it's ignored for Stacks (STX has no token sub-dimension).
 function isValidPlayer(player: string, chain: ChainId): boolean {
   return chain === "stacks" ? validateStacksAddress(player) : isAddress(player);
 }
 
+function parseCeloToken(value: unknown): CeloToken {
+  return value === "usdc" || value === "usdt" || value === "cusd"
+    ? (value as CeloToken)
+    : DEFAULT_CELO_TOKEN;
+}
+
 export async function POST(req: NextRequest) {
-  let body: { game?: string; player?: string; chain?: string; stake?: number };
+  let body: { game?: string; player?: string; chain?: string; token?: string; stake?: number };
   try {
     body = await req.json();
   } catch {
@@ -24,6 +33,7 @@ export async function POST(req: NextRequest) {
 
   const { game: gameId, player } = body;
   const chain: ChainId = body.chain === "stacks" ? "stacks" : "celo";
+  const token: CeloToken | undefined = chain === "celo" ? parseCeloToken(body.token) : undefined;
   if (!gameId || !player || !isValidPlayer(player, chain)) {
     return NextResponse.json({ error: "game and valid player required" }, { status: 400 });
   }
@@ -33,8 +43,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "stake must be greater than 0" }, { status: 400 });
   }
   if (stake > MAX_STAKE[chain]) {
+    const symbol = chain === "stacks" ? "STX" : CELO_TOKENS[token!].symbol;
     return NextResponse.json(
-      { error: `stake exceeds the ${MAX_STAKE[chain]} ${chain === "stacks" ? "STX" : "cUSD"} max per game` },
+      { error: `stake exceeds the ${MAX_STAKE[chain]} ${symbol} max per game` },
       { status: 400 }
     );
   }
@@ -46,12 +57,13 @@ export async function POST(req: NextRequest) {
 
   // Bet-scaled round count (the on-chain stake later confirms/overrides this in /api/round).
   const maxRounds = roundsFor(difficultyFromStake(stake, chain), game.bankSize);
-  const session = createSession(game, player, maxRounds, chain);
+  const session = createSession(game, player, maxRounds, chain, token);
   return NextResponse.json({
     sessionId: session.id,
     maxRounds: session.maxRounds,
     bankSize: game.bankSize,
     chain: session.chain,
+    token: session.token,
     game: { id: game.id, title: game.title },
   });
 }

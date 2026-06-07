@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useAccount } from "wagmi";
 import { useArcade } from "../../../lib/useArcade";
-import { formatMultiplier, CHAINS } from "../../../lib/contract";
+import { formatMultiplier, CHAINS, celoTokenMeta } from "../../../lib/contract";
 import { MAX_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
 import { useChain } from "../../../lib/chainContext";
 import { useStacksWallet } from "../../../lib/stacksWallet";
@@ -26,8 +26,10 @@ type Phase = "setup" | "starting" | "playing" | "reveal" | "settling" | "done" |
 export default function PlayPage() {
   const { game } = useParams<{ game: string }>();
   const router = useRouter();
-  const { chain } = useChain();
+  const { chain, token } = useChain();
   const chainMeta = CHAINS[chain];
+  // On Celo the staked asset is the selected token (cUSD/USDC/USDT); on Stacks it's STX.
+  const stakeSymbol = chain === "celo" ? celoTokenMeta(token).symbol : chainMeta.stakeSymbol;
 
   // Active wallet identity comes from whichever chain is selected. Both hooks run unconditionally.
   const evm = useAccount();
@@ -35,7 +37,7 @@ export default function PlayPage() {
   const address = chain === "stacks" ? stx.address ?? undefined : evm.address;
   const isConnected = chain === "stacks" ? stx.isConnected : evm.isConnected;
 
-  const arcade = useArcade(chain);
+  const arcade = useArcade(chain, token);
 
   const [phase, setPhase] = useState<Phase>("setup");
   const [stake, setStake] = useState("1");
@@ -107,7 +109,7 @@ export default function PlayPage() {
       return;
     }
     if (amt > MAX_STAKE[chain]) {
-      setError(`Max bet is ${MAX_STAKE[chain]} ${chainMeta.stakeSymbol} per game.`);
+      setError(`Max bet is ${MAX_STAKE[chain]} ${stakeSymbol} per game.`);
       return;
     }
     setPhase("starting");
@@ -116,7 +118,7 @@ export default function PlayPage() {
       const res = await fetch("/api/session", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ game, player: address, chain, stake: amt }),
+        body: JSON.stringify({ game, player: address, chain, token, stake: amt }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "session failed");
@@ -127,7 +129,7 @@ export default function PlayPage() {
       setStatus(
         chain === "stacks"
           ? "Confirm your STX stake in your wallet, then wait for the block…"
-          : "Approve cUSD + confirm stake in your wallet…"
+          : `Approve ${stakeSymbol} + confirm stake in your wallet…`
       );
       await arcade.startSession(sid, stake, data.maxRounds);
 
@@ -270,8 +272,8 @@ export default function PlayPage() {
         <div className="panel center">
           <h2>Connect your wallet to play</h2>
           <p className="muted">
-            You&apos;ll stake {chainMeta.stakeSymbol} on {chainMeta.label} (max {MAX_STAKE[chain]}{" "}
-            {chainMeta.stakeSymbol} per game).
+            You&apos;ll stake {stakeSymbol} on {chainMeta.label} (max {MAX_STAKE[chain]}{" "}
+            {stakeSymbol} per game).
           </p>
         </div>
       ) : phase === "setup" ? (
@@ -285,7 +287,7 @@ export default function PlayPage() {
           </p>
           <p className="muted" style={{ marginTop: 8 }}>
             <b>The higher your bet, the harder the session</b> — fewer seconds per question, tougher
-            questions, and more rounds. Max bet is {MAX_STAKE[chain]} {chainMeta.stakeSymbol} per game.
+            questions, and more rounds. Max bet is {MAX_STAKE[chain]} {stakeSymbol} per game.
           </p>
           <div className="row" style={{ marginTop: 20, justifyContent: "flex-start", gap: 16 }}>
             <input
@@ -297,7 +299,7 @@ export default function PlayPage() {
               value={stake}
               onChange={(e) => setStake(e.target.value)}
             />
-            <span className="muted">{chainMeta.stakeSymbol} stake</span>
+            <span className="muted">{stakeSymbol} stake</span>
             <button className="btn" onClick={begin}>
               Stake &amp; Play
             </button>
@@ -312,7 +314,7 @@ export default function PlayPage() {
             </span>
           </div>
           {overMax && (
-            <div className="error">Max bet is {MAX_STAKE[chain]} {chainMeta.stakeSymbol} per game.</div>
+            <div className="error">Max bet is {MAX_STAKE[chain]} {stakeSymbol} per game.</div>
           )}
           {error && <div className="error">{error}</div>}
         </div>
@@ -385,7 +387,7 @@ export default function PlayPage() {
           </div>
           {estPayout != null && (
             <p style={{ fontSize: 18, marginTop: 16 }}>
-              Payout ≈ <b>{estPayout.toFixed(3)} {chainMeta.stakeSymbol}</b>{" "}
+              Payout ≈ <b>{estPayout.toFixed(3)} {stakeSymbol}</b>{" "}
               <span className="muted">(staked {stake}, settled on-chain)</span>
             </p>
           )}

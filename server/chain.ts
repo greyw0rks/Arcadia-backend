@@ -6,7 +6,7 @@ import { isFundedByChain, fetchOnchainSession, type OnchainSession } from "./cha
 
 /** True iff the session exists on its chain, belongs to the recorded player, and is not yet settled. */
 export async function isFundedBy(session: Session): Promise<boolean> {
-  return isFundedByChain(session.chain, session.id, session.player);
+  return isFundedByChain(session.chain, session.id, session.player, session.token);
 }
 
 /**
@@ -14,5 +14,5 @@ export async function isFundedBy(session: Session): Promise<boolean> {
  * or null if it isn't funded on-chain yet. Used to derive bet-scaled difficulty from the REAL stake.
  */
 export async function fetchOnchain(session: Session): Promise<OnchainSession | null> {
-  return fetchOnchainSession(session.chain, session.id, session.player);
+  return fetchOnchainSession(session.chain, session.id, session.player, session.token);
 }

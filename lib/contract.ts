@@ -106,6 +106,79 @@ export const CHAINS: Record<ChainId, ChainMeta> = {
   stacks: { id: "stacks", label: "Stacks", stakeSymbol: "STX", decimals: 6 },
 };
 
+// ---------------------------------------------------------------------------
+// Celo stake-token registry (Option A: one audited QuizArcade instance per token).
+//
+// The deployed contract is hardwired to a single immutable stake token, so accepting cUSD, USDC, and
+// USDT means deploying one instance per token. The token is therefore a routing dimension exactly
+// like the chain: each instance has a DISTINCT EIP-712 verifyingContract, so the backend signer must
+// sign for the right one or settle() reverts BadSignature. All three live on Celo mainnet (42220,
+// same RPC) — only the arcade address, token address, and decimals differ (cUSD 18, USDC/USDT 6).
+// ---------------------------------------------------------------------------
+
+export type CeloToken = "cusd" | "usdc" | "usdt";
+
+export interface CeloTokenMeta {
+  id: CeloToken;
+  label: string;
+  symbol: string;
+  decimals: number;
+  arcadeAddress: `0x${string}`; // the QuizArcade instance deployed against this token
+  tokenAddress: `0x${string}`; // the ERC-20 stake token
+}
+
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000" as `0x${string}`;
+
+// Canonical Celo mainnet token addresses (decimals: USDC/USDT are 6, cUSD is 18).
+const MAINNET_USDC = "0xcebA9300f2b948710d2653dD7B07f33A8B32118C";
+const MAINNET_USDT = "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e";
+
+function envAddr(name: string, fallback: string): `0x${string}` {
+  return (process.env[name] ?? fallback) as `0x${string}`;
+}
+
+export const CELO_TOKENS: Record<CeloToken, CeloTokenMeta> = {
+  // cUSD reuses the EXISTING arcade + token env vars for back-compat (the cUSD instance is already
+  // deployed). The two new instances are configured via the *_USDC / *_USDT vars.
+  cusd: {
+    id: "cusd",
+    label: "cUSD",
+    symbol: "cUSD",
+    decimals: 18,
+    arcadeAddress: ARCADE_ADDRESS,
+    tokenAddress: CUSD_ADDRESS,
+  },
+  usdc: {
+    id: "usdc",
+    label: "USDC",
+    symbol: "USDC",
+    decimals: 6,
+    arcadeAddress: envAddr("NEXT_PUBLIC_ARCADE_ADDRESS_USDC", ZERO_ADDRESS),
+    tokenAddress: envAddr(
+      "NEXT_PUBLIC_TOKEN_ADDRESS_USDC",
+      CELO_NETWORK_NAME === "mainnet" ? MAINNET_USDC : ZERO_ADDRESS
+    ),
+  },
+  usdt: {
+    id: "usdt",
+    label: "USDT",
+    symbol: "USDT",
+    decimals: 6,
+    arcadeAddress: envAddr("NEXT_PUBLIC_ARCADE_ADDRESS_USDT", ZERO_ADDRESS),
+    tokenAddress: envAddr(
+      "NEXT_PUBLIC_TOKEN_ADDRESS_USDT",
+      CELO_NETWORK_NAME === "mainnet" ? MAINNET_USDT : ZERO_ADDRESS
+    ),
+  },
+};
+
+export const DEFAULT_CELO_TOKEN: CeloToken = "cusd";
+
+/** Resolve a token's metadata, falling back to the default (cUSD) for an unknown/legacy value. */
+export function celoTokenMeta(t: CeloToken | undefined): CeloTokenMeta {
+  return (t && CELO_TOKENS[t]) || CELO_TOKENS[DEFAULT_CELO_TOKEN];
+}
+
 // Multiplier math constants (mirror the contract).
 export const BPS = 10_000n;
 export const STEP_BPS = 1_000n;

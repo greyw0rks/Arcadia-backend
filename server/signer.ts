@@ -13,7 +13,7 @@ import {
   signMessageHashRsv,
   createStacksPrivateKey,
 } from "@stacks/transactions";
-import { celoChain, ARCADE_ADDRESS } from "../lib/contract";
+import { celoChain, CELO_TOKENS, DEFAULT_CELO_TOKEN, type CeloToken } from "../lib/contract";
 import { getSignerPrivateKey, getStacksSignerPrivateKey } from "./config";
 import type { ChainId } from "./sessions";
 
@@ -27,14 +27,18 @@ function account(): PrivateKeyAccount {
   return _account;
 }
 
-// chainId MUST match the deployed Celo network (mainnet 42220 / sepolia 11142220) or every
-// settle() reverts BadSignature — it's part of the EIP-712 domain the contract recomputes.
-const domain = {
-  name: "QuizArcade",
-  version: "1",
-  chainId: celoChain.id,
-  verifyingContract: ARCADE_ADDRESS,
-} as const;
+// The EIP-712 domain is built PER-CALL: the verifyingContract differs per stake token because each
+// token has its own QuizArcade instance (see CELO_TOKENS). Signing for the wrong instance makes that
+// instance's settle() revert BadSignature. chainId stays the deployed Celo network (42220 mainnet /
+// 11142220 sepolia) for all three — it too is part of the domain the contract recomputes.
+function celoDomain(token: CeloToken) {
+  return {
+    name: "QuizArcade",
+    version: "1",
+    chainId: celoChain.id,
+    verifyingContract: CELO_TOKENS[token].arcadeAddress,
+  } as const;
+}
 
 const types = {
   Settlement: [
@@ -49,10 +53,11 @@ export function signerAddress(): `0x${string}` {
 
 async function signEvmSettlement(
   sessionId: `0x${string}`,
-  multiplierBp: number
+  multiplierBp: number,
+  token: CeloToken
 ): Promise<`0x${string}`> {
   return account().signTypedData({
-    domain,
+    domain: celoDomain(token),
     types,
     primaryType: "Settlement",
     message: { sessionId, multiplierBp: BigInt(multiplierBp) },
@@ -95,9 +100,10 @@ async function signStacksSettlement(
 export async function signSettlement(
   chain: ChainId,
   sessionId: `0x${string}`,
-  multiplierBp: number
+  multiplierBp: number,
+  token?: CeloToken
 ): Promise<`0x${string}`> {
   return chain === "stacks"
     ? signStacksSettlement(sessionId, multiplierBp)
-    : signEvmSettlement(sessionId, multiplierBp);
+    : signEvmSettlement(sessionId, multiplierBp, token ?? DEFAULT_CELO_TOKEN);
 }

@@ -8,6 +8,7 @@ import { RoundState } from "./games/types";
 import { initialMultiplierBp, applyResult, clampFinalBp } from "./engine";
 import { ANSWER_GRACE_MS } from "./config";
 import { scaleTimer } from "./difficulty";
+import { DEFAULT_CELO_TOKEN, type CeloToken } from "../lib/contract";
 
 export type ChainId = "celo" | "stacks";
 
@@ -15,6 +16,9 @@ export interface Session {
   id: `0x${string}`; // bytes32 / (buff 32), also the on-chain sessionId
   gameId: string;
   chain: ChainId; // which network the stake + settlement live on
+  // Which Celo stake token (cUSD/USDC/USDT) — i.e. which QuizArcade instance. Only meaningful when
+  // chain === "celo"; it selects the EIP-712 verifyingContract and the funding-gate contract to read.
+  token?: CeloToken;
   player: string; // wallet address/principal that will stake (lowercased for EVM only)
   maxRounds: number;
   // Bet-scaled difficulty in [0,1] (0 == min stake, 1 == max stake). Set from the REAL on-chain stake
@@ -39,13 +43,17 @@ export function createSession(
   game: GameModule,
   player: string,
   maxRounds: number,
-  chain: ChainId
+  chain: ChainId,
+  token?: CeloToken
 ): Session {
   const id = newSessionId();
   const s: Session = {
     id,
     gameId: game.id,
     chain,
+    // The stake token is a Celo-only routing dimension; default cUSD for back-compat. Left undefined
+    // for Stacks (STX has no token sub-dimension).
+    token: chain === "celo" ? token ?? DEFAULT_CELO_TOKEN : undefined,
     // EVM addresses are case-insensitive; Stacks principals are case-sensitive (c32check) — keep as-is.
     player: chain === "celo" ? player.toLowerCase() : player,
     maxRounds,

@@ -15,12 +15,13 @@ import {
   AnchorMode,
 } from "@stacks/transactions";
 import {
-  ARCADE_ADDRESS,
-  CUSD_ADDRESS,
   STACKS_ARCADE_CONTRACT,
   stacksNetwork,
   CHAINS,
+  CELO_TOKENS,
+  DEFAULT_CELO_TOKEN,
   type ChainId,
+  type CeloToken,
 } from "./contract";
 import { ARCADE_ABI, ERC20_ABI } from "./abi";
 import { useStacksWallet } from "./stacksWallet";
@@ -42,25 +43,30 @@ export interface ArcadeApi {
 // Celo (EVM) — wagmi/viem, with the ERC-20 approve step.
 // ---------------------------------------------------------------------------
 
-function useEvmArcade(): ArcadeApi {
+function useEvmArcade(token: CeloToken): ArcadeApi {
   const { address } = useAccount();
   const publicClient = usePublicClient();
   const { writeContractAsync } = useWriteContract();
 
+  // Which QuizArcade instance + ERC-20 + decimals this session targets. Each Celo token (cUSD/USDC/
+  // USDT) has its own deployed contract, so the address the player approves and stakes against — and
+  // the decimals used to parse the stake — depend on the selected token.
+  const { arcadeAddress, tokenAddress, decimals } = CELO_TOKENS[token];
+
   async function ensureAllowance(stakeWei: bigint) {
     if (!address || !publicClient) throw new Error("wallet not connected");
     const current = (await publicClient.readContract({
-      address: CUSD_ADDRESS,
+      address: tokenAddress,
       abi: ERC20_ABI,
       functionName: "allowance",
-      args: [address, ARCADE_ADDRESS],
+      args: [address, arcadeAddress],
     })) as bigint;
     if (current >= stakeWei) return;
     const hash = await writeContractAsync({
-      address: CUSD_ADDRESS,
+      address: tokenAddress,
       abi: ERC20_ABI,
       functionName: "approve",
-      args: [ARCADE_ADDRESS, stakeWei],
+      args: [arcadeAddress, stakeWei],
     });
     await publicClient.waitForTransactionReceipt({ hash });
   }
@@ -68,10 +74,10 @@ function useEvmArcade(): ArcadeApi {
   return {
     async startSession(sessionId, stake, maxRounds) {
       if (!publicClient) throw new Error("no client");
-      const stakeWei = parseUnits(stake, CHAINS.celo.decimals);
+      const stakeWei = parseUnits(stake, decimals);
       await ensureAllowance(stakeWei);
       const hash = await writeContractAsync({
-        address: ARCADE_ADDRESS,
+        address: arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "startSession",
         args: [sessionId, stakeWei, maxRounds],
@@ -81,7 +87,7 @@ function useEvmArcade(): ArcadeApi {
     async settle(sessionId, multiplierBp, signature) {
       if (!publicClient) throw new Error("no client");
       const hash = await writeContractAsync({
-        address: ARCADE_ADDRESS,
+        address: arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "settle",
         args: [sessionId, BigInt(multiplierBp), signature],
@@ -91,7 +97,7 @@ function useEvmArcade(): ArcadeApi {
     async cancelExpired(sessionId) {
       if (!publicClient) throw new Error("no client");
       const hash = await writeContractAsync({
-        address: ARCADE_ADDRESS,
+        address: arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "cancelExpired",
         args: [sessionId],
@@ -101,7 +107,7 @@ function useEvmArcade(): ArcadeApi {
     async balance() {
       if (!address || !publicClient) return 0n;
       return (await publicClient.readContract({
-        address: CUSD_ADDRESS,
+        address: tokenAddress,
         abi: ERC20_ABI,
         functionName: "balanceOf",
         args: [address],
@@ -245,8 +251,8 @@ function useStacksArcade(): ArcadeApi {
 // Dispatch. Both hooks are always called (Rules of Hooks); we return the active one.
 // ---------------------------------------------------------------------------
 
-export function useArcade(chain: ChainId): ArcadeApi {
-  const evm = useEvmArcade();
+export function useArcade(chain: ChainId, token: CeloToken = DEFAULT_CELO_TOKEN): ArcadeApi {
+  const evm = useEvmArcade(token);
   const stacks = useStacksArcade();
   return chain === "stacks" ? stacks : evm;
 }

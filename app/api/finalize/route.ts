@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
   }
 
   const multiplierBp = finalMultiplierBp(session);
-  const signature = await signSettlement(session.chain, session.id, multiplierBp);
+  const signature = await signSettlement(session.chain, session.id, multiplierBp, session.token);
   session.finalized = true;
 
   return NextResponse.json({ sessionId: session.id, multiplierBp, signature });

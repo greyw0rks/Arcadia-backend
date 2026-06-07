@@ -1,6 +1,6 @@
 // Chain dispatch for the server-side funding gate. Each adapter exposes `isFundedBy`.
 
-import type { ChainId } from "../../lib/contract";
+import type { ChainId, CeloToken } from "../../lib/contract";
 import * as celo from "./celo";
 import * as stacks from "./stacks";
 
@@ -9,14 +9,15 @@ export type { OnchainSession } from "./celo";
 export async function isFundedByChain(
   chain: ChainId,
   sessionId: `0x${string}`,
-  player: string
+  player: string,
+  token?: CeloToken
 ): Promise<boolean> {
   switch (chain) {
     case "stacks":
       return stacks.isFundedBy(sessionId, player);
     case "celo":
     default:
-      return celo.isFundedBy(sessionId, player);
+      return celo.isFundedBy(sessionId, player, token);
   }
 }
 
@@ -24,13 +25,14 @@ export async function isFundedByChain(
 export async function fetchOnchainSession(
   chain: ChainId,
   sessionId: `0x${string}`,
-  player: string
+  player: string,
+  token?: CeloToken
 ) {
   switch (chain) {
     case "stacks":
       return stacks.fetchSession(sessionId, player);
     case "celo":
     default:
-      return celo.fetchSession(sessionId, player);
+      return celo.fetchSession(sessionId, player, token);
   }
 }
