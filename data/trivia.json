@@ -1,0 +1,12002 @@
+[
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Carbon?",
+    "options": [
+      "79",
+      "19",
+      "6",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the capital of France?",
+    "options": [
+      "Canberra",
+      "Abuja",
+      "Paris",
+      "Jakarta"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the capital of Germany?",
+    "options": [
+      "Canberra",
+      "Mexico City",
+      "Ottawa",
+      "Berlin"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Italy?",
+    "options": [
+      "Pretoria",
+      "Jakarta",
+      "Buenos Aires",
+      "Rome"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Spain?",
+    "options": [
+      "Seoul",
+      "Hanoi",
+      "Moscow",
+      "Madrid"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of UK?",
+    "options": [
+      "Berlin",
+      "Buenos Aires",
+      "Abuja",
+      "London"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Russia?",
+    "options": [
+      "Moscow",
+      "Kuala Lumpur",
+      "Rome",
+      "Nairobi"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of China?",
+    "options": [
+      "Beijing",
+      "Manila",
+      "Moscow",
+      "Ottawa"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of India?",
+    "options": [
+      "New Delhi",
+      "Kuala Lumpur",
+      "Abuja",
+      "Ottawa"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of Japan?",
+    "options": [
+      "Rome",
+      "Tokyo",
+      "Moscow",
+      "Seoul"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the capital of South Korea?",
+    "options": [
+      "Manila",
+      "Pretoria",
+      "Bogota",
+      "Seoul"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Thailand?",
+    "options": [
+      "Bangkok",
+      "New Delhi",
+      "Hanoi",
+      "Beijing"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of Vietnam?",
+    "options": [
+      "Madrid",
+      "Hanoi",
+      "New Delhi",
+      "Cairo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the capital of Indonesia?",
+    "options": [
+      "Pretoria",
+      "Jakarta",
+      "Paris",
+      "Bangkok"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the capital of Philippines?",
+    "options": [
+      "Berlin",
+      "Tokyo",
+      "Washington DC",
+      "Manila"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Malaysia?",
+    "options": [
+      "Manila",
+      "Rome",
+      "Hanoi",
+      "Kuala Lumpur"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Turkey?",
+    "options": [
+      "New Delhi",
+      "Lima",
+      "Ottawa",
+      "Ankara"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Egypt?",
+    "options": [
+      "Pretoria",
+      "Manila",
+      "Mexico City",
+      "Cairo"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of South Africa?",
+    "options": [
+      "Madrid",
+      "Beijing",
+      "Seoul",
+      "Pretoria"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Nigeria?",
+    "options": [
+      "Seoul",
+      "Mexico City",
+      "Abuja",
+      "Ankara"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the capital of Kenya?",
+    "options": [
+      "Kuala Lumpur",
+      "Nairobi",
+      "Caracas",
+      "Beijing"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the capital of Argentina?",
+    "options": [
+      "Abuja",
+      "Cairo",
+      "London",
+      "Buenos Aires"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Chile?",
+    "options": [
+      "Santiago",
+      "Madrid",
+      "Nairobi",
+      "Canberra"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of Peru?",
+    "options": [
+      "Lima",
+      "Moscow",
+      "Ottawa",
+      "Pretoria"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of Colombia?",
+    "options": [
+      "Pretoria",
+      "Bogota",
+      "Washington DC",
+      "Jakarta"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the capital of Mexico?",
+    "options": [
+      "Mexico City",
+      "Canberra",
+      "Berlin",
+      "Tokyo"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of USA?",
+    "options": [
+      "Buenos Aires",
+      "Tokyo",
+      "Santiago",
+      "Washington DC"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the capital of Canada?",
+    "options": [
+      "Lima",
+      "Ottawa",
+      "Manila",
+      "Berlin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the capital of Australia?",
+    "options": [
+      "Canberra",
+      "New Delhi",
+      "Berlin",
+      "Buenos Aires"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of Brazil?",
+    "options": [
+      "Brasilia",
+      "Santiago",
+      "Bogota",
+      "Moscow"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the capital of Venezuela?",
+    "options": [
+      "Nairobi",
+      "Caracas",
+      "Ottawa",
+      "Jakarta"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Carbon?",
+    "options": [
+      "79",
+      "19",
+      "6",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Carbon?",
+    "options": [
+      "79",
+      "19",
+      "6",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Carbon?",
+    "options": [
+      "79",
+      "19",
+      "6",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Carbon?",
+    "options": [
+      "79",
+      "19",
+      "6",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Helium?",
+    "options": [
+      "2",
+      "82",
+      "6",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sulfur?",
+    "options": [
+      "Ca",
+      "Au",
+      "S",
+      "H"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Zinc?",
+    "options": [
+      "Zn",
+      "N",
+      "Pb",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Carbon?",
+    "options": [
+      "Na",
+      "N",
+      "Au",
+      "C"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Silver?",
+    "options": [
+      "Li",
+      "Na",
+      "Ag",
+      "Cu"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Magnesium?",
+    "options": [
+      "Mg",
+      "F",
+      "Pb",
+      "N"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Calcium?",
+    "options": [
+      "16",
+      "20",
+      "92",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Oxygen?",
+    "options": [
+      "13",
+      "82",
+      "6",
+      "8"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Sulfur?",
+    "options": [
+      "20",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Uranium?",
+    "options": [
+      "2",
+      "13",
+      "92",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Nitrogen?",
+    "options": [
+      "N",
+      "F",
+      "K",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Oxygen?",
+    "options": [
+      "O",
+      "Li",
+      "F",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Iron?",
+    "options": [
+      "79",
+      "26",
+      "9",
+      "6"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Sodium?",
+    "options": [
+      "C",
+      "Al",
+      "Na",
+      "Cl"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Carbon?",
+    "options": [
+      "79",
+      "19",
+      "6",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Mercury?",
+    "options": [
+      "Hg",
+      "Ag",
+      "C",
+      "Pb"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Hydrogen?",
+    "options": [
+      "Si",
+      "H",
+      "Ag",
+      "O"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Copper?",
+    "options": [
+      "29",
+      "2",
+      "12",
+      "6"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Mercury?",
+    "options": [
+      "80",
+      "1",
+      "26",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Phosphorus?",
+    "options": [
+      "C",
+      "P",
+      "Pb",
+      "U"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is pH of pure water?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Gold?",
+    "options": [
+      "C",
+      "Au",
+      "Zn",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Gold?",
+    "options": [
+      "79",
+      "7",
+      "2",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Neon?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Neon?",
+    "options": [
+      "K",
+      "Ne",
+      "Hg",
+      "He"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Silicon?",
+    "options": [
+      "2",
+      "14",
+      "11",
+      "80"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Potassium?",
+    "options": [
+      "Au",
+      "K",
+      "Hg",
+      "Mg"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "Au",
+      "S",
+      "Li"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the boiling point of water?",
+    "options": [
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the chemical symbol for Chlorine?",
+    "options": [
+      "Cl",
+      "Al",
+      "Cu",
+      "Mg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Lithium?",
+    "options": [
+      "3",
+      "10",
+      "82",
+      "47"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Magnesium?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the speed of light?",
+    "options": [
+      "299,792 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Silicon?",
+    "options": [
+      "Si",
+      "He",
+      "K",
+      "Au"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Uranium?",
+    "options": [
+      "U",
+      "Cu",
+      "Li",
+      "O"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Fluorine?",
+    "options": [
+      "F",
+      "P",
+      "U",
+      "Hg"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Aluminum?",
+    "options": [
+      "13",
+      "29",
+      "79",
+      "80"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the chemical symbol for Aluminum?",
+    "options": [
+      "Hg",
+      "Mg",
+      "Al",
+      "K"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "How many chambers in human heart?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Nitrogen?",
+    "options": [
+      "19",
+      "9",
+      "7",
+      "80"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many teeth does adult have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "What is the atomic number of Chlorine?",
+    "options": [
+      "7",
+      "17",
+      "11",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which planet is largest?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Zinc?",
+    "options": [
+      "15",
+      "82",
+      "79",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Silver?",
+    "options": [
+      "47",
+      "6",
+      "79",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the atomic number of Phosphorus?",
+    "options": [
+      "11",
+      "16",
+      "82",
+      "15"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Sodium?",
+    "options": [
+      "19",
+      "15",
+      "92",
+      "11"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Lead?",
+    "options": [
+      "82",
+      "17",
+      "10",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "options": [
+      "Fe",
+      "O",
+      "Li",
+      "H"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Lithium?",
+    "options": [
+      "Mg",
+      "Li",
+      "Cl",
+      "Au"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Hydrogen?",
+    "options": [
+      "29",
+      "1",
+      "2",
+      "79"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the chemical symbol for Lead?",
+    "options": [
+      "Zn",
+      "Pb",
+      "Fe",
+      "Cl"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What is the atomic number of Fluorine?",
+    "options": [
+      "9",
+      "19",
+      "20",
+      "29"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Calcium?",
+    "options": [
+      "Au",
+      "S",
+      "U",
+      "Ca"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Which blood type is universal donor?",
+    "options": [
+      "A+",
+      "B+",
+      "AB+",
+      "O-"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "What is the atomic number of Potassium?",
+    "options": [
+      "19",
+      "29",
+      "92",
+      "12"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "What is the chemical symbol for Copper?",
+    "options": [
+      "Li",
+      "Si",
+      "Cu",
+      "P"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "How many bones in adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "answer": 1
+  }
+]

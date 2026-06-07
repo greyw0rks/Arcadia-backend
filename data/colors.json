@@ -1,0 +1,17 @@
+[
+  { "name": "Red", "hex": "#FF0000", "decoys": ["#FF3300", "#CC0000", "#FF0033"] },
+  { "name": "Blue", "hex": "#0000FF", "decoys": ["#0033FF", "#0000CC", "#3300FF"] },
+  { "name": "Green", "hex": "#00FF00", "decoys": ["#00CC00", "#33FF00", "#00FF33"] },
+  { "name": "Yellow", "hex": "#FFFF00", "decoys": ["#FFCC00", "#CCFF00", "#FFFF33"] },
+  { "name": "Purple", "hex": "#800080", "decoys": ["#990099", "#660066", "#9900CC"] },
+  { "name": "Orange", "hex": "#FFA500", "decoys": ["#FF8C00", "#FFB347", "#FF9933"] },
+  { "name": "Pink", "hex": "#FFC0CB", "decoys": ["#FFB6C1", "#FF69B4", "#FFD1DC"] },
+  { "name": "Cyan", "hex": "#00FFFF", "decoys": ["#00CCFF", "#33FFFF", "#00CCCC"] },
+  { "name": "Magenta", "hex": "#FF00FF", "decoys": ["#FF33FF", "#CC00FF", "#FF00CC"] },
+  { "name": "Lime", "hex": "#00FF00", "decoys": ["#32CD32", "#7FFF00", "#00FA9A"] },
+  { "name": "Navy", "hex": "#000080", "decoys": ["#000066", "#000099", "#191970"] },
+  { "name": "Teal", "hex": "#008080", "decoys": ["#008B8B", "#20B2AA", "#00CED1"] },
+  { "name": "Maroon", "hex": "#800000", "decoys": ["#8B0000", "#A52A2A", "#B22222"] },
+  { "name": "Olive", "hex": "#808000", "decoys": ["#6B8E23", "#556B2F", "#9ACD32"] },
+  { "name": "Silver", "hex": "#C0C0C0", "decoys": ["#D3D3D3", "#A9A9A9", "#DCDCDC"] }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": "placeholder1", "answer": "The Matrix", "decoys": ["Inception", "Blade Runner", "Tron"], "image": "/movies/placeholder1.jpg" },
+  { "id": "placeholder2", "answer": "Jurassic Park", "decoys": ["King Kong", "Godzilla", "The Lost World"], "image": "/movies/placeholder2.jpg" },
+  { "id": "placeholder3", "answer": "Star Wars", "decoys": ["Star Trek", "Guardians of the Galaxy", "Dune"], "image": "/movies/placeholder3.jpg" },
+  { "id": "placeholder4", "answer": "The Godfather", "decoys": ["Goodfellas", "Scarface", "Casino"], "image": "/movies/placeholder4.jpg" },
+  { "id": "placeholder5", "answer": "Pulp Fiction", "decoys": ["Reservoir Dogs", "Kill Bill", "Django Unchained"], "image": "/movies/placeholder5.jpg" }
+]

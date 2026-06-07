@@ -1,0 +1,10002 @@
+[
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  },
+  {
+    "items": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Car"
+    ],
+    "odd": 3,
+    "reason": "Car is not an animal"
+  },
+  {
+    "items": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "odd": 3,
+    "reason": "9 is not even"
+  },
+  {
+    "items": [
+      "France",
+      "Spain",
+      "Italy",
+      "Brazil"
+    ],
+    "odd": 3,
+    "reason": "Brazil is not in Europe"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "Carrot is a vegetable"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "Circle is not a color"
+  }
+]

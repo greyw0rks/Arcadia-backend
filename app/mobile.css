@@ -1,0 +1,417 @@
+/* Mobile App UI - Dark Theme (Heal & Grow inspired) */
+/* Only applies to mobile devices - desktop stays neo-brutalism */
+
+@media (max-width: 768px) {
+  /* Dark theme colors for mobile */
+  :root {
+    --mobile-bg: #111111;
+    --mobile-surface: #1A1A1A;
+    --mobile-text-primary: #F2ECE6;
+    --mobile-text-secondary: #B5AEA7;
+    --mobile-border: #2A2A2A;
+    --mobile-accent: #FF6B9D;
+  }
+
+  /* Apply dark theme to body on mobile */
+  body {
+    background: var(--mobile-bg);
+    color: var(--mobile-text-primary);
+  }
+
+  /* Container adjustments */
+  .container {
+    background: var(--mobile-bg);
+    padding: 16px 16px 80px;
+  }
+
+  /* Topbar - minimal dark style */
+  .topbar {
+    background: var(--mobile-bg);
+    border-bottom: 1px solid var(--mobile-border);
+    padding: 16px 0;
+    margin-bottom: 24px;
+  }
+
+  .brand {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: var(--mobile-text-primary);
+    font-size: 24px;
+    padding: 0;
+    font-family: serif;
+    letter-spacing: -0.02em;
+  }
+
+  .brand::before {
+    display: none;
+  }
+
+  .brand:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Hero - dark minimalist */
+  .hero {
+    background: var(--mobile-surface);
+    border: 1px solid var(--mobile-border);
+    border-radius: 16px;
+    box-shadow: none;
+    padding: 32px 24px;
+    margin-bottom: 32px;
+    transform: none;
+  }
+
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    color: var(--mobile-text-primary);
+    text-shadow: none;
+    font-family: serif;
+    letter-spacing: -0.03em;
+  }
+
+  .hero .tagline {
+    color: var(--mobile-text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero .mechanic {
+    background: var(--mobile-bg);
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 12px 20px;
+  }
+
+  /* Cards - rounded dark style */
+  .card {
+    background: var(--mobile-surface);
+    border: 1px solid var(--mobile-border);
+    border-radius: 16px;
+    box-shadow: none;
+    padding: 20px 16px;
+    min-height: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .card::before,
+  .card::after {
+    display: none;
+  }
+
+  .card.playable:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-color: var(--mobile-accent);
+  }
+
+  .card.playable:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  .card .game-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+    background: var(--mobile-bg);
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    padding: 8px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    color: var(--mobile-text-primary);
+    font-family: serif;
+    letter-spacing: -0.01em;
+  }
+
+  .card p {
+    color: var(--mobile-text-secondary);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* Badges - rounded style */
+  .badge {
+    background: var(--mobile-accent);
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 6px 14px;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .badge::before {
+    display: none;
+  }
+
+  .badge.live {
+    background: var(--mobile-accent);
+    color: var(--mobile-text-primary);
+  }
+
+  .badge.soon {
+    background: var(--mobile-border);
+    color: var(--mobile-text-secondary);
+  }
+
+  /* Buttons - rounded dark style */
+  .btn {
+    background: var(--mobile-surface);
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 14px 24px;
+    font-size: 15px;
+    color: var(--mobile-text-primary);
+    transition: all 0.2s ease;
+  }
+
+  .btn::before,
+  .btn::after {
+    display: none;
+  }
+
+  .btn:hover {
+    transform: none;
+    box-shadow: none;
+    background: var(--mobile-accent);
+    border-color: var(--mobile-accent);
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+
+  .btn.ghost {
+    background: transparent;
+    border: 1px solid var(--mobile-border);
+  }
+
+  .btn.ghost:hover {
+    background: var(--mobile-surface);
+    border-color: var(--mobile-text-secondary);
+  }
+
+  /* Panel - dark rounded */
+  .panel {
+    background: var(--mobile-surface);
+    border: 1px solid var(--mobile-border);
+    border-radius: 16px;
+    box-shadow: none;
+    padding: 24px 20px;
+  }
+
+  .panel::before,
+  .panel::after {
+    display: none;
+  }
+
+  /* Options - rounded style */
+  .option {
+    background: var(--mobile-bg);
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 16px 20px;
+    margin: 12px 0;
+    transition: all 0.2s ease;
+  }
+
+  .option::before,
+  .option::after {
+    display: none;
+  }
+
+  .option:hover:not(:disabled) {
+    transform: none;
+    box-shadow: none;
+    background: var(--mobile-surface);
+    border-color: var(--mobile-accent);
+  }
+
+  .option.correct {
+    background: #1a3a2a;
+    border-color: #2a5a3a;
+    box-shadow: none;
+  }
+
+  .option.wrong {
+    background: #3a1a1a;
+    border-color: #5a2a2a;
+    box-shadow: none;
+  }
+
+  /* Input - dark rounded */
+  .input {
+    background: var(--mobile-bg);
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    box-shadow: none;
+    color: var(--mobile-text-primary);
+    padding: 14px 16px;
+  }
+
+  .input:focus {
+    box-shadow: none;
+    border-color: var(--mobile-accent);
+    background: var(--mobile-surface);
+  }
+
+  /* Timer - rounded */
+  .timer-track {
+    background: var(--mobile-bg);
+    border: 1px solid var(--mobile-border);
+    border-radius: 8px;
+    box-shadow: none;
+    height: 8px;
+  }
+
+  .timer-track::before,
+  .timer-track::after {
+    display: none;
+  }
+
+  .timer-fill {
+    background: var(--mobile-accent);
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .timer-fill::after {
+    display: none;
+  }
+
+  /* Multiplier - clean style */
+  .multiplier {
+    color: var(--mobile-text-primary);
+    text-shadow: none;
+    font-family: serif;
+  }
+
+  .multiplier.up {
+    color: #6BCF7F;
+  }
+
+  .multiplier.down {
+    color: #FF6B6B;
+  }
+
+  /* Grid - maintain 2 columns but with spacing */
+  .grid {
+    gap: 16px;
+  }
+
+  /* Progress dots - rounded */
+  .progress-dot {
+    border: 2px solid var(--mobile-border);
+    border-radius: 50%;
+    box-shadow: none;
+  }
+
+  .progress-dot.active {
+    background: var(--mobile-accent);
+    border-color: var(--mobile-accent);
+    transform: scale(1.2);
+    box-shadow: none;
+  }
+
+  .progress-dot.complete {
+    background: #6BCF7F;
+    border-color: #6BCF7F;
+    box-shadow: none;
+  }
+
+  /* Game image - rounded */
+  .game-image {
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    box-shadow: none;
+  }
+
+  /* Text colors */
+  .muted {
+    color: var(--mobile-text-secondary);
+  }
+
+  .error {
+    color: #FF6B6B;
+  }
+
+  .success {
+    color: #6BCF7F;
+  }
+
+  .info {
+    background: var(--mobile-surface);
+    border: 1px solid var(--mobile-border);
+    border-radius: 12px;
+    color: var(--mobile-text-secondary);
+  }
+
+  /* Remove all hard shadows and borders on mobile */
+  * {
+    box-shadow: none !important;
+  }
+
+  /* Social links - rounded */
+  .social-links a {
+    border-radius: 12px;
+  }
+}
+
+/* Bottom Navigation for Mobile */
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--mobile-surface);
+    border-top: 1px solid var(--mobile-border);
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 calc(12px + env(safe-area-inset-bottom));
+    z-index: 1000;
+  }
+
+  .mobile-bottom-nav button {
+    background: transparent;
+    border: none;
+    color: var(--mobile-text-secondary);
+    font-size: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .mobile-bottom-nav button span {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .mobile-bottom-nav button.active {
+    color: var(--mobile-accent);
+  }
+
+  .mobile-bottom-nav button:active {
+    transform: scale(0.95);
+  }
+}

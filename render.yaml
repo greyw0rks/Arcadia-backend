@@ -1,0 +1,44 @@
+# Render blueprint for the ARCADIA BACKEND (the stateful Next.js API + trusted signer).
+# This always-on Node service holds the in-memory session store and the settlement signer keys.
+# The public frontend (arcadia-frontend) is deployed separately on Vercel and proxies /api/* here.
+#
+# Deploy: push this folder as its own repo, then in Render → "New +" → "Blueprint" → point it here.
+# Set the secret env vars (marked sync:false) in the Render dashboard after the first deploy.
+services:
+  - type: web
+    name: arcadia-api
+    runtime: node
+    plan: starter            # always-on. Do NOT use "free": it sleeps and drops in-memory sessions.
+    region: oregon
+    rootDir: .               # arcadia-backend IS the Next.js app root
+    buildCommand: npm ci && npm run build
+    startCommand: npm start  # next start; binds to $PORT automatically
+    healthCheckPath: /api/games
+    autoDeploy: true
+    envVars:
+      # IMPORTANT: do NOT set BACKEND_URL here — that flag is only for the Vercel frontend. Leaving it
+      # unset makes this service serve its own /api routes (with the in-memory session store).
+      - key: NODE_VERSION
+        value: "20"
+      # Public chain config (same values you set on Vercel). Mainnet defaults shown.
+      - key: NEXT_PUBLIC_CELO_NETWORK
+        value: mainnet
+      - key: NEXT_PUBLIC_STACKS_NETWORK
+        value: mainnet
+      - key: NEXT_PUBLIC_ARCADE_ADDRESS
+        sync: false
+      - key: NEXT_PUBLIC_CUSD_ADDRESS
+        value: "0x765DE816845861e75A25fCA122bb6898B8B1282a"
+      - key: NEXT_PUBLIC_RPC_URL
+        value: "https://forno.celo.org"
+      - key: NEXT_PUBLIC_STACKS_ARCADE_CONTRACT
+        sync: false
+      - key: NEXT_PUBLIC_STACKS_API_URL
+        value: "https://api.mainnet.hiro.so"
+      - key: NEXT_PUBLIC_WC_PROJECT_ID
+        sync: false
+      # Server-only SECRETS — set these in the Render dashboard, never commit them.
+      - key: SETTLEMENT_SIGNER_PRIVATE_KEY
+        sync: false
+      - key: STACKS_SIGNER_PRIVATE_KEY
+        sync: false
