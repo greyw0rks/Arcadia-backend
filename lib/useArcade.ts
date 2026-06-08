@@ -2,7 +2,6 @@
 
 import { useAccount, usePublicClient, useWriteContract } from "wagmi";
 import { parseUnits } from "viem";
-import { openContractCall } from "@stacks/connect";
 import {
   bufferCV,
   uintCV,
@@ -135,7 +134,7 @@ async function readSession(sessionId: `0x${string}`): Promise<any | null> {
     contractName: STX_CONTRACT_NAME,
     functionName: "get-session",
     functionArgs: [bufferCV(hexToBytes(sessionId))],
-    network: stacksNetwork(),
+    network: await stacksNetwork(),
     senderAddress: STX_CONTRACT_ADDR,
   });
   if (res.type === ClarityType.OptionalNone) return null;
@@ -161,11 +160,12 @@ async function pollUntil(
 }
 
 // Wrap Stacks Connect's callback API in a promise that resolves on broadcast.
-function contractCall(opts: Parameters<typeof openContractCall>[0]): Promise<void> {
+async function contractCall(opts: Record<string, unknown>): Promise<void> {
+  const { openContractCall } = await import("@stacks/connect");
   return new Promise<void>((resolve, reject) => {
     try {
       const maybe = openContractCall({
-        ...opts,
+        ...(opts as any),
         onFinish: () => resolve(),
         onCancel: () => reject(new Error("Transaction was cancelled in the wallet.")),
       }) as unknown;
@@ -181,11 +181,11 @@ function contractCall(opts: Parameters<typeof openContractCall>[0]): Promise<voi
 
 function useStacksArcade(): ArcadeApi {
   const { address } = useStacksWallet();
-  const network = stacksNetwork();
 
   return {
     async startSession(sessionId, stake, maxRounds) {
       if (!address) throw new Error("Stacks wallet not connected");
+      const network = await stacksNetwork();
       const stakeMicro = parseUnits(stake, CHAINS.stacks.decimals); // bigint micro-STX
       await contractCall({
         contractAddress: STX_CONTRACT_ADDR,
@@ -207,6 +207,7 @@ function useStacksArcade(): ArcadeApi {
       );
     },
     async settle(sessionId, multiplierBp, signature) {
+      const network = await stacksNetwork();
       await contractCall({
         contractAddress: STX_CONTRACT_ADDR,
         contractName: STX_CONTRACT_NAME,
@@ -223,6 +224,7 @@ function useStacksArcade(): ArcadeApi {
       await pollUntil((s) => !!s && s.settled?.value === true, sessionId);
     },
     async cancelExpired(sessionId) {
+      const network = await stacksNetwork();
       await contractCall({
         contractAddress: STX_CONTRACT_ADDR,
         contractName: STX_CONTRACT_NAME,
@@ -235,6 +237,7 @@ function useStacksArcade(): ArcadeApi {
       await pollUntil((s) => !!s && s.settled?.value === true, sessionId);
     },
     async balance() {
+      const network = await stacksNetwork();
       if (!address) return 0n;
       try {
         const res = await fetch(`${network.coreApiUrl}/extended/v1/address/${address}/balances`);

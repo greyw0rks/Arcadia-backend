@@ -42,7 +42,7 @@ export async function fetchSession(
       contractName,
       functionName: "get-session",
       functionArgs: [bufferCV(hexToBytes(sessionId))],
-      network: stacksNetwork(),
+      network: await stacksNetwork(),
       senderAddress: contractAddress,
     });
 

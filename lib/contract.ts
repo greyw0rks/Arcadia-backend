@@ -1,6 +1,5 @@
 // Shared chain + contract constants used by both client and server.
 import { defineChain } from "viem";
-import { StacksTestnet, StacksMainnet, type StacksNetwork } from "@stacks/network";
 
 // Which networks the app supports. Used by the UI chain switcher and the chain-aware play flow.
 export type ChainId = "celo" | "stacks";
@@ -79,7 +78,8 @@ export const STACKS_API_URL =
     ? "https://api.mainnet.hiro.so"
     : "https://api.testnet.hiro.so");
 
-export function stacksNetwork(): StacksNetwork {
+export async function stacksNetwork() {
+  const { StacksTestnet, StacksMainnet } = await import("@stacks/network");
   return STACKS_NETWORK_NAME === "mainnet"
     ? new StacksMainnet({ url: STACKS_API_URL })
     : new StacksTestnet({ url: STACKS_API_URL });
