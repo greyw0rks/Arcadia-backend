@@ -1,22 +1,6 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { STACKS_NETWORK_NAME } from "./contract";
-
-function getConnect() {
-  if (typeof window === "undefined") return null;
-  const { AppConfig, UserSession, showConnect } = require("@stacks/connect");
-  const appConfig = new AppConfig(["store_write"]);
-  const userSession = new UserSession({ appConfig });
-  return { userSession, showConnect };
-}
-
-function addressFromSession(userSession: any): string | null {
-  if (!userSession.isUserSignedIn()) return null;
-  const data = userSession.loadUserData();
-  return STACKS_NETWORK_NAME === "mainnet"
-    ? data.profile.stxAddress.mainnet
-    : data.profile.stxAddress.testnet;
-}
 
 export interface StacksWallet {
   address: string | null;
@@ -27,39 +11,56 @@ export interface StacksWallet {
 
 export function useStacksWallet(): StacksWallet {
   const [address, setAddress] = useState<string | null>(null);
+  const modRef = useRef<any>(null);
+  const sessionRef = useRef<any>(null);
 
   useEffect(() => {
-    const c = getConnect();
-    if (!c) return;
-    const { userSession } = c;
-    if (userSession.isSignInPending()) {
-      userSession.handlePendingSignIn().then(() => setAddress(addressFromSession(userSession)));
-    } else {
-      setAddress(addressFromSession(userSession));
-    }
+    // Pre-load module on mount so connect() can call showConnect synchronously
+    import("@stacks/connect").then((mod) => {
+      modRef.current = mod;
+      const appConfig = new mod.AppConfig(["store_write"]);
+      const userSession = new mod.UserSession({ appConfig });
+      sessionRef.current = userSession;
+
+      if (userSession.isSignInPending()) {
+        userSession.handlePendingSignIn().then(() => {
+          setAddress(getAddress(userSession));
+        });
+      } else {
+        setAddress(getAddress(userSession));
+      }
+    }).catch(() => {});
   }, []);
 
+  function getAddress(userSession: any): string | null {
+    if (!userSession.isUserSignedIn()) return null;
+    const data = userSession.loadUserData();
+    return STACKS_NETWORK_NAME === "mainnet"
+      ? data.profile.stxAddress.mainnet
+      : data.profile.stxAddress.testnet;
+  }
+
   const connect = useCallback(() => {
-    const c = getConnect();
-    if (!c) return;
-    const { userSession, showConnect } = c;
-    showConnect({
+    const mod = modRef.current;
+    const userSession = sessionRef.current;
+    if (!mod || !userSession) return;
+    // Called synchronously from click — popup will open
+    mod.showConnect({
       userSession,
       appDetails: {
         name: "QuizArcade",
-        icon:
-          typeof window !== "undefined"
-            ? `${window.location.origin}/favicon.ico`
-            : "/favicon.ico",
+        icon: typeof window !== "undefined"
+          ? `${window.location.origin}/favicon.ico`
+          : "/favicon.ico",
       },
-      onFinish: () => setAddress(addressFromSession(userSession)),
+      onFinish: () => setAddress(getAddress(userSession)),
     });
   }, []);
 
   const disconnect = useCallback(() => {
-    const c = getConnect();
-    if (!c) return;
-    c.userSession.signUserOut();
+    const userSession = sessionRef.current;
+    if (!userSession) return;
+    userSession.signUserOut();
     setAddress(null);
   }, []);
 
