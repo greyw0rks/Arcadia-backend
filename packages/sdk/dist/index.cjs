@@ -309,17 +309,21 @@ function createArcadeClient(options = {}) {
   const publicClient = createCeloClient(rpcUrl);
   const reader = createArcadeReader(options);
   function walletClient(privateKey) {
-    return (0, import_viem2.createWalletClient)({
-      account: (0, import_accounts.privateKeyToAccount)(privateKey),
+    const account = (0, import_accounts.privateKeyToAccount)(privateKey);
+    const wc = (0, import_viem2.createWalletClient)({
+      account,
       chain: celoMainnet,
       transport: (0, import_viem2.http)(rpcUrl)
     });
+    return { wc, account };
   }
   return {
     ...reader,
     async approve(playerKey, amount) {
-      const wc = walletClient(playerKey);
+      const { wc, account } = walletClient(playerKey);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.tokenAddress,
         abi: ERC20_ABI,
         functionName: "approve",
@@ -327,9 +331,11 @@ function createArcadeClient(options = {}) {
       });
     },
     async startSession(playerKey, sessionId, stake, maxRounds) {
-      const wc = walletClient(playerKey);
+      const { wc, account } = walletClient(playerKey);
       const stakeWei = (0, import_viem2.parseUnits)(stake, meta.decimals);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "startSession",
@@ -337,8 +343,10 @@ function createArcadeClient(options = {}) {
       });
     },
     async settle(playerKey, { sessionId, multiplierBp, signature }) {
-      const wc = walletClient(playerKey);
+      const { wc, account } = walletClient(playerKey);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "settle",
@@ -346,8 +354,10 @@ function createArcadeClient(options = {}) {
       });
     },
     async cancelExpired(callerKey, sessionId) {
-      const wc = walletClient(callerKey);
+      const { wc, account } = walletClient(callerKey);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "cancelExpired",

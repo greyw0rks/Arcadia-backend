@@ -1,7 +1,12 @@
 {
-  "name": "quizarcade-web",
+  "name": "@greyw0rks/quizarcade",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "An arcade of skill games where your stake rides a live multiplier. Built onchain.",
+  "type": "module",
+  "workspaces": [
+    "packages/sdk"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

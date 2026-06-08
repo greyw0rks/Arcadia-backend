@@ -4,7 +4,7 @@ import {
   createCeloClient,
   parseStake,
   signEvmSettlement
-} from "./chunk-QDQLYRXI.js";
+} from "./chunk-CLWCVFPD.js";
 import "./chunk-6RXO2AGS.js";
 export {
   createArcadeClient,

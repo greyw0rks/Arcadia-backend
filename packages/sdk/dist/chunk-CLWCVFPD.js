@@ -97,17 +97,21 @@ function createArcadeClient(options = {}) {
   const publicClient = createCeloClient(rpcUrl);
   const reader = createArcadeReader(options);
   function walletClient(privateKey) {
-    return createWalletClient({
-      account: privateKeyToAccount(privateKey),
+    const account = privateKeyToAccount(privateKey);
+    const wc = createWalletClient({
+      account,
       chain: celoMainnet,
       transport: http(rpcUrl)
     });
+    return { wc, account };
   }
   return {
     ...reader,
     async approve(playerKey, amount) {
-      const wc = walletClient(playerKey);
+      const { wc, account } = walletClient(playerKey);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.tokenAddress,
         abi: ERC20_ABI,
         functionName: "approve",
@@ -115,9 +119,11 @@ function createArcadeClient(options = {}) {
       });
     },
     async startSession(playerKey, sessionId, stake, maxRounds) {
-      const wc = walletClient(playerKey);
+      const { wc, account } = walletClient(playerKey);
       const stakeWei = parseUnits(stake, meta.decimals);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "startSession",
@@ -125,8 +131,10 @@ function createArcadeClient(options = {}) {
       });
     },
     async settle(playerKey, { sessionId, multiplierBp, signature }) {
-      const wc = walletClient(playerKey);
+      const { wc, account } = walletClient(playerKey);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "settle",
@@ -134,8 +142,10 @@ function createArcadeClient(options = {}) {
       });
     },
     async cancelExpired(callerKey, sessionId) {
-      const wc = walletClient(callerKey);
+      const { wc, account } = walletClient(callerKey);
       return wc.writeContract({
+        account,
+        chain: celoMainnet,
         address: meta.arcadeAddress,
         abi: ARCADE_ABI,
         functionName: "cancelExpired",
