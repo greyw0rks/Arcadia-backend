@@ -1,6 +1,6 @@
 {
   "name": "@greyw0rks/arcadia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK for integrating with Arcadia — a multi-chain (Celo + Stacks) quiz arcade protocol with EIP-712 settlement",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -60,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/greyw0rks/arcadia.git"
+    "url": "git+https://github.com/greyw0rks/arcadia.git"
   },
   "bugs": {
     "url": "https://github.com/greyw0rks/arcadia/issues"
