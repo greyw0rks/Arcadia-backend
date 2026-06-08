@@ -1,0 +1,95 @@
+{
+  "name": "@greyw0rks/arcadia",
+  "version": "1.0.0",
+  "description": "SDK for integrating with Arcadia — a multi-chain (Celo + Stacks) quiz arcade protocol with EIP-712 settlement",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./celo": {
+      "types": "./dist/celo.d.ts",
+      "import": "./dist/celo.js",
+      "require": "./dist/celo.cjs"
+    },
+    "./stacks": {
+      "types": "./dist/stacks.d.ts",
+      "import": "./dist/stacks.js",
+      "require": "./dist/stacks.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsup src/index.ts src/celo.ts src/stacks.ts --format esm,cjs --dts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "sdk:build": "npm run build --workspace=packages/sdk",
+    "sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk",
+    "sdk:typecheck": "npm run typecheck --workspace=packages/sdk"
+  },
+  "keywords": [
+    "arcadia",
+    "celo",
+    "stacks",
+    "web3",
+    "quiz",
+    "arcade",
+    "eip712",
+    "settlement",
+    "cusd",
+    "usdc",
+    "usdt"
+  ],
+  "author": "greyw0rks",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greyw0rks/arcadia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/greyw0rks/arcadia/issues"
+  },
+  "homepage": "https://github.com/greyw0rks/arcadia#readme",
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "peerDependencies": {
+    "@stacks/network": ">=6.0.0",
+    "@stacks/transactions": ">=6.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@stacks/network": {
+      "optional": true
+    },
+    "@stacks/transactions": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@stacks/network": "^6.17.0",
+    "@stacks/transactions": "^6.17.0",
+    "@types/node": "^20.0.0",
+    "rimraf": "^6.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/sdk"
+  ]
+}
