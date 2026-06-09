@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "description": "An arcade of skill games where your stake rides a live multiplier. Built onchain.",
+  "type": "module",
   "workspaces": [
     "packages/sdk"
   ],
@@ -10,7 +11,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "vitest run"
+    "test": "vitest run",
+    "sdk:build": "npm run build --workspace=packages/sdk",
+"sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.11",

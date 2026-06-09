@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Install package
-        run: npm i @greyw0rks/quizarcade@latest
+        run: npm i @greyw0rks/arcadia
