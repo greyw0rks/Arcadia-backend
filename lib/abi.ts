@@ -56,6 +56,32 @@ export const ARCADE_ABI = [
     inputs: [],
     outputs: [{ name: "", type: "uint256" }],
   },
+  // Events the leaderboard/profile indexer reads (see server/leaderboard.ts). SessionStarted carries
+  // the gross + effective stake; SessionSettled carries the final multiplier + payout. Joined by
+  // sessionId, the pair yields every completed game's stake/outcome.
+  {
+    type: "event",
+    name: "SessionStarted",
+    inputs: [
+      { name: "sessionId", type: "bytes32", indexed: true },
+      { name: "player", type: "address", indexed: true },
+      { name: "stake", type: "uint256", indexed: false },
+      { name: "effectiveStake", type: "uint256", indexed: false },
+      { name: "reserve", type: "uint256", indexed: false },
+      { name: "maxRounds", type: "uint8", indexed: false },
+      { name: "expiry", type: "uint64", indexed: false },
+    ],
+  },
+  {
+    type: "event",
+    name: "SessionSettled",
+    inputs: [
+      { name: "sessionId", type: "bytes32", indexed: true },
+      { name: "player", type: "address", indexed: true },
+      { name: "multiplierBp", type: "uint256", indexed: false },
+      { name: "payout", type: "uint256", indexed: false },
+    ],
+  },
 ] as const;
 
 // Standard ERC20 subset (approve / allowance / balance / decimals).
