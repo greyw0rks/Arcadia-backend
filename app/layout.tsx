@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./mobile.css";
 import { Providers } from "./providers";
-import { Header } from "../components/Header";
 
 export const metadata: Metadata = {
   title: "Arcadia — stake-to-play games on Celo",
@@ -25,7 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" href="/logo.svg" />
       </head>
       <body>
-        <Header />
         <Providers>{children}</Providers>
       </body>
     </html>
