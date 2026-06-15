@@ -98,12 +98,6 @@ export default function ProfilePage() {
   if (loading || !profile) {
     return (
       <div className="container">
-        <div className="topbar">
-          <div className="brand" style={{ cursor: "pointer" }} onClick={() => router.push("/")}>
-            Arcadia
-          </div>
-          <ConnectButton showBalance={false} chainStatus="icon" />
-        </div>
         <div className="panel center" style={{ marginTop: 32 }}>
           <p className="muted">Loading profile...</p>
         </div>
@@ -120,8 +114,18 @@ export default function ProfilePage() {
   return (
     <div className="container">
       <div className="topbar">
-        <div className="brand" style={{ cursor: "pointer" }} onClick={() => router.push("/")}>
-          Arcadia
+        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+          <button
+            className="btn ghost"
+            onClick={() => router.push("/games")}
+            style={{ padding: "12px 16px", fontSize: "20px" }}
+            title="Back to games"
+          >
+            ←
+          </button>
+          <div className="brand" style={{ cursor: "pointer" }} onClick={() => router.push("/games")}>
+            Arcadia
+          </div>
         </div>
         <ConnectButton showBalance={false} chainStatus="icon" />
       </div>

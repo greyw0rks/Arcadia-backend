@@ -32,12 +32,14 @@ export default function WelcomePage() {
     if (currentSlide < slides.length - 1) {
       setCurrentSlide(currentSlide + 1);
     } else {
-      router.push("/games");
+      localStorage.setItem('arcadia_welcome_seen', 'true');
+      router.replace("/games");
     }
   };
 
   const handleSkip = () => {
-    router.push("/games");
+    localStorage.setItem('arcadia_welcome_seen', 'true');
+    router.replace("/games");
   };
 
   return (

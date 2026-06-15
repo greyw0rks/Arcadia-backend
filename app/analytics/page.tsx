@@ -73,22 +73,6 @@ export default function AnalyticsPage() {
   if (loading || !analytics) {
     return (
       <div className="container">
-        <div className="topbar">
-          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-            <button
-              className="btn ghost"
-              onClick={() => router.back()}
-              style={{ padding: "12px 16px", fontSize: "20px" }}
-              title="Go back"
-            >
-              ←
-            </button>
-            <div className="brand" style={{ cursor: "pointer" }} onClick={() => router.push("/games")}>
-              Arcadia
-            </div>
-          </div>
-          <ConnectButton showBalance={false} chainStatus="icon" />
-        </div>
         <div className="panel center" style={{ marginTop: 32 }}>
           <p className="muted">Loading analytics...</p>
         </div>
@@ -266,7 +250,7 @@ export default function AnalyticsPage() {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: 48 }}>
-          <button className="btn" onClick={() => router.push("/")}>
+          <button className="btn" onClick={() => router.push("/games")}>
             Back to Games
           </button>
         </div>
