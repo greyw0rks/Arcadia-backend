@@ -1,5 +1,6 @@
 import { GameModule, RoundState } from "./types";
 import { GEO_TIME_LIMIT_SEC } from "../config";
+import { shuffle, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
 import locations from "../../data/geo.json";
 
 interface GeoEntry {
@@ -8,29 +9,16 @@ interface GeoEntry {
   decoys: string[];
   image: string; // served from /public (e.g. /geo/eiffel.jpg)
   source: string;
+  tier?: Tier; // optional difficulty tag; absent => medium
 }
 
 const BANK = locations as GeoEntry[];
+const TIERS = BANK.map((e) => tierNum(e.tier));
 
-function shuffle<T>(arr: T[], seed: number): T[] {
-  const a = [...arr];
-  let s = seed || 1;
-  for (let i = a.length - 1; i > 0; i--) {
-    s = (s * 1103515245 + 12345) & 0x7fffffff;
-    const j = s % (i + 1);
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-// Seeded per-session permutation: no repeats within a session (bank >= maxRounds) and a different
-// ordering per session. Mirrors choiceGame.pickIndex.
-function pickEntry(roundIndex: number, seed: number): GeoEntry {
-  const order = shuffle(
-    Array.from({ length: BANK.length }, (_, i) => i),
-    seed
-  );
-  return BANK[order[roundIndex % BANK.length]];
+// Tier-aware, seeded, per-session, no-repeat pick (shared with the choice games). A higher bet draws
+// harder/obscure locations first; ordering differs per session.
+function pickEntry(roundIndex: number, seed: number, difficulty?: number): GeoEntry {
+  return BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
 }
 
 // Mapillary swap-in: to use real street-view imagery instead of this curated landmark set, replace
@@ -45,8 +33,8 @@ export const geoModule: GameModule = {
   bankSize: BANK.length,
   available: true,
 
-  buildRound(roundIndex: number, seed: number): RoundState {
-    const entry = pickEntry(roundIndex, seed);
+  buildRound(roundIndex: number, seed: number, difficulty?: number): RoundState {
+    const entry = pickEntry(roundIndex, seed, difficulty);
     const options = shuffle([entry.answer, ...entry.decoys], seed + roundIndex + 1);
     const correctIndex = options.indexOf(entry.answer);
 

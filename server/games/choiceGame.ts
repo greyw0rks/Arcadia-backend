@@ -53,6 +53,42 @@ export function pickIndex(bankLength: number, roundIndex: number, seed: number):
   return order[roundIndex % bankLength];
 }
 
+// Difficulty tiers a bank entry can carry. Absent => "medium".
+export type Tier = "easy" | "medium" | "hard";
+export function tierNum(t?: Tier): number {
+  return t === "easy" ? 0 : t === "hard" ? 2 : 1;
+}
+
+/** Target tier (0/1/2) for a bet-driven difficulty fraction in [0,1]. */
+function targetTier(difficulty: number): number {
+  return difficulty < 0.34 ? 0 : difficulty < 0.67 ? 1 : 2;
+}
+
+/**
+ * Tier-aware sibling of `pickIndex`. Builds a full no-repeat permutation of the bank, FRONT-LOADED by
+ * the tier matching `difficulty`: a low bet sees easy entries first, a max bet sees hard ones first,
+ * and longer sessions bleed into adjacent tiers. Because the result is still a permutation of the
+ * whole bank, a session never repeats an entry while roundIndex < bankLength — same guarantee as
+ * pickIndex. `tiers[i]` is entry i's tier number (see tierNum); missing/medium entries sort to the
+ * middle, so partially-tagged banks still behave (hard entries lead at high bets).
+ */
+export function tieredPickIndex(
+  tiers: number[],
+  roundIndex: number,
+  seed: number,
+  difficulty = 0
+): number {
+  const target = targetTier(difficulty);
+  // Seeded base order first, then a STABLE sort by distance from the target tier. V8's Array.sort is
+  // stable, so the seeded variety is preserved within each tier — no fixed ordering across sessions.
+  const order = shuffle(
+    Array.from({ length: tiers.length }, (_, i) => i),
+    seed
+  );
+  order.sort((a, b) => Math.abs((tiers[a] ?? 1) - target) - Math.abs((tiers[b] ?? 1) - target));
+  return order[roundIndex % tiers.length];
+}
+
 export function makeChoiceGame(
   meta: ChoiceMeta,
   build: (roundIndex: number, seed: number, difficulty?: number) => ChoiceRound

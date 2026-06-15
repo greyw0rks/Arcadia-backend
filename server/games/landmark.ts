@@ -1,4 +1,4 @@
-import { makeChoiceGame, pickIndex } from "./choiceGame";
+import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
 import { GEO_TIME_LIMIT_SEC } from "../config";
 import landmarks from "../../data/landmarks.json";
 import geo from "../../data/geo.json";
@@ -7,6 +7,7 @@ interface Landmark {
   id: string;
   landmark: string;
   decoys: string[];
+  tier?: Tier; // optional difficulty tag; absent => medium
 }
 interface GeoEntry {
   id: string;
@@ -17,6 +18,7 @@ interface GeoEntry {
 // landmark entries whose image actually exists in geo.json.
 const IMAGE_BY_ID = new Map((geo as GeoEntry[]).map((g) => [g.id, g.image]));
 const BANK = (landmarks as Landmark[]).filter((l) => IMAGE_BY_ID.has(l.id));
+const TIERS = BANK.map((l) => tierNum(l.tier));
 
 export const landmarkModule = makeChoiceGame(
   {
@@ -28,8 +30,8 @@ export const landmarkModule = makeChoiceGame(
     timeLimitSec: GEO_TIME_LIMIT_SEC,
     bankSize: BANK.length,
   },
-  (roundIndex, seed) => {
-    const e = BANK[pickIndex(BANK.length, roundIndex, seed)];
+  (roundIndex, seed, difficulty) => {
+    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
     return {
       prompt: "Which landmark is this?",
       imageUrl: IMAGE_BY_ID.get(e.id),

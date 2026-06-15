@@ -28,33 +28,37 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "session already finalized" }, { status: 409 });
   }
 
-  // On-chain funding gate: no stake, no questions. The read also yields the REAL staked amount and
-  // round count, which we use as the authoritative source for bet-scaled difficulty.
-  const onchain = await fetchOnchain(session);
-  if (!onchain) {
-    return NextResponse.json({ error: "session not funded on-chain yet" }, { status: 402 });
-  }
-
   const game = getGame(session.gameId)!;
 
-  // Reconcile once, before the first round is built: derive difficulty from the on-chain stake and
-  // trust the on-chain round count over any client-supplied value. Guarded so repeated polls and the
-  // client's funding-gate retry loop never recompute or mutate mid-game.
-  if (session.difficulty === undefined) {
-    // Stake-token decimals drive the base-unit math: cUSD is 18-dec, USDC/USDT are 6-dec, so using a
-    // fixed CHAINS.celo.decimals (18) would mis-scale difficulty for the 6-dec tokens.
-    const decimals =
-      session.chain === "celo"
-        ? celoTokenMeta(session.token).decimals
-        : CHAINS[session.chain].decimals;
-    const maxStakeBase = parseUnits(String(MAX_STAKE[session.chain]), decimals);
-    session.difficulty = difficultyFractionBaseUnits(
-      onchain.effectiveStake,
-      maxStakeBase,
-      DEFAULT_RAKE_BPS
-    );
-    if (onchain.maxRounds > 0) {
-      session.maxRounds = Math.min(onchain.maxRounds, game.bankSize);
+  // Demo sessions have no on-chain stake: skip the funding gate entirely. Their difficulty and round
+  // count are fixed at creation (see /api/session). Real sessions must pass the gate below.
+  if (!session.isDemo) {
+    // On-chain funding gate: no stake, no questions. The read also yields the REAL staked amount and
+    // round count, which we use as the authoritative source for bet-scaled difficulty.
+    const onchain = await fetchOnchain(session);
+    if (!onchain) {
+      return NextResponse.json({ error: "session not funded on-chain yet" }, { status: 402 });
+    }
+
+    // Reconcile once, before the first round is built: derive difficulty from the on-chain stake and
+    // trust the on-chain round count over any client-supplied value. Guarded so repeated polls and the
+    // client's funding-gate retry loop never recompute or mutate mid-game.
+    if (session.difficulty === undefined) {
+      // Stake-token decimals drive the base-unit math: cUSD is 18-dec, USDC/USDT are 6-dec, so using a
+      // fixed CHAINS.celo.decimals (18) would mis-scale difficulty for the 6-dec tokens.
+      const decimals =
+        session.chain === "celo"
+          ? celoTokenMeta(session.token).decimals
+          : CHAINS[session.chain].decimals;
+      const maxStakeBase = parseUnits(String(MAX_STAKE[session.chain]), decimals);
+      session.difficulty = difficultyFractionBaseUnits(
+        onchain.effectiveStake,
+        maxStakeBase,
+        DEFAULT_RAKE_BPS
+      );
+      if (onchain.maxRounds > 0) {
+        session.maxRounds = Math.min(onchain.maxRounds, game.bankSize);
+      }
     }
   }
 

@@ -118,8 +118,8 @@ describe("roundsFor", () => {
 describe("scaleTimer", () => {
   it("shrinks the base timer as difficulty rises, with a floor", () => {
     expect(scaleTimer(20, 0)).toBe(20); // full time at min stake
-    expect(scaleTimer(20, 0.5)).toBe(16); // 20 * (1 - 0.4*0.5) = 16 at mid stake
-    expect(scaleTimer(20, 1)).toBe(12); // 20 * (1 - 0.4) = 12 at max stake
-    expect(scaleTimer(6, 1)).toBe(MIN_TIMER_SEC); // floored, never below MIN_TIMER_SEC
+    expect(scaleTimer(20, 0.5)).toBe(15); // 20 * (1 - 0.55*0.5) = 14.5 → 15 at mid stake
+    expect(scaleTimer(20, 1)).toBe(9); // 20 * (1 - 0.55) = 9 at max stake
+    expect(scaleTimer(6, 1)).toBe(MIN_TIMER_SEC); // 6*0.45=2.7 → floored to MIN_TIMER_SEC
   });
 });

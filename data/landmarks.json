@@ -1,51 +1,882 @@
 [
-  { "id": "eiffel", "landmark": "Eiffel Tower", "decoys": ["Blackpool Tower", "Tokyo Tower", "Berlin TV Tower"] },
-  { "id": "colosseum", "landmark": "The Colosseum", "decoys": ["Roman Forum", "Parthenon", "Pula Arena"] },
-  { "id": "opera", "landmark": "Sydney Opera House", "decoys": ["Guggenheim Bilbao", "Walt Disney Concert Hall", "Esplanade Singapore"] },
-  { "id": "taj", "landmark": "Taj Mahal", "decoys": ["Humayun's Tomb", "Badshahi Mosque", "Sheikh Zayed Mosque"] },
-  { "id": "ggbridge", "landmark": "Golden Gate Bridge", "decoys": ["Brooklyn Bridge", "Tower Bridge", "Bay Bridge"] },
-  { "id": "liberty", "landmark": "Statue of Liberty", "decoys": ["Christ the Redeemer", "The Motherland Calls", "Colossus of Rhodes"] },
-  { "id": "bigben", "landmark": "Big Ben", "decoys": ["Westminster Abbey", "Spasskaya Tower", "Rajabai Clock Tower"] },
-  { "id": "redeemer", "landmark": "Christ the Redeemer", "decoys": ["Statue of Liberty", "Cristo de la Concordia", "The Motherland Calls"] },
-  { "id": "brandenburg", "landmark": "Brandenburg Gate", "decoys": ["Arc de Triomphe", "India Gate", "Washington Square Arch"] },
-  { "id": "burj", "landmark": "Burj Khalifa", "decoys": ["Shanghai Tower", "Petronas Towers", "Taipei 101"] },
-  { "id": "petra", "landmark": "Petra (Al-Khazneh)", "decoys": ["Abu Simbel", "Lycian Tombs", "Ellora Caves"] },
-  { "id": "machu", "landmark": "Machu Picchu", "decoys": ["Sacsayhuamán", "Tikal", "Chichen Itza"] },
-  { "id": "pisa", "landmark": "Leaning Tower of Pisa", "decoys": ["Giralda", "Big Ben", "St Mark's Campanile"] },
-  { "id": "sagrada", "landmark": "Sagrada Família", "decoys": ["Cologne Cathedral", "Notre-Dame", "Milan Cathedral"] },
-  { "id": "acropolis", "landmark": "The Acropolis", "decoys": ["Roman Forum", "Temple of Karnak", "Ephesus"] },
-  { "id": "kremlin", "landmark": "Saint Basil's Cathedral", "decoys": ["Cologne Cathedral", "Hagia Sophia", "Church of the Savior on Blood"] },
-  { "id": "forbidden", "landmark": "The Forbidden City", "decoys": ["Gyeongbokgung", "Potala Palace", "Temple of Heaven"] },
-  { "id": "greatwall", "landmark": "Great Wall of China", "decoys": ["Hadrian's Wall", "Walls of Constantinople", "Sacsayhuamán"] },
-  { "id": "fuji", "landmark": "Mount Fuji", "decoys": ["Mount Kilimanjaro", "Mount Rainier", "Mount Etna"] },
-  { "id": "senso", "landmark": "Sensō-ji Temple", "decoys": ["Kiyomizu-dera", "Tōdai-ji", "Meiji Shrine"] },
-  { "id": "angkor", "landmark": "Angkor Wat", "decoys": ["Borobudur", "Bagan", "Prambanan"] },
-  { "id": "marina", "landmark": "Marina Bay Sands", "decoys": ["Burj Al Arab", "The Venetian Macao", "Atlantis The Palm"] },
-  { "id": "petronas", "landmark": "Petronas Towers", "decoys": ["Burj Khalifa", "Taipei 101", "Shanghai Tower"] },
-  { "id": "gizapyramid", "landmark": "Great Pyramid of Giza", "decoys": ["Pyramid of the Sun", "Chichen Itza", "Step Pyramid of Djoser"] },
-  { "id": "tablemountain", "landmark": "Table Mountain", "decoys": ["Sugarloaf Mountain", "The Rock of Gibraltar", "Mount Roraima"] },
-  { "id": "neuschwanstein", "landmark": "Neuschwanstein Castle", "decoys": ["Edinburgh Castle", "Château de Chambord", "Hohenzollern Castle"] },
-  { "id": "stbasil", "landmark": "Red Square", "decoys": ["Tiananmen Square", "St Peter's Square", "Times Square"] },
-  { "id": "charlesbridge", "landmark": "Charles Bridge", "decoys": ["Ponte Vecchio", "Rialto Bridge", "Chain Bridge"] },
-  { "id": "atomium", "landmark": "Atomium", "decoys": ["Space Needle", "Unisphere", "Biosphere Montreal"] },
-  { "id": "windmills", "landmark": "Kinderdijk Windmills", "decoys": ["Zaanse Schans", "Mykonos Windmills", "Consuegra Windmills"] },
-  { "id": "littlemermaid", "landmark": "The Little Mermaid", "decoys": ["Manneken Pis", "Mannekin", "Charging Bull"] },
-  { "id": "bluemosque", "landmark": "Blue Mosque", "decoys": ["Sheikh Zayed Mosque", "Badshahi Mosque", "Hassan II Mosque"] },
-  { "id": "hagia", "landmark": "Hagia Sophia", "decoys": ["Blue Mosque", "St Mark's Basilica", "Saint Basil's Cathedral"] },
-  { "id": "burjalarab", "landmark": "Burj Al Arab", "decoys": ["Marina Bay Sands", "Atlantis The Palm", "Emirates Palace"] },
-  { "id": "westernwall", "landmark": "Western Wall", "decoys": ["Dome of the Rock", "Wailing Tower", "Via Dolorosa"] },
-  { "id": "chichen", "landmark": "Chichen Itza", "decoys": ["Tikal", "Machu Picchu", "Teotihuacan"] },
-  { "id": "cn", "landmark": "CN Tower", "decoys": ["Space Needle", "Willis Tower", "Sky Tower"] },
-  { "id": "spaceneedle", "landmark": "Space Needle", "decoys": ["CN Tower", "Atomium", "Sunsphere"] },
-  { "id": "hollywood", "landmark": "Hollywood Sign", "decoys": ["Walk of Fame", "Capitol Records Building", "Griffith Observatory"] },
-  { "id": "whitehouse", "landmark": "The White House", "decoys": ["United States Capitol", "Buckingham Palace", "The Pentagon"] },
-  { "id": "gatewaymo", "landmark": "Gateway Arch", "decoys": ["Arc de Triomphe", "Brandenburg Gate", "Marble Arch"] },
-  { "id": "obelisco", "landmark": "Obelisco de Buenos Aires", "decoys": ["Washington Monument", "Cleopatra's Needle", "Luxor Obelisk"] },
-  { "id": "moai", "landmark": "Moai Statues", "decoys": ["Olmec Heads", "Terracotta Army", "Stone Spheres of Costa Rica"] },
-  { "id": "uluru", "landmark": "Uluru (Ayers Rock)", "decoys": ["Devils Tower", "The Rock of Gibraltar", "Mount Augustus"] },
-  { "id": "skytower", "landmark": "Sky Tower", "decoys": ["CN Tower", "Eureka Tower", "Space Needle"] },
-  { "id": "wat", "landmark": "Wat Arun", "decoys": ["Wat Pho", "Shwedagon Pagoda", "Angkor Wat"] },
-  { "id": "gateofindia", "landmark": "Gateway of India", "decoys": ["India Gate", "Arc de Triomphe", "Brandenburg Gate"] },
-  { "id": "tianjin", "landmark": "Oriental Pearl Tower", "decoys": ["Canton Tower", "Tokyo Skytree", "N Seoul Tower"] },
-  { "id": "nblue", "landmark": "Nyhavn", "decoys": ["Bryggen", "Grachten of Amsterdam", "Burano"] }
+  {
+    "id": "eiffel",
+    "landmark": "Eiffel Tower",
+    "decoys": [
+      "Blackpool Tower",
+      "Tokyo Tower",
+      "Berlin TV Tower"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "colosseum",
+    "landmark": "The Colosseum",
+    "decoys": [
+      "Roman Forum",
+      "Parthenon",
+      "Pula Arena"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "opera",
+    "landmark": "Sydney Opera House",
+    "decoys": [
+      "Guggenheim Bilbao",
+      "Walt Disney Concert Hall",
+      "Esplanade Singapore"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "taj",
+    "landmark": "Taj Mahal",
+    "decoys": [
+      "Humayun's Tomb",
+      "Badshahi Mosque",
+      "Sheikh Zayed Mosque"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "ggbridge",
+    "landmark": "Golden Gate Bridge",
+    "decoys": [
+      "Brooklyn Bridge",
+      "Tower Bridge",
+      "Bay Bridge"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "liberty",
+    "landmark": "Statue of Liberty",
+    "decoys": [
+      "Christ the Redeemer",
+      "The Motherland Calls",
+      "Colossus of Rhodes"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "bigben",
+    "landmark": "Big Ben",
+    "decoys": [
+      "Westminster Abbey",
+      "Spasskaya Tower",
+      "Rajabai Clock Tower"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "redeemer",
+    "landmark": "Christ the Redeemer",
+    "decoys": [
+      "Statue of Liberty",
+      "Cristo de la Concordia",
+      "The Motherland Calls"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "brandenburg",
+    "landmark": "Brandenburg Gate",
+    "decoys": [
+      "Arc de Triomphe",
+      "India Gate",
+      "Washington Square Arch"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "burj",
+    "landmark": "Burj Khalifa",
+    "decoys": [
+      "Shanghai Tower",
+      "Petronas Towers",
+      "Taipei 101"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "petra",
+    "landmark": "Petra (Al-Khazneh)",
+    "decoys": [
+      "Abu Simbel",
+      "Lycian Tombs",
+      "Ellora Caves"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "machu",
+    "landmark": "Machu Picchu",
+    "decoys": [
+      "Sacsayhuamán",
+      "Tikal",
+      "Chichen Itza"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "pisa",
+    "landmark": "Leaning Tower of Pisa",
+    "decoys": [
+      "Giralda",
+      "Big Ben",
+      "St Mark's Campanile"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "sagrada",
+    "landmark": "Sagrada Família",
+    "decoys": [
+      "Cologne Cathedral",
+      "Notre-Dame",
+      "Milan Cathedral"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "acropolis",
+    "landmark": "The Acropolis",
+    "decoys": [
+      "Roman Forum",
+      "Temple of Karnak",
+      "Ephesus"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "kremlin",
+    "landmark": "Saint Basil's Cathedral",
+    "decoys": [
+      "Cologne Cathedral",
+      "Hagia Sophia",
+      "Church of the Savior on Blood"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "forbidden",
+    "landmark": "The Forbidden City",
+    "decoys": [
+      "Gyeongbokgung",
+      "Potala Palace",
+      "Temple of Heaven"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "greatwall",
+    "landmark": "Great Wall of China",
+    "decoys": [
+      "Hadrian's Wall",
+      "Walls of Constantinople",
+      "Sacsayhuamán"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "fuji",
+    "landmark": "Mount Fuji",
+    "decoys": [
+      "Mount Kilimanjaro",
+      "Mount Rainier",
+      "Mount Etna"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "senso",
+    "landmark": "Sensō-ji Temple",
+    "decoys": [
+      "Kiyomizu-dera",
+      "Tōdai-ji",
+      "Meiji Shrine"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "angkor",
+    "landmark": "Angkor Wat",
+    "decoys": [
+      "Borobudur",
+      "Bagan",
+      "Prambanan"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "marina",
+    "landmark": "Marina Bay Sands",
+    "decoys": [
+      "Burj Al Arab",
+      "The Venetian Macao",
+      "Atlantis The Palm"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "petronas",
+    "landmark": "Petronas Towers",
+    "decoys": [
+      "Burj Khalifa",
+      "Taipei 101",
+      "Shanghai Tower"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "gizapyramid",
+    "landmark": "Great Pyramid of Giza",
+    "decoys": [
+      "Pyramid of the Sun",
+      "Chichen Itza",
+      "Step Pyramid of Djoser"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "tablemountain",
+    "landmark": "Table Mountain",
+    "decoys": [
+      "Sugarloaf Mountain",
+      "The Rock of Gibraltar",
+      "Mount Roraima"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "neuschwanstein",
+    "landmark": "Neuschwanstein Castle",
+    "decoys": [
+      "Edinburgh Castle",
+      "Château de Chambord",
+      "Hohenzollern Castle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "stbasil",
+    "landmark": "Red Square",
+    "decoys": [
+      "Tiananmen Square",
+      "St Peter's Square",
+      "Times Square"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "charlesbridge",
+    "landmark": "Charles Bridge",
+    "decoys": [
+      "Ponte Vecchio",
+      "Rialto Bridge",
+      "Chain Bridge"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "atomium",
+    "landmark": "Atomium",
+    "decoys": [
+      "Space Needle",
+      "Unisphere",
+      "Biosphere Montreal"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "windmills",
+    "landmark": "Kinderdijk Windmills",
+    "decoys": [
+      "Zaanse Schans",
+      "Mykonos Windmills",
+      "Consuegra Windmills"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "littlemermaid",
+    "landmark": "The Little Mermaid",
+    "decoys": [
+      "Manneken Pis",
+      "Mannekin",
+      "Charging Bull"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "bluemosque",
+    "landmark": "Blue Mosque",
+    "decoys": [
+      "Sheikh Zayed Mosque",
+      "Badshahi Mosque",
+      "Hassan II Mosque"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "hagia",
+    "landmark": "Hagia Sophia",
+    "decoys": [
+      "Blue Mosque",
+      "St Mark's Basilica",
+      "Saint Basil's Cathedral"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "burjalarab",
+    "landmark": "Burj Al Arab",
+    "decoys": [
+      "Marina Bay Sands",
+      "Atlantis The Palm",
+      "Emirates Palace"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "westernwall",
+    "landmark": "Western Wall",
+    "decoys": [
+      "Dome of the Rock",
+      "Wailing Tower",
+      "Via Dolorosa"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "chichen",
+    "landmark": "Chichen Itza",
+    "decoys": [
+      "Tikal",
+      "Machu Picchu",
+      "Teotihuacan"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "cn",
+    "landmark": "CN Tower",
+    "decoys": [
+      "Space Needle",
+      "Willis Tower",
+      "Sky Tower"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "spaceneedle",
+    "landmark": "Space Needle",
+    "decoys": [
+      "CN Tower",
+      "Atomium",
+      "Sunsphere"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "hollywood",
+    "landmark": "Hollywood Sign",
+    "decoys": [
+      "Walk of Fame",
+      "Capitol Records Building",
+      "Griffith Observatory"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "whitehouse",
+    "landmark": "The White House",
+    "decoys": [
+      "United States Capitol",
+      "Buckingham Palace",
+      "The Pentagon"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "gatewaymo",
+    "landmark": "Gateway Arch",
+    "decoys": [
+      "Arc de Triomphe",
+      "Brandenburg Gate",
+      "Marble Arch"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "obelisco",
+    "landmark": "Obelisco de Buenos Aires",
+    "decoys": [
+      "Washington Monument",
+      "Cleopatra's Needle",
+      "Luxor Obelisk"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "moai",
+    "landmark": "Moai Statues",
+    "decoys": [
+      "Olmec Heads",
+      "Terracotta Army",
+      "Stone Spheres of Costa Rica"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "uluru",
+    "landmark": "Uluru (Ayers Rock)",
+    "decoys": [
+      "Devils Tower",
+      "The Rock of Gibraltar",
+      "Mount Augustus"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "skytower",
+    "landmark": "Sky Tower",
+    "decoys": [
+      "CN Tower",
+      "Eureka Tower",
+      "Space Needle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "wat",
+    "landmark": "Wat Arun",
+    "decoys": [
+      "Wat Pho",
+      "Shwedagon Pagoda",
+      "Angkor Wat"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "gateofindia",
+    "landmark": "Gateway of India",
+    "decoys": [
+      "India Gate",
+      "Arc de Triomphe",
+      "Brandenburg Gate"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "tianjin",
+    "landmark": "Oriental Pearl Tower",
+    "decoys": [
+      "Canton Tower",
+      "Tokyo Skytree",
+      "N Seoul Tower"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "nblue",
+    "landmark": "Nyhavn",
+    "decoys": [
+      "Bryggen",
+      "Grachten of Amsterdam",
+      "Burano"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "machupicchu",
+    "landmark": "Machu Picchu",
+    "decoys": [
+      "Chichen Itza",
+      "Tikal",
+      "Sacsayhuamán"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "borobudur",
+    "landmark": "Borobudur",
+    "decoys": [
+      "Angkor Wat",
+      "Bagan",
+      "Prambanan"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "bagan",
+    "landmark": "Bagan Temples",
+    "decoys": [
+      "Borobudur",
+      "Angkor Wat",
+      "Ayutthaya"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "prambanan",
+    "landmark": "Prambanan",
+    "decoys": [
+      "Borobudur",
+      "Angkor Wat",
+      "Bagan"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "himeji",
+    "landmark": "Himeji Castle",
+    "decoys": [
+      "Osaka Castle",
+      "Nijō Castle",
+      "Matsumoto Castle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "potala",
+    "landmark": "Potala Palace",
+    "decoys": [
+      "Tashilhunpo Monastery",
+      "Tiger's Nest",
+      "Jokhang Temple"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "alhambra",
+    "landmark": "Alhambra",
+    "decoys": [
+      "Mezquita of Córdoba",
+      "Seville Alcázar",
+      "Aljafería"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "montstmichel",
+    "landmark": "Mont-Saint-Michel",
+    "decoys": [
+      "St Michael's Mount",
+      "Rocamadour",
+      "Le Puy-en-Velay"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "matterhorn",
+    "landmark": "Matterhorn",
+    "decoys": [
+      "Mont Blanc",
+      "Eiger",
+      "Jungfrau"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "taipei101",
+    "landmark": "Taipei 101",
+    "decoys": [
+      "Petronas Towers",
+      "Shanghai Tower",
+      "Burj Khalifa"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "sheikhzayed",
+    "landmark": "Sheikh Zayed Grand Mosque",
+    "decoys": [
+      "Sultan Qaboos Mosque",
+      "Faisal Mosque",
+      "Blue Mosque"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "teotihuacan",
+    "landmark": "Teotihuacan",
+    "decoys": [
+      "Chichen Itza",
+      "Tikal",
+      "Monte Albán"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "tikal",
+    "landmark": "Tikal",
+    "decoys": [
+      "Chichen Itza",
+      "Teotihuacan",
+      "Palenque"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "niagara",
+    "landmark": "Niagara Falls",
+    "decoys": [
+      "Victoria Falls",
+      "Iguazu Falls",
+      "Angel Falls"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "victoriafalls",
+    "landmark": "Victoria Falls",
+    "decoys": [
+      "Niagara Falls",
+      "Iguazu Falls",
+      "Murchison Falls"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "grandcanyon",
+    "landmark": "Grand Canyon",
+    "decoys": [
+      "Bryce Canyon",
+      "Zion Canyon",
+      "Antelope Canyon"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "mountrushmore",
+    "landmark": "Mount Rushmore",
+    "decoys": [
+      "Crazy Horse Memorial",
+      "Stone Mountain",
+      "Mount Vernon"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "santorini",
+    "landmark": "Santorini",
+    "decoys": [
+      "Mykonos",
+      "Positano",
+      "Oia"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "dubrovnik",
+    "landmark": "Dubrovnik Old Town",
+    "decoys": [
+      "Kotor Old Town",
+      "Split's Diocletian's Palace",
+      "Mdina"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "meteora",
+    "landmark": "Meteora",
+    "decoys": [
+      "Mount Athos",
+      "Cappadocia",
+      "Sümela Monastery"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "edinburghcastle",
+    "landmark": "Edinburgh Castle",
+    "decoys": [
+      "Stirling Castle",
+      "Edinburgh's Holyrood Palace",
+      "Windsor Castle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "stonehenge",
+    "landmark": "Stonehenge",
+    "decoys": [
+      "Avebury",
+      "Carnac Stones",
+      "Newgrange"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "versailles",
+    "landmark": "Palace of Versailles",
+    "decoys": [
+      "Schönbrunn Palace",
+      "Royal Palace of Madrid",
+      "Sanssouci"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "florenceduomo",
+    "landmark": "Florence Cathedral (Duomo)",
+    "decoys": [
+      "Milan Cathedral",
+      "St Peter's Basilica",
+      "Siena Cathedral"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "terracotta",
+    "landmark": "Terracotta Army",
+    "decoys": [
+      "Forbidden City",
+      "Mogao Caves",
+      "Longmen Grottoes"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "gyeongbokgung",
+    "landmark": "Gyeongbokgung Palace",
+    "decoys": [
+      "Forbidden City",
+      "Changdeokgung",
+      "Nijō Castle"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "moraine",
+    "landmark": "Moraine Lake",
+    "decoys": [
+      "Lake Louise",
+      "Peyto Lake",
+      "Lake Bled"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "neuschwanstein2",
+    "landmark": "Hohenzollern Castle",
+    "decoys": [
+      "Neuschwanstein",
+      "Hohenwerfen Castle",
+      "Eltz Castle"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "towerbridge",
+    "landmark": "Tower Bridge",
+    "decoys": [
+      "London Bridge",
+      "Millennium Bridge",
+      "Brooklyn Bridge"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "colognecathedral",
+    "landmark": "Cologne Cathedral",
+    "decoys": [
+      "Milan Cathedral",
+      "Strasbourg Cathedral",
+      "Notre-Dame de Paris"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "sanmarco",
+    "landmark": "St Mark's Square",
+    "decoys": [
+      "Piazza Navona",
+      "Piazza del Duomo",
+      "St Peter's Square"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "leshan",
+    "landmark": "Leshan Giant Buddha",
+    "decoys": [
+      "Tian Tan Buddha",
+      "Spring Temple Buddha",
+      "Ushiku Daibutsu"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "zhangjiajie",
+    "landmark": "Zhangjiajie",
+    "decoys": [
+      "Guilin Karsts",
+      "Huangshan",
+      "Halong Bay"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "halongbay",
+    "landmark": "Ha Long Bay",
+    "decoys": [
+      "Phang Nga Bay",
+      "El Nido",
+      "Guilin"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "pamukkale",
+    "landmark": "Pamukkale",
+    "decoys": [
+      "Mammoth Hot Springs",
+      "Huanglong",
+      "Badab-e Surt"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "cappadocia",
+    "landmark": "Cappadocia",
+    "decoys": [
+      "Meteora",
+      "Bryce Canyon",
+      "Göreme"
+    ],
+    "tier": "medium"
+  },
+  {
+    "id": "abusimbel",
+    "landmark": "Abu Simbel",
+    "decoys": [
+      "Karnak Temple",
+      "Temple of Luxor",
+      "Valley of the Kings"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "registan",
+    "landmark": "Registan",
+    "decoys": [
+      "Imam Square",
+      "Bibi-Khanym Mosque",
+      "Kalyan Minaret"
+    ],
+    "tier": "hard"
+  },
+  {
+    "id": "plitvice",
+    "landmark": "Plitvice Lakes",
+    "decoys": [
+      "Krka Falls",
+      "Lake Bled",
+      "Kravice Falls"
+    ],
+    "tier": "hard"
+  }
 ]

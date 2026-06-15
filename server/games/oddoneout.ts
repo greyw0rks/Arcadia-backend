@@ -1,12 +1,14 @@
-import { makeChoiceGame, pickIndex } from "./choiceGame";
+import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
 import bank from "../../data/oddoneout.json";
 
 interface OddQuestion {
   items: string[];
   odd: number;
   reason: string;
+  tier?: Tier;
 }
 const BANK = bank as OddQuestion[];
+const TIERS = BANK.map((e) => tierNum(e.tier));
 
 export const oddOneOutModule = makeChoiceGame(
   {
@@ -18,8 +20,8 @@ export const oddOneOutModule = makeChoiceGame(
     timeLimitSec: 15,
     bankSize: BANK.length,
   },
-  (roundIndex, seed) => {
-    const e = BANK[pickIndex(BANK.length, roundIndex, seed)];
+  (roundIndex, seed, difficulty) => {
+    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
     const correctItem = e.items[e.odd];
     return { prompt: "Which one doesn't belong?", correct: correctItem, options: e.items };
   }

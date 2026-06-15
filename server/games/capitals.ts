@@ -1,4 +1,4 @@
-import { makeChoiceGame, pickIndex } from "./choiceGame";
+import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
 import bank from "../../data/capitals.json";
 
 interface Capital {
@@ -6,8 +6,10 @@ interface Capital {
   flag: string;
   capital: string;
   decoys: string[];
+  tier?: Tier; // optional difficulty tag; absent => medium
 }
 const BANK = bank as Capital[];
+const TIERS = BANK.map((c) => tierNum(c.tier));
 
 export const capitalsModule = makeChoiceGame(
   {
@@ -16,11 +18,11 @@ export const capitalsModule = makeChoiceGame(
     description: "Name the capital city of each country. Each correct answer is +0.1x.",
     thumbnail: "🚩",
     maxRounds: 5,
-    timeLimitSec: 15,
+    timeLimitSec: 13,
     bankSize: BANK.length,
   },
-  (roundIndex, seed) => {
-    const e = BANK[pickIndex(BANK.length, roundIndex, seed)];
+  (roundIndex, seed, difficulty) => {
+    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
     return {
       prompt: `${e.flag}  What is the capital of ${e.country}?`,
       correct: e.capital,

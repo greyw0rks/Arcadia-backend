@@ -24,8 +24,8 @@ export const MAX_STAKE: Record<ChainId, number> = {
 export const MIN_ROUNDS = 3; // lowest-stake session length
 export const MAX_ROUNDS = 10; // highest-stake session length (well under the on-chain cap of 20)
 export const MAX_ROUNDS_CAP = 20; // mirror the contracts' maxRoundsCap; defensive clamp
-export const TIMER_SHRINK = 0.4; // at max difficulty the timer is (1 - 0.4) = 60% of its base
-export const MIN_TIMER_SEC = 5; // never give a player less than this, however high the bet
+export const TIMER_SHRINK = 0.55; // at max difficulty the timer is (1 - 0.55) = 45% of its base
+export const MIN_TIMER_SEC = 4; // never give a player less than this, however high the bet
 
 /** Clamp `n` into [lo, hi]. */
 function clamp(n: number, lo: number, hi: number): number {

@@ -1,7 +1,10 @@
 {
-  "name": "@greyw0rks/quizarcade",
-  "version": "0.1.0",
+  "name": "@greyw0rks/arcadia",
+  "version": "1.1.2",
   "private": false,
+    "publishConfig": {
+    "access": "public"
+  },
   "description": "An arcade of skill games where your stake rides a live multiplier. Built onchain.",
   "type": "module",
   "workspaces": [
@@ -15,6 +18,8 @@
     "sdk:build": "npm run build --workspace=packages/sdk",
 "sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk"
   },
+  "author": "greyw0rks",
+  "license": "MIT",
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.11",
     "@stacks/connect": "^8.2.6",

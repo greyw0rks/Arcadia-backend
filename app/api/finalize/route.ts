@@ -23,6 +23,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "unknown session" }, { status: 404 });
   }
 
+  // Demo sessions never settle on-chain — there's no stake to pay out. The client ends the game
+  // locally instead of calling this route, but reject defensively in case it does.
+  if (session.isDemo) {
+    return NextResponse.json({ error: "demo sessions are not settled" }, { status: 400 });
+  }
+
   // Require all rounds answered before signing a payout.
   if (session.answered < session.maxRounds) {
     return NextResponse.json(

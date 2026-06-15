@@ -20,6 +20,9 @@ export interface Session {
   // chain === "celo"; it selects the EIP-712 verifyingContract and the funding-gate contract to read.
   token?: CeloToken;
   player: string; // wallet address/principal that will stake (lowercased for EVM only)
+  // Free one-per-wallet trial: no stake, no on-chain tx, no payout. The funding gate and settlement
+  // are skipped for these (see /api/round and /api/finalize).
+  isDemo: boolean;
   maxRounds: number;
   // Bet-scaled difficulty in [0,1] (0 == min stake, 1 == max stake). Set from the REAL on-chain stake
   // when the first round is served (see /api/round). Until then it's undefined and rounds aren't built.
@@ -34,6 +37,26 @@ export interface Session {
 
 const SESSIONS = new Map<string, Session>();
 
+// Wallets that have already consumed their one free demo. NOTE: in-memory, so it resets on server
+// restart — consistent with the session store above. Swap for the same persistent store in production.
+const USED_DEMO = new Set<string>();
+
+/** Normalize a player id for demo-usage lookups (EVM is case-insensitive; Stacks is not). */
+function demoKey(player: string, chain: ChainId): string {
+  const p = chain === "celo" ? player.toLowerCase() : player;
+  return `${chain}:${p}`;
+}
+
+/** Has this wallet already used its one-time demo play? */
+export function hasUsedDemo(player: string, chain: ChainId): boolean {
+  return USED_DEMO.has(demoKey(player, chain));
+}
+
+/** Record that this wallet has consumed its one-time demo play. */
+export function markDemoUsed(player: string, chain: ChainId): void {
+  USED_DEMO.add(demoKey(player, chain));
+}
+
 /** 32-byte hex id usable directly as the contract's bytes32 sessionId. */
 function newSessionId(): `0x${string}` {
   return ("0x" + randomBytes(32).toString("hex")) as `0x${string}`;
@@ -44,7 +67,8 @@ export function createSession(
   player: string,
   maxRounds: number,
   chain: ChainId,
-  token?: CeloToken
+  token?: CeloToken,
+  opts?: { isDemo?: boolean; difficulty?: number }
 ): Session {
   const id = newSessionId();
   const s: Session = {
@@ -56,6 +80,9 @@ export function createSession(
     token: chain === "celo" ? token ?? DEFAULT_CELO_TOKEN : undefined,
     // EVM addresses are case-insensitive; Stacks principals are case-sensitive (c32check) — keep as-is.
     player: chain === "celo" ? player.toLowerCase() : player,
+    isDemo: opts?.isDemo ?? false,
+    // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.
+    difficulty: opts?.difficulty,
     maxRounds,
     roundIndex: 0,
     multiplierBp: initialMultiplierBp(),
