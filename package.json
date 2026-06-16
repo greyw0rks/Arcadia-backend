@@ -1,12 +1,23 @@
 {
   "name": "@greyw0rks/arcadia",
   "version": "1.1.2",
-  "private": false,
-    "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "description": "An arcade of skill games where your stake rides a live multiplier. Built onchain.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greyw0rks/Arcadia-backend.git"
+  },
+  "keywords": [
+    "arcadia",
+    "celo",
+    "stacks",
+    "web3",
+    "quiz",
+    "arcade",
+    "eip712",
+    "blockchain"
+  ],
   "workspaces": [
     "packages/sdk"
   ],
