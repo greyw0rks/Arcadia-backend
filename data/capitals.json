@@ -1,82 +1,5 @@
 [
   {
-    "country": "France",
-    "flag": "🇫🇷",
-    "capital": "Paris",
-    "decoys": [
-      "Berlin",
-      "Dublin",
-      "Tallinn"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Germany",
-    "flag": "🇩🇪",
-    "capital": "Berlin",
-    "decoys": [
-      "Paris",
-      "Stockholm",
-      "Athens"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Italy",
-    "flag": "🇮🇹",
-    "capital": "Rome",
-    "decoys": [
-      "Paris",
-      "Warsaw",
-      "Stockholm"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Spain",
-    "flag": "🇪🇸",
-    "capital": "Madrid",
-    "decoys": [
-      "Paris",
-      "Bucharest",
-      "Valletta"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Portugal",
-    "flag": "🇵🇹",
-    "capital": "Lisbon",
-    "decoys": [
-      "Paris",
-      "Moscow",
-      "Ljubljana"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "United Kingdom",
-    "flag": "🇬🇧",
-    "capital": "London",
-    "decoys": [
-      "Paris",
-      "Ljubljana",
-      "Bucharest"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Ireland",
-    "flag": "🇮🇪",
-    "capital": "Dublin",
-    "decoys": [
-      "Paris",
-      "Podgorica",
-      "Oslo"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "capital": "Amsterdam",
@@ -108,17 +31,6 @@
       "Sofia"
     ],
     "tier": "hard"
-  },
-  {
-    "country": "Austria",
-    "flag": "🇦🇹",
-    "capital": "Vienna",
-    "decoys": [
-      "Paris",
-      "Bratislava",
-      "Copenhagen"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Sweden",
@@ -176,17 +88,6 @@
     "tier": "medium"
   },
   {
-    "country": "Poland",
-    "flag": "🇵🇱",
-    "capital": "Warsaw",
-    "decoys": [
-      "Paris",
-      "Bern",
-      "Valletta"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "Czechia",
     "flag": "🇨🇿",
     "capital": "Prague",
@@ -218,17 +119,6 @@
       "Lisbon"
     ],
     "tier": "medium"
-  },
-  {
-    "country": "Greece",
-    "flag": "🇬🇷",
-    "capital": "Athens",
-    "decoys": [
-      "Paris",
-      "Tallinn",
-      "Tirana"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Romania",
@@ -284,17 +174,6 @@
       "Moscow"
     ],
     "tier": "medium"
-  },
-  {
-    "country": "Russia",
-    "flag": "🇷🇺",
-    "capital": "Moscow",
-    "decoys": [
-      "Paris",
-      "Bucharest",
-      "Reykjavik"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Belarus",
@@ -440,28 +319,6 @@
     "tier": "medium"
   },
   {
-    "country": "China",
-    "flag": "🇨🇳",
-    "capital": "Beijing",
-    "decoys": [
-      "Tokyo",
-      "Jakarta",
-      "Baku"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Japan",
-    "flag": "🇯🇵",
-    "capital": "Tokyo",
-    "decoys": [
-      "Beijing",
-      "Ashgabat",
-      "Kuwait City"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "South Korea",
     "flag": "🇰🇷",
     "capital": "Seoul",
@@ -482,17 +339,6 @@
       "Bangkok"
     ],
     "tier": "medium"
-  },
-  {
-    "country": "India",
-    "flag": "🇮🇳",
-    "capital": "New Delhi",
-    "decoys": [
-      "Beijing",
-      "Ankara",
-      "Baghdad"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Pakistan",
@@ -559,17 +405,6 @@
       "Bishkek"
     ],
     "tier": "hard"
-  },
-  {
-    "country": "Thailand",
-    "flag": "🇹🇭",
-    "capital": "Bangkok",
-    "decoys": [
-      "Beijing",
-      "Beirut",
-      "Phnom Penh"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Vietnam",
@@ -737,28 +572,6 @@
     "tier": "medium"
   },
   {
-    "country": "Iran",
-    "flag": "🇮🇷",
-    "capital": "Tehran",
-    "decoys": [
-      "Beijing",
-      "Tbilisi",
-      "Singapore"
-    ],
-    "tier": "easy"
-  },
-  {
-    "country": "Iraq",
-    "flag": "🇮🇶",
-    "capital": "Baghdad",
-    "decoys": [
-      "Beijing",
-      "Pyongyang",
-      "Islamabad"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "Saudi Arabia",
     "flag": "🇸🇦",
     "capital": "Riyadh",
@@ -922,17 +735,6 @@
       "Ulaanbaatar"
     ],
     "tier": "medium"
-  },
-  {
-    "country": "Egypt",
-    "flag": "🇪🇬",
-    "capital": "Cairo",
-    "decoys": [
-      "Rabat",
-      "Abuja",
-      "Accra"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Morocco",
@@ -1199,17 +1001,6 @@
     "tier": "hard"
   },
   {
-    "country": "United States",
-    "flag": "🇺🇸",
-    "capital": "Washington, D.C.",
-    "decoys": [
-      "Ottawa",
-      "Santiago",
-      "Mexico City"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "Canada",
     "flag": "🇨🇦",
     "capital": "Ottawa",
@@ -1221,17 +1012,6 @@
     "tier": "hard"
   },
   {
-    "country": "Mexico",
-    "flag": "🇲🇽",
-    "capital": "Mexico City",
-    "decoys": [
-      "Washington, D.C.",
-      "Sucre",
-      "Caracas"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "Guatemala",
     "flag": "🇬🇹",
     "capital": "Guatemala City",
@@ -1241,17 +1021,6 @@
       "Buenos Aires"
     ],
     "tier": "medium"
-  },
-  {
-    "country": "Cuba",
-    "flag": "🇨🇺",
-    "capital": "Havana",
-    "decoys": [
-      "Washington, D.C.",
-      "San José",
-      "Mexico City"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Jamaica",
@@ -1276,17 +1045,6 @@
     "tier": "hard"
   },
   {
-    "country": "Argentina",
-    "flag": "🇦🇷",
-    "capital": "Buenos Aires",
-    "decoys": [
-      "Washington, D.C.",
-      "Brasília",
-      "Quito"
-    ],
-    "tier": "easy"
-  },
-  {
     "country": "Chile",
     "flag": "🇨🇱",
     "capital": "Santiago",
@@ -1296,17 +1054,6 @@
       "Mexico City"
     ],
     "tier": "medium"
-  },
-  {
-    "country": "Peru",
-    "flag": "🇵🇪",
-    "capital": "Lima",
-    "decoys": [
-      "Washington, D.C.",
-      "Quito",
-      "Panama City"
-    ],
-    "tier": "easy"
   },
   {
     "country": "Colombia",
@@ -1439,5 +1186,2018 @@
       "Wellington"
     ],
     "tier": "hard"
+  },
+  {
+    "country": "Thailand",
+    "flag": "🇹🇭",
+    "capital": "Bangkok",
+    "decoys": [
+      "Chiang Mai",
+      "Phuket",
+      "Hanoi"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Egypt",
+    "flag": "🇪🇬",
+    "capital": "Cairo",
+    "decoys": [
+      "Alexandria",
+      "Luxor",
+      "Tripoli"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Argentina",
+    "flag": "🇦🇷",
+    "capital": "Buenos Aires",
+    "decoys": [
+      "Montevideo",
+      "Santiago",
+      "Córdoba"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Poland",
+    "flag": "🇵🇱",
+    "capital": "Warsaw",
+    "decoys": [
+      "Kraków",
+      "Prague",
+      "Vilnius"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Nigeria",
+    "flag": "🇳🇬",
+    "capital": "Abuja",
+    "decoys": [
+      "Lagos",
+      "Accra",
+      "Nairobi"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Iran",
+    "flag": "🇮🇷",
+    "capital": "Tehran",
+    "decoys": [
+      "Isfahan",
+      "Kabul",
+      "Baghdad"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Vietnam",
+    "flag": "🇻🇳",
+    "capital": "Hanoi",
+    "decoys": [
+      "Ho Chi Minh City",
+      "Phnom Penh",
+      "Bangkok"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Philippines",
+    "flag": "🇵🇭",
+    "capital": "Manila",
+    "decoys": [
+      "Cebu",
+      "Jakarta",
+      "Kuala Lumpur"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Malaysia",
+    "flag": "🇲🇾",
+    "capital": "Kuala Lumpur",
+    "decoys": [
+      "Singapore",
+      "Manila",
+      "Jakarta"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Colombia",
+    "flag": "🇨🇴",
+    "capital": "Bogotá",
+    "decoys": [
+      "Medellín",
+      "Quito",
+      "Caracas"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Peru",
+    "flag": "🇵🇪",
+    "capital": "Lima",
+    "decoys": [
+      "Cusco",
+      "Bogotá",
+      "La Paz"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Venezuela",
+    "flag": "🇻🇪",
+    "capital": "Caracas",
+    "decoys": [
+      "Bogotá",
+      "Maracaibo",
+      "Georgetown"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Chile",
+    "flag": "🇨🇱",
+    "capital": "Santiago",
+    "decoys": [
+      "Buenos Aires",
+      "Lima",
+      "Mendoza"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Ukraine",
+    "flag": "🇺🇦",
+    "capital": "Kyiv",
+    "decoys": [
+      "Kharkiv",
+      "Minsk",
+      "Bucharest"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Romania",
+    "flag": "🇷🇴",
+    "capital": "Bucharest",
+    "decoys": [
+      "Sofia",
+      "Budapest",
+      "Belgrade"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Hungary",
+    "flag": "🇭🇺",
+    "capital": "Budapest",
+    "decoys": [
+      "Bucharest",
+      "Bratislava",
+      "Vienna"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Czech Republic",
+    "flag": "🇨🇿",
+    "capital": "Prague",
+    "decoys": [
+      "Bratislava",
+      "Warsaw",
+      "Vienna"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Greece",
+    "flag": "🇬🇷",
+    "capital": "Athens",
+    "decoys": [
+      "Thessaloniki",
+      "Nicosia",
+      "Rome"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "capital": "Lisbon",
+    "decoys": [
+      "Porto",
+      "Madrid",
+      "Seville"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Sweden",
+    "flag": "🇸🇪",
+    "capital": "Stockholm",
+    "decoys": [
+      "Oslo",
+      "Copenhagen",
+      "Helsinki"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "capital": "Oslo",
+    "decoys": [
+      "Stockholm",
+      "Copenhagen",
+      "Bergen"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Denmark",
+    "flag": "🇩🇰",
+    "capital": "Copenhagen",
+    "decoys": [
+      "Oslo",
+      "Stockholm",
+      "Hamburg"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Finland",
+    "flag": "🇫🇮",
+    "capital": "Helsinki",
+    "decoys": [
+      "Stockholm",
+      "Tallinn",
+      "Oslo"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "capital": "Bern",
+    "decoys": [
+      "Zurich",
+      "Geneva",
+      "Vienna"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Austria",
+    "flag": "🇦🇹",
+    "capital": "Vienna",
+    "decoys": [
+      "Bern",
+      "Budapest",
+      "Prague"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Belgium",
+    "flag": "🇧🇪",
+    "capital": "Brussels",
+    "decoys": [
+      "Amsterdam",
+      "Luxembourg City",
+      "Paris"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "capital": "Amsterdam",
+    "decoys": [
+      "Brussels",
+      "Rotterdam",
+      "The Hague"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Morocco",
+    "flag": "🇲🇦",
+    "capital": "Rabat",
+    "decoys": [
+      "Casablanca",
+      "Marrakech",
+      "Tunis"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Algeria",
+    "flag": "🇩🇿",
+    "capital": "Algiers",
+    "decoys": [
+      "Tunis",
+      "Rabat",
+      "Tripoli"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Kenya",
+    "flag": "🇰🇪",
+    "capital": "Nairobi",
+    "decoys": [
+      "Kampala",
+      "Addis Ababa",
+      "Dar es Salaam"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Ethiopia",
+    "flag": "🇪🇹",
+    "capital": "Addis Ababa",
+    "decoys": [
+      "Nairobi",
+      "Khartoum",
+      "Asmara"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Ghana",
+    "flag": "🇬🇭",
+    "capital": "Accra",
+    "decoys": [
+      "Lagos",
+      "Dakar",
+      "Abidjan"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Tanzania",
+    "flag": "🇹🇿",
+    "capital": "Dodoma",
+    "decoys": [
+      "Dar es Salaam",
+      "Nairobi",
+      "Kampala"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "South Africa",
+    "flag": "🇿🇦",
+    "capital": "Pretoria",
+    "decoys": [
+      "Cape Town",
+      "Johannesburg",
+      "Harare"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Zimbabwe",
+    "flag": "🇿🇼",
+    "capital": "Harare",
+    "decoys": [
+      "Lusaka",
+      "Pretoria",
+      "Maputo"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Pakistan",
+    "flag": "🇵🇰",
+    "capital": "Islamabad",
+    "decoys": [
+      "Karachi",
+      "Lahore",
+      "Kabul"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Bangladesh",
+    "flag": "🇧🇩",
+    "capital": "Dhaka",
+    "decoys": [
+      "Kolkata",
+      "Colombo",
+      "Yangon"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Sri Lanka",
+    "flag": "🇱🇰",
+    "capital": "Sri Jayawardenepura Kotte",
+    "decoys": [
+      "Colombo",
+      "Dhaka",
+      "Chennai"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Myanmar",
+    "flag": "🇲🇲",
+    "capital": "Naypyidaw",
+    "decoys": [
+      "Yangon",
+      "Bangkok",
+      "Vientiane"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Cambodia",
+    "flag": "🇰🇭",
+    "capital": "Phnom Penh",
+    "decoys": [
+      "Vientiane",
+      "Bangkok",
+      "Hanoi"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Nepal",
+    "flag": "🇳🇵",
+    "capital": "Kathmandu",
+    "decoys": [
+      "Thimphu",
+      "Islamabad",
+      "Dhaka"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Afghanistan",
+    "flag": "🇦🇫",
+    "capital": "Kabul",
+    "decoys": [
+      "Islamabad",
+      "Tehran",
+      "Tashkent"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Iraq",
+    "flag": "🇮🇶",
+    "capital": "Baghdad",
+    "decoys": [
+      "Tehran",
+      "Amman",
+      "Damascus"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Jordan",
+    "flag": "🇯🇴",
+    "capital": "Amman",
+    "decoys": [
+      "Damascus",
+      "Beirut",
+      "Baghdad"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Lebanon",
+    "flag": "🇱🇧",
+    "capital": "Beirut",
+    "decoys": [
+      "Damascus",
+      "Amman",
+      "Nicosia"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Syria",
+    "flag": "🇸🇾",
+    "capital": "Damascus",
+    "decoys": [
+      "Beirut",
+      "Amman",
+      "Baghdad"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Kazakhstan",
+    "flag": "🇰🇿",
+    "capital": "Astana",
+    "decoys": [
+      "Almaty",
+      "Tashkent",
+      "Bishkek"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Uzbekistan",
+    "flag": "🇺🇿",
+    "capital": "Tashkent",
+    "decoys": [
+      "Samarkand",
+      "Almaty",
+      "Ashgabat"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Cuba",
+    "flag": "🇨🇺",
+    "capital": "Havana",
+    "decoys": [
+      "Santo Domingo",
+      "San José",
+      "Panama City"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Ecuador",
+    "flag": "🇪🇨",
+    "capital": "Quito",
+    "decoys": [
+      "Guayaquil",
+      "Bogotá",
+      "Lima"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Bolivia",
+    "flag": "🇧🇴",
+    "capital": "Sucre",
+    "decoys": [
+      "La Paz",
+      "Lima",
+      "Asunción"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Paraguay",
+    "flag": "🇵🇾",
+    "capital": "Asunción",
+    "decoys": [
+      "Montevideo",
+      "Sucre",
+      "Buenos Aires"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Uruguay",
+    "flag": "🇺🇾",
+    "capital": "Montevideo",
+    "decoys": [
+      "Buenos Aires",
+      "Asunción",
+      "Santiago"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Serbia",
+    "flag": "🇷🇸",
+    "capital": "Belgrade",
+    "decoys": [
+      "Zagreb",
+      "Sarajevo",
+      "Skopje"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Croatia",
+    "flag": "🇭🇷",
+    "capital": "Zagreb",
+    "decoys": [
+      "Belgrade",
+      "Ljubljana",
+      "Sarajevo"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Slovakia",
+    "flag": "🇸🇰",
+    "capital": "Bratislava",
+    "decoys": [
+      "Prague",
+      "Budapest",
+      "Vienna"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Bulgaria",
+    "flag": "🇧🇬",
+    "capital": "Sofia",
+    "decoys": [
+      "Bucharest",
+      "Skopje",
+      "Belgrade"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Libya",
+    "flag": "🇱🇾",
+    "capital": "Tripoli",
+    "decoys": [
+      "Tunis",
+      "Algiers",
+      "Benghazi"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Sudan",
+    "flag": "🇸🇩",
+    "capital": "Khartoum",
+    "decoys": [
+      "Addis Ababa",
+      "N'Djamena",
+      "Cairo"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Angola",
+    "flag": "🇦🇴",
+    "capital": "Luanda",
+    "decoys": [
+      "Kinshasa",
+      "Lusaka",
+      "Windhoek"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Zambia",
+    "flag": "🇿🇲",
+    "capital": "Lusaka",
+    "decoys": [
+      "Harare",
+      "Luanda",
+      "Lilongwe"
+    ],
+    "tier": "medium"
+  },
+  {
+    "country": "Kazakhstan",
+    "flag": "🇰🇿",
+    "capital": "Astana",
+    "decoys": [
+      "Almaty",
+      "Shymkent",
+      "Aktobe"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Myanmar",
+    "flag": "🇲🇲",
+    "capital": "Naypyidaw",
+    "decoys": [
+      "Yangon",
+      "Mandalay",
+      "Bagan"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "flag": "🇨🇮",
+    "capital": "Yamoussoukro",
+    "decoys": [
+      "Abidjan",
+      "Bouaké",
+      "Korhogo"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Sri Lanka",
+    "flag": "🇱🇰",
+    "capital": "Sri Jayawardenepura Kotte",
+    "decoys": [
+      "Colombo",
+      "Kandy",
+      "Galle"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Tanzania",
+    "flag": "🇹🇿",
+    "capital": "Dodoma",
+    "decoys": [
+      "Dar es Salaam",
+      "Mwanza",
+      "Arusha"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Bolivia",
+    "flag": "🇧🇴",
+    "capital": "Sucre",
+    "decoys": [
+      "La Paz",
+      "Santa Cruz",
+      "Cochabamba"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "capital": "Amsterdam",
+    "decoys": [
+      "The Hague",
+      "Rotterdam",
+      "Utrecht"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Palau",
+    "flag": "🇵🇼",
+    "capital": "Ngerulmud",
+    "decoys": [
+      "Koror",
+      "Melekeok",
+      "Airai"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Belize",
+    "flag": "🇧🇿",
+    "capital": "Belmopan",
+    "decoys": [
+      "Belize City",
+      "San Ignacio",
+      "Orange Walk"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Nigeria",
+    "flag": "🇳🇬",
+    "capital": "Abuja",
+    "decoys": [
+      "Lagos",
+      "Kano",
+      "Ibadan"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Pakistan",
+    "flag": "🇵🇰",
+    "capital": "Islamabad",
+    "decoys": [
+      "Karachi",
+      "Lahore",
+      "Rawalpindi"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Brazil",
+    "flag": "🇧🇷",
+    "capital": "Brasília",
+    "decoys": [
+      "São Paulo",
+      "Rio de Janeiro",
+      "Salvador"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Australia",
+    "flag": "🇦🇺",
+    "capital": "Canberra",
+    "decoys": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "South Africa",
+    "flag": "🇿🇦",
+    "capital": "Pretoria",
+    "decoys": [
+      "Cape Town",
+      "Johannesburg",
+      "Bloemfontein"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Eswatini",
+    "flag": "🇸🇿",
+    "capital": "Mbabane",
+    "decoys": [
+      "Manzini",
+      "Lobamba",
+      "Siteki"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Nauru",
+    "flag": "🇳🇷",
+    "capital": "Yaren",
+    "decoys": [
+      "Aiwo",
+      "Meneng",
+      "Denigomodu"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Tuvalu",
+    "flag": "🇹🇻",
+    "capital": "Funafuti",
+    "decoys": [
+      "Nukufetau",
+      "Nanumea",
+      "Vaitupu"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Kiribati",
+    "flag": "🇰🇮",
+    "capital": "South Tarawa",
+    "decoys": [
+      "Tarawa",
+      "Betio",
+      "Bairiki"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Marshall Islands",
+    "flag": "🇲🇭",
+    "capital": "Majuro",
+    "decoys": [
+      "Kwajalein",
+      "Ebeye",
+      "Jaluit"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Micronesia",
+    "flag": "🇫🇲",
+    "capital": "Palikir",
+    "decoys": [
+      "Kolonia",
+      "Weno",
+      "Pohnpei"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Samoa",
+    "flag": "🇼🇸",
+    "capital": "Apia",
+    "decoys": [
+      "Pago Pago",
+      "Salelologa",
+      "Faleolo"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Tonga",
+    "flag": "🇹🇴",
+    "capital": "Nukuʻalofa",
+    "decoys": [
+      "Neiafu",
+      "Haveluloto",
+      "Pangai"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Vanuatu",
+    "flag": "🇻🇺",
+    "capital": "Port Vila",
+    "decoys": [
+      "Luganville",
+      "Norsup",
+      "Isangel"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Papua New Guinea",
+    "flag": "🇵🇬",
+    "capital": "Port Moresby",
+    "decoys": [
+      "Lae",
+      "Mount Hagen",
+      "Madang"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Mauritania",
+    "flag": "🇲🇷",
+    "capital": "Nouakchott",
+    "decoys": [
+      "Nouadhibou",
+      "Kiffa",
+      "Rosso"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Djibouti",
+    "flag": "🇩🇯",
+    "capital": "Djibouti City",
+    "decoys": [
+      "Ali Sabieh",
+      "Tadjoura",
+      "Obock"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Eritrea",
+    "flag": "🇪🇷",
+    "capital": "Asmara",
+    "decoys": [
+      "Massawa",
+      "Keren",
+      "Assab"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Comoros",
+    "flag": "🇰🇲",
+    "capital": "Moroni",
+    "decoys": [
+      "Mutsamudu",
+      "Fomboni",
+      "Domoni"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "São Tomé and Príncipe",
+    "flag": "🇸🇹",
+    "capital": "São Tomé",
+    "decoys": [
+      "Santo António",
+      "Neves",
+      "Trindade"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "flag": "🇬🇶",
+    "capital": "Malabo",
+    "decoys": [
+      "Bata",
+      "Ebebiyín",
+      "Mongomo"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Gabon",
+    "flag": "🇬🇦",
+    "capital": "Libreville",
+    "decoys": [
+      "Port-Gentil",
+      "Franceville",
+      "Oyem"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Republic of the Congo",
+    "flag": "🇨🇬",
+    "capital": "Brazzaville",
+    "decoys": [
+      "Pointe-Noire",
+      "Dolisie",
+      "Kinshasa"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Central African Republic",
+    "flag": "🇨🇫",
+    "capital": "Bangui",
+    "decoys": [
+      "Berbérati",
+      "Bambari",
+      "Bossangoa"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Chad",
+    "flag": "🇹🇩",
+    "capital": "N'Djamena",
+    "decoys": [
+      "Moundou",
+      "Sarh",
+      "Abéché"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Niger",
+    "flag": "🇳🇪",
+    "capital": "Niamey",
+    "decoys": [
+      "Zinder",
+      "Maradi",
+      "Agadez"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "flag": "🇬🇼",
+    "capital": "Bissau",
+    "decoys": [
+      "Bafatá",
+      "Gabú",
+      "Cacheu"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Guinea",
+    "flag": "🇬🇳",
+    "capital": "Conakry",
+    "decoys": [
+      "Kankan",
+      "Labé",
+      "Nzérékoré"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Sierra Leone",
+    "flag": "🇸🇱",
+    "capital": "Freetown",
+    "decoys": [
+      "Bo",
+      "Kenema",
+      "Makeni"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Liberia",
+    "flag": "🇱🇷",
+    "capital": "Monrovia",
+    "decoys": [
+      "Gbarnga",
+      "Buchanan",
+      "Harper"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Benin",
+    "flag": "🇧🇯",
+    "capital": "Porto-Novo",
+    "decoys": [
+      "Cotonou",
+      "Parakou",
+      "Djougou"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Togo",
+    "flag": "🇹🇬",
+    "capital": "Lomé",
+    "decoys": [
+      "Sokodé",
+      "Kara",
+      "Kpalimé"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Burkina Faso",
+    "flag": "🇧🇫",
+    "capital": "Ouagadougou",
+    "decoys": [
+      "Bobo-Dioulasso",
+      "Koudougou",
+      "Banfora"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Mali",
+    "flag": "🇲🇱",
+    "capital": "Bamako",
+    "decoys": [
+      "Timbuktu",
+      "Gao",
+      "Sikasso"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Malawi",
+    "flag": "🇲🇼",
+    "capital": "Lilongwe",
+    "decoys": [
+      "Blantyre",
+      "Mzuzu",
+      "Zomba"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Zambia",
+    "flag": "🇿🇲",
+    "capital": "Lusaka",
+    "decoys": [
+      "Ndola",
+      "Kitwe",
+      "Livingstone"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Mozambique",
+    "flag": "🇲🇿",
+    "capital": "Maputo",
+    "decoys": [
+      "Beira",
+      "Nampula",
+      "Quelimane"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Lesotho",
+    "flag": "🇱🇸",
+    "capital": "Maseru",
+    "decoys": [
+      "Teyateyaneng",
+      "Mafeteng",
+      "Leribe"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Botswana",
+    "flag": "🇧🇼",
+    "capital": "Gaborone",
+    "decoys": [
+      "Francistown",
+      "Molepolole",
+      "Serowe"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Namibia",
+    "flag": "🇳🇦",
+    "capital": "Windhoek",
+    "decoys": [
+      "Walvis Bay",
+      "Swakopmund",
+      "Rundu"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Rwanda",
+    "flag": "🇷🇼",
+    "capital": "Kigali",
+    "decoys": [
+      "Butare",
+      "Gisenyi",
+      "Ruhengeri"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Burundi",
+    "flag": "🇧🇮",
+    "capital": "Gitega",
+    "decoys": [
+      "Bujumbura",
+      "Ngozi",
+      "Rumonge"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "flag": "🇰🇬",
+    "capital": "Bishkek",
+    "decoys": [
+      "Osh",
+      "Jalal-Abad",
+      "Tokmok"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Tajikistan",
+    "flag": "🇹🇯",
+    "capital": "Dushanbe",
+    "decoys": [
+      "Khujand",
+      "Kulob",
+      "Qurghonteppa"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Turkmenistan",
+    "flag": "🇹🇲",
+    "capital": "Ashgabat",
+    "decoys": [
+      "Türkmenabat",
+      "Mary",
+      "Balkanabat"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Uzbekistan",
+    "flag": "🇺🇿",
+    "capital": "Tashkent",
+    "decoys": [
+      "Samarkand",
+      "Namangan",
+      "Andijan"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Armenia",
+    "flag": "🇦🇲",
+    "capital": "Yerevan",
+    "decoys": [
+      "Gyumri",
+      "Vanadzor",
+      "Vagharshapat"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Georgia",
+    "flag": "🇬🇪",
+    "capital": "Tbilisi",
+    "decoys": [
+      "Kutaisi",
+      "Batumi",
+      "Rustavi"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Kosovo",
+    "flag": "🇽🇰",
+    "capital": "Pristina",
+    "decoys": [
+      "Prizren",
+      "Mitrovica",
+      "Gjakova"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "North Macedonia",
+    "flag": "🇲🇰",
+    "capital": "Skopje",
+    "decoys": [
+      "Bitola",
+      "Kumanovo",
+      "Tetovo"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Moldova",
+    "flag": "🇲🇩",
+    "capital": "Chișinău",
+    "decoys": [
+      "Tiraspol",
+      "Bălți",
+      "Tighina"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "East Timor",
+    "flag": "🇹🇱",
+    "capital": "Dili",
+    "decoys": [
+      "Baucau",
+      "Maliana",
+      "Suai"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Palau",
+    "flag": "🇵🇼",
+    "capital": "Ngerulmud",
+    "decoys": [
+      "Koror",
+      "Melekeok",
+      "Airai"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Nauru",
+    "flag": "🇳🇷",
+    "capital": "Yaren",
+    "decoys": [
+      "Denigomodu",
+      "Aiwo",
+      "Buada"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Kiribati",
+    "flag": "🇰🇮",
+    "capital": "South Tarawa",
+    "decoys": [
+      "Betio",
+      "Bikenibeu",
+      "Bairiki"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Tuvalu",
+    "flag": "🇹🇻",
+    "capital": "Funafuti",
+    "decoys": [
+      "Vaitupu",
+      "Nukufetau",
+      "Nanumea"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Marshall Islands",
+    "flag": "🇲🇭",
+    "capital": "Majuro",
+    "decoys": [
+      "Ebeye",
+      "Jaluit",
+      "Wotje"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Comoros",
+    "flag": "🇰🇲",
+    "capital": "Moroni",
+    "decoys": [
+      "Mutsamudu",
+      "Fomboni",
+      "Domoni"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "São Tomé and Príncipe",
+    "flag": "🇸🇹",
+    "capital": "São Tomé",
+    "decoys": [
+      "Santo António",
+      "Trindade",
+      "Neves"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Western Sahara",
+    "flag": "🇪🇭",
+    "capital": "El Aaiún",
+    "decoys": [
+      "Dakhla",
+      "Smara",
+      "Boujdour"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Kosovo",
+    "flag": "🇽🇰",
+    "capital": "Pristina",
+    "decoys": [
+      "Prizren",
+      "Peja",
+      "Gjilan"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Transnistria",
+    "flag": "🏴",
+    "capital": "Tiraspol",
+    "decoys": [
+      "Bender",
+      "Rîbnița",
+      "Dubăsari"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Federated States of Micronesia",
+    "flag": "🇫🇲",
+    "capital": "Palikir",
+    "decoys": [
+      "Kolonia",
+      "Weno",
+      "Tofol"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "San Marino",
+    "flag": "🇸🇲",
+    "capital": "City of San Marino",
+    "decoys": [
+      "Serravalle",
+      "Borgo Maggiore",
+      "Fiorentino"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Liechtenstein",
+    "flag": "🇱🇮",
+    "capital": "Vaduz",
+    "decoys": [
+      "Schaan",
+      "Balzers",
+      "Triesen"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Andorra",
+    "flag": "🇦🇩",
+    "capital": "Andorra la Vella",
+    "decoys": [
+      "Escaldes-Engordany",
+      "Encamp",
+      "Sant Julià de Lòria"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Monaco",
+    "flag": "🇲🇨",
+    "capital": "Monaco",
+    "decoys": [
+      "Monte Carlo",
+      "La Condamine",
+      "Fontvieille"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Abkhazia",
+    "flag": "🏴",
+    "capital": "Sukhumi",
+    "decoys": [
+      "Gagra",
+      "Ochamchire",
+      "Gali"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "South Ossetia",
+    "flag": "🏴",
+    "capital": "Tskhinvali",
+    "decoys": [
+      "Akhalgori",
+      "Leningor",
+      "Kvaissi"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Northern Cyprus",
+    "flag": "🏴",
+    "capital": "North Nicosia",
+    "decoys": [
+      "Famagusta",
+      "Kyrenia",
+      "Morphou"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Artsakh (Nagorno-Karabakh)",
+    "flag": "🏴",
+    "capital": "Stepanakert",
+    "decoys": [
+      "Shusha",
+      "Martuni",
+      "Hadrut"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Somaliland",
+    "flag": "🏴",
+    "capital": "Hargeisa",
+    "decoys": [
+      "Berbera",
+      "Burao",
+      "Borama"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Sahrawi Arab Democratic Republic",
+    "flag": "🏴",
+    "capital": "Tifariti",
+    "decoys": [
+      "Tindouf",
+      "Smara",
+      "Bir Lehlou"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Puntland",
+    "flag": "🏴",
+    "capital": "Garowe",
+    "decoys": [
+      "Bosaso",
+      "Galkayo",
+      "Qardho"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Tokelau",
+    "flag": "🇹🇰",
+    "capital": "Nukunonu",
+    "decoys": [
+      "Fakaofo",
+      "Atafu",
+      "Fenuafala"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Niue",
+    "flag": "🇳🇺",
+    "capital": "Alofi",
+    "decoys": [
+      "Makefu",
+      "Hakupu",
+      "Mutalau"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Cook Islands",
+    "flag": "🇨🇰",
+    "capital": "Avarua",
+    "decoys": [
+      "Titikaveka",
+      "Aitutaki",
+      "Mangaia"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Wallis and Futuna",
+    "flag": "🇼🇫",
+    "capital": "Mata-Utu",
+    "decoys": [
+      "Sigave",
+      "Alo",
+      "Leava"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "flag": "🇵🇲",
+    "capital": "Saint-Pierre",
+    "decoys": [
+      "Miquelon",
+      "Langlade",
+      "L'Anse-aux-Meadows"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Falkland Islands",
+    "flag": "🇫🇰",
+    "capital": "Stanley",
+    "decoys": [
+      "Port Howard",
+      "Goose Green",
+      "Fox Bay"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Saint Helena",
+    "flag": "🇸🇭",
+    "capital": "Jamestown",
+    "decoys": [
+      "Half Tree Hollow",
+      "Longwood",
+      "Georgetown"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Tristan da Cunha",
+    "flag": "🇸🇭",
+    "capital": "Edinburgh of the Seven Seas",
+    "decoys": [
+      "Jamestown",
+      "Georgetown",
+      "Plymouth"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Norfolk Island",
+    "flag": "🇳🇫",
+    "capital": "Kingston",
+    "decoys": [
+      "Burnt Pine",
+      "Anson Bay",
+      "Cascade"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Christmas Island",
+    "flag": "🇨🇽",
+    "capital": "Flying Fish Cove",
+    "decoys": [
+      "Silver City",
+      "Drumsite",
+      "Poon Saan"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Cocos (Keeling) Islands",
+    "flag": "🇨🇨",
+    "capital": "West Island",
+    "decoys": [
+      "Home Island",
+      "Direction Island",
+      "Horsburgh Island"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Pitcairn Islands",
+    "flag": "🇵🇳",
+    "capital": "Adamstown",
+    "decoys": [
+      "Henderson",
+      "Bounty Bay",
+      "Down Rope"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Svalbard",
+    "flag": "🇸🇯",
+    "capital": "Longyearbyen",
+    "decoys": [
+      "Barentsburg",
+      "Ny-Ålesund",
+      "Pyramiden"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Åland Islands",
+    "flag": "🇦🇽",
+    "capital": "Mariehamn",
+    "decoys": [
+      "Eckerö",
+      "Jomala",
+      "Godby"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Faroe Islands",
+    "flag": "🇫🇴",
+    "capital": "Tórshavn",
+    "decoys": [
+      "Klaksvík",
+      "Runavík",
+      "Tvøroyri"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Greenland",
+    "flag": "🇬🇱",
+    "capital": "Nuuk",
+    "decoys": [
+      "Ilulissat",
+      "Sisimiut",
+      "Qaqortoq"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "New Caledonia",
+    "flag": "🇳🇨",
+    "capital": "Nouméa",
+    "decoys": [
+      "Dumbéa",
+      "Mont-Dore",
+      "Koné"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "French Polynesia",
+    "flag": "🇵🇫",
+    "capital": "Papeete",
+    "decoys": [
+      "Faaa",
+      "Moorea",
+      "Bora Bora"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Vanuatu",
+    "flag": "🇻🇺",
+    "capital": "Port Vila",
+    "decoys": [
+      "Luganville",
+      "Norsup",
+      "Isangel"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Solomon Islands",
+    "flag": "🇸🇧",
+    "capital": "Honiara",
+    "decoys": [
+      "Auki",
+      "Gizo",
+      "Buala"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Tonga",
+    "flag": "🇹🇴",
+    "capital": "Nukualofa",
+    "decoys": [
+      "Neiafu",
+      "Haapai",
+      "Pangai"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Samoa",
+    "flag": "🇼🇸",
+    "capital": "Apia",
+    "decoys": [
+      "Salelologa",
+      "Asau",
+      "Mulifanua"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "American Samoa",
+    "flag": "🇦🇸",
+    "capital": "Pago Pago",
+    "decoys": [
+      "Tafuna",
+      "Fagatogo",
+      "Aua"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Guam",
+    "flag": "🇬🇺",
+    "capital": "Hagåtña",
+    "decoys": [
+      "Dededo",
+      "Tamuning",
+      "Mangilao"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "flag": "🇲🇵",
+    "capital": "Saipan",
+    "decoys": [
+      "Tinian",
+      "Rota",
+      "Capitol Hill"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Bonaire",
+    "flag": "🇧🇶",
+    "capital": "Kralendijk",
+    "decoys": [
+      "Rincon",
+      "Antriol",
+      "Nikiboko"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Curaçao",
+    "flag": "🇨🇼",
+    "capital": "Willemstad",
+    "decoys": [
+      "Barber",
+      "Sint Michiel",
+      "Lagun"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Sint Maarten",
+    "flag": "🇸🇽",
+    "capital": "Philipsburg",
+    "decoys": [
+      "Simpson Bay",
+      "Marigot",
+      "Cole Bay"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Aruba",
+    "flag": "🇦🇼",
+    "capital": "Oranjestad",
+    "decoys": [
+      "San Nicolas",
+      "Noord",
+      "Santa Cruz"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Cayman Islands",
+    "flag": "🇰🇾",
+    "capital": "George Town",
+    "decoys": [
+      "West Bay",
+      "Bodden Town",
+      "East End"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "flag": "🇹🇨",
+    "capital": "Cockburn Town",
+    "decoys": [
+      "Providenciales",
+      "Grand Turk",
+      "Blue Hills"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "British Virgin Islands",
+    "flag": "🇻🇬",
+    "capital": "Road Town",
+    "decoys": [
+      "Spanish Town",
+      "East End",
+      "Great Harbour"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Anguilla",
+    "flag": "🇦🇮",
+    "capital": "The Valley",
+    "decoys": [
+      "Sandy Ground",
+      "Blowing Point",
+      "Island Harbour"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Montserrat",
+    "flag": "🇲🇸",
+    "capital": "Brades",
+    "decoys": [
+      "Plymouth",
+      "Salem",
+      "Little Bay"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Saint Barthélemy",
+    "flag": "🇧🇱",
+    "capital": "Gustavia",
+    "decoys": [
+      "Saint-Jean",
+      "Lorient",
+      "Flamands"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Saint Martin (French part)",
+    "flag": "🇲🇫",
+    "capital": "Marigot",
+    "decoys": [
+      "Grand Case",
+      "Quartier d'Orléans",
+      "Philipsburg"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Mayotte",
+    "flag": "🇾🇹",
+    "capital": "Mamoudzou",
+    "decoys": [
+      "Dzaoudzi",
+      "Bandraboua",
+      "Koungou"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Réunion",
+    "flag": "🇷🇪",
+    "capital": "Saint-Denis",
+    "decoys": [
+      "Saint-Paul",
+      "Saint-Pierre",
+      "Le Tampon"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Seychelles",
+    "flag": "🇸🇨",
+    "capital": "Victoria",
+    "decoys": [
+      "Beau Vallon",
+      "Anse Royale",
+      "Takamaka"
+    ],
+    "tier": "extreme"
   }
 ]

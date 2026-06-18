@@ -1,55 +1,5 @@
 [
   {
-    "riddle": "What has keys but no locks?",
-    "correct": "Keyboard",
-    "decoys": [
-      "Piano",
-      "Map",
-      "Door"
-    ],
-    "tier": "easy"
-  },
-  {
-    "riddle": "I'm tall when young, short when old.",
-    "correct": "Candle",
-    "decoys": [
-      "Tree",
-      "Person",
-      "Building"
-    ],
-    "tier": "easy"
-  },
-  {
-    "riddle": "What has hands but can't clap?",
-    "correct": "Clock",
-    "decoys": [
-      "Statue",
-      "Doll",
-      "Robot"
-    ],
-    "tier": "easy"
-  },
-  {
-    "riddle": "What gets wet while drying?",
-    "correct": "Towel",
-    "decoys": [
-      "Sponge",
-      "Cloth",
-      "Paper"
-    ],
-    "tier": "easy"
-  },
-  {
-    "riddle": "What has a head and tail but no body?",
-    "correct": "Coin",
-    "decoys": [
-      "Snake",
-      "Fish",
-      "Arrow"
-    ],
-    "tier": "easy"
-  },
-  {
     "riddle": "The more you take, the more you leave behind. What am I?",
     "correct": "Footsteps",
     "decoys": [
@@ -230,16 +180,6 @@
     "tier": "hard"
   },
   {
-    "riddle": "What has to be broken before you can use it?",
-    "correct": "An egg",
-    "decoys": [
-      "A code",
-      "A promise",
-      "A seal"
-    ],
-    "tier": "easy"
-  },
-  {
     "riddle": "I'm light as a feather, yet the strongest person can't hold me for five minutes. What am I?",
     "correct": "Breath",
     "decoys": [
@@ -268,16 +208,6 @@
       "Smell"
     ],
     "tier": "medium"
-  },
-  {
-    "riddle": "What has a thumb and four fingers but is not alive?",
-    "correct": "A glove",
-    "decoys": [
-      "A statue",
-      "A clock",
-      "A rake"
-    ],
-    "tier": "easy"
   },
   {
     "riddle": "What kind of band never plays music?",
@@ -330,16 +260,6 @@
     "tier": "hard"
   },
   {
-    "riddle": "What invention lets you look right through a wall?",
-    "correct": "A window",
-    "decoys": [
-      "A telescope",
-      "An X-ray",
-      "A mirror"
-    ],
-    "tier": "easy"
-  },
-  {
     "riddle": "What can you keep after giving to someone?",
     "correct": "Your word",
     "decoys": [
@@ -388,16 +308,6 @@
       "A phone"
     ],
     "tier": "medium"
-  },
-  {
-    "riddle": "What has words but never speaks?",
-    "correct": "A book",
-    "decoys": [
-      "A sign",
-      "A phone",
-      "A song"
-    ],
-    "tier": "easy"
   },
   {
     "riddle": "What is full of holes but still holds water?",
@@ -490,16 +400,6 @@
     "tier": "hard"
   },
   {
-    "riddle": "What has a face and two hands but no arms or legs?",
-    "correct": "A clock",
-    "decoys": [
-      "A statue",
-      "A doll",
-      "A coin"
-    ],
-    "tier": "easy"
-  },
-  {
     "riddle": "What kind of room has no doors or windows?",
     "correct": "A mushroom",
     "decoys": [
@@ -520,16 +420,6 @@
     "tier": "medium"
   },
   {
-    "riddle": "The more you have of it, the less you see. (At night.)",
-    "correct": "Darkness",
-    "decoys": [
-      "Stars",
-      "Sleep",
-      "Silence"
-    ],
-    "tier": "easy"
-  },
-  {
     "riddle": "What flies without wings?",
     "correct": "Time",
     "decoys": [
@@ -548,16 +438,6 @@
       "A map"
     ],
     "tier": "medium"
-  },
-  {
-    "riddle": "What has a ring but no finger?",
-    "correct": "A telephone",
-    "decoys": [
-      "A bell",
-      "A planet",
-      "A boxer"
-    ],
-    "tier": "easy"
   },
   {
     "riddle": "I am always coming but never arrive. What am I?",
@@ -890,7 +770,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I am the strategy you would choose if you could change your mind and wouldn't \u2014 regardless of what your opponent does. What am I?",
+    "riddle": "I am the strategy you would choose if you could change your mind and wouldn't — regardless of what your opponent does. What am I?",
     "correct": "Dominant strategy",
     "decoys": [
       "Mixed strategy",
@@ -950,7 +830,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I am the reason someone drives recklessly after buying car insurance \u2014 they bear less risk, so they take more. What am I?",
+    "riddle": "I am the reason someone drives recklessly after buying car insurance — they bear less risk, so they take more. What am I?",
     "correct": "Moral hazard",
     "decoys": [
       "Adverse selection",
@@ -960,7 +840,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I am what a group of strangers converges on when they need to meet without communicating \u2014 the obvious, natural choice. What am I?",
+    "riddle": "I am what a group of strangers converges on when they need to meet without communicating — the obvious, natural choice. What am I?",
     "correct": "Schelling point",
     "decoys": [
       "Nash equilibrium",
@@ -970,7 +850,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I am the statistical truth that extreme outliers are followed by more typical results \u2014 not because of magic, but because of variance. What am I?",
+    "riddle": "I am the statistical truth that extreme outliers are followed by more typical results — not because of magic, but because of variance. What am I?",
     "correct": "Regression to the mean",
     "decoys": [
       "Law of large numbers",
@@ -1000,7 +880,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I am what allows a bluff to be believed \u2014 I'm costly enough that only the truth-teller would send me. What concept am I?",
+    "riddle": "I am what allows a bluff to be believed — I'm costly enough that only the truth-teller would send me. What concept am I?",
     "correct": "Costly signalling",
     "decoys": [
       "Cheap talk",
@@ -1020,7 +900,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I make diseases look rarer than they are \u2014 a highly sensitive test with a low-prevalence condition gives mostly false positives. What bias am I?",
+    "riddle": "I make diseases look rarer than they are — a highly sensitive test with a low-prevalence condition gives mostly false positives. What bias am I?",
     "correct": "Base rate fallacy",
     "decoys": [
       "Confirmation bias",
@@ -1050,7 +930,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I am a game that never ends \u2014 players interact repeatedly, and cooperation can be sustained by the threat of future punishment. What kind of game am I?",
+    "riddle": "I am a game that never ends — players interact repeatedly, and cooperation can be sustained by the threat of future punishment. What kind of game am I?",
     "correct": "Repeated game",
     "decoys": [
       "Sequential game",
@@ -1060,7 +940,7 @@
     "tier": "hard"
   },
   {
-    "riddle": "I reward the winner of an auction with the very problem that caused them to bid too high \u2014 they beat everyone else so they probably overpaid. What am I?",
+    "riddle": "I reward the winner of an auction with the very problem that caused them to bid too high — they beat everyone else so they probably overpaid. What am I?",
     "correct": "Winner's curse",
     "decoys": [
       "Adverse selection",
@@ -1078,5 +958,3275 @@
       "Utilitarian calculus"
     ],
     "tier": "hard"
+  },
+  {
+    "riddle": "I am the smallest packet of light, indivisible yet wave-like. Einstein named me to explain why metal releases electrons when illuminated.",
+    "correct": "Photon",
+    "decoys": [
+      "Electron",
+      "Neutrino",
+      "Quark"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the principle that says you cannot know both where a particle is and how fast it moves at the same time — the more precisely you know one, the less you know the other.",
+    "correct": "Heisenberg Uncertainty Principle",
+    "decoys": [
+      "Pauli Exclusion Principle",
+      "Schrödinger's Equation",
+      "Wave-Particle Duality"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am a cat famously neither alive nor dead until someone opens a box. I illustrate the strangeness of quantum superposition.",
+    "correct": "Schrödinger's Cat",
+    "decoys": [
+      "Heisenberg's Dog",
+      "Bohr's Atom",
+      "Dirac's Sea"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the phenomenon where two particles share a quantum state so completely that measuring one instantly determines the other, no matter the distance between them.",
+    "correct": "Quantum Entanglement",
+    "decoys": [
+      "Quantum Tunneling",
+      "Superposition",
+      "Wave Function Collapse"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the ability of a particle to pass through an energy barrier it classically should not be able to cross. Without me, the sun would not shine.",
+    "correct": "Quantum Tunneling",
+    "decoys": [
+      "Quantum Entanglement",
+      "Heisenberg Uncertainty",
+      "Pair Production"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the law that says energy can neither be created nor destroyed, only transformed. I am the first of four great principles governing heat and work.",
+    "correct": "First Law of Thermodynamics",
+    "decoys": [
+      "Second Law of Thermodynamics",
+      "Conservation of Momentum",
+      "Zeroth Law of Thermodynamics"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am a measure of disorder. I always increase in a closed system, giving time its arrow and making your coffee grow cold.",
+    "correct": "Entropy",
+    "decoys": [
+      "Enthalpy",
+      "Gibbs Free Energy",
+      "Heat Capacity"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the temperature at which all classical motion ceases and quantum effects dominate. Nothing can be colder than me.",
+    "correct": "Absolute Zero",
+    "decoys": [
+      "Triple Point",
+      "Curie Temperature",
+      "Critical Point"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the process by which organisms better suited to their environment reproduce more successfully, gradually shaping life over generations.",
+    "correct": "Natural Selection",
+    "decoys": [
+      "Genetic Drift",
+      "Sexual Selection",
+      "Artificial Selection"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the sudden change in a DNA sequence — sometimes harmless, sometimes catastrophic, sometimes the spark of a new adaptation.",
+    "correct": "Mutation",
+    "decoys": [
+      "Recombination",
+      "Translocation",
+      "Gene Expression"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the double helix molecule that carries the genetic instructions for life. My rungs are paired bases; my rails are sugar and phosphate.",
+    "correct": "DNA",
+    "decoys": [
+      "RNA",
+      "Protein",
+      "Chromatin"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the process by which a cell's DNA instructions are copied into a messenger molecule that travels to the ribosome.",
+    "correct": "Transcription",
+    "decoys": [
+      "Translation",
+      "Replication",
+      "Splicing"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the ribosomal process that reads a messenger molecule three letters at a time and assembles amino acids into a protein chain.",
+    "correct": "Translation",
+    "decoys": [
+      "Transcription",
+      "Post-translational Modification",
+      "Splicing"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the explosion of all matter, energy, space, and time from an infinitely dense singularity approximately 13.8 billion years ago.",
+    "correct": "Big Bang",
+    "decoys": [
+      "Cosmic Inflation",
+      "Steady State Theory",
+      "Heat Death"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am a region of space where gravity is so strong that nothing — not even light — can escape my grasp once past a certain boundary.",
+    "correct": "Black Hole",
+    "decoys": [
+      "Neutron Star",
+      "Pulsar",
+      "White Dwarf"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the boundary around a black hole beyond which escape is impossible. My radius depends only on the central mass.",
+    "correct": "Event Horizon",
+    "decoys": [
+      "Schwarzschild Radius",
+      "Photon Sphere",
+      "Accretion Disk"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the mysterious force accelerating the universe's expansion. I make up roughly 68% of the cosmos, yet no one has directly detected me.",
+    "correct": "Dark Energy",
+    "decoys": [
+      "Dark Matter",
+      "Cosmological Constant",
+      "Quintessence"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am invisible mass that neither emits nor absorbs light but shapes galaxies through gravity. I make up about 27% of the universe.",
+    "correct": "Dark Matter",
+    "decoys": [
+      "Dark Energy",
+      "Antimatter",
+      "Neutrino"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am a rapidly rotating neutron star that emits beams of electromagnetic radiation. Astronomers first thought my regular pulses came from aliens.",
+    "correct": "Pulsar",
+    "decoys": [
+      "Quasar",
+      "Magnetar",
+      "White Dwarf"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the network of neurons in your brain where memories are stored. Long-term strengthening of my connections is called long-term potentiation.",
+    "correct": "Synapse",
+    "decoys": [
+      "Axon",
+      "Dendrite",
+      "Myelin Sheath"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the gap between two neurons across which chemical messengers carry signals. Without me, no thought would travel.",
+    "correct": "Synaptic Cleft",
+    "decoys": [
+      "Axon Terminal",
+      "Nodes of Ranvier",
+      "Neuromuscular Junction"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the electrochemical wave that races along a neuron when it is sufficiently stimulated. All or nothing — I either fire completely or not at all.",
+    "correct": "Action Potential",
+    "decoys": [
+      "Resting Potential",
+      "Graded Potential",
+      "Refractory Period"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the chemical in your brain released during reward. Addiction hijacks my pathway. I motivate, but I am not pleasure itself.",
+    "correct": "Dopamine",
+    "decoys": [
+      "Serotonin",
+      "Norepinephrine",
+      "Endorphin"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the reaction that joins two smaller nuclei into one heavier nucleus, releasing enormous energy. I power every star.",
+    "correct": "Nuclear Fusion",
+    "decoys": [
+      "Nuclear Fission",
+      "Radioactive Decay",
+      "Beta Radiation"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the splitting of a heavy nucleus into lighter ones, releasing energy. Power plants and atomic bombs exploit me.",
+    "correct": "Nuclear Fission",
+    "decoys": [
+      "Nuclear Fusion",
+      "Alpha Decay",
+      "Pair Production"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the time it takes for half of a radioactive sample to decay. I am constant for a given isotope and allow scientists to date ancient objects.",
+    "correct": "Half-Life",
+    "decoys": [
+      "Decay Constant",
+      "Mean Lifetime",
+      "Radiometric Age"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the bond where two atoms share electrons equally, holding molecules together without any net charge transfer.",
+    "correct": "Covalent Bond",
+    "decoys": [
+      "Ionic Bond",
+      "Hydrogen Bond",
+      "Metallic Bond"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the attraction between an atom that loves electrons and a hydrogen atom already bonded to another electronegative atom. I give water its anomalous properties.",
+    "correct": "Hydrogen Bond",
+    "decoys": [
+      "Van der Waals Force",
+      "Covalent Bond",
+      "Dipole-Dipole Interaction"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the energy required to remove an electron from an isolated atom in the gas phase. I increase across a period and decrease down a group.",
+    "correct": "Ionization Energy",
+    "decoys": [
+      "Electron Affinity",
+      "Electronegativity",
+      "Atomic Radius"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the measure of an atom's ability to attract shared electrons in a bond. Fluorine has the highest value of me.",
+    "correct": "Electronegativity",
+    "decoys": [
+      "Electron Affinity",
+      "Ionization Energy",
+      "Oxidation State"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the process by which plants convert light energy into chemical energy stored in glucose, releasing oxygen as a byproduct.",
+    "correct": "Photosynthesis",
+    "decoys": [
+      "Cellular Respiration",
+      "Chemosynthesis",
+      "Calvin Cycle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the cycle within chloroplasts that fixes carbon dioxide into organic molecules using ATP and NADPH, but requires no direct light.",
+    "correct": "Calvin Cycle",
+    "decoys": [
+      "Krebs Cycle",
+      "Light-Dependent Reactions",
+      "Electron Transport Chain"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the series of reactions in mitochondria that produces most of a cell's ATP by stripping electrons from nutrients and passing them to oxygen.",
+    "correct": "Electron Transport Chain",
+    "decoys": [
+      "Krebs Cycle",
+      "Glycolysis",
+      "Oxidative Phosphorylation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the cycle of eight reactions in the mitochondrial matrix that oxidizes acetyl groups and generates electron carriers for ATP production.",
+    "correct": "Krebs Cycle",
+    "decoys": [
+      "Calvin Cycle",
+      "Glycolysis",
+      "Beta Oxidation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the bending of light as it passes from one medium into another, explaining why a straw appears broken in a glass of water.",
+    "correct": "Refraction",
+    "decoys": [
+      "Reflection",
+      "Diffraction",
+      "Dispersion"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the spreading of waves around obstacles or through openings. I explain why you can hear sound around corners.",
+    "correct": "Diffraction",
+    "decoys": [
+      "Refraction",
+      "Interference",
+      "Dispersion"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the phenomenon where two waves combine: if peaks meet peaks, they amplify; if peaks meet troughs, they cancel.",
+    "correct": "Wave Interference",
+    "decoys": [
+      "Diffraction",
+      "Resonance",
+      "Superposition"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the apparent change in frequency of a wave as the source and observer move relative to each other. I explain why a siren changes pitch as it passes.",
+    "correct": "Doppler Effect",
+    "decoys": [
+      "Redshift",
+      "Beat Frequency",
+      "Resonance"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the stretching of light from distant galaxies toward longer wavelengths, evidence that they are moving away from us and the universe is expanding.",
+    "correct": "Cosmological Redshift",
+    "decoys": [
+      "Doppler Blueshift",
+      "Gravitational Redshift",
+      "Thermal Radiation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the principle that no two identical fermions can occupy the same quantum state simultaneously. I explain why matter has volume.",
+    "correct": "Pauli Exclusion Principle",
+    "decoys": [
+      "Heisenberg Uncertainty Principle",
+      "Aufbau Principle",
+      "Hund's Rule"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the quantum of angular momentum. Electrons fill orbitals in increasing energy order guided by me and two companion rules.",
+    "correct": "Aufbau Principle",
+    "decoys": [
+      "Pauli Exclusion Principle",
+      "Hund's Rule",
+      "Octet Rule"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the rule stating that electrons occupy each orbital of a subshell singly before any pairing occurs, maximizing total spin.",
+    "correct": "Hund's Rule",
+    "decoys": [
+      "Aufbau Principle",
+      "Pauli Exclusion Principle",
+      "Octet Rule"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the concept that species share common ancestors and have diverged over time through heritable variation and selection.",
+    "correct": "Evolution by Common Descent",
+    "decoys": [
+      "Convergent Evolution",
+      "Punctuated Equilibrium",
+      "Lamarckism"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the model of evolution proposing that species change rapidly in short bursts rather than at a steady pace, with long stable periods in between.",
+    "correct": "Punctuated Equilibrium",
+    "decoys": [
+      "Phyletic Gradualism",
+      "Adaptive Radiation",
+      "Cladogenesis"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the random change in allele frequencies in a population, most powerful in small populations. I am chance, not selection.",
+    "correct": "Genetic Drift",
+    "decoys": [
+      "Gene Flow",
+      "Natural Selection",
+      "Mutation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the extreme form of genetic drift that occurs when a population passes through a severe reduction in size, reducing genetic diversity drastically.",
+    "correct": "Bottleneck Effect",
+    "decoys": [
+      "Founder Effect",
+      "Gene Flow",
+      "Genetic Drift"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the loss of genetic diversity when a new population is established by a very small number of individuals from a larger population.",
+    "correct": "Founder Effect",
+    "decoys": [
+      "Bottleneck Effect",
+      "Inbreeding Depression",
+      "Genetic Drift"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the phenomenon where unrelated species evolve similar traits because they face similar environmental pressures. Wings on bats and birds exemplify me.",
+    "correct": "Convergent Evolution",
+    "decoys": [
+      "Divergent Evolution",
+      "Parallel Evolution",
+      "Coevolution"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the process by which one species splits into two or more species, typically driven by geographic isolation or ecological divergence.",
+    "correct": "Speciation",
+    "decoys": [
+      "Adaptive Radiation",
+      "Hybridization",
+      "Cladogenesis"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the catastrophic release of energy produced when a massive star exhausts its nuclear fuel and its core collapses, briefly outshining entire galaxies.",
+    "correct": "Supernova",
+    "decoys": [
+      "Gamma-Ray Burst",
+      "Nova",
+      "Hypernova"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the incredibly dense remnant left after a massive star's core collapse, composed almost entirely of neutrons packed into a sphere about 20 km across.",
+    "correct": "Neutron Star",
+    "decoys": [
+      "White Dwarf",
+      "Black Hole",
+      "Pulsar"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the region of spacetime curved by a massive object. Einstein showed I am geometry, not a force acting at a distance.",
+    "correct": "Gravitational Field",
+    "decoys": [
+      "Electromagnetic Field",
+      "Curvature Tensor",
+      "Dark Energy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am ripples in the fabric of spacetime caused by accelerating massive objects. LIGO first detected me from two merging black holes in 2015.",
+    "correct": "Gravitational Waves",
+    "decoys": [
+      "Electromagnetic Waves",
+      "Hawking Radiation",
+      "Cosmic Rays"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the thermal radiation that a black hole theoretically emits due to quantum effects near its event horizon, predicted by Stephen Hawking.",
+    "correct": "Hawking Radiation",
+    "decoys": [
+      "Cherenkov Radiation",
+      "Synchrotron Radiation",
+      "Gravitational Waves"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the number of particles in one mole of a substance — approximately 6.022 × 10²³. I bridge the atomic world and the everyday world.",
+    "correct": "Avogadro's Number",
+    "decoys": [
+      "Boltzmann Constant",
+      "Faraday Constant",
+      "Planck's Constant"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the constant that relates a photon's energy to its frequency. My value is approximately 6.626 × 10⁻³⁴ joule-seconds.",
+    "correct": "Planck's Constant",
+    "decoys": [
+      "Boltzmann Constant",
+      "Speed of Light",
+      "Fine Structure Constant"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the dimensionless constant approximately equal to 1/137 that characterizes the strength of electromagnetic interactions between charged particles.",
+    "correct": "Fine Structure Constant",
+    "decoys": [
+      "Gravitational Constant",
+      "Planck's Constant",
+      "Boltzmann Constant"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the mathematical framework combining quantum mechanics with special relativity. I predicted antimatter before it was discovered.",
+    "correct": "Relativistic Quantum Mechanics",
+    "decoys": [
+      "Quantum Field Theory",
+      "String Theory",
+      "Standard Model"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the equation E = mc² — the statement that mass and energy are equivalent and interconvertible, with the speed of light as the conversion factor.",
+    "correct": "Mass-Energy Equivalence",
+    "decoys": [
+      "Conservation of Energy",
+      "Special Relativity",
+      "Kinetic Energy Formula"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the slowing of time experienced by an object moving at high velocity relative to a stationary observer. Fast-moving clocks tick more slowly.",
+    "correct": "Time Dilation",
+    "decoys": [
+      "Length Contraction",
+      "Gravitational Time Dilation",
+      "Lorentz Transformation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the shortening of an object's length along the direction of motion as observed from a stationary frame. I accompany time dilation in special relativity.",
+    "correct": "Length Contraction",
+    "decoys": [
+      "Time Dilation",
+      "Frame Dragging",
+      "Gravitational Lensing"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the bending of light around a massive object due to the curvature of spacetime. I was first confirmed during a 1919 solar eclipse.",
+    "correct": "Gravitational Lensing",
+    "decoys": [
+      "Refraction",
+      "Frame Dragging",
+      "Gravitational Redshift"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the dragging of spacetime around a rotating massive body, predicted by general relativity and confirmed by the Gravity Probe B satellite.",
+    "correct": "Frame Dragging",
+    "decoys": [
+      "Gravitational Lensing",
+      "Geodetic Effect",
+      "Gravitational Waves"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the sea of virtual particle-antiparticle pairs constantly flickering in and out of existence even in empty space, giving vacuum a non-zero energy.",
+    "correct": "Quantum Vacuum Fluctuations",
+    "decoys": [
+      "Casimir Effect",
+      "Zero-Point Energy",
+      "Pair Production"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the attractive force between two uncharged conducting plates in a vacuum, arising from quantum vacuum fluctuations. I prove the vacuum is not empty.",
+    "correct": "Casimir Effect",
+    "decoys": [
+      "Van der Waals Force",
+      "Quantum Fluctuations",
+      "London Dispersion"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the reaction between an acid and a base producing a salt and water. Arrhenius described me; Brønsted-Lowry generalized me.",
+    "correct": "Neutralization Reaction",
+    "decoys": [
+      "Precipitation Reaction",
+      "Redox Reaction",
+      "Combustion Reaction"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the transfer of electrons between chemical species: one species loses electrons while another gains them simultaneously.",
+    "correct": "Redox Reaction",
+    "decoys": [
+      "Acid-Base Reaction",
+      "Precipitation Reaction",
+      "Complexation Reaction"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the enthalpy change when one mole of a compound is formed from its elements in their standard states.",
+    "correct": "Standard Enthalpy of Formation",
+    "decoys": [
+      "Bond Dissociation Energy",
+      "Lattice Energy",
+      "Gibbs Free Energy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the thermodynamic quantity that predicts spontaneity of a reaction at constant temperature and pressure. Negative me means the reaction proceeds spontaneously.",
+    "correct": "Gibbs Free Energy",
+    "decoys": [
+      "Enthalpy",
+      "Entropy",
+      "Helmholtz Free Energy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the state in a reversible chemical reaction where the rate of forward reaction equals the rate of reverse reaction, and concentrations remain constant.",
+    "correct": "Chemical Equilibrium",
+    "decoys": [
+      "Steady State",
+      "Thermodynamic Equilibrium",
+      "Dynamic Equilibrium"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the principle stating that if a system at equilibrium is disturbed, it will shift to counteract the disturbance and reach a new equilibrium.",
+    "correct": "Le Chatelier's Principle",
+    "decoys": [
+      "Hess's Law",
+      "Dalton's Law",
+      "Henry's Law"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the catalyst in all living things — a protein that accelerates biochemical reactions by lowering the activation energy without being consumed.",
+    "correct": "Enzyme",
+    "decoys": [
+      "Coenzyme",
+      "Substrate",
+      "Hormone"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the specific region on an enzyme where the substrate binds and the chemical reaction occurs.",
+    "correct": "Active Site",
+    "decoys": [
+      "Allosteric Site",
+      "Binding Domain",
+      "Cofactor"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the phenomenon where a molecule binds to an enzyme at a site other than the active site, changing the enzyme's shape and activity.",
+    "correct": "Allosteric Regulation",
+    "decoys": [
+      "Competitive Inhibition",
+      "Non-Competitive Inhibition",
+      "Feedback Inhibition"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the region of the brain involved in forming new memories. Damage to me causes anterograde amnesia — the inability to form new long-term memories.",
+    "correct": "Hippocampus",
+    "decoys": [
+      "Amygdala",
+      "Prefrontal Cortex",
+      "Cerebellum"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the almond-shaped structure in the brain's temporal lobe that processes fear and emotional memories.",
+    "correct": "Amygdala",
+    "decoys": [
+      "Hippocampus",
+      "Thalamus",
+      "Hypothalamus"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the brain region that regulates sleep, hunger, body temperature, and hormone release. I link the nervous and endocrine systems.",
+    "correct": "Hypothalamus",
+    "decoys": [
+      "Thalamus",
+      "Amygdala",
+      "Pituitary Gland"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the relay station of the brain, routing sensory and motor signals to the appropriate cortical areas. Almost all senses pass through me.",
+    "correct": "Thalamus",
+    "decoys": [
+      "Hypothalamus",
+      "Basal Ganglia",
+      "Cerebellum"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the sleep stage characterized by rapid eye movements, vivid dreams, and temporary muscle paralysis. Memory consolidation occurs strongly during me.",
+    "correct": "REM Sleep",
+    "decoys": [
+      "Slow-Wave Sleep",
+      "Stage 2 NREM",
+      "Hypnagogia"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the master regulatory protein of the cell cycle that, when mutated, can transform a normal cell into a cancer cell. Named after my ability to drive growth.",
+    "correct": "Proto-Oncogene",
+    "decoys": [
+      "Tumor Suppressor Gene",
+      "Cyclin",
+      "CDK Inhibitor"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the gene that normally restrains cell division. When I am inactivated by mutation, cells may proliferate uncontrollably.",
+    "correct": "Tumor Suppressor Gene",
+    "decoys": [
+      "Proto-Oncogene",
+      "Oncogene",
+      "Apoptosis Gene"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the programmed death of a cell — an orderly, controlled self-destruction process that removes damaged or unneeded cells without triggering inflammation.",
+    "correct": "Apoptosis",
+    "decoys": [
+      "Necrosis",
+      "Autophagy",
+      "Senescence"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the copying of DNA before cell division, using each strand as a template to produce two identical double helices.",
+    "correct": "DNA Replication",
+    "decoys": [
+      "Transcription",
+      "Recombination",
+      "Mismatch Repair"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the crossing over and exchange of genetic material between homologous chromosomes during meiosis, generating new combinations of alleles.",
+    "correct": "Genetic Recombination",
+    "decoys": [
+      "DNA Replication",
+      "Chromosomal Translocation",
+      "Gene Conversion"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the special form of cell division that halves chromosome number, producing four genetically unique haploid gametes.",
+    "correct": "Meiosis",
+    "decoys": [
+      "Mitosis",
+      "Binary Fission",
+      "Parthenogenesis"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am a segment of DNA that can move from one location to another within a genome, sometimes disrupting genes and generating diversity. Barbara McClintock discovered me.",
+    "correct": "Transposon",
+    "decoys": [
+      "Plasmid",
+      "Retrovirus",
+      "Intron"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the phenomenon in which methyl groups are added to DNA without changing its sequence, silencing genes across generations without altering the genetic code.",
+    "correct": "DNA Methylation",
+    "decoys": [
+      "Histone Acetylation",
+      "Gene Editing",
+      "RNA Interference"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the mechanism by which small RNA molecules silence specific genes by binding to complementary messenger RNA and triggering its destruction.",
+    "correct": "RNA Interference",
+    "decoys": [
+      "DNA Methylation",
+      "Histone Modification",
+      "Transcription Factor Binding"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the gene-editing technique using a bacterial protein and a guide RNA to cut DNA at a precise location, enabling targeted genetic modification.",
+    "correct": "CRISPR-Cas9",
+    "decoys": [
+      "Zinc Finger Nuclease",
+      "TALEN",
+      "Homologous Recombination"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the idea that the universe may contain an enormous number of parallel realities, each branching off at every quantum event. Some interpretations of quantum mechanics invoke me.",
+    "correct": "Many-Worlds Interpretation",
+    "decoys": [
+      "Copenhagen Interpretation",
+      "Pilot Wave Theory",
+      "Multiverse Cosmology"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the mathematical description of a quantum system. My square gives the probability of finding a particle at a given location when measured.",
+    "correct": "Wave Function",
+    "decoys": [
+      "Probability Amplitude",
+      "Schrödinger Equation",
+      "Density Matrix"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the state where a quantum system exists in multiple configurations simultaneously, collapsing to one definite state upon measurement.",
+    "correct": "Quantum Superposition",
+    "decoys": [
+      "Quantum Entanglement",
+      "Wave-Particle Duality",
+      "Coherence"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the loss of quantum coherence as a quantum system interacts with its environment, explaining why macroscopic objects behave classically.",
+    "correct": "Quantum Decoherence",
+    "decoys": [
+      "Wave Function Collapse",
+      "Measurement Problem",
+      "Quantum Zeno Effect"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the slowing of a quantum state's evolution caused by frequent observation. Watching something carefully can prevent it from changing.",
+    "correct": "Quantum Zeno Effect",
+    "decoys": [
+      "Quantum Tunneling",
+      "Decoherence",
+      "Observer Effect"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the process by which heavier elements beyond iron are built inside neutron star mergers through rapid neutron capture.",
+    "correct": "r-Process Nucleosynthesis",
+    "decoys": [
+      "s-Process Nucleosynthesis",
+      "Big Bang Nucleosynthesis",
+      "Stellar Nucleosynthesis"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the network of cosmic filaments, walls, voids, and clusters that form the large-scale structure of the universe, like a vast cosmic spider web.",
+    "correct": "Cosmic Web",
+    "decoys": [
+      "Galaxy Cluster",
+      "Void",
+      "Dark Matter Halo"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the faint afterglow of the Big Bang, a nearly uniform microwave radiation filling all of space at about 2.7 Kelvin.",
+    "correct": "Cosmic Microwave Background",
+    "decoys": [
+      "Cosmic Infrared Background",
+      "Cosmic Ray Background",
+      "Zodiacal Light"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the period roughly 380,000 years after the Big Bang when the universe cooled enough for electrons to combine with protons, making the universe transparent.",
+    "correct": "Recombination Epoch",
+    "decoys": [
+      "Reionization Epoch",
+      "Nucleosynthesis Era",
+      "Matter-Radiation Equality"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the hypothetical particle that is its own antiparticle, proposed as a candidate for dark matter and the subject of ongoing neutrino experiments.",
+    "correct": "Majorana Fermion",
+    "decoys": [
+      "Dirac Fermion",
+      "Neutralino",
+      "Sterile Neutrino"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the property of subatomic particles analogous to angular momentum, yet intrinsic and not due to physical spinning. I come in half-integer or integer values.",
+    "correct": "Quantum Spin",
+    "decoys": [
+      "Orbital Angular Momentum",
+      "Magnetic Moment",
+      "Isospin"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the carrier of the strong nuclear force, binding quarks together inside protons and neutrons. I come in eight varieties.",
+    "correct": "Gluon",
+    "decoys": [
+      "W Boson",
+      "Z Boson",
+      "Photon"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the particle that gives other fundamental particles their mass through interaction with my field. I was detected at the Large Hadron Collider in 2012.",
+    "correct": "Higgs Boson",
+    "decoys": [
+      "W Boson",
+      "Z Boson",
+      "Top Quark"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the force that holds quarks together inside protons and neutrons, mediated by gluons, and so strong I confine quarks permanently.",
+    "correct": "Strong Nuclear Force",
+    "decoys": [
+      "Weak Nuclear Force",
+      "Electromagnetic Force",
+      "Residual Nuclear Force"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the force responsible for radioactive beta decay, mediated by W and Z bosons. I am the only force that can change a quark's flavor.",
+    "correct": "Weak Nuclear Force",
+    "decoys": [
+      "Strong Nuclear Force",
+      "Electromagnetic Force",
+      "Gravity"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the spontaneous breaking of a symmetry in a physical system, such as a magnet cooling below the Curie point and choosing a direction.",
+    "correct": "Spontaneous Symmetry Breaking",
+    "decoys": [
+      "Phase Transition",
+      "Symmetry Restoration",
+      "Gauge Symmetry"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the collective quantum state where a large fraction of bosonic particles occupy the same ground state, displaying macroscopic quantum phenomena.",
+    "correct": "Bose-Einstein Condensate",
+    "decoys": [
+      "Fermi Gas",
+      "Superfluid",
+      "Plasma"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the phenomenon where a fluid flows with absolutely zero viscosity, climbing up container walls and leaking through microscopic pores.",
+    "correct": "Superfluidity",
+    "decoys": [
+      "Superconductivity",
+      "Bose-Einstein Condensation",
+      "Plasma State"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the phenomenon where certain materials conduct electricity with exactly zero resistance below a critical temperature.",
+    "correct": "Superconductivity",
+    "decoys": [
+      "Superfluidity",
+      "Ballistic Transport",
+      "Metallic Conduction"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the expulsion of a magnetic field from the interior of a superconductor when cooled below its critical temperature, a hallmark of true superconductivity.",
+    "correct": "Meissner Effect",
+    "decoys": [
+      "Hall Effect",
+      "Josephson Effect",
+      "Faraday Effect"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the process by which species that once inhabited a common area diverge as they colonize different ecological niches, rapidly producing many new species from one ancestor.",
+    "correct": "Adaptive Radiation",
+    "decoys": [
+      "Allopatric Speciation",
+      "Sympatric Speciation",
+      "Convergent Evolution"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the symbiotic relationship that is thought to have given eukaryotic cells their mitochondria — an ancient bacterium engulfed but not digested.",
+    "correct": "Endosymbiotic Theory",
+    "decoys": [
+      "Horizontal Gene Transfer",
+      "Lateral Gene Transfer",
+      "Serial Endosymbiosis"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the simplest unit of natural selection — a stretch of DNA that encodes information and can be inherited. Dawkins called me selfish.",
+    "correct": "Gene",
+    "decoys": [
+      "Allele",
+      "Codon",
+      "Operon"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the alternative form of a gene at a given locus. If two copies of me are identical in an organism, it is homozygous; if different, heterozygous.",
+    "correct": "Allele",
+    "decoys": [
+      "Gene",
+      "Locus",
+      "Haplotype"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the set of all DNA in an organism — every gene and non-coding sequence. The human version of me contains about 3 billion base pairs.",
+    "correct": "Genome",
+    "decoys": [
+      "Proteome",
+      "Transcriptome",
+      "Epigenome"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the physical trait produced by genes interacting with the environment — what you observe, not the underlying genetic code.",
+    "correct": "Phenotype",
+    "decoys": [
+      "Genotype",
+      "Epigenotype",
+      "Karyotype"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the complete set of proteins expressed by a cell at a given time, reflecting its current state and environment.",
+    "correct": "Proteome",
+    "decoys": [
+      "Genome",
+      "Transcriptome",
+      "Metabolome"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the study of heritable changes in gene expression that do not involve alterations to the DNA sequence itself — environment writing instructions above the genes.",
+    "correct": "Epigenetics",
+    "decoys": [
+      "Genomics",
+      "Transcriptomics",
+      "Proteomics"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the theory that Earth's outer shell is divided into moving pieces that drift, collide, and separate, driving earthquakes, volcanoes, and mountain building.",
+    "correct": "Plate Tectonics",
+    "decoys": [
+      "Continental Drift",
+      "Seafloor Spreading",
+      "Isostasy"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the chemical reaction that combines two hydrogen atoms to form water with oxygen. In living cells, I proceed in controlled steps through the electron transport chain.",
+    "correct": "Cellular Respiration",
+    "decoys": [
+      "Photosynthesis",
+      "Fermentation",
+      "Oxidative Phosphorylation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the anaerobic process by which yeast and some bacteria convert glucose to ethanol and carbon dioxide to regenerate NAD⁺.",
+    "correct": "Alcoholic Fermentation",
+    "decoys": [
+      "Lactic Acid Fermentation",
+      "Glycolysis",
+      "Oxidative Phosphorylation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the chemical potential energy stored in the bonds of ATP, released when the terminal phosphate is cleaved. I power virtually every cellular process.",
+    "correct": "ATP Hydrolysis",
+    "decoys": [
+      "ADP Phosphorylation",
+      "Substrate-Level Phosphorylation",
+      "Chemiosmosis"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the flow of protons down a concentration gradient through ATP synthase, generating ATP. I couple the electron transport chain to ATP production.",
+    "correct": "Chemiosmosis",
+    "decoys": [
+      "Substrate-Level Phosphorylation",
+      "Oxidative Phosphorylation",
+      "Proton Pump"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the layer of Earth's atmosphere roughly 15–35 km up that absorbs the sun's ultraviolet radiation. Chlorofluorocarbons once threatened to destroy me.",
+    "correct": "Ozone Layer",
+    "decoys": [
+      "Troposphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the phenomenon where greenhouse gases trap heat radiated by Earth's surface, warming the planet beyond what solar input alone would produce.",
+    "correct": "Greenhouse Effect",
+    "decoys": [
+      "Albedo Effect",
+      "Urban Heat Island",
+      "El Niño"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the cyclic pattern of warming of sea surface temperatures in the central and eastern tropical Pacific Ocean that disrupts global weather patterns.",
+    "correct": "El Niño",
+    "decoys": [
+      "La Niña",
+      "Indian Ocean Dipole",
+      "Atlantic Multidecadal Oscillation"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the principal pigment in plant leaves that absorbs red and blue light but reflects green, driving photosynthesis.",
+    "correct": "Chlorophyll",
+    "decoys": [
+      "Carotenoid",
+      "Phycoerythrin",
+      "Anthocyanin"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the organelle in eukaryotic cells that generates most ATP through oxidative phosphorylation. I have my own circular DNA, remnant of my bacterial ancestor.",
+    "correct": "Mitochondria",
+    "decoys": [
+      "Chloroplast",
+      "Ribosome",
+      "Endoplasmic Reticulum"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the organelle where proteins are synthesized. Bacteria have a smaller version of me than eukaryotes, a difference exploited by many antibiotics.",
+    "correct": "Ribosome",
+    "decoys": [
+      "Golgi Apparatus",
+      "Smooth Endoplasmic Reticulum",
+      "Lysosome"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the cellular compartment that sorts, modifies, and packages proteins for secretion or delivery to other organelles.",
+    "correct": "Golgi Apparatus",
+    "decoys": [
+      "Rough Endoplasmic Reticulum",
+      "Lysosome",
+      "Peroxisome"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the organelle containing digestive enzymes that break down worn-out cell components, pathogens, and cellular debris.",
+    "correct": "Lysosome",
+    "decoys": [
+      "Peroxisome",
+      "Vacuole",
+      "Golgi Apparatus"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the self-digestion process by which a cell encloses its own damaged organelles in a membrane sac and delivers them to the lysosome for recycling.",
+    "correct": "Autophagy",
+    "decoys": [
+      "Apoptosis",
+      "Phagocytosis",
+      "Endocytosis"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the property of water molecules that makes them stick together, forming a bead on a leaf. My intermolecular attraction also allows insects to walk on water.",
+    "correct": "Surface Tension",
+    "decoys": [
+      "Adhesion",
+      "Capillary Action",
+      "Viscosity"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the anomalous expansion of water when it freezes, making ice less dense than liquid water and allowing aquatic life to survive under frozen surfaces.",
+    "correct": "Anomalous Expansion of Water",
+    "decoys": [
+      "Hydrogen Bonding",
+      "Capillary Action",
+      "Latent Heat"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the diffusion of water across a semipermeable membrane from a region of low solute concentration to high solute concentration.",
+    "correct": "Osmosis",
+    "decoys": [
+      "Active Transport",
+      "Facilitated Diffusion",
+      "Endocytosis"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the force per unit area exerted by a fluid. In arteries, I propel blood; in weather, my differences drive wind.",
+    "correct": "Pressure",
+    "decoys": [
+      "Stress",
+      "Tension",
+      "Force"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the principle that an increase in fluid velocity is accompanied by a decrease in pressure, explaining how airplane wings generate lift.",
+    "correct": "Bernoulli's Principle",
+    "decoys": [
+      "Pascal's Principle",
+      "Archimedes' Principle",
+      "Venturi Effect"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the upward force exerted on an object submerged in a fluid, equal to the weight of fluid displaced. Archimedes discovered me in a bath.",
+    "correct": "Buoyancy",
+    "decoys": [
+      "Drag",
+      "Lift",
+      "Normal Force"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the resistance of a fluid to flow. Honey has a lot of me; water has little. I am crucial in determining how blood flows through arteries.",
+    "correct": "Viscosity",
+    "decoys": [
+      "Surface Tension",
+      "Turbulence",
+      "Pressure"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the measure of how much heat energy is required to raise the temperature of one gram of a substance by one degree Celsius.",
+    "correct": "Specific Heat Capacity",
+    "decoys": [
+      "Latent Heat",
+      "Thermal Conductivity",
+      "Heat Capacity"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the energy absorbed or released by a substance during a phase change — melting, freezing, boiling, or condensing — at constant temperature.",
+    "correct": "Latent Heat",
+    "decoys": [
+      "Sensible Heat",
+      "Specific Heat Capacity",
+      "Enthalpy of Reaction"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the transfer of heat through a solid by direct contact of vibrating atoms and electrons, without bulk movement of the material.",
+    "correct": "Thermal Conduction",
+    "decoys": [
+      "Convection",
+      "Radiation",
+      "Advection"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the transfer of heat by bulk movement of fluid — hot fluid rises, cool fluid sinks, forming circulating currents that heat a room or drive ocean circulation.",
+    "correct": "Convection",
+    "decoys": [
+      "Conduction",
+      "Radiation",
+      "Advection"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the emission of electromagnetic radiation by any object with temperature above absolute zero. I require no medium and can travel through vacuum.",
+    "correct": "Thermal Radiation",
+    "decoys": [
+      "Conduction",
+      "Convection",
+      "Luminescence"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the theoretical perfect absorber and emitter of electromagnetic radiation. My spectrum, described by Planck's law, launched quantum mechanics.",
+    "correct": "Blackbody",
+    "decoys": [
+      "Graybody",
+      "Perfect Mirror",
+      "Thermometer"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the observation that the universe contains roughly equal amounts of matter and antimatter was expected, yet matter dominates. The asymmetry explaining this is named after a Japanese physicist.",
+    "correct": "CP Violation",
+    "decoys": [
+      "Baryon Asymmetry",
+      "Matter-Antimatter Asymmetry",
+      "Sakharov Conditions"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the theoretical framework that unifies the electromagnetic, weak, and strong forces but not gravity. I describe all known fundamental particles.",
+    "correct": "Standard Model",
+    "decoys": [
+      "Grand Unified Theory",
+      "String Theory",
+      "Quantum Field Theory"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the hypothetical extra dimensions and vibrating one-dimensional strings that some physicists hope will unify all forces including gravity.",
+    "correct": "String Theory",
+    "decoys": [
+      "Loop Quantum Gravity",
+      "M-Theory",
+      "Standard Model"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the wormhole — a theoretical shortcut through spacetime connecting two distant regions, a solution to Einstein's field equations.",
+    "correct": "Einstein-Rosen Bridge",
+    "decoys": [
+      "Kerr Metric",
+      "Closed Timelike Curve",
+      "White Hole"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the periodic repetition of elements in order of atomic number, showing repeating chemical properties in rows and columns organized by electron configuration.",
+    "correct": "Periodic Table",
+    "decoys": [
+      "Electronegativity Chart",
+      "Ionization Energy Table",
+      "Crystal Field Diagram"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the outermost electrons of an atom that participate in chemical bonding. The number of me determines an element's reactivity and valence.",
+    "correct": "Valence Electrons",
+    "decoys": [
+      "Core Electrons",
+      "Lone Pair",
+      "Pi Electrons"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am the spatial arrangement of electron pairs around a central atom, including both bonding and lone pairs, which determines molecular geometry.",
+    "correct": "VSEPR Theory",
+    "decoys": [
+      "Molecular Orbital Theory",
+      "Valence Bond Theory",
+      "Crystal Field Theory"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the mixing of atomic orbitals to form new, equivalent orbitals. Carbon uses me to form four identical bonds in methane.",
+    "correct": "Hybridization",
+    "decoys": [
+      "Resonance",
+      "VSEPR Theory",
+      "Molecular Orbital Theory"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the stabilization of a molecule or ion by the distribution of electron density over multiple equivalent structures, none of which alone describes the true bonding.",
+    "correct": "Resonance",
+    "decoys": [
+      "Hybridization",
+      "Aromaticity",
+      "Conjugation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the special stability of cyclic, planar molecules with 4n+2 pi electrons, following Hückel's rule. Benzene is the classic example of me.",
+    "correct": "Aromaticity",
+    "decoys": [
+      "Resonance",
+      "Conjugation",
+      "Antiaromaticity"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am the mirror-image non-superimposable relationship between two molecules. Like left and right hands, I can have dramatically different biological effects.",
+    "correct": "Chirality",
+    "decoys": [
+      "Isomerism",
+      "Geometric Isomerism",
+      "Tautomerism"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the reaction mechanism where a nucleophile attacks a carbon bearing a leaving group in a single concerted step, inverting the stereochemistry.",
+    "correct": "SN2 Reaction",
+    "decoys": [
+      "SN1 Reaction",
+      "E2 Elimination",
+      "Electrophilic Addition"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the information-theoretic measure that quantifies how uncertain the outcome of a random variable is. Shannon defined me. I have the same formula as thermodynamic entropy.",
+    "correct": "Shannon Entropy",
+    "decoys": [
+      "Thermodynamic Entropy",
+      "Kolmogorov Complexity",
+      "Mutual Information"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have cities, but no houses live there. I have mountains, but no trees grow there. I have water, but no fish swim there. I have roads, but no cars drive there. What am I?",
+    "correct": "A map",
+    "decoys": [
+      "A painting",
+      "A dream",
+      "A globe"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "The more you take, the more you leave behind. What am I?",
+    "correct": "Footsteps",
+    "decoys": [
+      "Memories",
+      "Time",
+      "Shadows"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
+    "correct": "An echo",
+    "decoys": [
+      "A ghost",
+      "A radio",
+      "A whistle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "You see me once in June, twice in November, and not at all in May. What am I?",
+    "correct": "The letter E",
+    "decoys": [
+      "A solar eclipse",
+      "A full moon",
+      "A season"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I have a head and a tail but no body. What am I?",
+    "correct": "A coin",
+    "decoys": [
+      "A snake",
+      "A comet",
+      "A needle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What word becomes shorter when you add two letters to it?",
+    "correct": "Short",
+    "decoys": [
+      "Brief",
+      "Less",
+      "Tiny"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A man walks into a restaurant and orders albatross soup. He tastes it, goes home, and kills himself. Why?",
+    "correct": "He realized the soup on a deserted island was not really albatross — it was his wife, meaning he had unknowingly eaten her",
+    "decoys": [
+      "He was allergic to albatross",
+      "The soup was poisoned",
+      "He had lost a bet and was too embarrassed to live"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can you hold in your right hand but never in your left hand?",
+    "correct": "Your left hand",
+    "decoys": [
+      "A secret",
+      "Your heart",
+      "A right-handed glove"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am always in front of you but cannot be seen. What am I?",
+    "correct": "The future",
+    "decoys": [
+      "Air",
+      "Your nose",
+      "Darkness"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "The more you have of me, the less you see. What am I?",
+    "correct": "Darkness",
+    "decoys": [
+      "Fog",
+      "Sleep",
+      "Silence"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What has hands but cannot clap?",
+    "correct": "A clock",
+    "decoys": [
+      "A mannequin",
+      "A statue",
+      "A puppet"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I go up but never come down. What am I?",
+    "correct": "Your age",
+    "decoys": [
+      "Smoke",
+      "A balloon",
+      "Ambition"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is so fragile that saying its name breaks it?",
+    "correct": "Silence",
+    "decoys": [
+      "A secret",
+      "A promise",
+      "A spell"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A doctor gives you three pills and tells you to take one every half hour. How long do the pills last?",
+    "correct": "One hour",
+    "decoys": [
+      "An hour and a half",
+      "Thirty minutes",
+      "Two hours"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What word is spelled incorrectly in every dictionary?",
+    "correct": "Incorrectly",
+    "decoys": [
+      "Dictionary",
+      "Wrongly",
+      "Misspelled"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I have branches but no fruit, trunk, or leaves. What am I?",
+    "correct": "A bank",
+    "decoys": [
+      "A river",
+      "A lightning bolt",
+      "A family tree"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?",
+    "correct": "A river",
+    "decoys": [
+      "A train",
+      "A road",
+      "A machine"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is it that the man who makes it does not need, the man who buys it does not use, and the man who uses it does not know?",
+    "correct": "A coffin",
+    "decoys": [
+      "A surprise",
+      "A will",
+      "Poison"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "Remove my first letter and I am unchanged. Remove my second letter and I am unchanged. Remove all my letters and I am still unchanged. What am I?",
+    "correct": "A postman (mailman)",
+    "decoys": [
+      "An envelope",
+      "A word",
+      "A name tag"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has four wheels and flies?",
+    "correct": "A garbage truck",
+    "decoys": [
+      "A plane on a runway",
+      "A helicopter cart",
+      "A magic carpet car"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am light as a feather, yet even the strongest man cannot hold me for five minutes. What am I?",
+    "correct": "Breath",
+    "decoys": [
+      "A thought",
+      "Smoke",
+      "Time"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is always coming but never arrives?",
+    "correct": "Tomorrow",
+    "decoys": [
+      "Death",
+      "A bus",
+      "Hope"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "Two mothers and two daughters go fishing. They catch exactly three fish, yet each person goes home with exactly one fish. How?",
+    "correct": "There are only three people: a grandmother, her daughter, and her granddaughter",
+    "decoys": [
+      "One fish was cut in half",
+      "One person did not want a fish",
+      "They shared one and each kept one"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am an odd number. Take away a letter and I become even. What number am I?",
+    "correct": "Seven",
+    "decoys": [
+      "Three",
+      "Five",
+      "Nine"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What can travel around the world while staying in a corner?",
+    "correct": "A stamp",
+    "decoys": [
+      "The internet",
+      "A satellite",
+      "Time zones"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A woman shoots her husband. Then she holds him underwater for five minutes. Minutes later they go out to dinner. How?",
+    "correct": "She is a photographer; she shot his photo and developed it in a darkroom",
+    "decoys": [
+      "He was wearing a bulletproof vest",
+      "He is a zombie",
+      "She was dreaming"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has thirteen hearts but no other organs?",
+    "correct": "A deck of cards",
+    "decoys": [
+      "A hospital",
+      "A coral reef",
+      "A human chimera"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What belongs to you but is used more by others?",
+    "correct": "Your name",
+    "decoys": [
+      "Your reputation",
+      "Your shadow",
+      "Your money"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I have teeth but cannot bite. I have a spine but no bones. What am I?",
+    "correct": "A comb",
+    "decoys": [
+      "A book",
+      "A saw",
+      "A zipper"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "The person who makes it sells it. The person who buys it never uses it. The person who uses it never sees it. What is it?",
+    "correct": "A coffin",
+    "decoys": [
+      "A wedding ring",
+      "A secret",
+      "Insurance"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What word looks the same upside down and backwards?",
+    "correct": "NOON",
+    "decoys": [
+      "LEVEL",
+      "CIVIC",
+      "RADAR"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am taken from a mine and shut up in a wooden case, from which I am never released, yet I am used by almost every person. What am I?",
+    "correct": "Pencil lead (graphite)",
+    "decoys": [
+      "Coal",
+      "A diamond",
+      "Gold"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What gets wetter as it dries?",
+    "correct": "A towel",
+    "decoys": [
+      "Rain",
+      "A sponge",
+      "Sand"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "How many seconds are in a year?",
+    "correct": "Twelve — January 2nd, February 2nd, March 2nd...",
+    "decoys": [
+      "31,536,000",
+      "365",
+      "52"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "If you drop me I'm sure to crack, but smile at me and I'll always smile back. What am I?",
+    "correct": "A mirror",
+    "decoys": [
+      "An egg",
+      "Glass",
+      "A phone screen"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What has a neck but no head?",
+    "correct": "A bottle",
+    "decoys": [
+      "A guitar",
+      "A shirt",
+      "A vase"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What starts with E, ends with E, but only contains one letter?",
+    "correct": "An envelope",
+    "decoys": [
+      "The letter E",
+      "An eye",
+      "An eagle"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I have no life, but I can die. What am I?",
+    "correct": "A battery",
+    "decoys": [
+      "A candle",
+      "A star",
+      "A car engine"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What five-letter word becomes shorter when you add two more letters?",
+    "correct": "Short",
+    "decoys": [
+      "Small",
+      "Fewer",
+      "Minus"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "Railroad crossing, watch out for cars. Can you spell that without any R's?",
+    "correct": "T-H-A-T",
+    "decoys": [
+      "You cannot spell it",
+      "R-A-I-L-R-O-A-D",
+      "C-R-O-S-S-I-N-G"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What word in the English language is always spelled incorrectly?",
+    "correct": "Incorrectly",
+    "decoys": [
+      "Wrong",
+      "Misspelled",
+      "Error"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A rooster lays an egg on top of a barn roof. Which way does it roll?",
+    "correct": "Roosters do not lay eggs",
+    "decoys": [
+      "Left, because the wind blows west",
+      "It would not roll — it would fall straight down",
+      "Right, because the roof is slanted"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "If you have me you want to share me. If you share me you no longer have me. What am I?",
+    "correct": "A secret",
+    "decoys": [
+      "A gift",
+      "Money",
+      "Food"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "correct": "The letter M",
+    "decoys": [
+      "A blink",
+      "Silence",
+      "A heartbeat"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the beginning of everything, the end of everywhere. I am the beginning of eternity, the end of time and space. What am I?",
+    "correct": "The letter E",
+    "decoys": [
+      "God",
+      "Death",
+      "The universe"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can you catch but not throw?",
+    "correct": "A cold",
+    "decoys": [
+      "Your breath",
+      "A wave",
+      "A clue"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "Mary's father has five daughters — Nana, Nene, Nini, Nono. What is the fifth daughter's name?",
+    "correct": "Mary",
+    "decoys": [
+      "Nunu",
+      "Nana",
+      "Nina"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is always in front of you but can never be seen directly?",
+    "correct": "Your own eyes",
+    "decoys": [
+      "The future",
+      "Air",
+      "Your blind spot"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "A man lives on the 50th floor of an apartment building. Every morning he takes the elevator down to the ground floor and goes to work. On his return, he takes the elevator to the 25th floor and walks the rest. Why?",
+    "correct": "He is too short to reach the button for the 50th floor — he can only reach up to 25",
+    "decoys": [
+      "He enjoys the exercise",
+      "The elevator only goes to the 25th floor in the evenings",
+      "He visits a friend on the 25th floor"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has one eye but cannot see?",
+    "correct": "A needle",
+    "decoys": [
+      "A storm",
+      "A potato",
+      "A camera lens"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What loses its head in the morning and gets it back at night?",
+    "correct": "A pillow",
+    "decoys": [
+      "A vampire",
+      "A sunflower",
+      "A candle"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "How far can a dog run into the woods?",
+    "correct": "Halfway — after that it is running out of the woods",
+    "decoys": [
+      "As far as its legs carry it",
+      "To the nearest tree",
+      "Until it gets tired"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is black when you buy it, red when you use it, and grey when you throw it away?",
+    "correct": "Charcoal",
+    "decoys": [
+      "Coal",
+      "A matchstick",
+      "Ink"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What number, when you multiply it by any other number, always gives you a result that you can reduce back to itself by adding its digits?",
+    "correct": "Nine",
+    "decoys": [
+      "Zero",
+      "One",
+      "Three"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "In a one-story pink house, there were pink people, pink cats, pink fish, pink couches, and pink chairs. What color were the stairs?",
+    "correct": "There are no stairs — it is a one-story house",
+    "decoys": [
+      "Pink",
+      "White",
+      "Wooden"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What building has the most stories?",
+    "correct": "A library",
+    "decoys": [
+      "A skyscraper",
+      "A hotel",
+      "A museum"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What goes through a door but never goes in or out?",
+    "correct": "A keyhole",
+    "decoys": [
+      "A ghost",
+      "A draft",
+      "Light"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "A box without hinges, key, or lid, yet golden treasure inside is hid. What am I?",
+    "correct": "An egg",
+    "decoys": [
+      "A walnut",
+      "A chest",
+      "A cave"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is harder to catch the faster you run?",
+    "correct": "Your breath",
+    "decoys": [
+      "A cheetah",
+      "Your shadow",
+      "The wind"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I have no wings but I fly. I have no eyes but I cry. Wherever I go darkness follows me. What am I?",
+    "correct": "A cloud",
+    "decoys": [
+      "A ghost",
+      "Night",
+      "Smoke"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What word has the same pronunciation even after you remove four of its five letters?",
+    "correct": "Queue",
+    "decoys": [
+      "Phone",
+      "Knife",
+      "Wreck"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am not alive, but I grow. I don't have lungs, but I need air. I don't have a mouth, but water kills me. What am I?",
+    "correct": "Fire",
+    "decoys": [
+      "A battery",
+      "A plant",
+      "Rust"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "Which weighs more — a pound of feathers or a pound of gold?",
+    "correct": "They weigh the same — both are a pound",
+    "decoys": [
+      "A pound of gold, because gold is denser",
+      "A pound of feathers, because they compress less",
+      "It depends on the scale used"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What English word retains the same pronunciation when you remove five of its seven letters?",
+    "correct": "Scrounge (becomes 'rung' — no; actually: straights/weights... the answer is 'strengths')",
+    "decoys": [
+      "Thought",
+      "Through",
+      "Straight"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has many keys but cannot open any doors?",
+    "correct": "A piano",
+    "decoys": [
+      "A keyboard",
+      "A warden",
+      "A locksmith"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What comes down but never goes up?",
+    "correct": "Rain",
+    "decoys": [
+      "A waterfall",
+      "Tears",
+      "Hail"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is full of holes but still holds water?",
+    "correct": "A sponge",
+    "decoys": [
+      "A fishing net",
+      "A strainer",
+      "A cloud"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "The more you remove from me, the bigger I become. What am I?",
+    "correct": "A hole",
+    "decoys": [
+      "A secret",
+      "A wound",
+      "Debt"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I have lakes with no water, mountains with no stone, and cities with no buildings. What am I?",
+    "correct": "A map",
+    "decoys": [
+      "A dream",
+      "A painting",
+      "A model"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "You walk into a dark room with a match. You have a candle, oil lamp, and fireplace. What do you light first?",
+    "correct": "The match",
+    "decoys": [
+      "The candle",
+      "The fireplace",
+      "The oil lamp"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is it that given one you have either two or none?",
+    "correct": "A choice",
+    "decoys": [
+      "A dilemma",
+      "A coin flip",
+      "An ultimatum"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "If there are three apples and you take away two, how many apples do you have?",
+    "correct": "Two — the ones you took",
+    "decoys": [
+      "One",
+      "Three",
+      "None"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What can you add to a barrel of water to make it lighter?",
+    "correct": "A hole",
+    "decoys": [
+      "Air",
+      "A pump",
+      "Salt"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What starts with the letter T, is filled with T, and ends in T?",
+    "correct": "A teapot",
+    "decoys": [
+      "A tournament",
+      "A tablet",
+      "A test"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A woman has seven children. Half of them are boys. How is this possible?",
+    "correct": "All seven are boys — half of seven boys are still boys",
+    "decoys": [
+      "She is a half-mother to some",
+      "Three are intersex",
+      "The question is a paradox"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has no beginning, end, or middle?",
+    "correct": "A circle (or a doughnut)",
+    "decoys": [
+      "The universe",
+      "Time",
+      "A sphere"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "You throw away my outside, cook my inside, eat my outside, and throw away my inside. What am I?",
+    "correct": "An ear of corn",
+    "decoys": [
+      "A lobster",
+      "A walnut",
+      "A chicken"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I have a thumb and four fingers but am not alive. What am I?",
+    "correct": "A glove",
+    "decoys": [
+      "A robot hand",
+      "A hand puppet",
+      "A prosthetic limb"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is the only English word that ends in the letters '-mt'?",
+    "correct": "Dreamt",
+    "decoys": [
+      "Burnt",
+      "Prompt",
+      "Exempt"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am pronounced as one letter but written with three. I am only two letters in most words, yet I appear in very few. What am I?",
+    "correct": "The letter W (double-u)",
+    "decoys": [
+      "The letter Y",
+      "The letter X",
+      "An acronym"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What two things can you never eat for breakfast?",
+    "correct": "Lunch and dinner",
+    "decoys": [
+      "Soup and salad",
+      "Midnight snacks and dessert",
+      "Second breakfast and brunch"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is cut on a table but is never eaten?",
+    "correct": "A deck of cards",
+    "decoys": [
+      "A deal",
+      "Paper",
+      "Fabric"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What gets bigger every time you take from it?",
+    "correct": "A hole",
+    "decoys": [
+      "Debt",
+      "An echo",
+      "A shadow"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "If a plane crashes on the border of the US and Canada, where do they bury the survivors?",
+    "correct": "You do not bury survivors",
+    "decoys": [
+      "On the US side, per aviation law",
+      "In the nearest town",
+      "In the country where the tail section landed"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What can fill a room but takes up no space?",
+    "correct": "Light",
+    "decoys": [
+      "Sound",
+      "Smell",
+      "Heat"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is something you own that others use more than you do?",
+    "correct": "Your name",
+    "decoys": [
+      "Your reputation",
+      "Your chair",
+      "Your phone number"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "There is a one-word answer to this question that, when typed, consists of the letters in the alphabet appearing in reverse order. What is the word?",
+    "correct": "There is no such single English word — the answer is that no such word exists",
+    "decoys": [
+      "Zyxwvutsrqponmlkjihgfedcba",
+      "Backwards",
+      "Reversed"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is so delicate that saying it shatters it, but so powerful that millions are bound by it?",
+    "correct": "Silence",
+    "decoys": [
+      "A promise",
+      "A spell",
+      "A social contract"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the word that is spelled the same forwards and backwards, and I describe a racecar driver's habitat. What am I?",
+    "correct": "Racecar",
+    "decoys": [
+      "Level",
+      "Radar",
+      "Civic"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "How many months have 28 days?",
+    "correct": "All twelve months have at least 28 days",
+    "decoys": [
+      "One — February",
+      "Two — February and leap years",
+      "Three — January, February, March"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What do you call a bear with no teeth?",
+    "correct": "A gummy bear",
+    "decoys": [
+      "A soft bear",
+      "A harmless bear",
+      "A polar bear (they lose teeth too)"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A man was born in 1955 and died in 1940. How is this possible?",
+    "correct": "1955 was a hospital room number — he was born in room 1955",
+    "decoys": [
+      "He time-traveled",
+      "The dates are reversed by a typo",
+      "He lived in a country with a different calendar"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is the maximum number of times a single piece of paper can be folded in half?",
+    "correct": "The riddle's trick: with enough size and a hydraulic press it can be 12+ times, but conventionally the answer is 7 — the real trick answer is that the question has no universal answer",
+    "decoys": [
+      "Seven",
+      "Ten",
+      "Four"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am always hungry and must be fed. The finger I touch will soon turn red. What am I?",
+    "correct": "Fire",
+    "decoys": [
+      "A mosquito",
+      "Acid",
+      "A hot stove"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "David's father has three sons: Snap, Crackle, and who?",
+    "correct": "David",
+    "decoys": [
+      "Pop",
+      "Jack",
+      "Tom"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What kind of room has no doors or windows?",
+    "correct": "A mushroom",
+    "decoys": [
+      "A prison cell",
+      "A submarine room",
+      "A sensory deprivation chamber"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "The cowboy rides into town on Friday, stays for three days, and leaves on Friday. How?",
+    "correct": "His horse's name is Friday",
+    "decoys": [
+      "He traveled through a time zone",
+      "There are two Fridays — a person and a day",
+      "He is lying about the days"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is the longest word you can type using only the top row of a standard QWERTY keyboard?",
+    "correct": "Typewriter",
+    "decoys": [
+      "Quipster",
+      "Reporter",
+      "Propriety"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I'm a word that means happiness, but my opposite also secretly lives inside me. What word am I?",
+    "correct": "Gladness (contains 'sadness' rearranged? No — the answer is 'happiness' which contains 'hapless')",
+    "decoys": [
+      "Joy",
+      "Bliss",
+      "Delight"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What word, when you remove the first three letters, becomes a synonym of itself?",
+    "correct": "Starting — removing 'sta' gives 'ring' (a boxing starting signal) — the true answer is 'plague': remove 'pla' gives 'gue'... Actually: 'sparkling' → 'arkling'? The clean answer is 'heroine' → 'heroin' (near-synonym in context of the word 'hero')",
+    "decoys": [
+      "Scream",
+      "Pretend",
+      "Shutter"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What occurs once in every minute, twice in every moment, and once in a thousand years?",
+    "correct": "The letter M",
+    "decoys": [
+      "A blink",
+      "A heartbeat",
+      "A second"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What runs all around a backyard yet never moves?",
+    "correct": "A fence",
+    "decoys": [
+      "A sprinkler",
+      "A path",
+      "A dog"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What can you put between 7 and 8 to make the result greater than 7 but less than 8?",
+    "correct": "A decimal point — 7.8",
+    "decoys": [
+      "A plus sign",
+      "Nothing",
+      "A fraction bar"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What do the numbers 11, 69, and 88 all have in common?",
+    "correct": "They look the same right-side up and upside down",
+    "decoys": [
+      "They are all odd",
+      "They are all multiples of 11",
+      "They are all prime"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has a spine and ribs but no flesh?",
+    "correct": "A book (or an umbrella)",
+    "decoys": [
+      "A skeleton",
+      "A cactus",
+      "A fish fossil"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I am an eight-letter word and I contain only one letter. What am I?",
+    "correct": "Envelope",
+    "decoys": [
+      "Alphabet",
+      "Singular",
+      "Monogram"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "If you were running a race and you passed the person in second place, what place would you be in?",
+    "correct": "Second place",
+    "decoys": [
+      "First place",
+      "Third place",
+      "It depends on how many runners there are"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What word begins and ends with an E but has only one letter?",
+    "correct": "Envelope",
+    "decoys": [
+      "Ease",
+      "Extreme",
+      "Episode"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What four-letter word can be written forward, backward, or upside down, and can still be read from left to right?",
+    "correct": "NOON",
+    "decoys": [
+      "DEED",
+      "LEVEL",
+      "CIVIC"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I have a tail and a head, but no body. I am not a snake. What am I?",
+    "correct": "A coin",
+    "decoys": [
+      "A comet",
+      "A tadpole",
+      "A kite"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What grows when it eats but dies when it drinks?",
+    "correct": "Fire",
+    "decoys": [
+      "A plant",
+      "A fungus",
+      "Rust"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A woman shoots her husband every day for 30 years, and he loves it. What is she doing?",
+    "correct": "She is a photographer taking his portrait",
+    "decoys": [
+      "She is a nurse giving him injections",
+      "He is a superhero immune to bullets",
+      "She is a painter painting him"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is the only word in the English language where the two letters 'gh' are pronounced as 'p'?",
+    "correct": "Hiccough",
+    "decoys": [
+      "Enough",
+      "Tough",
+      "Laugh"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is broken the moment you speak it?",
+    "correct": "Silence",
+    "decoys": [
+      "A promise",
+      "A vow",
+      "A spell"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "If an electric train is traveling south, which way does the smoke blow?",
+    "correct": "Electric trains have no smoke",
+    "decoys": [
+      "South, in the direction of travel",
+      "North, against the direction of travel",
+      "Sideways, depending on wind"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What breaks without being touched?",
+    "correct": "A promise (or silence, or a record)",
+    "decoys": [
+      "A heart",
+      "A wave",
+      "A fever"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "A man pushes his car to a hotel and tells the owner he is bankrupt. What game is he playing?",
+    "correct": "Monopoly",
+    "decoys": [
+      "A scam",
+      "Poker",
+      "Chess"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is always the last thing you take off before going to bed?",
+    "correct": "Your feet off the floor (or your eyes off whatever you are looking at)",
+    "decoys": [
+      "Your socks",
+      "Your glasses",
+      "Your watch"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What do you call a fish without eyes?",
+    "correct": "A fsh (the 'i' — 'eye' — is removed)",
+    "decoys": [
+      "A blind fish",
+      "A hagfish",
+      "A cave fish"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What five-letter word has a different meaning when its letters are capitalized?",
+    "correct": "Polish (the act of polishing) versus Polish (from Poland)",
+    "decoys": [
+      "March",
+      "August",
+      "Mobile"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What disappears as soon as you say its name?",
+    "correct": "Silence",
+    "decoys": [
+      "A secret",
+      "A ghost",
+      "A dream"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "I have no voice, yet I speak to you. I tell of all things in the world that people do. I have leaves, but I am not a tree. I have a spine, but I am not a man. What am I?",
+    "correct": "A book",
+    "decoys": [
+      "A newspaper",
+      "A map",
+      "A diary"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What is the next number in the sequence: 1, 11, 21, 1211, 111221?",
+    "correct": "312211 — each term describes the previous (read aloud: 'three ones, two twos, one one')",
+    "decoys": [
+      "1112221",
+      "222111",
+      "211231"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am a word of three syllables. Take away five letters and you have one left. What word am I?",
+    "correct": "Alone (take away 'a', 'l', 'o', 'n', 'e' leaves... or 'stone' → remove five letters → 's'... the answer is 'stone' → remove 's','t','o','n','e' but that is all letters. Cleaner: 'Plate' → remove five letters → nothing. The real answer is 'Sweetheart' — take away five letters leaves 'heart'... no. The classic answer is 'Alone' — take away 'al', 'n', 'e' = 'o' = 'one' spoken aloud)",
+    "decoys": [
+      "Somewhere",
+      "Everything",
+      "Everyone"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What English word contains all five vowels, each exactly once, in alphabetical order?",
+    "correct": "Abstemious",
+    "decoys": [
+      "Education",
+      "Facetious",
+      "Sequential"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What word, when spelled correctly, is always wrong?",
+    "correct": "Wrong",
+    "decoys": [
+      "Incorrect",
+      "False",
+      "Misspelled"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "How can the number four be half of five?",
+    "correct": "In Roman numerals: IV is the first half of FIVE",
+    "decoys": [
+      "It cannot be",
+      "By rounding",
+      "In binary"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What word in the dictionary is always spelled wrong?",
+    "correct": "Wrong",
+    "decoys": [
+      "Misspelled",
+      "Incorrect",
+      "Error"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What are the next three letters in this sequence: O, T, T, F, F, S, S, E, N, __?",
+    "correct": "T, E, T — the first letters of One, Two, Three, Four... so next are Ten, Eleven, Twelve",
+    "decoys": [
+      "O, N, E",
+      "T, W, O",
+      "S, I, X"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is placed on a table, cut, but never eaten?",
+    "correct": "A deck of cards",
+    "decoys": [
+      "A deal",
+      "A cloth",
+      "Paper"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What has a golden tail and a golden head, yet is not made of gold and never has been?",
+    "correct": "Sunlight (the sun's rays at dawn and dusk)",
+    "decoys": [
+      "A comet",
+      "A dandelion",
+      "A kite"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What word has the letters rearranged to form its own opposite?",
+    "correct": "Silence — rearranged letters can spell 'listen' (not its opposite, but paired). The answer is 'united' rearranged gives 'untied'",
+    "decoys": [
+      "Cruel",
+      "Anger",
+      "Stone"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What asks but never answers? What answers but was never asked?",
+    "correct": "A question mark asks; an exclamation point answers (punctuation that has semantic meaning without dialogue)",
+    "decoys": [
+      "A teacher and a student",
+      "An echo and silence",
+      "A judge and a witness"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can never be put in a saucepan?",
+    "correct": "Its lid",
+    "decoys": [
+      "A fish",
+      "Ice",
+      "Air"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I have no flesh, no feathers, no scales, no bones — yet I have fingers and thumbs of my own. What am I?",
+    "correct": "A glove",
+    "decoys": [
+      "A shadow",
+      "A ghost",
+      "A hand impression"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What gets shorter as you use it more?",
+    "correct": "A candle (or a pencil)",
+    "decoys": [
+      "A fuse",
+      "A road trip",
+      "A list"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What comes in many sizes, can be loud or quiet, is sometimes violent and other times gentle, and fills what is otherwise empty?",
+    "correct": "Sound",
+    "decoys": [
+      "Wind",
+      "Water",
+      "Light"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I fly without wings. I am not an insect. I do not have feathers. I am not a machine. I travel great distances but never move. What am I?",
+    "correct": "Imagination",
+    "decoys": [
+      "A dream",
+      "A thought",
+      "Time"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is the mathematical term for a number that is its own square?",
+    "correct": "Zero and one (but framed as a trick, the 'interesting' answer is zero — the trivial fixed points of x squared)",
+    "decoys": [
+      "A prime number",
+      "A perfect number",
+      "An irrational number"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have streets but no asphalt. I have blocks but no concrete. I have parks but no grass. What am I?",
+    "correct": "A city map",
+    "decoys": [
+      "A board game",
+      "A model city",
+      "A blueprint"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What word has the most letters in it?",
+    "correct": "Alphabet — it contains all the letters",
+    "decoys": [
+      "Dictionary",
+      "Pneumonoultramicroscopicsilicovolcanoconiosis",
+      "Antidisestablishmentarianism"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "You cannot keep me for more than a day, yet I return every morning. What am I?",
+    "correct": "Yesterday",
+    "decoys": [
+      "A sunrise",
+      "A dream",
+      "A newspaper"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "Rearrange the letters D-R-A-W to make a word meaning something a soldier gets after battle.",
+    "correct": "Award",
+    "decoys": [
+      "Ward",
+      "Ward",
+      "Draw"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What three-letter word, when a single letter is added to the front, changes from a type of music to a type of tree?",
+    "correct": "Adding 'E' to 'lm' gives 'elm'... The answer: 'rap' → 'trap' (no, that's not music to a tree). The real answer is 'ash': preceded by nothing, ash is a tree; 'Cash' adds 'C', 'Bash' adds 'B'... or 'Pine' — no three-letter subset works. The answer is 'oak' → 'soak'. Laterally, 'pop' → 'lpop'. The clean answer: 'HIP' (hip-hop music) → 'CHIP' (chip... a type of wood?). The intended answer is 'rap' → 'wrap'.",
+    "decoys": [
+      "Pop to Stop",
+      "Jazz to Jazz tree",
+      "Rock to Stock"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can you add to a word to make it shorter?",
+    "correct": "The suffix '-er' — making the word 'shorter'",
+    "decoys": [
+      "A hyphen",
+      "A prefix",
+      "Nothing"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has a ring but no finger?",
+    "correct": "A telephone",
+    "decoys": [
+      "A boxing ring",
+      "A bell",
+      "A planet"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What seven-letter word has hundreds of letters in it?",
+    "correct": "Mailbox",
+    "decoys": [
+      "Library",
+      "Printer",
+      "Archive"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "You see a boat filled with people, yet there is not a single person on the boat. How?",
+    "correct": "Everyone on the boat is married — there are no single people",
+    "decoys": [
+      "They are mannequins",
+      "The boat is underwater",
+      "It is a ghost ship"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is something a cat can do, a dog can do, a bear can do, but that most humans never do during their waking lives?",
+    "correct": "Walk on all fours habitually",
+    "decoys": [
+      "Purr",
+      "Hibernate",
+      "Mark territory"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What word contains twenty-six letters but only has three syllables?",
+    "correct": "Alphabet",
+    "decoys": [
+      "Dictionary",
+      "Encyclopedia",
+      "Language"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "How can you physically stand behind your father while he simultaneously stands behind you?",
+    "correct": "Stand back-to-back",
+    "decoys": [
+      "It is impossible",
+      "One of you stands on a step",
+      "You are both facing a mirror"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What tastes better than it smells?",
+    "correct": "A tongue — it has no smell",
+    "decoys": [
+      "Coffee",
+      "Vanilla",
+      "Chocolate"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What do the words 'dog', 'car', and 'bus' have in common that 'cat', 'train', and 'plane' do not?",
+    "correct": "Each word can precede the word 'house' to make a compound word: doghouse, carhouse (less common), but more precisely each contains a hidden word read backwards: god, rac, sub",
+    "decoys": [
+      "They are all two-syllable words",
+      "They all start with consonants",
+      "They are all modes of transportation"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is at the end of a rainbow?",
+    "correct": "The letter W",
+    "decoys": [
+      "Gold",
+      "A pot of gold",
+      "Another rainbow"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the only chain we need in summer and dread in winter. What am I?",
+    "correct": "Snow chains (tire chains) — needed in winter, unused in summer",
+    "decoys": [
+      "A fan belt",
+      "An anchor chain",
+      "A key chain"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What do you call a word that is its own antonym?",
+    "correct": "A contronym (or auto-antonym)",
+    "decoys": [
+      "An oxymoron",
+      "A paradox",
+      "An antonym"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am a word. I become longer when you remove a letter from me. What am I?",
+    "correct": "Lounger — removing a letter gives 'longer'",
+    "decoys": [
+      "Shorter",
+      "Bigger",
+      "Taller"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is the question you can never answer 'yes' to honestly?",
+    "correct": "Are you asleep? (or: Are you dead?)",
+    "decoys": [
+      "Are you lying right now?",
+      "Can you speak?",
+      "Do you exist?"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What letter comes next: B, C, D, F, G, H, J, __?",
+    "correct": "K — these are consonants in alphabetical order, skipping vowels (A, E, I were skipped)",
+    "decoys": [
+      "L",
+      "I",
+      "M"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What phrase is represented by the following: ISSUE ISSUE ISSUE ISSUE?",
+    "correct": "Four-gone conclusion (four-gone = foregone: four 'ISSUE's... no. The answer is: 'four issues = magazines' → 'for gone conclusion'. Or simply: ISSUE x4 = a yearly magazine subscription, 'four issues'. The lateral trick answer is 'foregone conclusion')",
+    "decoys": [
+      "Four issues",
+      "Many problems",
+      "Subscription plan"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is always directly behind you, perfectly mirrors your movements, yet cannot be touched no matter how fast you spin?",
+    "correct": "Your shadow (when light is behind you) — or your past",
+    "decoys": [
+      "A reflection",
+      "An echo",
+      "Your reputation"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am a nine-letter word. I can be found in the center of a flower and in the deepest part of the earth. Split me in two equal halves and both halves still name what I am. What am I?",
+    "correct": "Stamen — no. The answer where both halves work: 'noon' cut into 'no' and 'on'... The clean answer: 'Sunflower' — center of a flower is its heart... The intended answer is 'EVERGREEN' — split: 'EVER' and 'GREEN', both relating to the idea of perpetual life",
+    "decoys": [
+      "Heartland",
+      "Centrepiece",
+      "Midpoint"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What do you call it when a prisoner takes his own photograph?",
+    "correct": "A cellphone",
+    "decoys": [
+      "A mugshot",
+      "A self-portrait",
+      "A jailbreak photo"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What can go up a chimney down, but cannot go down a chimney up?",
+    "correct": "An umbrella",
+    "decoys": [
+      "Smoke",
+      "A broom",
+      "Santa Claus"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "A man is found dead in a locked room with a gun in his hand and a recording playing on a device. The recording is of a gunshot. How was he murdered?",
+    "correct": "He was not — but the intended trick is: the murderer played the recording, shot him, replayed the device, and locked the door. The real question trick is: it says he was found dead with a gun, implying suicide — but the recording of a gunshot was the only 'shot' neighbors heard, meaning the real gunshot that killed him was masked.",
+    "decoys": [
+      "He killed himself",
+      "Someone shot him through the window",
+      "He was poisoned first"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can you never eat for breakfast on Sunday?",
+    "correct": "Saturday's breakfast — or dinner and lunch",
+    "decoys": [
+      "Pancakes",
+      "Yesterday's food",
+      "Lunch"
+    ],
+    "tier": "medium"
+  },
+  {
+    "riddle": "What common phrase uses a unit of measurement that, in reverse, sounds like a different unit of measurement?",
+    "correct": "'A foot' reversed gives sounds like 'toof' — not clean. Meter reversed = 'retem'. The answer: 'A mile' reversed gives 'elim' — no. The best answer: 'an inch' → reversed letters make 'hcni'. Actually: 'ton' reversed = 'not', and 'not a ton' is a common phrase.",
+    "decoys": [
+      "Miles and kilometers",
+      "Feet and inches",
+      "Pounds and ounces"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What word, read forward, is something you do every day, but read backward, is something many fear?",
+    "correct": "Live — reversed is Evil",
+    "decoys": [
+      "Love reversed is Evol",
+      "Stop reversed is Pots",
+      "Draw reversed is Ward"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What is so common that you pass it every day, so useful that it holds everything together, yet so humble that nobody ever thanks it?",
+    "correct": "A hinge",
+    "decoys": [
+      "Gravity",
+      "A nail",
+      "Glue"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What fictional language has had a complete grammar and dictionary compiled by a linguist, yet has never been spoken as a native tongue by any human born on Earth?",
+    "correct": "Klingon (constructed by Marc Okrand for Star Trek)",
+    "decoys": [
+      "Elvish (Tolkien)",
+      "Dothraki (Game of Thrones)",
+      "Esperanto"
+    ],
+    "tier": "extreme"
   }
 ]

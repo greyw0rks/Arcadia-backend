@@ -1,110 +1,5 @@
 [
   {
-    "s": "The Great Wall of China is visible from space.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Honey never spoils if stored properly.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Bananas grow on trees.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "An octopus has three hearts.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Lightning never strikes twice.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Mount Everest is the tallest mountain.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Sharks are mammals.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Water boils at 100\u00b0C at sea level.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Goldfish have 3-second memory.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Venus is the hottest planet.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Humans and dinosaurs coexisted.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Sound travels faster in water.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "The Mona Lisa has no eyebrows.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Penguins can fly.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "The Earth is flat.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Tomatoes are vegetables.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "The sun is a star.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "Bats are blind.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "Humans use only 10% of brain.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "The moon has its own light.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "The human body has four lungs.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
     "s": "Sound travels faster in water than in air.",
     "a": true,
     "tier": "hard"
@@ -125,11 +20,6 @@
     "tier": "medium"
   },
   {
-    "s": "The Great Pyramid of Giza is in Mexico.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
     "s": "Venus is the hottest planet in the solar system.",
     "a": true,
     "tier": "medium"
@@ -143,11 +33,6 @@
     "s": "The Pacific Ocean is the deepest ocean.",
     "a": true,
     "tier": "medium"
-  },
-  {
-    "s": "Spiders are insects.",
-    "a": false,
-    "tier": "easy"
   },
   {
     "s": "Light from the Sun takes about 8 minutes to reach Earth.",
@@ -165,11 +50,6 @@
     "tier": "medium"
   },
   {
-    "s": "A tomato is botanically a fruit.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
     "s": "The chemical symbol for sodium is So.",
     "a": false,
     "tier": "medium"
@@ -180,19 +60,9 @@
     "tier": "hard"
   },
   {
-    "s": "The heart is located on the right side of the chest.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
     "s": "There are 206 bones in the adult human body.",
     "a": true,
     "tier": "medium"
-  },
-  {
-    "s": "The speed of light is faster than the speed of sound.",
-    "a": true,
-    "tier": "easy"
   },
   {
     "s": "The Amazon rainforest produces about 20% of the world's oxygen.",
@@ -203,16 +73,6 @@
     "s": "Gold is heavier than lead.",
     "a": true,
     "tier": "hard"
-  },
-  {
-    "s": "The Mona Lisa was painted by Leonardo da Vinci.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "A leap year has 366 days.",
-    "a": true,
-    "tier": "easy"
   },
   {
     "s": "Octopuses have blue blood.",
@@ -228,11 +88,6 @@
     "s": "Penguins live at the North Pole.",
     "a": false,
     "tier": "medium"
-  },
-  {
-    "s": "The Earth is the third planet from the Sun.",
-    "a": true,
-    "tier": "easy"
   },
   {
     "s": "Humans only use 10% of their brains.",
@@ -270,11 +125,6 @@
     "tier": "medium"
   },
   {
-    "s": "The Atlantic Ocean is larger than the Pacific Ocean.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
     "s": "Saturn is the only planet with rings.",
     "a": false,
     "tier": "medium"
@@ -283,11 +133,6 @@
     "s": "The human nose can detect over a trillion scents.",
     "a": true,
     "tier": "hard"
-  },
-  {
-    "s": "Mercury is the closest planet to the Sun.",
-    "a": true,
-    "tier": "easy"
   },
   {
     "s": "An ostrich's eye is bigger than its brain.",
@@ -310,34 +155,14 @@
     "tier": "hard"
   },
   {
-    "s": "A bolt of lightning contains no electricity.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "The blue whale is the largest animal ever known to have lived.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
     "s": "Bananas grow pointing downward.",
     "a": false,
     "tier": "hard"
   },
   {
-    "s": "The Sun is a planet.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
     "s": "Honey can be used as an antiseptic.",
     "a": true,
     "tier": "hard"
-  },
-  {
-    "s": "The Great Barrier Reef is off the coast of Australia.",
-    "a": true,
-    "tier": "easy"
   },
   {
     "s": "Glass is made primarily from sand.",
@@ -350,21 +175,6 @@
     "tier": "medium"
   },
   {
-    "s": "The fastest land animal is the cheetah.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
-    "s": "The Pyramids were built by the ancient Greeks.",
-    "a": false,
-    "tier": "easy"
-  },
-  {
-    "s": "A century is 100 years.",
-    "a": true,
-    "tier": "easy"
-  },
-  {
     "s": "Owls can rotate their heads a full 360 degrees.",
     "a": false,
     "tier": "hard"
@@ -373,11 +183,6 @@
     "s": "The smallest bone in the body is in the ear.",
     "a": true,
     "tier": "medium"
-  },
-  {
-    "s": "Jupiter is the largest planet in the solar system.",
-    "a": true,
-    "tier": "easy"
   },
   {
     "s": "Tomatoes are native to Australia.",
@@ -435,7 +240,7 @@
     "tier": "hard"
   },
   {
-    "s": "E=mc\u00b2 implies a small amount of mass releases enormous energy.",
+    "s": "E=mc² implies a small amount of mass releases enormous energy.",
     "a": true,
     "tier": "hard"
   },
@@ -678,5 +483,3685 @@
     "s": "Rawls' 'veil of ignorance' asks people to design society without knowing their place in it.",
     "a": true,
     "tier": "hard"
+  },
+  {
+    "s": "The Mpemba effect, where hot water freezes faster than cold water under identical conditions, has been definitively proven to always occur.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Neutron stars can rotate hundreds of times per second.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The element with the highest melting point is tungsten.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Glass is technically a supercooled liquid that flows very slowly over centuries.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Humans share approximately 50% of their DNA with bananas.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Sound travels faster in water than in air.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Lightning never strikes the same place twice.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The human body contains more bacterial cells than human cells.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Oxygen is the most abundant element in the Earth's crust.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Diamonds are made of carbon atoms arranged in a cubic crystal structure.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Great Wall of China is visible from space with the naked eye.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Antibiotic resistance is primarily caused by individual humans developing immunity to antibiotics.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Sun accounts for more than 99% of the total mass in our solar system.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Water expands when it freezes, which is why ice floats.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A photon has zero rest mass.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Venus rotates in the opposite direction to most planets in the solar system.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The appendix has no known function in the human body.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Electrons orbit the nucleus of an atom in fixed circular paths.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Mitochondria have their own DNA separate from the cell nucleus.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The speed of light in a vacuum is approximately 300,000 kilometers per second.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Helium is the second most abundant element in the observable universe.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All mammals give birth to live young.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Blood is red because of iron in hemoglobin binding to oxygen.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The pH scale is logarithmic, meaning pH 4 is ten times more acidic than pH 5.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Plants absorb most of their mass from soil nutrients.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Uranium-235 is the isotope used in most nuclear fission reactors.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The human eye can distinguish more shades of green than any other color.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Viruses are considered living organisms by most biologists.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Black holes emit no radiation whatsoever.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The ozone layer is located in the stratosphere.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Alzheimer's disease is a normal part of aging.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In quantum mechanics, a particle's position and momentum cannot both be known with arbitrary precision simultaneously.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The chemical formula for table sugar (sucrose) is C12H22O11.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Humans have 23 pairs of chromosomes.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The placebo effect cannot produce measurable physiological changes in the body.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Absolute zero is approximately -273.15 degrees Celsius.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All noble gases are colorless under normal conditions.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The closest star to Earth (other than the Sun) is Proxima Centauri.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Coral reefs are made primarily from the skeletons of coral animals.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Thermal energy always flows from regions of lower temperature to higher temperature spontaneously.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The double helix structure of DNA was first proposed by Watson and Crick in 1953.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A calorie (lowercase) used in chemistry equals exactly 1000 dietary Calories (uppercase).",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Penicillin was discovered by Alexander Fleming in 1928.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The human liver is capable of regenerating itself after partial removal.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All isotopes of an element have the same number of protons.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Mercury is the hottest planet in our solar system.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The mitotic spindle is made primarily of actin filaments.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Telomeres shorten with each cell division, which is associated with cellular aging.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "CRISPR-Cas9 is derived from a bacterial immune system.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The weak nuclear force is actually stronger than the electromagnetic force at very short ranges.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Cooper pairs, which enable superconductivity, consist of two electrons that attract each other through phonon interactions.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "P53 is a tumor suppressor protein that initiates apoptosis when DNA damage is detected.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Entropy always decreases in an isolated system, according to the second law of thermodynamics.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Chandrasekhar limit (approximately 1.4 solar masses) is the maximum mass of a stable white dwarf.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Krebs cycle occurs in the cytoplasm of eukaryotic cells.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Quantum entanglement can be used to transmit information faster than light.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Pauli exclusion principle states that two identical fermions cannot occupy the same quantum state simultaneously.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Prions are misfolded proteins that can induce normal proteins to also misfold.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Drake equation is used to calculate the number of molecules in a given chemical solution.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Chemotherapy drugs typically work by targeting cancer cells exclusively while leaving healthy cells unharmed.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The quantum Hall effect requires extremely low temperatures and strong magnetic fields to observe.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "RNA interference (RNAi) silences gene expression by degrading specific messenger RNA sequences.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The cosmological constant in Einstein's field equations was originally introduced to describe a static universe.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "All chemical bonds involve the sharing of electrons.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Epigenetic modifications to histones can be inherited across cell divisions.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The half-life of Carbon-14 is approximately 5,730 years.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a Carnot engine, the efficiency depends only on the temperatures of the hot and cold reservoirs.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The endosymbiotic theory proposes that chloroplasts and mitochondria evolved from free-living prokaryotes.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Type I supernovae result from the core collapse of massive stars.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Myelin sheaths around axons increase the speed of nerve impulse conduction.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Bernoulli principle fully explains how airplane wings generate lift.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Photosystem I evolved before Photosystem II in the history of oxygenic photosynthesis.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Dark matter interacts with ordinary matter via the strong nuclear force.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Golgi apparatus is responsible for modifying, packaging, and shipping proteins within the cell.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Fermat's Last Theorem has a direct application in predicting crystalline molecular structures.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "MRI machines use magnetic fields and radio waves, not X-rays, to produce images.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The electric eel generates electricity using modified muscle cells called electrocytes.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "T cells mature in the thymus, and B cells mature in the bone marrow.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Neutrinos have zero mass, as defined by the original Standard Model formulation before 1998.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "NADH carries electrons to Complex I of the electron transport chain.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Bohr model of the atom accurately predicts the spectral lines of multi-electron atoms.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Coriolis effect causes water to drain clockwise in the Southern Hemisphere.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Chirality in molecules can cause one enantiomer to be therapeutic while the other is toxic.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "General relativity predicts that time passes more slowly in stronger gravitational fields.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "RNA can catalyze chemical reactions, acting as a ribozyme.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Hydrofluoric acid is classified as a strong acid because it completely dissociates in water.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Hardy-Weinberg equilibrium describes conditions under which allele frequencies in a population do not change.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Reactive oxygen species (ROS) serve only destructive roles in cells and have no beneficial functions.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Hubble constant describes the rate at which the universe is expanding.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Octopuses have three hearts, blue blood, and the ability to edit their own RNA.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In special relativity, two observers in different inertial frames will always agree on the simultaneity of spatially separated events.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Zeeman effect refers to the splitting of spectral lines in the presence of a magnetic field.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Tachyons, if they exist, would always travel faster than the speed of light and could never be slowed to below it.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Glycolysis requires the presence of oxygen to proceed.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Lamb shift is a small energy difference between hydrogen energy levels predicted by quantum electrodynamics.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Apoptosis and necrosis are two distinct forms of cell death that differ in whether they trigger an inflammatory response.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The strange quark has a positive charge of +2/3.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "In quantum chromodynamics, gluons carry color charge themselves, unlike photons which carry no electric charge.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Bell inequalities, when violated in experiments, rule out all local hidden variable theories.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Murray Gell-Mann proposed the quark model, and the term 'quark' comes from James Joyce's Finnegans Wake.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The anomalous magnetic moment of the electron has been calculated using QED to more than ten significant figures and agrees with experiment.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Topoisomerases resolve DNA supercoiling by transiently cutting both strands simultaneously in all cases.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Tolman-Oppenheimer-Volkoff limit is analogous to the Chandrasekhar limit but applies to neutron stars.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Aharonov-Bohm effect demonstrates that charged particles are affected by electromagnetic potentials even in regions with zero field strength.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In the standard model, the W and Z bosons acquire their mass through spontaneous symmetry breaking via the Higgs mechanism.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Chirality-induced spin selectivity (CISS) means that electrons passing through chiral molecules preferentially adopt one spin orientation.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Enzymatic reactions always follow simple Michaelis-Menten kinetics regardless of the number of substrates involved.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Penrose process allows energy to be extracted from a rotating black hole's ergosphere.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The quantum Zeno effect states that a quantum system that is continuously observed cannot undergo any change.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Long-term potentiation (LTP) in hippocampal neurons involves AMPA receptor insertion into the postsynaptic membrane.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Mpemba effect is explained by hydrogen bond topology and has been conclusively proven at the molecular level.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Superfluids like helium-4 below the lambda point exhibit zero viscosity and can flow up the walls of containers.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Frameshift mutations always result in a premature stop codon being introduced into the reading frame.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The topology of a closed universe is such that light could in principle circle the entire universe and return to its origin.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In bacteria, the lac operon is induced in the presence of lactose and repressed by the lac repressor protein bound to allolactose.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Quantum decoherence explains why macroscopic superpositions are not observed in everyday life.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Unruh effect predicts that an accelerating observer in a vacuum would detect a thermal bath of particles.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "CRISPR base editing can convert one DNA base to another without introducing a double-strand break.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The KAM theorem guarantees that all orbits in a perturbed integrable Hamiltonian system become chaotic.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Josephson effect involves the tunneling of Cooper pairs across a thin insulating barrier between two superconductors.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "RNA polymerase requires a primer to initiate transcription, just as DNA polymerase does for replication.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The concept of chemical potential in thermodynamics is a partial molar Gibbs free energy.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The anthropic principle is a well-established predictive physical law.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Spin-orbit coupling causes the fine structure splitting observed in atomic spectral lines.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The virial theorem relates the time-averaged kinetic and potential energies in a gravitationally bound system.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Telomerase adds DNA to chromosome ends using an RNA template that it carries as part of its own structure.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In Type II supernovae, most of the released energy is carried away by neutrinos, not by the optical explosion.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Lorentz group is the symmetry group of special relativity and includes both spatial rotations and Lorentz boosts.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Thermophilic archaea found in hydrothermal vents use the same metabolic pathways as E. coli.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Dark energy is believed to constitute approximately 68% of the total energy content of the universe.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Phosphorylation by kinases always activates enzymes; dephosphorylation always inactivates them.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Casimir effect produces an attractive force between two uncharged conducting plates in a vacuum.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Allosteric regulation of enzymes involves ligand binding at the active site to change enzyme activity.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The concept of 'junk DNA' has been largely revised since it was found that much non-coding DNA serves regulatory functions.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In stellar nucleosynthesis, elements heavier than iron are primarily formed through nuclear fusion releasing energy.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The 21-centimeter hydrogen line is used in radio astronomy to map neutral hydrogen gas in the galaxy.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The magnetic monopole has been observed experimentally in condensed matter systems as a quasiparticle.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Glycogen synthase kinase 3 (GSK-3) is constitutively active in the absence of Wnt signaling and targets beta-catenin for degradation.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The no-cloning theorem of quantum mechanics states that an arbitrary unknown quantum state cannot be perfectly copied.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In general relativity, gravitational waves travel at the speed of sound in the medium they pass through.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The electroweak unification was achieved theoretically before any of the predicted bosons (W, Z) were experimentally confirmed.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The chemical reactivity of a transition metal complex is entirely determined by the metal's oxidation state.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The ATP synthase enzyme rotates mechanically as it synthesizes ATP, making it a true rotary molecular motor.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Hawking radiation causes black holes to evaporate faster as they become more massive.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Onsager reciprocal relations describe symmetry in the cross-coupling coefficients of irreversible thermodynamic processes.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Spontaneous emission in quantum optics occurs at a fixed rate independent of the electromagnetic environment surrounding the emitting atom.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The protein folding problem involves predicting tertiary structure from primary amino acid sequence, and AlphaFold2 has largely solved it for single-chain proteins.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In quantum field theory, virtual particles violate energy conservation because they exist only as mathematical artifacts in Feynman diagrams.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The existence of three generations of fermions is fully explained by the Standard Model.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Bose-Einstein condensates form when bosons cool to near absolute zero and occupy the same quantum ground state.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The binding energy per nucleon peaks at iron-56, explaining why fusion releases energy below this mass and fission releases energy above it.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The quantum eraser experiment demonstrates that which-path information can be erased to restore interference patterns.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In plants, C4 photosynthesis reduces photorespiration by concentrating CO2 around RuBisCO.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Roman Empire's western half fell before its eastern half, which survived for nearly a thousand more years as the Byzantine Empire.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Napoleon Bonaparte was shorter than the average Frenchman of his era.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Great Wall of China is visible from space with the naked eye.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The United States has never had a sitting president who was also a former general of the army.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Black Death killed a higher percentage of Europe's population than any subsequent pandemic, including the 1918 flu.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Julius Caesar was never officially declared Emperor of Rome.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Soviet Union and the United States were allied against Germany in World War II.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ancient Egyptians used toothpaste.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Hundred Years' War between England and France lasted exactly 100 years.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Cleopatra lived closer in time to the Moon landing than to the construction of the Great Pyramid of Giza.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Vikings reached North America before Christopher Columbus.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Library of Alexandria was destroyed in a single catastrophic fire ordered by Julius Caesar.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Ottoman Empire and the British Empire both existed simultaneously during World War I.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ancient Rome had a form of central heating called a hypocaust.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Russian Revolution of 1917 produced two revolutions in the same year, not one.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Mahatma Gandhi was nominated for the Nobel Peace Prize but never received it.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Meiji Restoration transformed Japan from a feudal society to an industrialized nation in less than 50 years.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Christopher Columbus died believing he had reached Asia, not a new continent.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The ancient Greeks had a word for the internet.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Abraham Lincoln held a patent for a device to lift boats over shallow waters.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Aztec Empire was conquered by Spain with an army of fewer than 1,000 Spanish soldiers.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Winston Churchill won a Nobel Prize, but not for Peace — he won it for Literature.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The French Revolution began after the storming of the Bastille, which held thousands of political prisoners at the time.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Medieval knights regularly used gunpowder weapons in battle by the 14th century.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Berlin Wall fell in 1989, ending the division of Germany overnight by official decree.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Mongol Empire at its peak was the largest contiguous land empire in history.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The United States Constitution originally prohibited slavery outright.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Ancient Romans used urine as mouthwash and teeth whitener.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The printing press invented by Gutenberg was the first printing technology ever developed.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Cold War ended with a formal peace treaty signed between the US and USSR.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "GDP is a reliable measure of national well-being and quality of life.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Raising the minimum wage always increases unemployment, according to the consensus of modern economists.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Hyperinflation in Weimar Germany made the currency so worthless that it was cheaper to burn banknotes for heat than to buy wood.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Free trade agreements always benefit both countries equally.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A country can run a trade deficit indefinitely without economic collapse.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The economic concept of 'comparative advantage' implies a country should only export goods it produces most efficiently in absolute terms.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Great Depression was primarily caused by the 1929 stock market crash.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Austerity measures reliably accelerate economic recovery from a recession.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Laffer Curve implies that cutting taxes always increases government revenue.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Inflation always decreases the real value of debt, benefiting debtors.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A budget surplus is always economically desirable for a government.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In a supply-demand model, price ceilings set below equilibrium always create surpluses.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Japan's economy entered a prolonged stagnation in the 1990s despite extremely low interest rates — a phenomenon economists call a 'liquidity trap'.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Dutch East India Company (VOC) is considered by many historians to be the first publicly traded company.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Trickle-down economics has been empirically proven to reduce income inequality over time.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Bitcoin was invented by an individual or group using the pseudonym Satoshi Nakamoto, whose true identity remains unknown.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In economics, a 'Giffen good' is one whose demand increases as its price rises.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Gini coefficient measures a country's economic growth rate.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "China's economy is already larger than the United States' in terms of purchasing power parity (PPP).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The 2008 financial crisis was primarily caused by the collapse of the dot-com sector.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Compound interest was described by Albert Einstein as the eighth wonder of the world.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Stagflation — simultaneous high inflation and high unemployment — was considered impossible under Keynesian theory before it occurred in the 1970s.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In economic theory, a 'monopsony' describes a market where there is only one buyer.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Euro was adopted as physical currency by all European Union member states.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Price gouging during a disaster, while socially controversial, can increase the supply of scarce goods according to economic theory.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The United States Federal Reserve is a government agency fully controlled by the Treasury Department.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A negative interest rate policy means banks effectively charge depositors for holding their money.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Panama Papers and Paradise Papers revealed that offshore tax avoidance is practiced exclusively by criminals.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Adam Smith, the father of modern economics, was strongly opposed to corporations and monopolies.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The concept of 'market externalities' refers to costs or benefits that fall on parties not directly involved in a transaction.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Modern fiat currencies are backed by gold reserves held by central banks.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The internet was originally developed as a military project funded by the US Department of Defense.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Moore's Law states that transistor counts on chips double approximately every two years.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "GPS technology was developed by and remains under the control of the United States military.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The first commercial email was sent in 1971.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "JavaScript and Java are closely related programming languages developed by the same organization.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The first computer bug was a literal insect found in a computing machine.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Blockchain technology requires proof-of-work to function as a distributed ledger.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The HTTP protocol was invented by Tim Berners-Lee, who also invented the World Wide Web.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Linux is used more widely than Windows on servers globally.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Machine learning models can be trained using entirely synthetic data without real-world examples.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Quantum computers are faster than classical computers at every computational task.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The touchscreen technology in modern smartphones was invented by Apple.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The term 'bug' in computing was first used by Grace Hopper.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "5G networks use higher-frequency radio waves than 4G, which results in shorter range per tower.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The first commercially successful personal computer was the Apple I.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "SQL was originally called SEQUEL and was developed at IBM.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Encryption keys used in HTTPS are generated fresh for each session using asymmetric cryptography.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Mars Curiosity rover is powered by solar panels.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "All major social media platforms are legally required to remove misinformation under US federal law.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A neural network with more layers (depth) is always more accurate than a shallower network.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "IPv4 address exhaustion has already occurred — IANA gave out its last available IPv4 blocks in 2011.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The US government has never legally required backdoors in commercial encryption products.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "HTML is a Turing-complete programming language.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The concept of 'open source' software predates the internet.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The first hard disk drive, released by IBM in 1956, weighed over a ton and stored about 5 megabytes.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Claude Shannon mathematically defined the concept of information and laid the foundation for all digital communications.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Artificial intelligence systems that pass the Turing Test are considered legally sentient in some jurisdictions.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The most widely deployed operating system in the world by device count is Linux (including Android).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The 'halting problem' proved that there are mathematical problems no algorithm can solve.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "George Washington was unanimously elected president in both of his elections.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The United Nations Security Council has five permanent members, all of which are nuclear-armed states.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The United States has ratified the UN Convention on the Rights of the Child.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Democracy originated in the city-state of Athens, where all residents could vote.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The US Electoral College has never produced a result where the popular vote winner lost the presidency.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Karl Marx spent most of his productive adult life living in England.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Rwandan Genocide in 1994 was widely anticipated by US intelligence agencies, who did nothing to prevent it.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "China holds a permanent seat on the UN Security Council, which was given to the People's Republic of China from the beginning of the UN.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Switzerland has been continuously neutral in all international conflicts since 1815.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The two-party system in the United States is mandated by the US Constitution.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The International Monetary Fund (IMF) and the World Bank were both created at the 1944 Bretton Woods Conference.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "North Korea has tested nuclear weapons.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Nuremberg Trials established that 'following orders' is a valid legal defense for war crimes.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The term 'gerrymandering' is derived from the name of Elbridge Gerry, a Massachusetts governor and US Vice President.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The CIA covertly helped overthrow the democratically elected government of Iran in 1953.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The League of Nations failed in part because the United States never joined.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The European Union awards the Nobel Peace Prize to member states that join.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The European Union itself was awarded the Nobel Peace Prize in 2012.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Apartheid in South Africa was legally dismantled after a referendum in which only white South Africans voted.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The United States has formally declared war on another nation since World War II.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Magna Carta was originally signed by King John of England in 1215 and was intended primarily to protect barons' rights, not common people.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The first constitution in the modern sense ever written was the US Constitution.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Adolf Hitler was born in Germany.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Nazi Party came to power in Germany through a violent coup d'état.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Mao Zedong's Great Leap Forward caused more deaths than the Holocaust.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Korean War ended with a formal peace treaty signed between North and South Korea.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The United States dropped only two atomic bombs in history — both on Japan during World War II.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The ancient city of Troy, long considered mythological, was confirmed by archaeological excavation in the 19th century.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Nikola Tesla held more patents than Thomas Edison.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The first programmable electronic general-purpose computer was built in the United States.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Ancient Greeks knew the Earth was spherical centuries before Columbus sailed.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Isaac Newton spent more of his intellectual energy on alchemy and biblical prophecy than on physics.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Spanish Flu of 1918 originated in Spain.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Marie Curie was the first woman to win a Nobel Prize and the first person to win two Nobel Prizes in different sciences.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Albert Einstein failed mathematics in school.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The discovery of penicillin was entirely accidental.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Antarctica was the last continent to be discovered by humans.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Great Fire of London in 1666 killed thousands of people.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In ancient Rome, the Senate retained formal legislative power even during the Imperial period.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Silk Road was primarily a single, well-maintained road connecting China and Rome.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The term 'capitalism' was popularized by Karl Marx, not by its advocates.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Soviet Union launched the first human into space before the United States.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The US Apollo moon landings were halted because the technology became too expensive to maintain.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Tulip Mania in 17th-century Holland caused single tulip bulbs to briefly sell for more than a skilled craftsman earned in a year.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Bretton Woods system pegged world currencies to gold via the US dollar, and collapsed in 1971 when Nixon ended dollar-gold convertibility.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Nikola Tesla died penniless and largely forgotten, while his rival Edison died celebrated and wealthy.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The British Empire at its peak controlled over 25% of the world's land surface.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The word 'algorithm' derives from the name of a Persian mathematician, Al-Khwarizmi.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Social media algorithms are neutral tools that distribute content without any built-in bias toward engagement.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Enigma cipher used by Nazi Germany was broken solely by British codebreakers at Bletchley Park.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Affordable Care Act ('Obamacare') included a provision establishing a single-payer healthcare system in the United States.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Cryptocurrency transactions are completely anonymous and untraceable by law enforcement.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The first person convicted using DNA evidence was a murderer, but DNA also exonerated the original suspect in the same case.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The US Declaration of Independence was signed on July 4, 1776.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Stanford Prison Experiment's published findings have been substantially discredited due to fabrication and coaching of participants.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Great Firewall of China also prevents Chinese citizens from accessing Google Maps.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All countries that have ever developed nuclear weapons still possess them today.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The global reserve currency has always been the US dollar since modern financial systems began.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The zero-lower bound on interest rates means central banks are completely powerless in a deflationary trap.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The first woman to lead a major democracy was Indira Gandhi of India.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The US and Soviet Union came within minutes of accidental nuclear war during the Cuban Missile Crisis without Kennedy or Khrushchev's knowledge.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "TCP/IP, the foundational protocol of the internet, was designed to survive nuclear attack by routing around damage.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The term 'podcast' was coined in 2004 by journalist Ben Hammersley.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The human genome contains more genes than that of the water flea Daphnia pulex.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Moore's Law is a physical law of nature derived from semiconductor physics.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Inca Empire had no writing system yet managed a vast administrative empire through a system of knotted strings called quipu.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The first transatlantic telegraph cable connected the US and UK in 1858, but it failed after just a few weeks of operation.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Panama Canal was originally a French project that the United States took over after France failed.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The United States purchased Alaska from the Soviet Union.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The concept of 'net neutrality' means that internet service providers must offer equal speeds to all users.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Roman Catholic Church officially reversed its condemnation of Galileo only in 1992.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "During the Cold War, the US government ran a covert mind-control research program called MK-Ultra.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Chernobyl disaster in 1986 is considered a contributing factor to the collapse of the Soviet Union.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Open-source licenses legally prevent companies from making money off open-source software.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The first person to describe an algorithm-based computational machine was Ada Lovelace, writing about Charles Babbage's Analytical Engine.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Manhattan Project was carried out entirely in the United States.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The world population did not exceed one billion people until after the year 1800.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The first photograph ever taken required an exposure time of several hours.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Economies with higher income inequality consistently show higher intergenerational social mobility.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Robber Baron era in the US ended when Standard Oil was successfully broken up under antitrust law in 1911.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The US has the highest incarceration rate of any country in the world.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Byzantine Empire knew itself as 'Byzantine' during its existence.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "HTTP status code 418 ('I'm a teapot') is an officially recognized IETF RFC, not a joke that was later removed.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Dead Sea Scrolls were discovered by a shepherd boy who accidentally threw a stone into a cave.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The United States' national debt has been fully paid off at least once in its history.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Autocomplete and modern LLM-based AI systems both fundamentally work by predicting the next most likely token.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The P vs NP problem, one of the most famous unsolved problems in computer science, has remained unsolved since it was formalized in 1971.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "0.999... (repeating) is exactly equal to 1.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The sum of all natural numbers 1 + 2 + 3 + ... equals -1/12 in the context of Ramanujan summation.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "There are more real numbers between 0 and 1 than there are natural numbers.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A Bitcoin transaction is irreversible once it has at least one confirmation.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The statement 'This sentence is false' is a genuine logical paradox with no truth value in classical bivalent logic.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Infinity plus one is greater than infinity when referring to cardinality of the natural numbers.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Every even integer greater than 2 can be expressed as the sum of two primes (Goldbach's Conjecture) has been proven.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In Ethereum, smart contracts can be modified after deployment by their owner by default.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The square root of 2 is irrational.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Godel's incompleteness theorems imply that no consistent formal system can prove all truths about natural numbers.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A SHA-256 hash can be reversed to find the original input using polynomial-time algorithms.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The halting problem is undecidable, meaning no algorithm can determine for all program-input pairs whether the program halts.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Pi contains every possible finite sequence of digits (it is a normal number) — this has been proven.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In proof-of-work blockchains, a 51% attack allows an attacker to steal coins directly from arbitrary wallets.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "There are exactly as many even numbers as there are natural numbers.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Monty Hall problem: switching doors gives a 2/3 probability of winning.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A valid deductive argument with a false premise can still have a true conclusion.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ethereum's gas fees are paid in ETH, not in a separate token.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The set of all sets that do not contain themselves cannot consistently exist in naive set theory.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "All continuous functions on a closed interval are differentiable.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Bitcoin's total supply is capped at 21 million coins by its protocol.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In classical logic, a false proposition implies any proposition (ex falso quodlibet).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The number e (Euler's number) is transcendental.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Proof-of-stake consensus requires validators to perform intensive computational work.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Any polygon with n sides can be constructed with compass and straightedge if n is a prime.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The continuum hypothesis was proven to be independent of the standard axioms of set theory (ZFC).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A blockchain's immutability is guaranteed by the laws of physics, not by social/economic consensus.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In modal logic, 'possibly necessarily P' implies 'necessarily P' in the S5 system.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The birthday paradox states that in a group of 23 people, there is greater than 50% probability that two share a birthday.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Zero is a positive number.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Satoshi Nakamoto's identity has been officially confirmed as Craig Wright by a court of law.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "There exists a largest prime number.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A tautology in propositional logic is true under all possible truth assignments.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "NFTs guarantee the owner legally owns the underlying digital artwork.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Cantor's diagonal argument proves the real numbers are uncountable.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The axiom of choice is provably true from the other ZFC axioms.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Every Ethereum address is derived from a public key using SHA-256.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Hume's guillotine states that you cannot derive an 'ought' from an 'is'.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Zeno's paradox of Achilles and the tortoise is genuinely unresolvable with modern mathematics.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A private key in Bitcoin is 256 bits long.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "If P implies Q and Q is true, then P must be true (modus ponens).",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The number 1 is a prime number.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In Solidity, integer overflow was a default vulnerability prior to version 0.8.0.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Fermat's Last Theorem was proven by Andrew Wiles in 1995.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Every statement is either true or false — this is the law of the excluded middle.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Decentralized exchanges (DEXs) require users to hand custody of their funds to the exchange.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In intuitionistic logic, the law of the excluded middle is not accepted as an axiom.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A Merkle tree allows efficient and secure verification of large data structures.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The sum of interior angles of any triangle in Euclidean geometry is 180 degrees.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Immanuel Kant argued that the existence of God can be proven through pure reason.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Bitcoin uses the elliptic curve secp256k1 for its cryptographic operations.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Plato's allegory of the cave is found in 'The Republic'.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Two plus two equals four in all number systems.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Smart contracts on Ethereum are Turing complete.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Russell's paradox shows that the set of all sets is a valid mathematical object.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The P vs NP problem has been resolved, with the consensus being P = NP.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Descartes' cogito ('I think, therefore I am') is an a posteriori claim.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A hash collision in SHA-256 has never been found.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ethereum's proof-of-stake consensus was activated with 'The Merge' in September 2022.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In mathematics, a theorem and a conjecture are the same thing.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Turing test is a sufficient condition for determining genuine machine consciousness.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Every irrational number is also a transcendental number.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Gas in Ethereum measures computational effort required to execute a specific operation.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Leibniz and Newton independently developed calculus.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In classical logic, 'not not P' is logically equivalent to 'P'.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Blockchain transactions are completely anonymous by default on Bitcoin.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The four-color theorem has been proven, but the proof requires computer assistance.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Aristotle was a student of Plato.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In a zero-knowledge proof, the prover reveals the secret information to the verifier.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Any angle can be trisected using only compass and straightedge.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Utilitarianism holds that the morally right action is the one that produces the most good for the most people.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A double-spend attack on Bitcoin requires controlling more than 50% of the network's hash rate.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The number pi is exactly equal to 22/7.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In game theory, a Nash equilibrium is always the optimal outcome for all players.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Ethereum's ERC-20 standard defines a common interface for fungible tokens.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Gettier problems show that justified true belief is not sufficient for knowledge.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The square root of -1 is undefined in the real numbers but defined as 'i' in the complex numbers.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All DeFi protocols are immune to hacks because smart contracts are immutable.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Banach-Tarski paradox proves that a sphere can be decomposed and reassembled into two spheres of the same size.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Nietzsche's concept of the 'eternal recurrence' was intended as a literal cosmological claim.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A stablecoin backed 1:1 by USD reserves cannot depeg.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In propositional logic, 'P AND NOT P' is a contradiction.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Proof-of-work mining is environmentally neutral.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "There are infinitely many twin primes — this has been proven.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Socrates wrote extensively about his philosophical views.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A public key can be derived from a private key, but a private key cannot be derived from a public key (in practice).",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In mathematics, 'almost all' has a precise technical meaning related to measure theory.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The trolley problem was introduced by Philippa Foot.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Bitcoin's scripting language is Turing complete.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Every bounded sequence of real numbers has a convergent subsequence (Bolzano-Weierstrass theorem).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Crypto wallets store your cryptocurrency.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "John Rawls' 'veil of ignorance' thought experiment is central to his theory of justice.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In Bayesian reasoning, prior probabilities can never be updated.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The genesis block of Bitcoin contains a hidden message referencing a newspaper headline.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A valid syllogism guarantees a true conclusion.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Fermat's little theorem states that for prime p and integer a not divisible by p, a^(p-1) ≡ 1 (mod p).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Ethereum gas prices are fixed and set by the Ethereum Foundation.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Solipsism cannot be disproved logically.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The set of rational numbers is countable.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "All tokens on the Ethereum blockchain are ETH.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Ship of Theseus paradox is primarily a problem about identity over time.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In elliptic curve cryptography, the discrete logarithm problem is believed to be computationally hard.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A sound argument must be both valid and have all true premises.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Bitcoin transactions are free to send.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Every finite group of prime order is cyclic.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Nihilism and existentialism make the same claims about the meaning of life.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Byzantine Generals Problem motivates the need for consensus mechanisms in distributed systems.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A convergent infinite series must have all terms approaching zero.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Layer 2 blockchain solutions settle their final state on the main chain.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Wittgenstein argued in his later work that the meaning of a word is its use in language.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A number can be both rational and irrational.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In a DAO, governance decisions are made through smart contract-enforced voting.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Chinese Room argument by John Searle argues that syntax alone is sufficient for semantics.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Riemann Hypothesis has been proven for all non-trivial zeros of the zeta function.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Ethereum's EIP-1559 introduced a base fee that is burned rather than given to miners.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In an undirected graph, the sum of all vertex degrees equals twice the number of edges.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Kant's categorical imperative requires you to act only according to maxims you could will to be universal laws.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "ECDSA signatures used in Bitcoin are deterministic by default in all implementations.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Every NP problem can be solved in polynomial time on a classical computer.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A private blockchain is more secure than a public blockchain by definition.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In formal logic, modus tollens states: if P implies Q, and Q is false, then P is false.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Pythagorean theorem holds in non-Euclidean geometries.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Ethereum addresses are case-sensitive in their checksummed form (EIP-55).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Hegel's dialectic consists of thesis, antithesis, and synthesis — though Hegel himself rarely used those exact terms.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A Merkle Patricia Trie is used in Ethereum to store state.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The number of primes less than n is approximately n / ln(n) by the Prime Number Theorem.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Determinism is logically incompatible with the existence of free will under all philosophical frameworks.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A seed phrase for a crypto wallet is equivalent to the wallet itself — whoever has it controls the funds.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In mathematics, a bijection between two sets implies they have the same cardinality.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Blockchain technology was first described in the Bitcoin whitepaper by Satoshi Nakamoto in 2008.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Aristotle's three laws of thought include the law of non-contradiction, the law of identity, and the law of excluded middle.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A rollup is a Layer 2 solution that executes transactions off-chain but posts transaction data on-chain.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The halving of Bitcoin's block reward occurs every 210,000 blocks.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In fuzzy logic, a statement can have a truth value of 0.7.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All oracle problems in blockchain can be solved by using multiple data sources.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Popper's falsifiability criterion states that a theory is scientific only if it can be proven true.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The mathematical constant 'e' is approximately 2.71828.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Flash loan attacks exploit the atomicity of blockchain transactions.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "An ontological argument attempts to prove God's existence from the concept of God alone.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A 256-bit symmetric encryption key provides approximately 128 bits of security against quantum attacks.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Zero-knowledge proofs require the prover to trust the verifier.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In Euclidean geometry, parallel lines never meet by definition.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Solidity's 'require' statement reverts the transaction and refunds remaining gas on failure.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The halting problem's undecidability implies that no general antivirus can detect all malware.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Utilitarianism was primarily developed by Jeremy Bentham and John Stuart Mill.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ordinal numbers and cardinal numbers always refer to the same concept in mathematics.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In proof-of-stake Ethereum, validators who act maliciously can have their ETH 'slashed'.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Sorites paradox (heap paradox) challenges the notion of vague predicates.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Every equivalence relation partitions a set into disjoint equivalence classes.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Wrapped Bitcoin (WBTC) on Ethereum is the same asset as native Bitcoin.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The incompleteness theorems apply only to formal systems that include arithmetic.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Schopenhauer identified the 'will to live' as the fundamental drive underlying all reality.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Re-entrancy attacks are made impossible by the Ethereum Virtual Machine itself.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The number of subsets of a set with n elements is 2^n.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Proof-of-work and proof-of-stake blockchains have identical security assumptions.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In classical mechanics, Laplace's demon could in principle predict all future events given perfect knowledge.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A blockchain fork always results in a new permanent cryptocurrency.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The law of large numbers guarantees that sample averages converge to the expected value.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A token can be both fungible and non-fungible simultaneously.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Ockham's Razor mandates choosing the simplest explanation that is also true.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In modular arithmetic, 7 mod 3 equals 1.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ethereum validators must stake exactly 32 ETH to participate in consensus.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The problem of induction, as posed by Hume, has been definitively solved by modern philosophy of science.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Cryptographic hash functions are designed to be one-way and collision-resistant.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "If the universe is deterministic, then an agent's choices are fully determined by prior causes.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "ERC-721 defines a standard for non-fungible tokens on Ethereum.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The diagonal of a unit square is exactly 1.5 units long.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "An argument can be valid without being sound.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All stablecoins maintain their peg through purely algorithmic mechanisms.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Tarski's undefinability theorem states that a sufficiently expressive language cannot define its own truth predicate.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Bertrand Russell believed that mathematics could be fully reduced to logic.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Curve25519 is an elliptic curve commonly used in modern cryptography.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In non-Euclidean (spherical) geometry, the sum of angles in a triangle exceeds 180 degrees.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A mempool in blockchain refers to a pool of unconfirmed transactions waiting to be included in a block.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In philosophy, compatibilism holds that free will is incompatible with determinism.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The number of distinct binary trees with n nodes is given by the Catalan numbers.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Sending ETH to a burn address permanently removes it from circulation.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All mathematical truths are knowable a priori — this is the position of mathematical Platonism.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The blockchain trilemma states that a blockchain cannot simultaneously be scalable, secure, and decentralized.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Plato believed that mathematical objects exist independently of the physical world.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The probability of rolling two sixes in a row with a fair die is 1/36.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Every Ethereum smart contract has a unique address that is determined at deployment time.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Nietzsche's 'will to power' is best understood as a desire for political domination.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In mathematics, an infinite set can be in bijection with one of its proper subsets.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "All blockchain data is encrypted and private by default.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The principle of sufficient reason, as held by Leibniz, states that everything has a reason or cause.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A re-entrancy guard in Solidity prevents a function from being called recursively before it finishes execution.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Wittgenstein's Tractatus and Philosophical Investigations represent opposite views on language.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The concept of 'trustlessness' in blockchain means users do not need to trust the protocol itself.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "A geometric series with ratio |r| < 1 converges to a finite sum.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Every public blockchain transaction is pseudonymous, not truly anonymous.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Frege's distinction between 'Sinn' (sense) and 'Bedeutung' (reference) allows two expressions to share a referent but differ in meaning.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "A block producer in a proof-of-work chain is selected by lottery weighted by hash power.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Russell's paradox was resolved by introducing the theory of types.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Decentralized autonomous organizations (DAOs) are legally recognized corporations under U.S. federal law.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The continuum hypothesis asks whether there is a set whose cardinality is strictly between the integers and the reals.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In Ethereum, the 'msg.sender' inside a smart contract always refers to the original externally-owned account.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Epictetus and Marcus Aurelius were both Stoic philosophers.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A rainbow table attack is effective against properly salted password hashes.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The law of excluded middle is equivalent to the principle of double negation elimination in classical logic.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Vitalik Buterin is one of the co-founders of Ethereum.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "All transcendental numbers are irrational, but not all irrational numbers are transcendental.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In philosophy of mind, physicalism holds that mental states are identical to physical brain states.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Ethereum's SELFDESTRUCT opcode permanently prevents a contract's address from being used again.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "A proof by contradiction assumes the negation of the statement to be proved and derives an impossibility.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The hard problem of consciousness, as named by David Chalmers, concerns why and how physical processes give rise to subjective experience.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a Nash equilibrium, no player can improve their outcome by unilaterally changing their strategy.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The prisoner's dilemma demonstrates that rational individual choices always lead to collectively optimal outcomes.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Prospect theory was developed by Daniel Kahneman and Amos Tversky.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Loss aversion means people feel the pain of losses more acutely than the pleasure of equivalent gains.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A dominant strategy is one that yields the best payoff regardless of what other players do.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The anchoring bias causes people to rely too heavily on the first piece of information they receive.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In a zero-sum game, one player's gain is always exactly equal to another player's loss.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The availability heuristic leads people to overestimate the probability of events that are easy to recall.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Confirmation bias is the tendency to seek out information that contradicts one's existing beliefs.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The ultimatum game consistently shows that people accept any non-zero offer when playing rationally.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A Pareto improvement makes at least one person better off without making anyone worse off.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The sunk cost fallacy involves continuing a failing endeavor because of previously invested resources.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Herding behavior in financial markets can be explained by rational information cascades.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The endowment effect causes people to value objects they own more than identical objects they do not own.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A mixed strategy Nash equilibrium requires players to randomize over their available strategies.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The dunning-kruger effect describes how experts consistently underestimate their own competence.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Hyperbolic discounting describes a preference for smaller rewards now over larger rewards in the future.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In the repeated prisoner's dilemma with a known finite endpoint, cooperation always unravels via backward induction.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The hot hand fallacy is the mistaken belief that a person who has succeeded recently is more likely to succeed again.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Moral hazard occurs when one party takes on more risk because another party bears the cost of that risk.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In a public goods game, the Nash equilibrium involves all players contributing their full endowment.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The representativeness heuristic leads people to judge probability by similarity to a prototype.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Adverse selection occurs after a contract is signed, while moral hazard occurs before.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The status quo bias describes the preference for the current state of affairs over any change.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Tit-for-tat is a strategy that cooperates on the first move then mirrors the opponent's previous move.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Mental accounting refers to the tendency to treat money differently depending on its source or intended use.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The framing effect shows that people make identical choices regardless of how options are presented.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A Schelling point is a focal point people tend to choose in the absence of communication.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The bystander effect predicts that individuals are more likely to help in emergencies when others are present.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Gambler's fallacy is the belief that past random events influence future independent random events.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In evolutionary game theory, an evolutionarily stable strategy cannot be invaded by a mutant strategy.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The tragedy of the commons occurs when individual users deplete a shared resource acting in their self-interest.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Overconfidence bias leads most people to rate their driving ability as below average.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The dictator game involves one player deciding how to split a sum and the other player having veto power.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Social proof is a cognitive bias where people assume the actions of others reflect the correct behavior.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In Bayesian game theory, players have incomplete information about other players' payoffs or types.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The planning fallacy refers to the systematic underestimation of time and costs needed to complete projects.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Reciprocity in social exchange theory means people help those who have helped them.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "A subgame perfect Nash equilibrium requires that strategies form a Nash equilibrium in every subgame.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The decoy effect describes how adding a third inferior option changes preferences between two existing options.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a coordination game, both players prefer to take the same action as the other player.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The base rate neglect fallacy occurs when people overweight specific case information and underweight general statistics.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Elinor Ostrom's Nobel Prize work showed that commons are always either privatized or regulated by governments to avoid tragedy.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In the Allais paradox, people's choices between lotteries violate expected utility theory.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The halo effect occurs when a positive impression in one domain negatively influences opinions in other domains.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Backward induction in finite sequential games involves solving from the last period backward.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In a Bertrand duopoly with identical goods and no capacity constraints, the equilibrium price equals marginal cost.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Nudge theory, associated with Thaler and Sunstein, relies on coercive mandates to change behavior.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The contrast effect causes an item to appear more attractive when compared to a clearly inferior alternative.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In regret theory, people evaluate outcomes relative to what would have happened under alternative choices.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The winner's curse in auctions means the winner typically pays less than the true value of the item.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Default options leverage status quo bias to steer behavior without restricting choices.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In common value auctions, all bidders have the same private value for the item.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The folk theorem in game theory states that in infinitely repeated games, cooperative outcomes can be sustained as Nash equilibria.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Intrinsic motivation is always strengthened when external rewards are added to previously enjoyable tasks.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The cognitive dissonance theory was proposed by Leon Festinger.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In a Cournot duopoly, firms compete on price rather than quantity.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The peak-end rule states that people judge an experience based on its most intense point and its ending, not its average.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Scope insensitivity describes the finding that people's willingness to pay does not scale proportionally with the magnitude of a problem.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Ellsberg paradox demonstrates that people prefer known probabilities to unknown probabilities, violating expected utility theory.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In social identity theory, people derive self-esteem partly from the groups they belong to.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The mere exposure effect shows that people tend to develop a preference for things they are unfamiliar with.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In signaling theory, a costly signal is credible precisely because it is expensive to fake.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The disposition effect in finance refers to the tendency to sell winning assets too early and hold losing assets too long.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A dominant strategy equilibrium is always a Nash equilibrium.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the trust game, the receiver always returns zero in the unique subgame perfect Nash equilibrium.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "According to prospect theory, the value function is concave for gains and convex for losses.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The identifiable victim effect shows that people respond more strongly to single identified individuals than to statistical lives.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The social comparison theory posits that people evaluate their opinions and abilities against objective standards when social comparisons are available.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In screening models, the uninformed party moves first to design a mechanism that elicits private information.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Rawlsian veil of ignorance thought experiment supports maximizing the welfare of the worst-off member of society.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Cheap talk in game theory is always credible because it is costless.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Reactive devaluation is the tendency to devalue proposals made by an adversary simply because of the source.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Condorcet paradox shows that majority preferences can be cyclical even when individual preferences are transitive.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a second-price sealed-bid auction (Vickrey auction), bidding one's true valuation is a dominant strategy.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Status quo bias and loss aversion are entirely independent cognitive phenomena with no relationship.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The concept of k-level thinking models agents as best-responding to opponents who think k-1 levels deep.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In an information cascade, it is rational for individuals to ignore their private signals and follow the crowd.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Nash bargaining solution always gives all surplus to the player with higher bargaining power.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Regression to the mean is a statistical phenomenon that is often mistakenly attributed to a causal intervention.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Keynesian beauty contest metaphor describes investors trying to predict market fundamentals rather than others' expectations.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In mechanism design, the revelation principle states that any equilibrium outcome can be replicated by a direct mechanism where truthful reporting is optimal.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Overconfidence in forecasting is more pronounced for difficult tasks than for easy tasks.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Coase theorem holds that in the absence of transaction costs, private parties will bargain to efficient outcomes regardless of the initial assignment of property rights.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Psychological reactance is the tendency to embrace restrictions to one's freedom of choice.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In quantal response equilibrium, players always choose the strategy with the highest expected payoff.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The hot stove effect describes how people overgeneralize from a single vivid negative experience.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Arrow's impossibility theorem proves that no voting system can simultaneously satisfy a set of reasonable fairness criteria when there are three or more candidates.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Altruistic punishment refers to the willingness of individuals to punish norm violators even at a cost to themselves.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the beauty contest game where players choose a number between 0 and 100 and the winner picks closest to 2/3 of the average, the Nash equilibrium is 50.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Temporal discounting in behavioral economics is typically better described by exponential rather than hyperbolic functions.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The level-1 thinker in the beauty contest game best-responds to the assumption that all others choose randomly.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Stroop effect demonstrates how automatic cognitive processes can interfere with deliberate ones.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In Spence's job market signaling model, education increases worker productivity and therefore serves as a valid quality signal.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The endowment effect is diminished when people trade in markets with high liquidity and frequent transactions.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Satisficing, as described by Herbert Simon, means choosing the first option that meets a minimum acceptability threshold.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Asch conformity experiments showed that social pressure could lead people to give clearly incorrect answers.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In repeated games, the discount factor must be sufficiently low (near zero) for cooperation to be sustainable.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Milgram obedience experiments demonstrated that ordinary people can administer apparently harmful shocks under authority.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The incentive compatibility constraint in mechanism design ensures that agents prefer to reveal their true type.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Choice overload suggests that more options always lead to better decision-making outcomes.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In the standard Rubinstein alternating-offers bargaining model with discounting, the first mover always receives the entire surplus.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The fundamental attribution error involves overweighting situational factors and underweighting dispositional ones when judging others.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Reciprocal altruism in evolutionary biology helps explain cooperative behavior between unrelated individuals.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The trolley problem is primarily used in game theory to study strategic interaction.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "A correlated equilibrium can Pareto-dominate all Nash equilibria in a game.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The price of anarchy measures the efficiency loss from selfish behavior compared to a social optimum.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In Bayesian persuasion, the sender can never benefit from committing to a signal structure in advance.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Intertemporal choice involves tradeoffs between costs and benefits that occur at different points in time.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The competence-difficulty effect predicts that overconfidence decreases as task difficulty increases.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Giffen goods are inferior goods for which demand increases when price increases.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The gender gap in negotiation outcomes is consistently larger when the negotiating context is explicitly labeled as a negotiation.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a Stackelberg competition, both firms simultaneously choose their quantities.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The hot hand belief is always a cognitive error with no basis in real-world sequential performance data.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The emotional cascade hypothesis in behavioral economics proposes that irrelevant emotional states can persistently influence sequential judgments.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In social dilemmas, group size has no effect on the likelihood of cooperative outcomes.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The notion of common knowledge is stronger than the notion of mutual knowledge.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The ostrich effect in behavioral finance refers to avoiding information about negative financial outcomes.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In cheap talk games, equilibrium communication is always fully separating.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The gender wage gap disappears entirely after controlling for hours worked and occupation.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Constructive memory refers to the brain accurately reproducing stored memories without distortion.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "In global games, a unique equilibrium can be selected from games that otherwise have multiple equilibria.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The false consensus effect leads people to underestimate how many others share their beliefs.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Libertarian paternalism preserves freedom of choice while steering people toward beneficial defaults.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In competitive markets with externalities, the invisible hand leads to socially efficient outcomes.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The Matthew effect in sociology describes how initial advantages accumulate, giving the rich more and the poor less.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the volunteer's dilemma, the unique Nash equilibrium involves exactly one player volunteering with certainty.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Dual process theory distinguishes between fast, intuitive (System 1) and slow, deliberate (System 2) thinking.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The certainty effect in prospect theory means people overweight outcomes that are certain relative to probable ones.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a first-price sealed-bid auction with symmetric independent private values, rational bidders shade their bids below their true valuations.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The boomerang effect occurs when a persuasive message causes the audience to move further in the direction the message advocates.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Commitment devices help people overcome time-inconsistency by restricting future choices.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The revenue equivalence theorem states that under standard conditions, all common auction formats yield the same expected revenue to the seller.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In evolutionary game theory, a Nash equilibrium is always evolutionarily stable.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The zero-risk bias leads people to prefer the complete elimination of a small risk over a larger reduction in a larger risk.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Social norms are only enforced through formal legal sanctions.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "The principle of insufficient reason assigns equal probability to all outcomes when no information is available.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The clustering illusion is the tendency to see patterns in random sequences.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In the Monty Hall problem, switching doors increases the probability of winning from 1/3 to 2/3.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The tragedy of the anticommons occurs when too many owners have exclusion rights, leading to underuse of a resource.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Inequity aversion means people prefer equal outcomes even when unequal outcomes give everyone more.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The disposition effect implies that investors' portfolios should exhibit a positive relationship between unrealized gains and time held.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Mechanism design is sometimes called reverse game theory because the designer sets the rules before agents play.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a continuous double auction, prices consistently converge to the competitive equilibrium even with a small number of traders.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The isolation effect in prospect theory leads people to focus on the differences between options and ignore common components.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In Akerlof's market for lemons, high-quality sellers are driven out of the market by asymmetric information.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Behavioral game theory experimental results consistently confirm the theoretical prediction that players always choose Nash equilibrium strategies.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The ambiguity aversion documented in the Ellsberg paradox is fully explained by expected utility theory.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Self-serving bias leads individuals to attribute successes to their own ability and failures to external factors.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In a finitely repeated game, the last-period behavior is irrelevant to equilibrium in all preceding periods.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Social capital refers to the networks of relationships and trust that enable coordination and cooperation.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In Crawford and Sobel's model of strategic information transmission, full information revelation is always an equilibrium.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The reflection effect in prospect theory means people are risk-seeking over losses and risk-averse over gains.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The spiral of silence theory posits that people with minority opinions are less likely to express them publicly.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the standard public goods experiment, contributions tend to start high and decrease over repeated rounds.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The concept of bounded rationality was introduced by Herbert Simon to describe decision-making with cognitive and informational limits.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In Rubinstein's alternating-offer bargaining, as the time between offers approaches zero, the first mover advantage disappears.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Norms of reciprocity tend to be weaker in large anonymous markets than in small communities.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the stag hunt game, hunting stag is always the dominant strategy.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The focusing illusion describes how people overestimate the impact of any single factor on overall well-being.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In matching markets, the Gale-Shapley deferred acceptance algorithm always produces a stable matching.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Relative income hypothesis suggests people care more about their absolute income than how it compares to others.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The speed-accuracy tradeoff is a well-established phenomenon in cognitive psychology showing that faster decisions are more accurate.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Emotional contagion refers to the process by which people synchronize their emotions with those of others.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The Pigovian tax corrects a negative externality by taxing the activity at a rate equal to the marginal social damage.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a sealed-bid common value auction, the Nash equilibrium bidding strategy requires bidders to ignore the winner's curse.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The hot-cold empathy gap describes the difficulty people have in predicting their own behavior in emotionally charged states.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the centipede game, backward induction predicts that the first player immediately defects.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Framing effects are eliminated when decision-makers have high numeracy skills.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The tragedy of the commons was formally modeled and named by Garrett Hardin in 1968.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a Bayesian Nash equilibrium, each player's strategy is a best response given beliefs about other players' types.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The cognitive miser metaphor captures the idea that people prefer effortful, systematic information processing.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Nudges in choice architecture always outperform financial incentives in changing behavior.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The superadditivity of value functions in combinatorial auctions means the value of a bundle can exceed the sum of its parts.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "In social exchange theory, people terminate relationships when perceived costs exceed perceived benefits.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "The planning paradox shows that adding more information about a project always reduces planning fallacy.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Preference reversals occur when choices between lotteries and valuations of the same lotteries are inconsistent.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In an all-pay auction, every bidder pays their bid regardless of whether they win.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The psychological immune system, as described by Daniel Gilbert, helps people rationalize and adapt to negative outcomes.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In evolutionary biology, kin selection can explain altruism through Hamilton's rule: rB > C.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The affect heuristic means that people assess the risks and benefits of activities based on their emotional feelings about them.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the Fehr-Schmidt model, inequity aversion enters utility as a disutility from both advantageous and disadvantageous inequality.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Narrative economics, as proposed by Robert Shiller, argues that economic fluctuations are driven solely by rational expectations.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The mere measurement effect shows that asking people about their intentions increases the likelihood they perform the intended behavior.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the hawk-dove game, the evolutionarily stable strategy always involves all individuals playing hawk.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The affect labeling effect shows that naming one's emotions reduces their intensity.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In network externalities, the value of a product to a user increases as more people use the same product.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Samaritan's dilemma describes how unconditional aid can reduce the recipient's incentive to be self-sufficient.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The optimal stopping problem (secretary problem) recommends rejecting all candidates until you have seen 1/e of the total pool.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The veil of ignorance in Rawls' framework leads to utilitarian rather than maximin principles of justice.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In the volunteer's dilemma, as the group size increases, the probability that at least one person volunteers decreases.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Cumulative prospect theory adds probability weighting to the original prospect theory to handle lotteries with more than two outcomes.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Shapley value in cooperative game theory distributes payoffs based on each player's marginal contribution averaged over all possible orderings.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Attention economics treats attention as a scarce resource that can be allocated and competed for.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The cobra effect occurs when an incentive designed to solve a problem perversely makes it worse.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In strong Nash equilibrium, no coalition of players can jointly deviate and make all coalition members better off.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Construal level theory predicts that psychologically distant events are represented in more abstract terms.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The ultimatum game consistently shows that proposers are indifferent between offering 1 cent and offering 50% of the stake.",
+    "a": false,
+    "tier": "medium"
+  },
+  {
+    "s": "Functional fixedness is a cognitive bias where people can only perceive objects being used in their traditional way.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "In global coordination games with strategic complementarities, equilibrium selection depends on the precision of private information.",
+    "a": true,
+    "tier": "extreme"
   }
 ]

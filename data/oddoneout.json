@@ -1,61 +1,6 @@
 [
   {
     "items": [
-      "Dog",
-      "Cat",
-      "Bird",
-      "Car"
-    ],
-    "odd": 3,
-    "reason": "Car is not an animal",
-    "tier": "easy"
-  },
-  {
-    "items": [
-      "2",
-      "4",
-      "6",
-      "9"
-    ],
-    "odd": 3,
-    "reason": "9 is not even",
-    "tier": "easy"
-  },
-  {
-    "items": [
-      "France",
-      "Spain",
-      "Italy",
-      "Brazil"
-    ],
-    "odd": 3,
-    "reason": "Brazil is not in Europe",
-    "tier": "easy"
-  },
-  {
-    "items": [
-      "Apple",
-      "Banana",
-      "Carrot",
-      "Orange"
-    ],
-    "odd": 2,
-    "reason": "Carrot is a vegetable",
-    "tier": "easy"
-  },
-  {
-    "items": [
-      "Red",
-      "Blue",
-      "Green",
-      "Circle"
-    ],
-    "odd": 3,
-    "reason": "Circle is not a color",
-    "tier": "easy"
-  },
-  {
-    "items": [
       "Mercury",
       "Venus",
       "Earth",
@@ -100,17 +45,6 @@
   },
   {
     "items": [
-      "Rose",
-      "Tulip",
-      "Oak",
-      "Daisy"
-    ],
-    "odd": 2,
-    "reason": "An oak is a tree, not a flower",
-    "tier": "easy"
-  },
-  {
-    "items": [
       "Guitar",
       "Violin",
       "Flute",
@@ -144,17 +78,6 @@
   },
   {
     "items": [
-      "Mars",
-      "Jupiter",
-      "Saturn",
-      "Sun"
-    ],
-    "odd": 3,
-    "reason": "The Sun is a star, not a planet",
-    "tier": "easy"
-  },
-  {
-    "items": [
       "Copper",
       "Oxygen",
       "Helium",
@@ -163,17 +86,6 @@
     "odd": 0,
     "reason": "Copper is a metal; the rest are gases",
     "tier": "medium"
-  },
-  {
-    "items": [
-      "Apple",
-      "Mango",
-      "Potato",
-      "Cherry"
-    ],
-    "odd": 2,
-    "reason": "A potato is a vegetable",
-    "tier": "easy"
   },
   {
     "items": [
@@ -207,39 +119,6 @@
     "odd": 2,
     "reason": "A bat is a mammal, not a bird",
     "tier": "hard"
-  },
-  {
-    "items": [
-      "Nile",
-      "Amazon",
-      "Everest",
-      "Yangtze"
-    ],
-    "odd": 2,
-    "reason": "Everest is a mountain, not a river",
-    "tier": "easy"
-  },
-  {
-    "items": [
-      "Red",
-      "Green",
-      "Blue",
-      "Loud"
-    ],
-    "odd": 3,
-    "reason": "Loud is a sound, not a color",
-    "tier": "easy"
-  },
-  {
-    "items": [
-      "Carrot",
-      "Spinach",
-      "Broccoli",
-      "Banana"
-    ],
-    "odd": 3,
-    "reason": "A banana is a fruit",
-    "tier": "easy"
   },
   {
     "items": [
@@ -331,17 +210,6 @@
   },
   {
     "items": [
-      "Euro",
-      "Yen",
-      "Dollar",
-      "Celsius"
-    ],
-    "odd": 3,
-    "reason": "Celsius is a temperature unit, not a currency",
-    "tier": "easy"
-  },
-  {
-    "items": [
       "Ruby",
       "Emerald",
       "Sapphire",
@@ -397,17 +265,6 @@
   },
   {
     "items": [
-      "Oxygen",
-      "Gold",
-      "Silver",
-      "Platinum"
-    ],
-    "odd": 0,
-    "reason": "Oxygen is a gas; the rest are precious metals",
-    "tier": "easy"
-  },
-  {
-    "items": [
       "Violin",
       "Viola",
       "Cello",
@@ -460,17 +317,6 @@
     "odd": 3,
     "reason": "Toyota is a carmaker, not a tech company",
     "tier": "medium"
-  },
-  {
-    "items": [
-      "Spring",
-      "Summer",
-      "Monday",
-      "Winter"
-    ],
-    "odd": 2,
-    "reason": "Monday is a day, not a season",
-    "tier": "easy"
   },
   {
     "items": [
@@ -712,6 +558,1106 @@
     ],
     "odd": 2,
     "reason": "Nash Equilibrium is a game theory concept; the others are physics principles",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Nash Equilibrium",
+      "Pareto Optimality",
+      "Schelling Point",
+      "Merkle Tree"
+    ],
+    "odd": 3,
+    "reason": "Merkle Tree is a cryptographic data structure used in blockchains; the others are foundational game theory concepts.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Sunk Cost Fallacy",
+      "Gambler's Fallacy",
+      "Anchoring Bias",
+      "Slippery Slope"
+    ],
+    "odd": 3,
+    "reason": "Slippery Slope is a logical fallacy; the other three are cognitive biases rooted in behavioral psychology.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Haskell",
+      "Erlang",
+      "Clojure",
+      "Rust"
+    ],
+    "odd": 3,
+    "reason": "Haskell, Erlang, and Clojure are primarily functional programming languages; Rust is a systems language emphasizing ownership and memory safety, not functional paradigm.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Neutron Star",
+      "White Dwarf",
+      "Quasar",
+      "Black Hole"
+    ],
+    "odd": 2,
+    "reason": "Neutron stars, white dwarfs, and black holes are stellar remnants (endpoints of stellar evolution); a quasar is an active galactic nucleus powered by a supermassive black hole, not a stellar remnant.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Byzantine Fault Tolerance",
+      "Proof of Work",
+      "Proof of Stake",
+      "Delegated Proof of Stake"
+    ],
+    "odd": 0,
+    "reason": "BFT is a distributed systems property/theorem; the other three are specific blockchain consensus mechanisms.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Planck's Constant",
+      "Boltzmann Constant",
+      "Avogadro's Number",
+      "Hubble Constant"
+    ],
+    "odd": 3,
+    "reason": "Planck's, Boltzmann's, and Avogadro's constants are dimensionless or fixed physical constants; the Hubble Constant is an observational cosmological parameter that changes over time (Hubble tension).",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Gothic Fiction",
+      "Magical Realism",
+      "Cyberpunk",
+      "Bildungsroman"
+    ],
+    "odd": 3,
+    "reason": "Gothic fiction, magical realism, and cyberpunk are genres defined by setting/atmosphere/tropes; Bildungsroman is a narrative structure (coming-of-age arc) that can span any genre.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Ad Hominem",
+      "Straw Man",
+      "False Dilemma",
+      "Occam's Razor"
+    ],
+    "odd": 3,
+    "reason": "Ad hominem, straw man, and false dilemma are logical fallacies; Occam's Razor is a philosophical principle of parsimony used to guide reasoning.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Keynes",
+      "Friedman",
+      "Hayek",
+      "Euler"
+    ],
+    "odd": 3,
+    "reason": "Keynes, Friedman, and Hayek are foundational macroeconomists; Euler is a mathematician whose contributions are in analysis and graph theory, not economics.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Galileo Galilei",
+      "Isaac Newton",
+      "René Descartes",
+      "Nikola Tesla"
+    ],
+    "odd": 3,
+    "reason": "Galileo, Newton, and Descartes were 17th-century Scientific Revolution figures; Tesla was a 19th–20th century electrical engineer, a different era entirely.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "ERC-20",
+      "ERC-721",
+      "ERC-1155",
+      "BEP-2"
+    ],
+    "odd": 3,
+    "reason": "ERC-20, ERC-721, and ERC-1155 are Ethereum token standards; BEP-2 is a Binance Chain token standard, from a different ecosystem.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Availability Heuristic",
+      "Representativeness Heuristic",
+      "Affect Heuristic",
+      "Dunning-Kruger Effect"
+    ],
+    "odd": 3,
+    "reason": "Availability, representativeness, and affect are heuristics (mental shortcuts); Dunning-Kruger is a metacognitive bias about self-assessment of competence, not a heuristic.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Crab Nebula",
+      "Andromeda Galaxy",
+      "Orion Nebula",
+      "Eagle Nebula"
+    ],
+    "odd": 1,
+    "reason": "Crab, Orion, and Eagle nebulae are nebulae within the Milky Way; Andromeda is a full spiral galaxy 2.5 million light-years away.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Dominant Strategy",
+      "Mixed Strategy",
+      "Zero-Sum Game",
+      "Minimax Theorem"
+    ],
+    "odd": 2,
+    "reason": "Dominant strategy, mixed strategy, and the minimax theorem are solution concepts/strategies in game theory; zero-sum game is a game classification, not a strategy or theorem.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Lisp",
+      "ML",
+      "APL",
+      "Prolog"
+    ],
+    "odd": 3,
+    "reason": "Lisp, ML, and APL are functional or array-oriented languages; Prolog is a logic programming language based on Horn clause resolution.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Speed of Light",
+      "Gravitational Constant",
+      "Elementary Charge",
+      "Pi"
+    ],
+    "odd": 3,
+    "reason": "Speed of light, gravitational constant, and elementary charge are physical constants with units and empirical values; Pi is a pure mathematical constant.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Satoshi Nakamoto",
+      "Vitalik Buterin",
+      "Gavin Wood",
+      "Nick Szabo"
+    ],
+    "odd": 0,
+    "reason": "Vitalik Buterin, Gavin Wood, and Nick Szabo are identified individuals with verifiable public histories; Satoshi Nakamoto is a pseudonymous unknown identity.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Stream of Consciousness",
+      "Unreliable Narrator",
+      "In Medias Res",
+      "Epistolary"
+    ],
+    "odd": 3,
+    "reason": "Stream of consciousness, unreliable narrator, and in medias res are narrative techniques; epistolary is a literary form (works told through letters/documents), not just a technique.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Comparative Advantage",
+      "Opportunity Cost",
+      "Marginal Utility",
+      "Nash Equilibrium"
+    ],
+    "odd": 3,
+    "reason": "Comparative advantage, opportunity cost, and marginal utility are core microeconomic/trade concepts; Nash Equilibrium belongs to game theory.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Confucius",
+      "Plato",
+      "Aristotle",
+      "Socrates"
+    ],
+    "odd": 0,
+    "reason": "Plato, Aristotle, and Socrates form the classical Athenian philosophical lineage; Confucius is a Chinese philosopher from a separate tradition and slightly earlier era.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "SHA-256",
+      "Keccak-256",
+      "AES-256",
+      "RIPEMD-160"
+    ],
+    "odd": 2,
+    "reason": "SHA-256, Keccak-256, and RIPEMD-160 are cryptographic hash functions; AES-256 is a symmetric encryption algorithm, not a hash function.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Confirmation Bias",
+      "In-group Bias",
+      "Optimism Bias",
+      "Modus Ponens"
+    ],
+    "odd": 3,
+    "reason": "Confirmation bias, in-group bias, and optimism bias are cognitive biases; modus ponens is a deductive logical inference rule.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Pulsar",
+      "Magnetar",
+      "Blazar",
+      "Neutron Star"
+    ],
+    "odd": 2,
+    "reason": "Pulsars, magnetars, and neutron stars are all closely related compact stellar objects (magnetars and pulsars are subtypes of neutron stars); a blazar is an active galactic nucleus with a relativistic jet pointed at Earth.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Prisoner's Dilemma",
+      "Chicken Game",
+      "Stag Hunt",
+      "Condorcet Paradox"
+    ],
+    "odd": 3,
+    "reason": "Prisoner's Dilemma, Chicken Game, and Stag Hunt are canonical two-player game theory games; Condorcet Paradox is a social choice theory result about voting cycles.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Scala",
+      "F#",
+      "OCaml",
+      "Go"
+    ],
+    "odd": 3,
+    "reason": "Scala, F#, and OCaml are functional/multi-paradigm languages with strong type systems and ML lineage; Go is an imperative, concurrency-focused systems language.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Fine-Structure Constant",
+      "Gravitational Constant",
+      "Permittivity of Free Space",
+      "Boltzmann Constant"
+    ],
+    "odd": 0,
+    "reason": "Gravitational constant, permittivity of free space, and Boltzmann constant are dimensional constants; the fine-structure constant is dimensionless (approximately 1/137).",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Mary Shelley",
+      "Edgar Allan Poe",
+      "Ann Radcliffe",
+      "Charles Dickens"
+    ],
+    "odd": 3,
+    "reason": "Mary Shelley, Poe, and Ann Radcliffe are foundational Gothic/horror fiction authors; Dickens was a social realist novelist who occasionally used Gothic elements but is not a Gothic author.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Solidity",
+      "Vyper",
+      "Rust",
+      "Move"
+    ],
+    "odd": 2,
+    "reason": "Solidity, Vyper, and Move are smart contract programming languages designed for blockchain VMs; Rust is a general-purpose systems language (though used in some blockchain tooling).",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Ad Populum",
+      "Tu Quoque",
+      "Appeal to Authority",
+      "Reductio ad Absurdum"
+    ],
+    "odd": 3,
+    "reason": "Ad populum, tu quoque, and appeal to authority are informal logical fallacies; reductio ad absurdum is a valid proof technique (showing a premise leads to contradiction).",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Adam Smith",
+      "David Ricardo",
+      "John Stuart Mill",
+      "Thomas Bayes"
+    ],
+    "odd": 3,
+    "reason": "Adam Smith, David Ricardo, and John Stuart Mill are classical economists; Thomas Bayes was an 18th-century statistician and Presbyterian minister known for Bayes' theorem.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "UTXO",
+      "Account Model",
+      "State Channel",
+      "Merkle Patricia Trie"
+    ],
+    "odd": 3,
+    "reason": "UTXO, Account Model, and State Channel are blockchain transaction/ledger models; Merkle Patricia Trie is a data structure (used internally in Ethereum) not a transaction model.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Overconfidence Effect",
+      "Planning Fallacy",
+      "Hindsight Bias",
+      "False Consensus Effect"
+    ],
+    "odd": 1,
+    "reason": "Overconfidence effect, hindsight bias, and false consensus effect are stable perceptual/memory biases; the planning fallacy is a specific prediction bias about underestimating task duration, studied distinctly by Kahneman and Tversky.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Cepheid Variable",
+      "RR Lyrae Star",
+      "T Tauri Star",
+      "Type Ia Supernova"
+    ],
+    "odd": 3,
+    "reason": "Cepheid variables, RR Lyrae stars, and T Tauri stars are types of variable stars at different evolutionary stages; Type Ia supernova is a stellar explosion event used as a standard candle, not a type of variable star.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mechanism Design",
+      "Auction Theory",
+      "Signaling Theory",
+      "Portfolio Theory"
+    ],
+    "odd": 3,
+    "reason": "Mechanism design, auction theory, and signaling theory are branches of game theory/information economics; portfolio theory (Markowitz) is a quantitative finance model for asset allocation.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Idris",
+      "Agda",
+      "Coq",
+      "Erlang"
+    ],
+    "odd": 3,
+    "reason": "Idris, Agda, and Coq are dependently-typed proof assistants/languages used in formal verification; Erlang is a concurrent functional language designed for fault-tolerant telecom systems.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Speed of Light in Vacuum",
+      "Magnetic Constant",
+      "Gas Constant",
+      "Speed of Sound in Air"
+    ],
+    "odd": 3,
+    "reason": "Speed of light in vacuum, magnetic constant, and gas constant are universal physical constants; speed of sound in air is a material-dependent property that varies with temperature and pressure.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Jorge Luis Borges",
+      "Italo Calvino",
+      "Gabriel García Márquez",
+      "Franz Kafka"
+    ],
+    "odd": 2,
+    "reason": "Borges, Calvino, and Kafka are associated with magical realism and metafiction in a postmodern/surrealist vein; García Márquez is specifically tied to Latin American magical realism and is the most canonical example — yet the odd one out is Kafka, whose work predates magical realism as a named movement and is more properly Kafkaesque/surrealist. Actually: Kafka is the odd one — the other three are post-WWII authors; Kafka died 1924.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Liquidity Pool",
+      "Automated Market Maker",
+      "Order Book",
+      "Yield Farming"
+    ],
+    "odd": 2,
+    "reason": "Liquidity pools, AMMs, and yield farming are DeFi-native constructs; order books are traditional finance market mechanisms used in centralized exchanges.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Hindsight Bias",
+      "Curse of Knowledge",
+      "Illusion of Transparency",
+      "Base Rate Neglect"
+    ],
+    "odd": 3,
+    "reason": "Hindsight bias, curse of knowledge, and illusion of transparency all involve overestimating what others know or what was predictable; base rate neglect is a statistical reasoning error about prior probabilities.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Io",
+      "Europa",
+      "Titan",
+      "Ganymede"
+    ],
+    "odd": 2,
+    "reason": "Io, Europa, and Ganymede are moons of Jupiter (Galilean moons); Titan is a moon of Saturn.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Pareto Efficiency",
+      "Kaldor-Hicks Efficiency",
+      "Arrow's Impossibility Theorem",
+      "Rawlsian Justice"
+    ],
+    "odd": 3,
+    "reason": "Pareto efficiency, Kaldor-Hicks efficiency, and Arrow's Impossibility Theorem are welfare economics/social choice concepts; Rawlsian Justice is a political philosophy framework from John Rawls.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Erlang",
+      "Elixir",
+      "Akka",
+      "Pony"
+    ],
+    "odd": 2,
+    "reason": "Erlang, Elixir, and Pony are programming languages with native actor-model/concurrency support; Akka is a toolkit/library for JVM (Scala/Java), not a language itself.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Chandrasekhar Limit",
+      "Tolman-Oppenheimer-Volkoff Limit",
+      "Eddington Luminosity",
+      "Schwarzschild Radius"
+    ],
+    "odd": 2,
+    "reason": "Chandrasekhar limit, TOV limit, and Schwarzschild radius are mass/density thresholds for compact object formation; Eddington luminosity is a limit on radiation pressure vs. gravity, not a mass/collapse threshold.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Rollup",
+      "Sidechain",
+      "Plasma",
+      "Sharding"
+    ],
+    "odd": 3,
+    "reason": "Rollups, sidechains, and Plasma are Layer-2 scaling solutions that offload transactions from the main chain; sharding is a Layer-1 scaling technique that partitions the base blockchain itself.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tversky",
+      "Kahneman",
+      "Thaler",
+      "Stiglitz"
+    ],
+    "odd": 3,
+    "reason": "Tversky, Kahneman, and Thaler are behavioral economists/psychologists who founded behavioral economics; Stiglitz is an information economist known for asymmetric information theory, not behavioral economics.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Sonnet",
+      "Villanelle",
+      "Haiku",
+      "Elegy"
+    ],
+    "odd": 3,
+    "reason": "Sonnet, villanelle, and haiku are poetic forms defined by strict structural rules; elegy is a mood/subject category (mourning), not a fixed structural form.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Dark Matter",
+      "Dark Energy",
+      "Cosmic Microwave Background",
+      "Cosmological Constant"
+    ],
+    "odd": 2,
+    "reason": "Dark matter, dark energy, and the cosmological constant are theoretical entities/parameters accounting for unobserved mass-energy; the CMB is an observed electromagnetic radiation phenomenon — empirical evidence, not a theoretical placeholder.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Circular Economy",
+      "Tragedy of the Commons",
+      "Externality",
+      "Comparative Advantage"
+    ],
+    "odd": 3,
+    "reason": "Circular economy, tragedy of the commons, and externality are environmental/public goods economics concepts; comparative advantage is a trade theory concept.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Haskel Curry",
+      "Alonzo Church",
+      "Alan Turing",
+      "John von Neumann"
+    ],
+    "odd": 3,
+    "reason": "Curry, Church, and Turing are foundational theorists of computability and lambda calculus; von Neumann's key contribution was the stored-program computer architecture, distinct from computability theory foundations.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "EIP-1559",
+      "EIP-4844",
+      "EIP-4337",
+      "BIP-32"
+    ],
+    "odd": 3,
+    "reason": "EIP-1559, EIP-4844, and EIP-4337 are Ethereum Improvement Proposals; BIP-32 is a Bitcoin Improvement Proposal (hierarchical deterministic wallets).",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Mental Accounting",
+      "Hyperbolic Discounting",
+      "Status Quo Bias",
+      "Moral Hazard"
+    ],
+    "odd": 3,
+    "reason": "Mental accounting, hyperbolic discounting, and status quo bias are behavioral/cognitive biases; moral hazard is an information economics concept about risk-taking when insulated from consequences.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Callisto",
+      "Rhea",
+      "Dione",
+      "Tethys"
+    ],
+    "odd": 0,
+    "reason": "Rhea, Dione, and Tethys are moons of Saturn; Callisto is a Galilean moon of Jupiter.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Dominant Strategy Equilibrium",
+      "Subgame Perfect Equilibrium",
+      "Bayesian Nash Equilibrium",
+      "Efficient Market Hypothesis"
+    ],
+    "odd": 3,
+    "reason": "Dominant strategy equilibrium, subgame perfect equilibrium, and Bayesian Nash equilibrium are solution concepts in game theory; the Efficient Market Hypothesis belongs to financial economics.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Simula",
+      "Smalltalk",
+      "Self",
+      "ALGOL"
+    ],
+    "odd": 3,
+    "reason": "Simula, Smalltalk, and Self are historically pivotal object-oriented languages; ALGOL is a procedural/imperative language that influenced structured programming, not OOP directly.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Electron Mass",
+      "Proton Mass",
+      "Neutron Mass",
+      "Planck Mass"
+    ],
+    "odd": 3,
+    "reason": "Electron, proton, and neutron masses are measured particle masses from the Standard Model; Planck mass is a derived unit from fundamental constants (combination of G, hbar, c), not a particle mass.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Don Quixote",
+      "Canterbury Tales",
+      "Gargantua and Pantagruel",
+      "Decameron"
+    ],
+    "odd": 0,
+    "reason": "Canterbury Tales, Gargantua, and Decameron are medieval/early Renaissance frame narrative collections; Don Quixote (1605) is widely considered the first modern novel, a distinct literary form.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Zero-Knowledge Proof",
+      "Homomorphic Encryption",
+      "Multi-Party Computation",
+      "Digital Signature"
+    ],
+    "odd": 3,
+    "reason": "ZK proofs, homomorphic encryption, and MPC are privacy-preserving computation techniques; digital signatures are an authentication mechanism, not a privacy-preserving computation technique.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Framing Effect",
+      "Priming Effect",
+      "Anchoring Effect",
+      "Mere Exposure Effect"
+    ],
+    "odd": 1,
+    "reason": "Framing effect, anchoring effect, and mere exposure effect are cognitive biases affecting judgment and preference; priming is a memory/perception mechanism (not strictly a bias) studied in cognitive psychology, foundational to social priming research.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Gamma-Ray Burst",
+      "Fast Radio Burst",
+      "Gravitational Wave",
+      "Solar Flare"
+    ],
+    "odd": 3,
+    "reason": "Gamma-ray bursts, fast radio bursts, and gravitational waves are extragalactic or deep-space phenomena; solar flares originate from our own Sun and are local space weather events.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Coase Theorem",
+      "Pigou Tax",
+      "Laffer Curve",
+      "Hotelling's Rule"
+    ],
+    "odd": 2,
+    "reason": "Coase theorem, Pigou tax, and Hotelling's rule are models/theorems in environmental/resource economics; the Laffer Curve is a supply-side fiscal policy concept about tax rates and revenue.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Forth",
+      "Assembly",
+      "C",
+      "BASIC"
+    ],
+    "odd": 1,
+    "reason": "Forth, C, and BASIC are high-level or mid-level programming languages; Assembly is a low-level language that directly maps to machine instructions with no abstraction layer.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Starknet",
+      "zkSync",
+      "Optimism",
+      "Polygon PoS"
+    ],
+    "odd": 3,
+    "reason": "Starknet, zkSync, and Optimism are Ethereum Layer-2 rollup networks; Polygon PoS is a sidechain (not a rollup) with its own validator set separate from Ethereum's security.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Loss Aversion",
+      "Risk Aversion",
+      "Ambiguity Aversion",
+      "Cognitive Dissonance"
+    ],
+    "odd": 3,
+    "reason": "Loss aversion, risk aversion, and ambiguity aversion are all decision-under-uncertainty preferences studied in prospect theory; cognitive dissonance is a motivational state arising from holding contradictory beliefs.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Borromean Rings",
+      "Trefoil Knot",
+      "Hopf Fibration",
+      "Calabi-Yau Manifold"
+    ],
+    "odd": 3,
+    "reason": "Borromean rings, trefoil knot, and Hopf fibration are topological structures in 3-dimensional space; a Calabi-Yau manifold is a complex higher-dimensional manifold used in string theory compactification.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Petrarch",
+      "Dante Alighieri",
+      "Giovanni Boccaccio",
+      "Geoffrey Chaucer"
+    ],
+    "odd": 3,
+    "reason": "Petrarch, Dante, and Boccaccio are the three crowns of Italian literature from 14th-century Florence; Chaucer is their English contemporary who adapted Italian forms but belongs to the English literary tradition.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Asymmetric Information",
+      "Principal-Agent Problem",
+      "Adverse Selection",
+      "Giffen Good"
+    ],
+    "odd": 3,
+    "reason": "Asymmetric information, principal-agent problem, and adverse selection are information economics concepts; a Giffen good is a demand anomaly in consumer theory where demand rises with price.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Kotlin",
+      "Swift",
+      "Dart",
+      "TypeScript"
+    ],
+    "odd": 3,
+    "reason": "Kotlin, Swift, and Dart are statically typed languages primarily targeting native mobile/app development; TypeScript is a statically typed superset of JavaScript targeting web/browser environments.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Hawking Radiation",
+      "Unruh Effect",
+      "Casimir Effect",
+      "Cherenkov Radiation"
+    ],
+    "odd": 3,
+    "reason": "Hawking radiation, Unruh effect, and Casimir effect are quantum vacuum/field theory phenomena with no classical analog; Cherenkov radiation is a classical electromagnetic effect from charged particles exceeding light speed in a medium.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Flash Loan",
+      "Reentrancy Attack",
+      "Front-Running",
+      "Sandwich Attack"
+    ],
+    "odd": 0,
+    "reason": "Reentrancy attacks, front-running, and sandwich attacks are attack vectors/exploits on DeFi protocols; flash loans are a legitimate (though dual-use) uncollateralized lending mechanism native to DeFi.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Framing Effect",
+      "Affect Heuristic",
+      "Decoy Effect",
+      "Social Proof"
+    ],
+    "odd": 3,
+    "reason": "Framing effect, affect heuristic, and decoy effect are individual cognitive phenomena; social proof is a social influence mechanism (Cialdini) where behavior is shaped by others' actions.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Io",
+      "Triton",
+      "Enceladus",
+      "Titan"
+    ],
+    "odd": 1,
+    "reason": "Io, Enceladus, and Titan are moons known for geological/cryovolcanic activity; Triton is a retrograde moon of Neptune likely captured from the Kuiper Belt, distinct by its origin and orbital characteristics.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Shapley Value",
+      "Core Solution",
+      "Nucleolus",
+      "Minimax Regret"
+    ],
+    "odd": 3,
+    "reason": "Shapley value, core solution, and nucleolus are solution concepts in cooperative game theory; minimax regret is a decision criterion in decision theory under uncertainty, not cooperative game theory.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "APL",
+      "J",
+      "K",
+      "R"
+    ],
+    "odd": 3,
+    "reason": "APL, J, and K are array programming languages in the Iverson lineage (J and K are direct descendants of APL); R is a statistical computing language that supports array operations but is not in the APL/Iverson family.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Stefan-Boltzmann Constant",
+      "Wien Displacement Constant",
+      "Rydberg Constant",
+      "Molar Gas Constant"
+    ],
+    "odd": 3,
+    "reason": "Stefan-Boltzmann, Wien displacement, and Rydberg constants all arise from quantum/spectral physics of radiation; the molar gas constant R is a thermodynamic constant from the ideal gas law.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Hard Boiled",
+      "Gothic Fiction",
+      "Southern Gothic",
+      "Noir"
+    ],
+    "odd": 1,
+    "reason": "Hard boiled, Southern Gothic, and noir are American literary/genre traditions; Gothic fiction is a European Romantic-era tradition (Walpole, Radcliffe, Shelley) that precedes and differs from Southern Gothic's American regional variant.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tokenomics",
+      "Vesting Schedule",
+      "Token Burn",
+      "Capital Asset Pricing Model"
+    ],
+    "odd": 3,
+    "reason": "Tokenomics, vesting schedules, and token burns are crypto-native economic mechanisms; the Capital Asset Pricing Model is a traditional finance model for pricing risk and return.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Availability Cascade",
+      "Groupthink",
+      "Bandwagon Effect",
+      "Information Cascade"
+    ],
+    "odd": 0,
+    "reason": "Groupthink, bandwagon effect, and information cascade are social dynamics phenomena; availability cascade is a self-reinforcing process where repeated media coverage makes a risk seem larger — a hybrid of media theory and cognitive bias.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Oort Cloud",
+      "Kuiper Belt",
+      "Asteroid Belt",
+      "Van Allen Belt"
+    ],
+    "odd": 3,
+    "reason": "Oort Cloud, Kuiper Belt, and the Asteroid Belt are regions of small bodies in the solar system; the Van Allen Belts are zones of trapped charged particles in Earth's magnetosphere.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Vickrey Auction",
+      "Dutch Auction",
+      "English Auction",
+      "Double Auction"
+    ],
+    "odd": 3,
+    "reason": "Vickrey, Dutch, and English auctions are single-sided auction formats; a double auction has both buyers and sellers submitting bids/asks simultaneously (used in stock markets).",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Whitespace",
+      "Brainfuck",
+      "Malbolge",
+      "PostScript"
+    ],
+    "odd": 3,
+    "reason": "Whitespace, Brainfuck, and Malbolge are esoteric programming languages (esolangs) designed for fun/obfuscation; PostScript is a practical page description language used in professional printing.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Penrose Process",
+      "Frame-Dragging",
+      "Gravitational Lensing",
+      "Quantum Entanglement"
+    ],
+    "odd": 3,
+    "reason": "Penrose process, frame-dragging (Lense-Thirring effect), and gravitational lensing are predictions of general relativity; quantum entanglement is a quantum mechanical phenomenon not predicted by GR.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "DAO",
+      "Multi-Sig Wallet",
+      "Smart Contract",
+      "Cold Wallet"
+    ],
+    "odd": 3,
+    "reason": "DAOs, multi-sig wallets, and smart contracts are on-chain programmable constructs; cold wallets are offline key storage devices with no on-chain programmability.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Endowment Effect",
+      "IKEA Effect",
+      "Mere Ownership Effect",
+      "Zeigarnik Effect"
+    ],
+    "odd": 3,
+    "reason": "Endowment effect, IKEA effect, and mere ownership effect are all biases related to overvaluing things one possesses or creates; the Zeigarnik effect is about better memory for uncompleted tasks.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Proxima Centauri",
+      "Barnard's Star",
+      "Sirius",
+      "Alpha Centauri A"
+    ],
+    "odd": 2,
+    "reason": "Proxima Centauri, Barnard's Star, and Alpha Centauri A are among the nearest stars to the Sun; Sirius, while the brightest star in the night sky, is approximately 8.6 light-years away — farther than the others listed.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Stackelberg Competition",
+      "Bertrand Competition",
+      "Cournot Competition",
+      "Monopolistic Competition"
+    ],
+    "odd": 3,
+    "reason": "Stackelberg, Bertrand, and Cournot are strategic oligopoly models from game theory (with defined best-response dynamics); monopolistic competition is a market structure concept from industrial organization, not a strategic game.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tcl",
+      "Lua",
+      "Python",
+      "Ruby"
+    ],
+    "odd": 2,
+    "reason": "Tcl, Lua, and Ruby were designed primarily as scripting/embeddable languages with an emphasis on extensibility and integration; Python was designed with readability and general-purpose use as primary goals.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Cosmic Inflation",
+      "Big Crunch",
+      "Heat Death",
+      "Big Rip"
+    ],
+    "odd": 0,
+    "reason": "Big Crunch, Heat Death, and Big Rip are proposed end-states of the universe; cosmic inflation is a proposed early-universe rapid expansion phase, not an end-state.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Token Curated Registry",
+      "Bonding Curve",
+      "Conviction Voting",
+      "Proof of Humanity"
+    ],
+    "odd": 3,
+    "reason": "Token curated registries, bonding curves, and conviction voting are DeFi/DAO governance and curation mechanisms; Proof of Humanity is an identity verification protocol, not a curation/governance mechanism.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Cognitive Load Theory",
+      "Dual-Process Theory",
+      "Terror Management Theory",
+      "Signal Detection Theory"
+    ],
+    "odd": 2,
+    "reason": "Cognitive load theory, dual-process theory (System 1/2), and signal detection theory are cognitive psychology frameworks; Terror Management Theory is a social psychology theory about mortality salience and cultural worldviews.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "L1 Lagrange Point",
+      "L2 Lagrange Point",
+      "L4 Lagrange Point",
+      "Barycenter"
+    ],
+    "odd": 3,
+    "reason": "L1, L2, and L4 are Lagrange points (gravitational equilibrium positions in a two-body system); barycenter is the center of mass of a system, a different concept entirely.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tiebout Model",
+      "Median Voter Theorem",
+      "Public Choice Theory",
+      "Gibbard-Satterthwaite Theorem"
+    ],
+    "odd": 3,
+    "reason": "Tiebout model, median voter theorem, and public choice theory are political economy models; the Gibbard-Satterthwaite theorem is a social choice/mechanism design impossibility result about strategy-proofness of voting systems.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "COBOL",
+      "FORTRAN",
+      "PL/I",
+      "ALGOL 60"
+    ],
+    "odd": 0,
+    "reason": "FORTRAN, PL/I, and ALGOL 60 heavily influenced the development of structured/scientific programming and later languages; COBOL was designed specifically for business data processing and has a distinct English-like syntax lineage.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Gravitino",
+      "Photino",
+      "Neutralino",
+      "Inflaton"
+    ],
+    "odd": 3,
+    "reason": "Gravitino, photino, and neutralino are supersymmetric partner particles (superpartners) predicted by SUSY; the inflaton is a hypothetical scalar field that drove cosmic inflation, not a SUSY particle.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Substrate",
+      "Cosmos SDK",
+      "Hardhat",
+      "Foundry"
+    ],
+    "odd": 0,
+    "reason": "Cosmos SDK, Hardhat, and Foundry are all Ethereum or EVM-related development frameworks/toolkits; Substrate is a Polkadot/Parity framework for building custom blockchains independent of EVM.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Moral Licensing",
+      "Virtue Signaling",
+      "Moral Disengagement",
+      "Fundamental Attribution Error"
+    ],
+    "odd": 3,
+    "reason": "Moral licensing, virtue signaling, and moral disengagement are mechanisms by which people justify unethical behavior or project ethical identity; fundamental attribution error is a social cognition error about over-attributing behavior to character over situation.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Globular Cluster",
+      "Open Cluster",
+      "OB Association",
+      "Stellar Stream"
+    ],
+    "odd": 3,
+    "reason": "Globular clusters, open clusters, and OB associations are gravitationally bound or co-formed stellar groups; stellar streams are tidal debris from disrupted clusters or dwarf galaxies, not a bound structure.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Revelation Principle",
+      "Envelope Theorem",
+      "Folk Theorem",
+      "Myerson-Satterthwaite Theorem"
+    ],
+    "odd": 1,
+    "reason": "Revelation principle, folk theorem, and Myerson-Satterthwaite theorem are core theorems in mechanism design and game theory; the envelope theorem is a mathematical result in optimization/comparative statics used across economics.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "CockroachDB",
+      "TiDB",
+      "Spanner",
+      "Redis"
+    ],
+    "odd": 3,
+    "reason": "CockroachDB, TiDB, and Google Spanner are distributed NewSQL databases with ACID guarantees across nodes; Redis is an in-memory key-value store/cache, not a distributed relational database.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Defect-Cooperate",
+      "Tit-for-Tat",
+      "Grim Trigger",
+      "Mixed Strategy Nash"
+    ],
+    "odd": 0,
+    "reason": "Tit-for-Tat, Grim Trigger, and Mixed Strategy Nash are strategies or equilibria in repeated game theory; Defect-Cooperate is simply a description of action outcomes in a single game matrix, not a strategy name.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Slashing",
+      "Jailing",
+      "Tombstoning",
+      "Forking"
+    ],
+    "odd": 3,
+    "reason": "Slashing, jailing, and tombstoning are validator punishment mechanisms in Proof-of-Stake consensus protocols; forking is a protocol upgrade/split mechanism, not a validator penalty.",
     "tier": "hard"
   }
 ]

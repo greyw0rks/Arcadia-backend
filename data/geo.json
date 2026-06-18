@@ -9,7 +9,7 @@
     ],
     "image": "/geo/eiffel.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/1280px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "colosseum",
@@ -21,7 +21,7 @@
     ],
     "image": "/geo/colosseum.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "opera",
@@ -33,7 +33,7 @@
     ],
     "image": "/geo/opera.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/1280px-Sydney_Australia._%2821339175489%29.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "taj",
@@ -45,7 +45,7 @@
     ],
     "image": "/geo/taj.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "ggbridge",
@@ -57,7 +57,7 @@
     ],
     "image": "/geo/ggbridge.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/1280px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "liberty",
@@ -69,7 +69,7 @@
     ],
     "image": "/geo/liberty.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/1280px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "bigben",
@@ -81,7 +81,7 @@
     ],
     "image": "/geo/bigben.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Elizabeth_Tower%2C_June_2022.jpg/1280px-Elizabeth_Tower%2C_June_2022.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "redeemer",
@@ -93,7 +93,7 @@
     ],
     "image": "/geo/redeemer.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/1280px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "brandenburg",
@@ -117,7 +117,7 @@
     ],
     "image": "/geo/burj.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1280px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "petra",
@@ -141,7 +141,7 @@
     ],
     "image": "/geo/pisa.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/1280px-Italy_-_Pisa_-_Leaning_Tower.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "sagrada",
@@ -189,7 +189,7 @@
     ],
     "image": "/geo/greatwall.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1280px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "fuji",
@@ -249,7 +249,7 @@
     ],
     "image": "/geo/gizapyramid.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/1280px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "tablemountain",
@@ -405,7 +405,7 @@
     ],
     "image": "/geo/hollywood.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1280px-Hollywood_Sign_%28Zuschnitt%29.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "whitehouse",
@@ -417,7 +417,7 @@
     ],
     "image": "/geo/whitehouse.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/1280px-White_House_north_and_south_sides.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "gatewaymo",
@@ -633,7 +633,7 @@
     ],
     "image": "/geo/petronas.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/1280px-Petronas_Towers_Logo.svg.png",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "taipei101",
@@ -645,7 +645,7 @@
     ],
     "image": "/geo/taipei101.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Taipei_101_from_Xiangshan_20250905.jpg/1280px-Taipei_101_from_Xiangshan_20250905.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "sheikhzayed",
@@ -705,7 +705,7 @@
     ],
     "image": "/geo/niagara.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/1280px-3Falls_Niagara.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "victoriafalls",
@@ -729,7 +729,7 @@
     ],
     "image": "/geo/grandcanyon.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Canyon_River_Tree_%28165872763%29.jpeg/1280px-Canyon_River_Tree_%28165872763%29.jpeg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "mountrushmore",
@@ -741,7 +741,7 @@
     ],
     "image": "/geo/mountrushmore.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/1280px-Mount_Rushmore_detail_view_%28100MP%29.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "santorini",
@@ -801,7 +801,7 @@
     ],
     "image": "/geo/stonehenge.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "versailles",
@@ -885,7 +885,7 @@
     ],
     "image": "/geo/towerbridge.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/1280px-Tower_Bridge_at_Dawn.jpg",
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "colognecathedral",

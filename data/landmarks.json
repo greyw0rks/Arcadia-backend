@@ -7,7 +7,7 @@
       "Tokyo Tower",
       "Berlin TV Tower"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "colosseum",
@@ -17,7 +17,7 @@
       "Parthenon",
       "Pula Arena"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "opera",
@@ -27,7 +27,7 @@
       "Walt Disney Concert Hall",
       "Esplanade Singapore"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "taj",
@@ -37,7 +37,7 @@
       "Badshahi Mosque",
       "Sheikh Zayed Mosque"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "ggbridge",
@@ -47,7 +47,7 @@
       "Tower Bridge",
       "Bay Bridge"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "liberty",
@@ -57,7 +57,7 @@
       "The Motherland Calls",
       "Colossus of Rhodes"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "bigben",
@@ -67,7 +67,7 @@
       "Spasskaya Tower",
       "Rajabai Clock Tower"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "redeemer",
@@ -77,7 +77,7 @@
       "Cristo de la Concordia",
       "The Motherland Calls"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "brandenburg",
@@ -97,7 +97,7 @@
       "Petronas Towers",
       "Taipei 101"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "petra",
@@ -127,7 +127,7 @@
       "Big Ben",
       "St Mark's Campanile"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "sagrada",
@@ -177,7 +177,7 @@
       "Walls of Constantinople",
       "Sacsayhuamán"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "fuji",
@@ -237,7 +237,7 @@
       "Chichen Itza",
       "Step Pyramid of Djoser"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "tablemountain",
@@ -387,7 +387,7 @@
       "Capitol Records Building",
       "Griffith Observatory"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "whitehouse",
@@ -397,7 +397,7 @@
       "Buckingham Palace",
       "The Pentagon"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "gatewaymo",
@@ -587,7 +587,7 @@
       "Shanghai Tower",
       "Burj Khalifa"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "sheikhzayed",
@@ -627,7 +627,7 @@
       "Iguazu Falls",
       "Angel Falls"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "victoriafalls",
@@ -647,7 +647,7 @@
       "Zion Canyon",
       "Antelope Canyon"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "mountrushmore",
@@ -657,7 +657,7 @@
       "Stone Mountain",
       "Mount Vernon"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "santorini",
@@ -707,7 +707,7 @@
       "Carnac Stones",
       "Newgrange"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "versailles",
@@ -777,7 +777,7 @@
       "Millennium Bridge",
       "Brooklyn Bridge"
     ],
-    "tier": "easy"
+    "tier": "medium"
   },
   {
     "id": "colognecathedral",
