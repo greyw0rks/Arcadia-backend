@@ -878,5 +878,255 @@
       "Kravice Falls"
     ],
     "tier": "hard"
+  },
+  {
+    "id": "solovetsky-islands",
+    "landmark": "Solovetsky Monastery",
+    "decoys": [
+      "Valaam Monastery",
+      "Kirillo-Belozersky Monastery",
+      "Pskov-Caves Monastery"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "deception-island",
+    "landmark": "Deception Island Caldera",
+    "decoys": [
+      "Pendulum Cove",
+      "Whalers Bay",
+      "Neptune's Bellows"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "faroe-sea-cliffs",
+    "landmark": "Vestmannabjørgini Sea Cliffs",
+    "decoys": [
+      "Slættaratindur Peak",
+      "Gasadalur Waterfall",
+      "Sørvágsvatn Lake"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "jan-mayen",
+    "landmark": "Beerenberg Volcano",
+    "decoys": [
+      "Haakon VII Toppen",
+      "Nord-Jan Station",
+      "Sørbreen Glacier"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "tristan-da-cunha",
+    "landmark": "Queen Mary's Peak",
+    "decoys": [
+      "Edinburgh of the Seven Seas",
+      "Inaccessible Island",
+      "Nightingale Island"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "kerguelen-islands",
+    "landmark": "Mont Ross",
+    "decoys": [
+      "Cook Glacier",
+      "Ile de la Possession",
+      "Port-aux-Français Station"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "lake-natron",
+    "landmark": "Lake Natron Soda Flats",
+    "decoys": [
+      "Ol Doinyo Lengai Volcano",
+      "Lake Magadi",
+      "Natron Flamingo Breeding Grounds"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "spotted-lake",
+    "landmark": "Spotted Lake (Kliluk)",
+    "decoys": [
+      "Osoyoos Lake",
+      "Okanagan Lake",
+      "Vaseux Lake"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "devils-tower",
+    "landmark": "Devils Tower National Monument",
+    "decoys": [
+      "Chimney Rock",
+      "Scotts Bluff",
+      "Craters of the Moon"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "reed-flute-cave",
+    "landmark": "Reed Flute Cave (Ludi Yan)",
+    "decoys": [
+      "Seven Star Cave",
+      "Crown Cave",
+      "Silver Cave"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "tsingy-bemaraha",
+    "landmark": "Grand Tsingy Limestone Pinnacles",
+    "decoys": [
+      "Petit Tsingy",
+      "Tsingy de Ankarana",
+      "Bemaraha Plateau"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "tian-shan",
+    "landmark": "Khan Tengri Peak",
+    "decoys": [
+      "Jengish Chokusu (Pobeda)",
+      "Son-Kul Lake",
+      "Inylchek Glacier"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "danakil-depression",
+    "landmark": "Dallol Hydrothermal Field",
+    "decoys": [
+      "Erta Ale Lava Lake",
+      "Lake Afrera",
+      "Afar Triangle"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "namib-dunes",
+    "landmark": "Sossusvlei Dunes",
+    "decoys": [
+      "Dead Vlei",
+      "Dune 45",
+      "Big Daddy Dune"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "wulingyuan",
+    "landmark": "Tianzi Mountain Sandstone Pillars",
+    "decoys": [
+      "Yuanjiajie Scenic Area",
+      "Zhangjiajie Glass Bridge",
+      "Ten-Mile Gallery"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "dallol-volcano",
+    "landmark": "Erta Ale Lava Lake",
+    "decoys": [
+      "Dallol Sulfur Springs",
+      "Lake Afrera Salt Flat",
+      "Awash National Park"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "white-desert",
+    "landmark": "White Desert Chalk Formations",
+    "decoys": [
+      "Black Desert",
+      "Crystal Mountain",
+      "Farafra Oasis"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "salar-uyuni",
+    "landmark": "Salar de Uyuni Salt Flat",
+    "decoys": [
+      "Salar de Atacama",
+      "Salar de Coipasa",
+      "Isla Incahuasi"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "roraima-tepui",
+    "landmark": "Mount Roraima Tepui",
+    "decoys": [
+      "Kukenan Tepui",
+      "Auyán-tepui",
+      "Cerro Autana"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "zhangye-danxia",
+    "landmark": "Zhangye Danxia Rainbow Mountains",
+    "decoys": [
+      "Linxia Danxia",
+      "Yadan Devil City",
+      "Zhangye Wetlands"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "ha-long-bay",
+    "landmark": "Ha Long Bay Karst Islands",
+    "decoys": [
+      "Thien Cung Cave",
+      "Sung Sot Cave",
+      "Ti Top Island"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "socotra-island",
+    "landmark": "Dixam Plateau Dragon Blood Trees",
+    "decoys": [
+      "Hoq Cave",
+      "Qalansiyah Lagoon",
+      "Detwah Lagoon"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "deosai-plains",
+    "landmark": "Deosai National Park High Plateau",
+    "decoys": [
+      "Bara Pani Lake",
+      "Sheosar Lake",
+      "Sadpara Lake"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "chocolate-hills",
+    "landmark": "Chocolate Hills Geological Formation",
+    "decoys": [
+      "Carmen Valley",
+      "Sagbayan Peak",
+      "Bilar Rainforest"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "id": "fly-geyser",
+    "landmark": "Fly Ranch Geyser",
+    "decoys": [
+      "Steamboat Geyser",
+      "Beowawe Geothermal Area",
+      "Brady Hot Springs"
+    ],
+    "tier": "extreme"
   }
 ]

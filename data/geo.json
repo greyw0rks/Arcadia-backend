@@ -1006,5 +1006,305 @@
     "image": "/geo/plitvice.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/View_in_Plitvice_Lakes_National_Park.jpg/1280px-View_in_Plitvice_Lakes_National_Park.jpg",
     "tier": "hard"
+  },
+  {
+    "id": "solovetsky-islands",
+    "answer": "Arkhangelsk Oblast, Russia",
+    "decoys": [
+      "Karelia, Russia",
+      "Murmansk Oblast, Russia",
+      "Novaya Zemlya, Russia"
+    ],
+    "image": "/geo/solovetsky-islands.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/View_of_the_Solovetsky_Islands_01.jpg/1280px-View_of_the_Solovetsky_Islands_01.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "deception-island",
+    "answer": "South Shetland Islands, Antarctica",
+    "decoys": [
+      "South Georgia, UK",
+      "Bouvet Island, Norway",
+      "Heard Island, Australia"
+    ],
+    "image": "/geo/deception-island.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Deception_Island%2C_Antarctica.jpg/1280px-Deception_Island%2C_Antarctica.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "faroe-sea-cliffs",
+    "answer": "Streymoy, Faroe Islands",
+    "decoys": [
+      "Vagar, Faroe Islands",
+      "Eysturoy, Faroe Islands",
+      "Sandoy, Faroe Islands"
+    ],
+    "image": "/geo/faroe-sea-cliffs.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Vestmannabj%C3%B8rgini%2C_Faroe_Islands.JPG/1280px-Vestmannabj%C3%B8rgini%2C_Faroe_Islands.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "jan-mayen",
+    "answer": "Jan Mayen, Norway",
+    "decoys": [
+      "Svalbard, Norway",
+      "Franz Josef Land, Russia",
+      "Bear Island, Norway"
+    ],
+    "image": "/geo/jan-mayen.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Jan_Mayen%2C_Beerenberg_Glacier_-_panoramio.jpg/1280px-Jan_Mayen%2C_Beerenberg_Glacier_-_panoramio.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "tristan-da-cunha",
+    "answer": "Tristan da Cunha, United Kingdom",
+    "decoys": [
+      "Ascension Island, UK",
+      "St. Helena, UK",
+      "Gough Island, UK"
+    ],
+    "image": "/geo/tristan-da-cunha.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/View_of_Tristan_da_Cunha_from_Nightingale_island.jpg/1280px-View_of_Tristan_da_Cunha_from_Nightingale_island.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "kerguelen-islands",
+    "answer": "Kerguelen Islands, France",
+    "decoys": [
+      "Crozet Islands, France",
+      "Amsterdam Island, France",
+      "Heard Island, Australia"
+    ],
+    "image": "/geo/kerguelen-islands.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mont_Ross_-_Archipel_des_Kerguelen.jpg/1280px-Mont_Ross_-_Archipel_des_Kerguelen.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "lake-natron",
+    "answer": "Arusha Region, Tanzania",
+    "decoys": [
+      "Rift Valley, Kenya",
+      "Afar Region, Ethiopia",
+      "Mwanza Region, Tanzania"
+    ],
+    "image": "/geo/lake-natron.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_Natron%2C_Tanzania.jpg/1280px-Lake_Natron%2C_Tanzania.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "spotted-lake",
+    "answer": "British Columbia, Canada",
+    "decoys": [
+      "Alberta, Canada",
+      "Saskatchewan, Canada",
+      "Washington State, USA"
+    ],
+    "image": "/geo/spotted-lake.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Spotted_Lake_Osoyoos.JPG/1280px-Spotted_Lake_Osoyoos.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "devils-tower",
+    "answer": "Wyoming, USA",
+    "decoys": [
+      "Montana, USA",
+      "South Dakota, USA",
+      "Idaho, USA"
+    ],
+    "image": "/geo/devils-tower.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Devil%27s_Tower_National_Monument_Wyoming.JPG/1280px-Devil%27s_Tower_National_Monument_Wyoming.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "reed-flute-cave",
+    "answer": "Guangxi, China",
+    "decoys": [
+      "Guizhou, China",
+      "Yunnan, China",
+      "Hunan, China"
+    ],
+    "image": "/geo/reed-flute-cave.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Guilin_Reed_Flute_Cave.jpg/1280px-Guilin_Reed_Flute_Cave.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "tsingy-bemaraha",
+    "answer": "Melaky Region, Madagascar",
+    "decoys": [
+      "Bongolava Region, Madagascar",
+      "Betsiboka Region, Madagascar",
+      "Sofia Region, Madagascar"
+    ],
+    "image": "/geo/tsingy-bemaraha.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Grand_Tsingy_02.JPG/1280px-Grand_Tsingy_02.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "tian-shan",
+    "answer": "Issyk-Kul Region, Kyrgyzstan",
+    "decoys": [
+      "Naryn Region, Kyrgyzstan",
+      "Xinjiang, China",
+      "East Kazakhstan, Kazakhstan"
+    ],
+    "image": "/geo/tian-shan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Beerenberg_Jan_Mayen.JPG/1280px-Beerenberg_Jan_Mayen.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "danakil-depression",
+    "answer": "Afar Region, Ethiopia",
+    "decoys": [
+      "Djibouti, Djibouti",
+      "Eritrea, Eritrea",
+      "Somali Region, Ethiopia"
+    ],
+    "image": "/geo/danakil-depression.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ethiopia_-_Dallol.jpg/1280px-Ethiopia_-_Dallol.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "namib-dunes",
+    "answer": "Hardap Region, Namibia",
+    "decoys": [
+      "Kunene Region, Namibia",
+      "Northern Cape, South Africa",
+      "Saharan Western Sahara, Morocco"
+    ],
+    "image": "/geo/namib-dunes.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sossusvlei_Dune_Namib_Desert_Namibia_Luca_Galuzzi_2004.JPG/1280px-Sossusvlei_Dune_Namib_Desert_Namibia_Luca_Galuzzi_2004.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "wulingyuan",
+    "answer": "Hunan, China",
+    "decoys": [
+      "Guizhou, China",
+      "Sichuan, China",
+      "Chongqing, China"
+    ],
+    "image": "/geo/wulingyuan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1280px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "dallol-volcano",
+    "answer": "Afar Region, Ethiopia",
+    "decoys": [
+      "Tigray Region, Ethiopia",
+      "Djibouti, Djibouti",
+      "Eritrea, Eritrea"
+    ],
+    "image": "/geo/dallol-volcano.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Erta_Ale-Lac_de_lave_%281%29.jpg/1280px-Erta_Ale-Lac_de_lave_%281%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "white-desert",
+    "answer": "New Valley Governorate, Egypt",
+    "decoys": [
+      "Matrouh Governorate, Egypt",
+      "Red Sea Governorate, Egypt",
+      "South Sinai, Egypt"
+    ],
+    "image": "/geo/white-desert.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/White_Desert%2C_Farafra_depression%2C_Egypt.jpg/1280px-White_Desert%2C_Farafra_depression%2C_Egypt.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "salar-uyuni",
+    "answer": "Potosí Department, Bolivia",
+    "decoys": [
+      "Oruro Department, Bolivia",
+      "Atacama Region, Chile",
+      "Jujuy Province, Argentina"
+    ],
+    "image": "/geo/salar-uyuni.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_10-12_HDR.JPG/1280px-Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_10-12_HDR.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "roraima-tepui",
+    "answer": "Bolívar State, Venezuela",
+    "decoys": [
+      "Roraima State, Brazil",
+      "Upper Takutu-Upper Essequibo, Guyana",
+      "Amazonas State, Venezuela"
+    ],
+    "image": "/geo/roraima-tepui.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Kukenan_Roraima_GS.jpg/1280px-Kukenan_Roraima_GS.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "zhangye-danxia",
+    "answer": "Gansu, China",
+    "decoys": [
+      "Sichuan, China",
+      "Qinghai, China",
+      "Xinjiang, China"
+    ],
+    "image": "/geo/zhangye-danxia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Zhangye_Danxia_2016.jpg/1280px-Zhangye_Danxia_2016.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "ha-long-bay",
+    "answer": "Quảng Ninh Province, Vietnam",
+    "decoys": [
+      "Hạ Long Bay, Vietnam",
+      "Phang Nga Bay, Thailand",
+      "Coron Bay, Philippines"
+    ],
+    "image": "/geo/ha-long-bay.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ha_Long_Bay%2C_Vietnam%2C_Islands.jpg/1280px-Ha_Long_Bay%2C_Vietnam%2C_Islands.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "socotra-island",
+    "answer": "Socotra Governorate, Yemen",
+    "decoys": [
+      "Mahra Governorate, Yemen",
+      "Lakshadweep, India",
+      "Maldives, Maldives"
+    ],
+    "image": "/geo/socotra-island.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Socotra_-Ar%27ar.JPG/1280px-Socotra_-Ar%27ar.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "deosai-plains",
+    "answer": "Gilgit-Baltistan, Pakistan",
+    "decoys": [
+      "Ladakh, India",
+      "Khyber Pakhtunkhwa, Pakistan",
+      "Xinjiang, China"
+    ],
+    "image": "/geo/deosai-plains.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Deosai_the_Land_of_Giants.jpg/1280px-Deosai_the_Land_of_Giants.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "chocolate-hills",
+    "answer": "Bohol, Philippines",
+    "decoys": [
+      "Negros Oriental, Philippines",
+      "Cebu, Philippines",
+      "Leyte, Philippines"
+    ],
+    "image": "/geo/chocolate-hills.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Chocolate_Hills_overview.JPG/1280px-Chocolate_Hills_overview.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "fly-geyser",
+    "answer": "Nevada, USA",
+    "decoys": [
+      "Wyoming, USA",
+      "Utah, USA",
+      "Idaho, USA"
+    ],
+    "image": "/geo/fly-geyser.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fly_Geyser%2C_Nevada.jpg/1280px-Fly_Geyser%2C_Nevada.jpg",
+    "tier": "extreme"
   }
 ]
