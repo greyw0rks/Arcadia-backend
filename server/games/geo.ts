@@ -37,6 +37,8 @@ export const geoModule: GameModule = {
     const entry = pickEntry(roundIndex, seed, difficulty);
     const options = shuffle([entry.answer, ...entry.decoys], seed + roundIndex + 1);
     const correctIndex = options.indexOf(entry.answer);
+    const t = entry.tier;
+    const imageStyle = t === 'extreme' ? 'extreme' : t === 'hard' ? 'hard' : undefined;
 
     return {
       view: {
@@ -44,11 +46,12 @@ export const geoModule: GameModule = {
         totalRounds: this.maxRounds,
         prompt: "Where in the world is this?",
         imageUrl: entry.image,
+        imageStyle,
         options,
         timeLimitSec: GEO_TIME_LIMIT_SEC,
       },
       correctIndex,
-      deadline: 0, // stamped by the session manager when served
+      deadline: 0,
     };
   },
 };

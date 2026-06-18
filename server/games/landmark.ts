@@ -32,9 +32,12 @@ export const landmarkModule = makeChoiceGame(
   },
   (roundIndex, seed, difficulty) => {
     const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+    const t = e.tier;
+    const imageStyle = t === 'extreme' ? 'extreme' : t === 'hard' ? 'hard' : undefined;
     return {
       prompt: "Which landmark is this?",
       imageUrl: IMAGE_BY_ID.get(e.id),
+      imageStyle,
       correct: e.landmark,
       options: [e.landmark, ...e.decoys],
     };

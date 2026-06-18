@@ -8,6 +8,7 @@ import { GameModule, RoundState } from "./types";
 export interface ChoiceRound {
   prompt: string;
   imageUrl?: string;
+  imageStyle?: 'hard' | 'extreme'; // visual treatment; absent = full colour
   correct: string; // must also appear in `options`
   options: string[];
 }
@@ -116,6 +117,7 @@ export function makeChoiceGame(
           totalRounds: meta.maxRounds,
           prompt: r.prompt,
           imageUrl: r.imageUrl,
+          imageStyle: r.imageStyle,
           options,
           timeLimitSec: meta.timeLimitSec,
         },

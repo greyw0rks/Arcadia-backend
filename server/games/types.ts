@@ -6,7 +6,11 @@ export interface RoundView {
   roundIndex: number; // 0-based
   totalRounds: number;
   prompt: string; // question / instruction
-  imageUrl?: string; // optional media (used by e.g. a future geo module)
+  imageUrl?: string; // optional media (used by geo/landmark/logo/movie modules)
+  // Visual treatment for image-based rounds. Absent = full colour.
+  // 'hard'    → greyscale (strips colour cues that give away famous landmarks)
+  // 'extreme' → greyscale + blur + zoomed into an unusual crop (iconic features hidden)
+  imageStyle?: 'hard' | 'extreme';
   options: string[]; // choices the player picks from
   timeLimitSec: number; // client countdown; server enforces authoritatively
 }

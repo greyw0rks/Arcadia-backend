@@ -17,6 +17,7 @@ interface RoundView {
   totalRounds: number;
   prompt: string;
   imageUrl?: string;
+  imageStyle?: 'hard' | 'extreme';
   options: string[];
   timeLimitSec: number;
 }
@@ -363,12 +364,35 @@ export default function PlayPage() {
           <h2 style={{ marginTop: 4 }}>{round?.prompt}</h2>
 
           {round?.imageUrl && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={round.imageUrl}
-              alt="Guess the answer"
-              className="game-image"
-            />
+            <div
+              style={{
+                overflow: "hidden",
+                borderRadius: 4,
+                // extreme: zoom 1.6× so the full image boundary isn't visible,
+                // then nudge off-centre to hide the most iconic region
+                ...(round.imageStyle === 'extreme' && {
+                  maxHeight: 260,
+                  transform: "scale(1)",
+                }),
+              }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={round.imageUrl}
+                alt="Guess the answer"
+                className="game-image"
+                style={{
+                  ...(round.imageStyle === 'hard' && {
+                    filter: "grayscale(85%) contrast(1.05)",
+                  }),
+                  ...(round.imageStyle === 'extreme' && {
+                    filter: "grayscale(100%) contrast(1.15) blur(0.8px)",
+                    transform: "scale(1.55) translate(12%, -8%)",
+                    transformOrigin: "center center",
+                  }),
+                }}
+              />
+            </div>
           )}
 
           {round?.options.map((opt, i) => {
