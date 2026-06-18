@@ -6,7 +6,8 @@
       "Piano",
       "Map",
       "Door"
-    ]
+    ],
+    "tier": "easy"
   },
   {
     "riddle": "I'm tall when young, short when old.",
@@ -15,7 +16,8 @@
       "Tree",
       "Person",
       "Building"
-    ]
+    ],
+    "tier": "easy"
   },
   {
     "riddle": "What has hands but can't clap?",
@@ -24,7 +26,8 @@
       "Statue",
       "Doll",
       "Robot"
-    ]
+    ],
+    "tier": "easy"
   },
   {
     "riddle": "What gets wet while drying?",
@@ -33,7 +36,8 @@
       "Sponge",
       "Cloth",
       "Paper"
-    ]
+    ],
+    "tier": "easy"
   },
   {
     "riddle": "What has a head and tail but no body?",
@@ -42,7 +46,8 @@
       "Snake",
       "Fish",
       "Arrow"
-    ]
+    ],
+    "tier": "easy"
   },
   {
     "riddle": "The more you take, the more you leave behind. What am I?",
@@ -623,5 +628,455 @@
       "Tomorrow"
     ],
     "tier": "medium"
+  },
+  {
+    "riddle": "I travel at 299,792 km/s in vacuum, have no mass, and am both a wave and a particle. What am I?",
+    "correct": "Light",
+    "decoys": [
+      "Sound",
+      "Electron",
+      "Neutrino"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I have no beginning or end, yet I am measured in seconds, years and eons. I only flow in one direction. What am I?",
+    "correct": "Time",
+    "decoys": [
+      "Space",
+      "Entropy",
+      "Infinity"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The more you take from me, the larger I grow. What am I?",
+    "correct": "A hole",
+    "decoys": [
+      "A debt",
+      "A shadow",
+      "A crater"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am always running but never move. I have a mouth but never speak. I have a bed but never sleep. What am I?",
+    "correct": "River",
+    "decoys": [
+      "Clock",
+      "Road",
+      "Machine"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "In quantum mechanics I am simultaneously 0 and 1 until measured. What am I?",
+    "correct": "Qubit",
+    "decoys": [
+      "Electron spin",
+      "Photon",
+      "Wavefunction"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the number of times a block reward halves in Bitcoin's history to reach near-zero. What property am I?",
+    "correct": "Halving schedule",
+    "decoys": [
+      "Mining difficulty",
+      "Hash rate",
+      "Block time"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the invisible scaffolding of the universe, neither matter nor energy yet shaping both. What am I?",
+    "correct": "Dark matter",
+    "decoys": [
+      "Dark energy",
+      "Antimatter",
+      "Spacetime"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am a cryptographic function: easy to compute forward, practically impossible to reverse. What am I?",
+    "correct": "Hash function",
+    "decoys": [
+      "Encryption key",
+      "Digital signature",
+      "Merkle root"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the force that keeps planets orbiting and makes apples fall, yet Einstein says I am curved geometry. What am I?",
+    "correct": "Gravity",
+    "decoys": [
+      "Dark energy",
+      "Strong nuclear force",
+      "Inertia"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "Without me, a blockchain has no finality. I am the process by which nodes agree on the valid chain. What am I?",
+    "correct": "Consensus mechanism",
+    "decoys": [
+      "Mining reward",
+      "Gas fee",
+      "Nonce"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the boundary around a black hole beyond which nothing escapes, not even light. What am I?",
+    "correct": "Event horizon",
+    "decoys": [
+      "Photon sphere",
+      "Singularity",
+      "Accretion disk"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am used to prove you know something without revealing what that something is. What am I?",
+    "correct": "Zero-knowledge proof",
+    "decoys": [
+      "Public key",
+      "Hash function",
+      "Smart contract"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the tendency of a system toward maximum disorder. The universe always increases me. What am I?",
+    "correct": "Entropy",
+    "decoys": [
+      "Energy",
+      "Momentum",
+      "Enthalpy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what a spinning neutron star emits in regular pulses, used as cosmic clocks. What am I?",
+    "correct": "Pulsar",
+    "decoys": [
+      "Quasar",
+      "Magnetar",
+      "Nova"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the astronomical unit equal to the distance light travels in one year. What am I?",
+    "correct": "Light-year",
+    "decoys": [
+      "Parsec",
+      "Astronomical unit",
+      "Megaparsec"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the resistance to change in motion. The more matter an object has, the more of me it possesses. What am I?",
+    "correct": "Inertia",
+    "decoys": [
+      "Momentum",
+      "Mass",
+      "Friction"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what DeFi protocols use to determine token prices algorithmically, using x*y=k. What am I?",
+    "correct": "Automated Market Maker",
+    "decoys": [
+      "Order book",
+      "Oracle",
+      "Liquidity pool"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the 'gas' that powers computation on Ethereum, paid in ETH. Without me, no transaction executes. What am I?",
+    "correct": "Gas fee",
+    "decoys": [
+      "Block reward",
+      "Stake",
+      "Nonce"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the cosmic phenomenon where two massive objects orbit each other and generate ripples in spacetime. What are those ripples called?",
+    "correct": "Gravitational waves",
+    "decoys": [
+      "Electromagnetic waves",
+      "Plasma jets",
+      "Neutrino bursts"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the angle at which a projectile achieves maximum range in a vacuum (ignoring height). What am I?",
+    "correct": "45 degrees",
+    "decoys": [
+      "30 degrees",
+      "60 degrees",
+      "90 degrees"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the law stating that for every action there is an equal and opposite reaction. Whose law am I?",
+    "correct": "Newton's Third Law",
+    "decoys": [
+      "Newton's First Law",
+      "Newton's Second Law",
+      "Kepler's Third Law"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the product of an object's mass and velocity, conserved in closed systems. What am I?",
+    "correct": "Momentum",
+    "decoys": [
+      "Kinetic energy",
+      "Force",
+      "Impulse"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I connect blocks in a blockchain: each block contains my value from the previous block, making tampering obvious. What am I?",
+    "correct": "Previous block hash",
+    "decoys": [
+      "Timestamp",
+      "Nonce",
+      "Merkle root"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the celestial mechanic effect where a planet's orbit axis slowly rotates over millennia, like a wobbling top. What am I?",
+    "correct": "Precession",
+    "decoys": [
+      "Nutation",
+      "Libration",
+      "Apsidal drift"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am a number that never changes no matter how fast you move or where you are in the universe. What fundamental constant am I?",
+    "correct": "Speed of light",
+    "decoys": [
+      "Planck constant",
+      "Gravitational constant",
+      "Electron charge"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "Two players both defect and both get a poor outcome, yet both choosing to cooperate would benefit them. They can't communicate. What paradox am I?",
+    "correct": "Prisoner's Dilemma",
+    "decoys": [
+      "Tragedy of the Commons",
+      "Nash Equilibrium",
+      "Free Rider Problem"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the strategy you would choose if you could change your mind and wouldn't \u2014 regardless of what your opponent does. What am I?",
+    "correct": "Dominant strategy",
+    "decoys": [
+      "Mixed strategy",
+      "Minimax strategy",
+      "Nash equilibrium"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The more people use me, the less of me there is. I am shared by all but owned by none, and rational individuals exhaust me. What am I?",
+    "correct": "Common resource",
+    "decoys": [
+      "Public good",
+      "Private property",
+      "Natural monopoly"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I always switch doors. Three doors, one prize, host reveals a losing door. Switching wins two-thirds of the time. What problem am I?",
+    "correct": "Monty Hall problem",
+    "decoys": [
+      "Birthday paradox",
+      "St Petersburg paradox",
+      "Gambler's fallacy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what you keep spending on a failing project just because you already spent so much. What fallacy am I?",
+    "correct": "Sunk cost fallacy",
+    "decoys": [
+      "Opportunity cost",
+      "Loss aversion",
+      "Anchoring bias"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the point in a negotiation below which you walk away. Without me you have no power. What am I?",
+    "correct": "BATNA",
+    "decoys": [
+      "ZOPA",
+      "Schelling point",
+      "Reservation price"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I happen when a buyer and seller both know something the other doesn't, and the market breaks down because the worse product drives out the better. What phenomenon am I?",
+    "correct": "Adverse selection",
+    "decoys": [
+      "Moral hazard",
+      "Market failure",
+      "Information asymmetry"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the reason someone drives recklessly after buying car insurance \u2014 they bear less risk, so they take more. What am I?",
+    "correct": "Moral hazard",
+    "decoys": [
+      "Adverse selection",
+      "Agency problem",
+      "Sunk cost fallacy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what a group of strangers converges on when they need to meet without communicating \u2014 the obvious, natural choice. What am I?",
+    "correct": "Schelling point",
+    "decoys": [
+      "Nash equilibrium",
+      "Pareto optimum",
+      "Dominant strategy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the statistical truth that extreme outliers are followed by more typical results \u2014 not because of magic, but because of variance. What am I?",
+    "correct": "Regression to the mean",
+    "decoys": [
+      "Law of large numbers",
+      "Central limit theorem",
+      "Simpson's paradox"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "One city's data shows drug A is better than drug B. But split by age group, drug B beats drug A in every subgroup. How can this be?",
+    "correct": "Simpson's paradox",
+    "decoys": [
+      "Confirmation bias",
+      "Selection bias",
+      "Base rate fallacy"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am the gap between what you're asking for and your walk-away point, and the same gap exists on the other side. Where we overlap is where deals get done. What am I?",
+    "correct": "Zone of Possible Agreement",
+    "decoys": [
+      "BATNA",
+      "Reservation price",
+      "Schelling point"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what allows a bluff to be believed \u2014 I'm costly enough that only the truth-teller would send me. What concept am I?",
+    "correct": "Costly signalling",
+    "decoys": [
+      "Cheap talk",
+      "Credible commitment",
+      "Screening"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am a game where one player moves and then the other responds, and the first player can predict and account for all future responses. What am I?",
+    "correct": "Sequential game",
+    "decoys": [
+      "Simultaneous game",
+      "Cooperative game",
+      "Repeated game"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I make diseases look rarer than they are \u2014 a highly sensitive test with a low-prevalence condition gives mostly false positives. What bias am I?",
+    "correct": "Base rate fallacy",
+    "decoys": [
+      "Confirmation bias",
+      "Selection bias",
+      "Availability heuristic"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what the first number you hear in a negotiation becomes, warping every subsequent judgment even when irrelevant. What bias am I?",
+    "correct": "Anchoring bias",
+    "decoys": [
+      "Framing effect",
+      "Recency bias",
+      "Availability heuristic"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am what you do when you buy the same asset at a lower price and sell at a higher price simultaneously in different markets with zero risk. What am I?",
+    "correct": "Arbitrage",
+    "decoys": [
+      "Hedging",
+      "Short selling",
+      "Market making"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am a game that never ends \u2014 players interact repeatedly, and cooperation can be sustained by the threat of future punishment. What kind of game am I?",
+    "correct": "Repeated game",
+    "decoys": [
+      "Sequential game",
+      "Zero-sum game",
+      "Cooperative game"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I reward the winner of an auction with the very problem that caused them to bid too high \u2014 they beat everyone else so they probably overpaid. What am I?",
+    "correct": "Winner's curse",
+    "decoys": [
+      "Adverse selection",
+      "Anchoring bias",
+      "Escalation of commitment"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "Kant says act only by principles you could will everyone to follow. This is what he called me. What am I?",
+    "correct": "Categorical imperative",
+    "decoys": [
+      "Golden rule",
+      "Veil of ignorance",
+      "Utilitarian calculus"
+    ],
+    "tier": "hard"
   }
 ]

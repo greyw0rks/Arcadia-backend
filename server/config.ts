@@ -1,8 +1,8 @@
 // Server-only configuration. Read secrets from env; never expose these to the client.
 
-export const TRIVIA_TIME_LIMIT_SEC = 15;
-export const WORD_TIME_LIMIT_SEC = 20;
-export const GEO_TIME_LIMIT_SEC = 20;
+export const TRIVIA_TIME_LIMIT_SEC = 8;
+export const WORD_TIME_LIMIT_SEC = 10;
+export const GEO_TIME_LIMIT_SEC = 10;
 
 // Grace period (ms) added to the server-side deadline to absorb network latency before an answer is
 // counted as a timeout. Keeps honest players from being punished for round-trip lag.

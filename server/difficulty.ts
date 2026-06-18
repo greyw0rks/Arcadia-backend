@@ -1,3 +1,7 @@
+// Copyright (c) 2024–2025 greyw0rks. All rights reserved.
+// Proprietary and confidential. Unauthorised copying or redistribution is prohibited.
+// See LICENSE in the repository root for full terms.
+
 // Bet-scaled difficulty. The higher the player's stake (relative to the $5 cap), the harder the
 // session: fewer seconds per round, more rounds, and harder generated questions. Pure + shared so
 // the client and the server compute IDENTICAL round counts.
@@ -13,19 +17,19 @@ import type { ChainId } from "../lib/contract";
 export const BPS = 10_000;
 export const STEP_BPS = 1_000;
 
-// Per-session stake cap, in DISPLAY units (cUSD / STX). Celo cUSD is ~$1, so 5 == $5. STX is not
-// USD-pegged, so this is a fixed 5-STX cap (matches the on-chain `max-stake` of 5_000_000 micro-STX).
+// Per-session stake cap, in DISPLAY units (cUSD / STX). Celo cUSD is ~$1, so 1 == $1. STX is not
+// USD-pegged, so this is a fixed 1-STX cap (matches the on-chain `max-stake` of 1_000_000 micro-STX).
 export const MAX_STAKE: Record<ChainId, number> = {
-  celo: 5,
-  stacks: 5,
+  celo: 1,
+  stacks: 1,
 };
 
 // Difficulty knobs.
-export const MIN_ROUNDS = 3; // lowest-stake session length
-export const MAX_ROUNDS = 10; // highest-stake session length (well under the on-chain cap of 20)
+export const MIN_ROUNDS = 7; // lowest-stake session: 7 rounds minimum
+export const MAX_ROUNDS = 15; // highest-stake session: 15 rounds
 export const MAX_ROUNDS_CAP = 20; // mirror the contracts' maxRoundsCap; defensive clamp
-export const TIMER_SHRINK = 0.55; // at max difficulty the timer is (1 - 0.55) = 45% of its base
-export const MIN_TIMER_SEC = 4; // never give a player less than this, however high the bet
+export const TIMER_SHRINK = 0.75; // at max difficulty the timer is 25% of its base — brutal
+export const MIN_TIMER_SEC = 3; // hard floor
 
 /** Clamp `n` into [lo, hi]. */
 function clamp(n: number, lo: number, hi: number): number {

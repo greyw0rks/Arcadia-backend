@@ -7,7 +7,8 @@
       "Ag",
       "O"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Hydrogen?",
@@ -17,7 +18,8 @@
       "2",
       "79"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Helium?",
@@ -27,7 +29,8 @@
       "S",
       "Li"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Helium?",
@@ -37,7 +40,8 @@
       "6",
       "16"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Lithium?",
@@ -47,7 +51,8 @@
       "Cl",
       "Au"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Lithium?",
@@ -57,7 +62,8 @@
       "82",
       "47"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Carbon?",
@@ -67,7 +73,8 @@
       "Au",
       "C"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Carbon?",
@@ -77,7 +84,8 @@
       "6",
       "8"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Nitrogen?",
@@ -87,7 +95,8 @@
       "K",
       "H"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Nitrogen?",
@@ -97,7 +106,8 @@
       "7",
       "80"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Oxygen?",
@@ -107,7 +117,8 @@
       "F",
       "P"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Oxygen?",
@@ -117,7 +128,8 @@
       "6",
       "8"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Fluorine?",
@@ -127,7 +139,8 @@
       "U",
       "Hg"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Fluorine?",
@@ -137,7 +150,8 @@
       "20",
       "29"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Neon?",
@@ -147,7 +161,8 @@
       "Hg",
       "He"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Neon?",
@@ -157,7 +172,8 @@
       "1",
       "17"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Sodium?",
@@ -167,7 +183,8 @@
       "Na",
       "Cl"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Sodium?",
@@ -177,7 +194,8 @@
       "92",
       "11"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Magnesium?",
@@ -187,7 +205,8 @@
       "Pb",
       "N"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Magnesium?",
@@ -197,7 +216,8 @@
       "10",
       "29"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Aluminum?",
@@ -207,7 +227,8 @@
       "Al",
       "K"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Aluminum?",
@@ -217,7 +238,8 @@
       "79",
       "80"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Silicon?",
@@ -227,7 +249,8 @@
       "K",
       "Au"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Silicon?",
@@ -237,7 +260,8 @@
       "11",
       "80"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Phosphorus?",
@@ -247,7 +271,8 @@
       "Pb",
       "U"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Phosphorus?",
@@ -257,7 +282,8 @@
       "82",
       "15"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Sulfur?",
@@ -267,7 +293,8 @@
       "S",
       "H"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Sulfur?",
@@ -277,7 +304,8 @@
       "79",
       "16"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Chlorine?",
@@ -287,7 +315,8 @@
       "Cu",
       "Mg"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Chlorine?",
@@ -297,7 +326,8 @@
       "11",
       "79"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Potassium?",
@@ -307,7 +337,8 @@
       "Hg",
       "Mg"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Potassium?",
@@ -317,7 +348,8 @@
       "92",
       "12"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Calcium?",
@@ -327,7 +359,8 @@
       "U",
       "Ca"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Calcium?",
@@ -337,7 +370,8 @@
       "92",
       "6"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Iron?",
@@ -347,7 +381,8 @@
       "Li",
       "H"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Iron?",
@@ -357,7 +392,8 @@
       "9",
       "6"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Copper?",
@@ -367,7 +403,8 @@
       "Cu",
       "P"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Copper?",
@@ -377,7 +414,8 @@
       "12",
       "6"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Zinc?",
@@ -387,7 +425,8 @@
       "Pb",
       "Mg"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Zinc?",
@@ -397,7 +436,8 @@
       "79",
       "30"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Silver?",
@@ -407,7 +447,8 @@
       "Ag",
       "Cu"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Silver?",
@@ -417,7 +458,8 @@
       "79",
       "16"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Gold?",
@@ -427,7 +469,8 @@
       "Zn",
       "He"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Gold?",
@@ -437,7 +480,8 @@
       "2",
       "8"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Mercury?",
@@ -447,7 +491,8 @@
       "C",
       "Pb"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Mercury?",
@@ -457,7 +502,8 @@
       "26",
       "14"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Lead?",
@@ -467,7 +513,8 @@
       "Fe",
       "Cl"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Lead?",
@@ -477,7 +524,8 @@
       "10",
       "29"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the chemical symbol for Uranium?",
@@ -487,7 +535,8 @@
       "Li",
       "O"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the atomic number of Uranium?",
@@ -497,7 +546,8 @@
       "92",
       "12"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the speed of light?",
@@ -507,7 +557,8 @@
       "500,000 km/s",
       "1,000,000 km/s"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "How many bones in adult human body?",
@@ -517,7 +568,8 @@
       "226",
       "246"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the largest organ?",
@@ -527,7 +579,8 @@
       "Skin",
       "Heart"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "Which blood type is universal donor?",
@@ -537,17 +590,19 @@
       "AB+",
       "O-"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the boiling point of water?",
     "options": [
-      "90°C",
-      "100°C",
-      "110°C",
-      "120°C"
+      "90\u00b0C",
+      "100\u00b0C",
+      "110\u00b0C",
+      "120\u00b0C"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "Which planet is largest?",
@@ -557,7 +612,8 @@
       "Neptune",
       "Uranus"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "How many teeth does adult have?",
@@ -567,7 +623,8 @@
       "32",
       "34"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is pH of pure water?",
@@ -577,7 +634,8 @@
       "7",
       "8"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "Which organ produces insulin?",
@@ -587,7 +645,8 @@
       "Pancreas",
       "Spleen"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "How many chambers in human heart?",
@@ -597,7 +656,8 @@
       "4",
       "5"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of France?",
@@ -607,7 +667,8 @@
       "Paris",
       "Jakarta"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Germany?",
@@ -617,7 +678,8 @@
       "Ottawa",
       "Berlin"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Italy?",
@@ -627,7 +689,8 @@
       "Buenos Aires",
       "Rome"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Spain?",
@@ -637,7 +700,8 @@
       "Moscow",
       "Madrid"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of UK?",
@@ -647,7 +711,8 @@
       "Abuja",
       "London"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Russia?",
@@ -657,7 +722,8 @@
       "Rome",
       "Nairobi"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of China?",
@@ -667,7 +733,8 @@
       "Moscow",
       "Ottawa"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of India?",
@@ -677,7 +744,8 @@
       "Abuja",
       "Ottawa"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Japan?",
@@ -687,7 +755,8 @@
       "Moscow",
       "Seoul"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of South Korea?",
@@ -697,7 +766,8 @@
       "Bogota",
       "Seoul"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Thailand?",
@@ -707,7 +777,8 @@
       "Hanoi",
       "Beijing"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Vietnam?",
@@ -717,7 +788,8 @@
       "New Delhi",
       "Cairo"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Indonesia?",
@@ -727,7 +799,8 @@
       "Paris",
       "Bangkok"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Philippines?",
@@ -737,7 +810,8 @@
       "Washington DC",
       "Manila"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Malaysia?",
@@ -747,7 +821,8 @@
       "Hanoi",
       "Kuala Lumpur"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Turkey?",
@@ -757,7 +832,8 @@
       "Ottawa",
       "Ankara"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Egypt?",
@@ -767,7 +843,8 @@
       "Mexico City",
       "Cairo"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of South Africa?",
@@ -777,7 +854,8 @@
       "Seoul",
       "Pretoria"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Nigeria?",
@@ -787,7 +865,8 @@
       "Abuja",
       "Ankara"
     ],
-    "answer": 2
+    "answer": 2,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Kenya?",
@@ -797,7 +876,8 @@
       "Caracas",
       "Beijing"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Argentina?",
@@ -807,7 +887,8 @@
       "London",
       "Buenos Aires"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Chile?",
@@ -817,7 +898,8 @@
       "Nairobi",
       "Canberra"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Peru?",
@@ -827,7 +909,8 @@
       "Ottawa",
       "Pretoria"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Colombia?",
@@ -837,7 +920,8 @@
       "Washington DC",
       "Jakarta"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Mexico?",
@@ -847,7 +931,8 @@
       "Berlin",
       "Tokyo"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of USA?",
@@ -857,7 +942,8 @@
       "Santiago",
       "Washington DC"
     ],
-    "answer": 3
+    "answer": 3,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Canada?",
@@ -867,7 +953,8 @@
       "Manila",
       "Berlin"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Australia?",
@@ -877,7 +964,8 @@
       "Berlin",
       "Buenos Aires"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Brazil?",
@@ -887,7 +975,8 @@
       "Bogota",
       "Moscow"
     ],
-    "answer": 0
+    "answer": 0,
+    "tier": "easy"
   },
   {
     "q": "What is the capital of Venezuela?",
@@ -897,7 +986,8 @@
       "Ottawa",
       "Jakarta"
     ],
-    "answer": 1
+    "answer": 1,
+    "tier": "easy"
   },
   {
     "q": "What is the smallest country in the world by area?",
@@ -908,7 +998,7 @@
       "San Marino"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Which element has the chemical symbol 'W'?",
@@ -919,7 +1009,7 @@
       "Titanium"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the hardest known naturally occurring material?",
@@ -930,7 +1020,7 @@
       "Graphite"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Who painted the ceiling of the Sistine Chapel?",
@@ -941,7 +1031,7 @@
       "Donatello"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the largest planet in our solar system?",
@@ -952,7 +1042,7 @@
       "Uranus"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "In which year did the Berlin Wall fall?",
@@ -963,7 +1053,7 @@
       "1985"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the chemical symbol for gold?",
@@ -974,7 +1064,7 @@
       "Go"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Which language has the most native speakers worldwide?",
@@ -985,7 +1075,7 @@
       "Hindi"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the tallest mountain on Earth above sea level?",
@@ -996,7 +1086,7 @@
       "Denali"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Who wrote the play 'Hamlet'?",
@@ -1007,7 +1097,7 @@
       "John Webster"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the largest ocean on Earth?",
@@ -1018,7 +1108,7 @@
       "The Arctic Ocean"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What gas do plants primarily absorb for photosynthesis?",
@@ -1029,7 +1119,7 @@
       "Hydrogen"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Which country gifted the Statue of Liberty to the United States?",
@@ -1040,7 +1130,7 @@
       "Spain"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the smallest prime number?",
@@ -1051,18 +1141,18 @@
       "0"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Which artist painted 'The Starry Night'?",
     "options": [
       "Vincent van Gogh",
       "Claude Monet",
-      "Paul Cézanne",
+      "Paul C\u00e9zanne",
       "Edvard Munch"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "What is the organelle known as the powerhouse of the cell?",
@@ -1073,7 +1163,7 @@
       "The Golgi apparatus"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "How many bones are in the adult human body?",
@@ -1084,7 +1174,7 @@
       "196"
     ],
     "answer": 0,
-    "tier": "hard"
+    "tier": "medium"
   },
   {
     "q": "Which planet is known as the Red Planet?",
@@ -1093,6 +1183,1403 @@
       "Venus",
       "Jupiter",
       "Mercury"
+    ],
+    "answer": 0,
+    "tier": "medium"
+  },
+  {
+    "q": "What is the uncertainty principle associated with?",
+    "options": [
+      "Einstein",
+      "Heisenberg",
+      "Bohr",
+      "Schr\u00f6dinger"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does E=mc\u00b2 represent?",
+    "options": [
+      "Kinetic energy",
+      "Mass-energy equivalence",
+      "Gravitational potential",
+      "Photon momentum"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Planck constant approximately equal to (J\u00b7s)?",
+    "options": [
+      "6.626\u00d710\u207b\u00b3\u2074",
+      "9.109\u00d710\u207b\u00b3\u00b9",
+      "1.602\u00d710\u207b\u00b9\u2079",
+      "3.0\u00d710\u2078"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which phenomenon demonstrates the wave nature of electrons?",
+    "options": [
+      "Photoelectric effect",
+      "Double-slit experiment",
+      "Compton scattering",
+      "Pair production"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the spin quantum number of an electron?",
+    "options": [
+      "0",
+      "1",
+      "1/2",
+      "2"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What does the Pauli exclusion principle state?",
+    "options": [
+      "No two fermions share the same quantum state",
+      "Energy is quantized",
+      "Light behaves as a wave",
+      "Mass increases with velocity"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What particle mediates the electromagnetic force?",
+    "options": [
+      "Gluon",
+      "W boson",
+      "Photon",
+      "Graviton"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the de Broglie wavelength inversely proportional to?",
+    "options": [
+      "Temperature",
+      "Momentum",
+      "Charge",
+      "Spin"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is quantum entanglement sometimes called?",
+    "options": [
+      "Wave collapse",
+      "Spooky action at a distance",
+      "Tunneling paradox",
+      "Bell violation"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "The photoelectric effect proves light behaves as what?",
+    "options": [
+      "A wave",
+      "Particles (photons)",
+      "Both simultaneously",
+      "Neither"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does the second law of thermodynamics state?",
+    "options": [
+      "Energy is conserved",
+      "Entropy always increases in a closed system",
+      "Heat flows from cold to hot",
+      "Absolute zero can be reached"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is absolute zero in Celsius?",
+    "options": [
+      "-100\u00b0C",
+      "-173\u00b0C",
+      "-273.15\u00b0C",
+      "-373\u00b0C"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the SI unit of entropy?",
+    "options": [
+      "Joule",
+      "Joule per Kelvin",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "Which process involves no heat exchange with the surroundings?",
+    "options": [
+      "Isothermal",
+      "Isobaric",
+      "Adiabatic",
+      "Isochoric"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What does a Carnot engine operate between?",
+    "options": [
+      "Two pressures",
+      "Two volumes",
+      "Two temperatures",
+      "Two entropies"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "At what fraction of the speed of light does relativistic mass noticeably increase?",
+    "options": [
+      "10%",
+      "50%",
+      "~87% (\u03b3\u22482)",
+      "99%"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is time dilation?",
+    "options": [
+      "Clocks run faster at high speed",
+      "Clocks run slower at high speed",
+      "Time reverses at light speed",
+      "Time stops at absolute zero"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Lorentz factor (\u03b3) when v = 0?",
+    "options": [
+      "0",
+      "\u221e",
+      "1",
+      "0.5"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "Newton's second law in its most general form is F =?",
+    "options": [
+      "ma",
+      "dp/dt",
+      "mv\u00b2/r",
+      "kx"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What conservation law corresponds to rotational symmetry (Noether's theorem)?",
+    "options": [
+      "Linear momentum",
+      "Energy",
+      "Angular momentum",
+      "Charge"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the escape velocity from Earth (approx)?",
+    "options": [
+      "7.9 km/s",
+      "11.2 km/s",
+      "17.0 km/s",
+      "29.8 km/s"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "Kepler's third law states that T\u00b2 is proportional to what?",
+    "options": [
+      "r",
+      "r\u00b2",
+      "r\u00b3",
+      "r\u2074"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the unit of angular momentum?",
+    "options": [
+      "kg\u00b7m/s",
+      "kg\u00b7m\u00b2/s",
+      "N\u00b7m",
+      "J/s"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "A centripetal acceleration formula is a =?",
+    "options": [
+      "v/r",
+      "v\u00b2/r",
+      "\u03c9r",
+      "2\u03c0r/T"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the period of a simple pendulum proportional to?",
+    "options": [
+      "\u221aL",
+      "L",
+      "L\u00b2",
+      "1/\u221ag only"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is Faraday's law about?",
+    "options": [
+      "Magnetic force on charges",
+      "Induced EMF from changing flux",
+      "Coulomb's force law",
+      "Ohm's law extension"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "Maxwell's equations unify electricity, magnetism and what?",
+    "options": [
+      "Gravity",
+      "Light",
+      "Nuclear force",
+      "Thermodynamics"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the speed of light in vacuum (m/s)?",
+    "options": [
+      "2.998\u00d710\u2078",
+      "1.0\u00d710\u2078",
+      "3.6\u00d710\u2078",
+      "6.674\u00d710\u2078"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What type of star is the Sun?",
+    "options": [
+      "Red giant",
+      "White dwarf",
+      "Yellow dwarf (G-type)",
+      "Blue supergiant"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Schwarzschild radius?",
+    "options": [
+      "Orbital radius of Saturn",
+      "Radius inside which gravity becomes inescapable",
+      "Distance to the nearest star",
+      "Solar corona boundary"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What causes a neutron star to spin rapidly and emit radio pulses?",
+    "options": [
+      "Quasar jets",
+      "Angular momentum conservation during collapse",
+      "Nuclear fusion",
+      "Gamma-ray bursts"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the cosmic microwave background?",
+    "options": [
+      "Solar wind radiation",
+      "Relic radiation from the Big Bang",
+      "Galactic center radio emission",
+      "Dark matter signature"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is dark matter estimated to comprise of total mass-energy in the universe?",
+    "options": [
+      "5%",
+      "27%",
+      "68%",
+      "50%"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Chandrasekhar limit?",
+    "options": [
+      "Max temperature of a red dwarf",
+      "Max mass of a white dwarf (~1.4 solar masses)",
+      "Min mass for a black hole",
+      "Speed of a neutron star spin"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is stellar nucleosynthesis?",
+    "options": [
+      "Star formation from gas clouds",
+      "Creation of elements inside stars via fusion",
+      "Neutron star mergers",
+      "Solar flare process"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Hertzsprung-Russell diagram used to classify?",
+    "options": [
+      "Galaxy clusters",
+      "Stars by luminosity and temperature",
+      "Exoplanet atmospheres",
+      "Asteroid orbits"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What determines a star's position on the main sequence?",
+    "options": [
+      "Age",
+      "Rotation speed",
+      "Mass",
+      "Magnetic field"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the approximate age of the universe?",
+    "options": [
+      "4.5 billion years",
+      "13.8 billion years",
+      "100 billion years",
+      "500 million years"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a parsec equal to in light-years?",
+    "options": [
+      "1",
+      "2.26",
+      "3.26",
+      "4.2"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What phenomenon causes the redshift of distant galaxies?",
+    "options": [
+      "Doppler effect only",
+      "Expansion of space-time",
+      "Black hole lensing",
+      "Dark energy absorption"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Hubble constant measuring?",
+    "options": [
+      "Age of oldest stars",
+      "Rate of universe expansion",
+      "Black hole mass",
+      "Cosmic radiation density"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In astrology, what element is associated with Scorpio?",
+    "options": [
+      "Fire",
+      "Earth",
+      "Air",
+      "Water"
+    ],
+    "answer": 3,
+    "tier": "hard"
+  },
+  {
+    "q": "What astronomical event is a 'syzygy'?",
+    "options": [
+      "A star going supernova",
+      "Sun, Earth and Moon in alignment",
+      "A comet passing Jupiter",
+      "Two black holes merging"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the zodiac based on?",
+    "options": [
+      "Planetary masses",
+      "Constellations along the ecliptic",
+      "Lunar phases",
+      "Solar rotation"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "Which planet rules Aquarius in traditional astrology?",
+    "options": [
+      "Neptune",
+      "Uranus",
+      "Saturn",
+      "Jupiter"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a 'Grand Trine' in astrology?",
+    "options": [
+      "Three planets in opposition",
+      "Three planets 120\u00b0 apart forming a triangle",
+      "Sun, Moon and Rising in the same sign",
+      "Three eclipses in a row"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the precession of the equinoxes period approximately?",
+    "options": [
+      "2,160 years",
+      "25,920 years",
+      "100,000 years",
+      "365 years"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What consensus mechanism does Bitcoin use?",
+    "options": [
+      "Proof of Stake",
+      "Delegated PoS",
+      "Proof of Work",
+      "Proof of Authority"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is Bitcoin's maximum supply?",
+    "options": [
+      "10 million",
+      "21 million",
+      "100 million",
+      "Unlimited"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the SHA-256 algorithm used for in Bitcoin?",
+    "options": [
+      "Signing transactions",
+      "Mining hash function",
+      "Key generation",
+      "Block propagation"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a 'nonce' in Bitcoin mining?",
+    "options": [
+      "A transaction fee",
+      "A 32-bit number miners vary to find a valid hash",
+      "An encrypted address",
+      "A block signature"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the halving in Bitcoin?",
+    "options": [
+      "Block size cut in half",
+      "Block reward halved every ~210,000 blocks",
+      "Transaction fees doubled",
+      "Mining difficulty halved"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does EVM stand for in Ethereum?",
+    "options": [
+      "Ethereum Verification Module",
+      "Ethereum Virtual Machine",
+      "Electronic Value Mechanism",
+      "Encrypted Validation Method"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a Merkle tree used for in blockchains?",
+    "options": [
+      "Storing wallet keys",
+      "Efficiently verifying transaction integrity",
+      "Generating random numbers",
+      "Consensus voting"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the purpose of a smart contract?",
+    "options": [
+      "Encrypt wallet addresses",
+      "Self-executing code on the blockchain",
+      "Speed up PoW mining",
+      "Store off-chain data"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is gas in Ethereum?",
+    "options": [
+      "A fee for computation on the EVM",
+      "A token type",
+      "A mining reward unit",
+      "An NFT standard"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the ERC-20 standard for?",
+    "options": [
+      "Non-fungible tokens",
+      "Fungible tokens on Ethereum",
+      "Cross-chain bridges",
+      "Layer-2 rollups"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a 51% attack?",
+    "options": [
+      "Flooding the mempool with transactions",
+      "Controlling >50% of hash rate to rewrite history",
+      "Hacking a DEX liquidity pool",
+      "Double-spending via smart contract"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does zk-SNARK stand for?",
+    "options": [
+      "Zero-Knowledge Scalable Non-interactive ARgument of Knowledge",
+      "Zero-Key Secure Network Architecture",
+      "Zkp Non-linear Staking Reward Key",
+      "Zero-cost Stateless Node Attestation"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a 'rug pull' in DeFi?",
+    "options": [
+      "A flash loan attack",
+      "Developers abandoning a project and taking liquidity",
+      "A MEV sandwich attack",
+      "An oracle price manipulation"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Lightning Network?",
+    "options": [
+      "Ethereum layer-2 rollup",
+      "Bitcoin layer-2 payment channel network",
+      "A cross-chain DEX",
+      "An NFT marketplace"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is MEV (Maximal Extractable Value)?",
+    "options": [
+      "Max rewards from staking",
+      "Profit miners extract by reordering transactions",
+      "Maximum ERC-20 token supply",
+      "Monthly Ethereum validator earnings"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a blockchain oracle?",
+    "options": [
+      "A node validator",
+      "A service feeding real-world data to smart contracts",
+      "A Solidity compiler",
+      "A DEX routing algorithm"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Stacks blockchain's consensus mechanism called?",
+    "options": [
+      "Proof of Work",
+      "Proof of Transfer (PoX)",
+      "Proof of Stake",
+      "Delegated PoS"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a zero-knowledge proof used for?",
+    "options": [
+      "Mining new coins",
+      "Proving knowledge of a value without revealing it",
+      "Cross-chain token swaps",
+      "Generating wallet addresses"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does 'finality' mean in blockchain context?",
+    "options": [
+      "The last block ever mined",
+      "A transaction is irreversible and confirmed",
+      "Gas fee ceiling",
+      "Max validator count"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is an AMM (Automated Market Maker)?",
+    "options": [
+      "An AI trading bot",
+      "A smart contract pricing assets via algorithms without order books",
+      "A centralized exchange algorithm",
+      "A staking rewards distributor"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does the Coriolis effect cause in the Northern Hemisphere?",
+    "options": [
+      "Objects deflect left",
+      "Objects deflect right",
+      "Objects move straight",
+      "Objects accelerate downward"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the moment of inertia dependent on?",
+    "options": [
+      "Speed only",
+      "Mass distribution relative to the rotation axis",
+      "Temperature",
+      "Charge"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the work-energy theorem?",
+    "options": [
+      "W = mgh",
+      "Net work equals change in kinetic energy",
+      "W = Pt",
+      "F = ma \u00d7 displacement"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does Reynolds number measure in fluid dynamics?",
+    "options": [
+      "Viscosity directly",
+      "Ratio of inertial to viscous forces",
+      "Fluid temperature",
+      "Pressure gradient"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Bernoulli principle?",
+    "options": [
+      "Faster fluid has higher pressure",
+      "Faster fluid has lower pressure",
+      "Pressure equals density times gravity",
+      "Flow rate is constant"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the terminal velocity of an object?",
+    "options": [
+      "Velocity at launch",
+      "Constant velocity when drag equals gravity",
+      "Maximum velocity on impact",
+      "Orbital velocity"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the gyroscopic effect?",
+    "options": [
+      "A spinning object resists change in orientation",
+      "A pendulum oscillating without damping",
+      "Centrifuge separating fluids",
+      "Precession of elliptical orbits"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the formula for gravitational potential energy near Earth?",
+    "options": [
+      "\u00bdmv\u00b2",
+      "mgh",
+      "-GMm/r",
+      "\u00bdkx\u00b2"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is simple harmonic motion characterized by?",
+    "options": [
+      "Constant velocity",
+      "Restoring force proportional to displacement",
+      "Exponential decay",
+      "Chaotic acceleration"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In projectile motion, which component of velocity is constant (ignoring air resistance)?",
+    "options": [
+      "Vertical",
+      "Horizontal",
+      "Both",
+      "Neither"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In game theory, what is a Nash Equilibrium?",
+    "options": [
+      "A state where no player can benefit by changing strategy unilaterally",
+      "The strategy with the highest average payoff",
+      "A cooperative solution maximising joint gains",
+      "A zero-sum outcome"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Prisoner's Dilemma famous for demonstrating?",
+    "options": [
+      "Rational individual choices can lead to collectively worse outcomes",
+      "Cooperation always beats defection",
+      "Zero-sum games have no stable solutions",
+      "Mixed strategies dominate pure strategies"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a dominant strategy?",
+    "options": [
+      "The best response regardless of what the opponent does",
+      "A strategy that beats all others in repeated games",
+      "Any strategy chosen by the majority",
+      "A bluff that always works"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What does 'Pareto optimal' mean?",
+    "options": [
+      "Maximum total payoff",
+      "No one can be made better off without making someone worse off",
+      "Equal distribution of resources",
+      "The Nash Equilibrium of a cooperative game"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In the Prisoner's Dilemma, what is the dominant strategy for both players?",
+    "options": [
+      "Cooperate",
+      "Defect",
+      "Randomise 50/50",
+      "Mirror the opponent"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a zero-sum game?",
+    "options": [
+      "A game where cooperation always wins",
+      "One player's gain exactly equals another's loss",
+      "A game with no dominant strategy",
+      "A game where all strategies are equally valuable"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Minimax strategy?",
+    "options": [
+      "Maximise minimum possible gain",
+      "Minimise maximum possible loss",
+      "Both A and B \u2014 they are equivalent in two-player zero-sum games",
+      "Randomise to confuse the opponent"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What is backward induction in game theory?",
+    "options": [
+      "Learning from past mistakes",
+      "Solving a game by reasoning from the last move backwards",
+      "Copying an opponent's previous strategy",
+      "Reducing a game to its simplest form"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a mixed strategy?",
+    "options": [
+      "Using different tactics in different games",
+      "Probabilistically randomising between pure strategies",
+      "Combining cooperation with defection",
+      "Playing a dominant strategy part of the time"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the 'Tragedy of the Commons'?",
+    "options": [
+      "Public goods are always underfunded",
+      "Individual rational use of a shared resource depletes it for everyone",
+      "Governments over-regulate common resources",
+      "Collective decision-making always fails"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a Schelling point (focal point)?",
+    "options": [
+      "The exact midpoint of a negotiation",
+      "A solution people naturally converge on without communication",
+      "A Nash equilibrium in a cooperative game",
+      "The point of maximum collective utility"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the free-rider problem?",
+    "options": [
+      "Early movers gain unfair advantages",
+      "People benefit from a public good without contributing to it",
+      "Fast-moving agents exploit slow responders",
+      "Zero-cost transactions distort markets"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does BATNA stand for in negotiation?",
+    "options": [
+      "Best Alternative To a Negotiated Agreement",
+      "Balanced Approach To Negotiating Agreements",
+      "Best Achievable Trade in Negotiation Analysis",
+      "Baseline Alternative To Net Agreements"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In iterative elimination of dominated strategies, what is removed each round?",
+    "options": [
+      "The strategy with the lowest payoff",
+      "Any strategy that is never the best response",
+      "Strategies dominated by at least one other strategy",
+      "The pure Nash equilibrium strategies"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What does signalling theory study in economics and game theory?",
+    "options": [
+      "How prices signal market conditions",
+      "How one party communicates credible private information to another",
+      "Radio signal interference in auctions",
+      "Network effects in platform economies"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the sunk cost fallacy?",
+    "options": [
+      "Overestimating future costs",
+      "Continuing a losing venture because of already-spent resources",
+      "Undervaluing opportunity costs",
+      "Assuming past performance predicts future results"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is anchoring bias?",
+    "options": [
+      "Over-relying on the first piece of information encountered",
+      "Sticking to known strategies in uncertain situations",
+      "Favoring information that confirms prior beliefs",
+      "Making decisions based on recent events"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is loss aversion in behavioural economics?",
+    "options": [
+      "Fear of financial markets",
+      "Losses are psychologically felt ~2x more strongly than equivalent gains",
+      "Avoiding all risky decisions",
+      "Preferring certain losses over uncertain ones"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Dunning-Kruger effect?",
+    "options": [
+      "Experts underestimate how much novices struggle",
+      "Low-competence individuals overestimate their ability",
+      "Highly skilled people refuse to share knowledge",
+      "People prefer confident speakers regardless of accuracy"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the availability heuristic?",
+    "options": [
+      "Using readily available resources first",
+      "Judging probability by how easily examples come to mind",
+      "Choosing the first satisfactory option encountered",
+      "Overweighting recent data in forecasting"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is confirmation bias?",
+    "options": [
+      "Selecting beliefs that are confirmed by authority",
+      "Seeking and interpreting information that confirms existing beliefs",
+      "Bias toward data that matches statistical norms",
+      "Overconfidence in majority opinions"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the base rate fallacy?",
+    "options": [
+      "Ignoring how common or rare something is when making probability judgements",
+      "Over-applying historical data to new situations",
+      "Assuming a sample perfectly represents the population",
+      "Confusing correlation with causation"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Monty Hall problem famous for?",
+    "options": [
+      "Showing that probability is always intuitive",
+      "Demonstrating that switching doors doubles your win probability",
+      "Proving that host knowledge doesn't matter",
+      "Showing random strategies beat systematic ones"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is regression to the mean?",
+    "options": [
+      "Extreme observations tend to be followed by more average ones",
+      "Statistical models always converge to averages",
+      "High performers maintain their performance level",
+      "Random data forms bell curves over time"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is Simpson's Paradox?",
+    "options": [
+      "A trend appears in combined data but reverses in separate subgroups",
+      "Larger samples always produce more accurate results",
+      "Correlation always implies a hidden common cause",
+      "Statistical significance guarantees practical importance"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is price elasticity of demand?",
+    "options": [
+      "How quickly prices change in volatile markets",
+      "How sensitive demand is to a change in price",
+      "The rate at which supply adjusts to price changes",
+      "The markup applied to production costs"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a negative externality?",
+    "options": [
+      "A cost imposed on a third party not involved in the transaction",
+      "A fall in production due to regulation",
+      "A tax that discourages market entry",
+      "Market failure caused by information asymmetry"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is moral hazard in economics?",
+    "options": [
+      "Fraudulent behaviour in financial markets",
+      "One party takes more risk because another bears the cost",
+      "Unethical pricing in monopoly markets",
+      "Hidden information that distorts trade"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is adverse selection?",
+    "options": [
+      "Choosing riskier investments after insuring losses",
+      "High-risk parties disproportionately entering a market due to information asymmetry",
+      "Selecting the worst-performing assets deliberately",
+      "Market participants undervaluing quality goods"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is marginal utility?",
+    "options": [
+      "The total value derived from consuming a good",
+      "The additional satisfaction from consuming one more unit",
+      "The market price minus production cost",
+      "The utility lost when a good runs out"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Nash Bargaining Solution?",
+    "options": [
+      "The equal split of all resources in a negotiation",
+      "The outcome that maximises the product of each player's gains over their BATNA",
+      "A bluffing strategy in asymmetric bargaining",
+      "The Pareto frontier closest to the disagreement point"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In a Dutch Auction, how does the price move?",
+    "options": [
+      "It starts low and rises until a buyer accepts",
+      "It starts high and drops until a buyer accepts",
+      "All bidders pay the second-highest bid",
+      "Prices are hidden until all bids are submitted"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does 'information asymmetry' cause in markets?",
+    "options": [
+      "Efficient pricing",
+      "Market failure, adverse selection, and moral hazard",
+      "Price competition between firms",
+      "Faster equilibrium convergence"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is arbitrage?",
+    "options": [
+      "Exploiting price differences for the same asset in different markets",
+      "A long-term investment in undervalued assets",
+      "Hedging against currency risk",
+      "Trading on insider information"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is an oligopoly?",
+    "options": [
+      "A market with one dominant seller",
+      "A market dominated by a small number of large firms",
+      "A government-regulated price-controlled market",
+      "A market with perfect information and many buyers"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does utilitarian ethics maximise?",
+    "options": [
+      "Individual rights",
+      "Overall happiness or well-being (utility)",
+      "Adherence to moral duties",
+      "Virtue in the decision-maker"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is Kant's categorical imperative?",
+    "options": [
+      "Act only by principles you could will to be universal laws",
+      "Maximise total happiness across all beings",
+      "Do unto others as you would have them do unto you",
+      "Virtuous character determines right action"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What does 'veil of ignorance' (Rawls) describe?",
+    "options": [
+      "Making laws without knowing your position in society",
+      "Ignoring consequences when judging moral acts",
+      "Treating all moral viewpoints as equally valid",
+      "A bias toward status quo in ethical decisions"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the trolley problem designed to illustrate?",
+    "options": [
+      "Engineering ethics in vehicle design",
+      "Tension between action-based and outcome-based ethics",
+      "The irrationality of moral intuition",
+      "Why deontology always fails in emergencies"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is 'moral hazard' in an ethical context?",
+    "options": [
+      "Deliberate deception in markets",
+      "Risk-taking increases when someone else bears the consequences",
+      "Acting against social norms for personal gain",
+      "Choosing profitable actions over virtuous ones"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In the 'Knights and Knaves' puzzle, what rule governs knights?",
+    "options": [
+      "They always lie",
+      "They always tell the truth",
+      "They alternate between truth and lies",
+      "They only answer yes or no"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is Bayes' theorem used for?",
+    "options": [
+      "Proving the absence of correlation",
+      "Updating probability estimates based on new evidence",
+      "Calculating the mean of a distribution",
+      "Determining the minimum sample size for a study"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the St Petersburg Paradox?",
+    "options": [
+      "A game with infinite expected value but finite willingness to pay",
+      "A negotiation that always ends in deadlock",
+      "A probability puzzle where the correct answer seems wrong",
+      "A market that always converges to monopoly"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In a room of 23 people, what is the probability that two share a birthday?",
+    "options": [
+      "About 10%",
+      "About 30%",
+      "About 50%",
+      "About 70%"
+    ],
+    "answer": 2,
+    "tier": "hard"
+  },
+  {
+    "q": "What does it mean for a test to have a 5% false positive rate at 1% disease prevalence?",
+    "options": [
+      "95% of positives are true",
+      "Most positives are false \u2014 you are more likely healthy than sick if positive",
+      "The test is highly reliable",
+      "Only 1% of tests will return false positives"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "In Mafia/Werewolf games, what is the main skill required of the mafia faction?",
+    "options": [
+      "Memorising rules",
+      "Coordinating deception while appearing innocent",
+      "Eliminating targets before day phase",
+      "Winning majority votes quickly"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is 'strategic information revelation'?",
+    "options": [
+      "Sharing all data to build trust",
+      "Selectively disclosing information to influence others' beliefs and actions",
+      "Publishing trade secrets to deter competitors",
+      "Announcing strategies to gain credibility"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is a credible commitment in strategy?",
+    "options": [
+      "A signed contract between players",
+      "A binding action that makes a threat or promise believable",
+      "A cooperative solution both parties prefer",
+      "Any strategy announced before the game begins"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What does 'cheap talk' mean in game theory?",
+    "options": [
+      "Low-cost negotiation tactics",
+      "Communication that is costless and non-binding, hence not always credible",
+      "Bluffing in poker",
+      "Offering low opening bids in auctions"
+    ],
+    "answer": 1,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the 'winner's curse' in auction theory?",
+    "options": [
+      "The winner always overpays because they bid above the true value",
+      "Winners attract more competition in future auctions",
+      "The highest-quality good always wins the auction",
+      "Second-place bidders lose negotiating power"
     ],
     "answer": 0,
     "tier": "hard"

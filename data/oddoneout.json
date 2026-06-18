@@ -7,7 +7,8 @@
       "Car"
     ],
     "odd": 3,
-    "reason": "Car is not an animal"
+    "reason": "Car is not an animal",
+    "tier": "easy"
   },
   {
     "items": [
@@ -17,7 +18,8 @@
       "9"
     ],
     "odd": 3,
-    "reason": "9 is not even"
+    "reason": "9 is not even",
+    "tier": "easy"
   },
   {
     "items": [
@@ -27,7 +29,8 @@
       "Brazil"
     ],
     "odd": 3,
-    "reason": "Brazil is not in Europe"
+    "reason": "Brazil is not in Europe",
+    "tier": "easy"
   },
   {
     "items": [
@@ -37,7 +40,8 @@
       "Orange"
     ],
     "odd": 2,
-    "reason": "Carrot is a vegetable"
+    "reason": "Carrot is a vegetable",
+    "tier": "easy"
   },
   {
     "items": [
@@ -47,7 +51,8 @@
       "Circle"
     ],
     "odd": 3,
-    "reason": "Circle is not a color"
+    "reason": "Circle is not a color",
+    "tier": "easy"
   },
   {
     "items": [
@@ -487,6 +492,226 @@
     ],
     "odd": 2,
     "reason": "Titan is a moon, not a planet",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Nash Equilibrium",
+      "Pareto Optimum",
+      "Dominant Strategy",
+      "Sunk Cost"
+    ],
+    "odd": 3,
+    "reason": "Sunk cost is a cognitive bias; the others are game theory solution concepts",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Prisoner's Dilemma",
+      "Stag Hunt",
+      "Battle of the Sexes",
+      "Monty Hall Problem"
+    ],
+    "odd": 3,
+    "reason": "Monty Hall is a probability puzzle; the others are game theory games",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Defect",
+      "Cooperate",
+      "Randomise",
+      "Anchor"
+    ],
+    "odd": 3,
+    "reason": "Anchor is a cognitive bias; the others are strategies in game theory",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Zero-sum",
+      "Positive-sum",
+      "Negative-sum",
+      "Mixed strategy"
+    ],
+    "odd": 3,
+    "reason": "Mixed strategy is a type of strategy; the others describe payoff structures",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Anchoring",
+      "Availability heuristic",
+      "Confirmation bias",
+      "Arbitrage"
+    ],
+    "odd": 3,
+    "reason": "Arbitrage is an economic strategy; the others are cognitive biases",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Sunk cost fallacy",
+      "Loss aversion",
+      "Dunning-Kruger effect",
+      "Adverse selection"
+    ],
+    "odd": 3,
+    "reason": "Adverse selection is an economic market failure; the others are cognitive/psychological biases",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Regression to the mean",
+      "Simpson's paradox",
+      "Bayes' theorem",
+      "Dominant strategy"
+    ],
+    "odd": 3,
+    "reason": "Dominant strategy is a game theory concept; the others are statistical phenomena",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Monopoly",
+      "Oligopoly",
+      "Monopsony",
+      "Nash Equilibrium"
+    ],
+    "odd": 3,
+    "reason": "Nash Equilibrium is a game theory concept; the others are market structures",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Moral hazard",
+      "Adverse selection",
+      "Arbitrage",
+      "Information asymmetry"
+    ],
+    "odd": 2,
+    "reason": "Arbitrage exploits price gaps; the others arise from information asymmetry problems",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Negative externality",
+      "Positive externality",
+      "Public good",
+      "BATNA"
+    ],
+    "odd": 3,
+    "reason": "BATNA is a negotiation concept; the others are economics/market failure concepts",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "BATNA",
+      "ZOPA",
+      "Reservation price",
+      "Prisoner's Dilemma"
+    ],
+    "odd": 3,
+    "reason": "Prisoner's Dilemma is a game theory model; the others are negotiation concepts",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Cheap talk",
+      "Costly signalling",
+      "Credible commitment",
+      "Price elasticity"
+    ],
+    "odd": 3,
+    "reason": "Price elasticity is an economics measure; the others are strategic communication concepts",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Utilitarianism",
+      "Deontology",
+      "Virtue ethics",
+      "Nash Equilibrium"
+    ],
+    "odd": 3,
+    "reason": "Nash Equilibrium is a game theory concept; the others are ethical frameworks",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Categorical imperative",
+      "Veil of ignorance",
+      "Trolley problem",
+      "Dominant strategy"
+    ],
+    "odd": 3,
+    "reason": "Dominant strategy is a game theory term; the others are moral philosophy concepts",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Bayesian inference",
+      "Regression to the mean",
+      "Simpson's paradox",
+      "Moral hazard"
+    ],
+    "odd": 3,
+    "reason": "Moral hazard is an economics concept; the others are statistical/probabilistic phenomena",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Monty Hall",
+      "Birthday paradox",
+      "St Petersburg paradox",
+      "Winner's curse"
+    ],
+    "odd": 3,
+    "reason": "Winner's curse is an auction economics concept; the others are classic probability paradoxes",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Proof of Work",
+      "Proof of Stake",
+      "Proof of Authority",
+      "Dominant Strategy"
+    ],
+    "odd": 3,
+    "reason": "Dominant Strategy is a game theory term; the others are blockchain consensus mechanisms",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "51% attack",
+      "Rug pull",
+      "Sybil attack",
+      "Nash Equilibrium"
+    ],
+    "odd": 3,
+    "reason": "Nash Equilibrium is a game theory solution concept; the others are blockchain/crypto attacks",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Arbitrage",
+      "Market making",
+      "Flash loan attack",
+      "Sunk cost fallacy"
+    ],
+    "odd": 3,
+    "reason": "Sunk cost fallacy is a cognitive bias; the others are DeFi/trading strategies",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Entropy",
+      "Inertia",
+      "Nash Equilibrium",
+      "Angular momentum"
+    ],
+    "odd": 2,
+    "reason": "Nash Equilibrium is a game theory concept; the others are physics principles",
     "tier": "hard"
   }
 ]

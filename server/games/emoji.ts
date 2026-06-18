@@ -17,7 +17,7 @@ export const emojiModule = makeChoiceGame(
     description: "Decode the emojis into a movie title. Each correct guess is +0.1x.",
     thumbnail: "🎬",
     maxRounds: 5,
-    timeLimitSec: 15,
+    timeLimitSec: 8,
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {

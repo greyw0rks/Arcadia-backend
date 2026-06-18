@@ -19,11 +19,11 @@ export default function FAQPage() {
     },
     {
       question: "Can I lose money?",
-      answer: "Yes! The multiplier can drop below 1.0x if you get too many questions wrong. For example, if you stake 5 cUSD and end at 0.8x, you'll only get back 3.88 cUSD (5 × 0.97 × 0.8). This is what makes it exciting - you're betting on your skills!",
+      answer: "Yes! The multiplier can drop below 1.0x if you get too many questions wrong. For example, if you stake 1 cUSD and end at 0.8x, you'll only get back 0.78 cUSD (1 × 0.97 × 0.8). This is what makes it exciting - you're betting on your skills!",
     },
     {
       question: "Is there a maximum bet?",
-      answer: "Yes. The maximum bet is $5 per game (5 cUSD on Celo, or 5 STX on Stacks). The cap is enforced on-chain, so no session can ever stake more.",
+      answer: "Yes. The maximum bet is $1 per game (1 cUSD on Celo, or 1 STX on Stacks). The cap is enforced on-chain, so no session can ever stake more.",
     },
     {
       question: "Does the bet size change the difficulty?",
@@ -31,7 +31,7 @@ export default function FAQPage() {
     },
     {
       question: "What is the 3% rake?",
-      answer: "A 3% entry fee is taken from your stake to fund the house treasury. This ensures the house can always pay out winners. If you stake 5 cUSD, 4.85 cUSD goes into play. This is standard for gaming platforms.",
+      answer: "A 3% entry fee is taken from your stake to fund the house treasury. This ensures the house can always pay out winners. If you stake 1 cUSD, 0.97 cUSD goes into play. This is standard for gaming platforms.",
     },
     {
       question: "What happens if the game crashes?",
@@ -47,7 +47,11 @@ export default function FAQPage() {
     },
     {
       question: "Is this gambling?",
-      answer: "Arcadia is skill-based, not luck-based. Your performance directly determines your payout. However, regulations vary by jurisdiction. We recommend checking your local laws. Bets are capped at $5 per game.",
+      answer: "Arcadia is skill-based, not luck-based. Your performance directly determines your payout. However, regulations vary by jurisdiction. We recommend checking your local laws. Bets are capped at $1 per game.",
+    },
+    {
+      question: "Is Arcadia open source? Can I copy it?",
+      answer: "No. Arcadia is proprietary software. The source code, game mechanics, question banks, scoring engine, and all creative works are copyright © greyw0rks. Copying, cloning, forking for deployment, or building competing products based on Arcadia's design is strictly prohibited. See our Terms & IP page for full details.",
     },
     {
       question: "How long do I have to answer?",

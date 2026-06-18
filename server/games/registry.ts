@@ -1,3 +1,7 @@
+// Copyright (c) 2024–2025 greyw0rks. All rights reserved.
+// Proprietary and confidential. Unauthorised copying or redistribution is prohibited.
+// See LICENSE in the repository root for full terms.
+
 import { GameModule, toMeta, GameMeta } from "./types";
 import { triviaModule } from "./trivia";
 import { wordModule } from "./word";

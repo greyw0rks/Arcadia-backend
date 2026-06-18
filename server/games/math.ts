@@ -4,10 +4,10 @@ import { makeChoiceGame } from "./choiceGame";
 // the round index AND the bet: `difficulty` (0..1, from the stake) adds up to +4 tiers, so a max-bet
 // session faces much larger operands. Distractors are near-misses around the true answer.
 function genProblem(roundIndex: number, difficulty = 0): { prompt: string; answer: number } {
-  const tier = Math.min(Math.round(Math.min(roundIndex, 4) + difficulty * 4), 8);
-  const ops = ["+", "-", "×"] as const;
+  const tier = Math.min(Math.round(Math.min(roundIndex, 6) + 3 + difficulty * 5), 12);
+  const ops = ["+", "-", "×", "÷"] as const;
   const op = ops[Math.floor(Math.random() * ops.length)];
-  const max = 10 + tier * 8; // 10..42
+  const max = 15 + tier * 10; // 15..135
   let a = 1 + Math.floor(Math.random() * max);
   let b = 1 + Math.floor(Math.random() * max);
   let answer: number;
@@ -15,9 +15,14 @@ function genProblem(roundIndex: number, difficulty = 0): { prompt: string; answe
   else if (op === "-") {
     if (b > a) [a, b] = [b, a]; // keep it non-negative
     answer = a - b;
+  } else if (op === "÷") {
+    // Generate a clean division: pick b and answer, derive a
+    b = 2 + Math.floor(Math.random() * (4 + tier));
+    answer = 2 + Math.floor(Math.random() * (6 + tier));
+    a = b * answer;
   } else {
-    a = 2 + Math.floor(Math.random() * (6 + tier));
-    b = 2 + Math.floor(Math.random() * (6 + tier));
+    a = 2 + Math.floor(Math.random() * (8 + tier));
+    b = 2 + Math.floor(Math.random() * (8 + tier));
     answer = a * b;
   }
   return { prompt: `${a} ${op} ${b} = ?`, answer };
@@ -47,7 +52,7 @@ export const mathModule = makeChoiceGame(
     description: "Solve the arithmetic before the timer runs out. Each correct answer is +0.1x.",
     thumbnail: "➗",
     maxRounds: 5,
-    timeLimitSec: 12,
+    timeLimitSec: 6,
     bankSize: Number.MAX_SAFE_INTEGER, // procedural: never repeats, never caps rounds
   },
   (roundIndex, _seed, difficulty) => {

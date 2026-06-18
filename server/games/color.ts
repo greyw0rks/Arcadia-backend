@@ -23,7 +23,7 @@ export const colorModule = makeChoiceGame(
     description: "Match the color swatch to its hex code. Each correct answer is +0.1x.",
     thumbnail: "🎨",
     maxRounds: 5,
-    timeLimitSec: 15,
+    timeLimitSec: 7,
     bankSize: BANK.length,
   },
   (roundIndex, seed) => {

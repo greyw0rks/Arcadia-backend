@@ -1,83 +1,103 @@
 [
   {
     "s": "The Great Wall of China is visible from space.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "Honey never spoils if stored properly.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Bananas grow on trees.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "An octopus has three hearts.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Lightning never strikes twice.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "Mount Everest is the tallest mountain.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Sharks are mammals.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
-    "s": "Water boils at 100°C at sea level.",
-    "a": true
+    "s": "Water boils at 100\u00b0C at sea level.",
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Goldfish have 3-second memory.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "Venus is the hottest planet.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Humans and dinosaurs coexisted.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "Sound travels faster in water.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "The Mona Lisa has no eyebrows.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Penguins can fly.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "The Earth is flat.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "Tomatoes are vegetables.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "The sun is a star.",
-    "a": true
+    "a": true,
+    "tier": "easy"
   },
   {
     "s": "Bats are blind.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "Humans use only 10% of brain.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "The moon has its own light.",
-    "a": false
+    "a": false,
+    "tier": "easy"
   },
   {
     "s": "The human body has four lungs.",
@@ -362,6 +382,301 @@
   {
     "s": "Tomatoes are native to Australia.",
     "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Photons have zero rest mass.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In special relativity, two events simultaneous in one frame are simultaneous in all frames.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A neutron star is denser than an atomic nucleus.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The strong nuclear force operates over shorter distances than gravity.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Quantum tunneling allows a particle to pass through a barrier it classically could not surmount.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The entropy of the universe is decreasing over time.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Light bends around massive objects due to gravitational lensing.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Temperature can be negative on the Kelvin scale.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In a vacuum, all objects fall at the same rate regardless of mass.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The speed of sound is faster than the speed of light.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "E=mc\u00b2 implies a small amount of mass releases enormous energy.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "An electron's position and momentum can both be known with perfect precision simultaneously.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Angular momentum is conserved when no external torque acts on a system.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Sun will eventually collapse into a black hole.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Dark energy is thought to be accelerating the expansion of the universe.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Bitcoin's blockchain is controlled by a central authority.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Ethereum uses Proof of Work after 'The Merge' upgrade.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A private key can be derived from a public key.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Smart contracts on Ethereum are immutable once deployed.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Bitcoin genesis block was mined by Satoshi Nakamoto on January 3, 2009.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A 51% attack allows an attacker to steal funds from any wallet.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Proof of Stake requires validators to lock up cryptocurrency as collateral.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Layer-2 solutions process transactions off the main blockchain to improve scalability.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Lightning Network allows instant Bitcoin transactions without on-chain fees.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Ethereum gas fees are paid in a separate token called GAS.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A Merkle tree allows efficient verification of large datasets with a single root hash.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "DeFi protocols are exclusively regulated by governments.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "An NFT proves ownership of a physical asset by law.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Bitcoin mining difficulty adjusts approximately every 2,016 blocks.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Zero-knowledge proofs allow you to prove you know a password without revealing it.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In the Prisoner's Dilemma, the dominant strategy for both players is to defect even though mutual cooperation would be better for both.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A Nash Equilibrium is always the outcome that maximises total welfare.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "In a zero-sum game, one player's gain is always exactly another player's loss.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Minimax strategy is optimal in all two-player games.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Backward induction requires solving a game from the last move forward.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Every finite game has at least one Nash Equilibrium (possibly in mixed strategies).",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A dominant strategy is always a best response regardless of the opponent's choice.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Tragedy of the Commons shows that shared resources are always managed efficiently.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "A Schelling point is always the most economically efficient outcome.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Cheap talk is always credible because it's costless to produce.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "People typically feel the pain of losing $100 more strongly than the pleasure of gaining $100.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The sunk cost fallacy is a rational reason to continue investing in a failing project.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Anchoring bias can influence judgments even when the anchor is completely irrelevant.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Dunning-Kruger effect predicts that genuine experts always overestimate their abilities.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Confirmation bias leads people to seek information that challenges their existing beliefs.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The base rate fallacy involves ignoring prior probability when evaluating new evidence.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Switching doors in the Monty Hall problem increases your win probability from 1/3 to 2/3.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a group of 23 people, there is roughly a 50% chance two share a birthday.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Simpson's paradox means a trend visible in aggregate data can reverse in every subgroup.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A perfectly competitive market naturally corrects for negative externalities without regulation.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Adverse selection occurs before a contract is signed, while moral hazard occurs after.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Arbitrage opportunities persist indefinitely in efficient markets.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Price elasticity of demand measures how sensitive demand is to a change in price.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "An oligopoly market structure has one dominant seller who sets prices.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The winner's curse means auction winners tend to overpay relative to true value.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "In a Dutch auction, the price starts low and rises until a buyer accepts.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Utilitarianism judges an action's morality by its consequences on overall well-being.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Kant's categorical imperative requires calculating consequences before acting.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Rawls' 'veil of ignorance' asks people to design society without knowing their place in it.",
+    "a": true,
     "tier": "hard"
   }
 ]

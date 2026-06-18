@@ -16,7 +16,7 @@ export const wordModule = makeChoiceGame(
     description: "Unscramble the letters or solve the word puzzle. Each correct answer is +0.1x.",
     thumbnail: "🔤",
     maxRounds: 5,
-    timeLimitSec: 15,
+    timeLimitSec: 8,
     bankSize: BANK.length,
   },
   (roundIndex, seed) => {

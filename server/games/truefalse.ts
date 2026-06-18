@@ -17,7 +17,7 @@ export const trueFalseModule = makeChoiceGame(
     description: "Rapid-fire: is the statement true or false? Each correct call is +0.1x.",
     thumbnail: "✅",
     maxRounds: 5,
-    timeLimitSec: 10,
+    timeLimitSec: 5,
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {

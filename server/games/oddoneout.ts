@@ -17,7 +17,7 @@ export const oddOneOutModule = makeChoiceGame(
     description: "Four items, one doesn't belong. Spot it for +0.1x.",
     thumbnail: "🧩",
     maxRounds: 5,
-    timeLimitSec: 15,
+    timeLimitSec: 8,
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {

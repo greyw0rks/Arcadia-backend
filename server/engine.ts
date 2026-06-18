@@ -1,3 +1,7 @@
+// Copyright (c) 2024–2025 greyw0rks. All rights reserved.
+// Proprietary and confidential. Unauthorised copying or redistribution is prohibited.
+// See LICENSE in the repository root for full terms.
+
 // Pure multiplier math, mirroring QuizArcade.sol. Multiplier is in basis points: 10_000 = 1.0x.
 // Starts at 1.0x; +0.1x per correct round, -0.1x per wrong round; floored at 0; capped by maxRounds.
 

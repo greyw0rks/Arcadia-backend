@@ -1,3 +1,7 @@
+// Copyright (c) 2024–2025 greyw0rks. All rights reserved.
+// Proprietary and confidential. Unauthorised copying or redistribution is prohibited.
+// See LICENSE in the repository root for full terms.
+
 // In-memory session store. Authoritative game state lives here, NOT in the client. Holds the answer
 // keys, the running multiplier, and per-round deadlines. NOTE: resets on server restart — fine for the
 // MVP/demo; swap for Redis/SQLite for production (see README).

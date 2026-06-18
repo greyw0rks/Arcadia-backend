@@ -30,7 +30,7 @@
 "sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk"
   },
   "author": "greyw0rks",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.11",
     "@stacks/connect": "^8.2.6",

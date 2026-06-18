@@ -54,14 +54,17 @@ export function pickIndex(bankLength: number, roundIndex: number, seed: number):
 }
 
 // Difficulty tiers a bank entry can carry. Absent => "medium".
-export type Tier = "easy" | "medium" | "hard";
+export type Tier = "easy" | "medium" | "hard" | "extreme";
 export function tierNum(t?: Tier): number {
-  return t === "easy" ? 0 : t === "hard" ? 2 : 1;
+  if (t === "extreme") return 3;
+  if (t === "hard") return 2;
+  if (t === "easy") return 0;
+  return 1; // medium or untagged
 }
 
-/** Target tier (0/1/2) for a bet-driven difficulty fraction in [0,1]. */
-function targetTier(difficulty: number): number {
-  return difficulty < 0.34 ? 0 : difficulty < 0.67 ? 1 : 2;
+/** Target tier — always extreme. Sessions draw extreme→hard→medium→easy order. */
+function targetTier(_difficulty: number): number {
+  return 3;
 }
 
 /**

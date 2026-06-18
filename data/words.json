@@ -4057,5 +4057,311 @@
       "FIRE",
       "BIRD"
     ]
+  },
+  {
+    "prompt": "Unscramble: IUMEQUILIBR",
+    "correct": "EQUILIBRIUM",
+    "decoys": [
+      "EQUATION",
+      "MOMENTUM",
+      "OSCILLATE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: AGEARBITR",
+    "correct": "ARBITRAGE",
+    "decoys": [
+      "ANCHORAGE",
+      "BROKERAGE",
+      "ARBITRATE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ITYEXTERNAL",
+    "correct": "EXTERNALITY",
+    "decoys": [
+      "EXTERNSHIP",
+      "INTERNSHIP",
+      "EXTERNALIZE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: OLYOLIGOP",
+    "correct": "OLIGOPOLY",
+    "decoys": [
+      "MONOPOLY",
+      "OLIGARCHY",
+      "DUOPOLY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ITYELASTIC",
+    "correct": "ELASTICITY",
+    "decoys": [
+      "PLASTICITY",
+      "VELOCITY",
+      "ECCENTRICITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IVEINCENT",
+    "correct": "INCENTIVE",
+    "decoys": [
+      "INITIATIVE",
+      "INTENSIVE",
+      "INCEPTIVE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: TRYASYMME",
+    "correct": "ASYMMETRY",
+    "decoys": [
+      "SYMMETRY",
+      "ANOMALY",
+      "ATROPHY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IONDEFECT",
+    "correct": "DEFECTION",
+    "decoys": [
+      "DEFLECTION",
+      "DETECTION",
+      "REFLECTION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: INGSIGNALL",
+    "correct": "SIGNALLING",
+    "decoys": [
+      "SIGNALLING",
+      "TARGETING",
+      "MESSAGING"
+    ]
+  },
+  {
+    "prompt": "Unscramble: NYHEGEMO",
+    "correct": "HEGEMONY",
+    "decoys": [
+      "HARMONY",
+      "HETERODOX",
+      "ECONOMY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IONARBITRAT",
+    "correct": "ARBITRATION",
+    "decoys": [
+      "ARBITRAGE",
+      "MEDIATION",
+      "MODERATION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: NCEDETERRE",
+    "correct": "DETERRENCE",
+    "decoys": [
+      "DEFERENCE",
+      "DIVERGENCE",
+      "PREFERENCE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IONNEGOTIAT",
+    "correct": "NEGOTIATION",
+    "decoys": [
+      "REVELATION",
+      "INITIATION",
+      "DELEGATION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ITYCREDIBIL",
+    "correct": "CREDIBILITY",
+    "decoys": [
+      "CULPABILITY",
+      "FLEXIBILITY",
+      "PROFITABILITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: TICHEURIS",
+    "correct": "HEURISTIC",
+    "decoys": [
+      "EUCHARIST",
+      "THERMOSTAT",
+      "HOLISTIC"
+    ]
+  },
+  {
+    "prompt": "Unscramble: UMMOMENT",
+    "correct": "MOMENTUM",
+    "decoys": [
+      "MOUNTAIN",
+      "MOVEMENT",
+      "MODICUM"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ITYRELATIV",
+    "correct": "RELATIVITY",
+    "decoys": [
+      "RECEPTIVITY",
+      "ADAPTIVITY",
+      "CREATIVITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: PYENTRO",
+    "correct": "ENTROPY",
+    "decoys": [
+      "EMPATHY",
+      "EPITOME",
+      "ENTROPY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: MENTENTANGLE",
+    "correct": "ENTANGLEMENT",
+    "decoys": [
+      "ENLIGHTENMENT",
+      "ENGAGEMENT",
+      "ENDOWMENT"
+    ]
+  },
+  {
+    "prompt": "Unscramble: TIONPOLARISA",
+    "correct": "POLARISATION",
+    "decoys": [
+      "REALISATION",
+      "GLOBALISATION",
+      "LEGISLATION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IONREFRACT",
+    "correct": "REFRACTION",
+    "decoys": [
+      "REFLECTION",
+      "RETRACTION",
+      "RETRIBUTION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IAINERT",
+    "correct": "INERTIA",
+    "decoys": [
+      "ANEMIA",
+      "INERTIA",
+      "INSOMNIA"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IONOSCILLAT",
+    "correct": "OSCILLATION",
+    "decoys": [
+      "OCCUPATION",
+      "OBLIGATION",
+      "INNOVATION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ORYTRAJECT",
+    "correct": "TRAJECTORY",
+    "decoys": [
+      "TREACHERY",
+      "TERRITORY",
+      "TECHNOCRACY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: GTHWAVELEN",
+    "correct": "WAVELENGTH",
+    "decoys": [
+      "BANDWIDTH",
+      "FREQUENCY",
+      "AMPLITUDE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: SUSCONSEN",
+    "correct": "CONSENSUS",
+    "decoys": [
+      "CENSORSHIP",
+      "CONFERENCE",
+      "CONFLUENCE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: APHYCRYPTOGR",
+    "correct": "CRYPTOGRAPHY",
+    "decoys": [
+      "CARTOGRAPHY",
+      "STENOGRAPHY",
+      "CHOREOGRAPHY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: AINBLOCKCH",
+    "correct": "BLOCKCHAIN",
+    "decoys": [
+      "BLACKCHAIN",
+      "MAINCHAIN",
+      "SIDECHAIN"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ISEDDECENTRAL",
+    "correct": "DECENTRALISED",
+    "decoys": [
+      "DECALCIFIED",
+      "DESENSITISED",
+      "DEMILITARISED"
+    ]
+  },
+  {
+    "prompt": "Unscramble: LITYIMMUTABI",
+    "correct": "IMMUTABILITY",
+    "decoys": [
+      "IMMOVABILITY",
+      "INCAPABILITY",
+      "INEVITABILITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: TIONCONFIRMA",
+    "correct": "CONFIRMATION",
+    "decoys": [
+      "CONFRONTATION",
+      "CONFORMATION",
+      "CONDEMNATION"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ICSHEURIST",
+    "correct": "HEURISTICS",
+    "decoys": [
+      "EUCHARISTS",
+      "LOGISTICS",
+      "MNEMONIC"
+    ]
+  },
+  {
+    "prompt": "Unscramble: LITYAVAILABI",
+    "correct": "AVAILABILITY",
+    "decoys": [
+      "AGREEABILITY",
+      "ADAPTABILITY",
+      "RELIABILITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: INGANCHOR",
+    "correct": "ANCHORING",
+    "decoys": [
+      "AUCTIONING",
+      "ABSORBING",
+      "ADVANCING"
+    ]
   }
 ]

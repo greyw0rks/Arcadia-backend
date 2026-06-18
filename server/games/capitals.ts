@@ -18,7 +18,7 @@ export const capitalsModule = makeChoiceGame(
     description: "Name the capital city of each country. Each correct answer is +0.1x.",
     thumbnail: "🚩",
     maxRounds: 5,
-    timeLimitSec: 13,
+    timeLimitSec: 7,
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
