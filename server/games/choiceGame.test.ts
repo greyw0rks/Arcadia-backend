@@ -26,14 +26,15 @@ describe("tierNum", () => {
 });
 
 describe("tieredPickIndex", () => {
-  // Bank of 30: 10 easy, 10 medium, 10 hard.
+  // Bank: 10 easy, 10 medium, 10 hard, 10 extreme = 40 entries.
   const tiers = [
     ...Array(10).fill(0),
     ...Array(10).fill(1),
     ...Array(10).fill(2),
+    ...Array(10).fill(3),
   ];
 
-  it("is still a no-repeat permutation for any difficulty", () => {
+  it("is a no-repeat permutation for any difficulty", () => {
     for (const d of [0, 0.5, 1]) {
       const seen = new Set<number>();
       for (let i = 0; i < tiers.length; i++) seen.add(tieredPickIndex(tiers, i, 777, d));
@@ -41,26 +42,43 @@ describe("tieredPickIndex", () => {
     }
   });
 
-  it("front-loads the EASY tier at low difficulty", () => {
-    const first5 = Array.from({ length: 5 }, (_, i) => tieredPickIndex(tiers, i, 777, 0.1));
-    // all of the first five picks are easy entries (indices 0..9)
-    expect(first5.every((idx) => tiers[idx] === 0)).toBe(true);
+  it("easy sessions (d<1/3) give exactly 4 medium, 2 hard, 1 extreme across 7 rounds", () => {
+    const picks = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 42, 0.1));
+    const counts = [0, 0, 0, 0];
+    for (const idx of picks) counts[tiers[idx]]++;
+    expect(counts[1]).toBe(4); // medium
+    expect(counts[2]).toBe(2); // hard
+    expect(counts[3]).toBe(1); // extreme
   });
 
-  it("front-loads the HARD tier at high difficulty", () => {
-    const first5 = Array.from({ length: 5 }, (_, i) => tieredPickIndex(tiers, i, 777, 0.9));
-    expect(first5.every((idx) => tiers[idx] === 2)).toBe(true);
+  it("medium sessions (1/3≤d<2/3) give exactly 2 medium, 3 hard, 2 extreme across 7 rounds", () => {
+    const picks = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 42, 0.5));
+    const counts = [0, 0, 0, 0];
+    for (const idx of picks) counts[tiers[idx]]++;
+    expect(counts[1]).toBe(2);
+    expect(counts[2]).toBe(3);
+    expect(counts[3]).toBe(2);
   });
 
-  it("front-loads the MEDIUM tier at mid difficulty", () => {
-    const first5 = Array.from({ length: 5 }, (_, i) => tieredPickIndex(tiers, i, 777, 0.5));
-    expect(first5.every((idx) => tiers[idx] === 1)).toBe(true);
+  it("hard sessions (d≥2/3) give exactly 1 medium, 2 hard, 4 extreme across 7 rounds", () => {
+    const picks = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 42, 0.9));
+    const counts = [0, 0, 0, 0];
+    for (const idx of picks) counts[tiers[idx]]++;
+    expect(counts[1]).toBe(1);
+    expect(counts[2]).toBe(2);
+    expect(counts[3]).toBe(4);
   });
 
-  it("falls back gracefully when a target tier is empty (all medium)", () => {
+  it("different seeds produce different orderings for the same difficulty", () => {
+    const a = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 1, 0.5));
+    const b = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 999, 0.5));
+    expect(a).not.toEqual(b);
+  });
+
+  it("falls back gracefully when a target tier is empty (all medium bank)", () => {
     const allMed = Array(15).fill(1);
     const seen = new Set<number>();
-    for (let i = 0; i < allMed.length; i++) seen.add(tieredPickIndex(allMed, i, 5, 1)); // ask for hard
-    expect(seen.size).toBe(allMed.length); // still a full no-repeat permutation
+    for (let i = 0; i < allMed.length; i++) seen.add(tieredPickIndex(allMed, i, 5, 1));
+    expect(seen.size).toBe(allMed.length);
   });
 });

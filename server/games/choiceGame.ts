@@ -63,18 +63,49 @@ export function tierNum(t?: Tier): number {
   return 1; // medium or untagged
 }
 
-/** Target tier — always extreme. Sessions draw extreme→hard→medium→easy order. */
-function targetTier(_difficulty: number): number {
-  return 3;
+// Per-difficulty-level tier recipes (7 entries = one MIN_ROUNDS cycle).
+// Each session block of 7 rounds is an independently shuffled copy, so the harder questions
+// don't always land in the same positions. Counts per block:
+//   easy:   4×medium, 2×hard, 1×extreme
+//   medium: 2×medium, 3×hard, 2×extreme
+//   hard:   1×medium, 2×hard, 4×extreme
+const TIER_RECIPES: readonly number[][] = [
+  [1, 1, 1, 1, 2, 2, 3], // easy   (d < 1/3)
+  [1, 1, 2, 2, 2, 3, 3], // medium (1/3 ≤ d < 2/3)
+  [1, 2, 2, 3, 3, 3, 3], // hard   (d ≥ 2/3)
+];
+
+function diffLevel(d: number): number {
+  if (d < 1 / 3) return 0;
+  if (d < 2 / 3) return 1;
+  return 2;
+}
+
+// Builds a 20-slot tier schedule for a session. Each block of recipe.length slots is an
+// independently shuffled copy of the recipe — exact distribution per block, varied order.
+function buildSchedule(seed: number, difficulty: number): number[] {
+  const recipe = TIER_RECIPES[diffLevel(difficulty)];
+  const schedule: number[] = [];
+  let block = 0;
+  while (schedule.length < 20) {
+    schedule.push(...shuffle([...recipe], seed ^ (0xf00d + block)));
+    block++;
+  }
+  return schedule.slice(0, 20);
+}
+
+// Returns tiers in ascending distance from `target` so fallback expands outward.
+function tiersNearTarget(target: number): number[] {
+  return [0, 1, 2, 3].sort((a, b) => Math.abs(a - target) - Math.abs(b - target));
 }
 
 /**
- * Tier-aware sibling of `pickIndex`. Builds a full no-repeat permutation of the bank, FRONT-LOADED by
- * the tier matching `difficulty`: a low bet sees easy entries first, a max bet sees hard ones first,
- * and longer sessions bleed into adjacent tiers. Because the result is still a permutation of the
- * whole bank, a session never repeats an entry while roundIndex < bankLength — same guarantee as
- * pickIndex. `tiers[i]` is entry i's tier number (see tierNum); missing/medium entries sort to the
- * middle, so partially-tagged banks still behave (hard entries lead at high bets).
+ * Tier-aware, no-repeat picker with a shuffled difficulty-based mix.
+ *
+ * Builds a per-session tier schedule (recipe shuffled per 7-round block) then simulates
+ * rounds 0..roundIndex to track what has been drawn. Each round picks the nearest available
+ * bank entry for the scheduled tier; exhausted tiers fall back to adjacent ones automatically.
+ * No entry repeats while roundIndex < bankLength.
  */
 export function tieredPickIndex(
   tiers: number[],
@@ -82,15 +113,33 @@ export function tieredPickIndex(
   seed: number,
   difficulty = 0
 ): number {
-  const target = targetTier(difficulty);
-  // Seeded base order first, then a STABLE sort by distance from the target tier. V8's Array.sort is
-  // stable, so the seeded variety is preserved within each tier — no fixed ordering across sessions.
-  const order = shuffle(
-    Array.from({ length: tiers.length }, (_, i) => i),
-    seed
-  );
-  order.sort((a, b) => Math.abs((tiers[a] ?? 1) - target) - Math.abs((tiers[b] ?? 1) - target));
-  return order[roundIndex % tiers.length];
+  // Sort shuffled bank indices into per-tier buckets for O(1) lookup.
+  const buckets: number[][] = [[], [], [], []];
+  for (const idx of shuffle(Array.from({ length: tiers.length }, (_, i) => i), seed)) {
+    buckets[Math.min(3, Math.max(0, tiers[idx] ?? 1))].push(idx);
+  }
+
+  const schedule = buildSchedule(seed, difficulty);
+  const used = new Set<number>();
+
+  function pickFor(targetTier: number): number {
+    for (const t of tiersNearTarget(targetTier)) {
+      for (const idx of buckets[t]) {
+        if (!used.has(idx)) { used.add(idx); return idx; }
+      }
+    }
+    // Total bank exhausted (session longer than bank — shouldn't occur with valid config)
+    for (let i = 0; i < tiers.length; i++) {
+      if (!used.has(i)) { used.add(i); return i; }
+    }
+    return roundIndex % tiers.length;
+  }
+
+  let result = 0;
+  for (let r = 0; r <= roundIndex; r++) {
+    result = pickFor(schedule[r]);
+  }
+  return result;
 }
 
 export function makeChoiceGame(
