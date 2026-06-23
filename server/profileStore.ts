@@ -5,6 +5,7 @@
 export interface ProfileOverlay {
   username: string | null;
   avatar: string | null;
+  linkedStacksAddress: string | null; // optional cross-chain link (Celo → Stacks)
 }
 
 const OVERLAYS = new Map<string, ProfileOverlay>();
@@ -18,9 +19,12 @@ export function getProfileOverlay(address: string): ProfileOverlay | undefined {
   return OVERLAYS.get(key(address));
 }
 
-export function setProfileOverlay(address: string, overlay: ProfileOverlay): void {
+/** Merge `patch` into the existing overlay (missing keys are preserved). */
+export function setProfileOverlay(address: string, patch: Partial<ProfileOverlay>): void {
+  const existing = OVERLAYS.get(key(address)) ?? { username: null, avatar: null, linkedStacksAddress: null };
   OVERLAYS.set(key(address), {
-    username: overlay.username?.trim() || null,
-    avatar: overlay.avatar || null,
+    username: patch.username !== undefined ? (patch.username?.trim() || null) : existing.username,
+    avatar: patch.avatar !== undefined ? (patch.avatar || null) : existing.avatar,
+    linkedStacksAddress: patch.linkedStacksAddress !== undefined ? (patch.linkedStacksAddress || null) : existing.linkedStacksAddress,
   });
 }

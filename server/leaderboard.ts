@@ -486,6 +486,20 @@ export async function getLeaderboard(
   return { leaderboard, userRank };
 }
 
+export interface LinkedProfileStats {
+  address: string;
+  unit: "USDm" | "STX";
+  gamesPlayed: number;
+  gamesWon: number;
+  winRate: number;
+  totalStaked: number;
+  totalWinnings: number;
+  highestMultiplierBp: number;
+  currentStreak: number;
+  longestStreak: number;
+  recentGames: { multiplierBp: number; payout: number; won: boolean; block: number }[];
+}
+
 export interface PlayerProfile {
   address: string;
   username: string | null;
@@ -504,6 +518,8 @@ export interface PlayerProfile {
   };
   achievements: string[];
   recentGames: { multiplierBp: number; payout: number; won: boolean; block: number }[];
+  linkedAddress: string | null;
+  linkedStats: LinkedProfileStats | null;
 }
 
 export async function getPlayerProfile(address: string): Promise<PlayerProfile> {
@@ -519,6 +535,34 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
   };
   const s = buildStats(stub, games);
   const overlay = getProfileOverlay(key);
+
+  // Linked Stacks address — only applicable for Celo (0x) profiles.
+  const linkedAddress = address.startsWith("0x") ? (overlay?.linkedStacksAddress ?? null) : null;
+
+  let linkedStats: LinkedProfileStats | null = null;
+  if (linkedAddress) {
+    const lKey = normalizeAddr(linkedAddress);
+    const lp = players.get(lKey);
+    const lGames = lp?.games ?? [];
+    const lStub: PlayerAgg = lp ?? { address: lKey, chain: "stacks", unit: "STX", games: [] };
+    const ls = buildStats(lStub, lGames);
+    linkedStats = {
+      address: linkedAddress,
+      unit: "STX",
+      gamesPlayed: ls.gamesPlayed,
+      gamesWon: ls.gamesWon,
+      winRate: ls.winRate,
+      totalStaked: ls.totalStaked,
+      totalWinnings: ls.totalWinnings,
+      highestMultiplierBp: ls.highestMultiplierBp,
+      currentStreak: ls.currentStreak,
+      longestStreak: ls.longestStreak,
+      recentGames: lGames
+        .slice(-10)
+        .reverse()
+        .map((g) => ({ multiplierBp: g.multiplierBp, payout: round2(g.payout), won: g.won, block: g.block })),
+    };
+  }
 
   return {
     address,
@@ -546,6 +590,8 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
         won: g.won,
         block: g.block,
       })),
+    linkedAddress,
+    linkedStats,
   };
 }
 

@@ -26,15 +26,17 @@ export async function PUT(req: NextRequest, ctx: { params: Promise<{ address: st
   if (!address) {
     return NextResponse.json({ error: "address required" }, { status: 400 });
   }
-  let body: { username?: string; avatar?: string };
+  let body: { username?: string; avatar?: string; linkedStacksAddress?: string | null };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "invalid json" }, { status: 400 });
   }
-  setProfileOverlay(address, {
-    username: body.username ?? null,
-    avatar: body.avatar ?? null,
-  });
+  const patch: Parameters<typeof setProfileOverlay>[1] = {};
+  if (body.username !== undefined) patch.username = body.username ?? null;
+  if (body.avatar !== undefined) patch.avatar = body.avatar ?? null;
+  if (body.linkedStacksAddress !== undefined) patch.linkedStacksAddress = body.linkedStacksAddress ?? null;
+  if (Object.keys(patch).length === 0) return NextResponse.json({ error: "nothing to update" }, { status: 400 });
+  setProfileOverlay(address, patch);
   return NextResponse.json({ ok: true });
 }
