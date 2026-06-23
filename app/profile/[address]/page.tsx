@@ -258,11 +258,6 @@ export default function ProfilePage() {
           </div>
         )}
 
-        <div style={{ textAlign: 'center', marginTop: 48 }}>
-          <button className="btn" onClick={() => router.push("/leaderboard")}>
-            View Leaderboard
-          </button>
-        </div>
       </div>
     </div>
   );

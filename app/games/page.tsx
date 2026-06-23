@@ -110,19 +110,6 @@ export default function GamesPage() {
         >
           ❓ FAQ
         </button>
-        <button
-          className="btn ghost"
-          onClick={() => router.push("/leaderboard")}
-          style={{ marginRight: 12 }}
-        >
-          🏆 Leaderboard
-        </button>
-        <button
-          className="btn ghost"
-          onClick={() => router.push("/analytics")}
-        >
-          📊 Analytics
-        </button>
       </div>
 
       <div className="grid">

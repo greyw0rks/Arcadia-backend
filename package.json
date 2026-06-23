@@ -1,6 +1,6 @@
 {
-  "name": "@greyw0rks/arcadia",
-  "version": "1.1.2",
+  "name": "arcadia-backend",
+  "version": "1.2.1",
   "private": true,
   "description": "An arcade of skill games where your stake rides a live multiplier. Built onchain.",
   "type": "module",
@@ -27,7 +27,7 @@
     "start": "next start",
     "test": "vitest run",
     "sdk:build": "npm run build --workspace=packages/sdk",
-"sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk"
+    "sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk"
   },
   "author": "greyw0rks",
   "license": "SEE LICENSE IN LICENSE",
