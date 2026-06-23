@@ -32,6 +32,14 @@ export default function GamesPage() {
   const [games, setGames] = useState<GameMeta[]>([]);
   const [showTutorial, setShowTutorial] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   useEffect(() => {
     // Initialize sounds
@@ -68,6 +76,16 @@ export default function GamesPage() {
       <div className="topbar">
         <div className="brand">Arcadia</div>
         <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+          {!isMobile && address && (
+            <button
+              className="btn ghost"
+              onClick={() => router.push(`/profile/${address}`)}
+              style={{ padding: "12px 16px", fontSize: "14px" }}
+              title="View my profile"
+            >
+              👤 Profile
+            </button>
+          )}
           <button
             className="btn ghost"
             onClick={toggleSound}
@@ -153,15 +171,6 @@ export default function GamesPage() {
           Unauthorised copying, cloning, or redistribution is strictly prohibited.
           <a href="/terms" style={{ marginLeft: 6, textDecoration: "underline" }}>Terms &amp; IP</a>
         </p>
-        {address && (
-          <button
-            className="btn ghost"
-            onClick={() => router.push(`/profile/${address}`)}
-            style={{ fontSize: 14, padding: '8px 16px' }}
-          >
-            👤 View My Profile
-          </button>
-        )}
       </div>
 
       {showTutorial && <TutorialModal onClose={handleTutorialClose} />}
