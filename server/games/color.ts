@@ -16,7 +16,8 @@ function colorSwatchDataUri(hex: string): string {
   return `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='${encodeURIComponent(hex)}'/%3E%3C/svg%3E`;
 }
 
-export const colorModule = makeChoiceGame(
+export const colorModule = {
+  ...makeChoiceGame(
   {
     id: "color",
     title: "Hex Match",
@@ -35,4 +36,6 @@ export const colorModule = makeChoiceGame(
       options: [e.hex, ...e.decoys],
     };
   }
-);
+  ),
+  available: false,
+};

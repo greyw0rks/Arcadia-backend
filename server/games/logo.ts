@@ -11,7 +11,8 @@ interface Logo {
 
 const BANK = logos as Logo[];
 
-export const logoModule = makeChoiceGame(
+export const logoModule = {
+  ...makeChoiceGame(
   {
     id: "logo",
     title: "Logo Quiz",
@@ -30,4 +31,6 @@ export const logoModule = makeChoiceGame(
       options: [e.answer, ...e.decoys],
     };
   }
-);
+  ),
+  available: false,
+};

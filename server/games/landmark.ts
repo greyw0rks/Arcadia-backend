@@ -20,26 +20,29 @@ const IMAGE_BY_ID = new Map((geo as GeoEntry[]).map((g) => [g.id, g.image]));
 const BANK = (landmarks as Landmark[]).filter((l) => IMAGE_BY_ID.has(l.id));
 const TIERS = BANK.map((l) => tierNum(l.tier));
 
-export const landmarkModule = makeChoiceGame(
-  {
-    id: "landmark",
-    title: "Name That Landmark",
-    description: "Identify the world-famous landmark in the photo. Each correct answer is +0.1x.",
-    thumbnail: "🏛️",
-    maxRounds: 5,
-    timeLimitSec: GEO_TIME_LIMIT_SEC,
-    bankSize: BANK.length,
-  },
-  (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
-    const t = e.tier;
-    const imageStyle = t === 'extreme' ? 'extreme' : t === 'hard' ? 'hard' : undefined;
-    return {
-      prompt: "Which landmark is this?",
-      imageUrl: IMAGE_BY_ID.get(e.id),
-      imageStyle,
-      correct: e.landmark,
-      options: [e.landmark, ...e.decoys],
-    };
-  }
-);
+export const landmarkModule = {
+  ...makeChoiceGame(
+    {
+      id: "landmark",
+      title: "Name That Landmark",
+      description: "Identify the world-famous landmark in the photo. Each correct answer is +0.1x.",
+      thumbnail: "🏛️",
+      maxRounds: 5,
+      timeLimitSec: GEO_TIME_LIMIT_SEC,
+      bankSize: BANK.length,
+    },
+    (roundIndex, seed, difficulty) => {
+      const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+      const t = e.tier;
+      const imageStyle = t === 'extreme' ? 'extreme' : t === 'hard' ? 'hard' : undefined;
+      return {
+        prompt: "Which landmark is this?",
+        imageUrl: IMAGE_BY_ID.get(e.id),
+        imageStyle,
+        correct: e.landmark,
+        options: [e.landmark, ...e.decoys],
+      };
+    }
+  ),
+  available: false,
+};

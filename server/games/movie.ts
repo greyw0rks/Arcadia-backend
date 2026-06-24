@@ -11,7 +11,8 @@ interface Movie {
 
 const BANK = movies as Movie[];
 
-export const movieModule = makeChoiceGame(
+export const movieModule = {
+  ...makeChoiceGame(
   {
     id: "movie",
     title: "Movie Stills",
@@ -30,4 +31,6 @@ export const movieModule = makeChoiceGame(
       options: [e.answer, ...e.decoys],
     };
   }
-);
+  ),
+  available: false,
+};
