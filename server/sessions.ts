@@ -27,6 +27,7 @@ export interface Session {
   // Free one-per-wallet trial: no stake, no on-chain tx, no payout. The funding gate and settlement
   // are skipped for these (see /api/round and /api/finalize).
   isDemo: boolean;
+  stake?: number; // gross stake amount in token units (undefined for demo sessions)
   maxRounds: number;
   // Bet-scaled difficulty in [0,1] (0 == min stake, 1 == max stake). Set from the REAL on-chain stake
   // when the first round is served (see /api/round). Until then it's undefined and rounds aren't built.
@@ -72,7 +73,7 @@ export function createSession(
   maxRounds: number,
   chain: ChainId,
   token?: CeloToken,
-  opts?: { isDemo?: boolean; difficulty?: number }
+  opts?: { isDemo?: boolean; difficulty?: number; stake?: number }
 ): Session {
   const id = newSessionId();
   const s: Session = {
@@ -85,6 +86,7 @@ export function createSession(
     // EVM addresses are case-insensitive; Stacks principals are case-sensitive (c32check) — keep as-is.
     player: chain === "celo" ? player.toLowerCase() : player,
     isDemo: opts?.isDemo ?? false,
+    stake: opts?.stake,
     // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.
     difficulty: opts?.difficulty,
     maxRounds,

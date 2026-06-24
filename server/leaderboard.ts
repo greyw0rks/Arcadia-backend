@@ -24,6 +24,7 @@ import {
 } from "../lib/contract";
 import { ARCADE_ABI } from "../lib/abi";
 import { getProfileOverlay } from "./profileStore";
+import { getPlayerHistory } from "./gameHistory";
 
 export type Period = "daily" | "weekly" | "monthly" | "allTime";
 export type Metric = "winnings" | "winRate" | "gamesPlayed" | "highestMultiplier";
@@ -526,13 +527,27 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
   await ensureFresh();
   const key = normalizeAddr(address);
   const p = players.get(key);
-  const games = p?.games ?? [];
+  const onChainGames = p?.games ?? [];
   const stub: PlayerAgg = p ?? {
     address: key,
     chain: chainOf(address),
     unit: unitOf(address),
     games: [],
   };
+
+  // Supplement with server-side game history for sessions not yet indexed on-chain.
+  const historyGames = getPlayerHistory(address);
+  const supplemental: GameRecord[] = historyGames
+    .filter((h) => !seenSettled.has(`${h.chain}:${h.sessionId}`))
+    .map((h) => ({
+      block: 0,
+      stake: h.stake,
+      payout: h.payout,
+      multiplierBp: h.multiplierBp,
+      won: h.won,
+    }));
+  const games = supplemental.length ? [...onChainGames, ...supplemental] : onChainGames;
+
   const s = buildStats(stub, games);
   const overlay = getProfileOverlay(key);
 

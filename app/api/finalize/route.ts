@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSession, finalMultiplierBp } from "../../../server/sessions";
 import { signSettlement } from "../../../server/signer";
+import { recordCompletedGame } from "../../../server/gameHistory";
 
 // POST /api/finalize  { sessionId: "0x.." }
 // Computes the final (clamped) multiplier and returns an EIP-712 signature the client submits to
@@ -40,6 +41,22 @@ export async function POST(req: NextRequest) {
   const multiplierBp = finalMultiplierBp(session);
   const signature = await signSettlement(session.chain, session.id, multiplierBp, session.token);
   session.finalized = true;
+
+  // Record immediately so profile stats are visible before the on-chain event is indexed.
+  if (session.stake != null) {
+    const stake = session.stake;
+    const effectiveStake = stake * 0.97; // mirrors the 3% rake in the contract
+    recordCompletedGame({
+      sessionId: session.id,
+      player: session.player,
+      chain: session.chain,
+      unit: session.chain === "celo" ? "USDm" : "STX",
+      stake,
+      multiplierBp,
+      payout: Math.round((effectiveStake * multiplierBp) / 100) / 100,
+      won: multiplierBp > 10_000,
+    });
+  }
 
   return NextResponse.json({ sessionId: session.id, multiplierBp, signature });
 }

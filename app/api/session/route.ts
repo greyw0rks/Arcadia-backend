@@ -101,7 +101,7 @@ export async function POST(req: NextRequest) {
 
   // Bet-scaled round count (the on-chain stake later confirms/overrides this in /api/round).
   const maxRounds = roundsFor(difficultyFromStake(stake, chain), game.bankSize);
-  const session = createSession(game, player, maxRounds, chain, token);
+  const session = createSession(game, player, maxRounds, chain, token, { stake });
   return NextResponse.json({
     sessionId: session.id,
     maxRounds: session.maxRounds,
