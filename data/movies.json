@@ -63,7 +63,7 @@
       "The Abyss",
       "Deepwater Horizon"
     ],
-    "image": "/movies/titanic.png",
+    "image": "/movies/titanic.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
     "tier": "easy"
   },
@@ -315,7 +315,7 @@
       "Moneyball",
       "Jobs"
     ],
-    "image": "/movies/the_social_network.png",
+    "image": "/movies/the_social_network.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Social_Network_film_poster.png",
     "tier": "easy"
   },
@@ -327,7 +327,7 @@
       "Birdman",
       "Mamma Mia"
     ],
-    "image": "/movies/la_la_land.png",
+    "image": "/movies/la_la_land.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
     "tier": "easy"
   },
@@ -339,7 +339,7 @@
       "Okja",
       "The Handmaiden"
     ],
-    "image": "/movies/parasite.png",
+    "image": "/movies/parasite.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
     "tier": "easy"
   },
@@ -411,7 +411,7 @@
       "Minority Report",
       "Ghost in the Shell"
     ],
-    "image": "/movies/blade_runner.png",
+    "image": "/movies/blade_runner.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
     "tier": "medium"
   },
@@ -435,7 +435,7 @@
       "Judge Dredd",
       "Universal Soldier"
     ],
-    "image": "/movies/terminator.png",
+    "image": "/movies/terminator.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/6d/The_Terminator.png",
     "tier": "medium"
   },
@@ -471,7 +471,7 @@
       "The Last of the Mohicans",
       "Patriot Games"
     ],
-    "image": "/movies/braveheart.png",
+    "image": "/movies/braveheart.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/e/e1/Braveheart_film_poster.png",
     "tier": "medium"
   },
@@ -489,7 +489,7 @@
   },
   {
     "id": "leon",
-    "answer": "Léon: The Professional",
+    "answer": "L\u00e9on: The Professional",
     "decoys": [
       "La Femme Nikita",
       "Columbiana",
@@ -591,7 +591,7 @@
       "Margin Call",
       "American Made"
     ],
-    "image": "/movies/wolf_wall_st.png",
+    "image": "/movies/wolf_wall_st.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
     "tier": "medium"
   },
@@ -639,7 +639,7 @@
       "The Raid",
       "John Wick"
     ],
-    "image": "/movies/kill_bill.png",
+    "image": "/movies/kill_bill.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/2/2c/Kill_Bill_Volume_1.png",
     "tier": "medium"
   },
@@ -663,7 +663,7 @@
       "Adaptation",
       "Being John Malkovich"
     ],
-    "image": "/movies/eternal_sunshine.png",
+    "image": "/movies/eternal_sunshine.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a4/Eternal_Sunshine_of_the_Spotless_Mind.png",
     "tier": "medium"
   },
@@ -675,7 +675,7 @@
       "Princess Mononoke",
       "Howl's Moving Castle"
     ],
-    "image": "/movies/spirited_away.png",
+    "image": "/movies/spirited_away.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png",
     "tier": "medium"
   },
@@ -759,7 +759,7 @@
       "Hereditary",
       "Nope"
     ],
-    "image": "/movies/get_out.png",
+    "image": "/movies/get_out.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
     "tier": "medium"
   },
@@ -783,7 +783,7 @@
       "Beale Street",
       "Waves"
     ],
-    "image": "/movies/moonlight.png",
+    "image": "/movies/moonlight.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png",
     "tier": "medium"
   },
@@ -795,7 +795,7 @@
       "The Help",
       "Hidden Figures"
     ],
-    "image": "/movies/green_book.png",
+    "image": "/movies/green_book.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/5/5b/Green_Book_%282018_poster%29.png",
     "tier": "medium"
   },
@@ -807,7 +807,7 @@
       "Too Big to Fail",
       "The Social Network"
     ],
-    "image": "/movies/big_short.png",
+    "image": "/movies/big_short.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/16/The_Big_Short_%282015_film_poster%29.png",
     "tier": "medium"
   },
@@ -831,7 +831,7 @@
       "La La Land",
       "The Artist"
     ],
-    "image": "/movies/birdman.png",
+    "image": "/movies/birdman.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/63/Birdman_poster.png",
     "tier": "medium"
   },
@@ -855,7 +855,7 @@
       "Pan's Labyrinth",
       "Splice"
     ],
-    "image": "/movies/shape_water.png",
+    "image": "/movies/shape_water.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/3/37/The_Shape_of_Water_%28film%29.png",
     "tier": "medium"
   },
@@ -867,7 +867,7 @@
       "The Witch",
       "Suspiria"
     ],
-    "image": "/movies/hereditary.png",
+    "image": "/movies/hereditary.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary.png",
     "tier": "medium"
   },
@@ -879,7 +879,7 @@
       "The Wicker Man",
       "Annihilation"
     ],
-    "image": "/movies/midsommar.png",
+    "image": "/movies/midsommar.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/47/Midsommar_%282019_film_poster%29.png",
     "tier": "medium"
   },
@@ -951,7 +951,7 @@
       "Contact",
       "Solaris"
     ],
-    "image": "/movies/2001.png",
+    "image": "/movies/2001.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png",
     "tier": "hard"
   },
@@ -1047,7 +1047,7 @@
       "Goodfellas",
       "Scarface"
     ],
-    "image": "/movies/once_upon_time_amer.png",
+    "image": "/movies/once_upon_time_amer.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/c2/Once_Upon_a_Time_in_America.png",
     "tier": "hard"
   },
@@ -1059,7 +1059,7 @@
       "Lost Highway",
       "Twin Peaks Fire Walk with Me"
     ],
-    "image": "/movies/mulholland_dr.png",
+    "image": "/movies/mulholland_dr.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/0f/Mulholland.png",
     "tier": "hard"
   },
@@ -1127,7 +1127,7 @@
     "id": "cinema_paradiso",
     "answer": "Cinema Paradiso",
     "decoys": [
-      "8½",
+      "8\u00bd",
       "Amarcord",
       "Nuovo Cinema Paradiso"
     ],
@@ -1155,13 +1155,13 @@
       "Poetry",
       "Mother"
     ],
-    "image": "/movies/handmaiden.png",
+    "image": "/movies/handmaiden.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a2/The_Handmaiden_film.png",
     "tier": "hard"
   },
   {
     "id": "cleo5to7",
-    "answer": "Cléo from 5 to 7",
+    "answer": "Cl\u00e9o from 5 to 7",
     "decoys": [
       "Hiroshima Mon Amour",
       "Jules and Jim",
@@ -1223,11 +1223,11 @@
     "id": "princess_mononoke",
     "answer": "Princess Mononoke",
     "decoys": [
-      "Nausicaä",
+      "Nausica\u00e4",
       "Howl's Moving Castle",
       "The Tale of Princess Kaguya"
     ],
-    "image": "/movies/princess_mononoke.png",
+    "image": "/movies/princess_mononoke.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8c/Princess_Mononoke_Japanese_poster.png",
     "tier": "hard"
   },
@@ -1287,7 +1287,7 @@
       "Licorice Pizza",
       "The Nice Guys"
     ],
-    "image": "/movies/once_hollywood.png",
+    "image": "/movies/once_hollywood.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png",
     "tier": "medium"
   },
@@ -1407,7 +1407,7 @@
       "Nope",
       "The Purge"
     ],
-    "image": "/movies/us_film.png",
+    "image": "/movies/us_film.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/00/Us_%282019%29_theatrical_poster.png",
     "tier": "medium"
   },
@@ -1455,7 +1455,7 @@
       "Total Recall",
       "Ghost in the Shell"
     ],
-    "image": "/movies/blade_runner_2049.png",
+    "image": "/movies/blade_runner_2049.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
     "tier": "medium"
   },
@@ -1467,7 +1467,7 @@
       "Ex Machina",
       "Midsommar"
     ],
-    "image": "/movies/annihilation.png",
+    "image": "/movies/annihilation.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png",
     "tier": "hard"
   },
@@ -1647,7 +1647,7 @@
       "Midsommar",
       "The Blackcoat's Daughter"
     ],
-    "image": "/movies/witch_2015.png",
+    "image": "/movies/witch_2015.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/b/bf/The_Witch_poster.png",
     "tier": "hard"
   },
@@ -1755,7 +1755,7 @@
       "Pineapple Express",
       "The Hangover"
     ],
-    "image": "/movies/superbad.png",
+    "image": "/movies/superbad.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8b/Superbad_Poster.png",
     "tier": "medium"
   },
@@ -1779,7 +1779,7 @@
       "10 Things I Hate About You",
       "Easy A"
     ],
-    "image": "/movies/mean_girls.png",
+    "image": "/movies/mean_girls.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/ac/Mean_Girls_film_poster.png",
     "tier": "easy"
   },
@@ -1839,7 +1839,7 @@
       "Turing",
       "The Theory of Everything"
     ],
-    "image": "/movies/imitation_game.png",
+    "image": "/movies/imitation_game.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/87/The_Imitation_Game_%282014%29.png",
     "tier": "medium"
   },
@@ -1863,7 +1863,7 @@
       "Mona Lisa Smile",
       "School of Rock"
     ],
-    "image": "/movies/dead_poets.png",
+    "image": "/movies/dead_poets.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/86/Dead_poets_society.png",
     "tier": "medium"
   },
@@ -2039,7 +2039,7 @@
     "id": "castle_sky",
     "answer": "Castle in the Sky",
     "decoys": [
-      "Nausicaä",
+      "Nausica\u00e4",
       "Howl's Moving Castle",
       "The Wind Rises"
     ],
@@ -2049,7 +2049,7 @@
   },
   {
     "id": "nausicaa",
-    "answer": "Nausicaä of the Valley of the Wind",
+    "answer": "Nausica\u00e4 of the Valley of the Wind",
     "decoys": [
       "Princess Mononoke",
       "Castle in the Sky",
@@ -2111,7 +2111,7 @@
     "id": "amarcord",
     "answer": "Amarcord",
     "decoys": [
-      "8½",
+      "8\u00bd",
       "Rome",
       "Fellini Satyricon"
     ],
@@ -2121,7 +2121,7 @@
   },
   {
     "id": "eight_half",
-    "answer": "8½",
+    "answer": "8\u00bd",
     "decoys": [
       "Amarcord",
       "Roma",
@@ -2163,7 +2163,7 @@
       "Lost Highway",
       "Mulholland Drive"
     ],
-    "image": "/movies/blue_velvet.png",
+    "image": "/movies/blue_velvet.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/f/fd/Blue_Velvet_%281986%29.png",
     "tier": "extreme"
   },
