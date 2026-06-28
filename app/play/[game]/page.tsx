@@ -63,6 +63,7 @@ export default function PlayPage() {
   const [secsLeft, setSecsLeft] = useState(0);
   const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
+  const [imgRetry, setImgRetry] = useState(0);
 
   const IMAGE_GAMES = new Set(["geo", "landmark", "logo", "movie"]);
 
@@ -169,6 +170,7 @@ export default function PlayPage() {
       setSecsLeft(d.round.timeLimitSec);
       setImgLoaded(false);
       setImgError(false);
+      setImgRetry(0);
       answeringRef.current = false;
       return;
     }
@@ -410,17 +412,29 @@ export default function PlayPage() {
                   background: "var(--bg-alt)",
                   border: "8px solid var(--border)",
                   margin: "20px 0 28px",
-                  gap: 8,
+                  gap: 12,
                 }}>
                   <span style={{ fontSize: 28 }}>🖼️</span>
                   <span style={{ fontSize: 13, color: "var(--muted)", textAlign: "center", maxWidth: 240 }}>
-                    Image failed to load. Use the context clues and make your best guess!
+                    Image failed to load.
                   </span>
+                  <button
+                    className="btn"
+                    style={{ fontSize: 13, padding: "8px 18px" }}
+                    onClick={() => {
+                      setImgError(false);
+                      setImgLoaded(false);
+                      setImgRetry((n) => n + 1);
+                      if (round) setSecsLeft(round.timeLimitSec);
+                    }}
+                  >
+                    ↺ Reload image
+                  </button>
                 </div>
               )}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={round.imageUrl}
+                src={imgRetry > 0 ? `${round.imageUrl}?r=${imgRetry}` : round.imageUrl}
                 alt="Guess the answer"
                 className="game-image"
                 style={{
