@@ -4163,5 +4163,515 @@
     "s": "In global coordination games with strategic complementarities, equilibrium selection depends on the precision of private information.",
     "a": true,
     "tier": "extreme"
+  },
+  {
+    "s": "The Sun is a star.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Great Wall of China is visible from space with the naked eye.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Humans have 206 bones.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A group of lions is called a pride.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Eiffel Tower is in Berlin, Germany.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Water boils at 100°C at sea level.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Pacific Ocean is larger than all continents combined.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Dolphins are fish.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Mount Everest is the tallest mountain on Earth.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Antarctica is the largest continent.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Amazon is the longest river in the world.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Bats are blind.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Lightning never strikes the same place twice.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The capital of Australia is Sydney.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Spiders have eight legs.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Sahara is the largest desert in the world.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Humans share about 98% of their DNA with chimpanzees.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Sound travels faster than light.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The moon has its own light.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "A year on Mercury is shorter than a day on Mercury.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Venus is the hottest planet in our solar system.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The chemical symbol for gold is Au.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Penguins live in the Arctic.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The human brain uses about 20% of the body's energy.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "All planets in our solar system rotate in the same direction.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Ostriches bury their heads in the sand.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Great Barrier Reef is in Australia.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Diamonds are made of carbon.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A day on Venus is longer than a year on Venus.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Sharks are mammals.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Amazon Rainforest produces about 20% of the world's oxygen.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "There are 7 continents on Earth.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Titanic sank in 1912.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Napoleon Bonaparte was French by birth.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The human body has 4 lungs.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Light travels at approximately 300,000 km per second.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Berlin Wall fell in 1989.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Mount Fuji is in Japan.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A crocodile is a type of lizard.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The first man on the Moon was Neil Armstrong.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Oxygen makes up the majority of Earth's atmosphere.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "A group of wolves is called a pack.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Mona Lisa was painted by Leonardo da Vinci.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Goldfish have a 3-second memory.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Sun is at the center of our solar system.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Elephants can't jump.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The human heart has 4 chambers.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Brazil is the largest country in South America.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Snakes have eyelids.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The capital of Canada is Toronto.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Colosseum is in Greece.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Pluto is still classified as a planet by the IAU.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "An octopus has 8 arms.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The first iPhone was released in 2007.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Nile River is in South America.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Bamboo is the world's fastest-growing plant.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Russia is the largest country in the world by area.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A panda bear is classified as a carnivore.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The human body has more bacteria than human cells.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Albert Einstein failed mathematics at school.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The speed of light is faster than the speed of sound.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Humans and gorillas share a common ancestor.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Iceland is covered mostly in ice.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Greenland is covered mostly in ice.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Camels store water in their humps.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Great Wall of China stretches over 21,000 km.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "All stars are white.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Honey never expires.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The human eye can distinguish about 10 million colors.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Butterflies taste with their feet.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Worms have eyes.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The brain is the largest organ in the human body.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Pacific Ocean is the deepest ocean.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A decade has 10 years.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Saturn has rings.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "There are 26 letters in the English alphabet.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Fish can drown.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Oxygen is produced by trees.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Statue of Liberty is in New York City.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A group of fish is called a school.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Vatican City is the smallest country in the world.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Cats have 9 lives.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Whales are fish.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "The Earth is the third planet from the Sun.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Thunder causes lightning.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Every snowflake is unique.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Australia is both a country and a continent.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The shortest day of the year in the Northern Hemisphere is the summer solstice.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Mount Kilimanjaro is in Africa.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A baby kangaroo is called a joey.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Dead Sea is below sea level.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Tomatoes are technically a fruit.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "There are more stars in the universe than grains of sand on Earth's beaches.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Sahara Desert is the world's hottest desert.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "DNA stands for Deoxyribonucleic Acid.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The human body has 5 senses.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "Chocolate is toxic to dogs.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The Moon is smaller than Earth.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "A group of geese on land is called a gaggle.",
+    "a": true,
+    "tier": "easy"
+  },
+  {
+    "s": "The color of the sky is caused by nitrogen absorbing blue light.",
+    "a": false,
+    "tier": "easy"
+  },
+  {
+    "s": "Bears hibernate every winter.",
+    "a": false,
+    "tier": "easy"
   }
 ]

@@ -13297,5 +13297,2106 @@
     ],
     "answer": 1,
     "tier": "hard"
+  },
+  {
+    "q": "What is the capital of Argentina?",
+    "options": [
+      "Buenos Aires",
+      "São Paulo",
+      "Santiago",
+      "Lima"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which element has the symbol Na?",
+    "options": [
+      "Sodium",
+      "Nickel",
+      "Nitrogen",
+      "Neon"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which empire built Machu Picchu?",
+    "options": [
+      "Inca",
+      "Aztec",
+      "Maya",
+      "Olmec"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the largest internal organ in the human body?",
+    "options": [
+      "Liver",
+      "Heart",
+      "Lungs",
+      "Stomach"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who proposed the theory of relativity?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Stephen Hawking"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the longest bone in the human body?",
+    "options": [
+      "Femur",
+      "Tibia",
+      "Humerus",
+      "Radius"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country has the most official languages?",
+    "options": [
+      "South Africa",
+      "India",
+      "Switzerland",
+      "Bolivia"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the deepest ocean trench?",
+    "options": [
+      "Mariana Trench",
+      "Tonga Trench",
+      "Philippine Trench",
+      "Kuril-Kamchatka Trench"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which layer of Earth is directly beneath the crust?",
+    "options": [
+      "Mantle",
+      "Outer core",
+      "Inner core",
+      "Lithosphere"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What primarily causes tides on Earth?",
+    "options": [
+      "Moon's gravity",
+      "Sun's heat",
+      "Earth's rotation",
+      "Ocean currents"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which civilization built the Colosseum?",
+    "options": [
+      "Roman",
+      "Greek",
+      "Byzantine",
+      "Etruscan"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the world's largest coral reef system?",
+    "options": [
+      "Great Barrier Reef",
+      "Belize Barrier Reef",
+      "Mesoamerican Reef",
+      "Red Sea Coral Reef"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country has the most time zones?",
+    "options": [
+      "France",
+      "Russia",
+      "USA",
+      "China"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which is the largest hot desert in the world?",
+    "options": [
+      "Sahara",
+      "Arabian",
+      "Gobi",
+      "Kalahari"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who discovered penicillin?",
+    "options": [
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Robert Koch",
+      "Joseph Lister"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the rarest major blood type?",
+    "options": [
+      "AB negative",
+      "O negative",
+      "A negative",
+      "B negative"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which planet rotates on its side?",
+    "options": [
+      "Uranus",
+      "Neptune",
+      "Saturn",
+      "Venus"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of New Zealand?",
+    "options": [
+      "Wellington",
+      "Auckland",
+      "Christchurch",
+      "Hamilton"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country uses the Japanese yen?",
+    "options": [
+      "Japan",
+      "China",
+      "South Korea",
+      "Vietnam"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who wrote The Odyssey?",
+    "options": [
+      "Homer",
+      "Virgil",
+      "Sophocles",
+      "Euripides"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the largest organ of the human body?",
+    "options": [
+      "Skin",
+      "Liver",
+      "Lungs",
+      "Intestines"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which gas is most abundant in Earth's atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the study of weather called?",
+    "options": [
+      "Meteorology",
+      "Climatology",
+      "Oceanography",
+      "Geology"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which sea separates Europe and Africa?",
+    "options": [
+      "Mediterranean Sea",
+      "Red Sea",
+      "Arabian Sea",
+      "Black Sea"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the world's oldest commonly recognized university?",
+    "options": [
+      "University of Bologna",
+      "University of Oxford",
+      "Al-Qarawiyyin",
+      "Harvard University"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who developed the polio vaccine?",
+    "options": [
+      "Jonas Salk",
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Edward Jenner"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country is located on both European and Asian continents?",
+    "options": [
+      "Russia",
+      "Turkey",
+      "Georgia",
+      "Azerbaijan"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the smallest country in the world?",
+    "options": [
+      "Vatican City",
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which ocean surrounds the Maldives?",
+    "options": [
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Arabian Sea"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What does DNA stand for?",
+    "options": [
+      "Deoxyribonucleic acid",
+      "Deoxyribose nucleic acid",
+      "Dinucleotide acid",
+      "Dimethyl nucleic acid"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which continent has the most countries?",
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who was the first female Nobel Prize winner?",
+    "options": [
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Jane Goodall",
+      "Rita Levi-Montalcini"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country invented paper?",
+    "options": [
+      "China",
+      "Egypt",
+      "Mesopotamia",
+      "India"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the largest volcano on Earth?",
+    "options": [
+      "Mauna Loa",
+      "Mount Etna",
+      "Kilimanjaro",
+      "Mount Fuji"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which city hosted the first modern Olympic Games?",
+    "options": [
+      "Athens",
+      "Paris",
+      "London",
+      "Stockholm"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the approximate speed of sound at sea level?",
+    "options": [
+      "343 m/s",
+      "299 m/s",
+      "500 m/s",
+      "1,225 m/s"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country has the maple leaf on its flag?",
+    "options": [
+      "Canada",
+      "Australia",
+      "New Zealand",
+      "Ireland"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Kenya?",
+    "options": [
+      "Nairobi",
+      "Mombasa",
+      "Kisumu",
+      "Nakuru"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which language has the most native speakers?",
+    "options": [
+      "Mandarin Chinese",
+      "Spanish",
+      "English",
+      "Hindi"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which metal is most commonly used in electrical wiring?",
+    "options": [
+      "Copper",
+      "Aluminium",
+      "Silver",
+      "Gold"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is photosynthesis?",
+    "options": [
+      "The process plants use to convert light into food",
+      "The process animals use to digest food",
+      "The process cells use to produce energy",
+      "The process rocks use to change form"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who painted The Last Supper?",
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Botticelli"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country is home to the ancient city of Petra?",
+    "options": [
+      "Jordan",
+      "Israel",
+      "Egypt",
+      "Syria"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the world's largest freshwater lake by volume?",
+    "options": [
+      "Lake Baikal",
+      "Lake Superior",
+      "Caspian Sea",
+      "Lake Huron"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which planet is closest to the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the main function of red blood cells?",
+    "options": [
+      "Transport oxygen",
+      "Fight infection",
+      "Clot blood",
+      "Produce hormones"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Who invented the World Wide Web?",
+    "options": [
+      "Tim Berners-Lee",
+      "Vint Cerf",
+      "Bill Gates",
+      "Steve Jobs"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country has the largest rainforest?",
+    "options": [
+      "Brazil",
+      "Congo",
+      "Indonesia",
+      "Peru"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of South Korea?",
+    "options": [
+      "Seoul",
+      "Busan",
+      "Incheon",
+      "Daegu"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the Richter scale used to measure?",
+    "options": [
+      "Earthquake magnitude",
+      "Wind speed",
+      "Ocean depth",
+      "Air pressure"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Bhutan?",
+    "options": [
+      "Thimphu",
+      "Paro",
+      "Punakha",
+      "Wangdue"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who formulated the uncertainty principle?",
+    "options": [
+      "Werner Heisenberg",
+      "Niels Bohr",
+      "Max Planck",
+      "Erwin Schrödinger"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the main function of mitochondria?",
+    "options": [
+      "Produce ATP (energy)",
+      "Synthesize proteins",
+      "Store DNA",
+      "Digest waste"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which treaty ended World War I?",
+    "options": [
+      "Treaty of Versailles",
+      "Treaty of Paris",
+      "Treaty of Utrecht",
+      "Treaty of Westphalia"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the rarest naturally occurring element?",
+    "options": [
+      "Astatine",
+      "Francium",
+      "Promethium",
+      "Technetium"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country has the world's oldest continuous monarchy?",
+    "options": [
+      "Japan",
+      "Sweden",
+      "Denmark",
+      "United Kingdom"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest moon of Saturn?",
+    "options": [
+      "Titan",
+      "Enceladus",
+      "Rhea",
+      "Dione"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which scientist discovered radioactivity?",
+    "options": [
+      "Henri Becquerel",
+      "Marie Curie",
+      "Ernest Rutherford",
+      "Enrico Fermi"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the Drake Passage?",
+    "options": [
+      "The sea route between South America and Antarctica",
+      "The strait between Alaska and Russia",
+      "The passage between Madagascar and Africa",
+      "The channel between France and England"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which ancient civilization created cuneiform writing?",
+    "options": [
+      "Sumerians",
+      "Egyptians",
+      "Phoenicians",
+      "Babylonians"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the capital of Kazakhstan?",
+    "options": [
+      "Astana",
+      "Almaty",
+      "Shymkent",
+      "Karaganda"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the heaviest naturally occurring element?",
+    "options": [
+      "Uranium",
+      "Lead",
+      "Osmium",
+      "Gold"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who wrote The Prince?",
+    "options": [
+      "Niccolò Machiavelli",
+      "Thomas Hobbes",
+      "John Locke",
+      "Dante Alighieri"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the deepest lake in the world?",
+    "options": [
+      "Lake Baikal",
+      "Caspian Sea",
+      "Lake Tanganyika",
+      "Lake Superior"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the study of fungi called?",
+    "options": [
+      "Mycology",
+      "Botany",
+      "Microbiology",
+      "Parasitology"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which battle marked Napoleon's final defeat?",
+    "options": [
+      "Battle of Waterloo",
+      "Battle of Leipzig",
+      "Battle of Borodino",
+      "Battle of Austerlitz"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the smallest unit of life?",
+    "options": [
+      "Cell",
+      "Atom",
+      "Molecule",
+      "Organelle"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which river flows through Budapest?",
+    "options": [
+      "Danube",
+      "Rhine",
+      "Elbe",
+      "Oder"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who discovered the neutron?",
+    "options": [
+      "James Chadwick",
+      "J.J. Thomson",
+      "Ernest Rutherford",
+      "Enrico Fermi"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country first granted women the right to vote nationally?",
+    "options": [
+      "New Zealand",
+      "Australia",
+      "Finland",
+      "United Kingdom"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the capital of Mongolia?",
+    "options": [
+      "Ulaanbaatar",
+      "Darkhan",
+      "Erdenet",
+      "Khovd"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who invented the printing press?",
+    "options": [
+      "Johannes Gutenberg",
+      "William Caxton",
+      "Bi Sheng",
+      "Johann Fust"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the world's busiest shipping canal?",
+    "options": [
+      "Suez Canal",
+      "Panama Canal",
+      "Kiel Canal",
+      "Corinth Canal"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which dynasty built most of the Great Wall of China?",
+    "options": [
+      "Ming Dynasty",
+      "Qin Dynasty",
+      "Han Dynasty",
+      "Tang Dynasty"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the capital of Slovenia?",
+    "options": [
+      "Ljubljana",
+      "Maribor",
+      "Celje",
+      "Kranj"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which blood cells fight infection?",
+    "options": [
+      "White blood cells (leukocytes)",
+      "Red blood cells",
+      "Platelets",
+      "Plasma cells"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the oldest known written legal code?",
+    "options": [
+      "Code of Ur-Nammu",
+      "Code of Hammurabi",
+      "Twelve Tables",
+      "Corpus Juris Civilis"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which explorer first reached India by sea around Africa?",
+    "options": [
+      "Vasco da Gama",
+      "Bartolomeu Dias",
+      "Christopher Columbus",
+      "Ferdinand Magellan"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the SI unit of electric current?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country has the most active volcanoes?",
+    "options": [
+      "Indonesia",
+      "Japan",
+      "USA",
+      "Philippines"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the world's largest archipelago?",
+    "options": [
+      "Indonesia",
+      "Philippines",
+      "Japan",
+      "Greece"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who discovered X-rays?",
+    "options": [
+      "Wilhelm Röntgen",
+      "Marie Curie",
+      "Henri Becquerel",
+      "Thomas Edison"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which city is known as the Eternal City?",
+    "options": [
+      "Rome",
+      "Athens",
+      "Jerusalem",
+      "Cairo"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country contains the highest waterfall in the world?",
+    "options": [
+      "Venezuela",
+      "Norway",
+      "Colombia",
+      "Ecuador"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who developed the first practical steam engine?",
+    "options": [
+      "James Watt",
+      "Thomas Newcomen",
+      "George Stephenson",
+      "Richard Trevithick"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest gland in the human body?",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Thyroid",
+      "Adrenal gland"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which sea is the saltiest major sea?",
+    "options": [
+      "Red Sea",
+      "Dead Sea",
+      "Mediterranean Sea",
+      "Caspian Sea"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who was the first Secretary-General of the United Nations?",
+    "options": [
+      "Trygve Lie",
+      "Dag Hammarskjöld",
+      "U Thant",
+      "Kurt Waldheim"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the capital of Estonia?",
+    "options": [
+      "Tallinn",
+      "Tartu",
+      "Narva",
+      "Pärnu"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which mountain range separates Europe from Asia?",
+    "options": [
+      "Ural Mountains",
+      "Caucasus Mountains",
+      "Carpathians",
+      "Alps"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the branch of biology that studies insects?",
+    "options": [
+      "Entomology",
+      "Zoology",
+      "Lepidopterology",
+      "Arachnology"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who discovered the circulation of blood?",
+    "options": [
+      "William Harvey",
+      "Andreas Vesalius",
+      "Galen",
+      "Hippocrates"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country is home to Timbuktu?",
+    "options": [
+      "Mali",
+      "Niger",
+      "Mauritania",
+      "Senegal"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the oldest continuously inhabited city often cited?",
+    "options": [
+      "Damascus",
+      "Jericho",
+      "Byblos",
+      "Plovdiv"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the study of stars called?",
+    "options": [
+      "Stellar astronomy",
+      "Astrophysics",
+      "Cosmology",
+      "Astrometry"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which empire was ruled by Cyrus the Great?",
+    "options": [
+      "Achaemenid (Persian) Empire",
+      "Assyrian Empire",
+      "Babylonian Empire",
+      "Median Empire"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the oldest known star catalog?",
+    "options": [
+      "Babylonian MUL.APIN",
+      "Hipparchus Catalogue",
+      "Almagest",
+      "Tycho Brahe Catalogue"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which mathematician developed lambda calculus?",
+    "options": [
+      "Alonzo Church",
+      "Alan Turing",
+      "Kurt Gödel",
+      "John von Neumann"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the name of the boundary surrounding a black hole?",
+    "options": [
+      "Event horizon",
+      "Schwarzschild radius",
+      "Photon sphere",
+      "Singularity"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who deciphered Linear B?",
+    "options": [
+      "Michael Ventris",
+      "Arthur Evans",
+      "Jean-François Champollion",
+      "Alice Kober"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which isotope is commonly used in radiocarbon dating?",
+    "options": [
+      "Carbon-14",
+      "Carbon-12",
+      "Uranium-235",
+      "Potassium-40"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the capital of Tuvalu?",
+    "options": [
+      "Funafuti",
+      "Tarawa",
+      "Apia",
+      "Nuku'alofa"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What was the most famous ancient library?",
+    "options": [
+      "Library of Alexandria",
+      "Library of Pergamum",
+      "Library of Nineveh",
+      "Library of Carthage"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is Gödel best known for proving?",
+    "options": [
+      "Incompleteness theorems",
+      "Completeness theorem",
+      "Halting problem",
+      "Continuum hypothesis"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which particle mediates the strong nuclear force?",
+    "options": [
+      "Gluon",
+      "Photon",
+      "W boson",
+      "Z boson"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who co-wrote Principia Mathematica with Bertrand Russell?",
+    "options": [
+      "Alfred North Whitehead",
+      "Ludwig Wittgenstein",
+      "Gottlob Frege",
+      "George Boole"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the deepest point in Earth's oceans?",
+    "options": [
+      "Challenger Deep",
+      "Puerto Rico Trench",
+      "Java Trench",
+      "Philippine Trench"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which civilization built Nan Madol?",
+    "options": [
+      "Saudeleur dynasty (Micronesia)",
+      "Polynesian settlers",
+      "Melanesian tribes",
+      "Spanish colonists"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the study of ancient pollen called?",
+    "options": [
+      "Palynology",
+      "Paleobotany",
+      "Archaeology",
+      "Dendrochronology"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which emperor legalized Christianity in the Roman Empire?",
+    "options": [
+      "Constantine I",
+      "Theodosius I",
+      "Diocletian",
+      "Julian the Apostate"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the oldest surviving epic poem?",
+    "options": [
+      "Epic of Gilgamesh",
+      "Iliad",
+      "Ramayana",
+      "Mahabharata"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the Chandrasekhar limit related to?",
+    "options": [
+      "Maximum mass of a white dwarf star",
+      "Minimum mass for neutron star",
+      "Critical mass for black hole",
+      "Energy output of a supernova"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who first proposed continental drift?",
+    "options": [
+      "Alfred Wegener",
+      "Charles Darwin",
+      "Charles Lyell",
+      "Alexander von Humboldt"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the capital of Palau?",
+    "options": [
+      "Ngerulmud",
+      "Koror",
+      "Melekeok",
+      "Airai"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which element has the highest melting point?",
+    "options": [
+      "Tungsten",
+      "Rhenium",
+      "Osmium",
+      "Carbon"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What was the name of the first artificial satellite?",
+    "options": [
+      "Sputnik 1",
+      "Explorer 1",
+      "Vanguard 1",
+      "Luna 1"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who discovered pulsars?",
+    "options": [
+      "Jocelyn Bell Burnell",
+      "Frank Drake",
+      "Carl Sagan",
+      "Vera Rubin"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the world's largest known impact crater?",
+    "options": [
+      "Vredefort Crater",
+      "Sudbury Basin",
+      "Chicxulub Crater",
+      "Manicouagan Crater"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which ancient civilization created the Antikythera Mechanism?",
+    "options": [
+      "Ancient Greeks",
+      "Romans",
+      "Egyptians",
+      "Babylonians"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the study of lichens called?",
+    "options": [
+      "Lichenology",
+      "Mycology",
+      "Botany",
+      "Bryology"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who discovered the expansion of the universe?",
+    "options": [
+      "Edwin Hubble",
+      "Albert Einstein",
+      "Georges Lemaître",
+      "Henrietta Leavitt"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which sea has no coastline?",
+    "options": [
+      "Sargasso Sea",
+      "Caspian Sea",
+      "Aral Sea",
+      "Dead Sea"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the capital of Vanuatu?",
+    "options": [
+      "Port Vila",
+      "Luganville",
+      "Santo",
+      "Lakatoro"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who discovered the molecular structure of benzene?",
+    "options": [
+      "August Kekulé",
+      "Louis Pasteur",
+      "Dmitri Mendeleev",
+      "Antoine Lavoisier"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which pharaoh is most associated with the Great Sphinx?",
+    "options": [
+      "Khafre",
+      "Khufu",
+      "Menkaure",
+      "Sneferu"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is Jupiter's largest moon?",
+    "options": [
+      "Ganymede",
+      "Io",
+      "Europa",
+      "Callisto"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who introduced the periodic law for elements?",
+    "options": [
+      "Dmitri Mendeleev",
+      "John Newlands",
+      "Lothar Meyer",
+      "Henry Moseley"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the oldest continuously operating parliament?",
+    "options": [
+      "Althing (Iceland)",
+      "Tynwald (Isle of Man)",
+      "UK Parliament",
+      "Swiss Federal Assembly"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who completed the first circumnavigation of the globe?",
+    "options": [
+      "Juan Sebastián Elcano",
+      "Ferdinand Magellan",
+      "Francis Drake",
+      "Vasco da Gama"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the largest ice sheet on Earth?",
+    "options": [
+      "Antarctic Ice Sheet",
+      "Greenland Ice Sheet",
+      "Arctic Ice Sheet",
+      "Patagonian Ice Sheet"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who identified cholera transmission through contaminated water?",
+    "options": [
+      "John Snow",
+      "Louis Pasteur",
+      "Robert Koch",
+      "Joseph Lister"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which civilization built Persepolis?",
+    "options": [
+      "Achaemenid Persians",
+      "Parthians",
+      "Sassanids",
+      "Seleucids"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the capital of Kiribati?",
+    "options": [
+      "South Tarawa",
+      "Tarawa",
+      "Betio",
+      "Bikenibeu"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which Nobel Prize category was added last?",
+    "options": [
+      "Economics",
+      "Peace",
+      "Literature",
+      "Medicine"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the name of the closest known galaxy to the Milky Way?",
+    "options": [
+      "Canis Major Dwarf",
+      "Sagittarius Dwarf",
+      "Large Magellanic Cloud",
+      "Andromeda"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who discovered the electron?",
+    "options": [
+      "J.J. Thomson",
+      "Ernest Rutherford",
+      "Niels Bohr",
+      "Max Planck"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the rarest blood group in the world?",
+    "options": [
+      "Rh-null",
+      "AB negative",
+      "B negative",
+      "A negative"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which empire constructed Angkor Wat?",
+    "options": [
+      "Khmer Empire",
+      "Majapahit Empire",
+      "Srivijaya Empire",
+      "Cham Kingdom"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who first classified living organisms into a scientific system?",
+    "options": [
+      "Carl Linnaeus",
+      "Charles Darwin",
+      "Aristotle",
+      "John Ray"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the scientific study of coins called?",
+    "options": [
+      "Numismatics",
+      "Philately",
+      "Sphragistics",
+      "Heraldry"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "How many continents are there on Earth?",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of France?",
+    "options": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Bordeaux"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which is the largest planet in our solar system?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Neptune",
+      "Uranus"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the chemical symbol for water?",
+    "options": [
+      "H₂O",
+      "CO₂",
+      "NaCl",
+      "O₂"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many sides does a hexagon have?",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Australia?",
+    "options": [
+      "Canberra",
+      "Sydney",
+      "Melbourne",
+      "Brisbane"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which ocean is the largest?",
+    "options": [
+      "Pacific",
+      "Atlantic",
+      "Indian",
+      "Arctic"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the boiling point of water at sea level?",
+    "options": [
+      "100°C",
+      "90°C",
+      "120°C",
+      "80°C"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many bones are in the adult human body?",
+    "options": [
+      "206",
+      "208",
+      "210",
+      "204"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which is the tallest mountain in the world?",
+    "options": [
+      "Mount Everest",
+      "K2",
+      "Kangchenjunga",
+      "Lhotse"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Japan?",
+    "options": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Hiroshima"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the national language of Brazil?",
+    "options": [
+      "Portuguese",
+      "Spanish",
+      "English",
+      "French"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which animal is the largest on Earth?",
+    "options": [
+      "Blue whale",
+      "Elephant",
+      "Giraffe",
+      "Sperm whale"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many planets are in our solar system?",
+    "options": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Germany?",
+    "options": [
+      "Berlin",
+      "Munich",
+      "Frankfurt",
+      "Hamburg"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country is home to the Amazon River?",
+    "options": [
+      "Brazil",
+      "Peru",
+      "Colombia",
+      "Venezuela"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What colour is the sky on a clear day?",
+    "options": [
+      "Blue",
+      "Green",
+      "Yellow",
+      "Purple"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many hours are in a day?",
+    "options": [
+      "24",
+      "12",
+      "48",
+      "36"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is 7 × 8?",
+    "options": [
+      "56",
+      "54",
+      "58",
+      "48"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which gas do plants absorb during photosynthesis?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Italy?",
+    "options": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many legs does a spider have?",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "4"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the chemical symbol for gold?",
+    "options": [
+      "Au",
+      "Go",
+      "Gd",
+      "Ag"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country is the largest by area?",
+    "options": [
+      "Russia",
+      "Canada",
+      "USA",
+      "China"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Canada?",
+    "options": [
+      "Ottawa",
+      "Toronto",
+      "Vancouver",
+      "Montreal"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many sides does a triangle have?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Spain?",
+    "options": [
+      "Madrid",
+      "Barcelona",
+      "Valencia",
+      "Seville"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which continent is Egypt in?",
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "Middle East"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the chemical symbol for oxygen?",
+    "options": [
+      "O",
+      "Ox",
+      "Om",
+      "Og"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which direction does the sun rise from?",
+    "options": [
+      "East",
+      "West",
+      "North",
+      "South"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Brazil?",
+    "options": [
+      "Brasília",
+      "São Paulo",
+      "Rio de Janeiro",
+      "Salvador"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many days are in a leap year?",
+    "options": [
+      "366",
+      "365",
+      "367",
+      "364"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the human body's largest muscle?",
+    "options": [
+      "Gluteus maximus",
+      "Quadriceps",
+      "Hamstrings",
+      "Latissimus dorsi"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which planet is known as the Red Planet?",
+    "options": [
+      "Mars",
+      "Jupiter",
+      "Saturn",
+      "Venus"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of China?",
+    "options": [
+      "Beijing",
+      "Shanghai",
+      "Hong Kong",
+      "Nanjing"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many chambers does the human heart have?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Mexico?",
+    "options": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which is the smallest planet in our solar system?",
+    "options": [
+      "Mercury",
+      "Mars",
+      "Venus",
+      "Pluto"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What colour is chlorophyll?",
+    "options": [
+      "Green",
+      "Yellow",
+      "Brown",
+      "Red"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of the United States?",
+    "options": [
+      "Washington D.C.",
+      "New York",
+      "Los Angeles",
+      "Chicago"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many teeth does an adult human have?",
+    "options": [
+      "32",
+      "28",
+      "30",
+      "36"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which country invented the telephone?",
+    "options": [
+      "USA (Alexander Graham Bell)",
+      "UK",
+      "Germany",
+      "France"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of India?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many minutes are in an hour?",
+    "options": [
+      "60",
+      "50",
+      "100",
+      "30"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which is the longest river in the world?",
+    "options": [
+      "Nile",
+      "Amazon",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of Russia?",
+    "options": [
+      "Moscow",
+      "St. Petersburg",
+      "Kiev",
+      "Minsk"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "How many zeros are in one million?",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the capital of South Africa?",
+    "options": [
+      "Pretoria",
+      "Cape Town",
+      "Johannesburg",
+      "Durban"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which metal is liquid at room temperature?",
+    "options": [
+      "Mercury",
+      "Lead",
+      "Tin",
+      "Bismuth"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "What is the freezing point of water?",
+    "options": [
+      "0°C",
+      "-10°C",
+      "5°C",
+      "32°C"
+    ],
+    "answer": 0,
+    "tier": "easy"
+  },
+  {
+    "q": "Which is the most spoken language in the world?",
+    "options": [
+      "Mandarin Chinese",
+      "English",
+      "Spanish",
+      "Hindi"
+    ],
+    "answer": 0,
+    "tier": "easy"
   }
 ]

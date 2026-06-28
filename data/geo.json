@@ -9,7 +9,7 @@
     ],
     "image": "/geo/eiffel.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/1280px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "colosseum",
@@ -21,7 +21,7 @@
     ],
     "image": "/geo/colosseum.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "opera",
@@ -33,7 +33,7 @@
     ],
     "image": "/geo/opera.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/1280px-Sydney_Australia._%2821339175489%29.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "taj",
@@ -45,7 +45,7 @@
     ],
     "image": "/geo/taj.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "ggbridge",
@@ -57,7 +57,7 @@
     ],
     "image": "/geo/ggbridge.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/1280px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "liberty",
@@ -69,7 +69,7 @@
     ],
     "image": "/geo/liberty.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/1280px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "bigben",
@@ -81,7 +81,7 @@
     ],
     "image": "/geo/bigben.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Elizabeth_Tower%2C_June_2022.jpg/1280px-Elizabeth_Tower%2C_June_2022.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "redeemer",
@@ -93,7 +93,7 @@
     ],
     "image": "/geo/redeemer.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/1280px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "brandenburg",
@@ -117,7 +117,7 @@
     ],
     "image": "/geo/burj.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1280px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "petra",
@@ -141,7 +141,7 @@
     ],
     "image": "/geo/pisa.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/1280px-Italy_-_Pisa_-_Leaning_Tower.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "sagrada",
@@ -189,7 +189,7 @@
     ],
     "image": "/geo/greatwall.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1280px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "fuji",
@@ -249,7 +249,7 @@
     ],
     "image": "/geo/gizapyramid.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/1280px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "tablemountain",
@@ -405,7 +405,7 @@
     ],
     "image": "/geo/hollywood.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1280px-Hollywood_Sign_%28Zuschnitt%29.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "whitehouse",
@@ -417,7 +417,7 @@
     ],
     "image": "/geo/whitehouse.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/1280px-White_House_north_and_south_sides.jpg",
-    "tier": "medium"
+    "tier": "easy"
   },
   {
     "id": "gatewaymo",
@@ -1306,5 +1306,2441 @@
     "image": "/geo/fly-geyser.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fly_Geyser%2C_Nevada.jpg/1280px-Fly_Geyser%2C_Nevada.jpg",
     "tier": "extreme"
+  },
+  {
+    "id": "athens",
+    "answer": "Athens, Greece",
+    "decoys": [
+      "Istanbul, Turkey",
+      "Rome, Italy",
+      "Sofia, Bulgaria"
+    ],
+    "image": "/geo/athens.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "london",
+    "answer": "London, UK",
+    "decoys": [
+      "Paris, France",
+      "Amsterdam, Netherlands",
+      "Dublin, Ireland"
+    ],
+    "image": "/geo/london.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/1280px-London_Skyline_%28125508655%29.jpeg",
+    "tier": "easy"
+  },
+  {
+    "id": "newyork",
+    "answer": "New York, USA",
+    "decoys": [
+      "Chicago, USA",
+      "Toronto, Canada",
+      "Boston, USA"
+    ],
+    "image": "/geo/newyork.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Southwest_corner_of_Central_Park%2C_looking_east%2C_NYC.jpg/1280px-Southwest_corner_of_Central_Park%2C_looking_east%2C_NYC.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "tokyo",
+    "answer": "Tokyo, Japan",
+    "decoys": [
+      "Seoul, South Korea",
+      "Beijing, China",
+      "Shanghai, China"
+    ],
+    "image": "/geo/tokyo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/1280px-Skyscrapers_of_Shinjuku_2009_January.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "cairo",
+    "answer": "Cairo, Egypt",
+    "decoys": [
+      "Casablanca, Morocco",
+      "Nairobi, Kenya",
+      "Lagos, Nigeria"
+    ],
+    "image": "/geo/cairo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/1280px-All_Gizah_Pyramids.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "machu_picchu",
+    "answer": "Cusco, Peru",
+    "decoys": [
+      "La Paz, Bolivia",
+      "Quito, Ecuador",
+      "Lima, Peru"
+    ],
+    "image": "/geo/machu_picchu.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1280px-Machu_Picchu%2C_Peru.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "everest",
+    "answer": "Mount Everest, Nepal/Tibet",
+    "decoys": [
+      "K2, Pakistan",
+      "Kangchenjunga, Nepal",
+      "Mont Blanc, France"
+    ],
+    "image": "/geo/everest.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1280px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "grand_canyon",
+    "answer": "Arizona, USA",
+    "decoys": [
+      "Utah, USA",
+      "Colorado, USA",
+      "Nevada, USA"
+    ],
+    "image": "/geo/grand_canyon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg/1280px-Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "coliseum_roman",
+    "answer": "Rome, Italy",
+    "decoys": [
+      "Naples, Italy",
+      "Florence, Italy",
+      "Capua, Italy"
+    ],
+    "image": "/geo/coliseum_roman.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "mt_fuji",
+    "answer": "Mount Fuji, Japan",
+    "decoys": [
+      "Hokkaido, Japan",
+      "Osaka, Japan",
+      "Kyoto, Japan"
+    ],
+    "image": "/geo/mt_fuji.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/080103_hakkai_fuji.jpg/1280px-080103_hakkai_fuji.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "chichen_itza",
+    "answer": "Chichen Itza, Mexico",
+    "decoys": [
+      "Teotihuacan, Mexico",
+      "Tulum, Mexico",
+      "Palenque, Mexico"
+    ],
+    "image": "/geo/chichen_itza.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "sagradafamilia",
+    "answer": "Barcelona, Spain",
+    "decoys": [
+      "Madrid, Spain",
+      "Valencia, Spain",
+      "Lisbon, Portugal"
+    ],
+    "image": "/geo/sagradafamilia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/ef/SF_maig_2_cropped.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "notre_dame",
+    "answer": "Paris, France",
+    "decoys": [
+      "Lyon, France",
+      "Brussels, Belgium",
+      "Strasbourg, France"
+    ],
+    "image": "/geo/notre_dame.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/1280px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "westminster",
+    "answer": "London, UK",
+    "decoys": [
+      "Edinburgh, UK",
+      "Dublin, Ireland",
+      "Amsterdam, Netherlands"
+    ],
+    "image": "/geo/westminster.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Houses_of_Parliament_in_2022_%28cropped%29.jpg/1280px-Houses_of_Parliament_in_2022_%28cropped%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "buckingham",
+    "answer": "London, UK",
+    "decoys": [
+      "Windsor, UK",
+      "Edinburgh, UK",
+      "Oxford, UK"
+    ],
+    "image": "/geo/buckingham.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/1280px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "louvre",
+    "answer": "Paris, France",
+    "decoys": [
+      "Brussels, Belgium",
+      "Berlin, Germany",
+      "Amsterdam, Netherlands"
+    ],
+    "image": "/geo/louvre.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/1280px-Louvre_Museum_Wikimedia_Commons.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "colosseum2",
+    "answer": "Rome, Italy",
+    "decoys": [
+      "Athens, Greece",
+      "Split, Croatia",
+      "Pula, Croatia"
+    ],
+    "image": "/geo/colosseum2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "st_peters",
+    "answer": "Vatican City",
+    "decoys": [
+      "Rome, Italy",
+      "Florence, Italy",
+      "Milan, Italy"
+    ],
+    "image": "/geo/st_peters.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1280px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "trevi_fountain",
+    "answer": "Rome, Italy",
+    "decoys": [
+      "Naples, Italy",
+      "Florence, Italy",
+      "Venice, Italy"
+    ],
+    "image": "/geo/trevi_fountain.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "parthenon",
+    "answer": "Athens, Greece",
+    "decoys": [
+      "Rome, Italy",
+      "Ephesus, Turkey",
+      "Segesta, Italy"
+    ],
+    "image": "/geo/parthenon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "pompeii",
+    "answer": "Campania, Italy",
+    "decoys": [
+      "Herculaneum, Italy",
+      "Paestum, Italy",
+      "Ostia Antica, Italy"
+    ],
+    "image": "/geo/pompeii.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg/1280px-Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "alhambra2",
+    "answer": "Granada, Spain",
+    "decoys": [
+      "Córdoba, Spain",
+      "Seville, Spain",
+      "Toledo, Spain"
+    ],
+    "image": "/geo/alhambra2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/1280px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "seville_cathedral",
+    "answer": "Seville, Spain",
+    "decoys": [
+      "Córdoba, Spain",
+      "Granada, Spain",
+      "Valencia, Spain"
+    ],
+    "image": "/geo/seville_cathedral.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sevilla_Cathedral_-_Southeast.jpg/1280px-Sevilla_Cathedral_-_Southeast.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "lisbon_tram",
+    "answer": "Lisbon, Portugal",
+    "decoys": [
+      "Porto, Portugal",
+      "Braga, Portugal",
+      "Évora, Portugal"
+    ],
+    "image": "/geo/lisbon_tram.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg/1280px-Lisboa_-_Portugal_%2852597836992%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "belem_tower",
+    "answer": "Lisbon, Portugal",
+    "decoys": [
+      "Porto, Portugal",
+      "Seville, Spain",
+      "Cádiz, Spain"
+    ],
+    "image": "/geo/belem_tower.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Torre_Bel%C3%A9m_April_2009-4a.jpg/1280px-Torre_Bel%C3%A9m_April_2009-4a.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "sintra",
+    "answer": "Sintra, Portugal",
+    "decoys": [
+      "Évora, Portugal",
+      "Coimbra, Portugal",
+      "Obidos, Portugal"
+    ],
+    "image": "/geo/sintra.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sintra_-_Palacio_da_Pena_%2820332995770%29_%28cropped2%29.jpg/1280px-Sintra_-_Palacio_da_Pena_%2820332995770%29_%28cropped2%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "rijksmuseum",
+    "answer": "Amsterdam, Netherlands",
+    "decoys": [
+      "Rotterdam, Netherlands",
+      "Utrecht, Netherlands",
+      "Brussels, Belgium"
+    ],
+    "image": "/geo/rijksmuseum.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg/1280px-South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "windmills_zaan",
+    "answer": "Zaandam, Netherlands",
+    "decoys": [
+      "Kinderdijk, Netherlands",
+      "Delft, Netherlands",
+      "Haarlem, Netherlands"
+    ],
+    "image": "/geo/windmills_zaan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Zaanstad_Zaanse_Schans_22.jpg/1280px-Zaanstad_Zaanse_Schans_22.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "bruges",
+    "answer": "Bruges, Belgium",
+    "decoys": [
+      "Ghent, Belgium",
+      "Antwerp, Belgium",
+      "Amsterdam, Netherlands"
+    ],
+    "image": "/geo/bruges.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Br%C3%BCgge_Blick_vom_Belfried_4.jpg/1280px-Br%C3%BCgge_Blick_vom_Belfried_4.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "atomium2",
+    "answer": "Brussels, Belgium",
+    "decoys": [
+      "Antwerp, Belgium",
+      "Luxembourg City",
+      "Eindhoven, Netherlands"
+    ],
+    "image": "/geo/atomium2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Brussels_-_Atomium_2022.jpg/1280px-Brussels_-_Atomium_2022.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "sealife_sydney",
+    "answer": "Sydney, Australia",
+    "decoys": [
+      "Melbourne, Australia",
+      "Brisbane, Australia",
+      "Auckland, New Zealand"
+    ],
+    "image": "/geo/sealife_sydney.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sydney_Harbour_Bridge-16_October_2025.jpg/1280px-Sydney_Harbour_Bridge-16_October_2025.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "sydney_opera",
+    "answer": "Sydney, Australia",
+    "decoys": [
+      "Melbourne, Australia",
+      "Auckland, New Zealand",
+      "Perth, Australia"
+    ],
+    "image": "/geo/sydney_opera.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/1280px-Sydney_Australia._%2821339175489%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "great_ocean",
+    "answer": "Victoria, Australia",
+    "decoys": [
+      "South Australia",
+      "New South Wales",
+      "Western Australia"
+    ],
+    "image": "/geo/great_ocean.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/The_Twelve_Apostles_2011.jpg/1280px-The_Twelve_Apostles_2011.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "uluru2",
+    "answer": "Northern Territory, Australia",
+    "decoys": [
+      "Queensland, Australia",
+      "South Australia",
+      "New South Wales"
+    ],
+    "image": "/geo/uluru2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/1280px-ULURU.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "hobbiton",
+    "answer": "Matamata, New Zealand",
+    "decoys": [
+      "Queenstown, New Zealand",
+      "Rotorua, New Zealand",
+      "Wellington, New Zealand"
+    ],
+    "image": "/geo/hobbiton.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Waterhouse_Lake_Front.jpg/1280px-Waterhouse_Lake_Front.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "milford_sound",
+    "answer": "Fiordland, New Zealand",
+    "decoys": [
+      "Queenstown, New Zealand",
+      "Norwegian Fjords",
+      "Patagonia, Chile"
+    ],
+    "image": "/geo/milford_sound.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Milford_Sound_%28New_Zealand%29.JPG/1280px-Milford_Sound_%28New_Zealand%29.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "mount_fuji",
+    "answer": "Honshu, Japan",
+    "decoys": [
+      "Kyoto, Japan",
+      "Hokkaido, Japan",
+      "Nagano, Japan"
+    ],
+    "image": "/geo/mount_fuji.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/1280px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "tokyo_tower",
+    "answer": "Tokyo, Japan",
+    "decoys": [
+      "Osaka, Japan",
+      "Shanghai, China",
+      "Seoul, South Korea"
+    ],
+    "image": "/geo/tokyo_tower.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tokyo_Tower_2023.jpg/1280px-Tokyo_Tower_2023.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "fushimi_inari",
+    "answer": "Kyoto, Japan",
+    "decoys": [
+      "Nara, Japan",
+      "Osaka, Japan",
+      "Hiroshima, Japan"
+    ],
+    "image": "/geo/fushimi_inari.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/1280px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "kinkakuji",
+    "answer": "Kyoto, Japan",
+    "decoys": [
+      "Nara, Japan",
+      "Osaka, Japan",
+      "Tokyo, Japan"
+    ],
+    "image": "/geo/kinkakuji.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/1280px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "nara_deer",
+    "answer": "Nara, Japan",
+    "decoys": [
+      "Kyoto, Japan",
+      "Osaka, Japan",
+      "Hiroshima, Japan"
+    ],
+    "image": "/geo/nara_deer.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "hiroshima_dome",
+    "answer": "Hiroshima, Japan",
+    "decoys": [
+      "Nagasaki, Japan",
+      "Osaka, Japan",
+      "Kyoto, Japan"
+    ],
+    "image": "/geo/hiroshima_dome.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Genbaku_Dome04-r.JPG/1280px-Genbaku_Dome04-r.JPG",
+    "tier": "medium"
+  },
+  {
+    "id": "forbidden_city",
+    "answer": "Beijing, China",
+    "decoys": [
+      "Shanghai, China",
+      "Nanjing, China",
+      "Xi'an, China"
+    ],
+    "image": "/geo/forbidden_city.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/1280px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "temple_heaven",
+    "answer": "Beijing, China",
+    "decoys": [
+      "Shanghai, China",
+      "Nanjing, China",
+      "Suzhou, China"
+    ],
+    "image": "/geo/temple_heaven.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Temple_of_Heaven_20160323_01.jpg/1280px-Temple_of_Heaven_20160323_01.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "great_wall2",
+    "answer": "Northern China",
+    "decoys": [
+      "Mongolia",
+      "South Korea",
+      "Japan"
+    ],
+    "image": "/geo/great_wall2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1280px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "li_river",
+    "answer": "Guilin, China",
+    "decoys": [
+      "Zhangjiajie, China",
+      "Yangshuo, China",
+      "Guilin, China"
+    ],
+    "image": "/geo/li_river.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/87318-Li-River.jpg/1280px-87318-Li-River.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "potala_palace",
+    "answer": "Lhasa, Tibet",
+    "decoys": [
+      "Thimphu, Bhutan",
+      "Kathmandu, Nepal",
+      "Dharamshala, India"
+    ],
+    "image": "/geo/potala_palace.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/1280px-Potala_Palace_HQ.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "angkor_wat2",
+    "answer": "Siem Reap, Cambodia",
+    "decoys": [
+      "Phnom Penh, Cambodia",
+      "Luang Prabang, Laos",
+      "Bangkok, Thailand"
+    ],
+    "image": "/geo/angkor_wat2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/1280px-Angkor_Wat.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "halong_bay",
+    "answer": "Quảng Ninh, Vietnam",
+    "decoys": [
+      "Phang Nga Bay, Thailand",
+      "Palawan, Philippines",
+      "Krabi, Thailand"
+    ],
+    "image": "/geo/halong_bay.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ha_Long_Bay_in_2019.jpg/1280px-Ha_Long_Bay_in_2019.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "phang_nga",
+    "answer": "Phang Nga, Thailand",
+    "decoys": [
+      "Krabi, Thailand",
+      "Phuket, Thailand",
+      "Ha Long Bay, Vietnam"
+    ],
+    "image": "/geo/phang_nga.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dramatic_karst_landscape_of_Phang_Nga_Bay%2C_Thailand.jpg/1280px-Dramatic_karst_landscape_of_Phang_Nga_Bay%2C_Thailand.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "ayutthaya",
+    "answer": "Phra Nakhon Si Ayutthaya, Thailand",
+    "decoys": [
+      "Bangkok, Thailand",
+      "Chiang Mai, Thailand",
+      "Sukhothai, Thailand"
+    ],
+    "image": "/geo/ayutthaya.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ayutthaya_World_Heritage_sign.jpg/1280px-Ayutthaya_World_Heritage_sign.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "bali_tanah",
+    "answer": "Bali, Indonesia",
+    "decoys": [
+      "Lombok, Indonesia",
+      "Java, Indonesia",
+      "Sri Lanka"
+    ],
+    "image": "/geo/bali_tanah.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TanahLot_2014.JPG/1280px-TanahLot_2014.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "borobudur2",
+    "answer": "Central Java, Indonesia",
+    "decoys": [
+      "Bali, Indonesia",
+      "Siem Reap, Cambodia",
+      "Pagan, Myanmar"
+    ],
+    "image": "/geo/borobudur2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/1280px-Pradaksina.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "tiger_nest",
+    "answer": "Paro, Bhutan",
+    "decoys": [
+      "Lhasa, Tibet",
+      "Kathmandu, Nepal",
+      "Dharamshala, India"
+    ],
+    "image": "/geo/tiger_nest.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Paro_Taktsang%2C_Bhutan_%28edited%29.jpg/1280px-Paro_Taktsang%2C_Bhutan_%28edited%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "taj_mahal2",
+    "answer": "Agra, India",
+    "decoys": [
+      "Delhi, India",
+      "Jaipur, India",
+      "Lucknow, India"
+    ],
+    "image": "/geo/taj_mahal2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg",
+    "tier": "easy"
+  },
+  {
+    "id": "amber_fort",
+    "answer": "Jaipur, India",
+    "decoys": [
+      "Jodhpur, India",
+      "Udaipur, India",
+      "Agra, India"
+    ],
+    "image": "/geo/amber_fort.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/1280px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "golden_temple",
+    "answer": "Amritsar, India",
+    "decoys": [
+      "Delhi, India",
+      "Chandigarh, India",
+      "Jalandhar, India"
+    ],
+    "image": "/geo/golden_temple.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1280px-The_Golden_Temple_of_Amrithsar_7.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "hampi",
+    "answer": "Karnataka, India",
+    "decoys": [
+      "Goa, India",
+      "Hyderabad, India",
+      "Chennai, India"
+    ],
+    "image": "/geo/hampi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg/1280px-Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "sigiriya",
+    "answer": "Central Province, Sri Lanka",
+    "decoys": [
+      "Kandy, Sri Lanka",
+      "Galle, Sri Lanka",
+      "Polonnaruwa, Sri Lanka"
+    ],
+    "image": "/geo/sigiriya.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sigiriya_%28141688197%29.jpeg/1280px-Sigiriya_%28141688197%29.jpeg",
+    "tier": "hard"
+  },
+  {
+    "id": "petra2",
+    "answer": "Ma'an, Jordan",
+    "decoys": [
+      "Wadi Rum, Jordan",
+      "Jerash, Jordan",
+      "Cairo, Egypt"
+    ],
+    "image": "/geo/petra2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/1280px-Al_Deir_Petra.JPG",
+    "tier": "medium"
+  },
+  {
+    "id": "wadi_rum",
+    "answer": "Aqaba, Jordan",
+    "decoys": [
+      "Sinai, Egypt",
+      "Atacama, Chile",
+      "Monument Valley, USA"
+    ],
+    "image": "/geo/wadi_rum.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mountain_in_Wadi_Rum%2C_Jordan.jpg/1280px-Mountain_in_Wadi_Rum%2C_Jordan.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "pyramids_giza",
+    "answer": "Giza, Egypt",
+    "decoys": [
+      "Luxor, Egypt",
+      "Saqqara, Egypt",
+      "Dahshur, Egypt"
+    ],
+    "image": "/geo/pyramids_giza.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramids_of_the_Giza_Necropolis.jpg/1280px-Pyramids_of_the_Giza_Necropolis.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "valley_kings",
+    "answer": "Luxor, Egypt",
+    "decoys": [
+      "Aswan, Egypt",
+      "Cairo, Egypt",
+      "Alexandria, Egypt"
+    ],
+    "image": "/geo/valley_kings.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Luxor%2C_Tal_der_K%C3%B6nige_%281995%2C_860x605%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "karnak",
+    "answer": "Luxor, Egypt",
+    "decoys": [
+      "Aswan, Egypt",
+      "Cairo, Egypt",
+      "Dendera, Egypt"
+    ],
+    "image": "/geo/karnak.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Temple_de_Louxor_68.jpg/1280px-Temple_de_Louxor_68.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "abu_simbel",
+    "answer": "Aswan Governorate, Egypt",
+    "decoys": [
+      "Luxor, Egypt",
+      "Khartoum, Sudan",
+      "Cairo, Egypt"
+    ],
+    "image": "/geo/abu_simbel.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg/1280px-Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "mount_kilimanjaro",
+    "answer": "Tanzania",
+    "decoys": [
+      "Kenya",
+      "Rwanda",
+      "Uganda"
+    ],
+    "image": "/geo/mount_kilimanjaro.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kilimanjaro_from_Amboseli.jpg/1280px-Kilimanjaro_from_Amboseli.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "serengeti",
+    "answer": "Tanzania",
+    "decoys": [
+      "Kenya",
+      "Botswana",
+      "Zimbabwe"
+    ],
+    "image": "/geo/serengeti.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tanzania-_Serengeti_National_Park-_elefante.jpg/1280px-Tanzania-_Serengeti_National_Park-_elefante.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "victoria_falls",
+    "answer": "Livingstone, Zambia",
+    "decoys": [
+      "Harare, Zimbabwe",
+      "Windhoek, Namibia",
+      "Gaborone, Botswana"
+    ],
+    "image": "/geo/victoria_falls.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg/1280px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "table_mountain",
+    "answer": "Cape Town, South Africa",
+    "decoys": [
+      "Johannesburg, South Africa",
+      "Durban, South Africa",
+      "Nairobi, Kenya"
+    ],
+    "image": "/geo/table_mountain.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Table_Mountain_DanieVDM.jpg/1280px-Table_Mountain_DanieVDM.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "cape_of_hope",
+    "answer": "Western Cape, South Africa",
+    "decoys": [
+      "Namibia",
+      "Cape Agulhas",
+      "Cape Verde"
+    ],
+    "image": "/geo/cape_of_hope.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Playa_Dias%2C_Cape_Point%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_103.jpg/1280px-Playa_Dias%2C_Cape_Point%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_103.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "sossusvlei",
+    "answer": "Namib-Naukluft, Namibia",
+    "decoys": [
+      "Atacama, Chile",
+      "Sahara, Algeria",
+      "Danakil, Ethiopia"
+    ],
+    "image": "/geo/sossusvlei.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sossusvlei.jpg/1280px-Sossusvlei.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "iguazu",
+    "answer": "Paraná, Brazil / Misiones, Argentina",
+    "decoys": [
+      "Niagara, Canada/USA",
+      "Victoria Falls, Zambia/Zimbabwe",
+      "Angel Falls, Venezuela"
+    ],
+    "image": "/geo/iguazu.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Iguazu_Cataratas2.jpg/1280px-Iguazu_Cataratas2.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "angel_falls",
+    "answer": "Bolívar State, Venezuela",
+    "decoys": [
+      "Guyana",
+      "Suriname",
+      "Colombia"
+    ],
+    "image": "/geo/angel_falls.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e9/SaltoAngel1.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "salar_uyuni",
+    "answer": "Potosí, Bolivia",
+    "decoys": [
+      "Atacama, Chile",
+      "Patagonia, Argentina",
+      "Altiplano, Peru"
+    ],
+    "image": "/geo/salar_uyuni.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Salar_Uyuni_au01.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "atacama",
+    "answer": "Atacama, Chile",
+    "decoys": [
+      "Namib, Namibia",
+      "Patagonia, Argentina",
+      "Sonoran, Mexico"
+    ],
+    "image": "/geo/atacama.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Atacama.png",
+    "tier": "hard"
+  },
+  {
+    "id": "easter_island",
+    "answer": "Easter Island, Chile",
+    "decoys": [
+      "Galapagos, Ecuador",
+      "Pitcairn Island",
+      "French Polynesia"
+    ],
+    "image": "/geo/easter_island.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Easter_Island_5.jpg/1280px-Easter_Island_5.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "patagonia",
+    "answer": "Patagonia, Chile",
+    "decoys": [
+      "Ushuaia, Argentina",
+      "Bariloche, Argentina",
+      "El Calafate, Argentina"
+    ],
+    "image": "/geo/patagonia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "galapagos",
+    "answer": "Galápagos, Ecuador",
+    "decoys": [
+      "Fernando de Noronha, Brazil",
+      "Cocos Island, Costa Rica",
+      "Malpelo, Colombia"
+    ],
+    "image": "/geo/galapagos.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Lobo_marino_%28Zalophus_californianus_wollebaeki%29%2C_Punta_Pitt%2C_isla_de_San_Crist%C3%B3bal%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-24%2C_DD_11.JPG/1280px-Lobo_marino_%28Zalophus_californianus_wollebaeki%29%2C_Punta_Pitt%2C_isla_de_San_Crist%C3%B3bal%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-24%2C_DD_11.JPG",
+    "tier": "medium"
+  },
+  {
+    "id": "glacier_np",
+    "answer": "Montana, USA",
+    "decoys": [
+      "Wyoming, USA",
+      "Idaho, USA",
+      "Alberta, Canada"
+    ],
+    "image": "/geo/glacier_np.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mountain_Goat_at_Hidden_Lake.jpg/1280px-Mountain_Goat_at_Hidden_Lake.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "antelope_canyon",
+    "answer": "Arizona, USA",
+    "decoys": [
+      "Utah, USA",
+      "Nevada, USA",
+      "New Mexico, USA"
+    ],
+    "image": "/geo/antelope_canyon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/USA_Antelope-Canyon.jpg/1280px-USA_Antelope-Canyon.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "yellowstone",
+    "answer": "Wyoming, USA",
+    "decoys": [
+      "Yellowstone, Montana",
+      "Yellowstone, Idaho",
+      "Glacier, Montana"
+    ],
+    "image": "/geo/yellowstone.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grand_Canyon_of_yellowstone.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "zion_canyon",
+    "answer": "Utah, USA",
+    "decoys": [
+      "Arizona, USA",
+      "Nevada, USA",
+      "Colorado, USA"
+    ],
+    "image": "/geo/zion_canyon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "bryce_canyon",
+    "answer": "Utah, USA",
+    "decoys": [
+      "Arizona, USA",
+      "Nevada, USA",
+      "Colorado, USA"
+    ],
+    "image": "/geo/bryce_canyon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg/1280px-Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "arches_np",
+    "answer": "Utah, USA",
+    "decoys": [
+      "Arizona, USA",
+      "Colorado, USA",
+      "New Mexico, USA"
+    ],
+    "image": "/geo/arches_np.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Delicate_arch_sunset.jpg/1280px-Delicate_arch_sunset.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "wave_arizona",
+    "answer": "Arizona, USA",
+    "decoys": [
+      "Utah, USA",
+      "Nevada, USA",
+      "New Mexico, USA"
+    ],
+    "image": "/geo/wave_arizona.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/TheWave_1600pixels.jpg/1280px-TheWave_1600pixels.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "statue_liberty",
+    "answer": "New York, USA",
+    "decoys": [
+      "Boston, USA",
+      "Philadelphia, USA",
+      "Washington D.C., USA"
+    ],
+    "image": "/geo/statue_liberty.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/1280px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "times_square",
+    "answer": "New York, USA",
+    "decoys": [
+      "Las Vegas, USA",
+      "Chicago, USA",
+      "Los Angeles, USA"
+    ],
+    "image": "/geo/times_square.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/1280px-New_york_times_square-terabass.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "empire_state",
+    "answer": "New York, USA",
+    "decoys": [
+      "Chicago, USA",
+      "Las Vegas, USA",
+      "Miami, USA"
+    ],
+    "image": "/geo/empire_state.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/10/Empire_State_Building_%28aerial_view%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "golden_gate",
+    "answer": "San Francisco, USA",
+    "decoys": [
+      "Seattle, USA",
+      "Portland, USA",
+      "Los Angeles, USA"
+    ],
+    "image": "/geo/golden_gate.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/1280px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "las_vegas_strip",
+    "answer": "Las Vegas, USA",
+    "decoys": [
+      "Reno, USA",
+      "Atlantic City, USA",
+      "Macau, China"
+    ],
+    "image": "/geo/las_vegas_strip.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Las_Vegas_Strip_09_2017_4897.jpg/1280px-Las_Vegas_Strip_09_2017_4897.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "niagara_falls",
+    "answer": "Ontario, Canada / New York, USA",
+    "decoys": [
+      "Montreal, Canada",
+      "Toronto, Canada",
+      "Buffalo, USA"
+    ],
+    "image": "/geo/niagara_falls.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/1280px-3Falls_Niagara.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "banff",
+    "answer": "Alberta, Canada",
+    "decoys": [
+      "British Columbia, Canada",
+      "Montana, USA",
+      "Yukon, Canada"
+    ],
+    "image": "/geo/banff.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1280px-Moraine_Lake_17092005.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "north_lights",
+    "answer": "Northern Norway",
+    "decoys": [
+      "Iceland",
+      "Northern Finland",
+      "Northern Canada"
+    ],
+    "image": "/geo/north_lights.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Aurora_borealis_over_Eielson_Air_Force_Base%2C_Alaska.jpg/1280px-Aurora_borealis_over_Eielson_Air_Force_Base%2C_Alaska.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "lofoten",
+    "answer": "Nordland, Norway",
+    "decoys": [
+      "Faroe Islands",
+      "Iceland",
+      "Northern Finland"
+    ],
+    "image": "/geo/lofoten.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Moskenes_Reinebringen_lub_2025-07-21_img09_Aussicht.jpg/1280px-Moskenes_Reinebringen_lub_2025-07-21_img09_Aussicht.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "preikestolen",
+    "answer": "Ryfylke, Norway",
+    "decoys": [
+      "Geiranger, Norway",
+      "Bergen, Norway",
+      "Ålesund, Norway"
+    ],
+    "image": "/geo/preikestolen.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lyse_Fjord_et_Preikestolen.jpg/1280px-Lyse_Fjord_et_Preikestolen.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "trolltunga",
+    "answer": "Hordaland, Norway",
+    "decoys": [
+      "Oppland, Norway",
+      "Rogaland, Norway",
+      "Sogne og Fjordane, Norway"
+    ],
+    "image": "/geo/trolltunga.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Trolltunga_2017.jpg/1280px-Trolltunga_2017.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "thingvellir",
+    "answer": "Southwest Iceland",
+    "decoys": [
+      "Reykjavik, Iceland",
+      "Northern Iceland",
+      "East Iceland"
+    ],
+    "image": "/geo/thingvellir.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/1280px-%C3%9Eingvellir_from_the_information_centre.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "geysir",
+    "answer": "Haukadalur, Iceland",
+    "decoys": [
+      "Yellowstone, USA",
+      "Kamchatka, Russia",
+      "New Zealand"
+    ],
+    "image": "/geo/geysir.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Erupting_geysir.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "hallgrimskirkja",
+    "answer": "Reykjavík, Iceland",
+    "decoys": [
+      "Akureyri, Iceland",
+      "Vik, Iceland",
+      "Selfoss, Iceland"
+    ],
+    "image": "/geo/hallgrimskirkja.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hallgrimskirkja_mai_2026.jpg/1280px-Hallgrimskirkja_mai_2026.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "giant_causeway",
+    "answer": "County Antrim, Northern Ireland",
+    "decoys": [
+      "Staffa, Scotland",
+      "County Donegal, Ireland",
+      "Cornwall, England"
+    ],
+    "image": "/geo/giant_causeway.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Causeway-code_poet-4.jpg/1280px-Causeway-code_poet-4.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "cliffs_moher",
+    "answer": "County Clare, Ireland",
+    "decoys": [
+      "County Antrim, Northern Ireland",
+      "Cornwall, England",
+      "Brittany, France"
+    ],
+    "image": "/geo/cliffs_moher.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG/1280px-Cliffs-Of-Moher-OBriens-From-South.JPG",
+    "tier": "medium"
+  },
+  {
+    "id": "blarney_castle",
+    "answer": "County Cork, Ireland",
+    "decoys": [
+      "Dublin, Ireland",
+      "Galway, Ireland",
+      "Kerry, Ireland"
+    ],
+    "image": "/geo/blarney_castle.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blarney_Castle_Ireland.jpg/1280px-Blarney_Castle_Ireland.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "stonehenge2",
+    "answer": "Wiltshire, England",
+    "decoys": [
+      "Orkney, Scotland",
+      "County Meath, Ireland",
+      "Cornwall, England"
+    ],
+    "image": "/geo/stonehenge2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "windermere",
+    "answer": "Cumbria, England",
+    "decoys": [
+      "Yorkshire Dales, England",
+      "Peak District, England",
+      "Snowdonia, Wales"
+    ],
+    "image": "/geo/windermere.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Derwent_Water%2C_Lake_District%2C_Cumbria_-_June_2009.jpg/1280px-Derwent_Water%2C_Lake_District%2C_Cumbria_-_June_2009.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "benmore_finger",
+    "answer": "Highland, Scotland",
+    "decoys": [
+      "Snowdonia, Wales",
+      "Wicklow, Ireland",
+      "Peak District, England"
+    ],
+    "image": "/geo/benmore_finger.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/BenNevis2005.jpg/1280px-BenNevis2005.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "loch_ness",
+    "answer": "Highland, Scotland",
+    "decoys": [
+      "Loch Lomond, Scotland",
+      "Lake Windermere, England",
+      "Lough Corrib, Ireland"
+    ],
+    "image": "/geo/loch_ness.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/51/LochNessUrquhart.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "schoenbrunn",
+    "answer": "Vienna, Austria",
+    "decoys": [
+      "Salzburg, Austria",
+      "Budapest, Hungary",
+      "Prague, Czechia"
+    ],
+    "image": "/geo/schoenbrunn.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/1280px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
+    "tier": "medium"
+  },
+  {
+    "id": "hallstatt",
+    "answer": "Upper Austria, Austria",
+    "decoys": [
+      "Berchtesgaden, Germany",
+      "Lucerne, Switzerland",
+      "Bled, Slovenia"
+    ],
+    "image": "/geo/hallstatt.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Hallstatt_-_Zentrum_.JPG/1280px-Hallstatt_-_Zentrum_.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "bled",
+    "answer": "Upper Carniola, Slovenia",
+    "decoys": [
+      "Hallstatt, Austria",
+      "Lucerne, Switzerland",
+      "Plitvice, Croatia"
+    ],
+    "image": "/geo/bled.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Lake_Bled_from_the_Mountain.jpg/1280px-Lake_Bled_from_the_Mountain.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "neuschwanstein3",
+    "answer": "Bavaria, Germany",
+    "decoys": [
+      "Austria",
+      "Switzerland",
+      "Baden-Württemberg, Germany"
+    ],
+    "image": "/geo/neuschwanstein3.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/1280px-Schloss_Neuschwanstein_2013.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "rothenburg",
+    "answer": "Bavaria, Germany",
+    "decoys": [
+      "Nuremberg, Germany",
+      "Heidelberg, Germany",
+      "Bamberg, Germany"
+    ],
+    "image": "/geo/rothenburg.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Rothenburg_BW_4.JPG/1280px-Rothenburg_BW_4.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "berlin_wall",
+    "answer": "Berlin, Germany",
+    "decoys": [
+      "Potsdam, Germany",
+      "Hamburg, Germany",
+      "Dresden, Germany"
+    ],
+    "image": "/geo/berlin_wall.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Berlinermauer.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "checkpoint_charlie",
+    "answer": "Berlin, Germany",
+    "decoys": [
+      "Vienna, Austria",
+      "Prague, Czechia",
+      "Warsaw, Poland"
+    ],
+    "image": "/geo/checkpoint_charlie.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/75/Berlin_-_Checkpoint_Charlie_1963.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "prague_castle",
+    "answer": "Prague, Czechia",
+    "decoys": [
+      "Bratislava, Slovakia",
+      "Vienna, Austria",
+      "Kraków, Poland"
+    ],
+    "image": "/geo/prague_castle.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Karl%C5%AFv_most_Praha%2C_Star%C3%A9_M%C4%9Bsto_20170810_007.jpg/1280px-Karl%C5%AFv_most_Praha%2C_Star%C3%A9_M%C4%9Bsto_20170810_007.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "old_town_tallinn",
+    "answer": "Tallinn, Estonia",
+    "decoys": [
+      "Riga, Latvia",
+      "Vilnius, Lithuania",
+      "Helsinki, Finland"
+    ],
+    "image": "/geo/old_town_tallinn.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Old_Town_of_Tallinn%2C_Tallinn%2C_Estonia_-_panoramio_%2858%29.jpg/1280px-Old_Town_of_Tallinn%2C_Tallinn%2C_Estonia_-_panoramio_%2858%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "krakow_main",
+    "answer": "Kraków, Poland",
+    "decoys": [
+      "Warsaw, Poland",
+      "Wrocław, Poland",
+      "Gdańsk, Poland"
+    ],
+    "image": "/geo/krakow_main.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sukiennice_and_Main_Market_Square_Krakow_Poland.JPG/1280px-Sukiennice_and_Main_Market_Square_Krakow_Poland.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "auschwitz",
+    "answer": "Oświęcim, Poland",
+    "decoys": [
+      "Kraków, Poland",
+      "Warsaw, Poland",
+      "Majdanek, Poland"
+    ],
+    "image": "/geo/auschwitz.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Auschwitz_I_%2822_May_2010%29_b.jpg/1280px-Auschwitz_I_%2822_May_2010%29_b.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "red_square",
+    "answer": "Moscow, Russia",
+    "decoys": [
+      "Saint Petersburg, Russia",
+      "Kyiv, Ukraine",
+      "Warsaw, Poland"
+    ],
+    "image": "/geo/red_square.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kremlin_and_Red_Square.1.jpg/1280px-Kremlin_and_Red_Square.1.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "hermitage",
+    "answer": "Saint Petersburg, Russia",
+    "decoys": [
+      "Moscow, Russia",
+      "Vienna, Austria",
+      "Amsterdam, Netherlands"
+    ],
+    "image": "/geo/hermitage.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/5174-3._St._Petersburg._Greater_Hermitage.jpg/1280px-5174-3._St._Petersburg._Greater_Hermitage.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "peterhof",
+    "answer": "Peterhof, Russia",
+    "decoys": [
+      "Saint Petersburg, Russia",
+      "Stockholm, Sweden",
+      "Copenhagen, Denmark"
+    ],
+    "image": "/geo/peterhof.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Peterhof_Palace%2C_Saint_Petersburg%2C_Russia_%2844408938295%29.jpg/1280px-Peterhof_Palace%2C_Saint_Petersburg%2C_Russia_%2844408938295%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "istanbul_bosphorus",
+    "answer": "Istanbul, Turkey",
+    "decoys": [
+      "Athens, Greece",
+      "Thessaloniki, Greece",
+      "Sofia, Bulgaria"
+    ],
+    "image": "/geo/istanbul_bosphorus.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Turkish_Strait_disambig.svg/1280px-Turkish_Strait_disambig.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "hagia_sophia",
+    "answer": "Istanbul, Turkey",
+    "decoys": [
+      "Athens, Greece",
+      "Cairo, Egypt",
+      "Tehran, Iran"
+    ],
+    "image": "/geo/hagia_sophia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/1280px-Hagia_Sophia_%28228968325%29.jpeg",
+    "tier": "medium"
+  },
+  {
+    "id": "cappadocia2",
+    "answer": "Nevşehir, Turkey",
+    "decoys": [
+      "Meteora, Greece",
+      "Pamukkale, Turkey",
+      "Wadi Rum, Jordan"
+    ],
+    "image": "/geo/cappadocia2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg/1280px-Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "dome_rock",
+    "answer": "Jerusalem",
+    "decoys": [
+      "Mecca, Saudi Arabia",
+      "Medina, Saudi Arabia",
+      "Cairo, Egypt"
+    ],
+    "image": "/geo/dome_rock.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg/1280px-Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "sheikh_zayed",
+    "answer": "Abu Dhabi, UAE",
+    "decoys": [
+      "Dubai, UAE",
+      "Doha, Qatar",
+      "Manama, Bahrain"
+    ],
+    "image": "/geo/sheikh_zayed.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7d/Sheikh_Zayed_Mosque_view.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "burj_khalifa",
+    "answer": "Dubai, UAE",
+    "decoys": [
+      "Abu Dhabi, UAE",
+      "Doha, Qatar",
+      "Manama, Bahrain"
+    ],
+    "image": "/geo/burj_khalifa.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1280px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "palm_dubai",
+    "answer": "Dubai, UAE",
+    "decoys": [
+      "Abu Dhabi, UAE",
+      "Doha, Qatar",
+      "Muscat, Oman"
+    ],
+    "image": "/geo/palm_dubai.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dubai_Palm_Islands_from_the_air.jpg/1280px-Dubai_Palm_Islands_from_the_air.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "chichen_itza2",
+    "answer": "Yucatán, Mexico",
+    "decoys": [
+      "Oaxaca, Mexico",
+      "Chiapas, Mexico",
+      "Campeche, Mexico"
+    ],
+    "image": "/geo/chichen_itza2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "mexico_city",
+    "answer": "Mexico City, Mexico",
+    "decoys": [
+      "Guadalajara, Mexico",
+      "Monterrey, Mexico",
+      "Puebla, Mexico"
+    ],
+    "image": "/geo/mexico_city.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29_%28cropped%29.jpg/1280px-Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29_%28cropped%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "havana",
+    "answer": "Havana, Cuba",
+    "decoys": [
+      "Santo Domingo, Dominican Republic",
+      "San Juan, Puerto Rico",
+      "Kingston, Jamaica"
+    ],
+    "image": "/geo/havana.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Havana_Map_-_Habana_Vieja.png/1280px-Havana_Map_-_Habana_Vieja.png",
+    "tier": "hard"
+  },
+  {
+    "id": "cartagena",
+    "answer": "Cartagena, Colombia",
+    "decoys": [
+      "Barranquilla, Colombia",
+      "Santa Marta, Colombia",
+      "Havana, Cuba"
+    ],
+    "image": "/geo/cartagena.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Museo_Naval_del_Caribe.JPG/1280px-Museo_Naval_del_Caribe.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "rio_carnival",
+    "answer": "Rio de Janeiro, Brazil",
+    "decoys": [
+      "São Paulo, Brazil",
+      "Belo Horizonte, Brazil",
+      "Salvador, Brazil"
+    ],
+    "image": "/geo/rio_carnival.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/1280px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "sugarloaf",
+    "answer": "Rio de Janeiro, Brazil",
+    "decoys": [
+      "São Paulo, Brazil",
+      "Salvador, Brazil",
+      "Buenos Aires, Argentina"
+    ],
+    "image": "/geo/sugarloaf.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/P%C3%A3o_de_A%C3%A7ucar_-_Sugarloaf_Mountain_-_Zuckerhut_-_2022.jpg/1280px-P%C3%A3o_de_A%C3%A7ucar_-_Sugarloaf_Mountain_-_Zuckerhut_-_2022.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "colca_canyon",
+    "answer": "Arequipa, Peru",
+    "decoys": [
+      "Cusco, Peru",
+      "Bolivia",
+      "Ecuador"
+    ],
+    "image": "/geo/colca_canyon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Colca_Canyon_Puno.jpg/1280px-Colca_Canyon_Puno.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "lake_titicaca",
+    "answer": "Peru / Bolivia",
+    "decoys": [
+      "Ecuador",
+      "Colombia",
+      "Chile"
+    ],
+    "image": "/geo/lake_titicaca.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lake_Titicaca_ESA22522896.jpeg/1280px-Lake_Titicaca_ESA22522896.jpeg",
+    "tier": "medium"
+  },
+  {
+    "id": "buenos_aires_obelisk",
+    "answer": "Buenos Aires, Argentina",
+    "decoys": [
+      "Montevideo, Uruguay",
+      "Santiago, Chile",
+      "Lima, Peru"
+    ],
+    "image": "/geo/buenos_aires_obelisk.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Buenos_Aires_%2820234294752%29.jpg/1280px-Buenos_Aires_%2820234294752%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "perito_moreno",
+    "answer": "Patagonia, Argentina",
+    "decoys": [
+      "Alaska, USA",
+      "Iceland",
+      "Greenland"
+    ],
+    "image": "/geo/perito_moreno.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Perito_Moreno_Glacier_2023.jpg/1280px-Perito_Moreno_Glacier_2023.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "marrakech",
+    "answer": "Marrakech, Morocco",
+    "decoys": [
+      "Fez, Morocco",
+      "Casablanca, Morocco",
+      "Tunis, Tunisia"
+    ],
+    "image": "/geo/marrakech.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Djemaa_el_Fna.jpg/1280px-Djemaa_el_Fna.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "chefchaouen",
+    "answer": "Chefchaouen, Morocco",
+    "decoys": [
+      "Fez, Morocco",
+      "Tangier, Morocco",
+      "Essaouira, Morocco"
+    ],
+    "image": "/geo/chefchaouen.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chefchaouen_%2852189357475%29.jpg/1280px-Chefchaouen_%2852189357475%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "lalibela",
+    "answer": "Amhara, Ethiopia",
+    "decoys": [
+      "Gondar, Ethiopia",
+      "Axum, Ethiopia",
+      "Addis Ababa, Ethiopia"
+    ],
+    "image": "/geo/lalibela.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lalibela%2C_san_giorgio%2C_esterno_24.jpg/1280px-Lalibela%2C_san_giorgio%2C_esterno_24.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "zanzibar",
+    "answer": "Stone Town, Zanzibar",
+    "decoys": [
+      "Mombasa, Kenya",
+      "Dar es Salaam, Tanzania",
+      "Pemba, Tanzania"
+    ],
+    "image": "/geo/zanzibar.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Zanzibar_sultan_palace.jpg/1280px-Zanzibar_sultan_palace.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "okavango",
+    "answer": "Ngamiland, Botswana",
+    "decoys": [
+      "Maun, Botswana",
+      "Windhoek, Namibia",
+      "Harare, Zimbabwe"
+    ],
+    "image": "/geo/okavango.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Okavango_Delta%2C_Botswana1.jpg/1280px-Okavango_Delta%2C_Botswana1.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "knossos",
+    "answer": "Crete, Greece",
+    "decoys": [
+      "Santorini, Greece",
+      "Rhodes, Greece",
+      "Corfu, Greece"
+    ],
+    "image": "/geo/knossos.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Crete_integrated_map-en.svg/1280px-Crete_integrated_map-en.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "olympia",
+    "answer": "Elis, Greece",
+    "decoys": [
+      "Athens, Greece",
+      "Delphi, Greece",
+      "Corinth, Greece"
+    ],
+    "image": "/geo/olympia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Ancient_Olympia%2C_Greece2.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "delphi",
+    "answer": "Phocis, Greece",
+    "decoys": [
+      "Athens, Greece",
+      "Olympia, Greece",
+      "Corinth, Greece"
+    ],
+    "image": "/geo/delphi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Delphi%2C_Greece_-_panoramio.jpg/1280px-Delphi%2C_Greece_-_panoramio.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "ephesus",
+    "answer": "İzmir, Turkey",
+    "decoys": [
+      "Antalya, Turkey",
+      "Bodrum, Turkey",
+      "Izmir, Turkey"
+    ],
+    "image": "/geo/ephesus.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ephesus_Celsus_Library_Fa%C3%A7ade.jpg/1280px-Ephesus_Celsus_Library_Fa%C3%A7ade.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "hierapolis",
+    "answer": "Denizli, Turkey",
+    "decoys": [
+      "Antalya, Turkey",
+      "Ephesus, Turkey",
+      "Aphrodisias, Turkey"
+    ],
+    "image": "/geo/hierapolis.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Hierapolis_01.jpg/1280px-Hierapolis_01.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "mount_athos",
+    "answer": "Chalkidiki, Greece",
+    "decoys": [
+      "Thessaloniki, Greece",
+      "Mount Olympus, Greece",
+      "Pelion, Greece"
+    ],
+    "image": "/geo/mount_athos.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mt._Athos_%283939757657%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "meteora2",
+    "answer": "Thessaly, Greece",
+    "decoys": [
+      "Epirus, Greece",
+      "Cappadocia, Turkey",
+      "Hoodoos, USA"
+    ],
+    "image": "/geo/meteora2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Meteora%27s_monastery_2.jpg/1280px-Meteora%27s_monastery_2.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "colmar",
+    "answer": "Alsace, France",
+    "decoys": [
+      "Strasbourg, France",
+      "Mulhouse, France",
+      "Basel, Switzerland"
+    ],
+    "image": "/geo/colmar.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg/1280px-View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "mont_st_michel",
+    "answer": "Normandy, France",
+    "decoys": [
+      "Brittany, France",
+      "Cornwall, England",
+      "Saint Malo, France"
+    ],
+    "image": "/geo/mont_st_michel.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/1280px-Mont-Saint-Michel_vu_du_ciel.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "chateau_de_chambord",
+    "answer": "Loire Valley, France",
+    "decoys": [
+      "Bordeaux, France",
+      "Tours, France",
+      "Blois, France"
+    ],
+    "image": "/geo/chateau_de_chambord.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg/1280px-Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "chenonceau",
+    "answer": "Loire Valley, France",
+    "decoys": [
+      "Paris, France",
+      "Blois, France",
+      "Amboise, France"
+    ],
+    "image": "/geo/chenonceau.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Chateau_de_Chenonceau_2008E_%28adjusted2%29.jpg/1280px-Chateau_de_Chenonceau_2008E_%28adjusted2%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "carcassonne",
+    "answer": "Aude, France",
+    "decoys": [
+      "Nîmes, France",
+      "Montpellier, France",
+      "Avignon, France"
+    ],
+    "image": "/geo/carcassonne.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/1_carcassonne_aerial_2016.jpg/1280px-1_carcassonne_aerial_2016.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "avignon_bridge",
+    "answer": "Avignon, France",
+    "decoys": [
+      "Lyon, France",
+      "Nîmes, France",
+      "Montpellier, France"
+    ],
+    "image": "/geo/avignon_bridge.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%22Sur_le_Pont_d%27Avignon_on_y_danse%22_is_the_famous_song%2C_but_now_we_see_only_many_tourist_just_standing_there_-_panoramio.jpg/1280px-%22Sur_le_Pont_d%27Avignon_on_y_danse%22_is_the_famous_song%2C_but_now_we_see_only_many_tourist_just_standing_there_-_panoramio.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "mont_blanc",
+    "answer": "Chamonix, France/Italy",
+    "decoys": [
+      "Matterhorn, Switzerland",
+      "Jungfrau, Switzerland",
+      "Monte Rosa, Switzerland"
+    ],
+    "image": "/geo/mont_blanc.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mont_Blanc_Aiguille.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "cinque_terre",
+    "answer": "Liguria, Italy",
+    "decoys": [
+      "Amalfi Coast, Italy",
+      "Positano, Italy",
+      "Portofino, Italy"
+    ],
+    "image": "/geo/cinque_terre.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg/1280px-Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "amalfi_coast",
+    "answer": "Campania, Italy",
+    "decoys": [
+      "Cinque Terre, Italy",
+      "Sardinia, Italy",
+      "Sorrento, Italy"
+    ],
+    "image": "/geo/amalfi_coast.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Amalfi_Coast_%28Italy%2C_October_2020%29_-_75_%2850558355441%29.jpg/1280px-Amalfi_Coast_%28Italy%2C_October_2020%29_-_75_%2850558355441%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "positano",
+    "answer": "Campania, Italy",
+    "decoys": [
+      "Amalfi, Italy",
+      "Ravello, Italy",
+      "Sorrento, Italy"
+    ],
+    "image": "/geo/positano.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Positano_Sunset.JPG/1280px-Positano_Sunset.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "dolomites",
+    "answer": "South Tyrol, Italy",
+    "decoys": [
+      "Austrian Alps",
+      "Swiss Alps",
+      "Tatra Mountains, Poland"
+    ],
+    "image": "/geo/dolomites.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Faloria_Cortina_d%27Ampezzo_10.jpg/1280px-Faloria_Cortina_d%27Ampezzo_10.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "milan_cathedral",
+    "answer": "Milan, Italy",
+    "decoys": [
+      "Turin, Italy",
+      "Bologna, Italy",
+      "Genoa, Italy"
+    ],
+    "image": "/geo/milan_cathedral.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Milan_Cathedral_from_Piazza_del_Duomo.jpg/1280px-Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "piazza_navona",
+    "answer": "Rome, Italy",
+    "decoys": [
+      "Florence, Italy",
+      "Naples, Italy",
+      "Venice, Italy"
+    ],
+    "image": "/geo/piazza_navona.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/1280px-Piazza_Navona_%28Rome%29_at_night.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "palermo",
+    "answer": "Palermo, Sicily",
+    "decoys": [
+      "Catania, Sicily",
+      "Syracuse, Sicily",
+      "Agrigento, Sicily"
+    ],
+    "image": "/geo/palermo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Palermo_Cathedral_Facade.jpg/1280px-Palermo_Cathedral_Facade.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "kotor",
+    "answer": "Kotor, Montenegro",
+    "decoys": [
+      "Dubrovnik, Croatia",
+      "Split, Croatia",
+      "Budva, Montenegro"
+    ],
+    "image": "/geo/kotor.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/20090719_Crkva_Gospa_od_Zdravlja_Kotor_Bay_Montenegro.jpg/1280px-20090719_Crkva_Gospa_od_Zdravlja_Kotor_Bay_Montenegro.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "budapest_parliament",
+    "answer": "Budapest, Hungary",
+    "decoys": [
+      "Vienna, Austria",
+      "Prague, Czechia",
+      "Warsaw, Poland"
+    ],
+    "image": "/geo/budapest_parliament.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hungarian_Parliament_Building_from_across_the_Danube%2C_2025-01-11.jpg/1280px-Hungarian_Parliament_Building_from_across_the_Danube%2C_2025-01-11.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "buda_castle",
+    "answer": "Budapest, Hungary",
+    "decoys": [
+      "Vienna, Austria",
+      "Prague, Czechia",
+      "Bratislava, Slovakia"
+    ],
+    "image": "/geo/buda_castle.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg/1280px-Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "szechenyi_bath",
+    "answer": "Budapest, Hungary",
+    "decoys": [
+      "Vienna, Austria",
+      "Baden-Baden, Germany",
+      "Karlovy Vary, Czechia"
+    ],
+    "image": "/geo/szechenyi_bath.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Budapest_Sz%C3%A9chenyi_Baths_R02.jpg/1280px-Budapest_Sz%C3%A9chenyi_Baths_R02.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "monastiraki",
+    "answer": "Athens, Greece",
+    "decoys": [
+      "Thessaloniki, Greece",
+      "Istanbul, Turkey",
+      "Rome, Italy"
+    ],
+    "image": "/geo/monastiraki.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Monastiraki_Square_on_June_6%2C_2020.jpg/1280px-Monastiraki_Square_on_June_6%2C_2020.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "mykonos",
+    "answer": "Mykonos, Greece",
+    "decoys": [
+      "Santorini, Greece",
+      "Naxos, Greece",
+      "Paros, Greece"
+    ],
+    "image": "/geo/mykonos.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/2011_Dimos_Mykonou.png/1280px-2011_Dimos_Mykonou.png",
+    "tier": "medium"
+  },
+  {
+    "id": "mount_olympus",
+    "answer": "Thessaly, Greece",
+    "decoys": [
+      "Mount Parnassus, Greece",
+      "Mount Ida, Crete",
+      "Mount Athos, Greece"
+    ],
+    "image": "/geo/mount_olympus.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Olympus_National_Park_30.jpg/1280px-Olympus_National_Park_30.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "marrakech_medina",
+    "answer": "Marrakech, Morocco",
+    "decoys": [
+      "Fez, Morocco",
+      "Casablanca, Morocco",
+      "Tunis, Tunisia"
+    ],
+    "image": "/geo/marrakech_medina.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Pavillon_Menarag%C3%A4rten.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "sahara_dunes",
+    "answer": "Merzouga, Morocco",
+    "decoys": [
+      "Sossusvlei, Namibia",
+      "Sahara, Algeria",
+      "Rub al-Khali, Saudi Arabia"
+    ],
+    "image": "/geo/sahara_dunes.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Merzouga_Dunes_2011.jpg/1280px-Merzouga_Dunes_2011.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "volubilis",
+    "answer": "Meknes, Morocco",
+    "decoys": [
+      "Carthage, Tunisia",
+      "Leptis Magna, Libya",
+      "Timgad, Algeria"
+    ],
+    "image": "/geo/volubilis.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Volubilis_Longshot_II.jpg/1280px-Volubilis_Longshot_II.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "carthage",
+    "answer": "Tunis, Tunisia",
+    "decoys": [
+      "Tripoli, Libya",
+      "Algiers, Algeria",
+      "Casablanca, Morocco"
+    ],
+    "image": "/geo/carthage.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Montage_ville_de_Carthage.png/1280px-Montage_ville_de_Carthage.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "namib_desert",
+    "answer": "Namib Desert, Namibia",
+    "decoys": [
+      "Kalahari, Botswana",
+      "Sahara, Algeria",
+      "Atacama, Chile"
+    ],
+    "image": "/geo/namib_desert.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Namib_desert_MODIS.jpg/1280px-Namib_desert_MODIS.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "bwindi",
+    "answer": "Southwestern Uganda",
+    "decoys": [
+      "Rwanda",
+      "Congo",
+      "Kenya"
+    ],
+    "image": "/geo/bwindi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bwindi_Impenetrable_National_Park_desde_el_Broadbill_Forest_Camp_20190925_085152.jpg/1280px-Bwindi_Impenetrable_National_Park_desde_el_Broadbill_Forest_Camp_20190925_085152.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "virunga",
+    "answer": "Rwanda/Congo/Uganda",
+    "decoys": [
+      "Tanzania",
+      "Burundi",
+      "Ethiopia"
+    ],
+    "image": "/geo/virunga.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Virunga_National_Park_Landscape.jpg/1280px-Virunga_National_Park_Landscape.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "dubai_frame",
+    "answer": "Dubai, UAE",
+    "decoys": [
+      "Abu Dhabi, UAE",
+      "Doha, Qatar",
+      "Manama, Bahrain"
+    ],
+    "image": "/geo/dubai_frame.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/The_Dubai_Frame.jpg/1280px-The_Dubai_Frame.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "mecca",
+    "answer": "Mecca, Saudi Arabia",
+    "decoys": [
+      "Medina, Saudi Arabia",
+      "Jeddah, Saudi Arabia",
+      "Riyadh, Saudi Arabia"
+    ],
+    "image": "/geo/mecca.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0_%28cropped%29.jpg/1280px-Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0_%28cropped%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "jerusalem_walls",
+    "answer": "Jerusalem",
+    "decoys": [
+      "Tel Aviv, Israel",
+      "Bethlehem, Palestine",
+      "Jericho, Palestine"
+    ],
+    "image": "/geo/jerusalem_walls.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg/1280px-Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "palmyra",
+    "answer": "Homs Governorate, Syria",
+    "decoys": [
+      "Bosra, Syria",
+      "Apamea, Syria",
+      "Petra, Jordan"
+    ],
+    "image": "/geo/palmyra.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Palmyra_03.jpg/1280px-Palmyra_03.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "isfahan",
+    "answer": "Isfahan, Iran",
+    "decoys": [
+      "Tehran, Iran",
+      "Shiraz, Iran",
+      "Mashhad, Iran"
+    ],
+    "image": "/geo/isfahan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Naqsh-i_Jahan_Square%2C_Jan._2018.jpg/1280px-Naqsh-i_Jahan_Square%2C_Jan._2018.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "khajuraho",
+    "answer": "Madhya Pradesh, India",
+    "decoys": [
+      "Rajasthan, India",
+      "Uttar Pradesh, India",
+      "Odisha, India"
+    ],
+    "image": "/geo/khajuraho.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/1280px-1_Khajuraho.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "ajanta",
+    "answer": "Maharashtra, India",
+    "decoys": [
+      "Madhya Pradesh, India",
+      "Karnataka, India",
+      "Rajasthan, India"
+    ],
+    "image": "/geo/ajanta.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "varanasi",
+    "answer": "Uttar Pradesh, India",
+    "decoys": [
+      "Ayodhya, India",
+      "Mathura, India",
+      "Allahabad, India"
+    ],
+    "image": "/geo/varanasi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg/1280px-Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "mysore_palace",
+    "answer": "Mysore, India",
+    "decoys": [
+      "Jaipur, India",
+      "Udaipur, India",
+      "Hyderabad, India"
+    ],
+    "image": "/geo/mysore_palace.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/1280px-Mysore_Palace_Morning.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "meenakshi",
+    "answer": "Madurai, India",
+    "decoys": [
+      "Chennai, India",
+      "Bangalore, India",
+      "Thanjavur, India"
+    ],
+    "image": "/geo/meenakshi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/1280px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "yangon_shwedagon",
+    "answer": "Yangon, Myanmar",
+    "decoys": [
+      "Mandalay, Myanmar",
+      "Bagan, Myanmar",
+      "Naypyidaw, Myanmar"
+    ],
+    "image": "/geo/yangon_shwedagon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/1280px-Shwedagon_Pagoda_2017.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "luang_prabang",
+    "answer": "Luang Prabang, Laos",
+    "decoys": [
+      "Vientiane, Laos",
+      "Chiang Mai, Thailand",
+      "Siem Reap, Cambodia"
+    ],
+    "image": "/geo/luang_prabang.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg/1280px-Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "shwezigon",
+    "answer": "Bagan, Myanmar",
+    "decoys": [
+      "Mandalay, Myanmar",
+      "Yangon, Myanmar",
+      "Pagan, Sri Lanka"
+    ],
+    "image": "/geo/shwezigon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Shwezigon.jpg/1280px-Shwezigon.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "wat_phra_kaew",
+    "answer": "Bangkok, Thailand",
+    "decoys": [
+      "Chiang Mai, Thailand",
+      "Ayutthaya, Thailand",
+      "Sukhothai, Thailand"
+    ],
+    "image": "/geo/wat_phra_kaew.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Wat_Phra_Kaew_by_Ninara_TSP_edit_crop.jpg/1280px-Wat_Phra_Kaew_by_Ninara_TSP_edit_crop.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "uluwatu",
+    "answer": "Bali, Indonesia",
+    "decoys": [
+      "Lombok, Indonesia",
+      "Nusa Penida, Indonesia",
+      "Gili Islands, Indonesia"
+    ],
+    "image": "/geo/uluwatu.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg/1280px-Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "komodo",
+    "answer": "East Nusa Tenggara, Indonesia",
+    "decoys": [
+      "Rinca, Indonesia",
+      "Flores, Indonesia",
+      "Lombok, Indonesia"
+    ],
+    "image": "/geo/komodo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Komodo_dragon_at_Komodo_National_Park.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "raja_ampat",
+    "answer": "West Papua, Indonesia",
+    "decoys": [
+      "Sulawesi, Indonesia",
+      "Komodo, Indonesia",
+      "Palawan, Philippines"
+    ],
+    "image": "/geo/raja_ampat.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Raja_Ampat_Islands_-_journal.pbio.1001457.g001.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "palawan",
+    "answer": "Palawan, Philippines",
+    "decoys": [
+      "Coron, Philippines",
+      "Boracay, Philippines",
+      "Cebu, Philippines"
+    ],
+    "image": "/geo/palawan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kayangan_Lake%2C_Coron_-_Palawan.jpg/1280px-Kayangan_Lake%2C_Coron_-_Palawan.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "chocolate_hills",
+    "answer": "Bohol, Philippines",
+    "decoys": [
+      "Cebu, Philippines",
+      "Mindanao, Philippines",
+      "Leyte, Philippines"
+    ],
+    "image": "/geo/chocolate_hills.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chocolate_Hills_Bohol.JPG/1280px-Chocolate_Hills_Bohol.JPG",
+    "tier": "hard"
+  },
+  {
+    "id": "mount_bromo",
+    "answer": "East Java, Indonesia",
+    "decoys": [
+      "Central Java, Indonesia",
+      "Bali, Indonesia",
+      "Lombok, Indonesia"
+    ],
+    "image": "/geo/mount_bromo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bromo-Semeru-Batok-Widodaren.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "banaue",
+    "answer": "Ifugao, Philippines",
+    "decoys": [
+      "Batad, Philippines",
+      "Sagada, Philippines",
+      "Benguet, Philippines"
+    ],
+    "image": "/geo/banaue.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Banaue-terrace.JPG/1280px-Banaue-terrace.JPG",
+    "tier": "extreme"
+  },
+  {
+    "id": "guilin_karst",
+    "answer": "Guilin, China",
+    "decoys": [
+      "Zhangjiajie, China",
+      "Yangshuo, China",
+      "Guizhou, China"
+    ],
+    "image": "/geo/guilin_karst.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Xiangshan_Scenic_Area_89468-Guilin_%2831130832628%29.jpg/1280px-Xiangshan_Scenic_Area_89468-Guilin_%2831130832628%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "zhangjiajie2",
+    "answer": "Hunan, China",
+    "decoys": [
+      "Guilin, China",
+      "Guizhou, China",
+      "Chongqing, China"
+    ],
+    "image": "/geo/zhangjiajie2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1280px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "jiuzhaigou",
+    "answer": "Sichuan, China",
+    "decoys": [
+      "Yunnan, China",
+      "Guizhou, China",
+      "Gansu, China"
+    ],
+    "image": "/geo/jiuzhaigou.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/1_jiuzhaigou_valley_wu_hua_hai_2011b.jpg/1280px-1_jiuzhaigou_valley_wu_hua_hai_2011b.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "huangshan",
+    "answer": "Anhui, China",
+    "decoys": [
+      "Guilin, China",
+      "Zhangjiajie, China",
+      "Sichuan, China"
+    ],
+    "image": "/geo/huangshan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Huangshan_pic_4.jpg/1280px-Huangshan_pic_4.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "the_bund",
+    "answer": "Shanghai, China",
+    "decoys": [
+      "Hong Kong",
+      "Guangzhou, China",
+      "Nanjing, China"
+    ],
+    "image": "/geo/the_bund.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Bund_2.jpg/1280px-The_Bund_2.jpg",
+    "tier": "medium"
   }
 ]

@@ -44,5 +44,5 @@ export const landmarkModule = {
       };
     }
   ),
-  available: false,
+  available: true,
 };

@@ -8,7 +8,8 @@
       "Google"
     ],
     "image": "/logos/apple.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/960px-Apple_logo_black.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/960px-Apple_logo_black.svg.png",
+    "tier": "easy"
   },
   {
     "id": "google",
@@ -19,7 +20,8 @@
       "DuckDuckGo"
     ],
     "image": "/logos/google.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/960px-Googleplex_HQ_%28cropped%29.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/960px-Googleplex_HQ_%28cropped%29.jpg",
+    "tier": "easy"
   },
   {
     "id": "microsoft",
@@ -30,7 +32,8 @@
       "Intel"
     ],
     "image": "/logos/microsoft.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Aerial_Microsoft_West_Campus_August_2009.jpg/960px-Aerial_Microsoft_West_Campus_August_2009.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Aerial_Microsoft_West_Campus_August_2009.jpg/960px-Aerial_Microsoft_West_Campus_August_2009.jpg",
+    "tier": "easy"
   },
   {
     "id": "amazon",
@@ -41,7 +44,8 @@
       "Walmart"
     ],
     "image": "/logos/amazon.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon_Tower_I_topped_out%2C_June_2015.jpg/960px-Amazon_Tower_I_topped_out%2C_June_2015.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon_Tower_I_topped_out%2C_June_2015.jpg/960px-Amazon_Tower_I_topped_out%2C_June_2015.jpg",
+    "tier": "easy"
   },
   {
     "id": "meta",
@@ -52,7 +56,8 @@
       "TikTok"
     ],
     "image": "/logos/meta.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Meta_HQ_2023.png/960px-Meta_HQ_2023.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Meta_HQ_2023.png/960px-Meta_HQ_2023.png",
+    "tier": "easy"
   },
   {
     "id": "tesla",
@@ -63,7 +68,8 @@
       "Toyota"
     ],
     "image": "/logos/tesla.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/960px-Tesla_Motors.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/960px-Tesla_Motors.svg.png",
+    "tier": "medium"
   },
   {
     "id": "nike",
@@ -74,7 +80,8 @@
       "Reebok"
     ],
     "image": "/logos/nike.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg/960px-Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg/960px-Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg",
+    "tier": "easy"
   },
   {
     "id": "mcdonalds",
@@ -85,7 +92,8 @@
       "Wendy's"
     ],
     "image": "/logos/mcdonalds.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/960px-McDonald%27s_Golden_Arches.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/960px-McDonald%27s_Golden_Arches.svg.png",
+    "tier": "easy"
   },
   {
     "id": "cocacola",
@@ -96,7 +104,8 @@
       "Sprite"
     ],
     "image": "/logos/cocacola.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Coca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg/960px-Coca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Coca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg/960px-Coca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg",
+    "tier": "easy"
   },
   {
     "id": "starbucks",
@@ -107,7 +116,8 @@
       "Peet's"
     ],
     "image": "/logos/starbucks.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Starbuckscenter.jpg/960px-Starbuckscenter.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Starbuckscenter.jpg/960px-Starbuckscenter.jpg",
+    "tier": "easy"
   },
   {
     "id": "adidas",
@@ -118,7 +128,8 @@
       "Under Armour"
     ],
     "image": "/logos/adidas.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Adidas_2022_logo.svg/960px-Adidas_2022_logo.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Adidas_2022_logo.svg/960px-Adidas_2022_logo.svg.png",
+    "tier": "easy"
   },
   {
     "id": "puma",
@@ -129,7 +140,8 @@
       "Fila"
     ],
     "image": "/logos/puma.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Zeppelinstra%C3%9Fe_2_Herzogenaurach_03.JPG/960px-Zeppelinstra%C3%9Fe_2_Herzogenaurach_03.JPG"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Zeppelinstra%C3%9Fe_2_Herzogenaurach_03.JPG/960px-Zeppelinstra%C3%9Fe_2_Herzogenaurach_03.JPG",
+    "tier": "medium"
   },
   {
     "id": "pepsi",
@@ -140,7 +152,8 @@
       "7 Up"
     ],
     "image": "/logos/pepsi.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/960px-Pepsi_2023.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/960px-Pepsi_2023.svg.png",
+    "tier": "easy"
   },
   {
     "id": "intel",
@@ -151,7 +164,8 @@
       "Qualcomm"
     ],
     "image": "/logos/intel.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Intel_Headquarters_in_2023.jpg/960px-Intel_Headquarters_in_2023.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Intel_Headquarters_in_2023.jpg/960px-Intel_Headquarters_in_2023.jpg",
+    "tier": "medium"
   },
   {
     "id": "ibm",
@@ -162,7 +176,8 @@
       "Dell"
     ],
     "image": "/logos/ibm.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/IBM_CHQ_-_Oct_2014.jpg/960px-IBM_CHQ_-_Oct_2014.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/IBM_CHQ_-_Oct_2014.jpg/960px-IBM_CHQ_-_Oct_2014.jpg",
+    "tier": "hard"
   },
   {
     "id": "samsung",
@@ -173,7 +188,8 @@
       "Panasonic"
     ],
     "image": "/logos/samsung.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Samsung_headquarters.jpg/960px-Samsung_headquarters.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Samsung_headquarters.jpg/960px-Samsung_headquarters.jpg",
+    "tier": "easy"
   },
   {
     "id": "sony",
@@ -184,7 +200,8 @@
       "Sharp"
     ],
     "image": "/logos/sony.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sony_headquaters_1.jpg/960px-Sony_headquaters_1.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sony_headquaters_1.jpg/960px-Sony_headquaters_1.jpg",
+    "tier": "easy"
   },
   {
     "id": "toyota",
@@ -195,7 +212,8 @@
       "Mazda"
     ],
     "image": "/logos/toyota.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Headquarter_of_Toyota_Motor_Corporation_3.JPG"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Headquarter_of_Toyota_Motor_Corporation_3.JPG",
+    "tier": "easy"
   },
   {
     "id": "honda",
@@ -206,7 +224,8 @@
       "Suzuki"
     ],
     "image": "/logos/honda.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Honda_hq.jpg/960px-Honda_hq.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Honda_hq.jpg/960px-Honda_hq.jpg",
+    "tier": "medium"
   },
   {
     "id": "bmw",
@@ -217,7 +236,8 @@
       "Volkswagen"
     ],
     "image": "/logos/bmw.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_BMW_Group_2021.svg/960px-Logo_BMW_Group_2021.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_BMW_Group_2021.svg/960px-Logo_BMW_Group_2021.svg.png",
+    "tier": "easy"
   },
   {
     "id": "mercedes",
@@ -228,7 +248,8 @@
       "Lexus"
     ],
     "image": "/logos/mercedes.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg/960px-Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg/960px-Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg.png",
+    "tier": "easy"
   },
   {
     "id": "audi",
@@ -239,7 +260,8 @@
       "Porsche"
     ],
     "image": "/logos/audi.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Das_Audi_Forum_Ingolstadt.JPG/960px-Das_Audi_Forum_Ingolstadt.JPG"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Das_Audi_Forum_Ingolstadt.JPG/960px-Das_Audi_Forum_Ingolstadt.JPG",
+    "tier": "medium"
   },
   {
     "id": "volkswagen",
@@ -250,7 +272,8 @@
       "Opel"
     ],
     "image": "/logos/volkswagen.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/960px-Volkswagen_logo_2019.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/960px-Volkswagen_logo_2019.svg.png",
+    "tier": "medium"
   },
   {
     "id": "ferrari",
@@ -261,7 +284,8 @@
       "Porsche"
     ],
     "image": "/logos/ferrari.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_%2836309429124%29.jpg/960px-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_%2836309429124%29.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_%2836309429124%29.jpg/960px-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_%2836309429124%29.jpg",
+    "tier": "medium"
   },
   {
     "id": "ford",
@@ -272,7 +296,8 @@
       "Chrysler"
     ],
     "image": "/logos/ford.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ford_World_Headquarters_from_sidewalk%2C_against_sun.jpg/960px-Ford_World_Headquarters_from_sidewalk%2C_against_sun.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ford_World_Headquarters_from_sidewalk%2C_against_sun.jpg/960px-Ford_World_Headquarters_from_sidewalk%2C_against_sun.jpg",
+    "tier": "easy"
   },
   {
     "id": "disney",
@@ -283,7 +308,8 @@
       "Paramount"
     ],
     "image": "/logos/disney.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Walt_Disney_company_logo.svg/960px-The_Walt_Disney_company_logo.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Walt_Disney_company_logo.svg/960px-The_Walt_Disney_company_logo.svg.png",
+    "tier": "easy"
   },
   {
     "id": "youtube",
@@ -294,7 +320,8 @@
       "Dailymotion"
     ],
     "image": "/logos/youtube.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/960px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/960px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png",
+    "tier": "easy"
   },
   {
     "id": "instagram",
@@ -305,7 +332,8 @@
       "Flickr"
     ],
     "image": "/logos/instagram.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png",
+    "tier": "easy"
   },
   {
     "id": "whatsapp",
@@ -316,7 +344,8 @@
       "Viber"
     ],
     "image": "/logos/whatsapp.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WhatsApp_Logo_green.svg/960px-WhatsApp_Logo_green.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WhatsApp_Logo_green.svg/960px-WhatsApp_Logo_green.svg.png",
+    "tier": "medium"
   },
   {
     "id": "uber",
@@ -327,7 +356,8 @@
       "Bolt"
     ],
     "image": "/logos/uber.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg/960px-Uber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg/960px-Uber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg",
+    "tier": "medium"
   },
   {
     "id": "airbnb",
@@ -338,7 +368,8 @@
       "Expedia"
     ],
     "image": "/logos/airbnb.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/888_Brannan%2C_San_Francisco%2C_2016.jpg/960px-888_Brannan%2C_San_Francisco%2C_2016.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/888_Brannan%2C_San_Francisco%2C_2016.jpg/960px-888_Brannan%2C_San_Francisco%2C_2016.jpg",
+    "tier": "medium"
   },
   {
     "id": "paypal",
@@ -349,7 +380,8 @@
       "Square"
     ],
     "image": "/logos/paypal.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/PayPal_San_Jose_Headquarters.jpg/960px-PayPal_San_Jose_Headquarters.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/PayPal_San_Jose_Headquarters.jpg/960px-PayPal_San_Jose_Headquarters.jpg",
+    "tier": "medium"
   },
   {
     "id": "visa",
@@ -360,7 +392,8 @@
       "Discover"
     ],
     "image": "/logos/visa.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/300_Toni_Stone_Crossing.jpg/960px-300_Toni_Stone_Crossing.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/300_Toni_Stone_Crossing.jpg/960px-300_Toni_Stone_Crossing.jpg",
+    "tier": "medium"
   },
   {
     "id": "mastercard",
@@ -371,7 +404,8 @@
       "Maestro"
     ],
     "image": "/logos/mastercard.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/960px-Mastercard_2019_logo.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/960px-Mastercard_2019_logo.svg.png",
+    "tier": "medium"
   },
   {
     "id": "kfc",
@@ -382,7 +416,8 @@
       "Church's Chicken"
     ],
     "image": "/logos/kfc.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kentucky_Fried_Chicken_%28Tallulah%2C_Louisiana%29_01.jpg/960px-Kentucky_Fried_Chicken_%28Tallulah%2C_Louisiana%29_01.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kentucky_Fried_Chicken_%28Tallulah%2C_Louisiana%29_01.jpg/960px-Kentucky_Fried_Chicken_%28Tallulah%2C_Louisiana%29_01.jpg",
+    "tier": "medium"
   },
   {
     "id": "burgerking",
@@ -393,7 +428,8 @@
       "Hardee's"
     ],
     "image": "/logos/burgerking.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/960px-Burger_King_2020.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/960px-Burger_King_2020.svg.png",
+    "tier": "medium"
   },
   {
     "id": "subway",
@@ -404,7 +440,8 @@
       "Jersey Mike's"
     ],
     "image": "/logos/subway.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/A_Subway_restaurant_in_a_strip_mall_in_Franklin%2C_North_Carolina%2C_United_States.jpg/960px-A_Subway_restaurant_in_a_strip_mall_in_Franklin%2C_North_Carolina%2C_United_States.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/A_Subway_restaurant_in_a_strip_mall_in_Franklin%2C_North_Carolina%2C_United_States.jpg/960px-A_Subway_restaurant_in_a_strip_mall_in_Franklin%2C_North_Carolina%2C_United_States.jpg",
+    "tier": "medium"
   },
   {
     "id": "lego",
@@ -415,7 +452,8 @@
       "K'Nex"
     ],
     "image": "/logos/lego.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/960px-LEGO_logo.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/960px-LEGO_logo.svg.png",
+    "tier": "medium"
   },
   {
     "id": "ikea",
@@ -426,7 +464,8 @@
       "West Elm"
     ],
     "image": "/logos/ikea.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/IKEA_Shopping_centre_Sweden.jpg/960px-IKEA_Shopping_centre_Sweden.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/IKEA_Shopping_centre_Sweden.jpg/960px-IKEA_Shopping_centre_Sweden.jpg",
+    "tier": "medium"
   },
   {
     "id": "gucci",
@@ -437,7 +476,8 @@
       "Louis Vuitton"
     ],
     "image": "/logos/gucci.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gucci_NYC_Flagship_%2848064046878%29.jpg/960px-Gucci_NYC_Flagship_%2848064046878%29.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gucci_NYC_Flagship_%2848064046878%29.jpg/960px-Gucci_NYC_Flagship_%2848064046878%29.jpg",
+    "tier": "medium"
   },
   {
     "id": "louisvuitton",
@@ -448,7 +488,8 @@
       "Hermès"
     ],
     "image": "/logos/louisvuitton.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Boutique_Louis_Vuitton_au_101_avenue_des_Champs-Elys%C3%A9es_%C3%A0_Paris.JPG/960px-Boutique_Louis_Vuitton_au_101_avenue_des_Champs-Elys%C3%A9es_%C3%A0_Paris.JPG"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Boutique_Louis_Vuitton_au_101_avenue_des_Champs-Elys%C3%A9es_%C3%A0_Paris.JPG/960px-Boutique_Louis_Vuitton_au_101_avenue_des_Champs-Elys%C3%A9es_%C3%A0_Paris.JPG",
+    "tier": "medium"
   },
   {
     "id": "rolex",
@@ -459,7 +500,8 @@
       "Patek Philippe"
     ],
     "image": "/logos/rolex.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_da_Rolex.png/960px-Logo_da_Rolex.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_da_Rolex.png/960px-Logo_da_Rolex.png",
+    "tier": "medium"
   },
   {
     "id": "shell",
@@ -470,7 +512,8 @@
       "Chevron"
     ],
     "image": "/logos/shell.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Shell_Centre_%288709496019%29.jpg/960px-The_Shell_Centre_%288709496019%29.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Shell_Centre_%288709496019%29.jpg/960px-The_Shell_Centre_%288709496019%29.jpg",
+    "tier": "hard"
   },
   {
     "id": "fedex",
@@ -481,7 +524,8 @@
       "USPS"
     ],
     "image": "/logos/fedex.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/N885FD_B777F_Fedex_%287001569004%29.jpg/960px-N885FD_B777F_Fedex_%287001569004%29.jpg"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/N885FD_B777F_Fedex_%287001569004%29.jpg/960px-N885FD_B777F_Fedex_%287001569004%29.jpg",
+    "tier": "hard"
   },
   {
     "id": "ups",
@@ -492,6 +536,2095 @@
       "USPS"
     ],
     "image": "/logos/ups.png",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/United_Parcel_Service_logo_2014.svg/960px-United_Parcel_Service_logo_2014.svg.png"
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/United_Parcel_Service_logo_2014.svg/960px-United_Parcel_Service_logo_2014.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "lamborghini",
+    "answer": "Lamborghini",
+    "decoys": [
+      "Ferrari",
+      "Bugatti",
+      "Pagani"
+    ],
+    "image": "/logos/lamborghini.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Lamborghini_Showroom_Dubai.jpg/960px-Lamborghini_Showroom_Dubai.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "porsche",
+    "answer": "Porsche",
+    "decoys": [
+      "Ferrari",
+      "Lamborghini",
+      "Aston Martin"
+    ],
+    "image": "/logos/porsche.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Porsche_logo.svg/960px-Porsche_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "rolls_royce",
+    "answer": "Rolls-Royce",
+    "decoys": [
+      "Bentley",
+      "Maybach",
+      "Aston Martin"
+    ],
+    "image": "/logos/rolls_royce.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Rolls-Royce_London_showroom.jpg/960px-Rolls-Royce_London_showroom.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "maserati",
+    "answer": "Maserati",
+    "decoys": [
+      "Ferrari",
+      "Lamborghini",
+      "Alfa Romeo"
+    ],
+    "image": "/logos/maserati.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Maserati_logo.svg/960px-Maserati_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "alfromeo",
+    "answer": "Alfa Romeo",
+    "decoys": [
+      "Ferrari",
+      "Fiat",
+      "Lancia"
+    ],
+    "image": "/logos/alfromeo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Alfa_Romeo_logo.svg/960px-Alfa_Romeo_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "fiat",
+    "answer": "Fiat",
+    "decoys": [
+      "Alfa Romeo",
+      "Peugeot",
+      "Renault"
+    ],
+    "image": "/logos/fiat.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Fiat_Chrysler_Automobiles_logo.svg/960px-Fiat_Chrysler_Automobiles_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "nissan",
+    "answer": "Nissan",
+    "decoys": [
+      "Honda",
+      "Mazda",
+      "Mitsubishi"
+    ],
+    "image": "/logos/nissan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nissan_logo.svg/960px-Nissan_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "hyundai",
+    "answer": "Hyundai",
+    "decoys": [
+      "Kia",
+      "Genesis",
+      "Daewoo"
+    ],
+    "image": "/logos/hyundai.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hyundai_Motor_Company_logo.svg/960px-Hyundai_Motor_Company_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "kia",
+    "answer": "Kia",
+    "decoys": [
+      "Hyundai",
+      "Genesis",
+      "SsangYong"
+    ],
+    "image": "/logos/kia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kia-logo.svg/960px-Kia-logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "mazda",
+    "answer": "Mazda",
+    "decoys": [
+      "Honda",
+      "Nissan",
+      "Subaru"
+    ],
+    "image": "/logos/mazda.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mazda_logo.svg/960px-Mazda_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "subaru",
+    "answer": "Subaru",
+    "decoys": [
+      "Mazda",
+      "Mitsubishi",
+      "Isuzu"
+    ],
+    "image": "/logos/subaru.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Subaru_logo.svg/960px-Subaru_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "mitsubishi",
+    "answer": "Mitsubishi",
+    "decoys": [
+      "Mazda",
+      "Subaru",
+      "Isuzu"
+    ],
+    "image": "/logos/mitsubishi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Mitsubishi_logo.svg/960px-Mitsubishi_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "volvo",
+    "answer": "Volvo",
+    "decoys": [
+      "Saab",
+      "Scania",
+      "DAF"
+    ],
+    "image": "/logos/volvo.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Volvo-Iron-Mark-Black.svg/960px-Volvo-Iron-Mark-Black.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "land_rover",
+    "answer": "Land Rover",
+    "decoys": [
+      "Jeep",
+      "Toyota",
+      "Ford"
+    ],
+    "image": "/logos/land_rover.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Land_Rover_logo.svg/960px-Land_Rover_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "jaguar",
+    "answer": "Jaguar",
+    "decoys": [
+      "Land Rover",
+      "Aston Martin",
+      "Bentley"
+    ],
+    "image": "/logos/jaguar.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jaguar_logo.svg/960px-Jaguar_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "jeep",
+    "answer": "Jeep",
+    "decoys": [
+      "Land Rover",
+      "Ford",
+      "Toyota"
+    ],
+    "image": "/logos/jeep.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Jeep_logo.svg/960px-Jeep_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "chevrolet",
+    "answer": "Chevrolet",
+    "decoys": [
+      "Ford",
+      "Dodge",
+      "GMC"
+    ],
+    "image": "/logos/chevrolet.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chevrolet_logo.svg/960px-Chevrolet_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "infiniti",
+    "answer": "Infiniti",
+    "decoys": [
+      "Lexus",
+      "Acura",
+      "Genesis"
+    ],
+    "image": "/logos/infiniti.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Infiniti_logo.svg/960px-Infiniti_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "acura",
+    "answer": "Acura",
+    "decoys": [
+      "Lexus",
+      "Infiniti",
+      "Genesis"
+    ],
+    "image": "/logos/acura.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Acura_logo.svg/960px-Acura_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "peugeot",
+    "answer": "Peugeot",
+    "decoys": [
+      "Renault",
+      "Citroën",
+      "Fiat"
+    ],
+    "image": "/logos/peugeot.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Peugeot_2021_Logo.svg/330px-Peugeot_2021_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "renault",
+    "answer": "Renault",
+    "decoys": [
+      "Peugeot",
+      "Citroën",
+      "Fiat"
+    ],
+    "image": "/logos/renault.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Renault_2021_Text.svg/960px-Renault_2021_Text.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "skoda",
+    "answer": "Škoda",
+    "decoys": [
+      "Volkswagen",
+      "SEAT",
+      "Audi"
+    ],
+    "image": "/logos/skoda.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Skoda_Auto_logo.svg/960px-Skoda_Auto_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "bugatti",
+    "answer": "Bugatti",
+    "decoys": [
+      "Pagani",
+      "Koenigsegg",
+      "Lamborghini"
+    ],
+    "image": "/logos/bugatti.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bugatti_logo.svg/960px-Bugatti_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "nvidia",
+    "answer": "NVIDIA",
+    "decoys": [
+      "AMD",
+      "Intel",
+      "Qualcomm"
+    ],
+    "image": "/logos/nvidia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/960px-Nvidia_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "amd",
+    "answer": "AMD",
+    "decoys": [
+      "NVIDIA",
+      "Intel",
+      "Qualcomm"
+    ],
+    "image": "/logos/amd.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/960px-AMD_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "qualcomm",
+    "answer": "Qualcomm",
+    "decoys": [
+      "MediaTek",
+      "NVIDIA",
+      "Intel"
+    ],
+    "image": "/logos/qualcomm.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Qualcomm-Logo.svg/960px-Qualcomm-Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "oracle",
+    "answer": "Oracle",
+    "decoys": [
+      "SAP",
+      "Salesforce",
+      "IBM"
+    ],
+    "image": "/logos/oracle.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/960px-Oracle_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "cisco",
+    "answer": "Cisco",
+    "decoys": [
+      "Juniper",
+      "Arista",
+      "HP"
+    ],
+    "image": "/logos/cisco.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/960px-Cisco_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "hp",
+    "answer": "HP",
+    "decoys": [
+      "Dell",
+      "Lenovo",
+      "Acer"
+    ],
+    "image": "/logos/hp.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/960px-HP_logo_2012.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "dell",
+    "answer": "Dell",
+    "decoys": [
+      "HP",
+      "Lenovo",
+      "ASUS"
+    ],
+    "image": "/logos/dell.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/960px-Dell_Logo.png",
+    "tier": "hard"
+  },
+  {
+    "id": "lenovo",
+    "answer": "Lenovo",
+    "decoys": [
+      "Dell",
+      "HP",
+      "ASUS"
+    ],
+    "image": "/logos/lenovo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/960px-Lenovo_logo_2015.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "asus",
+    "answer": "ASUS",
+    "decoys": [
+      "Acer",
+      "MSI",
+      "Gigabyte"
+    ],
+    "image": "/logos/asus.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/960px-ASUS_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "acer",
+    "answer": "Acer",
+    "decoys": [
+      "ASUS",
+      "Lenovo",
+      "Dell"
+    ],
+    "image": "/logos/acer.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Acer_2011.svg/960px-Acer_2011.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "lg",
+    "answer": "LG",
+    "decoys": [
+      "Samsung",
+      "Sony",
+      "Panasonic"
+    ],
+    "image": "/logos/lg.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/960px-LG_logo_%282015%29.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "panasonic",
+    "answer": "Panasonic",
+    "decoys": [
+      "Sony",
+      "LG",
+      "Philips"
+    ],
+    "image": "/logos/panasonic.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Panasonic_logo_%28Blue%29.svg/960px-Panasonic_logo_%28Blue%29.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "philips",
+    "answer": "Philips",
+    "decoys": [
+      "Panasonic",
+      "Sony",
+      "Siemens"
+    ],
+    "image": "/logos/philips.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Philips_logo_new.svg/960px-Philips_logo_new.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "siemens",
+    "answer": "Siemens",
+    "decoys": [
+      "ABB",
+      "Bosch",
+      "Philips"
+    ],
+    "image": "/logos/siemens.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/960px-Siemens-logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "adobe",
+    "answer": "Adobe",
+    "decoys": [
+      "Autodesk",
+      "Corel",
+      "Canva"
+    ],
+    "image": "/logos/adobe.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Adobe_wall_%28detail%29_1.jpg/960px-Adobe_wall_%28detail%29_1.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "salesforce",
+    "answer": "Salesforce",
+    "decoys": [
+      "Oracle",
+      "SAP",
+      "Microsoft"
+    ],
+    "image": "/logos/salesforce.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/960px-Salesforce.com_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "zoom",
+    "answer": "Zoom",
+    "decoys": [
+      "Microsoft Teams",
+      "Google Meet",
+      "Skype"
+    ],
+    "image": "/logos/zoom.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Zoom_logo.svg/960px-Zoom_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "slack",
+    "answer": "Slack",
+    "decoys": [
+      "Microsoft Teams",
+      "Discord",
+      "Zoom"
+    ],
+    "image": "/logos/slack.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/960px-Slack_Technologies_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "shopify",
+    "answer": "Shopify",
+    "decoys": [
+      "WooCommerce",
+      "BigCommerce",
+      "Magento"
+    ],
+    "image": "/logos/shopify.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/960px-Shopify_logo_2018.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "stripe",
+    "answer": "Stripe",
+    "decoys": [
+      "PayPal",
+      "Square",
+      "Braintree"
+    ],
+    "image": "/logos/stripe.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/960px-Stripe_Logo%2C_revised_2016.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "xiaomi",
+    "answer": "Xiaomi",
+    "decoys": [
+      "Huawei",
+      "OnePlus",
+      "OPPO"
+    ],
+    "image": "/logos/xiaomi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Xiaomi_logo.svg/960px-Xiaomi_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "huawei",
+    "answer": "Huawei",
+    "decoys": [
+      "Xiaomi",
+      "OPPO",
+      "Vivo"
+    ],
+    "image": "/logos/huawei.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Huawei_Standard_logo.svg/960px-Huawei_Standard_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "twitter",
+    "answer": "Twitter / X",
+    "decoys": [
+      "Facebook",
+      "Instagram",
+      "Threads"
+    ],
+    "image": "/logos/twitter.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/960px-X_logo_2023_%28white%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "linkedin",
+    "answer": "LinkedIn",
+    "decoys": [
+      "Indeed",
+      "Glassdoor",
+      "Monster"
+    ],
+    "image": "/logos/linkedin.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/960px-LinkedIn_Logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "tiktok",
+    "answer": "TikTok",
+    "decoys": [
+      "Instagram",
+      "Snapchat",
+      "YouTube"
+    ],
+    "image": "/logos/tiktok.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6d/TikTok.com_Screenshot.png",
+    "tier": "medium"
+  },
+  {
+    "id": "pinterest",
+    "answer": "Pinterest",
+    "decoys": [
+      "Instagram",
+      "Tumblr",
+      "Flickr"
+    ],
+    "image": "/logos/pinterest.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/960px-Pinterest-logo.png",
+    "tier": "hard"
+  },
+  {
+    "id": "discord",
+    "answer": "Discord",
+    "decoys": [
+      "Slack",
+      "TeamSpeak",
+      "Skype"
+    ],
+    "image": "/logos/discord.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/4e/Discord_screenshot.png",
+    "tier": "hard"
+  },
+  {
+    "id": "twitch",
+    "answer": "Twitch",
+    "decoys": [
+      "YouTube",
+      "Kick",
+      "Trovo"
+    ],
+    "image": "/logos/twitch.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/ff/Twitch_Website_Screenshot.png",
+    "tier": "hard"
+  },
+  {
+    "id": "reddit",
+    "answer": "Reddit",
+    "decoys": [
+      "Digg",
+      "Quora",
+      "Twitter"
+    ],
+    "image": "/logos/reddit.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Reddit_logo.svg/960px-Reddit_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "wendys",
+    "answer": "Wendy's",
+    "decoys": [
+      "McDonald's",
+      "Burger King",
+      "Arby's"
+    ],
+    "image": "/logos/wendys.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Wendy%27s_full_logo_2012.svg/960px-Wendy%27s_full_logo_2012.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "tacobell",
+    "answer": "Taco Bell",
+    "decoys": [
+      "Chipotle",
+      "Del Taco",
+      "Qdoba"
+    ],
+    "image": "/logos/tacobell.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Taco_Bell_2016.svg/960px-Taco_Bell_2016.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "chipotle",
+    "answer": "Chipotle",
+    "decoys": [
+      "Taco Bell",
+      "Qdoba",
+      "Moe's"
+    ],
+    "image": "/logos/chipotle.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chipotle_Mexican_Grill_logo.svg/960px-Chipotle_Mexican_Grill_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "dominos",
+    "answer": "Domino's",
+    "decoys": [
+      "Pizza Hut",
+      "Papa John's",
+      "Little Caesars"
+    ],
+    "image": "/logos/dominos.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/960px-Domino%27s_pizza_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "dunkin",
+    "answer": "Dunkin'",
+    "decoys": [
+      "Starbucks",
+      "Tim Hortons",
+      "Costa Coffee"
+    ],
+    "image": "/logos/dunkin.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/A_Dunkin%27_Donuts_restaurant_in_Hiawassee%2C_Georgia%2C_United_States_01.jpg/3840px-A_Dunkin%27_Donuts_restaurant_in_Hiawassee%2C_Georgia%2C_United_States_01.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "pizzahut",
+    "answer": "Pizza Hut",
+    "decoys": [
+      "Domino's",
+      "Papa John's",
+      "Little Caesars"
+    ],
+    "image": "/logos/pizzahut.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pizza_Hut_logo.svg/960px-Pizza_Hut_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "redbull",
+    "answer": "Red Bull",
+    "decoys": [
+      "Monster Energy",
+      "Rockstar",
+      "Bang"
+    ],
+    "image": "/logos/redbull.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/500px-RedBullEnergyDrink.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "monster",
+    "answer": "Monster Energy",
+    "decoys": [
+      "Red Bull",
+      "Rockstar",
+      "Bang"
+    ],
+    "image": "/logos/monster.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Monster_Energy_logo.svg/960px-Monster_Energy_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "corona",
+    "answer": "Corona",
+    "decoys": [
+      "Heineken",
+      "Budweiser",
+      "Modelo"
+    ],
+    "image": "/logos/corona.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Corona_Extra.svg/500px-Corona_Extra.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "guinness",
+    "answer": "Guinness",
+    "decoys": [
+      "Heineken",
+      "Budweiser",
+      "Murphy's"
+    ],
+    "image": "/logos/guinness.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Guinness_logo_dark_text.svg/500px-Guinness_logo_dark_text.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "nestle",
+    "answer": "Nestlé",
+    "decoys": [
+      "Unilever",
+      "Kraft",
+      "Mars"
+    ],
+    "image": "/logos/nestle.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nestle.svg/960px-Nestle.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "kraft",
+    "answer": "Kraft Heinz",
+    "decoys": [
+      "Nestlé",
+      "Unilever",
+      "Mars"
+    ],
+    "image": "/logos/kraft.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Kraft_Heinz_Company_Logo.svg/960px-The_Kraft_Heinz_Company_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "mcdonalds_arch",
+    "answer": "McDonald's",
+    "decoys": [
+      "Burger King",
+      "KFC",
+      "Wendy's"
+    ],
+    "image": "/logos/mcdonalds_arch.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/960px-McDonald%27s_Golden_Arches.svg.png",
+    "tier": "easy"
+  },
+  {
+    "id": "fiveguys",
+    "answer": "Five Guys",
+    "decoys": [
+      "Shake Shack",
+      "In-N-Out",
+      "Smashburger"
+    ],
+    "image": "/logos/fiveguys.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Five_Guys_logo.svg/960px-Five_Guys_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "shakeshack",
+    "answer": "Shake Shack",
+    "decoys": [
+      "Five Guys",
+      "In-N-Out",
+      "Smashburger"
+    ],
+    "image": "/logos/shakeshack.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Shake_Shack_Logo.svg/960px-Shake_Shack_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "popeyes",
+    "answer": "Popeyes",
+    "decoys": [
+      "KFC",
+      "Chick-fil-A",
+      "Raising Cane's"
+    ],
+    "image": "/logos/popeyes.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Popeyes_logo.svg/960px-Popeyes_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "zara",
+    "answer": "Zara",
+    "decoys": [
+      "H&M",
+      "Uniqlo",
+      "Mango"
+    ],
+    "image": "/logos/zara.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/960px-Zara_Logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "hm",
+    "answer": "H&M",
+    "decoys": [
+      "Zara",
+      "Uniqlo",
+      "Primark"
+    ],
+    "image": "/logos/hm.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/960px-H%26M-Logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "uniqlo",
+    "answer": "Uniqlo",
+    "decoys": [
+      "H&M",
+      "Zara",
+      "Gap"
+    ],
+    "image": "/logos/uniqlo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UNIQLO_logo.svg/960px-UNIQLO_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "levis",
+    "answer": "Levi's",
+    "decoys": [
+      "Wrangler",
+      "Lee",
+      "Calvin Klein"
+    ],
+    "image": "/logos/levis.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Levi%27s_Times_Square_NYC_-_May_2026.jpg/960px-Levi%27s_Times_Square_NYC_-_May_2026.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "ralph_lauren",
+    "answer": "Ralph Lauren",
+    "decoys": [
+      "Tommy Hilfiger",
+      "Calvin Klein",
+      "Hugo Boss"
+    ],
+    "image": "/logos/ralph_lauren.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ralph_Lauren_logo.svg/960px-Ralph_Lauren_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "tommy_hilfiger",
+    "answer": "Tommy Hilfiger",
+    "decoys": [
+      "Ralph Lauren",
+      "Calvin Klein",
+      "Hugo Boss"
+    ],
+    "image": "/logos/tommy_hilfiger.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tommy_Hilfiger_logo.svg/960px-Tommy_Hilfiger_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "calvin_klein",
+    "answer": "Calvin Klein",
+    "decoys": [
+      "Tommy Hilfiger",
+      "Ralph Lauren",
+      "Hugo Boss"
+    ],
+    "image": "/logos/calvin_klein.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Calvin_Klein_Logo.svg/960px-Calvin_Klein_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "prada",
+    "answer": "Prada",
+    "decoys": [
+      "Gucci",
+      "Versace",
+      "Burberry"
+    ],
+    "image": "/logos/prada.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Prada_logo.svg/960px-Prada_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "versace",
+    "answer": "Versace",
+    "decoys": [
+      "Gucci",
+      "Prada",
+      "Dolce & Gabbana"
+    ],
+    "image": "/logos/versace.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Versace_logo.svg/960px-Versace_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "burberry",
+    "answer": "Burberry",
+    "decoys": [
+      "Barbour",
+      "Aquascutum",
+      "Hackett"
+    ],
+    "image": "/logos/burberry.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Burberry_logo.svg/960px-Burberry_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "chanel",
+    "answer": "Chanel",
+    "decoys": [
+      "Dior",
+      "Givenchy",
+      "Valentino"
+    ],
+    "image": "/logos/chanel.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chanel_logo_interlocking_cs.svg/960px-Chanel_logo_interlocking_cs.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "dior",
+    "answer": "Dior",
+    "decoys": [
+      "Chanel",
+      "Givenchy",
+      "Valentino"
+    ],
+    "image": "/logos/dior.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Christian_Dior_logo.svg/960px-Christian_Dior_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "balenciaga",
+    "answer": "Balenciaga",
+    "decoys": [
+      "Givenchy",
+      "Alexander McQueen",
+      "Off-White"
+    ],
+    "image": "/logos/balenciaga.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Balenciaga_logo.svg/960px-Balenciaga_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "ysl",
+    "answer": "Yves Saint Laurent",
+    "decoys": [
+      "Balenciaga",
+      "Givenchy",
+      "Dior"
+    ],
+    "image": "/logos/ysl.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yves_Saint_Laurent_%28logo%29.svg/960px-Yves_Saint_Laurent_%28logo%29.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "hermes",
+    "answer": "Hermès",
+    "decoys": [
+      "Louis Vuitton",
+      "Chanel",
+      "Dior"
+    ],
+    "image": "/logos/hermes.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Hermes_Paris_logo.svg/960px-Hermes_Paris_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "tiffany",
+    "answer": "Tiffany & Co.",
+    "decoys": [
+      "Cartier",
+      "Bulgari",
+      "Van Cleef"
+    ],
+    "image": "/logos/tiffany.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tiffany_%26_Co._logo.svg/960px-Tiffany_%26_Co._logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "target",
+    "answer": "Target",
+    "decoys": [
+      "Walmart",
+      "Kmart",
+      "Costco"
+    ],
+    "image": "/logos/target.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Target_2004_bullseye.svg/960px-Target_2004_bullseye.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "walmart",
+    "answer": "Walmart",
+    "decoys": [
+      "Target",
+      "Costco",
+      "Sam's Club"
+    ],
+    "image": "/logos/walmart.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/960px-Walmart_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "costco",
+    "answer": "Costco",
+    "decoys": [
+      "Sam's Club",
+      "BJ's Wholesale",
+      "Walmart"
+    ],
+    "image": "/logos/costco.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Costco_Wholesale_logo_2010-10-26.svg/960px-Costco_Wholesale_logo_2010-10-26.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "ebay",
+    "answer": "eBay",
+    "decoys": [
+      "Amazon",
+      "Etsy",
+      "Alibaba"
+    ],
+    "image": "/logos/ebay.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/960px-EBay_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "etsy",
+    "answer": "Etsy",
+    "decoys": [
+      "eBay",
+      "Amazon",
+      "Poshmark"
+    ],
+    "image": "/logos/etsy.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Etsy_logo.svg/960px-Etsy_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "alibaba",
+    "answer": "Alibaba",
+    "decoys": [
+      "Amazon",
+      "eBay",
+      "JD.com"
+    ],
+    "image": "/logos/alibaba.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Alibaba_Group_logo.svg/960px-Alibaba_Group_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "amex",
+    "answer": "American Express",
+    "decoys": [
+      "Visa",
+      "Mastercard",
+      "Discover"
+    ],
+    "image": "/logos/amex.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/960px-American_Express_logo_%282018%29.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "jpmorgan",
+    "answer": "JPMorgan Chase",
+    "decoys": [
+      "Goldman Sachs",
+      "Bank of America",
+      "Wells Fargo"
+    ],
+    "image": "/logos/jpmorgan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/J.P._Morgan_Logo_2008_1.svg/960px-J.P._Morgan_Logo_2008_1.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "hsbc",
+    "answer": "HSBC",
+    "decoys": [
+      "Barclays",
+      "Lloyds",
+      "NatWest"
+    ],
+    "image": "/logos/hsbc.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/960px-HSBC_logo_%282018%29.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "goldman",
+    "answer": "Goldman Sachs",
+    "decoys": [
+      "Morgan Stanley",
+      "JPMorgan",
+      "BlackRock"
+    ],
+    "image": "/logos/goldman.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/960px-Goldman_Sachs.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "coinbase",
+    "answer": "Coinbase",
+    "decoys": [
+      "Binance",
+      "Kraken",
+      "Gemini"
+    ],
+    "image": "/logos/coinbase.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/960px-Coinbase.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "binance",
+    "answer": "Binance",
+    "decoys": [
+      "Coinbase",
+      "Kraken",
+      "OKX"
+    ],
+    "image": "/logos/binance.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/960px-Binance_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "emirates",
+    "answer": "Emirates",
+    "decoys": [
+      "Etihad",
+      "Qatar Airways",
+      "Flydubai"
+    ],
+    "image": "/logos/emirates.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/960px-Emirates_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "singapore_air",
+    "answer": "Singapore Airlines",
+    "decoys": [
+      "Cathay Pacific",
+      "ANA",
+      "Malaysian Airlines"
+    ],
+    "image": "/logos/singapore_air.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Singapore_Airlines_logo_2.svg/960px-Singapore_Airlines_logo_2.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "lufthansa",
+    "answer": "Lufthansa",
+    "decoys": [
+      "Air France",
+      "KLM",
+      "Swiss"
+    ],
+    "image": "/logos/lufthansa.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Lufthansa_Logo_2018.svg/960px-Lufthansa_Logo_2018.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "british_airways",
+    "answer": "British Airways",
+    "decoys": [
+      "Virgin Atlantic",
+      "EasyJet",
+      "Ryanair"
+    ],
+    "image": "/logos/british_airways.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/British_Airways_Logo.svg/960px-British_Airways_Logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "air_france",
+    "answer": "Air France",
+    "decoys": [
+      "KLM",
+      "Lufthansa",
+      "Iberia"
+    ],
+    "image": "/logos/air_france.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/960px-Air_France_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "qatar_airways",
+    "answer": "Qatar Airways",
+    "decoys": [
+      "Emirates",
+      "Etihad",
+      "Turkish Airlines"
+    ],
+    "image": "/logos/qatar_airways.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Qatar_Airways_Logo.svg/960px-Qatar_Airways_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "turkish_airlines",
+    "answer": "Turkish Airlines",
+    "decoys": [
+      "Pegasus",
+      "Anadolujet",
+      "Onur Air"
+    ],
+    "image": "/logos/turkish_airlines.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Turkish_Airlines_logo_2019_compact.svg/960px-Turkish_Airlines_logo_2019_compact.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "delta",
+    "answer": "Delta Air Lines",
+    "decoys": [
+      "United Airlines",
+      "American Airlines",
+      "Southwest"
+    ],
+    "image": "/logos/delta.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Delta_logo.svg/960px-Delta_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "united",
+    "answer": "United Airlines",
+    "decoys": [
+      "Delta",
+      "American Airlines",
+      "Southwest"
+    ],
+    "image": "/logos/united.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/United_Airlines_Logo.svg/960px-United_Airlines_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "southwest",
+    "answer": "Southwest Airlines",
+    "decoys": [
+      "Delta",
+      "JetBlue",
+      "Frontier"
+    ],
+    "image": "/logos/southwest.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Southwest_Airlines_logo_2014.svg/960px-Southwest_Airlines_logo_2014.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "ryanair",
+    "answer": "Ryanair",
+    "decoys": [
+      "EasyJet",
+      "Wizz Air",
+      "Vueling"
+    ],
+    "image": "/logos/ryanair.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ryanair_Logo.svg/960px-Ryanair_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "marriott",
+    "answer": "Marriott",
+    "decoys": [
+      "Hilton",
+      "Hyatt",
+      "InterContinental"
+    ],
+    "image": "/logos/marriott.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Marriott_International_Headquarters_01.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "hilton",
+    "answer": "Hilton",
+    "decoys": [
+      "Marriott",
+      "Hyatt",
+      "Four Seasons"
+    ],
+    "image": "/logos/hilton.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hilton_logo.svg/960px-Hilton_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "netflix",
+    "answer": "Netflix",
+    "decoys": [
+      "Hulu",
+      "HBO Max",
+      "Disney+"
+    ],
+    "image": "/logos/netflix.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/960px-Netflix_2015_logo.svg.png",
+    "tier": "easy"
+  },
+  {
+    "id": "hbo",
+    "answer": "HBO",
+    "decoys": [
+      "Netflix",
+      "Showtime",
+      "Starz"
+    ],
+    "image": "/logos/hbo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "hulu",
+    "answer": "Hulu",
+    "decoys": [
+      "Netflix",
+      "Disney+",
+      "Peacock"
+    ],
+    "image": "/logos/hulu.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hulu_Logo.svg/960px-Hulu_Logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "disney_plus",
+    "answer": "Disney+",
+    "decoys": [
+      "Netflix",
+      "Hulu",
+      "HBO Max"
+    ],
+    "image": "/logos/disney_plus.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/960px-Disney%2B_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "espn",
+    "answer": "ESPN",
+    "decoys": [
+      "Fox Sports",
+      "NBC Sports",
+      "CBS Sports"
+    ],
+    "image": "/logos/espn.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "cnn",
+    "answer": "CNN",
+    "decoys": [
+      "Fox News",
+      "NBC",
+      "BBC"
+    ],
+    "image": "/logos/cnn.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/960px-CNN.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "warner_bros",
+    "answer": "Warner Bros.",
+    "decoys": [
+      "Universal",
+      "Paramount",
+      "Sony Pictures"
+    ],
+    "image": "/logos/warner_bros.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/960px-Warner_Bros_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "universal",
+    "answer": "Universal Pictures",
+    "decoys": [
+      "Warner Bros.",
+      "Paramount",
+      "Sony Pictures"
+    ],
+    "image": "/logos/universal.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Universal_Pictures_logo.svg/960px-Universal_Pictures_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "paramount",
+    "answer": "Paramount",
+    "decoys": [
+      "Universal",
+      "Warner Bros.",
+      "20th Century"
+    ],
+    "image": "/logos/paramount.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Paramount_Plus.svg/960px-Paramount_Plus.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "playstation",
+    "answer": "PlayStation",
+    "decoys": [
+      "Xbox",
+      "Nintendo",
+      "Sega"
+    ],
+    "image": "/logos/playstation.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/960px-Playstation_logo_colour.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "xbox",
+    "answer": "Xbox",
+    "decoys": [
+      "PlayStation",
+      "Nintendo",
+      "Sega"
+    ],
+    "image": "/logos/xbox.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/XBOX_logo_2012.svg/960px-XBOX_logo_2012.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "nintendo",
+    "answer": "Nintendo",
+    "decoys": [
+      "PlayStation",
+      "Xbox",
+      "Sega"
+    ],
+    "image": "/logos/nintendo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/960px-Nintendo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "steam",
+    "answer": "Steam",
+    "decoys": [
+      "Epic Games",
+      "GOG",
+      "Origin"
+    ],
+    "image": "/logos/steam.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/960px-Steam_icon_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "ea",
+    "answer": "EA (Electronic Arts)",
+    "decoys": [
+      "Activision",
+      "Ubisoft",
+      "Take-Two"
+    ],
+    "image": "/logos/ea.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/EA_logo.svg/960px-EA_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "ubisoft",
+    "answer": "Ubisoft",
+    "decoys": [
+      "EA",
+      "Activision",
+      "Capcom"
+    ],
+    "image": "/logos/ubisoft.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Ubisoft_logo.svg/960px-Ubisoft_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "activision",
+    "answer": "Activision",
+    "decoys": [
+      "EA",
+      "Ubisoft",
+      "Take-Two"
+    ],
+    "image": "/logos/activision.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Activision.svg/960px-Activision.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "verizon",
+    "answer": "Verizon",
+    "decoys": [
+      "AT&T",
+      "T-Mobile",
+      "Sprint"
+    ],
+    "image": "/logos/verizon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Verizon_logo.svg/960px-Verizon_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "att",
+    "answer": "AT&T",
+    "decoys": [
+      "Verizon",
+      "T-Mobile",
+      "Sprint"
+    ],
+    "image": "/logos/att.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/AT%26T_logo_2016.svg/960px-AT%26T_logo_2016.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "tmobile",
+    "answer": "T-Mobile",
+    "decoys": [
+      "Verizon",
+      "AT&T",
+      "Sprint"
+    ],
+    "image": "/logos/tmobile.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/T-Mobile_New_Logo_Primary.svg/960px-T-Mobile_New_Logo_Primary.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "vodafone",
+    "answer": "Vodafone",
+    "decoys": [
+      "O2",
+      "EE",
+      "Three"
+    ],
+    "image": "/logos/vodafone.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vodafone_icon.svg/960px-Vodafone_icon.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "real_madrid",
+    "answer": "Real Madrid",
+    "decoys": [
+      "FC Barcelona",
+      "Atletico Madrid",
+      "Sevilla"
+    ],
+    "image": "/logos/real_madrid.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/960px-Real_Madrid_CF.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "barcelona",
+    "answer": "FC Barcelona",
+    "decoys": [
+      "Real Madrid",
+      "Atletico Madrid",
+      "Valencia"
+    ],
+    "image": "/logos/barcelona.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/960px-FC_Barcelona_%28crest%29.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "man_utd",
+    "answer": "Manchester United",
+    "decoys": [
+      "Manchester City",
+      "Liverpool",
+      "Arsenal"
+    ],
+    "image": "/logos/man_utd.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/960px-Manchester_United_FC_crest.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "man_city",
+    "answer": "Manchester City",
+    "decoys": [
+      "Manchester United",
+      "Liverpool",
+      "Chelsea"
+    ],
+    "image": "/logos/man_city.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/960px-Manchester_City_FC_badge.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "liverpool",
+    "answer": "Liverpool FC",
+    "decoys": [
+      "Everton",
+      "Manchester United",
+      "Chelsea"
+    ],
+    "image": "/logos/liverpool.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/960px-Liverpool_FC.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "chelsea",
+    "answer": "Chelsea FC",
+    "decoys": [
+      "Arsenal",
+      "Tottenham",
+      "Fulham"
+    ],
+    "image": "/logos/chelsea.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/960px-Chelsea_FC.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "arsenal",
+    "answer": "Arsenal",
+    "decoys": [
+      "Chelsea",
+      "Tottenham",
+      "Crystal Palace"
+    ],
+    "image": "/logos/arsenal.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/960px-Arsenal_FC.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "bayern",
+    "answer": "Bayern Munich",
+    "decoys": [
+      "Borussia Dortmund",
+      "RB Leipzig",
+      "Bayer Leverkusen"
+    ],
+    "image": "/logos/bayern.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "juventus",
+    "answer": "Juventus",
+    "decoys": [
+      "AC Milan",
+      "Inter Milan",
+      "AS Roma"
+    ],
+    "image": "/logos/juventus.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/960px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "psg",
+    "answer": "Paris Saint-Germain",
+    "decoys": [
+      "Marseille",
+      "Lyon",
+      "Monaco"
+    ],
+    "image": "/logos/psg.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/960px-Paris_Saint-Germain_F.C..svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "acmilan",
+    "answer": "AC Milan",
+    "decoys": [
+      "Inter Milan",
+      "Juventus",
+      "Napoli"
+    ],
+    "image": "/logos/acmilan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/960px-Logo_of_AC_Milan.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "intermilan",
+    "answer": "Inter Milan",
+    "decoys": [
+      "AC Milan",
+      "Juventus",
+      "Napoli"
+    ],
+    "image": "/logos/intermilan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/960px-FC_Internazionale_Milano_2021.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "lakers",
+    "answer": "Los Angeles Lakers",
+    "decoys": [
+      "LA Clippers",
+      "Golden State Warriors",
+      "Phoenix Suns"
+    ],
+    "image": "/logos/lakers.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/960px-Los_Angeles_Lakers_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "bulls",
+    "answer": "Chicago Bulls",
+    "decoys": [
+      "Milwaukee Bucks",
+      "Indiana Pacers",
+      "Cleveland Cavaliers"
+    ],
+    "image": "/logos/bulls.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/330px-Chicago_Bulls_logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "warriors",
+    "answer": "Golden State Warriors",
+    "decoys": [
+      "LA Lakers",
+      "Phoenix Suns",
+      "Sacramento Kings"
+    ],
+    "image": "/logos/warriors.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/960px-Golden_State_Warriors_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "cowboys",
+    "answer": "Dallas Cowboys",
+    "decoys": [
+      "Houston Texans",
+      "Philadelphia Eagles",
+      "NY Giants"
+    ],
+    "image": "/logos/cowboys.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/960px-Dallas_Cowboys.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "patriots",
+    "answer": "New England Patriots",
+    "decoys": [
+      "NY Jets",
+      "Buffalo Bills",
+      "Miami Dolphins"
+    ],
+    "image": "/logos/patriots.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/250px-New_England_Patriots_logo.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "yankees",
+    "answer": "New York Yankees",
+    "decoys": [
+      "Boston Red Sox",
+      "NY Mets",
+      "LA Dodgers"
+    ],
+    "image": "/logos/yankees.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/New_York_Yankees_Primary_Logo.svg/960px-New_York_Yankees_Primary_Logo.svg.png",
+    "tier": "medium"
+  },
+  {
+    "id": "spotify",
+    "answer": "Spotify",
+    "decoys": [
+      "Apple Music",
+      "Tidal",
+      "Deezer"
+    ],
+    "image": "/logos/spotify.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/960px-Spotify_logo_without_text.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "doordash",
+    "answer": "DoorDash",
+    "decoys": [
+      "Uber Eats",
+      "Grubhub",
+      "Instacart"
+    ],
+    "image": "/logos/doordash.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/DoorDash_operations_world_map.svg/960px-DoorDash_operations_world_map.svg.png",
+    "tier": "hard"
+  },
+  {
+    "id": "booking",
+    "answer": "Booking.com",
+    "decoys": [
+      "Expedia",
+      "Airbnb",
+      "Hotels.com"
+    ],
+    "image": "/logos/booking.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/960px-Booking.com_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "expedia",
+    "answer": "Expedia",
+    "decoys": [
+      "Booking.com",
+      "TripAdvisor",
+      "Kayak"
+    ],
+    "image": "/logos/expedia.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Expedia_Group_logo.svg/960px-Expedia_Group_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "under_armour",
+    "answer": "Under Armour",
+    "decoys": [
+      "Nike",
+      "Adidas",
+      "Puma"
+    ],
+    "image": "/logos/under_armour.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/960px-Under_armour_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "new_balance",
+    "answer": "New Balance",
+    "decoys": [
+      "Nike",
+      "Adidas",
+      "ASICS"
+    ],
+    "image": "/logos/new_balance.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/New_Balance_logo.svg/960px-New_Balance_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "reebok",
+    "answer": "Reebok",
+    "decoys": [
+      "Adidas",
+      "Puma",
+      "New Balance"
+    ],
+    "image": "/logos/reebok.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Reebok_2019_logo.svg/960px-Reebok_2019_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "converse",
+    "answer": "Converse",
+    "decoys": [
+      "Vans",
+      "Nike",
+      "Adidas"
+    ],
+    "image": "/logos/converse.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Converse_logo.svg/1280px-Converse_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "vans",
+    "answer": "Vans",
+    "decoys": [
+      "Converse",
+      "Skate",
+      "DC Shoes"
+    ],
+    "image": "/logos/vans.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Vans-logo.svg/960px-Vans-logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "timberland",
+    "answer": "Timberland",
+    "decoys": [
+      "Clarks",
+      "Dr. Martens",
+      "Red Wing"
+    ],
+    "image": "/logos/timberland.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Image_of_a_pair_of_Tmerberland_boots.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "north_face",
+    "answer": "The North Face",
+    "decoys": [
+      "Patagonia",
+      "Arc'teryx",
+      "Columbia"
+    ],
+    "image": "/logos/north_face.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/115_Boulevard_Saint-Germain%2C_Paris_%2801%29.jpg/960px-115_Boulevard_Saint-Germain%2C_Paris_%2801%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "patagonia",
+    "answer": "Patagonia",
+    "decoys": [
+      "The North Face",
+      "Arc'teryx",
+      "Columbia"
+    ],
+    "image": "/logos/patagonia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Pat_map.PNG",
+    "tier": "extreme"
+  },
+  {
+    "id": "columbia",
+    "answer": "Columbia Sportswear",
+    "decoys": [
+      "Patagonia",
+      "The North Face",
+      "Marmot"
+    ],
+    "image": "/logos/columbia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Columbia_Sportswear_headquarters_-_Cedar_Mill%2C_Oregon.jpg/960px-Columbia_Sportswear_headquarters_-_Cedar_Mill%2C_Oregon.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "supreme",
+    "answer": "Supreme",
+    "decoys": [
+      "Palace",
+      "Stüssy",
+      "BAPE"
+    ],
+    "image": "/logos/supreme.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Supreme_Logo.svg/960px-Supreme_Logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "champion",
+    "answer": "Champion",
+    "decoys": [
+      "Nike",
+      "Adidas",
+      "Reebok"
+    ],
+    "image": "/logos/champion.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/95/Beowulf_-_cempan.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "caterpillar",
+    "answer": "Caterpillar",
+    "decoys": [
+      "John Deere",
+      "Komatsu",
+      "Volvo CE"
+    ],
+    "image": "/logos/caterpillar.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chenille_de_Grand_porte_queue_%28macaon%29.jpg/960px-Chenille_de_Grand_porte_queue_%28macaon%29.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "john_deere",
+    "answer": "John Deere",
+    "decoys": [
+      "Caterpillar",
+      "Case",
+      "New Holland"
+    ],
+    "image": "/logos/john_deere.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/John_Deere_Logo_%E2%80%93_Flat_2_Color.svg/500px-John_Deere_Logo_%E2%80%93_Flat_2_Color.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "bosch",
+    "answer": "Bosch",
+    "decoys": [
+      "Siemens",
+      "ABB",
+      "Philips"
+    ],
+    "image": "/logos/bosch.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/BoschRenningen-pjt.jpg/960px-BoschRenningen-pjt.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "3m",
+    "answer": "3M",
+    "decoys": [
+      "Johnson & Johnson",
+      "Honeywell",
+      "Emerson"
+    ],
+    "image": "/logos/3m.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/3M_wordmark.svg/960px-3M_wordmark.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "pfizer",
+    "answer": "Pfizer",
+    "decoys": [
+      "Johnson & Johnson",
+      "Moderna",
+      "AstraZeneca"
+    ],
+    "image": "/logos/pfizer.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pfizer_%282021%29.svg/960px-Pfizer_%282021%29.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "pg",
+    "answer": "Procter & Gamble",
+    "decoys": [
+      "Unilever",
+      "Henkel",
+      "Colgate"
+    ],
+    "image": "/logos/pg.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Procter_%26_Gamble_logo.svg/960px-Procter_%26_Gamble_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "unilever",
+    "answer": "Unilever",
+    "decoys": [
+      "P&G",
+      "Nestlé",
+      "Kraft"
+    ],
+    "image": "/logos/unilever.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Unilever_House_Mars_2014_01.jpg/960px-Unilever_House_Mars_2014_01.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "colgate",
+    "answer": "Colgate",
+    "decoys": [
+      "Oral-B",
+      "Crest",
+      "Sensodyne"
+    ],
+    "image": "/logos/colgate.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/04/Colgate-Palmolive_Building_300_Park_Avenue.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "nasa",
+    "answer": "NASA",
+    "decoys": [
+      "ESA",
+      "SpaceX",
+      "Boeing"
+    ],
+    "image": "/logos/nasa.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/960px-NASA_logo.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "spacex",
+    "answer": "SpaceX",
+    "decoys": [
+      "NASA",
+      "Blue Origin",
+      "Rocket Lab"
+    ],
+    "image": "/logos/spacex.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/SpaceX_logo_black.svg/960px-SpaceX_logo_black.svg.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "red_cross",
+    "answer": "Red Cross",
+    "decoys": [
+      "Red Crescent",
+      "MSF",
+      "UNHCR"
+    ],
+    "image": "/logos/red_cross.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Croixrouge_logos.jpg/960px-Croixrouge_logos.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "unicef",
+    "answer": "UNICEF",
+    "decoys": [
+      "WHO",
+      "UNHCR",
+      "WFP"
+    ],
+    "image": "/logos/unicef.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/960px-Logo_of_UNICEF.svg.png",
+    "tier": "extreme"
   }
 ]

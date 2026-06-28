@@ -66,19 +66,22 @@ export function tierNum(t?: Tier): number {
 // Per-difficulty-level tier recipes (7 entries = one MIN_ROUNDS cycle).
 // Each session block of 7 rounds is an independently shuffled copy, so the harder questions
 // don't always land in the same positions. Counts per block:
-//   easy:   4×medium, 2×hard, 1×extreme
-//   medium: 2×medium, 3×hard, 2×extreme
-//   hard:   1×medium, 2×hard, 4×extreme
+//   easy:      3×easy, 2×medium, 1×hard, 1×extreme
+//   hard:      1×easy, 2×medium, 3×hard, 1×extreme
+//   very hard: 0×easy, 1×medium, 3×hard, 3×extreme
+//   extreme:   0×easy, 0×medium, 1×hard, 6×extreme
 const TIER_RECIPES: readonly number[][] = [
-  [1, 1, 1, 1, 2, 2, 3], // easy   (d < 1/3)
-  [1, 1, 2, 2, 2, 3, 3], // medium (1/3 ≤ d < 2/3)
-  [1, 2, 2, 3, 3, 3, 3], // hard   (d ≥ 2/3)
+  [0, 0, 0, 1, 1, 2, 3], // easy      (d < 1/4)
+  [0, 1, 1, 2, 2, 2, 3], // hard      (1/4 ≤ d < 1/2)
+  [1, 2, 2, 2, 3, 3, 3], // very hard (1/2 ≤ d < 3/4)
+  [2, 3, 3, 3, 3, 3, 3], // extreme   (d ≥ 3/4)
 ];
 
 function diffLevel(d: number): number {
-  if (d < 1 / 3) return 0;
-  if (d < 2 / 3) return 1;
-  return 2;
+  if (d < 0.25) return 0;
+  if (d < 0.5) return 1;
+  if (d < 0.75) return 2;
+  return 3;
 }
 
 // Builds a 20-slot tier schedule for a session. Each block of recipe.length slots is an

@@ -1,7 +1,2205 @@
 [
-  { "id": "placeholder1", "answer": "The Matrix", "decoys": ["Inception", "Blade Runner", "Tron"], "image": "/movies/placeholder1.jpg" },
-  { "id": "placeholder2", "answer": "Jurassic Park", "decoys": ["King Kong", "Godzilla", "The Lost World"], "image": "/movies/placeholder2.jpg" },
-  { "id": "placeholder3", "answer": "Star Wars", "decoys": ["Star Trek", "Guardians of the Galaxy", "Dune"], "image": "/movies/placeholder3.jpg" },
-  { "id": "placeholder4", "answer": "The Godfather", "decoys": ["Goodfellas", "Scarface", "Casino"], "image": "/movies/placeholder4.jpg" },
-  { "id": "placeholder5", "answer": "Pulp Fiction", "decoys": ["Reservoir Dogs", "Kill Bill", "Django Unchained"], "image": "/movies/placeholder5.jpg" }
+  {
+    "id": "godfather",
+    "answer": "The Godfather",
+    "image": "/movies/godfather.jpg",
+    "decoys": [
+      "Goodfellas",
+      "Scarface",
+      "The Departed"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "matrix",
+    "answer": "The Matrix",
+    "decoys": [
+      "Inception",
+      "Blade Runner",
+      "Tron"
+    ],
+    "image": "/movies/matrix.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/db/The_Matrix.png",
+    "tier": "easy"
+  },
+  {
+    "id": "pulpfiction",
+    "answer": "Pulp Fiction",
+    "image": "/movies/pulpfiction.jpg",
+    "decoys": [
+      "Reservoir Dogs",
+      "Kill Bill",
+      "Goodfellas"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "jurassicpark",
+    "answer": "Jurassic Park",
+    "image": "/movies/jurassicpark.jpg",
+    "decoys": [
+      "Godzilla",
+      "The Lost World",
+      "Jaws"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "starwars",
+    "answer": "Star Wars",
+    "image": "/movies/starwars.jpg",
+    "decoys": [
+      "Star Trek",
+      "The Empire Strikes Back",
+      "Dune"
+    ],
+    "tier": "easy"
+  },
+  {
+    "id": "titanic",
+    "answer": "Titanic",
+    "decoys": [
+      "Poseidon",
+      "The Abyss",
+      "Deepwater Horizon"
+    ],
+    "image": "/movies/titanic.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
+    "tier": "easy"
+  },
+  {
+    "id": "forrest_gump",
+    "answer": "Forrest Gump",
+    "decoys": [
+      "Cast Away",
+      "The Terminal",
+      "Philadelphia"
+    ],
+    "image": "/movies/forrest_gump.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "dark_knight",
+    "answer": "The Dark Knight",
+    "decoys": [
+      "Batman Begins",
+      "Batman v Superman",
+      "The Dark Knight Rises"
+    ],
+    "image": "/movies/dark_knight.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "avengers_end",
+    "answer": "Avengers: Endgame",
+    "decoys": [
+      "Avengers: Infinity War",
+      "Captain America",
+      "Thor"
+    ],
+    "image": "/movies/avengers_end.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "avatar",
+    "answer": "Avatar",
+    "decoys": [
+      "Dune",
+      "Interstellar",
+      "Gravity"
+    ],
+    "image": "/movies/avatar.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "jaws",
+    "answer": "Jaws",
+    "decoys": [
+      "The Shallows",
+      "Deep Blue Sea",
+      "Piranha"
+    ],
+    "image": "/movies/jaws.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/4/40/Jaws_movie_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "et",
+    "answer": "E.T. the Extra-Terrestrial",
+    "decoys": [
+      "Close Encounters",
+      "Alien",
+      "The Day the Earth Stood Still"
+    ],
+    "image": "/movies/et.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/66/E_t_the_extra_terrestrial_ver3.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "lion_king",
+    "answer": "The Lion King",
+    "decoys": [
+      "Bambi",
+      "Jungle Book",
+      "Tarzan"
+    ],
+    "image": "/movies/lion_king.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "toy_story",
+    "answer": "Toy Story",
+    "decoys": [
+      "A Bug's Life",
+      "Antz",
+      "Small Soldiers"
+    ],
+    "image": "/movies/toy_story.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "shrek",
+    "answer": "Shrek",
+    "decoys": [
+      "Antz",
+      "Bee Movie",
+      "Shark Tale"
+    ],
+    "image": "/movies/shrek.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7b/Shrek_%282001_animated_feature_film%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "frozen",
+    "answer": "Frozen",
+    "decoys": [
+      "Brave",
+      "Tangled",
+      "Moana"
+    ],
+    "image": "/movies/frozen.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "harry_potter",
+    "answer": "Harry Potter and the Philosopher's Stone",
+    "decoys": [
+      "The Chronicles of Narnia",
+      "Eragon",
+      "The Spiderwick Chronicles"
+    ],
+    "image": "/movies/harry_potter.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "hunger_games",
+    "answer": "The Hunger Games",
+    "decoys": [
+      "Divergent",
+      "The Maze Runner",
+      "Ender's Game"
+    ],
+    "image": "/movies/hunger_games.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "inception",
+    "answer": "Inception",
+    "decoys": [
+      "Tenet",
+      "Interstellar",
+      "The Matrix"
+    ],
+    "image": "/movies/inception.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "interstellar",
+    "answer": "Interstellar",
+    "decoys": [
+      "Gravity",
+      "The Martian",
+      "Contact"
+    ],
+    "image": "/movies/interstellar.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "gladiator",
+    "answer": "Gladiator",
+    "decoys": [
+      "Troy",
+      "300",
+      "Kingdom of Heaven"
+    ],
+    "image": "/movies/gladiator.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png",
+    "tier": "easy"
+  },
+  {
+    "id": "black_panther",
+    "answer": "Black Panther",
+    "decoys": [
+      "Iron Man",
+      "Thor",
+      "Captain Marvel"
+    ],
+    "image": "/movies/black_panther.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d6/Black_Panther_%28film%29_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "spider_man",
+    "answer": "Spider-Man",
+    "decoys": [
+      "Batman",
+      "Superman",
+      "The Incredible Hulk"
+    ],
+    "image": "/movies/spider_man.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6c/Spider-Man_%282002_film%29_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "top_gun",
+    "answer": "Top Gun",
+    "decoys": [
+      "An Officer and a Gentleman",
+      "Flight",
+      "Behind Enemy Lines"
+    ],
+    "image": "/movies/top_gun.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/46/Top_Gun_Movie.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "rocky",
+    "answer": "Rocky",
+    "decoys": [
+      "Raging Bull",
+      "Ali",
+      "The Fighter"
+    ],
+    "image": "/movies/rocky.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/18/Rocky_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "home_alone",
+    "answer": "Home Alone",
+    "decoys": [
+      "Macaulay Culkin",
+      "Richie Rich",
+      "Uncle Buck"
+    ],
+    "image": "/movies/home_alone.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "the_social_network",
+    "answer": "The Social Network",
+    "decoys": [
+      "The Big Short",
+      "Moneyball",
+      "Jobs"
+    ],
+    "image": "/movies/the_social_network.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Social_Network_film_poster.png",
+    "tier": "easy"
+  },
+  {
+    "id": "la_la_land",
+    "answer": "La La Land",
+    "decoys": [
+      "Whiplash",
+      "Birdman",
+      "Mamma Mia"
+    ],
+    "image": "/movies/la_la_land.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+    "tier": "easy"
+  },
+  {
+    "id": "parasite",
+    "answer": "Parasite",
+    "decoys": [
+      "Snowpiercer",
+      "Okja",
+      "The Handmaiden"
+    ],
+    "image": "/movies/parasite.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
+    "tier": "easy"
+  },
+  {
+    "id": "shawshank",
+    "answer": "The Shawshank Redemption",
+    "decoys": [
+      "The Green Mile",
+      "The Shining",
+      "Misery"
+    ],
+    "image": "/movies/shawshank.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "schindlers_list",
+    "answer": "Schindler's List",
+    "decoys": [
+      "The Pianist",
+      "Life Is Beautiful",
+      "Sophie's Choice"
+    ],
+    "image": "/movies/schindlers_list.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "silence_lambs",
+    "answer": "The Silence of the Lambs",
+    "decoys": [
+      "Se7en",
+      "Mindhunter",
+      "Hannibal"
+    ],
+    "image": "/movies/silence_lambs.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "fight_club",
+    "answer": "Fight Club",
+    "decoys": [
+      "American History X",
+      "Requiem for a Dream",
+      "American Psycho"
+    ],
+    "image": "/movies/fight_club.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "goodfellas",
+    "answer": "Goodfellas",
+    "decoys": [
+      "Casino",
+      "The Irishman",
+      "Donnie Brasco"
+    ],
+    "image": "/movies/goodfellas.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7b/Goodfellas.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "blade_runner",
+    "answer": "Blade Runner",
+    "decoys": [
+      "Total Recall",
+      "Minority Report",
+      "Ghost in the Shell"
+    ],
+    "image": "/movies/blade_runner.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "alien",
+    "answer": "Alien",
+    "decoys": [
+      "Predator",
+      "The Thing",
+      "Event Horizon"
+    ],
+    "image": "/movies/alien.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "terminator",
+    "answer": "The Terminator",
+    "decoys": [
+      "RoboCop",
+      "Judge Dredd",
+      "Universal Soldier"
+    ],
+    "image": "/movies/terminator.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6d/The_Terminator.png",
+    "tier": "medium"
+  },
+  {
+    "id": "die_hard",
+    "answer": "Die Hard",
+    "decoys": [
+      "Lethal Weapon",
+      "Beverly Hills Cop",
+      "Speed"
+    ],
+    "image": "/movies/die_hard.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/ca/Die_Hard_%281988_film%29_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "raiders_ark",
+    "answer": "Raiders of the Lost Ark",
+    "decoys": [
+      "Indiana Jones and the Temple of Doom",
+      "The Mummy",
+      "National Treasure"
+    ],
+    "image": "/movies/raiders_ark.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/4c/Raiders_of_the_Lost_Ark.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "braveheart",
+    "answer": "Braveheart",
+    "decoys": [
+      "Rob Roy",
+      "The Last of the Mohicans",
+      "Patriot Games"
+    ],
+    "image": "/movies/braveheart.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/e/e1/Braveheart_film_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "saving_ryan",
+    "answer": "Saving Private Ryan",
+    "decoys": [
+      "Hacksaw Ridge",
+      "Dunkirk",
+      "1917"
+    ],
+    "image": "/movies/saving_ryan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "leon",
+    "answer": "Léon: The Professional",
+    "decoys": [
+      "La Femme Nikita",
+      "Columbiana",
+      "Hanna"
+    ],
+    "image": "/movies/leon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/03/Leon-poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "no_country",
+    "answer": "No Country for Old Men",
+    "decoys": [
+      "There Will Be Blood",
+      "Blood Simple",
+      "Fargo"
+    ],
+    "image": "/movies/no_country.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "lotr_return",
+    "answer": "The Lord of the Rings: The Return of the King",
+    "decoys": [
+      "The Hobbit",
+      "Excalibur",
+      "Conan the Barbarian"
+    ],
+    "image": "/movies/lotr_return.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/48/Lord_Rings_Return_King.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "lotr_fellowship",
+    "answer": "The Lord of the Rings: The Fellowship of the Ring",
+    "decoys": [
+      "Willow",
+      "Eragon",
+      "The Hobbit"
+    ],
+    "image": "/movies/lotr_fellowship.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "joker",
+    "answer": "Joker",
+    "decoys": [
+      "The Dark Knight",
+      "Taxi Driver",
+      "American Psycho"
+    ],
+    "image": "/movies/joker.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "everything_all",
+    "answer": "Everything Everywhere All at Once",
+    "decoys": [
+      "Multiverse of Madness",
+      "Coherence",
+      "Primer"
+    ],
+    "image": "/movies/everything_all.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "oppenheimer",
+    "answer": "Oppenheimer",
+    "decoys": [
+      "The Imitation Game",
+      "A Beautiful Mind",
+      "The Theory of Everything"
+    ],
+    "image": "/movies/oppenheimer.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "dunkirk",
+    "answer": "Dunkirk",
+    "decoys": [
+      "1917",
+      "Hacksaw Ridge",
+      "The Longest Day"
+    ],
+    "image": "/movies/dunkirk.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/15/Dunkirk_Film_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "wolf_wall_st",
+    "answer": "The Wolf of Wall Street",
+    "decoys": [
+      "Boiler Room",
+      "Margin Call",
+      "American Made"
+    ],
+    "image": "/movies/wolf_wall_st.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "django",
+    "answer": "Django Unchained",
+    "decoys": [
+      "Inglourious Basterds",
+      "Lincoln",
+      "12 Years a Slave"
+    ],
+    "image": "/movies/django.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8b/Django_Unchained_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "inglourious",
+    "answer": "Inglourious Basterds",
+    "decoys": [
+      "Django Unchained",
+      "The Hateful Eight",
+      "Valkyrie"
+    ],
+    "image": "/movies/inglourious.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "reservoir_dogs",
+    "answer": "Reservoir Dogs",
+    "decoys": [
+      "Pulp Fiction",
+      "Kill Bill",
+      "Natural Born Killers"
+    ],
+    "image": "/movies/reservoir_dogs.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/01/Reservoir_Dogs.png",
+    "tier": "medium"
+  },
+  {
+    "id": "kill_bill",
+    "answer": "Kill Bill",
+    "decoys": [
+      "Ninja Assassin",
+      "The Raid",
+      "John Wick"
+    ],
+    "image": "/movies/kill_bill.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/2/2c/Kill_Bill_Volume_1.png",
+    "tier": "medium"
+  },
+  {
+    "id": "memento",
+    "answer": "Memento",
+    "decoys": [
+      "Inception",
+      "Shutter Island",
+      "Gone Girl"
+    ],
+    "image": "/movies/memento.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/c7/Memento_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "eternal_sunshine",
+    "answer": "Eternal Sunshine of the Spotless Mind",
+    "decoys": [
+      "The Science of Sleep",
+      "Adaptation",
+      "Being John Malkovich"
+    ],
+    "image": "/movies/eternal_sunshine.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a4/Eternal_Sunshine_of_the_Spotless_Mind.png",
+    "tier": "medium"
+  },
+  {
+    "id": "spirited_away",
+    "answer": "Spirited Away",
+    "decoys": [
+      "My Neighbor Totoro",
+      "Princess Mononoke",
+      "Howl's Moving Castle"
+    ],
+    "image": "/movies/spirited_away.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "wall_e",
+    "answer": "WALL-E",
+    "decoys": [
+      "Up",
+      "Ratatouille",
+      "Finding Nemo"
+    ],
+    "image": "/movies/wall_e.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/4c/WALL-E_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "up_movie",
+    "answer": "Up",
+    "decoys": [
+      "WALL-E",
+      "Ratatouille",
+      "Inside Out"
+    ],
+    "image": "/movies/up_movie.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "inside_out",
+    "answer": "Inside Out",
+    "decoys": [
+      "Soul",
+      "Luca",
+      "Turning Red"
+    ],
+    "image": "/movies/inside_out.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "finding_nemo",
+    "answer": "Finding Nemo",
+    "decoys": [
+      "Shark Tale",
+      "Surf's Up",
+      "Happy Feet"
+    ],
+    "image": "/movies/finding_nemo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "gravity",
+    "answer": "Gravity",
+    "decoys": [
+      "Interstellar",
+      "The Martian",
+      "Life"
+    ],
+    "image": "/movies/gravity.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f6/Gravity_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "mad_max_fury",
+    "answer": "Mad Max: Fury Road",
+    "decoys": [
+      "Waterworld",
+      "Judge Dredd",
+      "A Boy and His Dog"
+    ],
+    "image": "/movies/mad_max_fury.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "get_out",
+    "answer": "Get Out",
+    "decoys": [
+      "Us",
+      "Hereditary",
+      "Nope"
+    ],
+    "image": "/movies/get_out.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "arrival",
+    "answer": "Arrival",
+    "decoys": [
+      "Contact",
+      "Interstellar",
+      "Midnight Special"
+    ],
+    "image": "/movies/arrival.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "moonlight",
+    "answer": "Moonlight",
+    "decoys": [
+      "Green Book",
+      "Beale Street",
+      "Waves"
+    ],
+    "image": "/movies/moonlight.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "green_book",
+    "answer": "Green Book",
+    "decoys": [
+      "Driving Miss Daisy",
+      "The Help",
+      "Hidden Figures"
+    ],
+    "image": "/movies/green_book.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/5b/Green_Book_%282018_poster%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "big_short",
+    "answer": "The Big Short",
+    "decoys": [
+      "Margin Call",
+      "Too Big to Fail",
+      "The Social Network"
+    ],
+    "image": "/movies/big_short.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/16/The_Big_Short_%282015_film_poster%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "spotlight",
+    "answer": "Spotlight",
+    "decoys": [
+      "All the President's Men",
+      "The Post",
+      "Zodiac"
+    ],
+    "image": "/movies/spotlight.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f3/Spotlight_%28film%29_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "birdman",
+    "answer": "Birdman",
+    "decoys": [
+      "Whiplash",
+      "La La Land",
+      "The Artist"
+    ],
+    "image": "/movies/birdman.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/63/Birdman_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "dune_2021",
+    "answer": "Dune",
+    "decoys": [
+      "Star Wars",
+      "Lawrence of Arabia",
+      "Avatar"
+    ],
+    "image": "/movies/dune_2021.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "shape_water",
+    "answer": "The Shape of Water",
+    "decoys": [
+      "Guillermo del Toro film",
+      "Pan's Labyrinth",
+      "Splice"
+    ],
+    "image": "/movies/shape_water.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/37/The_Shape_of_Water_%28film%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "hereditary",
+    "answer": "Hereditary",
+    "decoys": [
+      "Midsommar",
+      "The Witch",
+      "Suspiria"
+    ],
+    "image": "/movies/hereditary.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary.png",
+    "tier": "medium"
+  },
+  {
+    "id": "midsommar",
+    "answer": "Midsommar",
+    "decoys": [
+      "Hereditary",
+      "The Wicker Man",
+      "Annihilation"
+    ],
+    "image": "/movies/midsommar.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/47/Midsommar_%282019_film_poster%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "12_years",
+    "answer": "12 Years a Slave",
+    "decoys": [
+      "Selma",
+      "The Birth of a Nation",
+      "Belle"
+    ],
+    "image": "/movies/12_years.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/5c/12_Years_a_Slave_film_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "casablanca",
+    "answer": "Casablanca",
+    "decoys": [
+      "Notorious",
+      "The Third Man",
+      "Roman Holiday"
+    ],
+    "image": "/movies/casablanca.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/b/b3/CasablancaPoster-Gold.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "citizen_kane",
+    "answer": "Citizen Kane",
+    "decoys": [
+      "Sunset Boulevard",
+      "All About Eve",
+      "Rebecca"
+    ],
+    "image": "/movies/citizen_kane.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "vertigo",
+    "answer": "Vertigo",
+    "decoys": [
+      "Rear Window",
+      "North by Northwest",
+      "Psycho"
+    ],
+    "image": "/movies/vertigo.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/75/Vertigomovie_restoration.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "psycho",
+    "answer": "Psycho",
+    "decoys": [
+      "The Birds",
+      "Rear Window",
+      "Rope"
+    ],
+    "image": "/movies/psycho.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "2001",
+    "answer": "2001: A Space Odyssey",
+    "decoys": [
+      "Interstellar",
+      "Contact",
+      "Solaris"
+    ],
+    "image": "/movies/2001.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png",
+    "tier": "hard"
+  },
+  {
+    "id": "apocalypse_now",
+    "answer": "Apocalypse Now",
+    "decoys": [
+      "Full Metal Jacket",
+      "Platoon",
+      "The Deer Hunter"
+    ],
+    "image": "/movies/apocalypse_now.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/c2/Apocalypse_Now_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "taxi_driver",
+    "answer": "Taxi Driver",
+    "decoys": [
+      "Joker",
+      "American History X",
+      "Falling Down"
+    ],
+    "image": "/movies/taxi_driver.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/33/Taxi_Driver_%281976_film_poster%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "raging_bull",
+    "answer": "Raging Bull",
+    "decoys": [
+      "Rocky",
+      "Ali",
+      "The Fighter"
+    ],
+    "image": "/movies/raging_bull.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/5f/Raging_Bull_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "lawrence_arabia",
+    "answer": "Lawrence of Arabia",
+    "decoys": [
+      "Bridge on the River Kwai",
+      "The English Patient",
+      "Dune"
+    ],
+    "image": "/movies/lawrence_arabia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lawrence_of_arabia_ver3_xxlg.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "gone_wind",
+    "answer": "Gone with the Wind",
+    "decoys": [
+      "The English Patient",
+      "Casablanca",
+      "Doctor Zhivago"
+    ],
+    "image": "/movies/gone_wind.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/2/27/Poster_-_Gone_With_the_Wind_01.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "wizard_oz",
+    "answer": "The Wizard of Oz",
+    "decoys": [
+      "Alice in Wonderland",
+      "Willy Wonka",
+      "The NeverEnding Story"
+    ],
+    "image": "/movies/wizard_oz.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/69/Wizard_of_oz_movie_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "godfather2",
+    "answer": "The Godfather Part II",
+    "decoys": [
+      "The Godfather",
+      "Once Upon a Time in America",
+      "Goodfellas"
+    ],
+    "image": "/movies/godfather2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/03/Godfather_part_ii.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "once_upon_time_amer",
+    "answer": "Once Upon a Time in America",
+    "decoys": [
+      "The Godfather",
+      "Goodfellas",
+      "Scarface"
+    ],
+    "image": "/movies/once_upon_time_amer.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/c2/Once_Upon_a_Time_in_America.png",
+    "tier": "hard"
+  },
+  {
+    "id": "mulholland_dr",
+    "answer": "Mulholland Drive",
+    "decoys": [
+      "Blue Velvet",
+      "Lost Highway",
+      "Twin Peaks Fire Walk with Me"
+    ],
+    "image": "/movies/mulholland_dr.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/0f/Mulholland.png",
+    "tier": "hard"
+  },
+  {
+    "id": "seven_samurai",
+    "answer": "Seven Samurai",
+    "decoys": [
+      "Rashomon",
+      "Yojimbo",
+      "Harakiri"
+    ],
+    "image": "/movies/seven_samurai.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/c8/Seven_Samurai_Poster.png",
+    "tier": "hard"
+  },
+  {
+    "id": "pan_labyrinth",
+    "answer": "Pan's Labyrinth",
+    "decoys": [
+      "The Devil's Backbone",
+      "Splice",
+      "A Monster Calls"
+    ],
+    "image": "/movies/pan_labyrinth.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/67/Pan%27s_Labyrinth.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "pianist",
+    "answer": "The Pianist",
+    "decoys": [
+      "Schindler's List",
+      "Ida",
+      "The Zone of Interest"
+    ],
+    "image": "/movies/pianist.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Pianist_movie.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "das_boot",
+    "answer": "Das Boot",
+    "decoys": [
+      "U-571",
+      "Crimson Tide",
+      "The Enemy Below"
+    ],
+    "image": "/movies/das_boot.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a3/Das_boot_ver1.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "life_beautiful",
+    "answer": "Life Is Beautiful",
+    "decoys": [
+      "The Pianist",
+      "Train to Busan",
+      "Cinema Paradiso"
+    ],
+    "image": "/movies/life_beautiful.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7c/Vitaebella.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "cinema_paradiso",
+    "answer": "Cinema Paradiso",
+    "decoys": [
+      "8½",
+      "Amarcord",
+      "Nuovo Cinema Paradiso"
+    ],
+    "image": "/movies/cinema_paradiso.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/86/CinemaParadiso.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "oldboy",
+    "answer": "Oldboy",
+    "decoys": [
+      "I Saw the Devil",
+      "The Handmaiden",
+      "A Bittersweet Life"
+    ],
+    "image": "/movies/oldboy.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/67/Oldboykoreanposter.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "handmaiden",
+    "answer": "The Handmaiden",
+    "decoys": [
+      "Oldboy",
+      "Poetry",
+      "Mother"
+    ],
+    "image": "/movies/handmaiden.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a2/The_Handmaiden_film.png",
+    "tier": "hard"
+  },
+  {
+    "id": "cleo5to7",
+    "answer": "Cléo from 5 to 7",
+    "decoys": [
+      "Hiroshima Mon Amour",
+      "Jules and Jim",
+      "The 400 Blows"
+    ],
+    "image": "/movies/cleo5to7.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7c/Original_Poster_to_the_1962_Left_Bank_film_Cl%C3%A9o_from_5_to_7.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "400_blows",
+    "answer": "The 400 Blows",
+    "decoys": [
+      "Au Revoir les Enfants",
+      "Zero for Conduct",
+      "Wild Reeds"
+    ],
+    "image": "/movies/400_blows.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f9/Quatre_coups2.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "breathless",
+    "answer": "Breathless",
+    "decoys": [
+      "Shoot the Piano Player",
+      "Band of Outsiders",
+      "Contempt"
+    ],
+    "image": "/movies/breathless.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/3f/%C3%80_bout_de_souffle_%28movie_poster%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "bicycle_thieves",
+    "answer": "Bicycle Thieves",
+    "decoys": [
+      "Rome Open City",
+      "Umberto D.",
+      "Rocco and His Brothers"
+    ],
+    "image": "/movies/bicycle_thieves.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/2/20/Ladri3.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "ran_kurosawa",
+    "answer": "Ran",
+    "decoys": [
+      "Kagemusha",
+      "Throne of Blood",
+      "Sanjuro"
+    ],
+    "image": "/movies/ran_kurosawa.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f2/Kuroran.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "princess_mononoke",
+    "answer": "Princess Mononoke",
+    "decoys": [
+      "Nausicaä",
+      "Howl's Moving Castle",
+      "The Tale of Princess Kaguya"
+    ],
+    "image": "/movies/princess_mononoke.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8c/Princess_Mononoke_Japanese_poster.png",
+    "tier": "hard"
+  },
+  {
+    "id": "coco",
+    "answer": "Coco",
+    "decoys": [
+      "Soul",
+      "Turning Red",
+      "Encanto"
+    ],
+    "image": "/movies/coco.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "soul",
+    "answer": "Soul",
+    "decoys": [
+      "Inside Out",
+      "Coco",
+      "Turning Red"
+    ],
+    "image": "/movies/soul.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/39/Soul_%282020_film%29_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "ratatouille",
+    "answer": "Ratatouille",
+    "decoys": [
+      "Bee Movie",
+      "Ant Bully",
+      "Over the Hedge"
+    ],
+    "image": "/movies/ratatouille.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "nomadland",
+    "answer": "Nomadland",
+    "decoys": [
+      "American Honey",
+      "Lean on Pete",
+      "The Rider"
+    ],
+    "image": "/movies/nomadland.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a5/Nomadland_poster.jpeg",
+    "tier": "medium"
+  },
+  {
+    "id": "once_hollywood",
+    "answer": "Once Upon a Time in Hollywood",
+    "decoys": [
+      "Boogie Nights",
+      "Licorice Pizza",
+      "The Nice Guys"
+    ],
+    "image": "/movies/once_hollywood.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "poor_things",
+    "answer": "Poor Things",
+    "decoys": [
+      "Dogtooth",
+      "The Favourite",
+      "The Lobster"
+    ],
+    "image": "/movies/poor_things.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f3/Poor_Things_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "killers_flower",
+    "answer": "Killers of the Flower Moon",
+    "decoys": [
+      "The Power of the Dog",
+      "Mank",
+      "The Irishman"
+    ],
+    "image": "/movies/killers_flower.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/88/Killers_of_the_Flower_Moon_film_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "zone_interest",
+    "answer": "The Zone of Interest",
+    "decoys": [
+      "Son of Saul",
+      "Shoah",
+      "The Reader"
+    ],
+    "image": "/movies/zone_interest.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/2/24/The_Zone_of_Interest_film_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "barbie",
+    "answer": "Barbie",
+    "decoys": [
+      "Legally Blonde",
+      "Mean Girls",
+      "Legally Blonde"
+    ],
+    "image": "/movies/barbie.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/0b/Barbie_2023_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "dallas_buyers",
+    "answer": "Dallas Buyers Club",
+    "decoys": [
+      "Philadelphia",
+      "The Normal Heart",
+      "Angels in America"
+    ],
+    "image": "/movies/dallas_buyers.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a8/Dallas_Buyers_Club_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "lincolnfilm",
+    "answer": "Lincoln",
+    "decoys": [
+      "Lincoln (2012)",
+      "Selma",
+      "The Birth of a Nation"
+    ],
+    "image": "/movies/lincolnfilm.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6a/Lincoln_2012_Teaser_Poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "argo2",
+    "answer": "Zero Dark Thirty",
+    "decoys": [
+      "Argo",
+      "13 Hours",
+      "American Sniper"
+    ],
+    "image": "/movies/argo2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/77/ZeroDarkThirty2012Poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "ex_machina",
+    "answer": "Ex Machina",
+    "decoys": [
+      "Her",
+      "A.I. Artificial Intelligence",
+      "Westworld"
+    ],
+    "image": "/movies/ex_machina.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/ba/Ex-machina-uk-poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "nope_film",
+    "answer": "Nope",
+    "decoys": [
+      "Get Out",
+      "Us",
+      "Candyman"
+    ],
+    "image": "/movies/nope_film.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/e/e6/Nope_%28film%29_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "us_film",
+    "answer": "Us",
+    "decoys": [
+      "Get Out",
+      "Nope",
+      "The Purge"
+    ],
+    "image": "/movies/us_film.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/00/Us_%282019%29_theatrical_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "tenet",
+    "answer": "Tenet",
+    "decoys": [
+      "Inception",
+      "Dunkirk",
+      "Interstellar"
+    ],
+    "image": "/movies/tenet.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "dune_part2",
+    "answer": "Dune: Part Two",
+    "decoys": [
+      "Dune",
+      "Avatar",
+      "Star Wars"
+    ],
+    "image": "/movies/dune_part2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/52/Dune_Part_Two_poster.jpeg",
+    "tier": "easy"
+  },
+  {
+    "id": "barbie2",
+    "answer": "Oppenheimer",
+    "decoys": [
+      "The Imitation Game",
+      "A Beautiful Mind",
+      "Einstein and Eddington"
+    ],
+    "image": "/movies/barbie2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "blade_runner_2049",
+    "answer": "Blade Runner 2049",
+    "decoys": [
+      "Blade Runner",
+      "Total Recall",
+      "Ghost in the Shell"
+    ],
+    "image": "/movies/blade_runner_2049.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "annihilation",
+    "answer": "Annihilation",
+    "decoys": [
+      "Arrival",
+      "Ex Machina",
+      "Midsommar"
+    ],
+    "image": "/movies/annihilation.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png",
+    "tier": "hard"
+  },
+  {
+    "id": "gravity2",
+    "answer": "Gravity",
+    "decoys": [
+      "Interstellar",
+      "The Martian",
+      "Sunshine"
+    ],
+    "image": "/movies/gravity2.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f6/Gravity_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "martian",
+    "answer": "The Martian",
+    "decoys": [
+      "Interstellar",
+      "Gravity",
+      "Contact"
+    ],
+    "image": "/movies/martian.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "edge_tomorrow",
+    "answer": "Edge of Tomorrow",
+    "decoys": [
+      "Groundhog Day",
+      "Source Code",
+      "Looper"
+    ],
+    "image": "/movies/edge_tomorrow.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f9/Edge_of_Tomorrow_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "district9",
+    "answer": "District 9",
+    "decoys": [
+      "Elysium",
+      "Chappie",
+      "Alien Nation"
+    ],
+    "image": "/movies/district9.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d7/District_nine_ver2.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "moon_2009",
+    "answer": "Moon",
+    "decoys": [
+      "Gravity",
+      "The Martian",
+      "Silent Running"
+    ],
+    "image": "/movies/moon_2009.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/af/Moon_%282009_film%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "children_men",
+    "answer": "Children of Men",
+    "decoys": [
+      "The Road",
+      "28 Days Later",
+      "Y: The Last Man"
+    ],
+    "image": "/movies/children_men.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/fc/Children_of_men_ver4.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "minority_report",
+    "answer": "Minority Report",
+    "decoys": [
+      "Total Recall",
+      "A.I. Artificial Intelligence",
+      "eXistenZ"
+    ],
+    "image": "/movies/minority_report.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/44/Minority_Report_Poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "prestige",
+    "answer": "The Prestige",
+    "decoys": [
+      "The Illusionist",
+      "Now You See Me",
+      "Magic"
+    ],
+    "image": "/movies/prestige.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "shining",
+    "answer": "The Shining",
+    "decoys": [
+      "Doctor Sleep",
+      "1408",
+      "The Haunting"
+    ],
+    "image": "/movies/shining.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/1d/The_Shining_%281980%29_U.K._release_poster_-_The_tide_of_terror_that_swept_America_IS_HERE.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "exorcist",
+    "answer": "The Exorcist",
+    "decoys": [
+      "The Omen",
+      "Rosemary's Baby",
+      "Poltergeist"
+    ],
+    "image": "/movies/exorcist.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/7b/Exorcist_ver2.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "rosemarys_baby",
+    "answer": "Rosemary's Baby",
+    "decoys": [
+      "The Omen",
+      "The Exorcist",
+      "It's Alive"
+    ],
+    "image": "/movies/rosemarys_baby.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/e/ef/Rosemarys_baby_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "halloween",
+    "answer": "Halloween",
+    "decoys": [
+      "Nightmare on Elm Street",
+      "Friday the 13th",
+      "Scream"
+    ],
+    "image": "/movies/halloween.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/af/Halloween_%281978%29_theatrical_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "nightmare_elm",
+    "answer": "A Nightmare on Elm Street",
+    "decoys": [
+      "Halloween",
+      "Friday the 13th",
+      "Child's Play"
+    ],
+    "image": "/movies/nightmare_elm.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/fa/A_Nightmare_on_Elm_Street_%281984%29_theatrical_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "it_2017",
+    "answer": "It",
+    "decoys": [
+      "Pennywise",
+      "Poltergeist",
+      "Clown"
+    ],
+    "image": "/movies/it_2017.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg",
+    "tier": "easy"
+  },
+  {
+    "id": "witch_2015",
+    "answer": "The Witch",
+    "decoys": [
+      "Hereditary",
+      "Midsommar",
+      "The Blackcoat's Daughter"
+    ],
+    "image": "/movies/witch_2015.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/bf/The_Witch_poster.png",
+    "tier": "hard"
+  },
+  {
+    "id": "conjuring",
+    "answer": "The Conjuring",
+    "decoys": [
+      "Insidious",
+      "Annabelle",
+      "Sinister"
+    ],
+    "image": "/movies/conjuring.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Conjuring_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "gone_girl",
+    "answer": "Gone Girl",
+    "decoys": [
+      "The Girl on the Train",
+      "Sharp Objects",
+      "Big Little Lies"
+    ],
+    "image": "/movies/gone_girl.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/05/Gone_Girl_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "zodiac",
+    "answer": "Zodiac",
+    "decoys": [
+      "Se7en",
+      "Prisoners",
+      "Mindhunter"
+    ],
+    "image": "/movies/zodiac.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/3a/Zodiac2007Poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "seven",
+    "answer": "Se7en",
+    "decoys": [
+      "Silence of the Lambs",
+      "Zodiac",
+      "Prisoners"
+    ],
+    "image": "/movies/seven.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "usual_suspects",
+    "answer": "The Usual Suspects",
+    "decoys": [
+      "Primal Fear",
+      "Chinatown",
+      "L.A. Confidential"
+    ],
+    "image": "/movies/usual_suspects.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/9c/Usual_suspects_ver1.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "chinatown",
+    "answer": "Chinatown",
+    "decoys": [
+      "L.A. Confidential",
+      "The Two Jakes",
+      "The Big Lebowski"
+    ],
+    "image": "/movies/chinatown.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/38/Chinatownposter1.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "heat",
+    "answer": "Heat",
+    "decoys": [
+      "Collateral",
+      "Miami Vice",
+      "Public Enemies"
+    ],
+    "image": "/movies/heat.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6c/Heatposter.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "training_day",
+    "answer": "Training Day",
+    "decoys": [
+      "End of Watch",
+      "Dark Blue",
+      "The Shield"
+    ],
+    "image": "/movies/training_day.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/b3/Training_Day_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "superbad",
+    "answer": "Superbad",
+    "decoys": [
+      "Knocked Up",
+      "Pineapple Express",
+      "The Hangover"
+    ],
+    "image": "/movies/superbad.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8b/Superbad_Poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "hangover",
+    "answer": "The Hangover",
+    "decoys": [
+      "Due Date",
+      "Very Bad Trip 2",
+      "Old School"
+    ],
+    "image": "/movies/hangover.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/b9/Hangoverposter09.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "mean_girls",
+    "answer": "Mean Girls",
+    "decoys": [
+      "Clueless",
+      "10 Things I Hate About You",
+      "Easy A"
+    ],
+    "image": "/movies/mean_girls.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/ac/Mean_Girls_film_poster.png",
+    "tier": "easy"
+  },
+  {
+    "id": "groundhog_day",
+    "answer": "Groundhog Day",
+    "decoys": [
+      "Source Code",
+      "Edge of Tomorrow",
+      "Palm Springs"
+    ],
+    "image": "/movies/groundhog_day.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/b1/Groundhog_Day_%28movie_poster%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "big_lebowski",
+    "answer": "The Big Lebowski",
+    "decoys": [
+      "Barton Fink",
+      "Burn After Reading",
+      "Fargo"
+    ],
+    "image": "/movies/big_lebowski.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/3/35/Biglebowskiposter.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "office_space",
+    "answer": "Office Space",
+    "decoys": [
+      "Clerks",
+      "Napoleon Dynamite",
+      "Idiocracy"
+    ],
+    "image": "/movies/office_space.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/8e/Office_space_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "beautiful_mind",
+    "answer": "A Beautiful Mind",
+    "decoys": [
+      "The Imitation Game",
+      "Good Will Hunting",
+      "Proof"
+    ],
+    "image": "/movies/beautiful_mind.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/b8/A_Beautiful_Mind_Poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "imitation_game",
+    "answer": "The Imitation Game",
+    "decoys": [
+      "A Beautiful Mind",
+      "Turing",
+      "The Theory of Everything"
+    ],
+    "image": "/movies/imitation_game.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/87/The_Imitation_Game_%282014%29.png",
+    "tier": "medium"
+  },
+  {
+    "id": "good_will",
+    "answer": "Good Will Hunting",
+    "decoys": [
+      "A Beautiful Mind",
+      "The Social Network",
+      "Gifted"
+    ],
+    "image": "/movies/good_will.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/52/Good_Will_Hunting.png",
+    "tier": "medium"
+  },
+  {
+    "id": "dead_poets",
+    "answer": "Dead Poets Society",
+    "decoys": [
+      "The Emperor's Club",
+      "Mona Lisa Smile",
+      "School of Rock"
+    ],
+    "image": "/movies/dead_poets.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/8/86/Dead_poets_society.png",
+    "tier": "medium"
+  },
+  {
+    "id": "philadelphia",
+    "answer": "Philadelphia",
+    "decoys": [
+      "Dallas Buyers Club",
+      "The Normal Heart",
+      "Angels in America"
+    ],
+    "image": "/movies/philadelphia.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/00/Philadelphia_imp.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "slumdog",
+    "answer": "Slumdog Millionaire",
+    "decoys": [
+      "Lion",
+      "A Mighty Heart",
+      "The Kite Runner"
+    ],
+    "image": "/movies/slumdog.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/92/Slumdog_Millionaire_poster.png",
+    "tier": "medium"
+  },
+  {
+    "id": "127_hours",
+    "answer": "127 Hours",
+    "decoys": [
+      "Wild",
+      "Into the Wild",
+      "Touching the Void"
+    ],
+    "image": "/movies/127_hours.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/b3/127_Hours_Poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "requiem_dream",
+    "answer": "Requiem for a Dream",
+    "decoys": [
+      "Trainspotting",
+      "Christiane F.",
+      "Fear and Loathing"
+    ],
+    "image": "/movies/requiem_dream.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/92/Requiem_for_a_dream.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "black_swan",
+    "answer": "Black Swan",
+    "decoys": [
+      "Whiplash",
+      "Nina",
+      "Red Sparrow"
+    ],
+    "image": "/movies/black_swan.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/68/Black_Swan_poster.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "natalie_portman",
+    "answer": "Closer",
+    "decoys": [
+      "Eyes Wide Shut",
+      "Match Point",
+      "The Shape of Things"
+    ],
+    "image": "/movies/natalie_portman.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/45/Closer_movie_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "looper",
+    "answer": "Looper",
+    "decoys": [
+      "Source Code",
+      "Edge of Tomorrow",
+      "Primer"
+    ],
+    "image": "/movies/looper.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/0a/Looper_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "source_code",
+    "answer": "Source Code",
+    "decoys": [
+      "Looper",
+      "Edge of Tomorrow",
+      "Deja Vu"
+    ],
+    "image": "/movies/source_code.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/e/e5/Source_Code_Poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "akira",
+    "answer": "Akira",
+    "decoys": [
+      "Ghost in the Shell",
+      "Paprika",
+      "Redline"
+    ],
+    "image": "/movies/akira.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/5d/AKIRA_%281988_poster%29.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "ghost_shell",
+    "answer": "Ghost in the Shell",
+    "decoys": [
+      "Akira",
+      "Paprika",
+      "Metropolis"
+    ],
+    "image": "/movies/ghost_shell.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "waltz_bashir",
+    "answer": "Waltz with Bashir",
+    "decoys": [
+      "Persepolis",
+      "Grave of the Fireflies",
+      "Maus"
+    ],
+    "image": "/movies/waltz_bashir.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/9f/Waltz_with_Bashir_Poster.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "persepolis",
+    "answer": "Persepolis",
+    "decoys": [
+      "Waltz with Bashir",
+      "A Cat in Paris",
+      "The Illusionist"
+    ],
+    "image": "/movies/persepolis.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/0b/Persepolis_film.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "grave_fireflies",
+    "answer": "Grave of the Fireflies",
+    "decoys": [
+      "In This Corner of the World",
+      "The Tale of Princess Kaguya",
+      "My Neighbor Totoro"
+    ],
+    "image": "/movies/grave_fireflies.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "my_neighbor",
+    "answer": "My Neighbor Totoro",
+    "decoys": [
+      "Kiki's Delivery Service",
+      "Castle in the Sky",
+      "Ponyo"
+    ],
+    "image": "/movies/my_neighbor.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/02/My_Neighbor_Totoro_-_Tonari_no_Totoro_%28Movie_Poster%29.jpg",
+    "tier": "medium"
+  },
+  {
+    "id": "castle_sky",
+    "answer": "Castle in the Sky",
+    "decoys": [
+      "Nausicaä",
+      "Howl's Moving Castle",
+      "The Wind Rises"
+    ],
+    "image": "/movies/castle_sky.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/f5/Castle_in_the_Sky_%281986%29.png",
+    "tier": "hard"
+  },
+  {
+    "id": "nausicaa",
+    "answer": "Nausicaä of the Valley of the Wind",
+    "decoys": [
+      "Princess Mononoke",
+      "Castle in the Sky",
+      "The Wind Rises"
+    ],
+    "image": "/movies/nausicaa.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/b/bc/Nausicaaposter.jpg",
+    "tier": "hard"
+  },
+  {
+    "id": "rashomon",
+    "answer": "Rashomon",
+    "decoys": [
+      "Ikiru",
+      "Seven Samurai",
+      "Ran"
+    ],
+    "image": "/movies/rashomon.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/61/Rashomon_poster.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "wild_strawberries",
+    "answer": "Wild Strawberries",
+    "decoys": [
+      "The Seventh Seal",
+      "Persona",
+      "Through a Glass Darkly"
+    ],
+    "image": "/movies/wild_strawberries.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/48/Wildstrawberriesposter.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "seventh_seal",
+    "answer": "The Seventh Seal",
+    "decoys": [
+      "Wild Strawberries",
+      "Persona",
+      "Winter Light"
+    ],
+    "image": "/movies/seventh_seal.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/69/Seventhsealposter.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "persona",
+    "answer": "Persona",
+    "decoys": [
+      "Hour of the Wolf",
+      "The Seventh Seal",
+      "Through a Glass Darkly"
+    ],
+    "image": "/movies/persona.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/0/08/Persona_Poster.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "amarcord",
+    "answer": "Amarcord",
+    "decoys": [
+      "8½",
+      "Rome",
+      "Fellini Satyricon"
+    ],
+    "image": "/movies/amarcord.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/9/97/Amarcord_%28film%29_poster.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "eight_half",
+    "answer": "8½",
+    "decoys": [
+      "Amarcord",
+      "Roma",
+      "La Dolce Vita"
+    ],
+    "image": "/movies/eight_half.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/46/8Mezzo.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "stalker_film",
+    "answer": "Stalker",
+    "decoys": [
+      "Solaris",
+      "Mirror",
+      "Andrei Rublev"
+    ],
+    "image": "/movies/stalker_film.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d4/Stalker_poster.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "solaris",
+    "answer": "Solaris",
+    "decoys": [
+      "Stalker",
+      "Mirror",
+      "2001: A Space Odyssey"
+    ],
+    "image": "/movies/solaris.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/54/Solyaris_ussr_poster.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "blue_velvet",
+    "answer": "Blue Velvet",
+    "decoys": [
+      "Wild at Heart",
+      "Lost Highway",
+      "Mulholland Drive"
+    ],
+    "image": "/movies/blue_velvet.png",
+    "source": "https://upload.wikimedia.org/wikipedia/en/f/fd/Blue_Velvet_%281986%29.png",
+    "tier": "extreme"
+  },
+  {
+    "id": "2046",
+    "answer": "2046",
+    "decoys": [
+      "In the Mood for Love",
+      "Days of Being Wild",
+      "Chungking Express"
+    ],
+    "image": "/movies/2046.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a3/2046_movie.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "in_mood_love",
+    "answer": "In the Mood for Love",
+    "decoys": [
+      "2046",
+      "Days of Being Wild",
+      "Chungking Express"
+    ],
+    "image": "/movies/in_mood_love.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/en/4/45/In_the_Mood_for_Love_movie.jpg",
+    "tier": "extreme"
+  },
+  {
+    "id": "star_wars_new_hope",
+    "answer": "Star Wars: A New Hope",
+    "image": "/movies/star_wars_new_hope.jpg",
+    "decoys": [
+      "The Empire Strikes Back",
+      "Return of the Jedi",
+      "Star Trek"
+    ],
+    "tier": "easy"
+  }
 ]

@@ -1659,5 +1659,720 @@
     "odd": 3,
     "reason": "Slashing, jailing, and tombstoning are validator punishment mechanisms in Proof-of-Stake consensus protocols; forking is a protocol upgrade/split mechanism, not a validator penalty.",
     "tier": "hard"
+  },
+  {
+    "items": [
+      "Cat",
+      "Dog",
+      "Hamster",
+      "Eagle"
+    ],
+    "odd": "Eagle",
+    "reason": "Eagle is a bird; the rest are common household pets",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Mango"
+    ],
+    "odd": "Carrot",
+    "reason": "Carrot is a vegetable; the rest are fruits",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Piano",
+      "Guitar",
+      "Drum",
+      "Paintbrush"
+    ],
+    "odd": "Paintbrush",
+    "reason": "Paintbrush is an art tool; the rest are musical instruments",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Red",
+      "Blue",
+      "Green",
+      "Square"
+    ],
+    "odd": "Square",
+    "reason": "Square is a shape; the rest are colours",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Moon"
+    ],
+    "odd": "Moon",
+    "reason": "Moon is a natural satellite; the rest are planets",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Shark",
+      "Whale",
+      "Salmon",
+      "Dolphin"
+    ],
+    "odd": "Dolphin",
+    "reason": "Dolphin is a mammal; the rest are fish",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Paris",
+      "London",
+      "Rome",
+      "Eiffel Tower"
+    ],
+    "odd": "Eiffel Tower",
+    "reason": "Eiffel Tower is a landmark; the rest are capital cities",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Hammer",
+      "Screwdriver",
+      "Wrench",
+      "Spoon"
+    ],
+    "odd": "Spoon",
+    "reason": "Spoon is kitchen utensil; the rest are tools",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Oak",
+      "Pine",
+      "Rose",
+      "Maple"
+    ],
+    "odd": "Rose",
+    "reason": "Rose is a flower; the rest are trees",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Football",
+      "Basketball",
+      "Tennis",
+      "Swimming"
+    ],
+    "odd": "Swimming",
+    "reason": "Swimming uses no ball; the rest are ball sports",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Cheetah",
+      "Lion",
+      "Tiger",
+      "Crocodile"
+    ],
+    "odd": "Crocodile",
+    "reason": "Crocodile is a reptile; the rest are big cats",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Gold"
+    ],
+    "odd": "Gold",
+    "reason": "Gold is a metal element; the rest are gases",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Sun",
+      "Moon",
+      "Star",
+      "Cloud"
+    ],
+    "odd": "Cloud",
+    "reason": "Cloud is an atmospheric phenomenon; the rest are celestial objects",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Italy",
+      "France",
+      "Spain",
+      "Egypt"
+    ],
+    "odd": "Egypt",
+    "reason": "Egypt is in Africa; the rest are European countries",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Soccer",
+      "Rugby",
+      "Baseball",
+      "Chess"
+    ],
+    "odd": "Chess",
+    "reason": "Chess is a board game; the rest are physical sports",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Violin",
+      "Cello",
+      "Trumpet",
+      "Viola"
+    ],
+    "odd": "Trumpet",
+    "reason": "Trumpet is a brass instrument; the rest are string instruments",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Penguin",
+      "Eagle",
+      "Ostrich",
+      "Emu"
+    ],
+    "odd": "Eagle",
+    "reason": "Eagle can fly; the rest are flightless birds",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Potato",
+      "Tomato",
+      "Onion",
+      "Carrot"
+    ],
+    "odd": "Tomato",
+    "reason": "Tomato is botanically a fruit; the rest are root/stem vegetables",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Amazon",
+      "Nile",
+      "Danube",
+      "Everest"
+    ],
+    "odd": "Everest",
+    "reason": "Everest is a mountain; the rest are rivers",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Copper",
+      "Gold",
+      "Silver",
+      "Diamond"
+    ],
+    "odd": "Diamond",
+    "reason": "Diamond is a mineral (carbon); the rest are metals",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Monday",
+      "Wednesday",
+      "Friday",
+      "March"
+    ],
+    "odd": "March",
+    "reason": "March is a month; the rest are days of the week",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Paris",
+      "Berlin",
+      "Madrid",
+      "Sydney"
+    ],
+    "odd": "Sydney",
+    "reason": "Sydney is in Australia; the rest are European capitals",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Croissant",
+      "Baguette",
+      "Sushi",
+      "Éclair"
+    ],
+    "odd": "Sushi",
+    "reason": "Sushi is Japanese; the rest are French foods",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Hydrogen",
+      "Helium",
+      "Oxygen",
+      "Water"
+    ],
+    "odd": "Water",
+    "reason": "Water is a compound; the rest are chemical elements",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Sun"
+    ],
+    "odd": "Sun",
+    "reason": "Sun is a star; the rest are planets",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Square",
+      "Circle",
+      "Triangle",
+      "Rectangle"
+    ],
+    "odd": "Circle",
+    "reason": "Circle has no corners; the rest are polygons",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Whale",
+      "Elephant",
+      "Giraffe",
+      "Rhino"
+    ],
+    "odd": "Whale",
+    "reason": "Whale is a marine mammal; the rest are land mammals",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Beethoven",
+      "Mozart",
+      "Bach",
+      "Picasso"
+    ],
+    "odd": "Picasso",
+    "reason": "Picasso was a painter; the rest were composers",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Apple",
+      "Samsung",
+      "Sony",
+      "Toyota"
+    ],
+    "odd": "Toyota",
+    "reason": "Toyota makes cars; the rest make smartphones",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Cobra",
+      "Python",
+      "Rattlesnake",
+      "Iguana"
+    ],
+    "odd": "Iguana",
+    "reason": "Iguana is a lizard; the rest are snakes",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Atlantic",
+      "Pacific",
+      "Indian",
+      "Mediterranean"
+    ],
+    "odd": "Mediterranean",
+    "reason": "Mediterranean is a sea; the rest are oceans",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Coffee",
+      "Tea",
+      "Milk",
+      "Gasoline"
+    ],
+    "odd": "Gasoline",
+    "reason": "Gasoline is a fuel; the rest are beverages",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Newton",
+      "Einstein",
+      "Darwin",
+      "Shakespeare"
+    ],
+    "odd": "Shakespeare",
+    "reason": "Shakespeare was a playwright; the rest were scientists",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Soccer",
+      "Cricket",
+      "Rugby",
+      "Polo"
+    ],
+    "odd": "Polo",
+    "reason": "Polo is played on horseback; the rest are played on foot",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Lung",
+      "Kidney",
+      "Heart",
+      "Muscle"
+    ],
+    "odd": "Muscle",
+    "reason": "Muscle is tissue; the rest are organs",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Brazil",
+      "Argentina",
+      "Chile",
+      "Mexico"
+    ],
+    "odd": "Mexico",
+    "reason": "Mexico is in North America; the rest are South American countries",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Jazz",
+      "Blues",
+      "Rock",
+      "Morse code"
+    ],
+    "odd": "Morse code",
+    "reason": "Morse code is communication; the rest are music genres",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Rose",
+      "Tulip",
+      "Orchid",
+      "Fern"
+    ],
+    "odd": "Fern",
+    "reason": "Fern is a non-flowering plant; the rest are flowering plants",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Lion",
+      "Tiger",
+      "Leopard",
+      "Bear"
+    ],
+    "odd": "Bear",
+    "reason": "Bear is not a member of the Felidae (cat) family; the rest are big cats",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Salmon",
+      "Tuna",
+      "Trout",
+      "Whale shark"
+    ],
+    "odd": "Whale shark",
+    "reason": "Whale shark is a shark (cartilaginous fish); the rest are bony fish",
+    "tier": "easy"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Pluto"
+    ],
+    "odd": "Pluto",
+    "reason": "Pluto is a dwarf planet; the rest are official planets",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Insulin",
+      "Adrenaline",
+      "Testosterone",
+      "Penicillin"
+    ],
+    "odd": "Penicillin",
+    "reason": "Penicillin is an antibiotic; the rest are hormones",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Sonata",
+      "Symphony",
+      "Concerto",
+      "Haiku"
+    ],
+    "odd": "Haiku",
+    "reason": "Haiku is a form of poetry; the rest are musical compositions",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Berlin",
+      "Vienna",
+      "Munich",
+      "Zurich"
+    ],
+    "odd": "Zurich",
+    "reason": "Zurich is in Switzerland; the rest are cities in Germany or Austria",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Quartz",
+      "Mica",
+      "Feldspar",
+      "Pearl"
+    ],
+    "odd": "Pearl",
+    "reason": "Pearl is organic; the rest are minerals",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Mars",
+      "Jupiter",
+      "Saturn",
+      "Pluto"
+    ],
+    "odd": "Pluto",
+    "reason": "Pluto is a dwarf planet; the rest are full planets",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Python",
+      "Java",
+      "Cobra",
+      "Ruby"
+    ],
+    "odd": "Cobra",
+    "reason": "Cobra is a snake; the rest are programming languages",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Everest",
+      "K2",
+      "Kangchenjunga",
+      "Kilimanjaro"
+    ],
+    "odd": "Kilimanjaro",
+    "reason": "Kilimanjaro is in Africa; the rest are in the Himalayas",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Archimedes",
+      "Euclid",
+      "Pythagoras",
+      "Homer"
+    ],
+    "odd": "Homer",
+    "reason": "Homer was a poet; the rest were ancient Greek mathematicians",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Violin",
+      "Cello",
+      "Double bass",
+      "Flute"
+    ],
+    "odd": "Flute",
+    "reason": "Flute is a wind instrument; the rest are string instruments",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "DNA",
+      "RNA",
+      "ATP",
+      "NaCl"
+    ],
+    "odd": "NaCl",
+    "reason": "NaCl is table salt (ionic compound); the rest are biological macromolecules",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Rembrandt",
+      "Monet",
+      "Picasso",
+      "Chopin"
+    ],
+    "odd": "Chopin",
+    "reason": "Chopin was a composer; the rest were painters",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Helium",
+      "Neon",
+      "Argon",
+      "Chlorine"
+    ],
+    "odd": "Chlorine",
+    "reason": "Chlorine is a halogen; the rest are noble gases",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Photon",
+      "Electron",
+      "Neutron",
+      "Proton"
+    ],
+    "odd": "Photon",
+    "reason": "Photon has no mass; the rest are massive subatomic particles",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Tokyo",
+      "Bangkok",
+      "Manila",
+      "Seoul"
+    ],
+    "odd": "Tokyo",
+    "reason": "Tokyo is in Japan; the rest are in Southeast/East Asia excluding Japan",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Astatine",
+      "Francium",
+      "Technetium",
+      "Bismuth"
+    ],
+    "odd": "Bismuth",
+    "reason": "Bismuth is the heaviest stable element; the rest are unstable/radioactive",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Parthenon",
+      "Pantheon",
+      "Colosseum",
+      "Sagrada Família"
+    ],
+    "odd": "Sagrada Família",
+    "reason": "Sagrada Família is still under construction; the rest are ancient structures",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Gluon",
+      "Photon",
+      "Graviton",
+      "Higgs boson"
+    ],
+    "odd": "Graviton",
+    "reason": "Graviton is hypothetical/unobserved; the rest are confirmed force carriers",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Euler",
+      "Gauss",
+      "Riemann",
+      "Pythagoras"
+    ],
+    "odd": "Pythagoras",
+    "reason": "Pythagoras lived in ancient Greece; the rest were 18th-19th century mathematicians",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tagalog",
+      "Malay",
+      "Javanese",
+      "Tamil"
+    ],
+    "odd": "Tamil",
+    "reason": "Tamil is a Dravidian language; the rest are Austronesian languages",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Kant",
+      "Nietzsche",
+      "Schopenhauer",
+      "Hegel"
+    ],
+    "odd": "Nietzsche",
+    "reason": "Nietzsche philosophized after the German Idealist era; the rest were German Idealists",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Palladium",
+      "Rhodium",
+      "Iridium",
+      "Aluminium"
+    ],
+    "odd": "Aluminium",
+    "reason": "Aluminium is not a platinum group metal; the rest are PGMs",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Taoism",
+      "Confucianism",
+      "Shintoism",
+      "Hinduism"
+    ],
+    "odd": "Hinduism",
+    "reason": "Hinduism originated in South Asia; the rest originated in East/Northeast Asia",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Fibonacci",
+      "Euler",
+      "Cantor",
+      "Raphael"
+    ],
+    "odd": "Raphael",
+    "reason": "Raphael was a Renaissance painter; the rest are mathematicians",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Halley's Comet",
+      "Haley's Star",
+      "Encke's Comet",
+      "Shoemaker-Levy 9"
+    ],
+    "odd": "Shoemaker-Levy 9",
+    "reason": "Shoemaker-Levy 9 impacted Jupiter; the rest are periodic comets",
+    "tier": "hard"
   }
 ]

@@ -4228,5 +4228,515 @@
       "Esperanto"
     ],
     "tier": "extreme"
+  },
+  {
+    "q": "I have hands but cannot clap. What am I?",
+    "a": "A clock",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm light as a feather, but even the strongest person can't hold me for more than a few minutes. What am I?",
+    "a": "Breath",
+    "tier": "easy"
+  },
+  {
+    "q": "I have cities, but no houses live there. I have mountains, but no trees grow there. I have water, but no fish swim there. What am I?",
+    "a": "A map",
+    "tier": "easy"
+  },
+  {
+    "q": "The more you take, the more you leave behind. What am I?",
+    "a": "Footsteps",
+    "tier": "easy"
+  },
+  {
+    "q": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+    "a": "An echo",
+    "tier": "easy"
+  },
+  {
+    "q": "I can fly without wings. I can be caught but not thrown. What am I?",
+    "a": "Time",
+    "tier": "easy"
+  },
+  {
+    "q": "I have a head, a tail, but no body. What am I?",
+    "a": "A coin",
+    "tier": "easy"
+  },
+  {
+    "q": "What has keys but no locks, space but no room, and you can enter but can't go inside?",
+    "a": "A keyboard",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm always in front of you but can't be seen. What am I?",
+    "a": "The future",
+    "tier": "easy"
+  },
+  {
+    "q": "What gets wetter as it dries?",
+    "a": "A towel",
+    "tier": "easy"
+  },
+  {
+    "q": "I have four legs in the morning, two at noon, and three in the evening. What am I?",
+    "a": "A human (as in Oedipus's riddle: crawling baby, walking adult, with a cane in old age)",
+    "tier": "easy"
+  },
+  {
+    "q": "You can catch me, but you can't throw me. What am I?",
+    "a": "A cold",
+    "tier": "easy"
+  },
+  {
+    "q": "I have teeth but cannot bite. What am I?",
+    "a": "A comb",
+    "tier": "easy"
+  },
+  {
+    "q": "The more you have of it, the less you see. What am I?",
+    "a": "Darkness",
+    "tier": "easy"
+  },
+  {
+    "q": "I can be cracked, made, told, and played. What am I?",
+    "a": "A joke",
+    "tier": "easy"
+  },
+  {
+    "q": "What has one eye but cannot see?",
+    "a": "A needle",
+    "tier": "easy"
+  },
+  {
+    "q": "What runs but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?",
+    "a": "A river",
+    "tier": "easy"
+  },
+  {
+    "q": "I go up but never come down. What am I?",
+    "a": "Age",
+    "tier": "easy"
+  },
+  {
+    "q": "What can travel around the world while staying in a corner?",
+    "a": "A stamp",
+    "tier": "easy"
+  },
+  {
+    "q": "I have branches but no leaves, fruit, or trunk. What am I?",
+    "a": "A bank",
+    "tier": "easy"
+  },
+  {
+    "q": "What begins with T, ends with T, and has T in it?",
+    "a": "A teapot",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm full of holes but still hold water. What am I?",
+    "a": "A sponge",
+    "tier": "easy"
+  },
+  {
+    "q": "What has a bottom at the top?",
+    "a": "Your legs (the bottom of your legs is your feet, which are at the top of your footsteps)",
+    "tier": "easy"
+  },
+  {
+    "q": "What can you keep after giving it to someone?",
+    "a": "Your word",
+    "tier": "easy"
+  },
+  {
+    "q": "What breaks when you say it?",
+    "a": "Silence",
+    "tier": "easy"
+  },
+  {
+    "q": "The more you feed it, the more it grows; give it water, and it dies. What am I?",
+    "a": "Fire",
+    "tier": "easy"
+  },
+  {
+    "q": "I have a neck but no head. What am I?",
+    "a": "A bottle",
+    "tier": "easy"
+  },
+  {
+    "q": "What building has the most stories?",
+    "a": "A library",
+    "tier": "easy"
+  },
+  {
+    "q": "I shrink every time you use me. What am I?",
+    "a": "Soap",
+    "tier": "easy"
+  },
+  {
+    "q": "What is always coming but never arrives?",
+    "a": "Tomorrow",
+    "tier": "easy"
+  },
+  {
+    "q": "I have wings but am not a bird. I have a tail but am not a cat. What am I?",
+    "a": "An airplane",
+    "tier": "easy"
+  },
+  {
+    "q": "You throw away the outside, cook the inside, eat the outside, throw away the inside. What am I?",
+    "a": "An ear of corn",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm not alive but I can grow. I don't have lungs but I need air. I don't have a mouth but water kills me. What am I?",
+    "a": "Fire",
+    "tier": "easy"
+  },
+  {
+    "q": "What has words but never speaks?",
+    "a": "A book",
+    "tier": "easy"
+  },
+  {
+    "q": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "a": "The letter M",
+    "tier": "easy"
+  },
+  {
+    "q": "The more you remove from me, the bigger I become. What am I?",
+    "a": "A hole",
+    "tier": "easy"
+  },
+  {
+    "q": "What can you hold without touching?",
+    "a": "A conversation",
+    "tier": "easy"
+  },
+  {
+    "q": "I have no legs but travel far. I'm often found with clouds. What am I?",
+    "a": "Rain",
+    "tier": "easy"
+  },
+  {
+    "q": "I have eyes but cannot see. I have skin but no bones. What am I?",
+    "a": "A potato",
+    "tier": "easy"
+  },
+  {
+    "q": "What can fill a room but takes up no space?",
+    "a": "Light",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm tall when young and short when old. What am I?",
+    "a": "A candle",
+    "tier": "easy"
+  },
+  {
+    "q": "What has a face and two hands but no arms or legs?",
+    "a": "A clock",
+    "tier": "easy"
+  },
+  {
+    "q": "I give milk and have a horn but am not a cow. What am I?",
+    "a": "A milk truck",
+    "tier": "easy"
+  },
+  {
+    "q": "What has many keys but can't open any lock?",
+    "a": "A piano",
+    "tier": "easy"
+  },
+  {
+    "q": "What loses its head in the morning and gets it back at night?",
+    "a": "A pillow",
+    "tier": "easy"
+  },
+  {
+    "q": "I have no life but can die. What am I?",
+    "a": "A battery",
+    "tier": "easy"
+  },
+  {
+    "q": "What goes through cities and fields but never moves?",
+    "a": "A road",
+    "tier": "easy"
+  },
+  {
+    "q": "What has two banks but no money?",
+    "a": "A river",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm always above the ground but cannot be touched. What am I?",
+    "a": "The sky",
+    "tier": "easy"
+  },
+  {
+    "q": "What gets sharper the more you use it?",
+    "a": "Your brain (or a pencil)",
+    "tier": "easy"
+  },
+  {
+    "q": "I am not alive, but I grow. I don't have lungs, but I need air to survive. What am I?",
+    "a": "Fire",
+    "tier": "easy"
+  },
+  {
+    "q": "What has a spine but no bones?",
+    "a": "A book",
+    "tier": "easy"
+  },
+  {
+    "q": "I have a head and a tail, but no body. I'm thin but not frail. What am I?",
+    "a": "A coin",
+    "tier": "easy"
+  },
+  {
+    "q": "What goes up when rain comes down?",
+    "a": "An umbrella",
+    "tier": "easy"
+  },
+  {
+    "q": "What has to be broken before you can use it?",
+    "a": "An egg",
+    "tier": "easy"
+  },
+  {
+    "q": "What is full of holes but still holds a lot of water?",
+    "a": "A sponge",
+    "tier": "easy"
+  },
+  {
+    "q": "What can you catch but not throw?",
+    "a": "A cold",
+    "tier": "easy"
+  },
+  {
+    "q": "What disappears as soon as you say its name?",
+    "a": "Silence",
+    "tier": "easy"
+  },
+  {
+    "q": "What runs around a whole yard without moving?",
+    "a": "A fence",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm easy to lift but hard to throw far. What am I?",
+    "a": "A feather",
+    "tier": "easy"
+  },
+  {
+    "q": "What tastes better than it smells?",
+    "a": "A tongue",
+    "tier": "easy"
+  },
+  {
+    "q": "What has four wheels and flies?",
+    "a": "A garbage truck",
+    "tier": "easy"
+  },
+  {
+    "q": "I help you see but I myself cannot see. What am I?",
+    "a": "Glasses",
+    "tier": "easy"
+  },
+  {
+    "q": "What type of music do rabbits like?",
+    "a": "Hip-hop",
+    "tier": "easy"
+  },
+  {
+    "q": "What has a ring but no finger?",
+    "a": "A telephone",
+    "tier": "easy"
+  },
+  {
+    "q": "I start with an E, end with an E, but usually contain one letter. What am I?",
+    "a": "An envelope",
+    "tier": "easy"
+  },
+  {
+    "q": "What is something you will never see again after you give it away?",
+    "a": "Time",
+    "tier": "easy"
+  },
+  {
+    "q": "Which is heavier: a ton of bricks or a ton of feathers?",
+    "a": "They weigh the same (both one ton)",
+    "tier": "easy"
+  },
+  {
+    "q": "What gets bigger the more you take away from it?",
+    "a": "A hole",
+    "tier": "easy"
+  },
+  {
+    "q": "I have keys but no doors. I have space but no room. What am I?",
+    "a": "A keyboard",
+    "tier": "easy"
+  },
+  {
+    "q": "What has one head, one foot, and four legs?",
+    "a": "A bed",
+    "tier": "easy"
+  },
+  {
+    "q": "What can you find at the end of a rainbow?",
+    "a": "The letter W",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm always hungry and must be fed. What am I?",
+    "a": "Fire",
+    "tier": "easy"
+  },
+  {
+    "q": "What has to be filled to do its job, but when full, it can't do anything?",
+    "a": "A hole",
+    "tier": "easy"
+  },
+  {
+    "q": "A cowboy rode into town on Friday, stayed three days, then left on Friday. How?",
+    "a": "His horse was named Friday",
+    "tier": "easy"
+  },
+  {
+    "q": "What can run but not walk?",
+    "a": "Water",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm made of wood but cannot be sawed. What am I?",
+    "a": "Sawdust",
+    "tier": "easy"
+  },
+  {
+    "q": "What do you call a nose with no body?",
+    "a": "Nobody nose",
+    "tier": "easy"
+  },
+  {
+    "q": "What goes up and down the stairs without moving?",
+    "a": "A carpet",
+    "tier": "easy"
+  },
+  {
+    "q": "What can never be put in a saucepan?",
+    "a": "Its lid",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm black when clean and white when used. What am I?",
+    "a": "A chalkboard",
+    "tier": "easy"
+  },
+  {
+    "q": "I have three letters. Read me forwards, I am heavy. Read me backwards, I am not. What am I?",
+    "a": "Ton (not)",
+    "tier": "easy"
+  },
+  {
+    "q": "People buy me to eat, but never eat me. What am I?",
+    "a": "A plate",
+    "tier": "easy"
+  },
+  {
+    "q": "What is harder to catch the faster you run?",
+    "a": "Your breath",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm lighter than a feather and softer than silk, yet even the strongest people in the world can't hold me for more than a couple of minutes. What am I?",
+    "a": "Breath",
+    "tier": "easy"
+  },
+  {
+    "q": "What do you answer even though it never asks you questions?",
+    "a": "A door bell (or a phone)",
+    "tier": "easy"
+  },
+  {
+    "q": "I go in hard and come out soft. The longer you have me in, the harder it is to take me out. What am I?",
+    "a": "Chewing gum",
+    "tier": "easy"
+  },
+  {
+    "q": "What is so fragile that saying its name breaks it?",
+    "a": "Silence",
+    "tier": "easy"
+  },
+  {
+    "q": "I have wings but I'm not a bird. I have scales but I'm not a fish. I breathe fire but I'm not a furnace. What am I?",
+    "a": "A dragon",
+    "tier": "easy"
+  },
+  {
+    "q": "What can you see in the middle of March and April that you cannot see at the beginning or end?",
+    "a": "The letter R",
+    "tier": "easy"
+  },
+  {
+    "q": "I have streets but no pavement, forests but no trees, and water but no fish. What am I?",
+    "a": "A map",
+    "tier": "easy"
+  },
+  {
+    "q": "What goes around the world but stays in a corner?",
+    "a": "A stamp",
+    "tier": "easy"
+  },
+  {
+    "q": "What has no fingers but wears rings?",
+    "a": "A tree",
+    "tier": "easy"
+  },
+  {
+    "q": "If you drop me I'm sure to crack, but give me a smile and I'll always smile back. What am I?",
+    "a": "A mirror",
+    "tier": "easy"
+  },
+  {
+    "q": "What question can you never answer yes to?",
+    "a": "Are you asleep?",
+    "tier": "easy"
+  },
+  {
+    "q": "I have an eye but cannot see. I'm stronger and faster than any man alive but I have no limbs. What am I?",
+    "a": "A hurricane",
+    "tier": "easy"
+  },
+  {
+    "q": "What kind of coat is always wet when you put it on?",
+    "a": "A coat of paint",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm a word that means the same forward and backward. I have 3 letters. What am I?",
+    "a": "Racecar (no, that's 7) / Pup, nun, wow, bib...",
+    "tier": "easy"
+  },
+  {
+    "q": "What has exactly three letters?",
+    "a": "The word 'few'",
+    "tier": "easy"
+  },
+  {
+    "q": "What do you call a sleeping dinosaur?",
+    "a": "A dinosnore",
+    "tier": "easy"
+  },
+  {
+    "q": "What starts with a P and ends with an E, and has thousands of letters?",
+    "a": "Post office",
+    "tier": "easy"
+  },
+  {
+    "q": "I'm red but I'm not blood, I'm yellow but I'm not gold, I'm green but I'm not grass. What am I?",
+    "a": "A traffic light",
+    "tier": "easy"
   }
 ]

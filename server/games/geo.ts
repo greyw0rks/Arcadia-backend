@@ -31,7 +31,7 @@ export const geoModule: GameModule = {
   thumbnail: "🌍",
   maxRounds: 5,
   bankSize: BANK.length,
-  available: false,
+  available: true,
 
   buildRound(roundIndex: number, seed: number, difficulty?: number): RoundState {
     const entry = pickEntry(roundIndex, seed, difficulty);

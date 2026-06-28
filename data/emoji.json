@@ -1833,5 +1833,644 @@
       "Pitch Perfect"
     ],
     "tier": "medium"
+  },
+  {
+    "emoji": "🚀⭐🌌",
+    "correct": "Star Wars",
+    "decoys": [
+      "Star Trek",
+      "Dune",
+      "Guardians of the Galaxy"
+    ]
+  },
+  {
+    "emoji": "🐬🌊🐟",
+    "correct": "Dolphin Tale",
+    "decoys": [
+      "Free Willy",
+      "Flipper",
+      "Aquaman"
+    ]
+  },
+  {
+    "emoji": "🚂💨⏰",
+    "correct": "Back to the Future",
+    "decoys": [
+      "Time Machine",
+      "Interstellar",
+      "Hot Tub Time Machine"
+    ]
+  },
+  {
+    "emoji": "🦸💪🌟",
+    "correct": "Superman",
+    "decoys": [
+      "Captain America",
+      "Thor",
+      "Wonder Woman"
+    ]
+  },
+  {
+    "emoji": "🔨⚡🌩️",
+    "correct": "Thor",
+    "decoys": [
+      "Zeus",
+      "Captain Marvel",
+      "Black Adam"
+    ]
+  },
+  {
+    "emoji": "🐠🐡🔍",
+    "correct": "Finding Dory",
+    "decoys": [
+      "Finding Nemo",
+      "Shark Tale",
+      "The Little Mermaid"
+    ]
+  },
+  {
+    "emoji": "🦟🏜️🌍",
+    "correct": "The Mummy",
+    "decoys": [
+      "Raiders of the Lost Ark",
+      "Exodus",
+      "Night at the Museum"
+    ]
+  },
+  {
+    "emoji": "👼😇🎅",
+    "correct": "It's a Wonderful Life",
+    "decoys": [
+      "A Christmas Carol",
+      "Elf",
+      "The Holiday"
+    ]
+  },
+  {
+    "emoji": "🦖🦕🌿",
+    "correct": "The Land Before Time",
+    "decoys": [
+      "Ice Age",
+      "Dinosaur",
+      "Walking with Dinosaurs"
+    ]
+  },
+  {
+    "emoji": "🏚️🍕👨‍👩‍👧",
+    "correct": "Modern Family",
+    "decoys": [
+      "Family Guy",
+      "The Simpsons",
+      "Full House"
+    ]
+  },
+  {
+    "emoji": "☕☕🛋️😂",
+    "correct": "Friends",
+    "decoys": [
+      "How I Met Your Mother",
+      "Seinfeld",
+      "The Big Bang Theory"
+    ]
+  },
+  {
+    "emoji": "🍩👮🏘️",
+    "correct": "The Simpsons",
+    "decoys": [
+      "Family Guy",
+      "South Park",
+      "Futurama"
+    ]
+  },
+  {
+    "emoji": "👑🐉⚔️",
+    "correct": "Game of Thrones",
+    "decoys": [
+      "The Witcher",
+      "House of the Dragon",
+      "Vikings"
+    ]
+  },
+  {
+    "emoji": "🏥🩺💉",
+    "correct": "Grey's Anatomy",
+    "decoys": [
+      "House",
+      "ER",
+      "Scrubs"
+    ]
+  },
+  {
+    "emoji": "🕵️🔍🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "correct": "Sherlock",
+    "decoys": [
+      "Poirot",
+      "Elementary",
+      "Monk"
+    ]
+  },
+  {
+    "emoji": "🌊🏄🌺",
+    "correct": "Baywatch",
+    "decoys": [
+      "Hawaii Five-0",
+      "Blue Lagoon",
+      "Surf's Up"
+    ]
+  },
+  {
+    "emoji": "🚀👨‍🚀🌌",
+    "correct": "Star Trek",
+    "decoys": [
+      "Star Wars",
+      "Battlestar Galactica",
+      "Firefly"
+    ]
+  },
+  {
+    "emoji": "🤹🎪🎠",
+    "correct": "American Horror Story",
+    "decoys": [
+      "The Haunting",
+      "Ratched",
+      "Nip/Tuck"
+    ]
+  },
+  {
+    "emoji": "🏢📋😑",
+    "correct": "The Office",
+    "decoys": [
+      "Parks and Recreation",
+      "Brooklyn Nine-Nine",
+      "Silicon Valley"
+    ]
+  },
+  {
+    "emoji": "🍺🎸🎶",
+    "correct": "That '70s Show",
+    "decoys": [
+      "Happy Days",
+      "Grease",
+      "The Wonder Years"
+    ]
+  },
+  {
+    "emoji": "👨‍👨‍👧🍺🛋️",
+    "correct": "Two and a Half Men",
+    "decoys": [
+      "Big Bang Theory",
+      "Friends",
+      "How I Met Your Mother"
+    ]
+  },
+  {
+    "emoji": "🏛️⚖️👨‍⚖️",
+    "correct": "Boston Legal",
+    "decoys": [
+      "Suits",
+      "The Good Wife",
+      "How to Get Away with Murder"
+    ]
+  },
+  {
+    "emoji": "🚔💥🕵️",
+    "correct": "CSI",
+    "decoys": [
+      "NCIS",
+      "Law & Order",
+      "Criminal Minds"
+    ]
+  },
+  {
+    "emoji": "🦸‍♂️⚡🌆",
+    "correct": "The Flash",
+    "decoys": [
+      "Arrow",
+      "Supergirl",
+      "Smallville"
+    ]
+  },
+  {
+    "emoji": "🤖🌐💻",
+    "correct": "Black Mirror",
+    "decoys": [
+      "Westworld",
+      "Humans",
+      "Altered Carbon"
+    ]
+  },
+  {
+    "emoji": "💸💰🏦",
+    "correct": "Money Heist",
+    "decoys": [
+      "Ozark",
+      "Suits",
+      "Breaking Bad"
+    ]
+  },
+  {
+    "emoji": "🧊🔪💀",
+    "correct": "Dexter",
+    "decoys": [
+      "Hannibal",
+      "Mindhunter",
+      "You"
+    ]
+  },
+  {
+    "emoji": "🗡️🛡️🧝",
+    "correct": "The Legend of Zelda",
+    "decoys": [
+      "Dark Souls",
+      "Elden Ring",
+      "Skyrim"
+    ]
+  },
+  {
+    "emoji": "⚽🏆🌍",
+    "correct": "FIFA",
+    "decoys": [
+      "Pro Evolution Soccer",
+      "Rocket League",
+      "Mario Kart"
+    ]
+  },
+  {
+    "emoji": "🔫💣🌍",
+    "correct": "Call of Duty",
+    "decoys": [
+      "Battlefield",
+      "Halo",
+      "Counter-Strike"
+    ]
+  },
+  {
+    "emoji": "🏗️🧱⛏️",
+    "correct": "Minecraft",
+    "decoys": [
+      "Terraria",
+      "Roblox",
+      "Fortnite"
+    ]
+  },
+  {
+    "emoji": "🌸🏘️🐾",
+    "correct": "Animal Crossing",
+    "decoys": [
+      "Stardew Valley",
+      "Harvest Moon",
+      "The Sims"
+    ]
+  },
+  {
+    "emoji": "🐉⚔️🌍",
+    "correct": "Skyrim",
+    "decoys": [
+      "Dragon Age",
+      "The Witcher",
+      "Dark Souls"
+    ]
+  },
+  {
+    "emoji": "🚗🏁🌈",
+    "correct": "Mario Kart",
+    "decoys": [
+      "Crash Team Racing",
+      "Need for Speed",
+      "Forza"
+    ]
+  },
+  {
+    "emoji": "🤖💀🔫",
+    "correct": "Halo",
+    "decoys": [
+      "Call of Duty",
+      "Destiny",
+      "Doom"
+    ]
+  },
+  {
+    "emoji": "🌿🌳🦁",
+    "correct": "The Lion King (Game)",
+    "decoys": [
+      "Jungle Book",
+      "Tarzan",
+      "Bambi"
+    ]
+  },
+  {
+    "emoji": "🦅🗺️🏔️",
+    "correct": "Assassin's Creed",
+    "decoys": [
+      "Prince of Persia",
+      "Shadow of Mordor",
+      "Splinter Cell"
+    ]
+  },
+  {
+    "emoji": "🏎️💨🏆",
+    "correct": "Gran Turismo",
+    "decoys": [
+      "Forza",
+      "Need for Speed",
+      "F1"
+    ]
+  },
+  {
+    "emoji": "🃏♟️🎮",
+    "correct": "Hearthstone",
+    "decoys": [
+      "Magic: The Gathering",
+      "Yu-Gi-Oh!",
+      "Gwent"
+    ]
+  },
+  {
+    "emoji": "🌍🏙️💼",
+    "correct": "SimCity",
+    "decoys": [
+      "Cities: Skylines",
+      "Tropico",
+      "Anno"
+    ]
+  },
+  {
+    "emoji": "🕹️👾🏆",
+    "correct": "Pac-Man",
+    "decoys": [
+      "Galaga",
+      "Space Invaders",
+      "Donkey Kong"
+    ]
+  },
+  {
+    "emoji": "🌹🕰️💔",
+    "correct": "Romeo and Juliet",
+    "decoys": [
+      "Hamlet",
+      "A Midsummer Night's Dream",
+      "Othello"
+    ]
+  },
+  {
+    "emoji": "🍎🌿🐍",
+    "correct": "Snow White",
+    "decoys": [
+      "Sleeping Beauty",
+      "Cinderella",
+      "Rapunzel"
+    ]
+  },
+  {
+    "emoji": "💀☠️🏴‍☠️",
+    "correct": "Treasure Island",
+    "decoys": [
+      "Robinson Crusoe",
+      "Swiss Family Robinson",
+      "The Count of Monte Cristo"
+    ]
+  },
+  {
+    "emoji": "🐺🌲🧓",
+    "correct": "Little Red Riding Hood",
+    "decoys": [
+      "The Three Little Pigs",
+      "Goldilocks",
+      "Hansel and Gretel"
+    ]
+  },
+  {
+    "emoji": "🌙✨🧚",
+    "correct": "Peter Pan",
+    "decoys": [
+      "Tinker Bell",
+      "Fairy Tail",
+      "Neverland"
+    ]
+  },
+  {
+    "emoji": "👑🎤🕺",
+    "correct": "Michael Jackson",
+    "decoys": [
+      "Prince",
+      "Bruno Mars",
+      "Usher"
+    ]
+  },
+  {
+    "emoji": "💃🌹🇪🇸",
+    "correct": "Shakira",
+    "decoys": [
+      "Jennifer Lopez",
+      "Ricky Martin",
+      "Marc Anthony"
+    ]
+  },
+  {
+    "emoji": "🎸🌟🤘",
+    "correct": "AC/DC",
+    "decoys": [
+      "Metallica",
+      "Guns N' Roses",
+      "Aerosmith"
+    ]
+  },
+  {
+    "emoji": "🎤💛🌟",
+    "correct": "Coldplay",
+    "decoys": [
+      "U2",
+      "Radiohead",
+      "Snow Patrol"
+    ]
+  },
+  {
+    "emoji": "🎵🦋🌈",
+    "correct": "Mariah Carey",
+    "decoys": [
+      "Céline Dion",
+      "Whitney Houston",
+      "Ariana Grande"
+    ]
+  },
+  {
+    "emoji": "🎩🎵🕴️",
+    "correct": "Frank Sinatra",
+    "decoys": [
+      "Dean Martin",
+      "Sammy Davis Jr.",
+      "Tony Bennett"
+    ]
+  },
+  {
+    "emoji": "🌹🎸🎶",
+    "correct": "Guns N' Roses",
+    "decoys": [
+      "Aerosmith",
+      "AC/DC",
+      "Bon Jovi"
+    ]
+  },
+  {
+    "emoji": "🦋💃🎤",
+    "correct": "Beyoncé",
+    "decoys": [
+      "Rihanna",
+      "Jennifer Lopez",
+      "Lady Gaga"
+    ]
+  },
+  {
+    "emoji": "🃏🎤🌟",
+    "correct": "Lady Gaga",
+    "decoys": [
+      "Katy Perry",
+      "Nicki Minaj",
+      "Doja Cat"
+    ]
+  },
+  {
+    "emoji": "👽🌌🎸",
+    "correct": "David Bowie",
+    "decoys": [
+      "Elton John",
+      "Prince",
+      "Mick Jagger"
+    ]
+  },
+  {
+    "emoji": "🕷️🐀🍕",
+    "correct": "Teenage Mutant Ninja Turtles",
+    "decoys": [
+      "Spider-Man",
+      "Ben 10",
+      "Danny Phantom"
+    ]
+  },
+  {
+    "emoji": "🎃👻🕷️",
+    "correct": "Nightmare Before Christmas",
+    "decoys": [
+      "Coraline",
+      "ParaNorman",
+      "Corpse Bride"
+    ]
+  },
+  {
+    "emoji": "🕵️‍♀️🔍💎",
+    "correct": "Totally Spies",
+    "decoys": [
+      "Spy Kids",
+      "Kim Possible",
+      "Powerpuff Girls"
+    ]
+  },
+  {
+    "emoji": "🌟⚡🎒",
+    "correct": "Pokémon",
+    "decoys": [
+      "Digimon",
+      "Yu-Gi-Oh!",
+      "Bakugan"
+    ]
+  },
+  {
+    "emoji": "💎👑💫",
+    "correct": "Steven Universe",
+    "decoys": [
+      "Star vs. Forces of Evil",
+      "Gravity Falls",
+      "We Bare Bears"
+    ]
+  },
+  {
+    "emoji": "🍕🐢🥋",
+    "correct": "Teenage Mutant Ninja Turtles",
+    "decoys": [
+      "Ben 10",
+      "Danny Phantom",
+      "Generator Rex"
+    ]
+  },
+  {
+    "emoji": "🤖💙🏙️",
+    "correct": "Big Hero 6",
+    "decoys": [
+      "WALL-E",
+      "Robots",
+      "The Iron Giant"
+    ]
+  },
+  {
+    "emoji": "🧁🍰🎂",
+    "correct": "Cake Boss",
+    "decoys": [
+      "MasterChef",
+      "Top Chef",
+      "The Great British Bake Off"
+    ]
+  },
+  {
+    "emoji": "🏡🌻🐕",
+    "correct": "Lassie",
+    "decoys": [
+      "Rin Tin Tin",
+      "Beethoven",
+      "Air Bud"
+    ]
+  },
+  {
+    "emoji": "⚡🦅🇺🇸",
+    "correct": "Captain America",
+    "decoys": [
+      "Superman",
+      "Thor",
+      "Iron Man"
+    ]
+  },
+  {
+    "emoji": "💚🔬😡",
+    "correct": "Hulk",
+    "decoys": [
+      "Thing",
+      "Swamp Thing",
+      "She-Hulk"
+    ]
+  },
+  {
+    "emoji": "🏹💜🎯",
+    "correct": "Hawkeye",
+    "decoys": [
+      "Green Arrow",
+      "Robin Hood",
+      "Katniss"
+    ]
+  },
+  {
+    "emoji": "❄️🌟💎",
+    "correct": "Elsa (Frozen)",
+    "decoys": [
+      "Anna",
+      "Moana",
+      "Rapunzel"
+    ]
+  },
+  {
+    "emoji": "🌍🦸‍♀️👑",
+    "correct": "Wonder Woman",
+    "decoys": [
+      "She-Hulk",
+      "Supergirl",
+      "Captain Marvel"
+    ]
+  },
+  {
+    "emoji": "🕷️👧🕸️",
+    "correct": "Spider-Gwen",
+    "decoys": [
+      "Black Widow",
+      "Spider-Woman",
+      "Silk"
+    ]
   }
 ]
