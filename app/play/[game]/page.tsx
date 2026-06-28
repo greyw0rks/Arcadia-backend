@@ -61,6 +61,10 @@ export default function PlayPage() {
   const [lastResult, setLastResult] = useState<"correct" | "wrong" | null>(null);
   const [finalBp, setFinalBp] = useState<number | null>(null);
   const [secsLeft, setSecsLeft] = useState(0);
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  const IMAGE_GAMES = new Set(["geo", "landmark", "logo", "movie"]);
 
   const answeringRef = useRef(false);
 
@@ -163,6 +167,8 @@ export default function PlayPage() {
       setCorrectIndex(null);
       setLastResult(null);
       setSecsLeft(d.round.timeLimitSec);
+      setImgLoaded(false);
+      setImgError(false);
       answeringRef.current = false;
       return;
     }
@@ -324,6 +330,11 @@ export default function PlayPage() {
               timer at higher bets
             </span>
           </div>
+          {IMAGE_GAMES.has(game) && (
+            <div className="info" style={{ marginTop: 16, fontWeight: 700 }}>
+              ⚠️ This game loads images each round. Make sure you have a <strong>reliable and fast internet connection</strong> before playing — slow connections may cause images to fail mid-round.
+            </div>
+          )}
           {overMax && (
             <div className="error">Max bet is {MAX_STAKE[chain]} {stakeSymbol} per game.</div>
           )}
@@ -368,20 +379,52 @@ export default function PlayPage() {
               style={{
                 overflow: "hidden",
                 borderRadius: 4,
-                // extreme: zoom 1.6× so the full image boundary isn't visible,
-                // then nudge off-centre to hide the most iconic region
-                ...(round.imageStyle === 'extreme' && {
-                  maxHeight: 260,
-                  transform: "scale(1)",
-                }),
+                position: "relative",
+                ...(round.imageStyle === 'extreme' && { maxHeight: 260 }),
               }}
             >
+              {!imgLoaded && !imgError && (
+                <div style={{
+                  width: "100%",
+                  height: 220,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "var(--bg-alt)",
+                  border: "8px solid var(--border)",
+                  margin: "20px 0 28px",
+                  fontSize: 14,
+                  color: "var(--muted)",
+                }}>
+                  Loading image…
+                </div>
+              )}
+              {imgError && (
+                <div style={{
+                  width: "100%",
+                  height: 220,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "var(--bg-alt)",
+                  border: "8px solid var(--border)",
+                  margin: "20px 0 28px",
+                  gap: 8,
+                }}>
+                  <span style={{ fontSize: 28 }}>🖼️</span>
+                  <span style={{ fontSize: 13, color: "var(--muted)", textAlign: "center", maxWidth: 240 }}>
+                    Image failed to load. Use the context clues and make your best guess!
+                  </span>
+                </div>
+              )}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={round.imageUrl}
                 alt="Guess the answer"
                 className="game-image"
                 style={{
+                  display: imgLoaded ? "block" : "none",
                   ...(round.imageStyle === 'hard' && {
                     filter: "grayscale(85%) contrast(1.05)",
                   }),
@@ -391,6 +434,8 @@ export default function PlayPage() {
                     transformOrigin: "center center",
                   }),
                 }}
+                onLoad={() => setImgLoaded(true)}
+                onError={() => setImgError(true)}
               />
             </div>
           )}
