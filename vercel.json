@@ -1,0 +1,10 @@
+{
+  "experimentalServices": {
+    "arcadia-api": {
+      "type": "web",
+      "routePrefix": "/",
+      "framework": "nextjs",
+      "buildCommand": "npm ci && npm run build"
+    }
+  }
+}

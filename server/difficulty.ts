@@ -17,10 +17,11 @@ import type { ChainId } from "../lib/contract";
 export const BPS = 10_000;
 export const STEP_BPS = 1_000;
 
-// Per-session stake cap, in DISPLAY units (cUSD / STX). Celo cUSD is ~$1, so 1 == $1. STX is not
-// USD-pegged, so this is a fixed 1-STX cap (matches the on-chain `max-stake` of 1_000_000 micro-STX).
+// Per-session stake cap, in DISPLAY units (USDM/USDC / STX). Stablecoin chains cap at 1 USD. STX is
+// not USD-pegged; fixed 1-STX cap (matches the on-chain `max-stake` of 1_000_000 micro-STX).
 export const MAX_STAKE: Record<ChainId, number> = {
   celo: 1,
+  base: 1,
   stacks: 1,
 };
 

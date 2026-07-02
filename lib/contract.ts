@@ -1,8 +1,16 @@
 // Shared chain + contract constants used by both client and server.
 import { defineChain } from "viem";
+import { base as viemBase, baseSepolia as viemBaseSepolia } from "viem/chains";
 
 // Which networks the app supports. Used by the UI chain switcher and the chain-aware play flow.
-export type ChainId = "celo" | "stacks";
+export type ChainId = "celo" | "base" | "stacks";
+
+// When set, locks the entire deployment to one chain — no switcher shown.
+// Values: "celo" | "base" | "stacks" | "landing" (hub-only, no game play).
+export const LOCKED_CHAIN = process.env.NEXT_PUBLIC_CHAIN as
+  | ChainId
+  | "landing"
+  | undefined;
 
 export const ARCADE_ADDRESS = (process.env.NEXT_PUBLIC_ARCADE_ADDRESS ??
   "0x0000000000000000000000000000000000000000") as `0x${string}`;
@@ -91,6 +99,29 @@ export const STACKS_EXPLORER =
     : "https://explorer.hiro.so/?chain=testnet";
 
 // ---------------------------------------------------------------------------
+// Base (OP Stack L2) config
+// ---------------------------------------------------------------------------
+
+export const BASE_NETWORK_NAME = (process.env.NEXT_PUBLIC_BASE_NETWORK ?? "mainnet") as
+  | "mainnet"
+  | "testnet";
+
+export const BASE_RPC_URL =
+  process.env.NEXT_PUBLIC_BASE_RPC_URL ??
+  (BASE_NETWORK_NAME === "mainnet" ? "https://mainnet.base.org" : "https://sepolia.base.org");
+
+// Use viem's built-in Base chain definitions, overriding the RPC.
+export const baseChain = defineChain({
+  ...(BASE_NETWORK_NAME === "mainnet" ? viemBase : viemBaseSepolia),
+  rpcUrls: { default: { http: [BASE_RPC_URL] } },
+});
+
+export const BASE_EXPLORER =
+  BASE_NETWORK_NAME === "mainnet"
+    ? "https://basescan.org"
+    : "https://sepolia.basescan.org";
+
+// ---------------------------------------------------------------------------
 // Per-chain UI metadata (stake symbol + token decimals) for the chain switcher.
 // ---------------------------------------------------------------------------
 
@@ -102,7 +133,8 @@ export interface ChainMeta {
 }
 
 export const CHAINS: Record<ChainId, ChainMeta> = {
-  celo: { id: "celo", label: "Celo", stakeSymbol: "cUSD", decimals: 18 },
+  celo: { id: "celo", label: "Celo", stakeSymbol: "USDM", decimals: 18 },
+  base: { id: "base", label: "Base", stakeSymbol: "USDC", decimals: 6 },
   stacks: { id: "stacks", label: "Stacks", stakeSymbol: "STX", decimals: 6 },
 };
 
@@ -138,12 +170,11 @@ function envAddr(name: string, fallback: string): `0x${string}` {
 }
 
 export const CELO_TOKENS: Record<CeloToken, CeloTokenMeta> = {
-  // cUSD reuses the EXISTING arcade + token env vars for back-compat (the cUSD instance is already
-  // deployed). The two new instances are configured via the *_USDC / *_USDT vars.
+  // cUSD is branded as USDM in the UI. Token address unchanged; env vars unchanged.
   cusd: {
     id: "cusd",
-    label: "cUSD",
-    symbol: "cUSD",
+    label: "USDM",
+    symbol: "USDM",
     decimals: 18,
     arcadeAddress: ARCADE_ADDRESS,
     tokenAddress: CUSD_ADDRESS,
@@ -174,9 +205,52 @@ export const CELO_TOKENS: Record<CeloToken, CeloTokenMeta> = {
 
 export const DEFAULT_CELO_TOKEN: CeloToken = "cusd";
 
-/** Resolve a token's metadata, falling back to the default (cUSD) for an unknown/legacy value. */
+/** Resolve a token's metadata, falling back to the default (cUSD/USDM) for an unknown/legacy value. */
 export function celoTokenMeta(t: CeloToken | undefined): CeloTokenMeta {
   return (t && CELO_TOKENS[t]) || CELO_TOKENS[DEFAULT_CELO_TOKEN];
+}
+
+// ---------------------------------------------------------------------------
+// Base stake-token registry (single USDC instance per network).
+// ---------------------------------------------------------------------------
+
+export type BaseToken = "usdc";
+
+export interface BaseTokenMeta {
+  id: BaseToken;
+  label: string;
+  symbol: string;
+  decimals: number;
+  arcadeAddress: `0x${string}`; // QuizArcade deployed on Base against USDC
+  tokenAddress: `0x${string}`; // USDC on Base
+}
+
+// Canonical Base mainnet USDC (Circle's native deployment).
+const BASE_MAINNET_USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
+
+export const BASE_TOKENS: Record<BaseToken, BaseTokenMeta> = {
+  usdc: {
+    id: "usdc",
+    label: "USDC",
+    symbol: "USDC",
+    decimals: 6,
+    arcadeAddress: envAddr("NEXT_PUBLIC_BASE_ARCADE_ADDRESS_USDC", ZERO_ADDRESS),
+    tokenAddress: envAddr(
+      "NEXT_PUBLIC_BASE_TOKEN_ADDRESS_USDC",
+      BASE_NETWORK_NAME === "mainnet" ? BASE_MAINNET_USDC : ZERO_ADDRESS
+    ),
+  },
+};
+
+export const DEFAULT_BASE_TOKEN: BaseToken = "usdc";
+
+/** Resolve the active token metadata for the given chain + optional token key. */
+export function resolveTokenMeta(
+  chain: ChainId,
+  token?: CeloToken
+): { arcadeAddress: `0x${string}`; tokenAddress: `0x${string}`; decimals: number } {
+  if (chain === "base") return BASE_TOKENS.usdc;
+  return celoTokenMeta(token);
 }
 
 // Multiplier math constants (mirror the contract).

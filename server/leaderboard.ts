@@ -17,10 +17,14 @@ import { createPublicClient, http } from "viem";
 import { hexToCV, cvToJSON } from "@stacks/transactions";
 import {
   celoChain,
+  baseChain,
   RPC_URL,
+  BASE_RPC_URL,
   CELO_TOKENS,
+  BASE_TOKENS,
   STACKS_ARCADE_CONTRACT,
   STACKS_API_URL,
+  LOCKED_CHAIN,
 } from "../lib/contract";
 import { ARCADE_ABI } from "../lib/abi";
 import { getProfileOverlay } from "./profileStore";
@@ -39,6 +43,12 @@ const CELO_FROM_BLOCK = process.env.CELO_INDEX_FROM_BLOCK
   ? BigInt(process.env.CELO_INDEX_FROM_BLOCK)
   : null; // set to the deploy block for full history
 const CELO_BLOCKS_PER_DAY = Number(process.env.CELO_BLOCKS_PER_DAY ?? "86400"); // ~1s L2 blocks
+const BASE_CHUNK = BigInt(process.env.BASE_LOG_CHUNK ?? "9000");
+const BASE_LOOKBACK = BigInt(process.env.BASE_INDEX_LOOKBACK ?? "2000000"); // ~2s blocks
+const BASE_FROM_BLOCK = process.env.BASE_INDEX_FROM_BLOCK
+  ? BigInt(process.env.BASE_INDEX_FROM_BLOCK)
+  : null;
+const BASE_BLOCKS_PER_DAY = Number(process.env.BASE_BLOCKS_PER_DAY ?? "43200"); // ~2s blocks
 const STACKS_BLOCKS_PER_DAY = Number(process.env.STACKS_BLOCKS_PER_DAY ?? "144");
 const STACKS_MAX_PAGES = Number(process.env.STACKS_INDEX_MAX_PAGES ?? "40"); // 50 events/page
 const REFRESH_TTL_MS = Number(process.env.LEADERBOARD_TTL_MS ?? "30000");
@@ -58,7 +68,7 @@ interface GameRecord {
 
 interface PlayerAgg {
   address: string; // lowercased EVM address or raw Stacks principal
-  chain: "celo" | "stacks";
+  chain: "celo" | "base" | "stacks";
   unit: "USDm" | "STX";
   games: GameRecord[]; // chronological (ascending block)
 }
@@ -73,9 +83,11 @@ const players = new Map<string, PlayerAgg>();
 const pendingStakes = new Map<string, PendingStake>(); // "<chain>:<sessionId>" -> stake from start event
 const seenSettled = new Set<string>(); // "<chain>:<sessionId>" guard against double counting
 const celoCursors = new Map<string, bigint>(); // arcade address -> next block to scan
+const baseCursors = new Map<string, bigint>(); // arcade address -> next block to scan (Base)
 const seenStacksEvents = new Set<string>(); // "<txId>:<eventIndex>"
 const stacksTxBlock = new Map<string, number>(); // tx_id -> block height (immutable; cached forever)
 let celoHead = 0;
+let baseHead = 0;
 let stacksHead = 0;
 
 let lastRefresh = 0;
@@ -98,8 +110,12 @@ function unitOf(address: string): "USDm" | "STX" {
   return address.startsWith("0x") ? "USDm" : "STX";
 }
 
-function chainOf(address: string): "celo" | "stacks" {
-  return address.startsWith("0x") ? "celo" : "stacks";
+function chainOf(address: string): "celo" | "base" | "stacks" {
+  // EVM addresses (0x) are attributed to the locked chain; default "celo" for legacy/unlocked.
+  if (!address.startsWith("0x")) return "stacks";
+  return (LOCKED_CHAIN === "base" || LOCKED_CHAIN === "celo" || LOCKED_CHAIN === "stacks")
+    ? LOCKED_CHAIN
+    : "celo";
 }
 
 /** EVM addresses are case-insensitive; Stacks principals are case-sensitive — only lowercase EVM. */
@@ -107,7 +123,7 @@ function normalizeAddr(address: string): string {
   return address.startsWith("0x") ? address.toLowerCase() : address;
 }
 
-function getPlayer(address: string, chain: "celo" | "stacks", unit: "USDm" | "STX"): PlayerAgg {
+function getPlayer(address: string, chain: "celo" | "base" | "stacks", unit: "USDm" | "STX"): PlayerAgg {
   let p = players.get(address);
   if (!p) {
     p = { address, chain, unit, games: [] };
@@ -118,7 +134,7 @@ function getPlayer(address: string, chain: "celo" | "stacks", unit: "USDm" | "ST
 
 function recordGame(
   address: string,
-  chain: "celo" | "stacks",
+  chain: "celo" | "base" | "stacks",
   unit: "USDm" | "STX",
   rec: GameRecord
 ): void {
@@ -199,6 +215,82 @@ async function refreshCelo(): Promise<void> {
           `[leaderboard] celo scan ${arcade} ${from}-${to} failed: ${(e as Error).message}`
         );
         celoCursors.set(arcade, from);
+        break;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Base (OP Stack L2) scan — mirrors the Celo scan using Base RPC.
+// ---------------------------------------------------------------------------
+
+async function refreshBase(): Promise<void> {
+  const ZERO = "0x0000000000000000000000000000000000000000";
+  const client = createPublicClient({ chain: baseChain, transport: http(BASE_RPC_URL) });
+  const head = await client.getBlockNumber();
+  baseHead = Number(head);
+
+  for (const token of Object.values(BASE_TOKENS)) {
+    const arcade = token.arcadeAddress;
+    if (!arcade || arcade.toLowerCase() === ZERO) continue;
+
+    const defaultStart = BASE_FROM_BLOCK ?? (head > BASE_LOOKBACK ? head - BASE_LOOKBACK : 0n);
+    let from = baseCursors.get(arcade) ?? defaultStart;
+
+    while (from <= head) {
+      const to = from + BASE_CHUNK - 1n > head ? head : from + BASE_CHUNK - 1n;
+      try {
+        const [started, settled] = await Promise.all([
+          client.getContractEvents({
+            address: arcade,
+            abi: ARCADE_ABI,
+            eventName: "SessionStarted",
+            fromBlock: from,
+            toBlock: to,
+          }),
+          client.getContractEvents({
+            address: arcade,
+            abi: ARCADE_ABI,
+            eventName: "SessionSettled",
+            fromBlock: from,
+            toBlock: to,
+          }),
+        ]);
+
+        for (const log of started) {
+          const a = log.args as { sessionId: string; stake: bigint; effectiveStake: bigint };
+          pendingStakes.set(`base:${a.sessionId}`, {
+            stake: fromHuman(a.stake, token.decimals),
+            effectiveStake: fromHuman(a.effectiveStake, token.decimals),
+          });
+        }
+
+        for (const log of settled) {
+          const a = log.args as { sessionId: string; player: string; multiplierBp: bigint; payout: bigint };
+          const skey = `base:${a.sessionId}`;
+          if (seenSettled.has(skey)) continue;
+          seenSettled.add(skey);
+          const mul = Number(a.multiplierBp);
+          const payout = fromHuman(a.payout, token.decimals);
+          const ps = pendingStakes.get(skey);
+          const stake = ps?.stake ?? (mul > 0 ? (payout * BPS) / mul : payout);
+          recordGame(a.player.toLowerCase(), "base", "USDm", {
+            block: Number(log.blockNumber),
+            stake,
+            payout,
+            multiplierBp: mul,
+            won: mul > BPS,
+          });
+        }
+
+        baseCursors.set(arcade, to + 1n);
+        from = to + 1n;
+      } catch (e) {
+        console.warn(
+          `[leaderboard] base scan ${arcade} ${from}-${to} failed: ${(e as Error).message}`
+        );
+        baseCursors.set(arcade, from);
         break;
       }
     }
@@ -300,7 +392,21 @@ async function refreshStacks(): Promise<void> {
 // ---------------------------------------------------------------------------
 
 async function refresh(): Promise<void> {
-  await Promise.allSettled([refreshCelo(), refreshStacks()]);
+  // When LOCKED_CHAIN is set each backend only indexes its own chain, avoiding unnecessary RPC calls
+  // and cross-chain address collisions in the leaderboard. Unlocked (legacy/landing) runs all three.
+  switch (LOCKED_CHAIN) {
+    case "celo":
+      await refreshCelo();
+      break;
+    case "base":
+      await refreshBase();
+      break;
+    case "stacks":
+      await refreshStacks();
+      break;
+    default:
+      await Promise.allSettled([refreshCelo(), refreshBase(), refreshStacks()]);
+  }
 }
 
 function runRefresh(): Promise<void> {
@@ -335,7 +441,7 @@ async function ensureFresh(): Promise<void> {
 
 interface PlayerStats {
   address: string;
-  chain: "celo" | "stacks";
+  chain: "celo" | "base" | "stacks";
   unit: "USDm" | "STX";
   gamesPlayed: number;
   gamesWon: number;
@@ -349,11 +455,14 @@ interface PlayerStats {
   longestStreak: number;
 }
 
-function cutoffBlock(chain: "celo" | "stacks", period: Period): number {
+function cutoffBlock(chain: "celo" | "base" | "stacks", period: Period): number {
   if (period === "allTime") return -Infinity;
   const days = period === "daily" ? 1 : period === "weekly" ? 7 : 30;
-  const head = chain === "celo" ? celoHead : stacksHead;
-  const perDay = chain === "celo" ? CELO_BLOCKS_PER_DAY : STACKS_BLOCKS_PER_DAY;
+  let head: number;
+  let perDay: number;
+  if (chain === "stacks") { head = stacksHead; perDay = STACKS_BLOCKS_PER_DAY; }
+  else if (chain === "base") { head = baseHead; perDay = BASE_BLOCKS_PER_DAY; }
+  else { head = celoHead; perDay = CELO_BLOCKS_PER_DAY; }
   return head - days * perDay;
 }
 

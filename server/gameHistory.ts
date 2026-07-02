@@ -8,7 +8,7 @@
 export interface HistoryRecord {
   sessionId: string;
   player: string; // normalized (lowercased for EVM, as-is for Stacks)
-  chain: "celo" | "stacks";
+  chain: "celo" | "base" | "stacks";
   unit: "USDm" | "STX";
   stake: number;
   multiplierBp: number;

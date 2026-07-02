@@ -14,7 +14,7 @@ import { ANSWER_GRACE_MS } from "./config";
 import { scaleTimer } from "./difficulty";
 import { DEFAULT_CELO_TOKEN, type CeloToken } from "../lib/contract";
 
-export type ChainId = "celo" | "stacks";
+export type ChainId = "celo" | "base" | "stacks";
 
 export interface Session {
   id: `0x${string}`; // bytes32 / (buff 32), also the on-chain sessionId
@@ -48,7 +48,7 @@ const USED_DEMO = new Set<string>();
 
 /** Normalize a player id for demo-usage lookups (EVM is case-insensitive; Stacks is not). */
 function demoKey(player: string, chain: ChainId): string {
-  const p = chain === "celo" ? player.toLowerCase() : player;
+  const p = chain !== "stacks" ? player.toLowerCase() : player;
   return `${chain}:${p}`;
 }
 
@@ -84,7 +84,7 @@ export function createSession(
     // for Stacks (STX has no token sub-dimension).
     token: chain === "celo" ? token ?? DEFAULT_CELO_TOKEN : undefined,
     // EVM addresses are case-insensitive; Stacks principals are case-sensitive (c32check) — keep as-is.
-    player: chain === "celo" ? player.toLowerCase() : player,
+    player: chain !== "stacks" ? player.toLowerCase() : player,
     isDemo: opts?.isDemo ?? false,
     stake: opts?.stake,
     // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.

@@ -17,7 +17,7 @@ import {
   STACKS_ARCADE_CONTRACT,
   stacksNetwork,
   CHAINS,
-  CELO_TOKENS,
+  resolveTokenMeta,
   DEFAULT_CELO_TOKEN,
   type ChainId,
   type CeloToken,
@@ -39,18 +39,17 @@ export interface ArcadeApi {
 }
 
 // ---------------------------------------------------------------------------
-// Celo (EVM) — wagmi/viem, with the ERC-20 approve step.
+// EVM (Celo + Base) — wagmi/viem, with the ERC-20 approve step.
 // ---------------------------------------------------------------------------
 
-function useEvmArcade(token: CeloToken): ArcadeApi {
+function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
   const { address } = useAccount();
   const publicClient = usePublicClient();
   const { writeContractAsync } = useWriteContract();
 
-  // Which QuizArcade instance + ERC-20 + decimals this session targets. Each Celo token (cUSD/USDC/
-  // USDT) has its own deployed contract, so the address the player approves and stakes against — and
-  // the decimals used to parse the stake — depend on the selected token.
-  const { arcadeAddress, tokenAddress, decimals } = CELO_TOKENS[token];
+  // Resolve the arcade contract, stake token, and decimals for this chain+token combination.
+  // Celo has three instances (USDM/USDC/USDT); Base has one (USDC). resolveTokenMeta handles both.
+  const { arcadeAddress, tokenAddress, decimals } = resolveTokenMeta(chain, token);
 
   async function ensureAllowance(stakeWei: bigint) {
     if (!address || !publicClient) throw new Error("wallet not connected");
@@ -255,7 +254,7 @@ function useStacksArcade(): ArcadeApi {
 // ---------------------------------------------------------------------------
 
 export function useArcade(chain: ChainId, token: CeloToken = DEFAULT_CELO_TOKEN): ArcadeApi {
-  const evm = useEvmArcade(token);
+  const evm = useEvmArcade(chain, token);
   const stacks = useStacksArcade();
   return chain === "stacks" ? stacks : evm;
 }

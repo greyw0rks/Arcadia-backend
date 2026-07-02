@@ -25,6 +25,12 @@ function isValidPlayer(player: string, chain: ChainId): boolean {
   return chain === "stacks" ? validateStacksAddress(player) : isAddress(player);
 }
 
+function stakeSymbol(chain: ChainId, token: CeloToken | undefined): string {
+  if (chain === "base") return "USDC";
+  if (chain === "stacks") return "STX";
+  return CELO_TOKENS[token!].symbol;
+}
+
 function parseCeloToken(value: unknown): CeloToken {
   return value === "usdc" || value === "usdt" || value === "cusd"
     ? (value as CeloToken)
@@ -50,7 +56,10 @@ export async function POST(req: NextRequest) {
   }
 
   const { game: gameId, player } = body;
-  const chain: ChainId = body.chain === "stacks" ? "stacks" : "celo";
+  const chain: ChainId =
+    body.chain === "stacks" ? "stacks" : body.chain === "base" ? "base" : "celo";
+  // Token is a Celo-only sub-dimension (selects which QuizArcade instance). Base is USDC-only
+  // (no token routing); Stacks is STX-only.
   const token: CeloToken | undefined = chain === "celo" ? parseCeloToken(body.token) : undefined;
   if (!gameId || !player || !isValidPlayer(player, chain)) {
     return NextResponse.json({ error: "game and valid player required" }, { status: 400 });
@@ -92,9 +101,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "stake must be greater than 0" }, { status: 400 });
   }
   if (stake > MAX_STAKE[chain]) {
-    const symbol = chain === "stacks" ? "STX" : CELO_TOKENS[token!].symbol;
     return NextResponse.json(
-      { error: `stake exceeds the ${MAX_STAKE[chain]} ${symbol} max per game` },
+      { error: `stake exceeds the ${MAX_STAKE[chain]} ${stakeSymbol(chain, token)} max per game` },
       { status: 400 }
     );
   }

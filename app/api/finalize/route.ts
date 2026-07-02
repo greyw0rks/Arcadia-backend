@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
       sessionId: session.id,
       player: session.player,
       chain: session.chain,
-      unit: session.chain === "celo" ? "USDm" : "STX",
+      unit: session.chain === "stacks" ? "STX" : "USDm",
       stake,
       multiplierBp,
       payout: Math.round((effectiveStake * multiplierBp) / 100) / 100,
