@@ -22,7 +22,7 @@ export default function TermsPage() {
           <div
             className="brand"
             style={{ cursor: "pointer" }}
-            onClick={() => router.push("/games")}
+            onClick={() => router.push("/")}
           >
             Arcadia
           </div>
@@ -160,15 +160,14 @@ export default function TermsPage() {
         <section style={{ marginBottom: 40 }}>
           <h2>8. Contact</h2>
           <p>
-            For licensing, partnership, or legal inquiries, contact greyw0rks via the
-            repository at{" "}
+            For licensing, partnership, or legal inquiries, reach out via Twitter at{" "}
             <a
-              href="https://github.com/greyw0rks/Arcadia-backend"
+              href="https://twitter.com/arcadia_uno"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "underline" }}
             >
-              github.com/greyw0rks/Arcadia-backend
+              @arcadia_uno
             </a>
             .
           </p>
@@ -188,10 +187,10 @@ export default function TermsPage() {
           </p>
           <button
             className="btn"
-            onClick={() => router.push("/games")}
+            onClick={() => router.push("/")}
             style={{ marginTop: 16 }}
           >
-            Back to Games
+            Back to Home
           </button>
         </div>
       </div>
