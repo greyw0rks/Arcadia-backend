@@ -335,9 +335,9 @@ function LandingHub() {
         <nav className="nav">
           <a href="/" className="nav-logo">ARC<span>A</span>DIA</a>
           <div className="nav-links">
-            <a href="https://celo.arcadia.uno/faq" className="nav-link">FAQ</a>
-            <a href="https://celo.arcadia.uno/terms" className="nav-link">Terms</a>
-            <a href="https://twitter.com/Get_sync" target="_blank" rel="noopener noreferrer" className="nav-link">Twitter</a>
+            <a href="/faq" className="nav-link">FAQ</a>
+            <a href="/terms" className="nav-link">Terms</a>
+            <a href="https://twitter.com/arcadia_uno" target="_blank" rel="noopener noreferrer" className="nav-link">Twitter</a>
           </div>
           <a href="https://celo.arcadia.uno" className="nav-cta">Play now →</a>
         </nav>
@@ -496,14 +496,14 @@ function LandingHub() {
         <footer className="footer">
           <div className="footer-logo">ARC<span>A</span>DIA</div>
           <div className="footer-links">
-            <a href="https://celo.arcadia.uno/faq" className="footer-link">FAQ</a>
-            <a href="https://celo.arcadia.uno/terms" className="footer-link">Terms</a>
+            <a href="/faq" className="footer-link">FAQ</a>
+            <a href="/terms" className="footer-link">Terms</a>
             <a href="https://celo.arcadia.uno" className="footer-link">Celo</a>
             <a href="https://stacks.arcadia.uno" className="footer-link">Stacks</a>
             <a href="https://base.arcadia.uno" className="footer-link">Base</a>
           </div>
-          <a href="https://twitter.com/Get_sync" target="_blank" rel="noopener noreferrer" className="twitter-btn">
-            <span>𝕏</span> @Get_sync
+          <a href="https://twitter.com/arcadia_uno" target="_blank" rel="noopener noreferrer" className="twitter-btn">
+            <span>𝕏</span> @arcadia_uno
           </a>
           <div className="footer-right">© 2025 Arcadia. All rights reserved.</div>
         </footer>

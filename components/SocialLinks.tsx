@@ -4,7 +4,7 @@ export function SocialLinks() {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <a
-        href="https://twitter.com/Get_sync"
+        href="https://twitter.com/arcadia_uno"
         target="_blank"
         rel="noopener noreferrer"
         className="btn"
@@ -19,7 +19,7 @@ export function SocialLinks() {
         }}
       >
         <span style={{ fontSize: "20px" }}>🐦</span>
-        @Get_sync
+        @arcadia_uno
       </a>
     </div>
   );
