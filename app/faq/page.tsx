@@ -99,7 +99,7 @@ export default function FAQPage() {
           >
             ←
           </button>
-          <div className="brand" style={{ cursor: "pointer" }} onClick={() => router.push("/games")}>
+          <div className="brand" style={{ cursor: "pointer" }} onClick={() => router.push("/")}>
             Arcadia
           </div>
         </div>
@@ -165,8 +165,8 @@ export default function FAQPage() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 48 }}>
-          <button className="btn" onClick={() => router.push("/games")}>
-            Back to Games
+          <button className="btn" onClick={() => router.push("/")}>
+            Back to Home
           </button>
         </div>
       </div>
