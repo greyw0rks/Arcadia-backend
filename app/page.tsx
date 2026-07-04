@@ -92,6 +92,7 @@ function LandingHub() {
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+        html { scroll-behavior: smooth; }
         body { font-family: 'Space Grotesk', 'Space Mono', monospace; background: #F5F3FF; color: #0F0F0F; }
 
         .lp { overflow-x: hidden; }
@@ -357,7 +358,7 @@ function LandingHub() {
             No house edge beyond the rake. The smarter you play, the more you earn.
           </p>
           <div className="hero-cta-row">
-            <a href="https://celo.arcadia.uno" className="btn-primary">Start playing →</a>
+            <a href="#chains" className="btn-primary">Start playing →</a>
             <a href="#how" className="btn-ghost">How it works</a>
           </div>
 
@@ -408,7 +409,7 @@ function LandingHub() {
         </div>
 
         {/* CHAINS */}
-        <div style={{ background: "#F5F3FF", borderBottom: "4px solid #0F0F0F" }}>
+        <div id="chains" style={{ background: "#F5F3FF", borderBottom: "4px solid #0F0F0F" }}>
           <div className="section">
             <div className="section-tag">Multi-chain</div>
             <h2 className="section-title">Choose your chain</h2>
