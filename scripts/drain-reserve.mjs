@@ -19,7 +19,7 @@ const BACKEND     = "https://arcadia-api-production.up.railway.app";
 const ARCADE_ADDR = "0x678Ce8fF913457617EA3d5558c431043faaDD89F";
 const CUSD_ADDR   = "0x765DE816845861e75A25fCA122bb6898B8B1282a";
 const GAME_ID     = "trivia"; // short bank, any game works
-const MAX_RUNS    = 10;
+const MAX_RUNS    = 15;
 
 const PRIVATE_KEY = process.env.DRAIN_KEY;
 if (!PRIVATE_KEY) { console.error("Set DRAIN_KEY env var"); process.exit(1); }
@@ -113,8 +113,10 @@ async function run(runIndex, stakeEth) {
 }
 
 async function main() {
-  const MAX_MULT  = 2.5; // 1x + 15 * 0.1
-  const RAKE      = 0.03;
+  // Contract uses maxRoundsCap=20 to size the reserve lock → worst-case mult = 1 + 20*0.1 = 3.0x.
+  // This is what the contract checks against the payout pool at startSession.
+  const RESERVE_MULT = 3.0; // for stake-sizing calculations
+  const RAKE         = 0.03;
 
   console.log(`Player: ${player}`);
   const startBal = await publicC.readContract({ address: CUSD_ADDR, abi: ERC20_ABI, functionName: "balanceOf", args: [player] });
@@ -132,8 +134,11 @@ async function main() {
       break;
     }
 
-    // Max stake we can use without the session reserve exceeding the payout pool
-    const maxStakeRaw = Number(formatUnits(payoutPool, 18)) / ((1 - RAKE) * MAX_MULT);
+    console.log(`\n  Payout pool: ${fmt(payoutPool)} cUSD  freeTreasury: ${fmt(freeTreasury)} cUSD`);
+
+    // Contract locks effectiveStake * RESERVE_MULT (3.0x) per session.
+    // Max stake = payoutPool / (0.97 * 3.0) — stay 2% below to avoid rounding edge.
+    const maxStakeRaw = Number(formatUnits(payoutPool, 18)) / ((1 - RAKE) * RESERVE_MULT) * 0.98;
     const stakeEth = Math.min(1.0, Math.max(0.01, Math.floor(maxStakeRaw * 1000) / 1000));
 
     await run(i, stakeEth);
