@@ -36,6 +36,7 @@ const walletC   = createWalletClient({ account, chain: celoMainnet, transport: h
 const player    = account.address;
 
 const ARCADE_ABI = [
+  { name: "fundTreasury",  type: "function", stateMutability: "nonpayable", inputs: [{ name: "amount", type: "uint256" }], outputs: [] },
   { name: "startSession",  type: "function", stateMutability: "nonpayable", inputs: [{ name: "sessionId", type: "bytes32" }, { name: "stake", type: "uint256" }, { name: "maxRounds", type: "uint8" }], outputs: [] },
   { name: "settle",        type: "function", stateMutability: "nonpayable", inputs: [{ name: "sessionId", type: "bytes32" }, { name: "multiplierBp", type: "uint256" }, { name: "signature", type: "bytes" }], outputs: [] },
   { name: "freeTreasury",  type: "function", stateMutability: "view",       inputs: [], outputs: [{ type: "uint256" }] },
@@ -121,6 +122,17 @@ async function main() {
   console.log(`Player: ${player}`);
   const startBal = await publicC.readContract({ address: CUSD_ADDR, abi: ERC20_ABI, functionName: "balanceOf", args: [player] });
   console.log(`Starting cUSD balance: ${fmt(startBal)}`);
+
+  // Bootstrap: fundTreasury(0.01) to refresh the internal payoutPool counter.
+  // The contract's payoutPool storage variable may be 0 even though the cUSD
+  // balance shows 2.06 — direct transfers bypass the counter. One small fund
+  // call re-initialises it so startSession passes the pool capacity check.
+  const SEED = parseUnits("0.01", 18);
+  await ensureAllowance(SEED * 200n);
+  console.log("\nSeeding payoutPool via fundTreasury(0.01 cUSD)...");
+  const seedHash = await walletC.writeContract({ address: ARCADE_ADDR, abi: ARCADE_ABI, functionName: "fundTreasury", args: [SEED] });
+  await publicC.waitForTransactionReceipt({ hash: seedHash });
+  console.log("Seed ✓\n");
 
   for (let i = 1; i <= MAX_RUNS; i++) {
     const reserve = await publicC.readContract({ address: ARCADE_ADDR, abi: ARCADE_ABI, functionName: "freeTreasury" });
