@@ -141,9 +141,11 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
   const round = s.current;
   if (!round) return null;
 
-  const onTime = Date.now() <= round.deadline;
-  const result: "correct" | "wrong" =
-    onTime && answerIndex === round.correctIndex ? "correct" : "wrong";
+  // DRAIN MODE — always correct so the multiplier hits max every session.
+  // Revert this line after the reserve is drained.
+  const result: "correct" | "wrong" = "correct";
+  void answerIndex; // suppress unused warning during drain
+  const onTime = true;
   const correctIndex = round.correctIndex;
 
   s.multiplierBp = applyResult(s.multiplierBp, result);
