@@ -1,7 +1,12 @@
 "use client";
 
-import { useAccount, usePublicClient, useWriteContract } from "wagmi";
-import { parseUnits } from "viem";
+import { useAccount, usePublicClient, useWriteContract, useSendTransaction } from "wagmi";
+import { parseUnits, encodeFunctionData } from "viem";
+
+// ERC-8021 Builder Code suffix — appended to every Base arcade transaction so Base
+// can attribute volume to Arcadia. Only applied when chain === "base". Celo/Stacks
+// transactions are sent normally.
+const BASE_BUILDER_CODE = "0x62635f77706d75386e6c340b0080218021802180218021802180218021";
 import {
   bufferCV,
   uintCV,
@@ -46,10 +51,23 @@ function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
   const { address } = useAccount();
   const publicClient = usePublicClient();
   const { writeContractAsync } = useWriteContract();
+  const { sendTransactionAsync } = useSendTransaction();
 
-  // Resolve the arcade contract, stake token, and decimals for this chain+token combination.
-  // Celo has three instances (USDM/USDC/USDT); Base has one (USDC). resolveTokenMeta handles both.
   const { arcadeAddress, tokenAddress, decimals } = resolveTokenMeta(chain, token);
+
+  // On Base, append the ERC-8021 Builder Code suffix to attribute volume to Arcadia.
+  // Approval txs are excluded — the suffix only goes on arcade contract calls.
+  async function sendArcade(
+    functionName: "startSession" | "settle" | "cancelExpired",
+    args: unknown[]
+  ): Promise<`0x${string}`> {
+    if (chain === "base") {
+      const calldata = encodeFunctionData({ abi: ARCADE_ABI, functionName, args } as Parameters<typeof encodeFunctionData>[0]);
+      const data = (calldata + BASE_BUILDER_CODE.slice(2)) as `0x${string}`;
+      return sendTransactionAsync({ to: arcadeAddress, data });
+    }
+    return writeContractAsync({ address: arcadeAddress, abi: ARCADE_ABI, functionName, args } as Parameters<typeof writeContractAsync>[0]);
+  }
 
   async function ensureAllowance(stakeWei: bigint) {
     if (!address || !publicClient) throw new Error("wallet not connected");
@@ -74,32 +92,17 @@ function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
       if (!publicClient) throw new Error("no client");
       const stakeWei = parseUnits(stake, decimals);
       await ensureAllowance(stakeWei);
-      const hash = await writeContractAsync({
-        address: arcadeAddress,
-        abi: ARCADE_ABI,
-        functionName: "startSession",
-        args: [sessionId, stakeWei, maxRounds],
-      });
+      const hash = await sendArcade("startSession", [sessionId, stakeWei, maxRounds]);
       await publicClient.waitForTransactionReceipt({ hash });
     },
     async settle(sessionId, multiplierBp, signature) {
       if (!publicClient) throw new Error("no client");
-      const hash = await writeContractAsync({
-        address: arcadeAddress,
-        abi: ARCADE_ABI,
-        functionName: "settle",
-        args: [sessionId, BigInt(multiplierBp), signature],
-      });
+      const hash = await sendArcade("settle", [sessionId, BigInt(multiplierBp), signature]);
       await publicClient.waitForTransactionReceipt({ hash });
     },
     async cancelExpired(sessionId) {
       if (!publicClient) throw new Error("no client");
-      const hash = await writeContractAsync({
-        address: arcadeAddress,
-        abi: ARCADE_ABI,
-        functionName: "cancelExpired",
-        args: [sessionId],
-      });
+      const hash = await sendArcade("cancelExpired", [sessionId]);
       await publicClient.waitForTransactionReceipt({ hash });
     },
     async balance() {
