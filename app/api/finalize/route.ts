@@ -2,11 +2,15 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSession, finalMultiplierBp } from "../../../server/sessions";
 import { signSettlement } from "../../../server/signer";
 import { recordCompletedGame } from "../../../server/gameHistory";
+import { DEFAULT_RAKE_BPS, BPS } from "../../../server/difficulty";
+import { celoTokenMeta } from "../../../lib/contract";
+import { ensureBooted } from "../../../server/bootstrap";
 
 // POST /api/finalize  { sessionId: "0x.." }
 // Computes the final (clamped) multiplier and returns an EIP-712 signature the client submits to
 // settle(sessionId, multiplierBp, signature). Idempotent: returns the same signature if called again.
 export async function POST(req: NextRequest) {
+  await ensureBooted();
   let body: { sessionId?: string };
   try {
     body = await req.json();
@@ -39,22 +43,24 @@ export async function POST(req: NextRequest) {
   }
 
   const multiplierBp = finalMultiplierBp(session);
-  const signature = await signSettlement(session.chain, session.id, multiplierBp, session.token);
+  const signature = await signSettlement(session.id, multiplierBp, session.token);
   session.finalized = true;
 
   // Record immediately so profile stats are visible before the on-chain event is indexed.
   if (session.stake != null) {
     const stake = session.stake;
-    const effectiveStake = stake * 0.97; // mirrors the 3% rake in the contract
+    const effectiveStake = stake * (BPS - DEFAULT_RAKE_BPS) / BPS;
     recordCompletedGame({
       sessionId: session.id,
       player: session.player,
       chain: session.chain,
-      unit: session.chain === "stacks" ? "STX" : "USDm",
+      unit: celoTokenMeta(session.token).symbol,
       stake,
       multiplierBp,
       payout: Math.round((effectiveStake * multiplierBp) / 100) / 100,
       won: multiplierBp > 10_000,
+      difficulty: session.difficulty ?? Math.min(1, stake),
+      approxTs: Date.now(),
     });
   }
 

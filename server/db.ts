@@ -1,0 +1,113 @@
+// server/db.ts — PostgreSQL pool + schema bootstrap
+//
+// Set DATABASE_URL in the Railway environment (the Postgres plugin sets it automatically).
+// When DATABASE_URL is absent (local dev without a DB) all exports become graceful no-ops so the
+// server still starts and falls back to the existing in-memory behaviour.
+
+import { Pool, type QueryResult } from "pg";
+
+let pool: Pool | null = null;
+let ready = false;
+let initPromise: Promise<void> | null = null;
+
+// ---------------------------------------------------------------------------
+// Connection
+// ---------------------------------------------------------------------------
+
+function getPool(): Pool {
+  if (!pool) {
+    pool = new Pool({
+      connectionString: process.env.DATABASE_URL,
+      ssl: process.env.DATABASE_URL?.includes("localhost") ? false : { rejectUnauthorized: false },
+      max: 5,
+      idleTimeoutMillis: 30_000,
+      connectionTimeoutMillis: 5_000,
+    });
+    pool.on("error", (err) => {
+      console.warn("[db] pool error:", err.message);
+    });
+  }
+  return pool;
+}
+
+// ---------------------------------------------------------------------------
+// Schema bootstrap — idempotent DDL, safe to run on every startup
+// ---------------------------------------------------------------------------
+
+const MIGRATIONS = `
+CREATE TABLE IF NOT EXISTS player_profiles (
+  address     TEXT        PRIMARY KEY,
+  username    TEXT,
+  avatar      TEXT,
+  updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS demo_used (
+  address     TEXT        NOT NULL,
+  chain       TEXT        NOT NULL,
+  used_at     TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (address, chain)
+);
+
+CREATE TABLE IF NOT EXISTS game_history (
+  session_id    TEXT        PRIMARY KEY,
+  player        TEXT        NOT NULL,
+  chain         TEXT        NOT NULL,
+  unit          TEXT        NOT NULL,
+  stake         NUMERIC     NOT NULL,
+  multiplier_bp INTEGER     NOT NULL,
+  payout        NUMERIC     NOT NULL,
+  won           BOOLEAN     NOT NULL,
+  difficulty    NUMERIC,
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS game_history_player ON game_history (player);
+`;
+
+async function runMigrations(): Promise<void> {
+  const client = await getPool().connect();
+  try {
+    await client.query(MIGRATIONS);
+    console.log("[db] schema ready");
+  } finally {
+    client.release();
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Public init — called once at server startup; harmless if called multiple times
+// ---------------------------------------------------------------------------
+
+export async function initDb(): Promise<void> {
+  if (!process.env.DATABASE_URL) {
+    console.warn("[db] DATABASE_URL not set — running without persistent storage (dev mode)");
+    return;
+  }
+  if (ready) return;
+  if (initPromise) return initPromise;
+  initPromise = runMigrations()
+    .then(() => { ready = true; })
+    .catch((err) => {
+      console.warn("[db] init failed, falling back to in-memory:", err.message);
+      initPromise = null;
+    });
+  return initPromise;
+}
+
+// ---------------------------------------------------------------------------
+// Safe query helper — returns null when DB is unavailable (graceful no-op)
+// ---------------------------------------------------------------------------
+
+export async function query<T extends Record<string, unknown>>(
+  sql: string,
+  values?: unknown[]
+): Promise<QueryResult<T> | null> {
+  if (!ready) return null;
+  try {
+    return await getPool().query<T>(sql, values);
+  } catch (err) {
+    console.warn("[db] query error:", (err as Error).message, "sql:", sql.slice(0, 80));
+    return null;
+  }
+}

@@ -1,35 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getGame } from "../../../server/games/registry";
-import {
-  createSession,
-  hasUsedDemo,
-  markDemoUsed,
-  type ChainId,
-} from "../../../server/sessions";
+import { createSession, hasUsedDemo, markDemoUsed } from "../../../server/sessions";
 import { isAddress } from "viem";
-import { validateStacksAddress } from "@stacks/transactions";
 import { MAX_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
-import { CELO_TOKENS, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
+import { ensureBooted } from "../../../server/bootstrap";
+import { celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
-// POST /api/session  { game, player, chain?, token?, stake?, demo? }
+// POST /api/session  { game, player, token?, stake?, demo? }
 // Creates a pending session and returns its on-chain sessionId + the maxRounds to stake against.
-// The client then calls start-session(sessionId, stake, maxRounds) on-chain before fetching rounds.
-// The round count scales with the bet (higher stake => more rounds), capped by the game's bank so a
-// session never repeats a question. The contract enforces the $5 cap; we reject here too to save gas.
 // `token` selects the Celo stake token (cUSD/USDC/USDT) — i.e. which QuizArcade instance the session
-// settles against; it's ignored for Stacks (STX has no token sub-dimension).
+// settles against.
 //
 // Demo sessions (demo:true) are a free, one-per-wallet trial: no stake, no on-chain tx, no payout.
-// They run at a fixed (easy) difficulty and never settle. Enforced once-per-wallet here.
-function isValidPlayer(player: string, chain: ChainId): boolean {
-  return chain === "stacks" ? validateStacksAddress(player) : isAddress(player);
-}
-
-function stakeSymbol(chain: ChainId, token: CeloToken | undefined): string {
-  if (chain === "base") return "USDC";
-  if (chain === "stacks") return "STX";
-  return CELO_TOKENS[token!].symbol;
-}
 
 function parseCeloToken(value: unknown): CeloToken {
   return value === "usdc" || value === "usdt" || value === "cusd"
@@ -41,10 +23,10 @@ function parseCeloToken(value: unknown): CeloToken {
 const DEMO_STAKE_EQUIV = 1;
 
 export async function POST(req: NextRequest) {
+  await ensureBooted();
   let body: {
     game?: string;
     player?: string;
-    chain?: string;
     token?: string;
     stake?: number;
     demo?: boolean;
@@ -56,12 +38,9 @@ export async function POST(req: NextRequest) {
   }
 
   const { game: gameId, player } = body;
-  const chain: ChainId =
-    body.chain === "stacks" ? "stacks" : body.chain === "base" ? "base" : "celo";
-  // Token is a Celo-only sub-dimension (selects which QuizArcade instance). Base is USDC-only
-  // (no token routing); Stacks is STX-only.
-  const token: CeloToken | undefined = chain === "celo" ? parseCeloToken(body.token) : undefined;
-  if (!gameId || !player || !isValidPlayer(player, chain)) {
+  const chain = "celo" as const;
+  const token: CeloToken = parseCeloToken(body.token);
+  if (!gameId || !player || !isAddress(player)) {
     return NextResponse.json({ error: "game and valid player required" }, { status: 400 });
   }
 
@@ -102,7 +81,7 @@ export async function POST(req: NextRequest) {
   }
   if (stake > MAX_STAKE[chain]) {
     return NextResponse.json(
-      { error: `stake exceeds the ${MAX_STAKE[chain]} ${stakeSymbol(chain, token)} max per game` },
+      { error: `stake exceeds the ${MAX_STAKE[chain]} ${celoTokenMeta(token).symbol} max per game` },
       { status: 400 }
     );
   }

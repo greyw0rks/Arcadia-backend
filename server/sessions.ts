@@ -3,8 +3,8 @@
 // See LICENSE in the repository root for full terms.
 
 // In-memory session store. Authoritative game state lives here, NOT in the client. Holds the answer
-// keys, the running multiplier, and per-round deadlines. NOTE: resets on server restart — fine for the
-// MVP/demo; swap for Redis/SQLite for production (see README).
+// keys, the running multiplier, and per-round deadlines. Active sessions stay in-memory for speed;
+// the demo-used set is persisted to PostgreSQL (via server/db.ts) so it survives restarts.
 
 import { randomBytes } from "crypto";
 import { GameModule } from "./games/types";
@@ -12,9 +12,8 @@ import { RoundState } from "./games/types";
 import { initialMultiplierBp, applyResult, clampFinalBp } from "./engine";
 import { ANSWER_GRACE_MS } from "./config";
 import { scaleTimer } from "./difficulty";
-import { DEFAULT_CELO_TOKEN, type CeloToken } from "../lib/contract";
-
-export type ChainId = "celo" | "base" | "stacks";
+import { DEFAULT_CELO_TOKEN, type CeloToken, type ChainId } from "../lib/contract";
+import { query } from "./db";
 
 export interface Session {
   id: `0x${string}`; // bytes32 / (buff 32), also the on-chain sessionId
@@ -42,14 +41,27 @@ export interface Session {
 
 const SESSIONS = new Map<string, Session>();
 
-// Wallets that have already consumed their one free demo. NOTE: in-memory, so it resets on server
-// restart — consistent with the session store above. Swap for the same persistent store in production.
+// Wallets that have already consumed their one free demo — persisted to DB on write.
 const USED_DEMO = new Set<string>();
+let demoHydrated = false;
 
-/** Normalize a player id for demo-usage lookups (EVM is case-insensitive; Stacks is not). */
 function demoKey(player: string, chain: ChainId): string {
-  const p = chain !== "stacks" ? player.toLowerCase() : player;
-  return `${chain}:${p}`;
+  return `${chain}:${player.toLowerCase()}`;
+}
+
+/** Load the demo-used set from DB into memory. Call once after initDb() resolves. */
+export async function hydrateDemoUsed(): Promise<void> {
+  if (demoHydrated) return;
+  const result = await query<{ address: string; chain: string }>(
+    "SELECT address, chain FROM demo_used"
+  );
+  if (result) {
+    for (const row of result.rows) {
+      USED_DEMO.add(`${row.chain}:${row.address.toLowerCase()}`);
+    }
+    console.log(`[sessions] loaded ${result.rowCount} demo-used records from DB`);
+  }
+  demoHydrated = true;
 }
 
 /** Has this wallet already used its one-time demo play? */
@@ -59,7 +71,13 @@ export function hasUsedDemo(player: string, chain: ChainId): boolean {
 
 /** Record that this wallet has consumed its one-time demo play. */
 export function markDemoUsed(player: string, chain: ChainId): void {
-  USED_DEMO.add(demoKey(player, chain));
+  const k = demoKey(player, chain);
+  USED_DEMO.add(k);
+  // Fire-and-forget DB write
+  void query(
+    `INSERT INTO demo_used (address, chain) VALUES ($1, $2) ON CONFLICT DO NOTHING`,
+    [player.toLowerCase(), chain]
+  );
 }
 
 /** 32-byte hex id usable directly as the contract's bytes32 sessionId. */
@@ -80,11 +98,8 @@ export function createSession(
     id,
     gameId: game.id,
     chain,
-    // The stake token is a Celo-only routing dimension; default cUSD for back-compat. Left undefined
-    // for Stacks (STX has no token sub-dimension).
-    token: chain === "celo" ? token ?? DEFAULT_CELO_TOKEN : undefined,
-    // EVM addresses are case-insensitive; Stacks principals are case-sensitive (c32check) — keep as-is.
-    player: chain !== "stacks" ? player.toLowerCase() : player,
+    token: token ?? DEFAULT_CELO_TOKEN,
+    player: player.toLowerCase(),
     isDemo: opts?.isDemo ?? false,
     stake: opts?.stake,
     // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.
@@ -141,11 +156,9 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
   const round = s.current;
   if (!round) return null;
 
-  // DRAIN MODE — always correct so the multiplier hits max every session.
-  // Revert this line after the reserve is drained.
-  const result: "correct" | "wrong" = "correct";
-  void answerIndex; // suppress unused warning during drain
-  const onTime = true;
+  const onTime = Date.now() <= round.deadline;
+  const result: "correct" | "wrong" =
+    onTime && answerIndex === round.correctIndex ? "correct" : "wrong";
   const correctIndex = round.correctIndex;
 
   s.multiplierBp = applyResult(s.multiplierBp, result);
