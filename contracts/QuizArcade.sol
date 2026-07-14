@@ -5,17 +5,21 @@ pragma solidity ^0.8.24;
 // QuizArcade v2
 //
 // Changes from v1:
-//  • Multi-token — one contract accepts any whitelisted ERC-20 (USDM, USDC, USDT
-//    on Celo; USDC on Base). No more deploying a separate instance per token.
+//  • Multi-token — one contract accepts any whitelisted ERC-20 (USDm, USDC, USDT).
 //  • EIP-712 Settlement now includes `token` — prevents cross-token signature replay.
-//  • emergencyWithdraw — owner can sweep all funds per token when paused, clearing
-//    accounting so the contract can be deprecated cleanly (the v1 problem).
+//  • emergencyWithdraw — owner can sweep free + pool funds when paused; preserves
+//    lockedForSessions so players can still cancel after a drain (prior v1 bug).
 //  • batchCancelExpired — cancel many stale sessions in one tx.
 //  • fundPool — explicit pool-funding with event; raw transfers still work via balance math.
-//  • Richer events — token address included in SessionStarted.
+//  • Richer events — token address included in SessionStarted / SessionSettled / SessionCancelled.
 //  • Cleaner errors — parameterised where useful (Insolvent carries available/required).
+//  • Per-token maxStake — fixes the decimal mismatch when mixing 6-dec (USDC/USDT) and
+//    18-dec (USDm) tokens in a single deployment.
+//  • Reserve sized from session maxRounds (not the global maxRoundsCap cap) for capital efficiency.
+//  • CELO ERC-20 guard in enableToken (Celo token duality: CELO is both native and ERC-20 at
+//    0x471EcE3750Da237f93B8E339c536989b8978a438; enabling it would make balanceOf include
+//    native CELO, inflating the solvency check).
 //  • Removed feeRecipient — rake goes straight to freeTreasury[token] (owner withdraws).
-//  • Removed fundTreasury (old) — replaced by fundPool.
 //  • Version bumped to "2" in EIP-712 domain so old signatures never validate here.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -36,6 +40,11 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
     uint256 public constant STEP_BPS     = 1_000;   // +/-0.1x per round
     uint16  public constant MAX_RAKE_BPS = 2_000;   // hard cap: 20%
 
+    // CELO's ERC-20 address on mainnet. Because CELO is simultaneously a native token and an
+    // ERC-20, enabling it would make `balanceOf(address(this))` include native CELO from gas
+    // refunds or accidental sends, inflating the solvency check with phantom funds.
+    address private constant CELO_ERC20 = 0x471EcE3750Da237f93B8E339c536989b8978a438;
+
     bytes32 private constant SETTLEMENT_TYPEHASH = keccak256(
         "Settlement(bytes32 sessionId,uint256 multiplierBp,address token)"
     );
@@ -44,14 +53,18 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
 
     address public trustedSigner;
 
-    uint256 public maxStake;      // maximum stake in token's smallest unit
-    uint16  public rakeBps;       // rake in basis points (e.g. 300 = 3 %)
+    uint16  public rakeBps;       // rake in basis points (e.g. 300 = 3%)
     uint8   public maxRoundsCap;  // upper bound on maxRounds per session
     uint64  public sessionTtl;    // seconds until a session can be cancelled
 
     // ── Token whitelist ───────────────────────────────────────────────────────
 
     mapping(address => bool) public tokenEnabled;
+
+    // Per-token stake cap in the token's own units. Must be set when enabling a token.
+    // Separate caps are required because tokens have different decimals (USDm = 18, USDC/USDT = 6):
+    // a $1 cap for USDm is 1e18; for USDC it is 1e6. A single shared value cannot represent both.
+    mapping(address => uint256) public maxStake;
 
     // ── Per-token treasury accounting ─────────────────────────────────────────
 
@@ -82,6 +95,7 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
     error StakeTooHigh(uint256 stake, uint256 max);
     error InvalidMaxRounds(uint8 provided, uint8 cap);
     error TokenNotEnabled(address token);
+    error CELONotAllowed();
     error SessionExists();
     error UnknownSession();
     error AlreadySettled();
@@ -121,13 +135,13 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
     event EmergencyWithdraw(address indexed token, uint256 amount, address to);
     event SignerUpdated(address oldSigner, address newSigner);
     event TokenEnabled(address token, bool enabled);
+    event MaxStakeSet(address token, uint256 maxStake);
 
     // ── Constructor ───────────────────────────────────────────────────────────
 
     constructor(
         address owner_,
         address signer_,
-        uint256 maxStake_,
         uint16  rakeBps_,
         uint8   maxRoundsCap_,
         uint64  sessionTtl_
@@ -135,7 +149,6 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
         if (signer_ == address(0)) revert ZeroAddress();
         if (rakeBps_ > MAX_RAKE_BPS) revert RakeTooHigh(rakeBps_, MAX_RAKE_BPS);
         trustedSigner  = signer_;
-        maxStake       = maxStake_;
         rakeBps        = rakeBps_;
         maxRoundsCap   = maxRoundsCap_;
         sessionTtl     = sessionTtl_;
@@ -156,24 +169,24 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
         uint256 stake,
         uint8   maxRounds
     ) external nonReentrant whenNotPaused {
-        if (!tokenEnabled[token])             revert TokenNotEnabled(token);
-        if (stake == 0)                       revert ZeroStake();
-        if (stake > maxStake)                 revert StakeTooHigh(stake, maxStake);
+        if (!tokenEnabled[token])                     revert TokenNotEnabled(token);
+        if (stake == 0)                               revert ZeroStake();
+        if (stake > maxStake[token])                  revert StakeTooHigh(stake, maxStake[token]);
         if (maxRounds == 0 || maxRounds > maxRoundsCap)
-                                              revert InvalidMaxRounds(maxRounds, maxRoundsCap);
+                                                      revert InvalidMaxRounds(maxRounds, maxRoundsCap);
         if (_sessions[sessionId].player != address(0)) revert SessionExists();
 
         // Pull stake from player.
         IERC20(token).safeTransferFrom(msg.sender, address(this), stake);
 
         // Rake: goes to freeTreasury immediately.
-        uint256 rake          = stake * rakeBps / BPS;
+        uint256 rake           = stake * rakeBps / BPS;
         uint256 effectiveStake = stake - rake;
-        freeTreasury[token]  += rake;
+        freeTreasury[token]   += rake;
 
-        // Reserve: the maximum possible payout (effectiveStake × maxMult).
-        // This must be available in the payout pool (balance − free − locked).
-        uint256 maxMult = BPS + STEP_BPS * uint256(maxRoundsCap);
+        // Reserve: the maximum possible payout for THIS session (effectiveStake × maxMult for maxRounds).
+        // Sized against the session's committed maxRounds — not the global cap — for capital efficiency.
+        uint256 maxMult = BPS + STEP_BPS * uint256(maxRounds);
         uint256 reserve = effectiveStake * maxMult / BPS;
 
         // Solvency check.
@@ -190,13 +203,13 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
 
         uint64 expiry = uint64(block.timestamp + sessionTtl);
         _sessions[sessionId] = Session({
-            player:        msg.sender,
-            token:         token,
+            player:         msg.sender,
+            token:          token,
             effectiveStake: effectiveStake,
-            reserve:       reserve,
-            expiry:        expiry,
-            maxRounds:     maxRounds,
-            settled:       false
+            reserve:        reserve,
+            expiry:         expiry,
+            maxRounds:      maxRounds,
+            settled:        false
         });
 
         emit SessionStarted(sessionId, msg.sender, token, stake, effectiveStake, reserve, maxRounds, expiry);
@@ -266,7 +279,6 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
 
     /**
      * @notice Deposit tokens into the payout pool (for house funds).
-     *         The tokens increase the contract's balance and thus the available pool.
      *         Anyone can call this; direct transfers work too (no event then).
      */
     function fundPool(address token, uint256 amount) external {
@@ -279,6 +291,7 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
 
     /// @notice Withdraw accumulated rake for `token` to `to`.
     function withdrawFree(address token, uint256 amount, address to) external onlyOwner {
+        if (to == address(0)) revert ZeroAddress();
         if (amount > freeTreasury[token]) revert AmountExceedsFree(amount, freeTreasury[token]);
         freeTreasury[token] -= amount;
         IERC20(token).safeTransfer(to, amount);
@@ -286,25 +299,47 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
     }
 
     /**
-     * @notice Emergency drain — sweeps the entire balance of `token` to `to`.
-     *         Only callable when paused. Resets accounting so the contract can be
-     *         deprecated without locked funds (the v1 bug this fixes).
+     * @notice Emergency drain — sweeps freeTreasury plus unallocated pool funds to `to`.
+     *         Only callable when paused. Does NOT touch lockedForSessions so that players
+     *         can still call cancelExpired() to reclaim their effectiveStake. If the contract
+     *         is subsequently re-funded, outstanding cancellations will succeed.
+     *
+     *         To deprecate fully (no re-fund planned), disable the token with enableToken(token, false)
+     *         after draining so no new sessions can start, and settle/cancel all open sessions
+     *         individually before calling emergencyWithdraw.
      */
     function emergencyWithdraw(address token, address to) external onlyOwner whenPaused {
         if (to == address(0)) revert ZeroAddress();
-        uint256 bal = IERC20(token).balanceOf(address(this));
-        freeTreasury[token]      = 0;
-        lockedForSessions[token] = 0;
-        if (bal > 0) IERC20(token).safeTransfer(to, bal);
-        emit EmergencyWithdraw(token, bal, to);
+        uint256 bal     = IERC20(token).balanceOf(address(this));
+        // Sweep everything except what is locked for open sessions.
+        uint256 locked  = lockedForSessions[token];
+        uint256 sweepable = bal > locked ? bal - locked : 0;
+        freeTreasury[token] = 0;
+        if (sweepable > 0) IERC20(token).safeTransfer(to, sweepable);
+        emit EmergencyWithdraw(token, sweepable, to);
     }
 
     // ── Owner: config ─────────────────────────────────────────────────────────
 
+    /**
+     * @notice Whitelist or de-list a token. CELO's ERC-20 address is permanently rejected
+     *         to avoid the token-duality solvency-check inflation risk.
+     */
     function enableToken(address token, bool enabled) external onlyOwner {
         if (token == address(0)) revert ZeroAddress();
+        if (token == CELO_ERC20) revert CELONotAllowed();
         tokenEnabled[token] = enabled;
         emit TokenEnabled(token, enabled);
+    }
+
+    /**
+     * @notice Set the per-token stake cap in the token's smallest unit.
+     *         Must be called for each token before enabling it, because USDm (18 dec) and
+     *         USDC/USDT (6 dec) need different values to represent the same dollar amount.
+     */
+    function setMaxStake(address token, uint256 maxStake_) external onlyOwner {
+        maxStake[token] = maxStake_;
+        emit MaxStakeSet(token, maxStake_);
     }
 
     function setSigner(address signer_) external onlyOwner {
@@ -313,13 +348,12 @@ contract QuizArcade is Ownable, Pausable, ReentrancyGuard, EIP712 {
         trustedSigner = signer_;
     }
 
-    function setMaxStake(uint256 maxStake_)       external onlyOwner { maxStake      = maxStake_; }
-    function setRakeBps(uint16 rakeBps_)           external onlyOwner {
+    function setRakeBps(uint16 rakeBps_) external onlyOwner {
         if (rakeBps_ > MAX_RAKE_BPS) revert RakeTooHigh(rakeBps_, MAX_RAKE_BPS);
         rakeBps = rakeBps_;
     }
-    function setMaxRoundsCap(uint8 cap)            external onlyOwner { maxRoundsCap  = cap; }
-    function setSessionTtl(uint64 ttl)             external onlyOwner { sessionTtl    = ttl; }
+    function setMaxRoundsCap(uint8 cap)  external onlyOwner { maxRoundsCap = cap; }
+    function setSessionTtl(uint64 ttl)   external onlyOwner { sessionTtl   = ttl; }
 
     function pause()   external onlyOwner { _pause(); }
     function unpause() external onlyOwner { _unpause(); }

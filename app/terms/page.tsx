@@ -115,7 +115,7 @@ export default function TermsPage() {
               treasury and ensure payouts to winners.
             </li>
             <li>
-              Maximum bet is <strong>$1 per game</strong> (1 cUSD on Celo, 1 STX on Stacks),
+              Maximum bet is <strong>$1 per game</strong> (USDm, USDC, or USDT on Celo),
               enforced on-chain.
             </li>
             <li>
@@ -185,13 +185,14 @@ export default function TermsPage() {
             product. Copying, cloning, or redistribution without written permission is strictly
             prohibited.
           </p>
-          <button
-            className="btn"
-            onClick={() => router.push("/")}
-            style={{ marginTop: 16 }}
-          >
-            Back to Home
-          </button>
+          <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 16 }}>
+            <button className="btn ghost" onClick={() => router.push("/privacy")}>
+              Privacy Policy
+            </button>
+            <button className="btn" onClick={() => router.push("/")}>
+              Back to Home
+            </button>
+          </div>
         </div>
       </div>
     </div>

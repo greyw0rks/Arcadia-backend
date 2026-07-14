@@ -3,18 +3,11 @@
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useAccount } from "wagmi";
-import { useChain } from "../lib/chainContext";
-import { useStacksWallet } from "../lib/stacksWallet";
-
 export function MobileBottomNav() {
   const router = useRouter();
   const pathname = usePathname();
   const [isMobile, setIsMobile] = useState(false);
-  const { chain } = useChain();
-  const evm = useAccount();
-  const stx = useStacksWallet();
-
-  const address = chain === "stacks" ? stx.address : evm.address;
+  const { address } = useAccount();
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 768);
@@ -40,12 +33,26 @@ export function MobileBottomNav() {
         <span>Games</span>
       </button>
       <button
+        className={isActive('/tournament') ? 'active' : ''}
+        onClick={() => router.push('/tournament')}
+      >
+        🏆
+        <span>Tournament</span>
+      </button>
+      <button
         className={pathname.startsWith('/profile') ? 'active' : ''}
         onClick={() => address ? router.push(`/profile/${address}`) : router.push('/games')}
       >
         👤
         <span>You</span>
       </button>
+      <a
+        href="mailto:play@arcadia.uno"
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, textDecoration: 'none', color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', padding: '8px 0', fontSize: 'inherit' }}
+      >
+        💬
+        <span style={{ fontSize: 10, fontWeight: 700 }}>Support</span>
+      </a>
     </div>
   );
 }

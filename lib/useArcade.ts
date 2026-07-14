@@ -2,36 +2,23 @@
 
 import { useAccount, usePublicClient, useWriteContract, useSendTransaction } from "wagmi";
 import { parseUnits, encodeFunctionData } from "viem";
-
-// ERC-8021 Builder Code suffix — appended to every Base arcade transaction so Base
-// can attribute volume to Arcadia. Only applied when chain === "base". Celo/Stacks
-// transactions are sent normally.
-const BASE_BUILDER_CODE = "0x62635f77706d75386e6c340b0080218021802180218021802180218021";
-import {
-  bufferCV,
-  uintCV,
-  cvToJSON,
-  callReadOnlyFunction,
-  ClarityType,
-  PostConditionMode,
-  FungibleConditionCode,
-  makeStandardSTXPostCondition,
-  AnchorMode,
-} from "@stacks/transactions";
-import {
-  STACKS_ARCADE_CONTRACT,
-  stacksNetwork,
-  CHAINS,
-  resolveTokenMeta,
-  DEFAULT_CELO_TOKEN,
-  type ChainId,
-  type CeloToken,
-} from "./contract";
+import { ARCADE_ADDRESS, celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "./contract";
 import { ARCADE_ABI, ERC20_ABI } from "./abi";
-import { useStacksWallet } from "./stacksWallet";
 
-// A uniform interface the play flow uses regardless of chain. Each method resolves only once the
-// chain reflects the action (EVM: tx receipt; Stacks: polled read-only state), so the UI can advance.
+// ERC-8021 attribution tag appended to every arcade transaction calldata so Celo's
+// on-chain attribution indexer can credit volume to Arcadia. The EVM ignores trailing
+// calldata; contracts never see it.
+// Wire format: <code_utf8><len_byte><schema=0x00><marker:16 bytes>
+// code = "arcadia" (7 bytes, hex 61726361646961), schema 0.
+const ARCADIA_ATTRIBUTION_SUFFIX = "61726361646961070080218021802180218021802180218021";
+
+// Detect MiniPay wallet — it injects window.ethereum.isMiniPay. MiniPay manages feeCurrency
+// itself, so we must NOT pass a custom feeCurrency or the tx will be rejected.
+export function isMiniPay(): boolean {
+  if (typeof window === "undefined") return false;
+  return (window as { ethereum?: { isMiniPay?: boolean } }).ethereum?.isMiniPay === true;
+}
+
 export interface ArcadeApi {
   startSession: (sessionId: `0x${string}`, stake: string, maxRounds: number) => Promise<void>;
   settle: (
@@ -44,29 +31,40 @@ export interface ArcadeApi {
 }
 
 // ---------------------------------------------------------------------------
-// EVM (Celo + Base) — wagmi/viem, with the ERC-20 approve step.
+// Celo (EVM) — wagmi/viem, with ERC-20 approve, CIP-64 fee abstraction, and ERC-8021 tagging.
 // ---------------------------------------------------------------------------
 
-function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
+function useCeloArcade(token: CeloToken): ArcadeApi {
   const { address } = useAccount();
   const publicClient = usePublicClient();
   const { writeContractAsync } = useWriteContract();
   const { sendTransactionAsync } = useSendTransaction();
 
-  const { arcadeAddress, tokenAddress, decimals } = resolveTokenMeta(chain, token);
+  const { tokenAddress, decimals, feeCurrencyAddress } = celoTokenMeta(token);
 
-  // On Base, append the ERC-8021 Builder Code suffix to attribute volume to Arcadia.
-  // Approval txs are excluded — the suffix only goes on arcade contract calls.
+  // Build the CIP-64 feeCurrency extra field. Skip on MiniPay (it manages feeCurrency itself,
+  // using USDm — its only supported fee token regardless of what the user is staking with).
+  // Skip if feeCurrencyAddress is null (testnet — adapters may not be deployed).
+  const feeCurrency = feeCurrencyAddress && !isMiniPay()
+    ? feeCurrencyAddress
+    : undefined;
+
+  // Encode calldata, append ERC-8021 attribution tag, and send with CIP-64 feeCurrency.
   async function sendArcade(
     functionName: "startSession" | "settle" | "cancelExpired",
     args: unknown[]
   ): Promise<`0x${string}`> {
-    if (chain === "base") {
-      const calldata = encodeFunctionData({ abi: ARCADE_ABI, functionName, args } as Parameters<typeof encodeFunctionData>[0]);
-      const data = (calldata + BASE_BUILDER_CODE.slice(2)) as `0x${string}`;
-      return sendTransactionAsync({ to: arcadeAddress, data });
-    }
-    return writeContractAsync({ address: arcadeAddress, abi: ARCADE_ABI, functionName, args } as Parameters<typeof writeContractAsync>[0]);
+    const calldata = encodeFunctionData({ abi: ARCADE_ABI, functionName, args } as Parameters<typeof encodeFunctionData>[0]);
+    const data = (calldata + ARCADIA_ATTRIBUTION_SUFFIX) as `0x${string}`;
+    // MiniPay only processes legacy (type 0) transactions — it ignores EIP-1559 fee fields.
+    // Pass type: 0 explicitly so wagmi doesn't upgrade to type 2 inside MiniPay.
+    const miniPay = isMiniPay();
+    return sendTransactionAsync({
+      to: ARCADE_ADDRESS,
+      data,
+      ...(feeCurrency ? { feeCurrency } : {}),
+      ...(miniPay ? { type: "legacy" } : {}),
+    });
   }
 
   async function ensureAllowance(stakeWei: bigint) {
@@ -75,15 +73,17 @@ function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
       address: tokenAddress,
       abi: ERC20_ABI,
       functionName: "allowance",
-      args: [address, arcadeAddress],
+      args: [address, ARCADE_ADDRESS],
     })) as bigint;
     if (current >= stakeWei) return;
+    // Approve with feeCurrency so users don't need CELO for the allowance step either.
     const hash = await writeContractAsync({
       address: tokenAddress,
       abi: ERC20_ABI,
       functionName: "approve",
-      args: [arcadeAddress, stakeWei],
-    });
+      args: [ARCADE_ADDRESS, stakeWei],
+      ...(feeCurrency ? { feeCurrency } : {}),
+    } as Parameters<typeof writeContractAsync>[0]);
     await publicClient.waitForTransactionReceipt({ hash });
   }
 
@@ -92,7 +92,8 @@ function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
       if (!publicClient) throw new Error("no client");
       const stakeWei = parseUnits(stake, decimals);
       await ensureAllowance(stakeWei);
-      const hash = await sendArcade("startSession", [sessionId, stakeWei, maxRounds]);
+      // v2: pass token address as second arg (prevents cross-token routing and is verified on-chain).
+      const hash = await sendArcade("startSession", [sessionId, tokenAddress, stakeWei, maxRounds]);
       await publicClient.waitForTransactionReceipt({ hash });
     },
     async settle(sessionId, multiplierBp, signature) {
@@ -117,147 +118,6 @@ function useEvmArcade(chain: ChainId, token: CeloToken): ArcadeApi {
   };
 }
 
-// ---------------------------------------------------------------------------
-// Stacks (Clarity) — Stacks Connect contract calls + read-only polling.
-// ---------------------------------------------------------------------------
-
-function hexToBytes(hex: string): Uint8Array {
-  const clean = hex.startsWith("0x") ? hex.slice(2) : hex;
-  const out = new Uint8Array(clean.length / 2);
-  for (let i = 0; i < out.length; i++) out[i] = parseInt(clean.slice(i * 2, i * 2 + 2), 16);
-  return out;
-}
-
-const [STX_CONTRACT_ADDR, STX_CONTRACT_NAME] = STACKS_ARCADE_CONTRACT.split(".");
-
-async function readSession(sessionId: `0x${string}`): Promise<any | null> {
-  const res = await callReadOnlyFunction({
-    contractAddress: STX_CONTRACT_ADDR,
-    contractName: STX_CONTRACT_NAME,
-    functionName: "get-session",
-    functionArgs: [bufferCV(hexToBytes(sessionId))],
-    network: await stacksNetwork(),
-    senderAddress: STX_CONTRACT_ADDR,
-  });
-  if (res.type === ClarityType.OptionalNone) return null;
-  return cvToJSON(res).value?.value ?? null;
-}
-
-// Poll the read-only state until `predicate` holds (the chain confirmed our call) or we time out.
-async function pollUntil(
-  predicate: (session: any | null) => boolean,
-  sessionId: `0x${string}`,
-  { tries = 40, intervalMs = 3000 } = {}
-): Promise<void> {
-  for (let i = 0; i < tries; i++) {
-    try {
-      const s = await readSession(sessionId);
-      if (predicate(s)) return;
-    } catch {
-      /* transient API error — keep polling */
-    }
-    await new Promise((r) => setTimeout(r, intervalMs));
-  }
-  throw new Error("Timed out waiting for the Stacks transaction to confirm.");
-}
-
-// Wrap Stacks Connect's callback API in a promise that resolves on broadcast.
-async function contractCall(opts: Record<string, unknown>): Promise<void> {
-  const { openContractCall } = await import("@stacks/connect");
-  return new Promise<void>((resolve, reject) => {
-    try {
-      const maybe = openContractCall({
-        ...(opts as any),
-        onFinish: () => resolve(),
-        onCancel: () => reject(new Error("Transaction was cancelled in the wallet.")),
-      }) as unknown;
-      // Some @stacks/connect versions return a promise that rejects if the popup can't open.
-      if (maybe && typeof (maybe as Promise<unknown>).catch === "function") {
-        (maybe as Promise<unknown>).catch(reject);
-      }
-    } catch (e) {
-      reject(e);
-    }
-  });
-}
-
-function useStacksArcade(): ArcadeApi {
-  const { address } = useStacksWallet();
-
-  return {
-    async startSession(sessionId, stake, maxRounds) {
-      if (!address) throw new Error("Stacks wallet not connected");
-      const network = await stacksNetwork();
-      const stakeMicro = parseUnits(stake, CHAINS.stacks.decimals); // bigint micro-STX
-      await contractCall({
-        contractAddress: STX_CONTRACT_ADDR,
-        contractName: STX_CONTRACT_NAME,
-        functionName: "start-session",
-        functionArgs: [bufferCV(hexToBytes(sessionId)), uintCV(stakeMicro), uintCV(maxRounds)],
-        network,
-        anchorMode: AnchorMode.Any,
-        postConditionMode: PostConditionMode.Deny,
-        postConditions: [
-          // The player sends at most `stake` micro-STX (effective-stake to the contract + rake out).
-          makeStandardSTXPostCondition(address, FungibleConditionCode.LessEqual, stakeMicro),
-        ],
-      });
-      // Wait until the session exists on-chain for this player (the funding gate the backend enforces).
-      await pollUntil(
-        (s) => !!s && s.player?.value === address && s.settled?.value === false,
-        sessionId
-      );
-    },
-    async settle(sessionId, multiplierBp, signature) {
-      const network = await stacksNetwork();
-      await contractCall({
-        contractAddress: STX_CONTRACT_ADDR,
-        contractName: STX_CONTRACT_NAME,
-        functionName: "settle",
-        functionArgs: [
-          bufferCV(hexToBytes(sessionId)),
-          uintCV(multiplierBp),
-          bufferCV(hexToBytes(signature)),
-        ],
-        network,
-        anchorMode: AnchorMode.Any,
-        postConditionMode: PostConditionMode.Allow, // payout comes from the contract treasury
-      });
-      await pollUntil((s) => !!s && s.settled?.value === true, sessionId);
-    },
-    async cancelExpired(sessionId) {
-      const network = await stacksNetwork();
-      await contractCall({
-        contractAddress: STX_CONTRACT_ADDR,
-        contractName: STX_CONTRACT_NAME,
-        functionName: "cancel-expired",
-        functionArgs: [bufferCV(hexToBytes(sessionId))],
-        network,
-        anchorMode: AnchorMode.Any,
-        postConditionMode: PostConditionMode.Allow,
-      });
-      await pollUntil((s) => !!s && s.settled?.value === true, sessionId);
-    },
-    async balance() {
-      const network = await stacksNetwork();
-      if (!address) return 0n;
-      try {
-        const res = await fetch(`${network.coreApiUrl}/extended/v1/address/${address}/balances`);
-        const json = await res.json();
-        return BigInt(json?.stx?.balance ?? "0");
-      } catch {
-        return 0n;
-      }
-    },
-  };
-}
-
-// ---------------------------------------------------------------------------
-// Dispatch. Both hooks are always called (Rules of Hooks); we return the active one.
-// ---------------------------------------------------------------------------
-
-export function useArcade(chain: ChainId, token: CeloToken = DEFAULT_CELO_TOKEN): ArcadeApi {
-  const evm = useEvmArcade(chain, token);
-  const stacks = useStacksArcade();
-  return chain === "stacks" ? stacks : evm;
+export function useArcade(token: CeloToken = DEFAULT_CELO_TOKEN): ArcadeApi {
+  return useCeloArcade(token);
 }

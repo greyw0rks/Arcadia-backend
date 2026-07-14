@@ -1,43 +1,14 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount, useConnect, usePublicClient } from "wagmi";
+import { injected } from "wagmi/connectors";
 import { useChain } from "../lib/chainContext";
-import { useStacksWallet } from "../lib/stacksWallet";
-import { CHAINS, CELO_TOKENS, LOCKED_CHAIN, type ChainId, type CeloToken } from "../lib/contract";
+import { CELO_TOKENS, celoTokenMeta, type CeloToken } from "../lib/contract";
+import { ERC20_ABI } from "../lib/abi";
+import { isMiniPay } from "../lib/useArcade";
 
-// Chain switcher — only rendered when LOCKED_CHAIN is not set (multi-chain deployments).
-export function ChainSwitcher() {
-  const { chain, setChain } = useChain();
-  const ids = Object.keys(CHAINS) as ChainId[];
-  return (
-    <div style={{ display: "inline-flex", border: "3px solid #000", background: "#fff" }}>
-      {ids.map((id, i) => {
-        const active = chain === id;
-        return (
-          <button
-            key={id}
-            onClick={() => setChain(id)}
-            style={{
-              padding: "6px 12px",
-              border: "none",
-              borderRight: i < ids.length - 1 ? "3px solid #000" : "none",
-              background: active ? "#7c5cff" : "#fff",
-              color: active ? "#fff" : "#000",
-              fontWeight: 800,
-              cursor: "pointer",
-              fontFamily: "inherit",
-            }}
-            aria-pressed={active}
-          >
-            {CHAINS[id].label}
-          </button>
-        );
-      })}
-    </div>
-  );
-}
-
-// Token picker for Celo — USDM / USDC / USDT. Not shown on Base (USDC only) or Stacks.
 export function TokenSwitcher() {
   const { token, setToken } = useChain();
   const ids = Object.keys(CELO_TOKENS) as CeloToken[];
@@ -69,38 +40,46 @@ export function TokenSwitcher() {
   );
 }
 
-function StacksConnectButton() {
-  const { address, isConnected, connect, disconnect } = useStacksWallet();
-  const short = address ? `${address.slice(0, 5)}…${address.slice(-4)}` : "";
-  return (
-    <button
-      onClick={isConnected ? disconnect : connect}
-      style={{
-        padding: "8px 14px",
-        border: "3px solid #000",
-        background: isConnected ? "#fff" : "#7c5cff",
-        color: isConnected ? "#000" : "#fff",
-        fontWeight: 800,
-        cursor: "pointer",
-        fontFamily: "inherit",
-      }}
-    >
-      {isConnected ? short : "Connect Stacks Wallet"}
-    </button>
-  );
-}
-
 export function ConnectControl() {
-  const { chain } = useChain();
+  const { connect } = useConnect();
+  const { address } = useAccount();
+  const publicClient = usePublicClient();
+  const { setToken } = useChain();
+  const [inMiniPay, setInMiniPay] = useState(false);
+
+  // Auto-connect on MiniPay and hide the connect button.
+  useEffect(() => {
+    if (isMiniPay()) {
+      setInMiniPay(true);
+      connect({ connector: injected() });
+    }
+  }, [connect]);
+
+  // Once connected on MiniPay, detect the stablecoin with the highest balance and default to it.
+  useEffect(() => {
+    if (!inMiniPay || !address || !publicClient) return;
+    const tokens = Object.keys(CELO_TOKENS) as CeloToken[];
+    Promise.all(
+      tokens.map(async (t) => {
+        const { tokenAddress } = celoTokenMeta(t);
+        const bal = (await publicClient.readContract({
+          address: tokenAddress,
+          abi: ERC20_ABI,
+          functionName: "balanceOf",
+          args: [address],
+        })) as bigint;
+        return { token: t, balance: bal };
+      })
+    ).then((balances) => {
+      const best = balances.reduce((a, b) => (a.balance >= b.balance ? a : b));
+      if (best.balance > 0n) setToken(best.token);
+    });
+  }, [inMiniPay, address, publicClient, setToken]);
+
   return (
     <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-      {!LOCKED_CHAIN && <ChainSwitcher />}
-      {chain === "celo" && <TokenSwitcher />}
-      {chain === "stacks" ? (
-        <StacksConnectButton />
-      ) : (
-        <ConnectButton showBalance={false} chainStatus="icon" />
-      )}
+      <TokenSwitcher />
+      {!inMiniPay && <ConnectButton showBalance={false} chainStatus="icon" />}
     </div>
   );
 }

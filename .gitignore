@@ -8,3 +8,6 @@ out
 next-env.d.ts.bak
 .DS_Store
 .vercel
+.claude
+cache
+QuizArcade_flat.sol

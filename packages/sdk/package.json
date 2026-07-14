@@ -1,7 +1,7 @@
 {
   "name": "@greyw0rks/arcadia",
   "version": "1.2.1",
-  "description": "SDK for integrating with Arcadia — a multi-chain (Celo + Stacks) quiz arcade protocol with EIP-712 settlement",
+  "description": "SDK for integrating with Arcadia — a Celo quiz arcade protocol with EIP-712 settlement",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -16,11 +16,6 @@
       "types": "./dist/celo.d.ts",
       "import": "./dist/celo.js",
       "require": "./dist/celo.cjs"
-    },
-    "./stacks": {
-      "types": "./dist/stacks.d.ts",
-      "import": "./dist/stacks.js",
-      "require": "./dist/stacks.cjs"
     }
   },
   "files": [
@@ -33,7 +28,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsup src/index.ts src/celo.ts src/stacks.ts --format esm,cjs --dts",
+    "build": "npm run clean && tsup src/index.ts src/celo.ts --format esm,cjs --dts",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build",
     "sdk:build": "npm run build --workspace=packages/sdk",
@@ -43,7 +38,6 @@
   "keywords": [
     "arcadia",
     "celo",
-    "stacks",
     "web3",
     "quiz",
     "arcade",
@@ -70,21 +64,7 @@
   "dependencies": {
     "viem": "^2.21.0"
   },
-  "peerDependencies": {
-    "@stacks/network": ">=6.0.0",
-    "@stacks/transactions": ">=6.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@stacks/network": {
-      "optional": true
-    },
-    "@stacks/transactions": {
-      "optional": true
-    }
-  },
   "devDependencies": {
-    "@stacks/network": "^6.17.0",
-    "@stacks/transactions": "^6.17.0",
     "@types/node": "^20.0.0",
     "rimraf": "^6.0.0",
     "tsup": "^8.0.0",

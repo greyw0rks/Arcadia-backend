@@ -3,11 +3,13 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useAccount } from "wagmi";
-import { useArcade } from "../../../lib/useArcade";
-import { formatMultiplier, CHAINS, celoTokenMeta } from "../../../lib/contract";
+import { parseUnits } from "viem";
+import { useArcade, isMiniPay } from "../../../lib/useArcade";
+
+const IMAGE_GAMES = new Set(["geo", "landmark", "logo", "movie"]);
+import { formatMultiplier, celoTokenMeta } from "../../../lib/contract";
 import { MAX_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
 import { useChain } from "../../../lib/chainContext";
-import { useStacksWallet } from "../../../lib/stacksWallet";
 import { ConnectControl } from "../../../components/ConnectControl";
 import { soundManager } from "../../../lib/sounds";
 import { createConfetti } from "../../../lib/confetti";
@@ -27,18 +29,12 @@ type Phase = "setup" | "starting" | "playing" | "reveal" | "settling" | "done" |
 export default function PlayPage() {
   const { game } = useParams<{ game: string }>();
   const router = useRouter();
-  const { chain, token } = useChain();
-  const chainMeta = CHAINS[chain];
-  // On Celo the staked asset is the selected token (cUSD/USDC/USDT); on Stacks it's STX.
-  const stakeSymbol = chain === "celo" ? celoTokenMeta(token).symbol : chainMeta.stakeSymbol;
+  const { token } = useChain();
+  const stakeSymbol = celoTokenMeta(token).symbol;
 
-  // Active wallet identity comes from whichever chain is selected. Both hooks run unconditionally.
-  const evm = useAccount();
-  const stx = useStacksWallet();
-  const address = chain === "stacks" ? stx.address ?? undefined : evm.address;
-  const isConnected = chain === "stacks" ? stx.isConnected : evm.isConnected;
+  const { address, isConnected } = useAccount();
 
-  const arcade = useArcade(chain, token);
+  const arcade = useArcade(token);
 
   const [phase, setPhase] = useState<Phase>("setup");
   const [stake, setStake] = useState("1");
@@ -64,8 +60,6 @@ export default function PlayPage() {
   const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
   const [imgRetry, setImgRetry] = useState(0);
-
-  const IMAGE_GAMES = new Set(["geo", "landmark", "logo", "movie"]);
 
   const answeringRef = useRef(false);
 
@@ -114,17 +108,31 @@ export default function PlayPage() {
       setError("Enter a stake greater than 0.");
       return;
     }
-    if (amt > MAX_STAKE[chain]) {
-      setError(`Max bet is ${MAX_STAKE[chain]} ${stakeSymbol} per game.`);
+    if (amt > MAX_STAKE["celo"]) {
+      setError(`Max bet is ${MAX_STAKE["celo"]} ${stakeSymbol} per game.`);
       return;
     }
+
+    const miniPay = typeof window !== "undefined" &&
+      isMiniPay();
+
+    // Pre-flight balance check on MiniPay — redirect to top-up before any on-chain call.
+    if (miniPay) {
+      const { decimals } = celoTokenMeta(token);
+      const bal = await arcade.balance();
+      if (bal < parseUnits(stake, decimals)) {
+        window.location.href = "https://link.minipay.xyz/add_cash?tokens=USDm,USDC,USDT";
+        return;
+      }
+    }
+
     setPhase("starting");
     try {
       setStatus("Creating session…");
       const res = await fetch("/api/session", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ game, player: address, chain, token, stake: amt }),
+        body: JSON.stringify({ game, player: address, token, stake: amt }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "session failed");
@@ -132,18 +140,20 @@ export default function PlayPage() {
       setSessionId(sid);
       setMaxRounds(data.maxRounds);
 
-      setStatus(
-        chain === "stacks"
-          ? "Confirm your STX stake in your wallet, then wait for the block…"
-          : `Approve ${stakeSymbol} + confirm stake in your wallet…`
-      );
+      setStatus(`Approve ${stakeSymbol} + confirm stake in your wallet…`);
       await arcade.startSession(sid, stake, data.maxRounds);
 
       setStatus("Stake confirmed. Loading first question…");
       await loadRound(sid);
       setPhase("playing");
     } catch (e: any) {
-      fail(e?.shortMessage ?? e?.message ?? "Failed to start game.");
+      const msg = e?.shortMessage ?? e?.message ?? "";
+      if (miniPay && (msg.toLowerCase().includes("transfer") || msg.toLowerCase().includes("allowance"))) {
+        window.location.href = "https://link.minipay.xyz/add_cash?tokens=USDm,USDC,USDT";
+        setPhase("setup");
+        return;
+      }
+      fail(msg || "Failed to start game.");
     }
   }
 
@@ -263,8 +273,8 @@ export default function PlayPage() {
 
   // Live difficulty preview from the chosen stake (higher bet => harder session).
   const stakeNum = Number(stake) || 0;
-  const overMax = stakeNum > MAX_STAKE[chain];
-  const diff = difficultyFromStake(Math.min(stakeNum, MAX_STAKE[chain]), chain);
+  const overMax = stakeNum > MAX_STAKE["celo"];
+  const diff = difficultyFromStake(Math.min(stakeNum, MAX_STAKE["celo"]), "celo");
   const previewRounds = meta ? roundsFor(diff, meta.bankSize) : maxRounds;
   const diffLabel = diff < 0.34 ? "Easy" : diff < 0.67 ? "Medium" : "Hard";
 
@@ -291,7 +301,7 @@ export default function PlayPage() {
         <div className="panel center">
           <h2>Connect your wallet to play</h2>
           <p className="muted">
-            You&apos;ll stake {stakeSymbol} on {chainMeta.label} (max {MAX_STAKE[chain]}{" "}
+            You&apos;ll stake {stakeSymbol} on Celo (max {MAX_STAKE["celo"]}{" "}
             {stakeSymbol} per game).
           </p>
         </div>
@@ -306,14 +316,14 @@ export default function PlayPage() {
           </p>
           <p className="muted" style={{ marginTop: 8 }}>
             <b>The higher your bet, the harder the session</b> — fewer seconds per question, tougher
-            questions, and more rounds. Max bet is {MAX_STAKE[chain]} {stakeSymbol} per game.
+            questions, and more rounds. Max bet is {MAX_STAKE["celo"]} {stakeSymbol} per game.
           </p>
           <div className="row" style={{ marginTop: 20, justifyContent: "flex-start", gap: 16 }}>
             <input
               className="input"
               type="number"
               min="0"
-              max={MAX_STAKE[chain]}
+              max={MAX_STAKE["celo"]}
               step="0.1"
               value={stake}
               onChange={(e) => setStake(e.target.value)}
@@ -338,7 +348,7 @@ export default function PlayPage() {
             </div>
           )}
           {overMax && (
-            <div className="error">Max bet is {MAX_STAKE[chain]} {stakeSymbol} per game.</div>
+            <div className="error">Max bet is {MAX_STAKE["celo"]} {stakeSymbol} per game.</div>
           )}
           {error && <div className="error">{error}</div>}
         </div>

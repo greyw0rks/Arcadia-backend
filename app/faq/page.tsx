@@ -11,7 +11,7 @@ export default function FAQPage() {
   const faqs = [
     {
       question: "What is Arcadia?",
-      answer: "Arcadia is an on-chain arcade where you stake cUSD (Celo USD) on skill-based games. Your payout depends on your performance - get questions right to increase your multiplier, get them wrong and it decreases. It's like a quiz show where you bet on yourself!",
+      answer: "Arcadia is an on-chain arcade where you stake USDm, USDC, or USDT on Celo on skill-based games. Your payout depends on your performance — get questions right to increase your multiplier, get them wrong and it decreases. It's like a quiz show where you bet on yourself!",
     },
     {
       question: "How does the multiplier work?",
@@ -19,11 +19,11 @@ export default function FAQPage() {
     },
     {
       question: "Can I lose money?",
-      answer: "Yes! The multiplier can drop below 1.0x if you get too many questions wrong. For example, if you stake 1 cUSD and end at 0.8x, you'll only get back 0.78 cUSD (1 × 0.97 × 0.8). This is what makes it exciting - you're betting on your skills!",
+      answer: "Yes! The multiplier can drop below 1.0x if you get too many questions wrong. For example, if you stake 1 USDm and end at 0.8x, you'll only get back 0.776 USDm (1 × 0.97 × 0.8). This is what makes it exciting — you're betting on your skills!",
     },
     {
       question: "Is there a maximum bet?",
-      answer: "Yes. The maximum bet is $1 per game (1 cUSD on Celo, or 1 STX on Stacks). The cap is enforced on-chain, so no session can ever stake more.",
+      answer: "Yes. The maximum bet is $1 per game. The cap is enforced on-chain, so no session can ever stake more.",
     },
     {
       question: "Does the bet size change the difficulty?",
@@ -31,15 +31,15 @@ export default function FAQPage() {
     },
     {
       question: "What is the 3% rake?",
-      answer: "A 3% entry fee is taken from your stake to fund the house treasury. This ensures the house can always pay out winners. If you stake 1 cUSD, 0.97 cUSD goes into play. This is standard for gaming platforms.",
+      answer: "A 3% entry fee is taken from your stake to fund the house treasury. This ensures the house can always pay out winners. If you stake 1 USDm, 0.97 USDm goes into play. This is standard for gaming platforms.",
     },
     {
       question: "What happens if the game crashes?",
       answer: "Your funds are safe! If a game fails before settlement, you can request a refund after 1 hour. The smart contract has a cancelExpired() function that returns your stake (minus the 3% rake). This protects you from backend failures.",
     },
     {
-      question: "How do I get cUSD?",
-      answer: "cUSD is Celo's stablecoin (1 cUSD = $1 USD). You can get it by: 1) Buying CELO on an exchange and swapping for cUSD, 2) Using a fiat on-ramp like MoonPay, or 3) Bridging from another chain.",
+      question: "How do I get USDm, USDC or USDT on Celo?",
+      answer: "USDm (Mento's cUSD), USDC, and USDT are all available on Celo at ~$1 each. You can get them by: 1) Buying CELO on an exchange and swapping via Mento or Uniswap V3 on Celo, 2) Using a Deposit service like MoonPay or Transak, or 3) Bridging from another chain via the Celo native bridge.",
     },
     {
       question: "Which games are available?",
@@ -67,7 +67,7 @@ export default function FAQPage() {
     },
     {
       question: "What blockchain is this on?",
-      answer: "Arcadia runs on two mainnets: Celo (stake cUSD) and Stacks (stake STX). Both are low-fee, fast networks — pick whichever you prefer with the in-app chain switcher.",
+      answer: "Arcadia runs on Celo — an OP Stack L2 with ~1-second blocks and ultra-low fees (~$0.0005 per tx). You stake USDm, USDC, or USDT. No ETH needed — you can pay network fees in stablecoins directly.",
     },
     {
       question: "How are answers verified?",

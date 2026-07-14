@@ -5,7 +5,7 @@ import { defineChain, type Chain } from "viem";
 
 // ── Chain types ───────────────────────────────────────────────────────────────
 
-export type ChainId = "celo" | "stacks";
+export type ChainId = "celo";
 
 export type CeloToken = "cusd" | "usdc" | "usdt";
 
@@ -58,15 +58,6 @@ export function celoTokenMeta(
   if (!meta) throw new Error(`Unknown token "${token}". Valid: cusd, usdc, usdt`);
   return meta;
 }
-
-// ── Stacks constants ──────────────────────────────────────────────────────────
-
-export const STACKS_CONTRACT_MAINNET = {
-  address: "SP1SY1E599GN04XRD2DQBKV7E62HYBJR2CT9S5QKK",
-  name: "quiz-arcade",
-  trustedSignerPubkey:
-    "0x024563149f07fdcdffb5bed5dc367c690ea7ee6491f7ed5edcbcbcb3b6354ead62",
-} as const;
 
 // ── Celo chain config (viem) ──────────────────────────────────────────────────
 

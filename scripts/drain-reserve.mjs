@@ -31,8 +31,8 @@ const celoMainnet = {
 };
 
 const account   = privateKeyToAccount(PRIVATE_KEY);
-const publicC   = createPublicClient({ chain: celoMainnet, transport: http() });
-const walletC   = createWalletClient({ account, chain: celoMainnet, transport: http() });
+const publicC   = createPublicClient({ chain: celoMainnet, transport: http("https://forno.celo.org") });
+const walletC   = createWalletClient({ account, chain: celoMainnet, transport: http("https://forno.celo.org") });
 const player    = account.address;
 
 const ARCADE_ABI = [

@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAccount } from "wagmi";
 import { ConnectControl } from "../../components/ConnectControl";
-import { useChain } from "../../lib/chainContext";
-import { useStacksWallet } from "../../lib/stacksWallet";
 import { GameIcon } from "../../components/GameIcons";
 import { TutorialModal } from "../../components/TutorialModal";
 import { SocialLinks } from "../../components/SocialLinks";
@@ -21,14 +19,9 @@ interface GameMeta {
   available: boolean;
 }
 
-const COMING_SOON: GameMeta[] = [];
-
 export default function GamesPage() {
   const router = useRouter();
-  const { chain } = useChain();
-  const evm = useAccount();
-  const stx = useStacksWallet();
-  const address = chain === "stacks" ? stx.address ?? undefined : evm.address;
+  const { address } = useAccount();
   const [games, setGames] = useState<GameMeta[]>([]);
   const [showTutorial, setShowTutorial] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
@@ -69,7 +62,6 @@ export default function GamesPage() {
     soundManager.play('click');
   };
 
-  const all = [...games, ...COMING_SOON.filter((c) => !games.some((g) => g.id === c.id))];
 
   return (
     <div className="container">
@@ -128,10 +120,16 @@ export default function GamesPage() {
         >
           ❓ FAQ
         </button>
+        <a
+          href="mailto:play@arcadia.uno"
+          className="btn ghost"
+        >
+          💬 Support
+        </a>
       </div>
 
       <div className="grid">
-        {all.map((g) => (
+        {games.map((g) => (
           <div
             key={g.id}
             className={`card ${g.available ? "playable" : ""}`}
@@ -161,7 +159,12 @@ export default function GamesPage() {
 
       <div style={{ marginTop: 48, textAlign: "center", paddingBottom: 40 }}>
         <p className="muted" style={{ fontSize: 14, marginBottom: 12 }}>
-          Built on Celo · <a href="/faq" style={{ textDecoration: "underline" }}>FAQ</a>
+          Built on Celo &nbsp;·&nbsp;
+          <a href="/faq" style={{ textDecoration: "underline" }}>FAQ</a> &nbsp;·&nbsp;
+          <a href="/stats" style={{ textDecoration: "underline" }}>Stats</a> &nbsp;·&nbsp;
+          <a href="/terms" style={{ textDecoration: "underline" }}>Terms</a> &nbsp;·&nbsp;
+          <a href="/privacy" style={{ textDecoration: "underline" }}>Privacy</a> &nbsp;·&nbsp;
+          <a href="mailto:play@arcadia.uno" style={{ textDecoration: "underline" }}>Support</a>
         </p>
         <p className="muted" style={{ fontSize: 12, marginBottom: 4 }}>
           &copy; {new Date().getFullYear()} greyw0rks. All rights reserved.

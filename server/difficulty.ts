@@ -17,12 +17,9 @@ import type { ChainId } from "../lib/contract";
 export const BPS = 10_000;
 export const STEP_BPS = 1_000;
 
-// Per-session stake cap, in DISPLAY units (USDM/USDC / STX). Stablecoin chains cap at 1 USD. STX is
-// not USD-pegged; fixed 1-STX cap (matches the on-chain `max-stake` of 1_000_000 micro-STX).
+// Per-session stake cap in DISPLAY units (USDM/USDC). Caps at $1 USD.
 export const MAX_STAKE: Record<ChainId, number> = {
   celo: 1,
-  base: 1,
-  stacks: 1,
 };
 
 // Difficulty knobs.
@@ -35,16 +32,6 @@ export const MIN_TIMER_SEC = 3; // hard floor
 /** Clamp `n` into [lo, hi]. */
 function clamp(n: number, lo: number, hi: number): number {
   return Math.max(lo, Math.min(hi, n));
-}
-
-/**
- * Difficulty fraction d ∈ [0, 1] from the on-chain effective stake.
- * `effectiveMaxStake = maxStake * (BPS - rakeBps) / BPS`. Because the flat rake scales numerator and
- * denominator alike, d == stake / maxStake exactly, so this is rake-independent.
- */
-export function difficultyFraction(effectiveStake: number, effectiveMaxStake: number): number {
-  if (!(effectiveMaxStake > 0)) return 0;
-  return clamp(effectiveStake / effectiveMaxStake, 0, 1);
 }
 
 /** Difficulty fraction from a DISPLAY-unit stake (used by the client preview + /api/session). */
@@ -85,8 +72,12 @@ export const DEFAULT_RAKE_BPS = 300;
  */
 export function roundsFor(d: number, bankSize: number): number {
   const scaled = Math.round(MIN_ROUNDS + clamp(d, 0, 1) * (MAX_ROUNDS - MIN_ROUNDS));
-  const ceiling = Math.min(MAX_ROUNDS, MAX_ROUNDS_CAP, Math.max(MIN_ROUNDS, bankSize));
-  return clamp(scaled, MIN_ROUNDS, ceiling);
+  // Cap at bankSize directly so tiny banks (e.g. 5 movie stills) never repeat questions.
+  // When bankSize < MIN_ROUNDS the floor drops to bankSize too — we'd rather run a short session
+  // than serve a repeated question.
+  const ceiling = Math.min(MAX_ROUNDS, MAX_ROUNDS_CAP, bankSize);
+  const floor   = Math.min(MIN_ROUNDS, ceiling);
+  return clamp(scaled, floor, ceiling);
 }
 
 /** Per-round time limit (seconds) after shrinking the game's base limit by difficulty. */

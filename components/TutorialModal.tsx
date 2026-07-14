@@ -12,7 +12,7 @@ export function TutorialModal({ onClose }: TutorialModalProps) {
   const steps = [
     {
       title: "Welcome to Arcadia! 🎮",
-      content: "Arcadia is an on-chain arcade where you stake cUSD and play skill-based games. Your payout depends on your performance!",
+      content: "Arcadia is an on-chain arcade where you stake stablecoins and play skill-based games. Your payout depends on your performance!",
     },
     {
       title: "How It Works 💰",
@@ -24,7 +24,7 @@ export function TutorialModal({ onClose }: TutorialModalProps) {
     },
     {
       title: "Entry Fee 💸",
-      content: "There's a 3% rake on your stake. So if you stake 10 cUSD, 9.7 cUSD goes into play. This funds the house treasury.",
+      content: "There's a 3% rake on your stake. So if you stake 10 USDm, 9.7 USDm goes into play. This funds the house treasury.",
     },
     {
       title: "Refund Protection 🛡️",
@@ -32,7 +32,7 @@ export function TutorialModal({ onClose }: TutorialModalProps) {
     },
     {
       title: "Ready to Play? 🚀",
-      content: "Connect your wallet, choose a game, stake some cUSD, and test your skills. Good luck!",
+      content: "Connect your wallet, choose a game, stake some stablecoins, and test your skills. Good luck!",
     },
   ];
 

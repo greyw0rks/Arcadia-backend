@@ -9,7 +9,7 @@ import {
   difficultyFractionBaseUnits,
   roundsFor,
 } from "../../../server/difficulty";
-import { CHAINS, celoTokenMeta } from "../../../lib/contract";
+import { celoTokenMeta } from "../../../lib/contract";
 
 // GET /api/round?sessionId=0x..
 // Verifies the session is funded on-chain (by the recorded player) before serving the next round.
@@ -44,12 +44,8 @@ export async function GET(req: NextRequest) {
     // trust the on-chain round count over any client-supplied value. Guarded so repeated polls and the
     // client's funding-gate retry loop never recompute or mutate mid-game.
     if (session.difficulty === undefined) {
-      // Stake-token decimals drive the base-unit math: cUSD is 18-dec, USDC/USDT are 6-dec, so using a
-      // fixed CHAINS.celo.decimals (18) would mis-scale difficulty for the 6-dec tokens.
-      const decimals =
-        session.chain === "celo"
-          ? celoTokenMeta(session.token).decimals
-          : CHAINS[session.chain].decimals;
+      // Stake-token decimals: cUSD is 18-dec, USDC/USDT are 6-dec.
+      const decimals = celoTokenMeta(session.token).decimals;
       const maxStakeBase = parseUnits(String(MAX_STAKE[session.chain]), decimals);
       session.difficulty = difficultyFractionBaseUnits(
         onchain.effectiveStake,

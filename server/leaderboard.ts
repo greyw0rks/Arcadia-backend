@@ -1,31 +1,17 @@
 // On-chain leaderboard / profile indexer.
 //
-// There is no database: the authoritative record of completed games lives in the QuizArcade
-// contracts' events. This module maintains a singleton in-memory index (in the same spirit as the
-// in-memory server/sessions.ts) built by scanning SessionStarted/SessionSettled on Celo (one
-// QuizArcade instance per token) and the equivalent `print` events on the Stacks contract. It
-// exposes aggregate queries for the leaderboard and per-player profile.
+// There is no database: the authoritative record of completed games lives in the QuizArcade v2
+// contract's events. This module maintains a singleton in-memory index built by scanning
+// SessionStarted / SessionSettled on the single ARCADE_ADDRESS (v2 is multi-token — USDm, USDC,
+// USDT all emit from one contract). Events carry the token address; decimal conversion is driven
+// by TOKEN_DECIMALS, not hardcoded.
 //
-// Refresh is incremental (cursor per source), single-flight, and TTL-gated, so concurrent requests
+// Refresh is incremental (block cursor), single-flight, and TTL-gated so concurrent requests
 // never trigger overlapping scans. The index is process-lived and rebuilt on restart.
-//
-// Units: Celo stake tokens are USD-stable (cUSD/USDC/USDT, all ~$1) and reported as "USDm"; Stacks
-// stakes are STX. Amounts are NOT mixed under one unit — each player/entry carries its own `unit`.
-// EVM addresses and Stacks principals are distinct identities, so they appear as separate rows.
 
 import { createPublicClient, http } from "viem";
-import { hexToCV, cvToJSON } from "@stacks/transactions";
-import {
-  celoChain,
-  baseChain,
-  RPC_URL,
-  BASE_RPC_URL,
-  CELO_TOKENS,
-  BASE_TOKENS,
-  STACKS_ARCADE_CONTRACT,
-  STACKS_API_URL,
-  LOCKED_CHAIN,
-} from "../lib/contract";
+import { celoChain, RPC_URL, ARCADE_ADDRESS, CELO_TOKENS } from "../lib/contract";
+import { BPS } from "./difficulty";
 import { ARCADE_ABI } from "../lib/abi";
 import { getProfileOverlay } from "./profileStore";
 import { getPlayerHistory } from "./gameHistory";
@@ -33,62 +19,40 @@ import { getPlayerHistory } from "./gameHistory";
 export type Period = "daily" | "weekly" | "monthly" | "allTime";
 export type Metric = "winnings" | "winRate" | "gamesPlayed" | "highestMultiplier";
 
-const BPS = 10_000;
 const ZERO = "0x0000000000000000000000000000000000000000";
 
 // ---- tunables (env, all optional; sensible fallbacks) ----
-const CELO_CHUNK = BigInt(process.env.CELO_LOG_CHUNK ?? "9000"); // blocks per eth_getLogs call
-const CELO_LOOKBACK = BigInt(process.env.CELO_INDEX_LOOKBACK ?? "1000000"); // fallback scan window
+// Celo's public RPC rejects eth_getLogs spans > ~50k blocks; 45_000 is the safe ceiling.
+const CELO_CHUNK = BigInt(process.env.CELO_LOG_CHUNK ?? "45000");
+const CELO_LOOKBACK = BigInt(process.env.CELO_INDEX_LOOKBACK ?? "1000000");
 const CELO_FROM_BLOCK = process.env.CELO_INDEX_FROM_BLOCK
   ? BigInt(process.env.CELO_INDEX_FROM_BLOCK)
-  : null; // set to the deploy block for full history
-const CELO_BLOCKS_PER_DAY = Number(process.env.CELO_BLOCKS_PER_DAY ?? "86400"); // ~1s L2 blocks
-const BASE_CHUNK = BigInt(process.env.BASE_LOG_CHUNK ?? "9000");
-const BASE_LOOKBACK = BigInt(process.env.BASE_INDEX_LOOKBACK ?? "2000000"); // ~2s blocks
-const BASE_FROM_BLOCK = process.env.BASE_INDEX_FROM_BLOCK
-  ? BigInt(process.env.BASE_INDEX_FROM_BLOCK)
   : null;
-const BASE_BLOCKS_PER_DAY = Number(process.env.BASE_BLOCKS_PER_DAY ?? "43200"); // ~2s blocks
-const STACKS_BLOCKS_PER_DAY = Number(process.env.STACKS_BLOCKS_PER_DAY ?? "144");
-const STACKS_MAX_PAGES = Number(process.env.STACKS_INDEX_MAX_PAGES ?? "40"); // 50 events/page
+const CELO_BLOCKS_PER_DAY = Number(process.env.CELO_BLOCKS_PER_DAY ?? "86400");
 const REFRESH_TTL_MS = Number(process.env.LEADERBOARD_TTL_MS ?? "30000");
 
-// Server-only Hiro key (same one the /hiro proxy uses) lifts the unauthenticated per-IP rate limit.
-const HIRO_HEADERS: Record<string, string> = process.env.HIRO_API_KEY
-  ? { "x-api-key": process.env.HIRO_API_KEY }
-  : {};
-
-interface GameRecord {
-  block: number; // EVM block number or Stacks block height (drives period filter + ordering)
+export interface GameRecord {
+  block: number; // EVM block number (drives period filter + ordering)
+  approxTs: number; // approximate wall-clock ms (for weekly tournament windowing)
   stake: number; // gross stake, human units
   payout: number; // settled payout, human units
   multiplierBp: number;
   won: boolean; // final multiplier above break-even (1.0x)
+  difficulty: number; // 0..1 (stake / maxStake); used for tournament eligibility
 }
 
-interface PlayerAgg {
-  address: string; // lowercased EVM address or raw Stacks principal
-  chain: "celo" | "base" | "stacks";
-  unit: "USDm" | "STX";
+export interface PlayerAgg {
+  address: string;
+  chain: "celo";
+  unit: string; // symbol of the token used in most-recent game (USDm / USDC / USDT)
   games: GameRecord[]; // chronological (ascending block)
 }
 
-interface PendingStake {
-  stake: number;
-  effectiveStake: number;
-}
-
-// ---- singleton index state ----
 const players = new Map<string, PlayerAgg>();
-const pendingStakes = new Map<string, PendingStake>(); // "<chain>:<sessionId>" -> stake from start event
-const seenSettled = new Set<string>(); // "<chain>:<sessionId>" guard against double counting
-const celoCursors = new Map<string, bigint>(); // arcade address -> next block to scan
-const baseCursors = new Map<string, bigint>(); // arcade address -> next block to scan (Base)
-const seenStacksEvents = new Set<string>(); // "<txId>:<eventIndex>"
-const stacksTxBlock = new Map<string, number>(); // tx_id -> block height (immutable; cached forever)
+const pendingStakes = new Map<string, { stake: number; effectiveStake: number }>();
+const seenSettled = new Set<string>();
+const celoCursors = new Map<string, bigint>();
 let celoHead = 0;
-let baseHead = 0;
-let stacksHead = 0;
 
 let lastRefresh = 0;
 let inflight: Promise<void> | null = null;
@@ -98,7 +62,7 @@ let inflight: Promise<void> | null = null;
 // ---------------------------------------------------------------------------
 
 function fromHuman(base: bigint, decimals: number): number {
-  // Number() is safe at stablecoin/STX magnitudes; any precision loss is irrelevant for display+sort.
+  // Number() is safe at stablecoin magnitudes; any precision loss is irrelevant for display+sort.
   return Number(base) / 10 ** decimals;
 }
 
@@ -106,24 +70,20 @@ function round2(n: number): number {
   return Math.round(n * 100) / 100;
 }
 
-function unitOf(address: string): "USDm" | "STX" {
-  return address.startsWith("0x") ? "USDm" : "STX";
+function unitOf(tokenAddress: string): string {
+  const lc = tokenAddress.toLowerCase();
+  for (const meta of Object.values(CELO_TOKENS)) {
+    if (meta.tokenAddress.toLowerCase() === lc) return meta.symbol;
+  }
+  return "USDm";
 }
 
-function chainOf(address: string): "celo" | "base" | "stacks" {
-  // EVM addresses (0x) are attributed to the locked chain; default "celo" for legacy/unlocked.
-  if (!address.startsWith("0x")) return "stacks";
-  return (LOCKED_CHAIN === "base" || LOCKED_CHAIN === "celo" || LOCKED_CHAIN === "stacks")
-    ? LOCKED_CHAIN
-    : "celo";
-}
-
-/** EVM addresses are case-insensitive; Stacks principals are case-sensitive — only lowercase EVM. */
+/** Normalise EVM addresses to lowercase for consistent Map keys. */
 function normalizeAddr(address: string): string {
   return address.startsWith("0x") ? address.toLowerCase() : address;
 }
 
-function getPlayer(address: string, chain: "celo" | "base" | "stacks", unit: "USDm" | "STX"): PlayerAgg {
+function getPlayer(address: string, chain: "celo", unit: string): PlayerAgg {
   let p = players.get(address);
   if (!p) {
     p = { address, chain, unit, games: [] };
@@ -134,17 +94,25 @@ function getPlayer(address: string, chain: "celo" | "base" | "stacks", unit: "US
 
 function recordGame(
   address: string,
-  chain: "celo" | "base" | "stacks",
-  unit: "USDm" | "STX",
+  chain: "celo",
+  unit: string,
   rec: GameRecord
 ): void {
   const p = getPlayer(address, chain, unit);
   p.games.push(rec);
-  p.games.sort((a, b) => a.block - b.block);
+}
+
+// Build a map from token address (lowercase) → decimals for event-time decimal lookup.
+// v2 events carry the token address; we look up decimals here rather than assuming a fixed value.
+const TOKEN_DECIMALS = new Map<string, number>(
+  Object.values(CELO_TOKENS).map((t) => [t.tokenAddress.toLowerCase(), t.decimals])
+);
+function decimalsForToken(tokenAddr: string): number {
+  return TOKEN_DECIMALS.get(tokenAddr.toLowerCase()) ?? 18; // default 18 for unknown tokens
 }
 
 // ---------------------------------------------------------------------------
-// Celo (EVM) scan
+// Celo (EVM) scan — v2: single ARCADE_ADDRESS, events carry token address
 // ---------------------------------------------------------------------------
 
 async function refreshCelo(): Promise<void> {
@@ -152,238 +120,78 @@ async function refreshCelo(): Promise<void> {
   const head = await client.getBlockNumber();
   celoHead = Number(head);
 
-  for (const token of Object.values(CELO_TOKENS)) {
-    const arcade = token.arcadeAddress;
-    if (!arcade || arcade.toLowerCase() === ZERO) continue;
+  if (!ARCADE_ADDRESS || ARCADE_ADDRESS.toLowerCase() === ZERO) return;
 
-    const defaultStart = CELO_FROM_BLOCK ?? (head > CELO_LOOKBACK ? head - CELO_LOOKBACK : 0n);
-    let from = celoCursors.get(arcade) ?? defaultStart;
+  const defaultStart = CELO_FROM_BLOCK ?? (head > CELO_LOOKBACK ? head - CELO_LOOKBACK : 0n);
+  let from = celoCursors.get(ARCADE_ADDRESS) ?? defaultStart;
 
-    while (from <= head) {
-      const to = from + CELO_CHUNK - 1n > head ? head : from + CELO_CHUNK - 1n;
-      try {
-        const [started, settled] = await Promise.all([
-          client.getContractEvents({
-            address: arcade,
-            abi: ARCADE_ABI,
-            eventName: "SessionStarted",
-            fromBlock: from,
-            toBlock: to,
-          }),
-          client.getContractEvents({
-            address: arcade,
-            abi: ARCADE_ABI,
-            eventName: "SessionSettled",
-            fromBlock: from,
-            toBlock: to,
-          }),
-        ]);
-
-        for (const log of started) {
-          const a = log.args as { sessionId: string; stake: bigint; effectiveStake: bigint };
-          pendingStakes.set(`celo:${a.sessionId}`, {
-            stake: fromHuman(a.stake, token.decimals),
-            effectiveStake: fromHuman(a.effectiveStake, token.decimals),
-          });
-        }
-
-        for (const log of settled) {
-          const a = log.args as { sessionId: string; player: string; multiplierBp: bigint; payout: bigint };
-          const skey = `celo:${a.sessionId}`;
-          if (seenSettled.has(skey)) continue;
-          seenSettled.add(skey);
-          const mul = Number(a.multiplierBp);
-          const payout = fromHuman(a.payout, token.decimals);
-          const ps = pendingStakes.get(skey);
-          // Fallback when the start event predates our scan window: reconstruct the effective stake
-          // from payout / multiplier (gross stake ≈ effective; the rake difference is negligible here).
-          const stake = ps?.stake ?? (mul > 0 ? (payout * BPS) / mul : payout);
-          recordGame(a.player.toLowerCase(), "celo", "USDm", {
-            block: Number(log.blockNumber),
-            stake,
-            payout,
-            multiplierBp: mul,
-            won: mul > BPS,
-          });
-        }
-
-        celoCursors.set(arcade, to + 1n);
-        from = to + 1n;
-      } catch (e) {
-        // Provider hiccup / range too large: persist the cursor and resume here on the next refresh.
-        console.warn(
-          `[leaderboard] celo scan ${arcade} ${from}-${to} failed: ${(e as Error).message}`
-        );
-        celoCursors.set(arcade, from);
-        break;
-      }
-    }
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Base (OP Stack L2) scan — mirrors the Celo scan using Base RPC.
-// ---------------------------------------------------------------------------
-
-async function refreshBase(): Promise<void> {
-  const ZERO = "0x0000000000000000000000000000000000000000";
-  const client = createPublicClient({ chain: baseChain, transport: http(BASE_RPC_URL) });
-  const head = await client.getBlockNumber();
-  baseHead = Number(head);
-
-  for (const token of Object.values(BASE_TOKENS)) {
-    const arcade = token.arcadeAddress;
-    if (!arcade || arcade.toLowerCase() === ZERO) continue;
-
-    const defaultStart = BASE_FROM_BLOCK ?? (head > BASE_LOOKBACK ? head - BASE_LOOKBACK : 0n);
-    let from = baseCursors.get(arcade) ?? defaultStart;
-
-    while (from <= head) {
-      const to = from + BASE_CHUNK - 1n > head ? head : from + BASE_CHUNK - 1n;
-      try {
-        const [started, settled] = await Promise.all([
-          client.getContractEvents({
-            address: arcade,
-            abi: ARCADE_ABI,
-            eventName: "SessionStarted",
-            fromBlock: from,
-            toBlock: to,
-          }),
-          client.getContractEvents({
-            address: arcade,
-            abi: ARCADE_ABI,
-            eventName: "SessionSettled",
-            fromBlock: from,
-            toBlock: to,
-          }),
-        ]);
-
-        for (const log of started) {
-          const a = log.args as { sessionId: string; stake: bigint; effectiveStake: bigint };
-          pendingStakes.set(`base:${a.sessionId}`, {
-            stake: fromHuman(a.stake, token.decimals),
-            effectiveStake: fromHuman(a.effectiveStake, token.decimals),
-          });
-        }
-
-        for (const log of settled) {
-          const a = log.args as { sessionId: string; player: string; multiplierBp: bigint; payout: bigint };
-          const skey = `base:${a.sessionId}`;
-          if (seenSettled.has(skey)) continue;
-          seenSettled.add(skey);
-          const mul = Number(a.multiplierBp);
-          const payout = fromHuman(a.payout, token.decimals);
-          const ps = pendingStakes.get(skey);
-          const stake = ps?.stake ?? (mul > 0 ? (payout * BPS) / mul : payout);
-          recordGame(a.player.toLowerCase(), "base", "USDm", {
-            block: Number(log.blockNumber),
-            stake,
-            payout,
-            multiplierBp: mul,
-            won: mul > BPS,
-          });
-        }
-
-        baseCursors.set(arcade, to + 1n);
-        from = to + 1n;
-      } catch (e) {
-        console.warn(
-          `[leaderboard] base scan ${arcade} ${from}-${to} failed: ${(e as Error).message}`
-        );
-        baseCursors.set(arcade, from);
-        break;
-      }
-    }
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Stacks (Clarity) scan — `print` events over the Hiro contract-events API
-// ---------------------------------------------------------------------------
-
-async function stacksBlockHeight(base: string, txId: string): Promise<number> {
-  const cached = stacksTxBlock.get(txId);
-  if (cached != null) return cached;
-  try {
-    const r = await fetch(`${base}/extended/v1/tx/${txId}`, { headers: HIRO_HEADERS });
-    if (r.ok) {
-      const j = (await r.json()) as { block_height?: number };
-      const h = Number(j.block_height ?? 0);
-      stacksTxBlock.set(txId, h);
-      return h;
-    }
-  } catch {
-    /* ignore — height stays 0, game still counts toward all-time stats */
-  }
-  return 0;
-}
-
-async function refreshStacks(): Promise<void> {
-  const contractId = STACKS_ARCADE_CONTRACT;
-  if (!contractId || contractId.startsWith("SP000000") || contractId.startsWith("ST000000")) return;
-  const base = STACKS_API_URL.replace(/\/$/, "");
-
-  for (let pageIdx = 0; pageIdx < STACKS_MAX_PAGES; pageIdx++) {
-    let results: any[];
+  while (from <= head) {
+    const to = from + CELO_CHUNK - 1n > head ? head : from + CELO_CHUNK - 1n;
     try {
-      const r = await fetch(
-        `${base}/extended/v1/contract/${contractId}/events?limit=50&offset=${pageIdx * 50}`,
-        { headers: HIRO_HEADERS }
-      );
-      if (!r.ok) break;
-      results = ((await r.json()) as { results?: any[] }).results ?? [];
-    } catch (e) {
-      console.warn(`[leaderboard] stacks events page ${pageIdx} failed: ${(e as Error).message}`);
-      break;
-    }
-    if (!results.length) break;
+      const [started, settled] = await Promise.all([
+        client.getContractEvents({
+          address: ARCADE_ADDRESS,
+          abi: ARCADE_ABI,
+          eventName: "SessionStarted",
+          fromBlock: from,
+          toBlock: to,
+        }),
+        client.getContractEvents({
+          address: ARCADE_ADDRESS,
+          abi: ARCADE_ABI,
+          eventName: "SessionSettled",
+          fromBlock: from,
+          toBlock: to,
+        }),
+      ]);
 
-    let hitSeen = false;
-    for (const ev of results) {
-      const evKey = `${ev.tx_id}:${ev.event_index}`;
-      if (seenStacksEvents.has(evKey)) {
-        hitSeen = true;
-        continue;
-      }
-      seenStacksEvents.add(evKey);
-
-      const hex: string | undefined = ev.contract_log?.value?.hex;
-      if (!hex) continue; // non-print event (e.g. STX transfer)
-      let v: any;
-      try {
-        v = (cvToJSON(hexToCV(hex)) as any).value;
-      } catch {
-        continue;
-      }
-      const event = v?.event?.value;
-      if (event === "session-started") {
-        const sid = v["session-id"].value;
-        pendingStakes.set(`stacks:${sid}`, {
-          stake: fromHuman(BigInt(v.stake.value), 6),
-          effectiveStake: fromHuman(BigInt(v["effective-stake"].value), 6),
+      for (const log of started) {
+        // v2 SessionStarted: (sessionId, player, token, stake, effectiveStake, reserve, maxRounds, expiry)
+        const a = log.args as { sessionId: string; token: string; stake: bigint; effectiveStake: bigint };
+        const dec = decimalsForToken(a.token);
+        pendingStakes.set(`celo:${a.sessionId}`, {
+          stake: fromHuman(a.stake, dec),
+          effectiveStake: fromHuman(a.effectiveStake, dec),
         });
-      } else if (event === "session-settled") {
-        const sid = v["session-id"].value;
-        const skey = `stacks:${sid}`;
+      }
+
+      for (const log of settled) {
+        // v2 SessionSettled: (sessionId, player, token, multiplierBp, payout)
+        const a = log.args as { sessionId: string; player: string; token: string; multiplierBp: bigint; payout: bigint };
+        const skey = `celo:${a.sessionId}`;
         if (seenSettled.has(skey)) continue;
         seenSettled.add(skey);
-        const block = await stacksBlockHeight(base, ev.tx_id);
-        if (block > stacksHead) stacksHead = block;
-        const mul = Number(v["multiplier-bp"].value);
-        const payout = fromHuman(BigInt(v.payout.value), 6);
+        const dec = decimalsForToken(a.token);
+        const mul = Number(a.multiplierBp);
+        const payout = fromHuman(a.payout, dec);
         const ps = pendingStakes.get(skey);
+        // Fallback when the start event predates our scan window.
         const stake = ps?.stake ?? (mul > 0 ? (payout * BPS) / mul : payout);
-        recordGame(v.player.value, "stacks", "STX", {
-          block,
+        const blockNum = Number(log.blockNumber);
+        const daysAgo = (celoHead - blockNum) / CELO_BLOCKS_PER_DAY;
+        recordGame(a.player.toLowerCase(), "celo", unitOf(a.token), {
+          block: blockNum,
+          approxTs: Date.now() - Math.max(0, daysAgo) * 86_400_000,
           stake,
           payout,
           multiplierBp: mul,
           won: mul > BPS,
+          difficulty: Math.min(1, stake),
         });
       }
+
+      celoCursors.set(ARCADE_ADDRESS, to + 1n);
+      from = to + 1n;
+    } catch (e) {
+      console.warn(`[leaderboard] celo scan ${from}-${to} failed: ${(e as Error).message}`);
+      celoCursors.set(ARCADE_ADDRESS, from);
+      break;
     }
-    // Events page newest-first; once we reach already-seen events the rest are older/seen too.
-    if (hitSeen) break;
+  }
+
+  // Sort all player game lists once after the full scan, not per-event.
+  for (const p of players.values()) {
+    p.games.sort((a, b) => a.block - b.block);
   }
 }
 
@@ -391,26 +199,8 @@ async function refreshStacks(): Promise<void> {
 // Refresh orchestration (single-flight + TTL)
 // ---------------------------------------------------------------------------
 
-async function refresh(): Promise<void> {
-  // When LOCKED_CHAIN is set each backend only indexes its own chain, avoiding unnecessary RPC calls
-  // and cross-chain address collisions in the leaderboard. Unlocked (legacy/landing) runs all three.
-  switch (LOCKED_CHAIN) {
-    case "celo":
-      await refreshCelo();
-      break;
-    case "base":
-      await refreshBase();
-      break;
-    case "stacks":
-      await refreshStacks();
-      break;
-    default:
-      await Promise.allSettled([refreshCelo(), refreshBase(), refreshStacks()]);
-  }
-}
-
 function runRefresh(): Promise<void> {
-  inflight = refresh()
+  inflight = refreshCelo()
     .then(() => {
       lastRefresh = Date.now();
     })
@@ -435,14 +225,22 @@ async function ensureFresh(): Promise<void> {
   }
 }
 
+/** Exported alias used by tournament.ts — same semantics. */
+export const ensureLeaderboardFresh = ensureFresh;
+
+/** Returns all player aggregates for tournament eligibility calculations. */
+export function getPlayerAggregates(): PlayerAgg[] {
+  return Array.from(players.values());
+}
+
 // ---------------------------------------------------------------------------
 // Aggregation
 // ---------------------------------------------------------------------------
 
 interface PlayerStats {
   address: string;
-  chain: "celo" | "base" | "stacks";
-  unit: "USDm" | "STX";
+  chain: "celo";
+  unit: string;
   gamesPlayed: number;
   gamesWon: number;
   winRate: number;
@@ -455,15 +253,10 @@ interface PlayerStats {
   longestStreak: number;
 }
 
-function cutoffBlock(chain: "celo" | "base" | "stacks", period: Period): number {
+function cutoffBlock(chain: "celo", period: Period): number {
   if (period === "allTime") return -Infinity;
   const days = period === "daily" ? 1 : period === "weekly" ? 7 : 30;
-  let head: number;
-  let perDay: number;
-  if (chain === "stacks") { head = stacksHead; perDay = STACKS_BLOCKS_PER_DAY; }
-  else if (chain === "base") { head = baseHead; perDay = BASE_BLOCKS_PER_DAY; }
-  else { head = celoHead; perDay = CELO_BLOCKS_PER_DAY; }
-  return head - days * perDay;
+  return celoHead - days * CELO_BLOCKS_PER_DAY;
 }
 
 function buildStats(p: PlayerAgg, games: GameRecord[]): PlayerStats {
@@ -542,8 +335,8 @@ export interface LeaderboardEntry {
   address: string;
   username: string | null;
   avatar: string | null;
-  unit: "USDm" | "STX";
-  score: number; // the value for the requested metric (back-compat with the page)
+  unit: string;
+  score: number;
   gamesPlayed: number;
   winRate: number;
   totalWinnings: number;
@@ -596,25 +389,11 @@ export async function getLeaderboard(
   return { leaderboard, userRank };
 }
 
-export interface LinkedProfileStats {
-  address: string;
-  unit: "USDm" | "STX";
-  gamesPlayed: number;
-  gamesWon: number;
-  winRate: number;
-  totalStaked: number;
-  totalWinnings: number;
-  highestMultiplierBp: number;
-  currentStreak: number;
-  longestStreak: number;
-  recentGames: { multiplierBp: number; payout: number; won: boolean; block: number }[];
-}
-
 export interface PlayerProfile {
   address: string;
   username: string | null;
   avatar: string | null;
-  unit: "USDm" | "STX";
+  unit: string;
   stats: {
     totalGamesPlayed: number;
     totalGamesWon: number;
@@ -628,8 +407,6 @@ export interface PlayerProfile {
   };
   achievements: string[];
   recentGames: { multiplierBp: number; payout: number; won: boolean; block: number }[];
-  linkedAddress: string | null;
-  linkedStats: LinkedProfileStats | null;
 }
 
 export async function getPlayerProfile(address: string): Promise<PlayerProfile> {
@@ -639,8 +416,8 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
   const onChainGames = p?.games ?? [];
   const stub: PlayerAgg = p ?? {
     address: key,
-    chain: chainOf(address),
-    unit: unitOf(address),
+    chain: "celo",
+    unit: "USDm",
     games: [],
   };
 
@@ -650,49 +427,23 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
     .filter((h) => !seenSettled.has(`${h.chain}:${h.sessionId}`))
     .map((h) => ({
       block: 0,
+      approxTs: h.approxTs ?? Date.now(),
       stake: h.stake,
       payout: h.payout,
       multiplierBp: h.multiplierBp,
       won: h.won,
+      difficulty: h.difficulty ?? Math.min(1, h.stake),
     }));
   const games = supplemental.length ? [...onChainGames, ...supplemental] : onChainGames;
 
   const s = buildStats(stub, games);
   const overlay = getProfileOverlay(key);
 
-  // Linked Stacks address — only applicable for Celo (0x) profiles.
-  const linkedAddress = address.startsWith("0x") ? (overlay?.linkedStacksAddress ?? null) : null;
-
-  let linkedStats: LinkedProfileStats | null = null;
-  if (linkedAddress) {
-    const lKey = normalizeAddr(linkedAddress);
-    const lp = players.get(lKey);
-    const lGames = lp?.games ?? [];
-    const lStub: PlayerAgg = lp ?? { address: lKey, chain: "stacks", unit: "STX", games: [] };
-    const ls = buildStats(lStub, lGames);
-    linkedStats = {
-      address: linkedAddress,
-      unit: "STX",
-      gamesPlayed: ls.gamesPlayed,
-      gamesWon: ls.gamesWon,
-      winRate: ls.winRate,
-      totalStaked: ls.totalStaked,
-      totalWinnings: ls.totalWinnings,
-      highestMultiplierBp: ls.highestMultiplierBp,
-      currentStreak: ls.currentStreak,
-      longestStreak: ls.longestStreak,
-      recentGames: lGames
-        .slice(-10)
-        .reverse()
-        .map((g) => ({ multiplierBp: g.multiplierBp, payout: round2(g.payout), won: g.won, block: g.block })),
-    };
-  }
-
   return {
     address,
     username: overlay?.username ?? null,
     avatar: overlay?.avatar ?? null,
-    unit: unitOf(address),
+    unit: stub.unit,
     stats: {
       totalGamesPlayed: s.gamesPlayed,
       totalGamesWon: s.gamesWon,
@@ -702,7 +453,7 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
       highestMultiplier: s.highestMultiplierBp,
       currentStreak: s.currentStreak,
       longestStreak: s.longestStreak,
-      favoriteGame: null, // the played game module isn't recorded on-chain
+      favoriteGame: null,
     },
     achievements: deriveAchievements(s),
     recentGames: games
@@ -714,19 +465,16 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
         won: g.won,
         block: g.block,
       })),
-    linkedAddress,
-    linkedStats,
   };
 }
 
 // ---------------------------------------------------------------------------
 // Platform analytics
 //
-// The analytics dashboard is single-unit (USDm), so it is scoped to Celo (the USD-stable token
-// instances) for consistency — Stacks (STX) is not folded into the USDm money totals. Timestamps and
-// chart dates are approximated from block height (no per-block timestamp RPC), matching the period
-// filters elsewhere. "Popular games" is intentionally empty: the played game module isn't recorded
-// on-chain, so it can't be derived (the page hides the section rather than show mock data).
+// The analytics dashboard is single-unit (USDm), covering all three token types (USDm, USDC, USDT)
+// since all are ~$1 and all come from the same contract. Amounts are summed in human units (decimals
+// already converted). Timestamps are approximated from block height. "Popular games" is empty because
+// the game module isn't recorded on-chain.
 // ---------------------------------------------------------------------------
 
 export type AnalyticsRange = "24h" | "7d" | "30d" | "all";
@@ -755,7 +503,8 @@ function buildVolumeChart(
 ): { date: string; volume: number }[] {
   const BUCKETS = 7;
   const end = celoHead;
-  const start = startBlock === -Infinity ? (games.length ? Math.min(...games.map((g) => g.block)) : end) : Math.max(0, startBlock);
+  // allCeloGames is sorted descending by block (most-recent first); last element is the earliest.
+  const start = startBlock === -Infinity ? (games.length ? games[games.length - 1].block : end) : Math.max(0, startBlock);
   const span = Math.max(1, end - start);
   const step = span / BUCKETS;
   const vols = new Array(BUCKETS).fill(0);
@@ -792,7 +541,6 @@ export async function getAnalytics(range: AnalyticsRange): Promise<Analytics> {
   const allCeloGames: { block: number; stake: number; payout: number; won: boolean; player: string }[] = [];
 
   for (const p of players.values()) {
-    if (p.chain !== "celo") continue;
     for (const g of p.games) {
       allCeloGames.push({ block: g.block, stake: g.stake, payout: g.payout, won: g.won, player: p.address });
       if (g.block >= cut24) active24.add(p.address);

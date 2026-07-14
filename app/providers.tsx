@@ -10,8 +10,6 @@ import { ChainProvider } from "../lib/chainContext";
 
 export function Providers({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
-  // ChainProvider holds the selected network (Celo / Stacks). Wagmi + RainbowKit power the Celo
-  // wallet; Stacks Connect (a singleton UserSession) needs no provider.
   return (
     <ChainProvider>
       <WagmiProvider config={wagmiConfig}>
