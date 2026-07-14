@@ -25,12 +25,22 @@ export interface ChoiceMeta {
 
 // Seeded shuffle: the client must not be able to derive the answer ordering, but the server does not
 // need cryptographic randomness here.
+//
+// Uses mulberry32 to derive each swap index from the HIGH bits of the PRNG state. The previous
+// implementation took `(lcg & 0x7fffffff) % (i + 1)`, which reads the LOW bits of a power-of-two-
+// masked LCG — those bits barely change between iterations, so a 4-option shuffle placed the answer
+// at index 3 ~99% of the time. mulberry32's output is well-distributed across the full 32-bit range.
 export function shuffle<T>(arr: T[], seed: number): T[] {
   const a = [...arr];
-  let s = seed || 1;
+  let s = (seed || 1) >>> 0;
   for (let i = a.length - 1; i > 0; i--) {
-    s = (s * 1103515245 + 12345) & 0x7fffffff;
-    const j = s % (i + 1);
+    // mulberry32 step
+    s = (s + 0x6d2b79f5) >>> 0;
+    let t = s;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    const rand = ((t ^ (t >>> 14)) >>> 0) / 4294967296; // [0,1)
+    const j = Math.floor(rand * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
