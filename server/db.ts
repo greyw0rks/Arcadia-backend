@@ -1,8 +1,9 @@
 // server/db.ts — PostgreSQL pool + schema bootstrap
 //
-// Set DATABASE_URL in the Railway environment (the Postgres plugin sets it automatically).
-// When DATABASE_URL is absent (local dev without a DB) all exports become graceful no-ops so the
-// server still starts and falls back to the existing in-memory behaviour.
+// Set DATABASE_URL to any Postgres connection string. We use a free Neon (neon.tech) database and
+// set DATABASE_URL on the Railway service that runs this backend. SSL is auto-enabled for any
+// non-localhost host (Neon requires it). When DATABASE_URL is absent (local dev without a DB) all
+// exports become graceful no-ops so the server still starts and falls back to in-memory behaviour.
 
 import { Pool, type QueryResult } from "pg";
 
