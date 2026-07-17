@@ -4673,5 +4673,155 @@
     "s": "Bears hibernate every winter.",
     "a": false,
     "tier": "easy"
+  },
+  {
+    "s": "Venus rotates on its axis in the opposite direction to most planets.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The human body contains more bacterial cells than human cells.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Bananas are botanically classified as berries.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Eiffel Tower can grow more than 15 cm taller in summer due to thermal expansion.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Octopuses have three hearts.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Measured from base to peak, Mount Everest is the tallest mountain on Earth.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Antarctica is the largest desert in the world.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Glass is a slow-moving liquid that flows at room temperature.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Honey can remain edible for thousands of years if properly sealed.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A group of flamingos is called a flamboyance.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Some neutron stars can spin hundreds of times per second.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Humans share roughly 60% of their genes with bananas.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Dead Sea shore is the lowest exposed land point on Earth.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Saturn is the only planet in the solar system with a ring system.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Absolute zero is exactly -273.15 degrees Celsius.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Mitochondria contain their own DNA, separate from the cell nucleus.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Napoleon Bonaparte was unusually short for a Frenchman of his era.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The direction water drains in a sink is determined by the Coriolis effect.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Gold is denser than lead.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A 'jiffy' is a real, defined unit of time.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Chameleons change color mainly for camouflage rather than communication.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "A shrimp's heart is located in its head.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Diamond and graphite are composed of the same single element.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The speed of light is greater in water than in a vacuum.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Tomatoes were once widely believed to be poisonous in Europe.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Hot water can freeze faster than cold water under certain conditions (the Mpemba effect).",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The blue whale is the largest animal known to have ever existed.",
+    "a": true,
+    "tier": "medium"
+  },
+  {
+    "s": "Sharks existed before trees appeared on Earth.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Lightning is hotter than the surface of the Sun.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The plural inner ear bone called the stapes is the smallest bone in the body.",
+    "a": true,
+    "tier": "hard"
   }
 ]

@@ -3199,5 +3199,225 @@
       "Takamaka"
     ],
     "tier": "extreme"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "flag": "🇰🇬",
+    "capital": "Bishkek",
+    "decoys": [
+      "Astana",
+      "Tashkent",
+      "Dushanbe"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Suriname",
+    "flag": "🇸🇷",
+    "capital": "Paramaribo",
+    "decoys": [
+      "Georgetown",
+      "Cayenne",
+      "Bridgetown"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Brunei",
+    "flag": "🇧🇳",
+    "capital": "Bandar Seri Begawan",
+    "decoys": [
+      "Kuala Lumpur",
+      "Jakarta",
+      "Manila"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Eritrea",
+    "flag": "🇪🇷",
+    "capital": "Asmara",
+    "decoys": [
+      "Addis Ababa",
+      "Khartoum",
+      "Djibouti"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Vanuatu",
+    "flag": "🇻🇺",
+    "capital": "Port Vila",
+    "decoys": [
+      "Suva",
+      "Honiara",
+      "Apia"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Tajikistan",
+    "flag": "🇹🇯",
+    "capital": "Dushanbe",
+    "decoys": [
+      "Bishkek",
+      "Ashgabat",
+      "Tashkent"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Botswana",
+    "flag": "🇧🇼",
+    "capital": "Gaborone",
+    "decoys": [
+      "Windhoek",
+      "Harare",
+      "Lusaka"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Bhutan",
+    "flag": "🇧🇹",
+    "capital": "Thimphu",
+    "decoys": [
+      "Kathmandu",
+      "Dhaka",
+      "Naypyidaw"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Moldova",
+    "flag": "🇲🇩",
+    "capital": "Chișinău",
+    "decoys": [
+      "Bucharest",
+      "Kyiv",
+      "Minsk"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Turkmenistan",
+    "flag": "🇹🇲",
+    "capital": "Ashgabat",
+    "decoys": [
+      "Baku",
+      "Tashkent",
+      "Tbilisi"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Comoros",
+    "flag": "🇰🇲",
+    "capital": "Moroni",
+    "decoys": [
+      "Victoria",
+      "Antananarivo",
+      "Port Louis"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Liechtenstein",
+    "flag": "🇱🇮",
+    "capital": "Vaduz",
+    "decoys": [
+      "Bern",
+      "Vienna",
+      "Luxembourg"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Palau",
+    "flag": "🇵🇼",
+    "capital": "Ngerulmud",
+    "decoys": [
+      "Koror",
+      "Melekeok",
+      "Majuro"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Lesotho",
+    "flag": "🇱🇸",
+    "capital": "Maseru",
+    "decoys": [
+      "Mbabane",
+      "Gaborone",
+      "Pretoria"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Guyana",
+    "flag": "🇬🇾",
+    "capital": "Georgetown",
+    "decoys": [
+      "Paramaribo",
+      "Cayenne",
+      "Caracas"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Kiribati",
+    "flag": "🇰🇮",
+    "capital": "Tarawa",
+    "decoys": [
+      "Funafuti",
+      "Majuro",
+      "Yaren"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "North Macedonia",
+    "flag": "🇲🇰",
+    "capital": "Skopje",
+    "decoys": [
+      "Tirana",
+      "Pristina",
+      "Sofia"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Montenegro",
+    "flag": "🇲🇪",
+    "capital": "Podgorica",
+    "decoys": [
+      "Sarajevo",
+      "Tirana",
+      "Belgrade"
+    ],
+    "tier": "hard"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "flag": "🇬🇶",
+    "capital": "Malabo",
+    "decoys": [
+      "Libreville",
+      "Yaoundé",
+      "Bangui"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Mauritania",
+    "flag": "🇲🇷",
+    "capital": "Nouakchott",
+    "decoys": [
+      "Bamako",
+      "Dakar",
+      "Niamey"
+    ],
+    "tier": "extreme"
   }
 ]

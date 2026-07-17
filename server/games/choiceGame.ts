@@ -75,16 +75,18 @@ export function tierNum(t?: Tier): number {
 
 // Per-difficulty-level tier recipes (7 entries = one MIN_ROUNDS cycle).
 // Each session block of 7 rounds is an independently shuffled copy, so the harder questions
-// don't always land in the same positions. Counts per block:
-//   easy:      3×easy, 2×medium, 1×hard, 1×extreme
-//   hard:      1×easy, 2×medium, 3×hard, 1×extreme
-//   very hard: 0×easy, 1×medium, 3×hard, 3×extreme
-//   extreme:   0×easy, 0×medium, 1×hard, 6×extreme
+// don't always land in the same positions. Hard-only floor: NO easy/medium questions are ever
+// served — the lowest level already starts at hard, and difficulty scales UP into extreme.
+// Counts per block (tier codes: 2=hard, 3=extreme):
+//   level 0 (low stake):   5×hard, 2×extreme
+//   level 1:               4×hard, 3×extreme
+//   level 2:               2×hard, 5×extreme
+//   level 3 (high stake):  0×hard, 7×extreme
 const TIER_RECIPES: readonly number[][] = [
-  [0, 0, 0, 1, 1, 2, 3], // easy      (d < 1/4)
-  [0, 1, 1, 2, 2, 2, 3], // hard      (1/4 ≤ d < 1/2)
-  [1, 2, 2, 2, 3, 3, 3], // very hard (1/2 ≤ d < 3/4)
-  [2, 3, 3, 3, 3, 3, 3], // extreme   (d ≥ 3/4)
+  [2, 2, 2, 2, 2, 3, 3], // hard floor   (d < 1/4)
+  [2, 2, 2, 2, 3, 3, 3], // harder       (1/4 ≤ d < 1/2)
+  [2, 2, 3, 3, 3, 3, 3], // very hard    (1/2 ≤ d < 3/4)
+  [3, 3, 3, 3, 3, 3, 3], // all extreme  (d ≥ 3/4)
 ];
 
 function diffLevel(d: number): number {

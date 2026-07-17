@@ -42,40 +42,41 @@ describe("tieredPickIndex", () => {
     }
   });
 
-  // Tier recipes for 7 rounds (one block = one shuffled copy of the recipe):
-  // easy   (d<0.25): [0,0,0,1,1,2,3] → 3 easy, 2 medium, 1 hard, 1 extreme
-  // hard   (0.25≤d<0.5): [0,1,1,2,2,2,3] → 1 easy, 3 medium, 2 hard, 1 extreme (wait, same seed, check)
-  // v-hard (0.5≤d<0.75): [1,2,2,2,3,3,3] → 0 easy, 1 medium, 3 hard, 3 extreme
-  // extreme(d≥0.75):     [2,3,3,3,3,3,3] → 0 easy, 0 medium, 1 hard, 6 extreme
+  // Tier recipes for 7 rounds (one block = one shuffled copy of the recipe). Hard-only floor —
+  // easy/medium are NEVER scheduled; the lowest level starts at hard and scales into extreme:
+  // level 0 (d<0.25):     [2,2,2,2,2,3,3] → 5 hard, 2 extreme
+  // level 1 (0.25≤d<0.5): [2,2,2,2,3,3,3] → 4 hard, 3 extreme
+  // level 2 (0.5≤d<0.75): [2,2,3,3,3,3,3] → 2 hard, 5 extreme
+  // level 3 (d≥0.75):     [3,3,3,3,3,3,3] → 0 hard, 7 extreme
 
-  it("easy sessions (d<0.25) give exactly 3 easy, 2 medium, 1 hard, 1 extreme across 7 rounds", () => {
+  it("low-stake sessions (d<0.25) give exactly 5 hard, 2 extreme across 7 rounds — no easy/medium", () => {
     const picks = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 42, 0.1));
     const counts = [0, 0, 0, 0];
     for (const idx of picks) counts[tiers[idx]]++;
-    expect(counts[0]).toBe(3); // easy
-    expect(counts[1]).toBe(2); // medium
-    expect(counts[2]).toBe(1); // hard
-    expect(counts[3]).toBe(1); // extreme
+    expect(counts[0]).toBe(0); // easy  — never served
+    expect(counts[1]).toBe(0); // medium — never served
+    expect(counts[2]).toBe(5); // hard
+    expect(counts[3]).toBe(2); // extreme
   });
 
-  it("very hard sessions (0.5≤d<0.75) give exactly 1 medium, 3 hard, 3 extreme across 7 rounds", () => {
+  it("very hard sessions (0.5≤d<0.75) give exactly 2 hard, 5 extreme across 7 rounds", () => {
     const picks = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 42, 0.5));
     const counts = [0, 0, 0, 0];
     for (const idx of picks) counts[tiers[idx]]++;
     expect(counts[0]).toBe(0);
-    expect(counts[1]).toBe(1); // medium
-    expect(counts[2]).toBe(3); // hard
-    expect(counts[3]).toBe(3); // extreme
+    expect(counts[1]).toBe(0);
+    expect(counts[2]).toBe(2); // hard
+    expect(counts[3]).toBe(5); // extreme
   });
 
-  it("extreme sessions (d≥0.75) give exactly 1 hard, 6 extreme across 7 rounds", () => {
+  it("extreme sessions (d≥0.75) give exactly 7 extreme across 7 rounds", () => {
     const picks = Array.from({ length: 7 }, (_, i) => tieredPickIndex(tiers, i, 42, 0.9));
     const counts = [0, 0, 0, 0];
     for (const idx of picks) counts[tiers[idx]]++;
     expect(counts[0]).toBe(0);
-    expect(counts[1]).toBe(0); // medium
-    expect(counts[2]).toBe(1); // hard
-    expect(counts[3]).toBe(6); // extreme
+    expect(counts[1]).toBe(0);
+    expect(counts[2]).toBe(0);
+    expect(counts[3]).toBe(7); // extreme
   });
 
   it("different seeds produce different orderings for the same difficulty", () => {

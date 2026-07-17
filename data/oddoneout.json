@@ -2374,5 +2374,170 @@
     "odd": "Shoemaker-Levy 9",
     "reason": "Shoemaker-Levy 9 impacted Jupiter; the rest are periodic comets",
     "tier": "hard"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Ceres"
+    ],
+    "odd": 3,
+    "reason": "Ceres is a dwarf planet; the others are planets.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Copper",
+      "Bronze",
+      "Iron",
+      "Gold"
+    ],
+    "odd": 1,
+    "reason": "Bronze is an alloy; the others are chemical elements.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Spanish",
+      "Portuguese",
+      "Basque",
+      "Italian"
+    ],
+    "odd": 2,
+    "reason": "Basque is a language isolate; the others are Romance languages.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Helium",
+      "Neon",
+      "Argon",
+      "Nitrogen"
+    ],
+    "odd": 3,
+    "reason": "Nitrogen is not a noble gas; the others are.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Everest",
+      "K2",
+      "Kangchenjunga",
+      "Kilimanjaro"
+    ],
+    "odd": 3,
+    "reason": "Kilimanjaro is in Africa; the others are Himalayan eight-thousanders.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Iron",
+      "Cobalt",
+      "Nickel",
+      "Copper"
+    ],
+    "odd": 3,
+    "reason": "Copper is not ferromagnetic; the others are.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Square",
+      "Rhombus",
+      "Rectangle",
+      "Trapezoid"
+    ],
+    "odd": 3,
+    "reason": "A trapezoid has only one pair of parallel sides; the others are parallelograms.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Whale",
+      "Bat",
+      "Penguin",
+      "Dolphin"
+    ],
+    "odd": 2,
+    "reason": "A penguin is a bird; the others are mammals.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Rome",
+      "Athens",
+      "Cairo",
+      "Carthage"
+    ],
+    "odd": 3,
+    "reason": "Carthage is an ancient ruined city; the others are modern capitals.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Oxygen",
+      "Hydrogen",
+      "Helium",
+      "Water"
+    ],
+    "odd": 3,
+    "reason": "Water is a compound; the others are elements.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Cricket",
+      "Rugby",
+      "Chess",
+      "Tennis"
+    ],
+    "odd": 2,
+    "reason": "Chess is a board game; the others are physical sports.",
+    "tier": "medium"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Bromine",
+      "Water",
+      "Sodium"
+    ],
+    "odd": 3,
+    "reason": "Sodium is solid at room temperature; the others are liquid.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Pythagoras",
+      "Euclid",
+      "Archimedes",
+      "Herodotus"
+    ],
+    "odd": 3,
+    "reason": "Herodotus was a historian; the others were mathematicians.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Diamond",
+      "Graphite",
+      "Quartz",
+      "Fullerene"
+    ],
+    "odd": 2,
+    "reason": "Quartz is silicon dioxide; the others are pure carbon allotropes.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Vulcan"
+    ],
+    "odd": 3,
+    "reason": "Vulcan is a hypothetical planet that does not exist; the others are real.",
+    "tier": "hard"
   }
 ]

@@ -4738,5 +4738,205 @@
     "q": "I'm red but I'm not blood, I'm yellow but I'm not gold, I'm green but I'm not grass. What am I?",
     "a": "A traffic light",
     "tier": "easy"
+  },
+  {
+    "riddle": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+    "correct": "Echo",
+    "decoys": [
+      "Shadow",
+      "Ghost",
+      "Whisper"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has keys but no locks, space but no room, and you can enter but can't go inside?",
+    "correct": "Keyboard",
+    "decoys": [
+      "Piano",
+      "House",
+      "Map"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am not alive, but I grow; I have no lungs, but I need air; I have no mouth, but water kills me. What am I?",
+    "correct": "Fire",
+    "decoys": [
+      "Rust",
+      "A plant",
+      "Ice"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can travel around the world while staying in one corner?",
+    "correct": "A stamp",
+    "decoys": [
+      "A shadow",
+      "The wind",
+      "A clock"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have cities but no houses, forests but no trees, and rivers but no water. What am I?",
+    "correct": "A map",
+    "decoys": [
+      "A painting",
+      "A dream",
+      "A globe"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The one who makes it does not want it; the one who buys it does not use it; the one who uses it cannot see it. What is it?",
+    "correct": "A coffin",
+    "decoys": [
+      "A gravestone",
+      "A gift",
+      "A shroud"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have branches, but no fruit, trunk, or leaves. What am I?",
+    "correct": "A bank",
+    "decoys": [
+      "A river",
+      "A tree stump",
+      "A library"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has a head and a tail but no body?",
+    "correct": "A coin",
+    "decoys": [
+      "A snake",
+      "A comet",
+      "An arrow"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What building has the most stories?",
+    "correct": "A library",
+    "decoys": [
+      "A skyscraper",
+      "A hotel",
+      "A courthouse"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I fly without wings and cry without eyes. Wherever I go, darkness follows. What am I?",
+    "correct": "A cloud",
+    "decoys": [
+      "A shadow",
+      "The night",
+      "A bird"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "correct": "The letter M",
+    "decoys": [
+      "The letter O",
+      "A heartbeat",
+      "A leap year"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "Forward I am heavy, but backward I am not. What word am I?",
+    "correct": "Ton",
+    "decoys": [
+      "God",
+      "Stone",
+      "Live"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has one head, one foot, and four legs?",
+    "correct": "A bed",
+    "decoys": [
+      "A table",
+      "A horse",
+      "A chair"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The more you remove from me, the bigger I get. What am I?",
+    "correct": "A hole",
+    "decoys": [
+      "A debt",
+      "A shadow",
+      "A cloud"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What gets sharper the more you use it?",
+    "correct": "Your brain",
+    "decoys": [
+      "A knife",
+      "A pencil",
+      "A blade"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have a spine but no bones, and I hold stories I never tell aloud. What am I?",
+    "correct": "A book",
+    "decoys": [
+      "A snake",
+      "A ladder",
+      "A hedgehog"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can be cracked, made, told, and played?",
+    "correct": "A joke",
+    "decoys": [
+      "An egg",
+      "A code",
+      "A game"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The more there is, the less you see. What am I?",
+    "correct": "Darkness",
+    "decoys": [
+      "Fog",
+      "Smoke",
+      "Silence"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has thirteen hearts but no other organs?",
+    "correct": "A deck of cards",
+    "decoys": [
+      "An octopus",
+      "A clock",
+      "A calendar"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "Where does today come before yesterday?",
+    "correct": "The dictionary",
+    "decoys": [
+      "A calendar",
+      "A time machine",
+      "A diary"
+    ],
+    "tier": "extreme"
   }
 ]

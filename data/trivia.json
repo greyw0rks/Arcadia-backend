@@ -15398,5 +15398,445 @@
     ],
     "answer": 0,
     "tier": "easy"
+  },
+  {
+    "q": "Who proved Fermat's Last Theorem in 1994?",
+    "options": [
+      "Andrew Wiles",
+      "Grigori Perelman",
+      "Terence Tao",
+      "Alexander Grothendieck"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "The rarest naturally occurring element in Earth's crust is:",
+    "options": [
+      "Astatine",
+      "Francium",
+      "Promethium",
+      "Technetium"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the SI derived unit of magnetic flux?",
+    "options": [
+      "Weber",
+      "Tesla",
+      "Henry",
+      "Gauss"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which German meteorologist proposed continental drift in 1912?",
+    "options": [
+      "Alfred Wegener",
+      "Charles Lyell",
+      "James Hutton",
+      "Harry Hess"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which respiratory pigment carries oxygen in most mollusks and arthropods?",
+    "options": [
+      "Hemocyanin",
+      "Myoglobin",
+      "Chlorocruorin",
+      "Hemerythrin"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "The Chandrasekhar limit is approximately how many solar masses?",
+    "options": [
+      "1.4",
+      "2.5",
+      "3.0",
+      "0.8"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who painted 'The Garden of Earthly Delights'?",
+    "options": [
+      "Hieronymus Bosch",
+      "Pieter Bruegel",
+      "Jan van Eyck",
+      "Albrecht Dürer"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which year was the Rosetta Stone discovered?",
+    "options": [
+      "1799",
+      "1822",
+      "1755",
+      "1801"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the smallest prime number greater than 100?",
+    "options": [
+      "101",
+      "103",
+      "107",
+      "109"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Antikythera mechanism was built by which civilization?",
+    "options": [
+      "Ancient Greek",
+      "Roman",
+      "Egyptian",
+      "Babylonian"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the currency of Bhutan?",
+    "options": [
+      "Ngultrum",
+      "Kip",
+      "Kyat",
+      "Taka"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which physicist formulated the uncertainty principle?",
+    "options": [
+      "Werner Heisenberg",
+      "Niels Bohr",
+      "Erwin Schrödinger",
+      "Max Born"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the hardest mineral after diamond on the Mohs scale?",
+    "options": [
+      "Corundum",
+      "Topaz",
+      "Quartz",
+      "Beryl"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which Roman emperor issued the Edict of Milan in 313 AD?",
+    "options": [
+      "Constantine I",
+      "Diocletian",
+      "Theodosius I",
+      "Nero"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who composed 'The Well-Tempered Clavier'?",
+    "options": [
+      "Johann Sebastian Bach",
+      "George Frideric Handel",
+      "Antonio Vivaldi",
+      "Domenico Scarlatti"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Treaty of Tordesillas (1494) divided the New World between:",
+    "options": [
+      "Spain and Portugal",
+      "England and France",
+      "Spain and France",
+      "Portugal and Netherlands"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the most abundant metal in the Earth's crust?",
+    "options": [
+      "Aluminium",
+      "Iron",
+      "Calcium",
+      "Sodium"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which enzyme unwinds the DNA double helix during replication?",
+    "options": [
+      "Helicase",
+      "Ligase",
+      "Polymerase",
+      "Primase"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who wrote 'Critique of Pure Reason'?",
+    "options": [
+      "Immanuel Kant",
+      "Georg Hegel",
+      "Arthur Schopenhauer",
+      "Friedrich Nietzsche"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which is the largest inland body of water on Earth?",
+    "options": [
+      "Caspian Sea",
+      "Black Sea",
+      "Lake Superior",
+      "Aral Sea"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "A connected acyclic graph is called a:",
+    "options": [
+      "Tree",
+      "Forest",
+      "Clique",
+      "Path"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest moon of Saturn?",
+    "options": [
+      "Titan",
+      "Ganymede",
+      "Rhea",
+      "Iapetus"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which ancient wonder stood in the city of Ephesus?",
+    "options": [
+      "Temple of Artemis",
+      "Colossus of Rhodes",
+      "Hanging Gardens",
+      "Lighthouse of Alexandria"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who is considered the father of modern taxonomy?",
+    "options": [
+      "Carl Linnaeus",
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Georges Cuvier"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What number does the Roman numeral 'CM' represent?",
+    "options": [
+      "900",
+      "1100",
+      "400",
+      "190"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which particle mediates the electromagnetic force?",
+    "options": [
+      "Photon",
+      "Gluon",
+      "W boson",
+      "Graviton"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Maastricht Treaty (1992) established which entity?",
+    "options": [
+      "The European Union",
+      "NATO",
+      "The Eurozone only",
+      "The Council of Europe"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the study of fungi called?",
+    "options": [
+      "Mycology",
+      "Phycology",
+      "Bryology",
+      "Etymology"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Krebs cycle takes place in which part of the mitochondrion?",
+    "options": [
+      "Matrix",
+      "Inner membrane",
+      "Intermembrane space",
+      "Outer membrane"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who wrote the 1924 dystopian novel 'We' that influenced Orwell?",
+    "options": [
+      "Yevgeny Zamyatin",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "H.G. Wells"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the most widely spoken constructed language?",
+    "options": [
+      "Esperanto",
+      "Klingon",
+      "Ido",
+      "Interlingua"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The half-life of Carbon-14 is approximately how many years?",
+    "options": [
+      "5,730",
+      "1,600",
+      "12,000",
+      "4,500"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which metal has the highest melting point?",
+    "options": [
+      "Tungsten",
+      "Rhenium",
+      "Osmium",
+      "Tantalum"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who developed the first successful polio vaccine?",
+    "options": [
+      "Jonas Salk",
+      "Albert Sabin",
+      "Robert Koch",
+      "Louis Pasteur"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Peloponnesian War was fought between Athens and which city-state?",
+    "options": [
+      "Sparta",
+      "Thebes",
+      "Corinth",
+      "Macedon"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the smallest bone in the human body?",
+    "options": [
+      "Stapes",
+      "Malleus",
+      "Incus",
+      "Hyoid"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which mathematician is known for the 'Last Theorem' proven centuries later?",
+    "options": [
+      "Pierre de Fermat",
+      "Blaise Pascal",
+      "René Descartes",
+      "Leonhard Euler"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Voyager 1 probe was launched in which year?",
+    "options": [
+      "1977",
+      "1969",
+      "1981",
+      "1972"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the powerhouse reaction that fuses hydrogen in main-sequence stars?",
+    "options": [
+      "Proton-proton chain",
+      "CNO cycle only",
+      "Triple-alpha process",
+      "Silicon burning"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which economist wrote 'The General Theory of Employment, Interest and Money'?",
+    "options": [
+      "John Maynard Keynes",
+      "Adam Smith",
+      "Milton Friedman",
+      "David Ricardo"
+    ],
+    "answer": 0,
+    "tier": "hard"
   }
 ]
