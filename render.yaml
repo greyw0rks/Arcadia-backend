@@ -38,6 +38,13 @@ services:
       - key: NEXT_PUBLIC_WC_PROJECT_ID
         sync: false
       # Server-only SECRETS — set these in the Render dashboard, never commit them.
+      # DATABASE_URL — Postgres connection string. REQUIRED for persistent storage: player profiles,
+      # demo-used gate, game history, the per-game play limit + 2h cooldown (game_cooldowns), and the
+      # game-play log (game_plays, which records WHICH game each wallet played). Without it the app
+      # runs in memory-only dev mode and the cooldown fails OPEN (no enforcement). Provision a Render
+      # PostgreSQL instance (or external Postgres) and paste its Internal Database URL here.
+      - key: DATABASE_URL
+        sync: false
       - key: SETTLEMENT_SIGNER_PRIVATE_KEY
         sync: false
       - key: STACKS_SIGNER_PRIVATE_KEY
