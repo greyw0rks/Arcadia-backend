@@ -4823,5 +4823,370 @@
     "s": "The plural inner ear bone called the stapes is the smallest bone in the body.",
     "a": true,
     "tier": "hard"
+  },
+  {
+    "s": "Bananas grow on trees.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Great Wall of China is visible to the naked eye from the Moon.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Honey never spoils and can last thousands of years if sealed properly.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Mount Everest is the closest point on Earth's surface to the Moon.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Sharks existed before trees did.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Eiffel Tower can grow more than 15 centimetres taller in summer due to heat expansion.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid of Giza.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Venus is the hottest planet in the Solar System, even though Mercury is closer to the Sun.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Humans share about 50 percent of their DNA with bananas.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The shortest war in history lasted less than an hour.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Russia spans more time zones than any other country.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "A single teaspoon of a neutron star would weigh billions of tonnes on Earth.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Wombats produce cube-shaped droppings.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Sahara Desert is the largest desert on Earth.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Alaska is the U.S. state with both the easternmost and westernmost points.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "A jiffy is an actual, measurable unit of time.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The human body has more bacterial cells than human cells.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Canary Islands are named after birds.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "There are more possible arrangements of a shuffled deck of cards than there are atoms on Earth.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Napoleon Bonaparte was unusually short for his era.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Goldfish have a memory span of only a few seconds.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Oxford University is older than the Aztec Empire.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The dot over a lowercase letter i or j is called a tittle.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Antarctica is technically the largest desert in the world.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Water always drains in the opposite direction in the Southern Hemisphere due to the Coriolis effect.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Some turtles can breathe through their rear ends.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Statue of Liberty was originally a gift from Britain.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "There is enough gold in the Earth's core to coat the entire planet's surface.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Amazon River has more water flow than the next seven largest rivers combined.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Chess was invented in China.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Hot water can freeze faster than cold water under certain conditions.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The blue whale is the largest animal ever known to have lived, larger than any dinosaur.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The country of Monaco is smaller than Central Park in New York City.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Saturn is the only planet in the Solar System with rings.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Hundred Years' War lasted exactly one hundred years.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Sound travels faster through water than through air.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Finland has more islands than any other country in the world.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Humans and giraffes have the same number of bones in their necks.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Pacific Ocean is wider than the Moon's diameter by a factor of more than ten.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Coffee was first discovered and cultivated in Ethiopia.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Vatican City has its own functioning railway station.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The word 'set' has more distinct definitions in English than almost any other word.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Honey never spoils and archaeologists have found edible honey in ancient Egyptian tombs.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The human heart has four chambers.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Mount Everest is the closest point on Earth's surface to outer space.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Bananas are botanically classified as berries, while strawberries are not.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Humans have more bones as adults than they do at birth.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Eiffel Tower can grow more than 15 centimeters taller in summer due to heat expansion.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Sharks existed on Earth before trees did.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The dot over a lowercase 'i' or 'j' is called a tittle.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Sahara Desert is the largest desert in the world.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The tongue is divided into distinct zones that each taste only one flavor, like sweet or bitter.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "There are more possible arrangements of a shuffled deck of 52 cards than there are atoms on Earth.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Statue of Liberty was originally brown before it turned green.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Humans and dinosaurs coexisted for millions of years.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Amazon River flows into the Pacific Ocean.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Blood is blue inside the body and only turns red when exposed to air.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Antarctica is technically the largest desert on Earth.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The inventor of the Pringles can is buried in one.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The average cumulus cloud weighs around a million pounds.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Mona Lisa has no eyebrows.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Russia has a larger surface area than the planet Pluto.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Peanuts are legumes, not true nuts.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The human body contains enough carbon to make about 900 pencils.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Chameleons change color mainly to camouflage themselves.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Betelgeuse is one of the largest stars visible to the naked eye.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Pacific Ocean is wider than the Moon's diameter is around.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Vincent van Gogh sold only one painting during his lifetime.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The word 'set' has one of the largest number of distinct meanings of any word in the English language.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The smallest bone in the human body is located in the ear.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The fear of long words is ironically named with a very long word.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "A bolt of lightning is hotter than the surface of the Sun.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The heart of a blue whale is roughly the size of a small car.",
+    "a": true,
+    "tier": "hard"
   }
 ]

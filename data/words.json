@@ -3328,5 +3328,855 @@
       "ANTECEDENT"
     ],
     "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: EGDELWONK",
+    "correct": "KNOWLEDGE",
+    "decoys": [
+      "CHALLENGE",
+      "EDUCATION",
+      "ADVENTURE"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: RUEDVANTE",
+    "correct": "ADVENTURE",
+    "decoys": [
+      "KNOWLEDGE",
+      "STRUCTURE",
+      "FURNITURE"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: NOIPMACH",
+    "correct": "CHAMPION",
+    "decoys": [
+      "MOUNTAIN",
+      "HOSPITAL",
+      "DIAMONDS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: TIANMOUN",
+    "correct": "MOUNTAIN",
+    "decoys": [
+      "CHAMPION",
+      "FOUNTAIN",
+      "CAPTURED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ILAPTOSH",
+    "correct": "HOSPITAL",
+    "decoys": [
+      "MOUNTAIN",
+      "CHAMPION",
+      "SPIRITED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: RARBILY",
+    "correct": "LIBRARY",
+    "decoys": [
+      "GALLERY",
+      "JOURNEY",
+      "MYSTERY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: PLAHNTEE",
+    "correct": "ELEPHANT",
+    "decoys": [
+      "ALPHABET",
+      "PENTAGON",
+      "DIAGONAL"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ONEETLHPE",
+    "correct": "TELEPHONE",
+    "decoys": [
+      "CHOCOLATE",
+      "CELEBRATE",
+      "CHARACTER"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: TBAHPLEA",
+    "correct": "ALPHABET",
+    "decoys": [
+      "ELEPHANT",
+      "PENTAGON",
+      "CALENDAR"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: DRANECAL",
+    "correct": "CALENDAR",
+    "decoys": [
+      "ALPHABET",
+      "CARDINAL",
+      "DIAGONAL"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: RUATERSE",
+    "correct": "TREASURE",
+    "decoys": [
+      "MEASURED",
+      "CREATURE",
+      "FEATURES"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: TAERUCRE",
+    "correct": "CREATURE",
+    "decoys": [
+      "TREASURE",
+      "FEATURED",
+      "REACTORS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ETALOCCHO",
+    "correct": "CHOCOLATE",
+    "decoys": [
+      "CELEBRATE",
+      "CHARACTER",
+      "COLLECTOR"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BRETALECE",
+    "correct": "CELEBRATE",
+    "decoys": [
+      "CHOCOLATE",
+      "DECORATED",
+      "REFLECTED"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: RETARCHAC",
+    "correct": "CHARACTER",
+    "decoys": [
+      "CHOCOLATE",
+      "CELEBRATE",
+      "CATHEDRAL"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: TUANORTSA",
+    "correct": "ASTRONAUT",
+    "decoys": [
+      "ASTRONOMY",
+      "OUTGROWTH",
+      "STANDOUTS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: MANORYOST",
+    "correct": "ASTRONOMY",
+    "decoys": [
+      "ASTRONAUT",
+      "MONASTERY",
+      "OARSWOMEN"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: PARMETRUEET",
+    "correct": "TEMPERATURE",
+    "decoys": [
+      "ENTERTAINER",
+      "PERMANENTLY",
+      "PREMATURELY"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: TRENIATNENTME",
+    "correct": "ENTERTAINMENT",
+    "decoys": [
+      "ADVERTISEMENT",
+      "ESTABLISHMENT",
+      "ENLIGHTENMENT"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: NIMGIONITAA",
+    "correct": "IMAGINATION",
+    "decoys": [
+      "INSPIRATION",
+      "INFORMATION",
+      "DESTINATION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: RASPINTIONI",
+    "correct": "INSPIRATION",
+    "decoys": [
+      "IMAGINATION",
+      "INFORMATION",
+      "DESTINATION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BATEGELVE",
+    "correct": "VEGETABLE",
+    "decoys": [
+      "VENERABLE",
+      "REGULATED",
+      "GREENBELT"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: TARUANRETS",
+    "correct": "RESTAURANT",
+    "decoys": [
+      "ASTRONAUTS",
+      "STATIONARY",
+      "TRANSLATED"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: GESAPOST",
+    "correct": "POSTAGES",
+    "decoys": [
+      "HOSTAGES",
+      "STORAGES",
+      "GESTAPOS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: THLINGNIG",
+    "correct": "LIGHTNING",
+    "decoys": [
+      "FRIGHTENS",
+      "TIGHTENED",
+      "DELIGHTED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: FYUTBERTL",
+    "correct": "BUTTERFLY",
+    "decoys": [
+      "FLUTTERED",
+      "BUTTERNUT",
+      "FRUITLESS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: CIENDIMES",
+    "correct": "MEDICINES",
+    "decoys": [
+      "INCIDENCE",
+      "DIMENSION",
+      "COMEDIANS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: CIYTELRTECI",
+    "correct": "ELECTRICITY",
+    "decoys": [
+      "ENTERTAINER",
+      "PERMANENTLY",
+      "DISCIPLINES"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: RGPHOGEAY",
+    "correct": "GEOGRAPHY",
+    "decoys": [
+      "BIOGRAPHY",
+      "PARAGRAPH",
+      "AUTOGRAPH"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: HGRIABOPY",
+    "correct": "BIOGRAPHY",
+    "decoys": [
+      "GEOGRAPHY",
+      "AUTOGRAPH",
+      "PARAGRAPH"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: RPAHRGAAP",
+    "correct": "PARAGRAPH",
+    "decoys": [
+      "AUTOGRAPH",
+      "BIOGRAPHY",
+      "GEOGRAPHY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: PORGATUHA",
+    "correct": "AUTOGRAPH",
+    "decoys": [
+      "PARAGRAPH",
+      "BIOGRAPHY",
+      "GEOGRAPHY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: TIVYNIERSU",
+    "correct": "UNIVERSITY",
+    "decoys": [
+      "UNIVERSALS",
+      "INTERVIEWS",
+      "DIVERSIONS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: LANIDRAC",
+    "correct": "CARDINAL",
+    "decoys": [
+      "CALENDAR",
+      "DIAGONAL",
+      "NAUTICAL"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: THALCEDRA",
+    "correct": "CATHEDRAL",
+    "decoys": [
+      "CHARACTER",
+      "CHOCOLATE",
+      "CELEBRATE"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: RUOPANEE",
+    "correct": "EUROPEAN",
+    "decoys": [
+      "OPERATED",
+      "REOPENED",
+      "PERSUADE"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: RALIUATSA",
+    "correct": "AUSTRALIA",
+    "decoys": [
+      "ARTICULAR",
+      "SATURDAYS",
+      "AUDITORIA"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: TAENGMELN",
+    "correct": "GENTLEMAN",
+    "decoys": [
+      "ELEGANTLY",
+      "MAGNESIUM",
+      "REGIMENTS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: DUAINTOCE",
+    "correct": "EDUCATION",
+    "decoys": [
+      "AUCTIONED",
+      "CAUTIONED",
+      "RENOVATED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: WROKESFIR",
+    "correct": "FIREWORKS",
+    "decoys": [
+      "FRAMEWORK",
+      "WOODWORKS",
+      "NETWORKED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: VRECOTINSANO",
+    "correct": "CONSERVATION",
+    "decoys": [
+      "CONVERSATION",
+      "CONSTRUCTION",
+      "CONTRIBUTION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: NASRVOCTIENO",
+    "correct": "CONVERSATION",
+    "decoys": [
+      "CONSERVATION",
+      "CONSTRUCTION",
+      "CONTRIBUTION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: RUCONSTITCNO",
+    "correct": "CONSTRUCTION",
+    "decoys": [
+      "INSTRUCTIONS",
+      "CONSERVATION",
+      "CONTRIBUTION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BURICONTTION",
+    "correct": "CONTRIBUTION",
+    "decoys": [
+      "CONSTRUCTION",
+      "INTRODUCTION",
+      "DISTRIBUTION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: DUCTORINTION",
+    "correct": "INTRODUCTION",
+    "decoys": [
+      "CONTRIBUTION",
+      "DISTRIBUTION",
+      "CONSTRUCTION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BUSTIRDITION",
+    "correct": "DISTRIBUTION",
+    "decoys": [
+      "CONTRIBUTION",
+      "INTRODUCTION",
+      "DESTINATIONS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BRESOVATION",
+    "correct": "OBSERVATION",
+    "decoys": [
+      "RESERVATION",
+      "DESTINATION",
+      "EXPLORATION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: SREVATIONER",
+    "correct": "RESERVATION",
+    "decoys": [
+      "OBSERVATION",
+      "DESTINATION",
+      "INSPIRATION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: GEETABLESV",
+    "correct": "VEGETABLES",
+    "decoys": [
+      "GENERATORS",
+      "REGULATION",
+      "GENERATION"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ROCSRTTA",
+    "correct": "TRACTORS",
+    "decoys": [
+      "CONTRAST",
+      "CARTOONS",
+      "CARROTED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: LRUBALEM",
+    "correct": "UMBRELLA",
+    "decoys": [
+      "BALLROOM",
+      "MARBLING",
+      "GRUMBLED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: NETOLKES",
+    "correct": "SKELETON",
+    "decoys": [
+      "ELECTION",
+      "SNORKELS",
+      "STOCKING"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: IELNGHT",
+    "correct": "LIGHTEN",
+    "decoys": [
+      "NIGHTLY",
+      "RELIGHT",
+      "LENGTHS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: INSNPEO",
+    "correct": "PENSION",
+    "decoys": [
+      "OPTIONS",
+      "PISTONS",
+      "POTIONS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: EAEGRDRN",
+    "correct": "GARDENER",
+    "decoys": [
+      "GRENADES",
+      "ENDANGER",
+      "REGARDED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: NRCADOTIYI",
+    "correct": "DICTIONARY",
+    "decoys": [
+      "DISCOVERY",
+      "DIRECTION",
+      "DIRTINESS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ETRTWEIR",
+    "correct": "WITTERER",
+    "decoys": [
+      "REWRITER",
+      "TWITTERS",
+      "WETTERER"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: TGSREAYT",
+    "correct": "STRATEGY",
+    "decoys": [
+      "GRAYNESS",
+      "TAPESTRY",
+      "GYRATES"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: URFURNTIE",
+    "correct": "FURNITURE",
+    "decoys": [
+      "FUTURISTS",
+      "FRUITERER",
+      "FEATURING"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: NODSAURI",
+    "correct": "DINOSAUR",
+    "decoys": [
+      "SURROUND",
+      "ROUNDISH",
+      "OUTSIDER"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: SOTEBIY",
+    "correct": "OBESITY",
+    "decoys": [
+      "BESTIES",
+      "OBSCENE",
+      "BOOTIES"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: UHSGTILN",
+    "correct": "SUNLIGHT",
+    "decoys": [
+      "HUSTLING",
+      "LENGTHS",
+      "NIGHTLY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: PALTFORM",
+    "correct": "PLATFORM",
+    "decoys": [
+      "FLATWORM",
+      "FOOTMARK",
+      "FORMALLY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ARGAEGB",
+    "correct": "GARBAGE",
+    "decoys": [
+      "BARRAGE",
+      "GRABBER",
+      "CABBAGE"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: RIDPSAEA",
+    "correct": "PARADISE",
+    "decoys": [
+      "APPRAISE",
+      "DISPARAGE",
+      "PARADIGM"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: YOLSPHOIPH",
+    "correct": "PHILOSOPHY",
+    "decoys": [
+      "PSYCHOLOGY",
+      "SYMPHONIES",
+      "PROPHESIES"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: EDENTNDPE",
+    "correct": "DEPENDENT",
+    "decoys": [
+      "PRESIDENT",
+      "PRECEDENT",
+      "PRETENDED"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: AGTMEUNR",
+    "correct": "ARGUMENT",
+    "decoys": [
+      "GARMENTS",
+      "MARGINAL",
+      "MIGRATES"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: CIOTARNE",
+    "correct": "REACTION",
+    "decoys": [
+      "CREATION",
+      "ANORECTIC",
+      "RECITALS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: EGINETRG",
+    "correct": "GREETING",
+    "decoys": [
+      "INTEGERS",
+      "REGENTS",
+      "ENTERING"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: NRORATFSM",
+    "correct": "TRANSFORM",
+    "decoys": [
+      "FROSTBITE",
+      "MARKSMEN",
+      "FRAGMENTS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: RTLOCAIP",
+    "correct": "TROPICAL",
+    "decoys": [
+      "CAPITOLS",
+      "PLACATOR",
+      "PARTICLE"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: WRNEOUFLD",
+    "correct": "WONDERFUL",
+    "decoys": [
+      "FLOUNDERED",
+      "FOUNDERED",
+      "FLOWERBED"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: LXETECNEL",
+    "correct": "EXCELLENT",
+    "decoys": [
+      "EXCELLENCE",
+      "EXCELLING",
+      "EXCELSIOR"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: TNOREDTAO",
+    "correct": "DETONATOR",
+    "decoys": [
+      "ORIENTATED",
+      "DECORATION",
+      "REDACTION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: MVOGNRETNE",
+    "correct": "GOVERNMENT",
+    "decoys": [
+      "MOVEMENTS",
+      "MONUMENTS",
+      "TENEMENTS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: HOOPPATRHG",
+    "correct": "PHOTOGRAPH",
+    "decoys": [
+      "PHONOGRAPH",
+      "PARAGRAPHS",
+      "AUTOGRAPHS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: TNSCTINI",
+    "correct": "INSTINCT",
+    "decoys": [
+      "DISTINCT",
+      "INCITING",
+      "STICKING"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: ERCNYMEO",
+    "correct": "CEREMONY",
+    "decoys": [
+      "ECONOMIC",
+      "MONETARY",
+      "MORPHEME"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: ASEURLVIN",
+    "correct": "UNIVERSAL",
+    "decoys": [
+      "UNRAVELS",
+      "UNSAVORY",
+      "SURVIVAL"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: LLTEEINNITG",
+    "correct": "INTELLIGENT",
+    "decoys": [
+      "ENLIGHTENS",
+      "GENTLENESS",
+      "NEGLIGENCE"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BTAGIOINN",
+    "correct": "OBTAINING",
+    "decoys": [
+      "ABSTAINING",
+      "BOASTING",
+      "BARGAINS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: IIDELESRFN",
+    "correct": "FRIENDLIES",
+    "decoys": [
+      "FRIENDLESS",
+      "FRIENDSHIP",
+      "SPRINKLED"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: LEITCELCAR",
+    "correct": "ELECTRICAL",
+    "decoys": [
+      "ELECTORATE",
+      "RECITALIST",
+      "CLERICALLY"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: GMOTRIRAY",
+    "correct": "MIGRATORY",
+    "decoys": [
+      "GEOMETRIC",
+      "MODERATOR",
+      "GYRATIONS"
+    ],
+    "tier": "extreme"
   }
 ]

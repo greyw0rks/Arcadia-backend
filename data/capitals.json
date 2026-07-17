@@ -3419,5 +3419,27 @@
       "Niamey"
     ],
     "tier": "extreme"
+  },
+  {
+    "country": "The Gambia",
+    "flag": "🇬🇲",
+    "capital": "Banjul",
+    "decoys": [
+      "Bissau",
+      "Dakar",
+      "Conakry"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "country": "Maldives",
+    "flag": "🇲🇻",
+    "capital": "Male",
+    "decoys": [
+      "Colombo",
+      "Victoria",
+      "Port Louis"
+    ],
+    "tier": "extreme"
   }
 ]

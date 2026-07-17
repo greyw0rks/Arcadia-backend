@@ -2539,5 +2539,907 @@
     "odd": 3,
     "reason": "Vulcan is a hypothetical planet that does not exist; the others are real.",
     "tier": "hard"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Europa"
+    ],
+    "odd": 3,
+    "reason": "Europa is a moon of Jupiter; the others are planets.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Amazon",
+      "Nile",
+      "Sahara",
+      "Yangtze"
+    ],
+    "odd": 2,
+    "reason": "The Sahara is a desert; the others are rivers.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Emu",
+      "Ostrich",
+      "Penguin",
+      "Falcon"
+    ],
+    "odd": 3,
+    "reason": "The falcon can fly; the others are flightless birds.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Portugal",
+      "Switzerland",
+      "Spain",
+      "France"
+    ],
+    "odd": 1,
+    "reason": "Switzerland is landlocked; the others border the Atlantic or a sea.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tokyo",
+      "Seoul",
+      "Beijing",
+      "Bangkok"
+    ],
+    "odd": 3,
+    "reason": "Bangkok is in Thailand (Southeast Asia); the others are East Asian capitals.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Saturn",
+      "Jupiter",
+      "Neptune",
+      "Pluto"
+    ],
+    "odd": 3,
+    "reason": "Pluto is a dwarf planet; the others are gas/ice giants.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Tomato",
+      "Cucumber",
+      "Potato",
+      "Pepper"
+    ],
+    "odd": 2,
+    "reason": "The potato is a tuber (root); the others are botanically fruits.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Rome",
+      "Athens",
+      "Cairo",
+      "Madrid"
+    ],
+    "odd": 2,
+    "reason": "Cairo is in Africa; the others are European capitals.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Diamond",
+      "Graphite",
+      "Quartz",
+      "Charcoal"
+    ],
+    "odd": 2,
+    "reason": "Quartz is made of silicon and oxygen; the others are forms of carbon.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Cheetah",
+      "Lion",
+      "Tiger",
+      "Wolf"
+    ],
+    "odd": 3,
+    "reason": "The wolf is a canine; the others are big cats.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Everest",
+      "K2",
+      "Kilimanjaro",
+      "Denali"
+    ],
+    "odd": 2,
+    "reason": "Kilimanjaro is a free-standing volcano; the others are in mountain ranges.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Euro",
+      "Yen",
+      "Peso",
+      "London"
+    ],
+    "odd": 3,
+    "reason": "London is a city; the others are currencies.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Nile",
+      "Amazon",
+      "Mississippi",
+      "Baikal"
+    ],
+    "odd": 3,
+    "reason": "Baikal is a lake; the others are rivers.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Shakespeare",
+      "Dickens",
+      "Tolstoy",
+      "Austen"
+    ],
+    "odd": 2,
+    "reason": "Tolstoy was Russian; the others were British/English writers.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Sparrow",
+      "Robin",
+      "Bat",
+      "Eagle"
+    ],
+    "odd": 2,
+    "reason": "The bat is a mammal; the others are birds.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Gold",
+      "Lead",
+      "Water"
+    ],
+    "odd": 3,
+    "reason": "Water is a compound; the others are metallic elements.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Canada",
+      "Brazil",
+      "Australia",
+      "Japan"
+    ],
+    "odd": 3,
+    "reason": "Japan is an island nation in the Eastern Hemisphere; the others are among the world's largest countries by area.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Basketball",
+      "Tennis",
+      "Soccer",
+      "Golf"
+    ],
+    "odd": 2,
+    "reason": "Soccer is played chiefly with the feet; the others are played with the hands or a hand-held implement.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Spanish",
+      "Italian",
+      "French",
+      "German"
+    ],
+    "odd": 3,
+    "reason": "German is a Germanic language; the others are Romance languages.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Triangle",
+      "Square",
+      "Circle",
+      "Pentagon"
+    ],
+    "odd": 2,
+    "reason": "The circle has no straight sides; the others are polygons.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Apollo",
+      "Zeus",
+      "Athena",
+      "Odin"
+    ],
+    "odd": 3,
+    "reason": "Odin is a Norse god; the others are Greek gods.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Titanic",
+      "Lusitania",
+      "Concorde",
+      "Bismarck"
+    ],
+    "odd": 2,
+    "reason": "The Concorde was an aircraft; the others were ships.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Oxygen",
+      "Hydrogen",
+      "Helium",
+      "Bronze"
+    ],
+    "odd": 3,
+    "reason": "Bronze is an alloy; the others are gaseous elements.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Sahara",
+      "Gobi",
+      "Kalahari",
+      "Amazon"
+    ],
+    "odd": 3,
+    "reason": "The Amazon is a rainforest; the others are deserts.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Venus",
+      "Mars",
+      "Sun",
+      "Jupiter"
+    ],
+    "odd": 2,
+    "reason": "The Sun is a star; the others are planets.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Frog",
+      "Toad",
+      "Newt",
+      "Lizard"
+    ],
+    "odd": 3,
+    "reason": "The lizard is a reptile; the others are amphibians.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Michelangelo",
+      "Leonardo",
+      "Raphael",
+      "Beethoven"
+    ],
+    "odd": 3,
+    "reason": "Beethoven was a composer; the others were Renaissance painters.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mount Fuji",
+      "Vesuvius",
+      "Etna",
+      "Ben Nevis"
+    ],
+    "odd": 3,
+    "reason": "Ben Nevis is not a volcano; the others are volcanoes.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Wheat",
+      "Rice",
+      "Barley",
+      "Lettuce"
+    ],
+    "odd": 3,
+    "reason": "Lettuce is a leafy vegetable; the others are cereal grains.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Pacific",
+      "Atlantic",
+      "Indian",
+      "Caspian"
+    ],
+    "odd": 3,
+    "reason": "The Caspian is a sea/lake; the others are oceans.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Elephant",
+      "Rhino",
+      "Hippo",
+      "Giraffe"
+    ],
+    "odd": 3,
+    "reason": "The giraffe is not classed among the heavyweight thick-skinned pachyderms; the others are pachyderms.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Chess",
+      "Checkers",
+      "Poker",
+      "Backgammon"
+    ],
+    "odd": 2,
+    "reason": "Poker is a card game; the others are board games.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Ruby",
+      "Emerald",
+      "Sapphire",
+      "Pearl"
+    ],
+    "odd": 3,
+    "reason": "A pearl is organic (formed in a mollusc); the others are mineral gemstones.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Norway",
+      "Sweden",
+      "Finland",
+      "Denmark"
+    ],
+    "odd": 2,
+    "reason": "Finland is not part of the Scandinavian Peninsula and its language is non-Germanic; the others are Scandinavian in the strict sense.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Comet",
+      "Asteroid",
+      "Meteor",
+      "Constellation"
+    ],
+    "odd": 3,
+    "reason": "A constellation is a pattern of stars; the others are small solar-system bodies.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Salmon",
+      "Tuna",
+      "Trout",
+      "Octopus"
+    ],
+    "odd": 3,
+    "reason": "The octopus is a mollusc; the others are fish.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Lincoln",
+      "Washington",
+      "Churchill",
+      "Jefferson"
+    ],
+    "odd": 2,
+    "reason": "Churchill was British; the others were U.S. presidents.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Volga",
+      "Danube",
+      "Rhine",
+      "Thames"
+    ],
+    "odd": 0,
+    "reason": "The Volga flows entirely within one country (Russia) into an inland sea; the others flow to the ocean/North Sea.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Maple",
+      "Oak",
+      "Pine",
+      "Birch"
+    ],
+    "odd": 2,
+    "reason": "The pine is a coniferous evergreen; the others are deciduous broadleaf trees.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mona Lisa",
+      "Guernica",
+      "Starry Night",
+      "Hamlet"
+    ],
+    "odd": 3,
+    "reason": "Hamlet is a play; the others are paintings.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Cobra",
+      "Mamba",
+      "Viper",
+      "Anaconda"
+    ],
+    "odd": 3,
+    "reason": "The anaconda is a non-venomous constrictor; the others are venomous snakes.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Great Wall",
+      "Colosseum",
+      "Pyramids",
+      "Big Ben"
+    ],
+    "odd": 3,
+    "reason": "Big Ben is a modern (19th-century) structure; the others are ancient wonders/monuments.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Iceland",
+      "Ireland",
+      "Greenland",
+      "Portugal"
+    ],
+    "odd": 3,
+    "reason": "Portugal is on the European mainland; the others are large islands.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Neptune",
+      "Uranus",
+      "Saturn",
+      "Venus"
+    ],
+    "odd": 3,
+    "reason": "Venus is an inner terrestrial planet; the others are outer giant planets.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Bee",
+      "Ant",
+      "Spider",
+      "Wasp"
+    ],
+    "odd": 2,
+    "reason": "The spider is an arachnid with eight legs; the others are insects with six.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mandarin",
+      "Cantonese",
+      "Hindi",
+      "Japanese"
+    ],
+    "odd": 2,
+    "reason": "Hindi is an Indo-European language; the others are East Asian languages of the Sino-Tibetan or Japonic families spoken in East Asia.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Ringo Starr",
+      "John Lennon",
+      "Paul McCartney",
+      "Mick Jagger"
+    ],
+    "odd": 3,
+    "reason": "Mick Jagger is from the Rolling Stones; the others were Beatles.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Claude Monet",
+      "Ludwig van Beethoven"
+    ],
+    "odd": 3,
+    "reason": "Beethoven was a composer; the others were painters.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Spanish",
+      "Portuguese",
+      "Italian",
+      "Hungarian"
+    ],
+    "odd": 3,
+    "reason": "Hungarian is not a Romance language; the others descend from Latin.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Titanic",
+      "Avatar",
+      "Terminator",
+      "Gladiator"
+    ],
+    "odd": 3,
+    "reason": "Gladiator was directed by Ridley Scott; the others were directed by James Cameron.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Oxygen",
+      "Hydrogen",
+      "Helium",
+      "Mercury"
+    ],
+    "odd": 3,
+    "reason": "Mercury is a liquid metal at room temperature; the others are gases.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Australia",
+      "Greenland",
+      "Madagascar",
+      "Borneo"
+    ],
+    "odd": 0,
+    "reason": "Australia is a continent; the others are islands.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Rome",
+      "Athens",
+      "Cairo",
+      "Sydney"
+    ],
+    "odd": 3,
+    "reason": "Sydney is not a national capital; the others are capital cities.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Bee",
+      "Spider",
+      "Ant",
+      "Beetle"
+    ],
+    "odd": 1,
+    "reason": "A spider has eight legs and is an arachnid; the others are insects.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Guitar",
+      "Violin",
+      "Cello",
+      "Harp"
+    ],
+    "odd": 0,
+    "reason": "A guitar is typically plucked with frets; but more precisely the violin, cello, and harp are all orchestral strings while the guitar is not standard in an orchestra.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Uranus"
+    ],
+    "odd": 3,
+    "reason": "Uranus is named after a Greek god; Mars, Venus, and Jupiter are named after Roman gods.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Cheetah",
+      "Lion",
+      "Leopard",
+      "Wolf"
+    ],
+    "odd": 3,
+    "reason": "A wolf is a canine; the others are big cats.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Nitrogen",
+      "Argon",
+      "Oxygen",
+      "Iron"
+    ],
+    "odd": 3,
+    "reason": "Iron is a solid metal; the others are major gases in Earth's atmosphere.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Michael Jackson",
+      "Prince",
+      "Madonna",
+      "Freddie Mercury"
+    ],
+    "odd": 3,
+    "reason": "Freddie Mercury was primarily a band frontman (Queen); the others were chiefly solo pop stars.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Tokyo",
+      "Beijing",
+      "Bangkok",
+      "Mumbai"
+    ],
+    "odd": 3,
+    "reason": "Mumbai is not a national capital; the others are capital cities.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Photosynthesis",
+      "Respiration",
+      "Digestion",
+      "Gravity"
+    ],
+    "odd": 3,
+    "reason": "Gravity is a physical force; the others are biological processes.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Rectangle",
+      "Rhombus",
+      "Square",
+      "Circle"
+    ],
+    "odd": 3,
+    "reason": "A circle has no straight sides; the others are quadrilaterals.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mozart",
+      "Bach",
+      "Chopin",
+      "Picasso"
+    ],
+    "odd": 3,
+    "reason": "Picasso was a painter; the others were classical composers.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Sun",
+      "Sirius",
+      "Betelgeuse",
+      "Moon"
+    ],
+    "odd": 3,
+    "reason": "The Moon reflects light and is not a star; the others are stars.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Ford",
+      "Ferrari",
+      "Toyota",
+      "Boeing"
+    ],
+    "odd": 3,
+    "reason": "Boeing makes aircraft; the others are car manufacturers.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Penguin",
+      "Ostrich",
+      "Eagle",
+      "Kiwi"
+    ],
+    "odd": 2,
+    "reason": "An eagle can fly; the others are flightless birds.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Great Wall of China",
+      "Colosseum",
+      "Machu Picchu",
+      "Eiffel Tower"
+    ],
+    "odd": 3,
+    "reason": "The Eiffel Tower is a modern structure; the others are ancient constructions.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Bronze",
+      "Brass",
+      "Steel"
+    ],
+    "odd": 0,
+    "reason": "Mercury is a pure element; the others are alloys.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Romeo and Juliet",
+      "Hamlet",
+      "Macbeth",
+      "Oliver Twist"
+    ],
+    "odd": 3,
+    "reason": "Oliver Twist was written by Dickens; the others are Shakespeare plays.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Lithium",
+      "Sodium",
+      "Potassium",
+      "Calcium"
+    ],
+    "odd": 3,
+    "reason": "Calcium is an alkaline earth metal; the others are alkali metals.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Elvis Presley",
+      "Chuck Berry",
+      "Little Richard",
+      "Bob Marley"
+    ],
+    "odd": 3,
+    "reason": "Bob Marley was a reggae artist; the others were early rock and roll pioneers.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Bat",
+      "Owl",
+      "Hawk",
+      "Falcon"
+    ],
+    "odd": 0,
+    "reason": "A bat is a mammal; the others are birds.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Volcano",
+      "Earthquake",
+      "Tsunami",
+      "Rainbow"
+    ],
+    "odd": 3,
+    "reason": "A rainbow is an optical phenomenon; the others are geological or seismic events.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "English",
+      "French",
+      "Latin",
+      "German"
+    ],
+    "odd": 2,
+    "reason": "Latin is a dead language no longer natively spoken; the others are living languages.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Neptune",
+      "Saturn",
+      "Uranus",
+      "Earth"
+    ],
+    "odd": 3,
+    "reason": "Earth is a rocky terrestrial planet; the others are gas or ice giants.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rembrandt"
+    ],
+    "odd": 3,
+    "reason": "Rembrandt was a Dutch Golden Age painter; the others were Italian Renaissance masters.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Beethoven",
+      "Handel",
+      "Vivaldi",
+      "Tchaikovsky"
+    ],
+    "odd": 3,
+    "reason": "Tchaikovsky was a Romantic-era composer; the others belong to the Baroque or Classical eras.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Nile",
+      "Congo",
+      "Zambezi",
+      "Danube"
+    ],
+    "odd": 3,
+    "reason": "The Danube is a European river; the others flow through Africa.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Salt",
+      "Sugar",
+      "Sand",
+      "Water"
+    ],
+    "odd": 3,
+    "reason": "Water is a liquid; the others are solids at room temperature.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Comet",
+      "Asteroid",
+      "Meteor",
+      "Satellite"
+    ],
+    "odd": 3,
+    "reason": "A satellite (like the Moon) orbits a planet; the others travel through space independently.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Beagle",
+      "Poodle",
+      "Cheetah",
+      "Dalmatian"
+    ],
+    "odd": 2,
+    "reason": "A cheetah is a wild cat; the others are dog breeds.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Grape"
+    ],
+    "odd": 2,
+    "reason": "A carrot is a root vegetable; the others are fruits.",
+    "tier": "hard"
   }
 ]

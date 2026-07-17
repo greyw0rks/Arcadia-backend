@@ -15838,5 +15838,940 @@
     ],
     "answer": 0,
     "tier": "hard"
+  },
+  {
+    "q": "Which planet in our solar system has the most known moons?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Uranus",
+      "Neptune"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the capital city of Australia?",
+    "options": [
+      "Canberra",
+      "Sydney",
+      "Melbourne",
+      "Perth"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country has the most time zones (including territories)?",
+    "options": [
+      "France",
+      "Russia",
+      "United States",
+      "United Kingdom"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who wrote the novel 'War and Peace'?",
+    "options": [
+      "Leo Tolstoy",
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Ivan Turgenev"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which year did the RMS Titanic sink?",
+    "options": [
+      "1912",
+      "1905",
+      "1918",
+      "1921"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which African country was formerly known as Abyssinia?",
+    "options": [
+      "Ethiopia",
+      "Somalia",
+      "Sudan",
+      "Eritrea"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the longest river in the world by most measurements?",
+    "options": [
+      "Nile",
+      "Amazon",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which artist painted 'The Persistence of Memory', featuring melting clocks?",
+    "options": [
+      "Salvador Dali",
+      "Pablo Picasso",
+      "Rene Magritte",
+      "Joan Miro"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country hosted the first modern Olympic Games in 1896?",
+    "options": [
+      "Greece",
+      "France",
+      "United States",
+      "United Kingdom"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which composer wrote 'The Four Seasons'?",
+    "options": [
+      "Antonio Vivaldi",
+      "Johann Sebastian Bach",
+      "Wolfgang Amadeus Mozart",
+      "George Frideric Handel"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The ancient city of Petra is located in which modern country?",
+    "options": [
+      "Jordan",
+      "Egypt",
+      "Syria",
+      "Israel"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who was the first woman to win a Nobel Prize?",
+    "options": [
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Dorothy Hodgkin",
+      "Irene Joliot-Curie"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which sea is the saltiest large body of water on Earth?",
+    "options": [
+      "Dead Sea",
+      "Red Sea",
+      "Caspian Sea",
+      "Mediterranean Sea"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which country would you find the ancient ruins of Machu Picchu?",
+    "options": [
+      "Peru",
+      "Bolivia",
+      "Chile",
+      "Ecuador"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which English king had six wives?",
+    "options": [
+      "Henry VIII",
+      "Henry VII",
+      "Edward VI",
+      "Richard III"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest desert in the world?",
+    "options": [
+      "Antarctic Desert",
+      "Sahara Desert",
+      "Arabian Desert",
+      "Gobi Desert"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which band released the album 'The Dark Side of the Moon'?",
+    "options": [
+      "Pink Floyd",
+      "Led Zeppelin",
+      "The Who",
+      "Genesis"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who directed the 1975 film 'Jaws'?",
+    "options": [
+      "Steven Spielberg",
+      "George Lucas",
+      "Martin Scorsese",
+      "Francis Ford Coppola"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What was the name of the first artificial satellite launched into space?",
+    "options": [
+      "Sputnik 1",
+      "Explorer 1",
+      "Vostok 1",
+      "Luna 1"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which year did World War I begin?",
+    "options": [
+      "1914",
+      "1912",
+      "1916",
+      "1918"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which US state is the largest by land area?",
+    "options": [
+      "Alaska",
+      "Texas",
+      "California",
+      "Montana"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which planet is known as the 'Red Planet'?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which author created the detective Hercule Poirot?",
+    "options": [
+      "Agatha Christie",
+      "Arthur Conan Doyle",
+      "Dorothy L. Sayers",
+      "P.D. James"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country won the very first FIFA World Cup in 1930?",
+    "options": [
+      "Uruguay",
+      "Argentina",
+      "Brazil",
+      "Italy"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Great Barrier Reef lies off the coast of which country?",
+    "options": [
+      "Australia",
+      "New Zealand",
+      "Indonesia",
+      "Philippines"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which element has the chemical symbol 'Au'?",
+    "options": [
+      "Gold",
+      "Silver",
+      "Aluminium",
+      "Argon"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who was the Roman goddess of love?",
+    "options": [
+      "Venus",
+      "Juno",
+      "Minerva",
+      "Diana"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "In which century did the Black Death sweep across Europe?",
+    "options": [
+      "14th century",
+      "12th century",
+      "16th century",
+      "10th century"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which strait separates Spain from Morocco?",
+    "options": [
+      "Strait of Gibraltar",
+      "Strait of Hormuz",
+      "Bosphorus Strait",
+      "Strait of Malacca"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who was the first person to reach the South Pole?",
+    "options": [
+      "Roald Amundsen",
+      "Robert Falcon Scott",
+      "Ernest Shackleton",
+      "Fridtjof Nansen"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which novel begins with the line 'Call me Ishmael'?",
+    "options": [
+      "Moby-Dick",
+      "The Old Man and the Sea",
+      "Treasure Island",
+      "Robinson Crusoe"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the currency of Poland?",
+    "options": [
+      "Zloty",
+      "Forint",
+      "Koruna",
+      "Leu"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which river flows through the German city of Cologne?",
+    "options": [
+      "Rhine",
+      "Danube",
+      "Elbe",
+      "Main"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who composed the opera 'The Magic Flute'?",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Giuseppe Verdi",
+      "Richard Wagner",
+      "Giacomo Puccini"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which country was the first to give women the right to vote in national elections?",
+    "options": [
+      "New Zealand",
+      "United States",
+      "United Kingdom",
+      "Australia"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "The Hagia Sophia is located in which modern city?",
+    "options": [
+      "Istanbul",
+      "Athens",
+      "Rome",
+      "Jerusalem"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which US President delivered the Gettysburg Address?",
+    "options": [
+      "Abraham Lincoln",
+      "Ulysses S. Grant",
+      "Andrew Johnson",
+      "James Buchanan"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the tallest waterfall in the world?",
+    "options": [
+      "Angel Falls",
+      "Niagara Falls",
+      "Victoria Falls",
+      "Iguazu Falls"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which Italian explorer gave his name to the Americas?",
+    "options": [
+      "Amerigo Vespucci",
+      "Christopher Columbus",
+      "Marco Polo",
+      "John Cabot"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "In Greek mythology, who flew too close to the sun with wax wings?",
+    "options": [
+      "Icarus",
+      "Perseus",
+      "Theseus",
+      "Bellerophon"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which country's flag features a maple leaf?",
+    "options": [
+      "Canada",
+      "Lebanon",
+      "Switzerland",
+      "Norway"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who wrote the play 'A Doll's House'?",
+    "options": [
+      "Henrik Ibsen",
+      "Anton Chekhov",
+      "August Strindberg",
+      "George Bernard Shaw"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which mountain is the highest peak in Africa?",
+    "options": [
+      "Mount Kilimanjaro",
+      "Mount Kenya",
+      "Mount Stanley",
+      "Ras Dashen"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "The ruins of Angkor Wat are located in which country?",
+    "options": [
+      "Cambodia",
+      "Thailand",
+      "Vietnam",
+      "Laos"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which scientist proposed the three laws of planetary motion?",
+    "options": [
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Nicolaus Copernicus"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which planet in our solar system has the most moons?",
+    "options": [
+      "Saturn",
+      "Jupiter",
+      "Uranus",
+      "Neptune"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which year did the Titanic sink on its maiden voyage?",
+    "options": [
+      "1912",
+      "1905",
+      "1918",
+      "1923"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country has the most time zones, including its overseas territories?",
+    "options": [
+      "France",
+      "Russia",
+      "United States",
+      "China"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who wrote the epic novel 'War and Peace'?",
+    "options": [
+      "Leo Tolstoy",
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Ivan Turgenev"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which is the only sea on Earth with no coastline?",
+    "options": [
+      "The Sargasso Sea",
+      "The Coral Sea",
+      "The Sea of Japan",
+      "The Caspian Sea"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which artist painted the ceiling of the Sistine Chapel?",
+    "options": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Raphael",
+      "Botticelli"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which gas makes up the largest proportion of Earth's atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which African country was never colonized by a European power?",
+    "options": [
+      "Ethiopia",
+      "Kenya",
+      "Ghana",
+      "Nigeria"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the hardest naturally occurring substance on Earth?",
+    "options": [
+      "Diamond",
+      "Quartz",
+      "Titanium",
+      "Granite"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The currency called the 'yen' belongs to which country?",
+    "options": [
+      "Japan",
+      "China",
+      "South Korea",
+      "Thailand"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which mountain is the tallest measured from its base on the ocean floor to its peak?",
+    "options": [
+      "Mauna Kea",
+      "Mount Everest",
+      "K2",
+      "Denali"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who developed the theory of general relativity?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Niels Bohr",
+      "Max Planck"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which spice, gram for gram, has historically been among the most expensive in the world?",
+    "options": [
+      "Saffron",
+      "Cinnamon",
+      "Cardamom",
+      "Nutmeg"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In Greek mythology, who was the goddess of wisdom?",
+    "options": [
+      "Athena",
+      "Hera",
+      "Artemis",
+      "Aphrodite"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the longest river in the world?",
+    "options": [
+      "The Nile",
+      "The Amazon",
+      "The Yangtze",
+      "The Mississippi"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which planet is the hottest in our solar system?",
+    "options": [
+      "Venus",
+      "Mercury",
+      "Mars",
+      "Jupiter"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who was the first President of the United States?",
+    "options": [
+      "George Washington",
+      "Thomas Jefferson",
+      "John Adams",
+      "Benjamin Franklin"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the national flower of Japan?",
+    "options": [
+      "The cherry blossom",
+      "The lotus",
+      "The chrysanthemum",
+      "The orchid"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which animal is the fastest on land over a short distance?",
+    "options": [
+      "Cheetah",
+      "Pronghorn antelope",
+      "Lion",
+      "Greyhound"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The ancient city of Petra is located in which modern-day country?",
+    "options": [
+      "Jordan",
+      "Egypt",
+      "Syria",
+      "Israel"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which scientist is credited with formulating the laws of motion and universal gravitation?",
+    "options": [
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Johannes Kepler",
+      "Robert Hooke"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which vitamin is produced by the human body when the skin is exposed to sunlight?",
+    "options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin B12"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country produces the most coffee in the world?",
+    "options": [
+      "Brazil",
+      "Colombia",
+      "Vietnam",
+      "Ethiopia"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who wrote the play 'Romeo and Juliet'?",
+    "options": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "Ben Jonson",
+      "Geoffrey Chaucer"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest desert in the world, if the polar deserts are counted?",
+    "options": [
+      "Antarctica",
+      "The Sahara",
+      "The Arabian Desert",
+      "The Gobi"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "The Mona Lisa hangs in which famous museum?",
+    "options": [
+      "The Louvre",
+      "The Uffizi",
+      "The Prado",
+      "The Rijksmuseum"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which country did the Olympic Games originate?",
+    "options": [
+      "Greece",
+      "Italy",
+      "Egypt",
+      "Turkey"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the tallest species of animal alive today?",
+    "options": [
+      "Giraffe",
+      "African elephant",
+      "Ostrich",
+      "Polar bear"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who painted 'The Starry Night'?",
+    "options": [
+      "Vincent van Gogh",
+      "Claude Monet",
+      "Paul Cezanne",
+      "Edvard Munch"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country is home to the world's largest population of wild kangaroos?",
+    "options": [
+      "Australia",
+      "New Zealand",
+      "South Africa",
+      "Argentina"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Sahara Desert spans most of which continent's northern region?",
+    "options": [
+      "Africa",
+      "Asia",
+      "Australia",
+      "South America"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which sea creature has three hearts and blue blood?",
+    "options": [
+      "Octopus",
+      "Jellyfish",
+      "Starfish",
+      "Sea turtle"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "What is the most widely spoken native language in the world by number of first-language speakers?",
+    "options": [
+      "Mandarin Chinese",
+      "English",
+      "Spanish",
+      "Hindi"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which Italian city is famous for its canals and gondolas?",
+    "options": [
+      "Venice",
+      "Florence",
+      "Milan",
+      "Naples"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who is credited with inventing the telephone?",
+    "options": [
+      "Alexander Graham Bell",
+      "Thomas Edison",
+      "Nikola Tesla",
+      "Guglielmo Marconi"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which is the only mammal capable of true, sustained flight?",
+    "options": [
+      "The bat",
+      "The flying squirrel",
+      "The sugar glider",
+      "The colugo"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which fruit was historically known as a 'love apple' in parts of Europe?",
+    "options": [
+      "The tomato",
+      "The pomegranate",
+      "The peach",
+      "The apricot"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who composed the 'Ninth Symphony', which includes the 'Ode to Joy'?",
+    "options": [
+      "Ludwig van Beethoven",
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach",
+      "Franz Schubert"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest species of shark, which feeds mainly on plankton?",
+    "options": [
+      "Whale shark",
+      "Great white shark",
+      "Basking shark",
+      "Tiger shark"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which ancient wonder of the world still stands largely intact today?",
+    "options": [
+      "The Great Pyramid of Giza",
+      "The Hanging Gardens of Babylon",
+      "The Colossus of Rhodes",
+      "The Lighthouse of Alexandria"
+    ],
+    "answer": 0,
+    "tier": "hard"
   }
 ]

@@ -2772,5 +2772,235 @@
       "Vikings"
     ],
     "tier": "hard"
+  },
+  {
+    "emoji": "🎃🎄💀",
+    "correct": "The Nightmare Before Christmas",
+    "decoys": [
+      "Corpse Bride",
+      "Coraline",
+      "Frankenweenie"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐺🌕🌲",
+    "correct": "The Wolf of Wall Street",
+    "decoys": [
+      "American Psycho",
+      "Wall Street",
+      "The Big Short"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🔪🚿🏨",
+    "correct": "Psycho",
+    "decoys": [
+      "The Shining",
+      "Vertigo",
+      "Bates Motel"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🚗🛣️👨‍👦",
+    "correct": "The Road",
+    "decoys": [
+      "No Country for Old Men",
+      "Mad Max",
+      "Nomadland"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🦋👗🥊",
+    "correct": "Million Dollar Baby",
+    "decoys": [
+      "The Fighter",
+      "Cinderella Man",
+      "Rocky"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐟🍸💼🕴️",
+    "correct": "The Godfather",
+    "decoys": [
+      "Goodfellas",
+      "Scarface",
+      "Casino"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🕊️🌊⛓️🏝️",
+    "correct": "The Shawshank Redemption",
+    "decoys": [
+      "The Green Mile",
+      "Escape from Alcatraz",
+      "Papillon"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🥁🎷🩸👨‍🏫",
+    "correct": "Whiplash",
+    "decoys": [
+      "La La Land",
+      "Sound of Metal",
+      "Mr. Holland's Opus"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌵🍺🏜️👴",
+    "correct": "Nomadland",
+    "decoys": [
+      "The Rider",
+      "Into the Wild",
+      "Wild"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🤐🦶👣👽",
+    "correct": "A Quiet Place",
+    "decoys": [
+      "Bird Box",
+      "The Silence",
+      "Don't Breathe"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐙👽🛸🈳",
+    "correct": "Arrival",
+    "decoys": [
+      "Contact",
+      "Interstellar",
+      "Annihilation"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌍💤",
+    "correct": "The Day the Earth Stood Still",
+    "decoys": [
+      "Independence Day",
+      "War of the Worlds",
+      "Arrival"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "👨‍🚀🥔🔴",
+    "correct": "The Martian",
+    "decoys": [
+      "Interstellar",
+      "Gravity",
+      "Ad Astra"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌽🕸️🏚️",
+    "correct": "The Texas Chain Saw Massacre",
+    "decoys": [
+      "The Hills Have Eyes",
+      "Wrong Turn",
+      "House of 1000 Corpses"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🔔📕",
+    "correct": "The Bell Jar",
+    "decoys": [
+      "The Great Gatsby",
+      "Catcher in the Rye",
+      "Little Women"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "⚔️☮️",
+    "correct": "War and Peace",
+    "decoys": [
+      "Crime and Punishment",
+      "Anna Karenina",
+      "Doctor Zhivago"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🍞🎯",
+    "correct": "The Hunger Games",
+    "decoys": [
+      "Divergent",
+      "The Maze Runner",
+      "Battle Royale"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐦🔫",
+    "correct": "To Kill a Mockingbird",
+    "decoys": [
+      "The Color Purple",
+      "Of Mice and Men",
+      "The Grapes of Wrath"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "😺🎩",
+    "correct": "The Cat in the Hat",
+    "decoys": [
+      "Green Eggs and Ham",
+      "The Lorax",
+      "Horton Hears a Who"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "👵💨",
+    "correct": "Gone with the Wind",
+    "decoys": [
+      "Casablanca",
+      "Doctor Zhivago",
+      "The Age of Innocence"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌉👨‍👩‍👧",
+    "correct": "A Bridge Too Far",
+    "decoys": [
+      "The Bridge on the River Kwai",
+      "Bridge of Spies",
+      "The Longest Day"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🔥🕊️🃏",
+    "correct": "The Hunger Games: Catching Fire",
+    "decoys": [
+      "Mockingjay",
+      "The Maze Runner",
+      "Divergent"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐺👧🔴",
+    "correct": "Red Riding Hood",
+    "decoys": [
+      "Into the Woods",
+      "Snow White",
+      "Hansel and Gretel"
+    ],
+    "tier": "hard"
   }
 ]

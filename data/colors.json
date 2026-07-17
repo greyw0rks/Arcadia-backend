@@ -268,5 +268,575 @@
       "#DDA8DD"
     ],
     "tier": "hard"
+  },
+  {
+    "name": "Orchid",
+    "hex": "#DA70D6",
+    "decoys": [
+      "#DC74D6",
+      "#D670D6",
+      "#DA70DA"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Tomato",
+    "hex": "#FF6347",
+    "decoys": [
+      "#FF6843",
+      "#FB6347",
+      "#FF6047"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Chocolate",
+    "hex": "#D2691E",
+    "decoys": [
+      "#D46D1E",
+      "#D26522",
+      "#CE691E"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Goldenrod",
+    "hex": "#DAA520",
+    "decoys": [
+      "#DCA924",
+      "#D6A520",
+      "#DAA124"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Sienna",
+    "hex": "#A0522D",
+    "decoys": [
+      "#A2562D",
+      "#9C522D",
+      "#A0522F"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Periwinkle",
+    "hex": "#CCCCFF",
+    "decoys": [
+      "#CCCCFB",
+      "#C8CCFF",
+      "#D0CCFF"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Beige",
+    "hex": "#F5F5DC",
+    "decoys": [
+      "#F5F5D8",
+      "#F3F5DC",
+      "#F7F5DC"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Ivory",
+    "hex": "#FFFFF0",
+    "decoys": [
+      "#FFFFEC",
+      "#FDFFF0",
+      "#FFFDF0"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Tan",
+    "hex": "#D2B48C",
+    "decoys": [
+      "#D4B88C",
+      "#D0B48C",
+      "#D2B488"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Firebrick",
+    "hex": "#B22222",
+    "decoys": [
+      "#B42626",
+      "#B02222",
+      "#B22226"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Peru",
+    "hex": "#CD853F",
+    "decoys": [
+      "#CF893F",
+      "#CB853F",
+      "#CD8543"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Thistle",
+    "hex": "#D8BFD8",
+    "decoys": [
+      "#DAC3D8",
+      "#D4BFD8",
+      "#D8BFD4"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Gainsboro",
+    "hex": "#DCDCDC",
+    "decoys": [
+      "#DEDEDE",
+      "#D8D8D8",
+      "#DCDCD8"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Vermilion",
+    "hex": "#E34234",
+    "decoys": [
+      "#E64634",
+      "#E03E34",
+      "#E34238"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Cerulean",
+    "hex": "#007BA7",
+    "decoys": [
+      "#0080A7",
+      "#0077A7",
+      "#007BAB"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Amaranth",
+    "hex": "#E52B50",
+    "decoys": [
+      "#E82F50",
+      "#E22750",
+      "#E52B54"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Fuchsia",
+    "hex": "#FF00FF",
+    "decoys": [
+      "#FB00FF",
+      "#FF04FF",
+      "#FF00FB"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Mauve",
+    "hex": "#E0B0FF",
+    "decoys": [
+      "#E2B4FF",
+      "#DEB0FF",
+      "#E0B0FB"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Ochre",
+    "hex": "#CC7722",
+    "decoys": [
+      "#CF7B22",
+      "#C97722",
+      "#CC7726"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Viridian",
+    "hex": "#40826D",
+    "decoys": [
+      "#43866D",
+      "#3C826D",
+      "#408271"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Cinnabar",
+    "hex": "#E44D2E",
+    "decoys": [
+      "#E7512E",
+      "#E1492E",
+      "#E44D32"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Byzantium",
+    "hex": "#702963",
+    "decoys": [
+      "#732D63",
+      "#6C2963",
+      "#702967"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Wheat",
+    "hex": "#F5DEB3",
+    "decoys": [
+      "#F5E2B3",
+      "#F3DEB3",
+      "#F5DEB7"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Bisque",
+    "hex": "#FFE4C4",
+    "decoys": [
+      "#FFE8C4",
+      "#FDE4C4",
+      "#FFE4C8"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Seashell",
+    "hex": "#FFF5EE",
+    "decoys": [
+      "#FFF5EA",
+      "#FDF5EE",
+      "#FFF9EE"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Gamboge",
+    "hex": "#E49B0F",
+    "decoys": [
+      "#E79F0F",
+      "#E1970F",
+      "#E49B13"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Celadon",
+    "hex": "#ACE1AF",
+    "decoys": [
+      "#AFE5AF",
+      "#A8E1AF",
+      "#ACE1B3"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Puce",
+    "hex": "#CC8899",
+    "decoys": [
+      "#CF8C99",
+      "#C88899",
+      "#CC889D"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Sangria",
+    "hex": "#92000A",
+    "decoys": [
+      "#95000A",
+      "#8E000A",
+      "#92000E"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Fallow",
+    "hex": "#C19A6B",
+    "decoys": [
+      "#C49E6B",
+      "#BE9A6B",
+      "#C19A6F"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Malachite",
+    "hex": "#0BDA51",
+    "decoys": [
+      "#0EDE51",
+      "#08D651",
+      "#0BDA55"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Aquamarine",
+    "hex": "#7FFFD4",
+    "decoys": [
+      "#82FFD4",
+      "#7CFFD4",
+      "#7FFFD8"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Cornflower Blue",
+    "hex": "#6495ED",
+    "decoys": [
+      "#6799ED",
+      "#6191ED",
+      "#6495F1"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dodger Blue",
+    "hex": "#1E90FF",
+    "decoys": [
+      "#2194FF",
+      "#1B8CFF",
+      "#1E90FB"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Medium Spring Green",
+    "hex": "#00FA9A",
+    "decoys": [
+      "#00FE9A",
+      "#00F69A",
+      "#04FA9A"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Rebecca Purple",
+    "hex": "#663399",
+    "decoys": [
+      "#693799",
+      "#602F99",
+      "#66339D"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Papaya Whip",
+    "hex": "#FFEFD5",
+    "decoys": [
+      "#FFF3D5",
+      "#FDEFD5",
+      "#FFEFD9"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Gold",
+    "hex": "#FFD700",
+    "decoys": [
+      "#FFD600",
+      "#FAD700",
+      "#FFDA00"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Aqua",
+    "hex": "#00FFFF",
+    "decoys": [
+      "#02FFFF",
+      "#00FCFF",
+      "#00FFFC"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "SteelBlue",
+    "hex": "#4682B4",
+    "decoys": [
+      "#4682B2",
+      "#4680B4",
+      "#4884B4"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "SlateGray",
+    "hex": "#708090",
+    "decoys": [
+      "#708092",
+      "#6E8090",
+      "#728290"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "DarkKhaki",
+    "hex": "#BDB76B",
+    "decoys": [
+      "#BDB769",
+      "#BBB76B",
+      "#BFB96B"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "MediumSpringGreen",
+    "hex": "#00FA9A",
+    "decoys": [
+      "#00FA98",
+      "#00F89A",
+      "#02FA9C"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Dark Salmon",
+    "hex": "#E9967A",
+    "decoys": [
+      "#E9967C",
+      "#E79478",
+      "#EB987A"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Medium Orchid",
+    "hex": "#BA55D3",
+    "decoys": [
+      "#BA55D1",
+      "#B855D3",
+      "#BC57D3"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Pale Goldenrod",
+    "hex": "#EEE8AA",
+    "decoys": [
+      "#EEE8A8",
+      "#ECE8AA",
+      "#F0EAAA"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Rosy Brown",
+    "hex": "#BC8F8F",
+    "decoys": [
+      "#BC8F8D",
+      "#BA8F8F",
+      "#BE9191"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Cadet Blue",
+    "hex": "#5F9EA0",
+    "decoys": [
+      "#5F9E9E",
+      "#5D9EA0",
+      "#619EA0"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Dark Sea Green",
+    "hex": "#8FBC8F",
+    "decoys": [
+      "#8FBC8D",
+      "#8DBC8F",
+      "#91BE8F"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Medium Aquamarine",
+    "hex": "#66CDAA",
+    "decoys": [
+      "#66CDA8",
+      "#64CDAA",
+      "#68CFAA"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Sandy Brown",
+    "hex": "#F4A460",
+    "decoys": [
+      "#F4A45E",
+      "#F2A460",
+      "#F6A662"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Dark Violet",
+    "hex": "#9400D3",
+    "decoys": [
+      "#9400D1",
+      "#9200D3",
+      "#9602D3"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Spring Green",
+    "hex": "#00FF7F",
+    "decoys": [
+      "#00FF7D",
+      "#00FD7F",
+      "#02FF81"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Deep Pink",
+    "hex": "#FF1493",
+    "decoys": [
+      "#FF1491",
+      "#FD1493",
+      "#FF1695"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Medium Sea Green",
+    "hex": "#3CB371",
+    "decoys": [
+      "#3CB36F",
+      "#3AB371",
+      "#3EB573"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Slate Blue",
+    "hex": "#6A5ACD",
+    "decoys": [
+      "#6A5ACB",
+      "#685ACD",
+      "#6C5CCD"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "name": "Sea Green",
+    "hex": "#2E8B57",
+    "decoys": [
+      "#2E8B55",
+      "#2C8B57",
+      "#308D59"
+    ],
+    "tier": "extreme"
   }
 ]

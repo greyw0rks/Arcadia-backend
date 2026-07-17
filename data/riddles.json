@@ -4938,5 +4938,505 @@
       "A diary"
     ],
     "tier": "extreme"
+  },
+  {
+    "riddle": "I have keys but open no locks. I have space but no room. You can enter, but you can't go outside. What am I?",
+    "correct": "A keyboard",
+    "decoys": [
+      "A piano",
+      "A prison",
+      "A map"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The more you take of me, the more you leave behind. What am I?",
+    "correct": "Footsteps",
+    "decoys": [
+      "Memories",
+      "Time",
+      "Breath"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am not alive, but I can grow. I don't have lungs, but I need air. I don't have a mouth, but water kills me. What am I?",
+    "correct": "Fire",
+    "decoys": [
+      "Rust",
+      "A crystal",
+      "A cloud"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "The person who makes it has no need of it. The person who buys it has no use for it. The person who uses it can neither see nor feel it. What is it?",
+    "correct": "A coffin",
+    "decoys": [
+      "A gravestone",
+      "A will",
+      "A shroud"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+    "correct": "A map",
+    "decoys": [
+      "A globe",
+      "A painting",
+      "A dream"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has to be broken before you can use it?",
+    "correct": "An egg",
+    "decoys": [
+      "A seal",
+      "A promise",
+      "A code"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I am always in front of you but can't be seen. What am I?",
+    "correct": "The future",
+    "decoys": [
+      "The air",
+      "Your nose",
+      "Your shadow"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has a neck but no head, and wears a cap?",
+    "correct": "A bottle",
+    "decoys": [
+      "A giraffe",
+      "A shirt",
+      "A guitar"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What runs but never walks, has a bed but never sleeps, and has a mouth but never eats?",
+    "correct": "A river",
+    "decoys": [
+      "A clock",
+      "A road",
+      "The wind"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What belongs to you, but other people use it more than you do?",
+    "correct": "Your name",
+    "decoys": [
+      "Your car",
+      "Your shadow",
+      "Your money"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What goes up but never comes back down?",
+    "correct": "Your age",
+    "decoys": [
+      "Smoke",
+      "A balloon",
+      "The tide"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can you catch but never throw?",
+    "correct": "A cold",
+    "decoys": [
+      "A shadow",
+      "A glance",
+      "A wave"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has a thumb and four fingers but is not alive?",
+    "correct": "A glove",
+    "decoys": [
+      "A statue",
+      "A mitten",
+      "A handprint"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can you keep after giving it to someone?",
+    "correct": "Your word",
+    "decoys": [
+      "A gift",
+      "A secret",
+      "A smile"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has legs but doesn't walk?",
+    "correct": "A table",
+    "decoys": [
+      "A ladder",
+      "A snail",
+      "A river"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has words but never speaks?",
+    "correct": "A book",
+    "decoys": [
+      "A parrot",
+      "A sign",
+      "A song"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What breaks when you say it?",
+    "correct": "Silence",
+    "decoys": [
+      "A promise",
+      "A whisper",
+      "A secret"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What flies without wings and cries without eyes?",
+    "correct": "A cloud",
+    "decoys": [
+      "The wind",
+      "A kite",
+      "Time"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can be measured but has no length, width, or height?",
+    "correct": "Temperature",
+    "decoys": [
+      "Time",
+      "Weight",
+      "Volume"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is black when clean and white when dirty?",
+    "correct": "A blackboard",
+    "decoys": [
+      "Coal",
+      "A chimney",
+      "A tyre"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has an eye but cannot blink, and roars but has no throat?",
+    "correct": "A storm",
+    "decoys": [
+      "A hurricane's eye",
+      "The ocean",
+      "A needle"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can hold you back yet doesn't touch you?",
+    "correct": "Fear",
+    "decoys": [
+      "A rule",
+      "Gravity",
+      "The past"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has roots that nobody sees, and is taller than the trees?",
+    "correct": "A mountain",
+    "decoys": [
+      "A tower",
+      "The sky",
+      "A cloud"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What weighs nothing yet the strongest person cannot hold it for long?",
+    "correct": "Your breath",
+    "decoys": [
+      "A shadow",
+      "Water",
+      "A feather"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has a face and two hands but no arms or legs?",
+    "correct": "A clock",
+    "decoys": [
+      "A doll",
+      "A coin",
+      "A mirror"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What follows you everywhere by day but disappears at night?",
+    "correct": "Your shadow",
+    "decoys": [
+      "The sun",
+      "Your reflection",
+      "Your name"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What can be given but not taken, kept but not held?",
+    "correct": "A promise",
+    "decoys": [
+      "A gift",
+      "Trust",
+      "A name"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What is always hungry and must be fed, and the finger it touches soon turns red?",
+    "correct": "Fire",
+    "decoys": [
+      "A stove",
+      "A wound",
+      "The sun"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has branches but no fruit, trunk, or leaves?",
+    "correct": "A bank",
+    "decoys": [
+      "A river",
+      "A family tree",
+      "A railway"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can pass through glass without breaking it?",
+    "correct": "Light",
+    "decoys": [
+      "Air",
+      "Sound",
+      "Heat"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "I have keys but open no locks. I have space but no room. You can enter but can't go inside. What am I?",
+    "correct": "A keyboard",
+    "decoys": [
+      "A piano",
+      "A map",
+      "A house"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has a head, a tail, but no body?",
+    "correct": "A coin",
+    "decoys": [
+      "A snake",
+      "A comet",
+      "An arrow"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has a bark but no bite?",
+    "correct": "A tree",
+    "decoys": [
+      "A puppy",
+      "A whistle",
+      "A drum"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has cities but no houses, forests but no trees, and water but no fish?",
+    "correct": "A map",
+    "decoys": [
+      "A globe",
+      "A painting",
+      "A dream"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has one voice but grows from young to old throughout the day, going on four feet, then two, then three?",
+    "correct": "A human being",
+    "decoys": [
+      "A sphinx",
+      "A shadow",
+      "A tree"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What breaks when you say its name?",
+    "correct": "Silence",
+    "decoys": [
+      "A promise",
+      "A whisper",
+      "Glass"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What flies without wings, cries without eyes, and darkness follows wherever it goes?",
+    "correct": "A cloud",
+    "decoys": [
+      "A ghost",
+      "The wind",
+      "A shadow"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has roots that nobody sees, is taller than trees, yet never grows?",
+    "correct": "A mountain",
+    "decoys": [
+      "A river",
+      "The wind",
+      "A shadow"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "Voiceless it cries, wingless flutters, toothless bites, mouthless mutters. What is it?",
+    "correct": "The wind",
+    "decoys": [
+      "A ghost",
+      "Fire",
+      "A river"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "This thing all things devours: birds, beasts, trees, flowers; gnaws iron, bites steel, grinds hard stones to meal. What is it?",
+    "correct": "Time",
+    "decoys": [
+      "Fire",
+      "Water",
+      "Rust"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "It cannot be seen, cannot be felt, cannot be heard, cannot be smelt. It lies behind stars and under hills, and empty holes it fills. What is it?",
+    "correct": "Darkness",
+    "decoys": [
+      "Silence",
+      "Air",
+      "A shadow"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "Alive without breath, as cold as death; never thirsty, ever drinking, all in mail never clinking. What is it?",
+    "correct": "A fish",
+    "decoys": [
+      "A knight",
+      "A snake",
+      "A ghost"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "A box without hinges, key, or lid, yet golden treasure inside is hid. What is it?",
+    "correct": "An egg",
+    "decoys": [
+      "A pearl",
+      "A nut",
+      "A seed"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What kind of coat is best put on wet?",
+    "correct": "A coat of paint",
+    "decoys": [
+      "A raincoat",
+      "A fur coat",
+      "A wetsuit"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What five-letter word becomes shorter when you add two letters to it, yet gets longer when it loses one?",
+    "correct": "Short",
+    "decoys": [
+      "Small",
+      "Brief",
+      "Slim"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What goes through towns and over hills but never moves?",
+    "correct": "A road",
+    "decoys": [
+      "A river",
+      "A railway",
+      "The wind"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What invention lets you look right through a wall?",
+    "correct": "A window",
+    "decoys": [
+      "A mirror",
+      "A telescope",
+      "X-rays"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What English word has three consecutive double letters?",
+    "correct": "Bookkeeper",
+    "decoys": [
+      "Committee",
+      "Balloon",
+      "Success"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?",
+    "correct": "Fire",
+    "decoys": [
+      "A plant",
+      "Rust",
+      "A candle"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "The person who makes it has no need of it; the person who buys it has no use for it; the person who uses it can neither see nor feel it. What is it?",
+    "correct": "A coffin",
+    "decoys": [
+      "A gravestone",
+      "A shroud",
+      "A will"
+    ],
+    "tier": "extreme"
   }
 ]
