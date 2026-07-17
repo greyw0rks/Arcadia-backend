@@ -23,11 +23,11 @@ export default function FAQPage() {
     },
     {
       question: "Is there a minimum or maximum bet?",
-      answer: "Yes. Bets range from $0.50 to $1 per game. The $1 maximum is enforced on-chain so no session can ever stake more, and the $0.50 minimum keeps every game meaningful.",
+      answer: "Yes. Bets range from $0.10 to $1 per game. The $1 maximum is enforced on-chain so no session can ever stake more, and the $0.10 minimum keeps every game meaningful.",
     },
     {
-      question: "Does the bet size change the difficulty?",
-      answer: "Yes. The higher your bet, the harder the session: you get fewer seconds per question and a shorter, more intense game. Every session is challenging — even the minimum bet plays hard — but a bigger bet means a faster, tougher run with more upside.",
+      question: "Does the bet size change the game?",
+      answer: "Yes — the higher your bet, the more rounds you play: $0.10 is a quick 3-round game, up to 6 rounds at $1. Every session is hard regardless of bet size; a bigger bet just means more rounds and more upside.",
     },
     {
       question: "What is the 3% rake?",

@@ -8,7 +8,7 @@ import { useArcade, isMiniPay } from "../../../lib/useArcade";
 
 const IMAGE_GAMES = new Set(["geo", "landmark", "logo", "movie"]);
 import { formatMultiplier, celoTokenMeta } from "../../../lib/contract";
-import { MAX_STAKE, MIN_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
+import { MAX_STAKE, MIN_STAKE, rawStakeFraction, roundsFor } from "../../../server/difficulty";
 import { useChain } from "../../../lib/chainContext";
 import { ConnectControl } from "../../../components/ConnectControl";
 import { soundManager } from "../../../lib/sounds";
@@ -275,13 +275,12 @@ export default function PlayPage() {
   const up = multiplierBp >= 10000;
   const estPayout = finalBp != null ? (Number(stake) * 0.97 * finalBp) / 10000 : null;
 
-  // Live difficulty preview from the chosen stake (higher bet => harder session).
+  // Live round-count preview from the chosen stake (higher bet => more rounds). Difficulty is fixed
+  // hard for every session, so no difficulty label is shown.
   const stakeNum = Number(stake) || 0;
   const overMax = stakeNum > MAX_STAKE["celo"];
   const underMin = stakeNum > 0 && stakeNum < MIN_STAKE["celo"];
-  const diff = difficultyFromStake(Math.min(stakeNum, MAX_STAKE["celo"]), "celo");
-  const previewRounds = meta ? roundsFor(diff, meta.bankSize) : maxRounds;
-  const diffLabel = diff < 0.34 ? "Easy" : diff < 0.67 ? "Medium" : "Hard";
+  const previewRounds = meta ? roundsFor(rawStakeFraction(stakeNum, "celo"), meta.bankSize) : maxRounds;
 
   return (
     <div className="container">
@@ -320,8 +319,8 @@ export default function PlayPage() {
             below 1.0x). A 3% entry rake applies. Payout = stake × final multiplier.
           </p>
           <p className="muted" style={{ marginTop: 8 }}>
-            <b>The higher your bet, the harder the session</b> — fewer seconds per question, tougher
-            questions, and more rounds. Bet {MIN_STAKE["celo"]}–{MAX_STAKE["celo"]} {stakeSymbol} per game.
+            <b>The higher your bet, the more rounds you play</b> — and every session is hard. Bet{" "}
+            {MIN_STAKE["celo"]}–{MAX_STAKE["celo"]} {stakeSymbol} per game.
           </p>
           <div className="row" style={{ marginTop: 20, justifyContent: "flex-start", gap: 16 }}>
             <input
@@ -339,12 +338,9 @@ export default function PlayPage() {
             </button>
           </div>
           <div className="row" style={{ marginTop: 12, justifyContent: "flex-start", gap: 16 }}>
-            <span className={`difficulty-pill ${diffLabel.toLowerCase()}`}>
-              Difficulty: <b>{diffLabel}</b>
-            </span>
             <span className="muted">
-              {previewRounds} rounds · up to {formatMultiplier(10000 + 1000 * previewRounds)} · shorter
-              timer at higher bets
+              {previewRounds} rounds · up to {formatMultiplier(10000 + 1000 * previewRounds)} · more
+              rounds at higher bets
             </span>
           </div>
           {IMAGE_GAMES.has(game) && (

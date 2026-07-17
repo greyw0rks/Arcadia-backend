@@ -9,7 +9,6 @@ import {
   BPS,
   DEFAULT_RAKE_BPS,
   difficultyFractionBaseUnits,
-  roundsFor,
 } from "../../../server/difficulty";
 import { celoTokenMeta } from "../../../lib/contract";
 

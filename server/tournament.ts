@@ -3,7 +3,9 @@
 // Rules (agreed in spec):
 //   - Prize pool: $50 per week
 //   - Eligibility window: Monday 00:00 UTC → Sunday 23:59 UTC
-//   - Only qualifying games count: difficulty >= 0.5 (stake >= $0.50)
+//   - Only qualifying games count: difficulty >= 0.5. Difficulty is now floored at 0.5 for every
+//     real session (see server/difficulty.ts MIN_DIFFICULTY), so all real games qualify; this gate
+//     still excludes free demo games, whose difficulty is set independently.
 //   - Win rate across qualifying games this week must be >= 95%
 //   - Max 20 qualifying games counted per player per week (first 20 by timestamp)
 //
@@ -15,7 +17,7 @@ import { ensureLeaderboardFresh, getPlayerAggregates } from "./leaderboard";
 // ---- constants ----
 
 export const PRIZE_POOL_USD = 50;
-export const MIN_DIFFICULTY = 0.5; // stake / maxStake threshold for "medium or higher"
+export const MIN_DIFFICULTY = 0.5; // qualifying-difficulty gate (matches the session difficulty floor)
 export const MIN_WIN_RATE = 0.95;  // 95% on qualifying games this week
 export const MAX_QUALIFYING_GAMES = 20;
 

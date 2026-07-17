@@ -22,21 +22,23 @@ export const MAX_STAKE: Record<ChainId, number> = {
   celo: 1,
 };
 
-// Per-session MINIMUM stake in DISPLAY units. Blocks dust bets (e.g. $0.10) that dodge the
-// difficulty floor's intent. $0.50 aligns with the tournament-qualifying threshold (difficulty >= 0.5).
+// Per-session MINIMUM stake in DISPLAY units. Blocks zero/negative bets. Low entry ($0.10) is fine
+// because the difficulty FLOOR (below) keeps every session hard regardless of stake.
 export const MIN_STAKE: Record<ChainId, number> = {
-  celo: 0.5,
+  celo: 0.1,
 };
 
 // Difficulty knobs.
 // Difficulty FLOOR applied to every real session. The bet-scaled fraction is remapped from
 // [0,1] onto [MIN_DIFFICULTY, 1] so even a minimum-stake game is hard. Closes a pool-drain
 // vector: at d=0 the questions were trivial and the timer full, letting a competent player grind
-// low stakes to a reliable +EV multiplier (~1.7x on 7 easy rounds) and slowly drain the treasury.
+// low stakes to a reliable +EV multiplier and slowly drain the treasury.
 export const MIN_DIFFICULTY = 0.5;
 
-export const MIN_ROUNDS = 5; // fewest rounds — served at the HIGHEST stake (short, brutal game)
-export const MAX_ROUNDS = 10; // most rounds — served at the LOWEST stake
+// Round count scales UP with the raw stake (bucketed to hit product anchors):
+//   $0.10 → 3 rounds, $0.30 → 4, $0.50 → 5, $1.00 → 6.
+export const MIN_ROUNDS = 3; // fewest rounds — served at the LOWEST stake
+export const MAX_ROUNDS = 6; // most rounds — served at the HIGHEST stake ($1)
 export const MAX_ROUNDS_CAP = 20; // mirror the contracts' maxRoundsCap; defensive clamp
 export const TIMER_SHRINK = 0.75; // at max difficulty the timer is 25% of its base — brutal
 export const MIN_TIMER_SEC = 3; // hard floor
@@ -59,6 +61,14 @@ function applyFloor(fraction: number): number {
 /** Difficulty fraction from a DISPLAY-unit stake (used by the client preview + /api/session). */
 export function difficultyFromStake(stake: number, chain: ChainId): number {
   return applyFloor((stake || 0) / MAX_STAKE[chain]);
+}
+
+/**
+ * RAW (un-floored) stake fraction in [0,1] = stake / MAX_STAKE. Round count scales with this, NOT
+ * with the floored difficulty — the floor keeps questions hard, while rounds still track the bet.
+ */
+export function rawStakeFraction(stake: number, chain: ChainId): number {
+  return clamp((stake || 0) / MAX_STAKE[chain], 0, 1);
 }
 
 /** Effective (post-rake) max stake in token base units, for the on-chain comparison. */
@@ -89,22 +99,28 @@ export function difficultyFractionBaseUnits(
 export const DEFAULT_RAKE_BPS = 300;
 
 /**
- * Number of rounds for a difficulty fraction, capped by the game's unique-question bank so a session
- * never repeats an entry (the bank pickers are no-repeat only while roundIndex < bankSize).
+ * Number of rounds for a RAW stake fraction (0..1 = stake/MAX_STAKE), capped by the game's
+ * unique-question bank so a session never repeats an entry.
  *
- * INVERTED curve: rounds shrink as difficulty (stake) rises. The lowest stake (d≈floor) gets the
- * most rounds (MAX_ROUNDS); the highest stake (d=1) gets the fewest (MIN_ROUNDS) — a short, brutal
- * game. Fewer rounds at high stake also lowers the payout ceiling (maxMult = 1 + 0.1·rounds),
- * tightening the house's exposure on the biggest bets.
+ * Rounds scale UP with the bet, bucketed to hit the product anchors:
+ *   frac ≤ 0.20 ($0.10–$0.20) → 3 rounds
+ *   frac ≤ 0.40 ($0.30–$0.40) → 4 rounds
+ *   frac ≤ 0.70 ($0.50–$0.70) → 5 rounds
+ *   frac >  0.70 ($0.80–$1.00) → 6 rounds
+ * NOTE: pass the RAW fraction (rawStakeFraction), not the floored difficulty — difficulty is floored
+ * to keep questions hard, but the round count must still track the actual stake.
  */
-export function roundsFor(d: number, bankSize: number): number {
-  const scaled = Math.round(MAX_ROUNDS - clamp(d, 0, 1) * (MAX_ROUNDS - MIN_ROUNDS));
+export function roundsFor(frac: number, bankSize: number): number {
+  const f = clamp(frac, 0, 1);
+  let rounds: number;
+  if (f <= 0.20) rounds = 3;
+  else if (f <= 0.40) rounds = 4;
+  else if (f <= 0.70) rounds = 5;
+  else rounds = 6;
   // Cap at bankSize directly so tiny banks (e.g. 5 movie stills) never repeat questions.
-  // When bankSize < MIN_ROUNDS the floor drops to bankSize too — we'd rather run a short session
-  // than serve a repeated question.
   const ceiling = Math.min(MAX_ROUNDS, MAX_ROUNDS_CAP, bankSize);
   const floor   = Math.min(MIN_ROUNDS, ceiling);
-  return clamp(scaled, floor, ceiling);
+  return clamp(rounds, floor, ceiling);
 }
 
 /** Per-round time limit (seconds) after shrinking the game's base limit by difficulty. */

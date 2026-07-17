@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getGame } from "../../../server/games/registry";
 import { createSession, hasUsedDemo, markDemoUsed } from "../../../server/sessions";
 import { isAddress } from "viem";
-import { MAX_STAKE, MIN_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
+import { MAX_STAKE, MIN_STAKE, difficultyFromStake, rawStakeFraction, roundsFor } from "../../../server/difficulty";
 import { ensureBooted } from "../../../server/bootstrap";
 import { celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
@@ -19,8 +19,9 @@ function parseCeloToken(value: unknown): CeloToken {
     : DEFAULT_CELO_TOKEN;
 }
 
-// Fixed difficulty for the free demo — equivalent to a 1-unit stake (easy end of the curve).
-const DEMO_STAKE_EQUIV = 1;
+// Fixed stake-equivalent for the free demo. Uses the minimum-bet fraction so the demo is a short
+// 3-round taste; difficulty is still floored (hard questions) like every real session.
+const DEMO_STAKE_EQUIV = 0.1;
 
 export async function POST(req: NextRequest) {
   await ensureBooted();
@@ -58,7 +59,7 @@ export async function POST(req: NextRequest) {
       );
     }
     const difficulty = difficultyFromStake(DEMO_STAKE_EQUIV, chain);
-    const maxRounds = roundsFor(difficulty, game.bankSize);
+    const maxRounds = roundsFor(rawStakeFraction(DEMO_STAKE_EQUIV, chain), game.bankSize);
     const session = createSession(game, player, maxRounds, chain, token, {
       isDemo: true,
       difficulty,
@@ -92,8 +93,9 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Bet-scaled round count (the on-chain stake later confirms/overrides this in /api/round).
-  const maxRounds = roundsFor(difficultyFromStake(stake, chain), game.bankSize);
+  // Bet-scaled round count from the RAW stake (the on-chain stake later confirms/overrides this in
+  // /api/round). Difficulty is floored separately so questions stay hard even at the minimum bet.
+  const maxRounds = roundsFor(rawStakeFraction(stake, chain), game.bankSize);
   const session = createSession(game, player, maxRounds, chain, token, { stake });
   return NextResponse.json({
     sessionId: session.id,
