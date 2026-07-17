@@ -187,6 +187,8 @@ export function makeChoiceGame(
         },
         correctIndex,
         deadline: 0, // stamped by the session manager when served
+        servedAt: 0, // stamped by the session manager when served
+        timeLimitMs: 0, // stamped by the session manager when served
       };
     },
   };

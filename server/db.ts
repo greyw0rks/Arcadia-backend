@@ -94,6 +94,25 @@ CREATE TABLE IF NOT EXISTS game_cooldowns (
   updated_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   PRIMARY KEY (address, chain, game_id)
 );
+
+-- Anti-cheat flags: one row per non-clean session verdict (timing analysis at finalize). Source for
+-- manual review, operator alerts, and statistical clawback / wallet denylisting.
+CREATE TABLE IF NOT EXISTS cheat_flags (
+  session_id    TEXT        PRIMARY KEY,
+  player        TEXT        NOT NULL,
+  chain         TEXT        NOT NULL,
+  game_id       TEXT        NOT NULL,
+  verdict       TEXT        NOT NULL,   -- 'suspect' | 'flagged'
+  reasons       JSONB       NOT NULL,
+  stats         JSONB       NOT NULL,   -- SessionTimingStats snapshot
+  stake         NUMERIC,
+  unit          TEXT,
+  multiplier_bp INTEGER     NOT NULL,
+  enforced      BOOLEAN     NOT NULL DEFAULT FALSE,
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS cheat_flags_player ON cheat_flags (player, chain);
 `;
 
 async function runMigrations(): Promise<void> {

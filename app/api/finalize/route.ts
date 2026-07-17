@@ -5,6 +5,10 @@ import { recordCompletedGame } from "../../../server/gameHistory";
 import { DEFAULT_RAKE_BPS, BPS } from "../../../server/difficulty";
 import { celoTokenMeta } from "../../../lib/contract";
 import { ensureBooted } from "../../../server/bootstrap";
+import { summarize, classify, enforcementOn } from "../../../server/anticheat";
+import { sendCheatAlert } from "../../../server/alerts";
+import { getGame } from "../../../server/games/registry";
+import { recordFlag } from "../../../server/cheatLog";
 
 // POST /api/finalize  { sessionId: "0x.." }
 // Computes the final (clamped) multiplier and returns an EIP-712 signature the client submits to
@@ -43,6 +47,61 @@ export async function POST(req: NextRequest) {
   }
 
   const multiplierBp = finalMultiplierBp(session);
+
+  // ── Anti-cheat: classify the session's answer timings ──────────────────────
+  // Only meaningful for real (staked) sessions with a positive payout at risk.
+  const stats = summarize(session.timings);
+  const cls = classify(stats);
+  if (cls.verdict !== "clean") {
+    const enforced = enforcementOn() && cls.verdict === "flagged";
+    const game = getGame(session.gameId);
+    const unit = celoTokenMeta(session.token).symbol;
+
+    // Always persist the flag + timing stats for later review / statistical clawback.
+    recordFlag({
+      sessionId: session.id,
+      player: session.player,
+      chain: session.chain,
+      gameId: session.gameId,
+      verdict: cls.verdict,
+      reasons: cls.reasons,
+      stats,
+      stake: session.stake,
+      unit,
+      multiplierBp,
+      enforced,
+    });
+
+    console.warn(
+      `[anticheat] ${cls.verdict}${enforced ? " ENFORCED" : ""} session=${session.id} player=${session.player} game=${session.gameId} reasons=${JSON.stringify(cls.reasons)} stats=${JSON.stringify(stats)}`
+    );
+
+    // Notify the operator on any non-clean verdict (flagged and suspect).
+    sendCheatAlert({
+      player: session.player,
+      gameId: session.gameId,
+      gameTitle: game?.title ?? session.gameId,
+      sessionId: session.id,
+      chain: session.chain,
+      stake: session.stake,
+      unit,
+      multiplierBp,
+      enforced,
+      classification: cls,
+    });
+
+    // Enforcement (only when ANTICHEAT_ENFORCE=true AND verdict is a hard flag): refuse to sign.
+    // The player's stake is NOT lost — with no signature the session simply can't settle, and it
+    // becomes refundable via the contract's cancelExpired() after the TTL.
+    if (enforced) {
+      session.finalized = true; // block re-attempts at signing
+      return NextResponse.json(
+        { error: "This session was flagged by anti-cheat and cannot be settled. Your stake is refundable after the session expires." },
+        { status: 403 }
+      );
+    }
+  }
+
   const signature = await signSettlement(session.id, multiplierBp, session.token);
   session.finalized = true;
 

@@ -37,6 +37,8 @@ export interface Session {
   answered: number; // rounds scored so far
   finalized: boolean;
   createdAt: number;
+  // Per-answer response timings for anti-cheat analysis (server-measured; served → answered).
+  timings: import("./anticheat").AnswerTiming[];
 }
 
 const SESSIONS = new Map<string, Session>();
@@ -110,6 +112,7 @@ export function createSession(
     answered: 0,
     finalized: false,
     createdAt: Date.now(),
+    timings: [],
   };
   SESSIONS.set(id, s);
   return s;
@@ -137,7 +140,11 @@ export function nextRound(game: GameModule, s: Session) {
   // actual (stake-driven) round count rather than the module's base value.
   round.view.timeLimitSec = scaleTimer(round.view.timeLimitSec, difficulty);
   round.view.totalRounds = s.maxRounds;
-  round.deadline = Date.now() + round.view.timeLimitSec * 1000 + ANSWER_GRACE_MS;
+  const servedAt = Date.now();
+  const timeLimitMs = round.view.timeLimitSec * 1000;
+  round.servedAt = servedAt;
+  round.timeLimitMs = timeLimitMs;
+  round.deadline = servedAt + timeLimitMs + ANSWER_GRACE_MS;
   s.current = round;
   // Strip the answer key before returning to the caller/route.
   return round.view;
@@ -156,10 +163,17 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
   const round = s.current;
   if (!round) return null;
 
-  const onTime = Date.now() <= round.deadline;
+  const now = Date.now();
+  const onTime = now <= round.deadline;
   const result: "correct" | "wrong" =
     onTime && answerIndex === round.correctIndex ? "correct" : "wrong";
   const correctIndex = round.correctIndex;
+
+  // Anti-cheat: record how long the player took (served → answered). Late answers are clamped to the
+  // round's full time budget so timeouts don't skew the "suspiciously fast" stats.
+  const rawMs = now - round.servedAt;
+  const responseMs = onTime ? Math.max(0, rawMs) : round.timeLimitMs;
+  s.timings.push({ responseMs, correct: result === "correct", onTime });
 
   s.multiplierBp = applyResult(s.multiplierBp, result);
   s.answered += 1;

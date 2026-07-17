@@ -52,6 +52,8 @@ export const geoModule: GameModule = {
       },
       correctIndex,
       deadline: 0,
+      servedAt: 0,
+      timeLimitMs: 0,
     };
   },
 };

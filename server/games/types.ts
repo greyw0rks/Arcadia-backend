@@ -20,6 +20,8 @@ export interface RoundState {
   view: RoundView;
   correctIndex: number;
   deadline: number; // ms epoch; answers after this are scored wrong
+  servedAt: number; // ms epoch when the round was served — basis for the anti-cheat response time
+  timeLimitMs: number; // the round's time budget in ms (for computing response time within the round)
 }
 
 export type Scored = "correct" | "wrong";
