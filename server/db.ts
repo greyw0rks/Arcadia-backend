@@ -63,6 +63,36 @@ CREATE TABLE IF NOT EXISTS game_history (
 );
 
 CREATE INDEX IF NOT EXISTS game_history_player ON game_history (player);
+
+-- Permanent, append-only log of every game played (real + demo). Records WHICH game a wallet
+-- played and its on-chain session id — the game identity is not stored on-chain, so this table is
+-- the authoritative answer to "what game did address X play?".
+CREATE TABLE IF NOT EXISTS game_plays (
+  id          BIGSERIAL   PRIMARY KEY,
+  address     TEXT        NOT NULL,
+  chain       TEXT        NOT NULL,
+  game_id     TEXT        NOT NULL,
+  session_id  TEXT,
+  is_demo     BOOLEAN     NOT NULL DEFAULT FALSE,
+  stake       NUMERIC,
+  unit        TEXT,
+  played_at   TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS game_plays_address ON game_plays (address, chain);
+CREATE INDEX IF NOT EXISTS game_plays_session ON game_plays (session_id);
+
+-- Per-(wallet, game) cooldown state. A wallet may play a game up to 5 times; the 5th play starts a
+-- 2-hour lock. After the lock expires the burst counter resets to 0 and another 5 plays are allowed.
+CREATE TABLE IF NOT EXISTS game_cooldowns (
+  address       TEXT        NOT NULL,
+  chain         TEXT        NOT NULL,
+  game_id       TEXT        NOT NULL,
+  burst_count   INTEGER     NOT NULL DEFAULT 0,
+  locked_until  TIMESTAMPTZ,
+  updated_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (address, chain, game_id)
+);
 `;
 
 async function runMigrations(): Promise<void> {

@@ -4,6 +4,7 @@ import { createSession, hasUsedDemo, markDemoUsed } from "../../../server/sessio
 import { isAddress } from "viem";
 import { MAX_STAKE, MIN_STAKE, difficultyFromStake, rawStakeFraction, roundsFor } from "../../../server/difficulty";
 import { ensureBooted } from "../../../server/bootstrap";
+import { consumePlay, logPlay, MAX_PLAYS } from "../../../server/cooldown";
 import { celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
 // POST /api/session  { game, player, token?, stake?, demo? }
@@ -65,6 +66,7 @@ export async function POST(req: NextRequest) {
       difficulty,
     });
     markDemoUsed(player, chain);
+    logPlay({ player, chain, gameId: game.id, sessionId: session.id, isDemo: true });
     return NextResponse.json({
       sessionId: session.id,
       maxRounds: session.maxRounds,
@@ -93,10 +95,32 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // Per-game play limit + cooldown: at most MAX_PLAYS plays of this game per wallet, then a lock.
+  // Consumed here on session start (before any on-chain stake) so a rejected play costs no slot.
+  const cd = await consumePlay(player, chain, game.id);
+  if (!cd.allowed) {
+    const mins = Math.ceil(cd.retryAfterMs / 60000);
+    return NextResponse.json(
+      {
+        error: `You've played ${game.title} ${MAX_PLAYS} times. Cooldown active — try again in about ${mins} minute${mins === 1 ? "" : "s"}.`,
+        cooldown: { lockedUntil: cd.lockedUntil, retryAfterMs: cd.retryAfterMs },
+      },
+      { status: 429 }
+    );
+  }
+
   // Bet-scaled round count from the RAW stake (the on-chain stake later confirms/overrides this in
   // /api/round). Difficulty is floored separately so questions stay hard even at the minimum bet.
   const maxRounds = roundsFor(rawStakeFraction(stake, chain), game.bankSize);
   const session = createSession(game, player, maxRounds, chain, token, { stake });
+  logPlay({
+    player,
+    chain,
+    gameId: game.id,
+    sessionId: session.id,
+    stake,
+    unit: celoTokenMeta(token).symbol,
+  });
   return NextResponse.json({
     sessionId: session.id,
     maxRounds: session.maxRounds,
