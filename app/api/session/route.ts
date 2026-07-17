@@ -5,6 +5,7 @@ import { isAddress } from "viem";
 import { MAX_STAKE, MIN_STAKE, difficultyFromStake, rawStakeFraction, roundsFor } from "../../../server/difficulty";
 import { ensureBooted } from "../../../server/bootstrap";
 import { consumePlay, logPlay, MAX_PLAYS } from "../../../server/cooldown";
+import { isBlacklisted } from "../../../server/blacklist";
 import { celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
 // POST /api/session  { game, player, token?, stake?, demo? }
@@ -49,6 +50,11 @@ export async function POST(req: NextRequest) {
   const game = getGame(gameId);
   if (!game || !game.available) {
     return NextResponse.json({ error: "unknown or unavailable game" }, { status: 404 });
+  }
+
+  // Blacklisted wallets cannot start any session (demo or real).
+  if (isBlacklisted(player, chain)) {
+    return NextResponse.json({ error: "This wallet is not permitted to play." }, { status: 403 });
   }
 
   // ---- free one-time demo ----

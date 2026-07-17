@@ -9,6 +9,7 @@
 // Other:   any URL gets a generic JSON body with the full structured payload.
 
 import type { Classification } from "./anticheat";
+import { sendTelegramCheatAlert } from "./telegram";
 
 export interface CheatAlert {
   player: string;
@@ -41,8 +42,22 @@ function human(a: CheatAlert): string {
 
 /** Send a cheat alert to ALERT_WEBHOOK_URL if configured. Fire-and-forget; errors are swallowed. */
 export function sendCheatAlert(a: CheatAlert): void {
+  // Telegram (with Ignore/Blacklist buttons) is the interactive channel; send it in parallel.
+  sendTelegramCheatAlert({
+    player: a.player,
+    gameId: a.gameId,
+    gameTitle: a.gameTitle,
+    sessionId: a.sessionId,
+    chain: a.chain,
+    stake: a.stake,
+    unit: a.unit,
+    multiplierBp: a.multiplierBp,
+    enforced: a.enforced,
+    classification: a.classification,
+  });
+
   const url = process.env.ALERT_WEBHOOK_URL;
-  if (!url) return; // no webhook configured — the finalize route still logs to stdout
+  if (!url) return; // no generic webhook — Telegram (above) and stdout logging still happen
 
   const text = human(a);
   let body: string;

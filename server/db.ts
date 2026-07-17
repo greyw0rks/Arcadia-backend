@@ -113,6 +113,18 @@ CREATE TABLE IF NOT EXISTS cheat_flags (
 );
 
 CREATE INDEX IF NOT EXISTS cheat_flags_player ON cheat_flags (player, chain);
+
+-- Operator-controlled wallet blacklist. A blacklisted wallet cannot start new sessions or have a
+-- session settled. Set manually (e.g. tapping "Blacklist" on a Telegram cheat alert); always active.
+CREATE TABLE IF NOT EXISTS blacklist (
+  address     TEXT        NOT NULL,
+  chain       TEXT        NOT NULL,
+  reason      TEXT,
+  session_id  TEXT,
+  added_by    TEXT,
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (address, chain)
+);
 `;
 
 async function runMigrations(): Promise<void> {

@@ -7,6 +7,7 @@ import { celoTokenMeta } from "../../../lib/contract";
 import { ensureBooted } from "../../../server/bootstrap";
 import { summarize, classify, enforcementOn } from "../../../server/anticheat";
 import { sendCheatAlert } from "../../../server/alerts";
+import { isBlacklisted } from "../../../server/blacklist";
 import { getGame } from "../../../server/games/registry";
 import { recordFlag } from "../../../server/cheatLog";
 
@@ -47,6 +48,16 @@ export async function POST(req: NextRequest) {
   }
 
   const multiplierBp = finalMultiplierBp(session);
+
+  // Blacklisted wallets are never settled (manual operator ban; always active). Stake stays
+  // refundable via cancelExpired.
+  if (isBlacklisted(session.player, session.chain)) {
+    session.finalized = true;
+    return NextResponse.json(
+      { error: "This wallet is not permitted to settle. Your stake is refundable after the session expires." },
+      { status: 403 }
+    );
+  }
 
   // ── Anti-cheat: classify the session's answer timings ──────────────────────
   // Only meaningful for real (staked) sessions with a positive payout at risk.

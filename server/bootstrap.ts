@@ -7,6 +7,7 @@ import { initDb } from "./db";
 import { hydrateProfiles } from "./profileStore";
 import { hydrateGameHistory } from "./gameHistory";
 import { hydrateDemoUsed } from "./sessions";
+import { hydrateBlacklist } from "./blacklist";
 
 let booted = false;
 let bootPromise: Promise<void> | null = null;
@@ -16,7 +17,7 @@ export async function ensureBooted(): Promise<void> {
   if (bootPromise) return bootPromise;
   bootPromise = (async () => {
     await initDb();
-    await Promise.all([hydrateProfiles(), hydrateGameHistory(), hydrateDemoUsed()]);
+    await Promise.all([hydrateProfiles(), hydrateGameHistory(), hydrateDemoUsed(), hydrateBlacklist()]);
     booted = true;
   })();
   return bootPromise;
