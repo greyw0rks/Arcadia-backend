@@ -62,3 +62,32 @@ export async function unblacklistPlayer(player: string, chain: ChainId): Promise
   BLACKLIST.delete(key(player, chain));
   await query(`DELETE FROM blacklist WHERE address = $1 AND chain = $2`, [addr(player), chain]);
 }
+
+export interface BlacklistEntry {
+  address: string;
+  chain: string;
+  reason: string | null;
+  sessionId: string | null;
+  addedBy: string | null;
+  createdAt: number;
+}
+
+/** List all blacklisted wallets (most recent first). For the admin review endpoint. */
+export async function listBlacklist(): Promise<BlacklistEntry[]> {
+  const res = await query<{
+    address: string; chain: string; reason: string | null;
+    session_id: string | null; added_by: string | null; created_at: Date;
+  }>(
+    `SELECT address, chain, reason, session_id, added_by, created_at
+     FROM blacklist ORDER BY created_at DESC`
+  );
+  if (!res) return [];
+  return res.rows.map((r) => ({
+    address: r.address,
+    chain: r.chain,
+    reason: r.reason,
+    sessionId: r.session_id,
+    addedBy: r.added_by,
+    createdAt: new Date(r.created_at).getTime(),
+  }));
+}

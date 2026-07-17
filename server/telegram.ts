@@ -102,6 +102,33 @@ export function sendTelegramCheatAlert(a: TelegramCheatAlert): void {
     .finally(() => clearTimeout(timer));
 }
 
+/** Send an arbitrary HTML message with an optional inline keyboard. Fire-and-forget. */
+export function sendTelegramText(
+  html: string,
+  inlineKeyboard?: { text: string; callback_data: string }[][]
+): void {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) return;
+  const body: Record<string, unknown> = {
+    chat_id: chatId,
+    text: html,
+    parse_mode: "HTML",
+    disable_web_page_preview: true,
+  };
+  if (inlineKeyboard) body.reply_markup = { inline_keyboard: inlineKeyboard };
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 4000);
+  void fetch(API(token, "sendMessage"), {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(body),
+    signal: controller.signal,
+  })
+    .catch((e) => console.warn("[telegram] send error:", (e as Error).message))
+    .finally(() => clearTimeout(timer));
+}
+
 /** Answer a callback query (removes the "loading" spinner on the tapped button). Fire-and-forget. */
 export function answerCallbackQuery(callbackQueryId: string, text: string): void {
   const token = process.env.TELEGRAM_BOT_TOKEN;
