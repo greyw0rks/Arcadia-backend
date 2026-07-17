@@ -75,9 +75,9 @@
     "prompt": "Unscramble: INGSIGNALL",
     "correct": "SIGNALLING",
     "decoys": [
-      "SIGNALLING",
       "TARGETING",
-      "MESSAGING"
+      "MESSAGING",
+      "MODELLING"
     ]
   },
   {
@@ -535,8 +535,8 @@
     "correct": "SYMBIOSIS",
     "decoys": [
       "SYNTHESIS",
-      "SYMBIOSIS",
-      "SYMBOLISM"
+      "SYMBOLISM",
+      "METABOLISM"
     ]
   },
   {
@@ -2814,6 +2814,186 @@
       "HEGEMONY",
       "DEMOCRACY",
       "FEDERALISM"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IPITYSEREND",
+    "correct": "SERENDIPITY",
+    "decoys": [
+      "SENSIBILITY",
+      "SUPERIORITY",
+      "SIMPLICITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: POSEJUXTA",
+    "correct": "JUXTAPOSE",
+    "decoys": [
+      "JETTISONED",
+      "JOURNEYED",
+      "JUSTIFIED"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ERALEPHEM",
+    "correct": "EPHEMERAL",
+    "decoys": [
+      "EMPIRICAL",
+      "ETHEREAL",
+      "EPIDERMAL"
+    ]
+  },
+  {
+    "prompt": "Unscramble: TOUSUBIQUI",
+    "correct": "UBIQUITOUS",
+    "decoys": [
+      "UNCTUOUS",
+      "UBIQUITY",
+      "UNANIMOUS"
+    ]
+  },
+  {
+    "prompt": "Unscramble: SENCEQUINTES",
+    "correct": "QUINTESSENCE",
+    "decoys": [
+      "QUARANTINE",
+      "QUERULOUS",
+      "QUOTIDIAN"
+    ]
+  },
+  {
+    "prompt": "Unscramble: LUOUSMELLIF",
+    "correct": "MELLIFLUOUS",
+    "decoys": [
+      "MALICIOUS",
+      "MERITORIOUS",
+      "MELANCHOLY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ACIOUSPERSPIC",
+    "correct": "PERSPICACIOUS",
+    "decoys": [
+      "PERNICIOUS",
+      "PRECOCIOUS",
+      "PERFUNCTORY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: CATEOBFUS",
+    "correct": "OBFUSCATE",
+    "decoys": [
+      "OBLITERATE",
+      "OBSTINATE",
+      "OBJECTIFY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: IGMPARAD",
+    "correct": "PARADIGM",
+    "decoys": [
+      "PARABOLA",
+      "PARAGON",
+      "PARADOX"
+    ]
+  },
+  {
+    "prompt": "Unscramble: RICESOTE",
+    "correct": "ESOTERIC",
+    "decoys": [
+      "ECCENTRIC",
+      "ELECTRIC",
+      "EXOTIC"
+    ]
+  },
+  {
+    "prompt": "Unscramble: HONYCACOP",
+    "correct": "CACOPHONY",
+    "decoys": [
+      "CARTOGRAPHY",
+      "CALLIGRAPHY",
+      "CATASTROPHE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ANTPENCH",
+    "correct": "PENCHANT",
+    "decoys": [
+      "PENDANT",
+      "PENANCE",
+      "PENUMBRA"
+    ]
+  },
+  {
+    "prompt": "Unscramble: HANTSYCOP",
+    "correct": "SYCOPHANT",
+    "decoys": [
+      "SYMPHONY",
+      "SYNTHETIC",
+      "SYNDICATE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ITUDEVICISS",
+    "correct": "VICISSITUDE",
+    "decoys": [
+      "VINDICATION",
+      "VERISIMILITUDE",
+      "VIGILANCE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: QUITYPROPIN",
+    "correct": "PROPINQUITY",
+    "decoys": [
+      "PROPRIETY",
+      "PROXIMITY",
+      "PROPENSITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: MITYEQUANI",
+    "correct": "EQUANIMITY",
+    "decoys": [
+      "EQUIVALENCE",
+      "EQUATION",
+      "EQUINOX"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ABLEINEXOR",
+    "correct": "INEXORABLE",
+    "decoys": [
+      "INEVITABLE",
+      "INEXPLICABLE",
+      "INEFFABLE"
+    ]
+  },
+  {
+    "prompt": "Unscramble: OQUYSOLIL",
+    "correct": "SOLILOQUY",
+    "decoys": [
+      "SYMMETRY",
+      "SOVEREIGNTY",
+      "SOLIDARITY"
+    ]
+  },
+  {
+    "prompt": "Unscramble: ATICPHLEGM",
+    "correct": "PHLEGMATIC",
+    "decoys": [
+      "PRAGMATIC",
+      "PROBLEMATIC",
+      "PHOTOGENIC"
+    ]
+  },
+  {
+    "prompt": "Unscramble: UVIANANTEDIL",
+    "correct": "ANTEDILUVIAN",
+    "decoys": [
+      "ANTITHESIS",
+      "ANTAGONIST",
+      "ANTECEDENT"
     ]
   }
 ]

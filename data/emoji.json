@@ -2472,5 +2472,305 @@
       "Spider-Woman",
       "Silk"
     ]
+  },
+  {
+    "emoji": "🕷️🕸️👨",
+    "correct": "Spider-Man",
+    "decoys": [
+      "Venom",
+      "Ant-Man",
+      "Daredevil"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "👑🦁🌅",
+    "correct": "The Lion King",
+    "decoys": [
+      "Madagascar",
+      "Tarzan",
+      "The Jungle Book"
+    ],
+    "tier": "medium"
+  },
+  {
+    "emoji": "🧊❄️👸",
+    "correct": "Frozen",
+    "decoys": [
+      "Moana",
+      "Tangled",
+      "Brave"
+    ],
+    "tier": "medium"
+  },
+  {
+    "emoji": "🚢🧊💔",
+    "correct": "Titanic",
+    "decoys": [
+      "The Poseidon Adventure",
+      "Life of Pi",
+      "Cast Away"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🤡🎈🔴",
+    "correct": "It",
+    "decoys": [
+      "Joker",
+      "The Purge",
+      "Us"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "💊🔵🔴",
+    "correct": "The Matrix",
+    "decoys": [
+      "Inception",
+      "Total Recall",
+      "Tron"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐟🔍👨‍👦",
+    "correct": "Finding Nemo",
+    "decoys": [
+      "Shark Tale",
+      "The Little Mermaid",
+      "Ponyo"
+    ],
+    "tier": "medium"
+  },
+  {
+    "emoji": "🧙‍♂️💍🌋",
+    "correct": "The Lord of the Rings",
+    "decoys": [
+      "The Hobbit",
+      "Harry Potter",
+      "Willow"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🦖🏝️🧬",
+    "correct": "Jurassic Park",
+    "decoys": [
+      "King Kong",
+      "Godzilla",
+      "Kong: Skull Island"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "👽📞🚲",
+    "correct": "E.T.",
+    "decoys": [
+      "Close Encounters",
+      "Flight of the Navigator",
+      "Super 8"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🃏💚🤢",
+    "correct": "Joker",
+    "decoys": [
+      "The Mask",
+      "Batman",
+      "Watchmen"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🧟‍♂️🌍⚔️",
+    "correct": "World War Z",
+    "decoys": [
+      "Train to Busan",
+      "28 Days Later",
+      "I Am Legend"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🕰️🍊👁️",
+    "correct": "A Clockwork Orange",
+    "decoys": [
+      "Fight Club",
+      "Trainspotting",
+      "Requiem for a Dream"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐑🔇👮‍♀️",
+    "correct": "The Silence of the Lambs",
+    "decoys": [
+      "Seven",
+      "Zodiac",
+      "Hannibal"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌽🧒🚜",
+    "correct": "Children of the Corn",
+    "decoys": [
+      "Signs",
+      "The Village",
+      "Midsommar"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🏨💡✨🔦",
+    "correct": "The Shining",
+    "decoys": [
+      "Psycho",
+      "The Others",
+      "Hereditary"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐘👨‍⚕️🎪",
+    "correct": "The Elephant Man",
+    "decoys": [
+      "Freaks",
+      "Nightmare Alley",
+      "The Greatest Showman"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🎭👑🗡️",
+    "correct": "Hamlet",
+    "decoys": [
+      "Macbeth",
+      "Gladiator",
+      "Braveheart"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐀🍲👨‍🍳",
+    "correct": "Ratatouille",
+    "decoys": [
+      "Chef",
+      "Burnt",
+      "Julie & Julia"
+    ],
+    "tier": "medium"
+  },
+  {
+    "emoji": "🤖❤️🌱",
+    "correct": "WALL-E",
+    "decoys": [
+      "Big Hero 6",
+      "The Iron Giant",
+      "Chappie"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🎈🏠👴",
+    "correct": "Up",
+    "decoys": [
+      "Home",
+      "Rio",
+      "The House"
+    ],
+    "tier": "medium"
+  },
+  {
+    "emoji": "🧠🎢😢😠",
+    "correct": "Inside Out",
+    "decoys": [
+      "Soul",
+      "Coco",
+      "Turning Red"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🕶️🌌👥",
+    "correct": "Men in Black",
+    "decoys": [
+      "Independence Day",
+      "District 9",
+      "Arrival"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "⏰🔁📻",
+    "correct": "Groundhog Day",
+    "decoys": [
+      "Palm Springs",
+      "Edge of Tomorrow",
+      "About Time"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐷🕷️🕸️",
+    "correct": "Charlotte's Web",
+    "decoys": [
+      "Babe",
+      "Ratatouille",
+      "Stuart Little"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🎩🐰⏳",
+    "correct": "Alice in Wonderland",
+    "decoys": [
+      "Peter Pan",
+      "The Wizard of Oz",
+      "Coraline"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🦇👨🌃",
+    "correct": "Batman",
+    "decoys": [
+      "The Crow",
+      "Daredevil",
+      "Watchmen"
+    ],
+    "tier": "medium"
+  },
+  {
+    "emoji": "🌊🐠👑",
+    "correct": "Aquaman",
+    "decoys": [
+      "Moana",
+      "The Meg",
+      "Waterworld"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🍫🏭🎫",
+    "correct": "Charlie and the Chocolate Factory",
+    "decoys": [
+      "Willy Wonka",
+      "Matilda",
+      "The BFG"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐉🏰🔥",
+    "correct": "Game of Thrones",
+    "decoys": [
+      "The Witcher",
+      "House of the Dragon",
+      "Vikings"
+    ],
+    "tier": "hard"
   }
 ]
