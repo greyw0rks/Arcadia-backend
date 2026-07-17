@@ -21,6 +21,7 @@ export interface CheatAlert {
   unit?: string;
   multiplierBp: number;
   enforced: boolean; // true = settlement was actually denied; false = detect-only (still paid)
+  watched?: boolean; // wallet is on the watchlist → raise a louder alert
   classification: Classification;
 }
 
@@ -53,6 +54,7 @@ export function sendCheatAlert(a: CheatAlert): void {
     unit: a.unit,
     multiplierBp: a.multiplierBp,
     enforced: a.enforced,
+    watched: a.watched,
     classification: a.classification,
   });
 

@@ -8,6 +8,7 @@ import { ensureBooted } from "../../../server/bootstrap";
 import { summarize, classify, enforcementOn } from "../../../server/anticheat";
 import { sendCheatAlert } from "../../../server/alerts";
 import { isBlacklisted } from "../../../server/blacklist";
+import { isWatched } from "../../../server/watchlist";
 import { getGame } from "../../../server/games/registry";
 import { recordFlag } from "../../../server/cheatLog";
 
@@ -98,6 +99,7 @@ export async function POST(req: NextRequest) {
       unit,
       multiplierBp,
       enforced,
+      watched: isWatched(session.player, session.chain),
       classification: cls,
     });
 

@@ -125,6 +125,17 @@ CREATE TABLE IF NOT EXISTS blacklist (
   created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   PRIMARY KEY (address, chain)
 );
+
+-- Watchlist: wallets to keep an eye on WITHOUT blocking them. A flag on a watched wallet raises a
+-- louder alert. Operator-managed via the Telegram bot.
+CREATE TABLE IF NOT EXISTS watchlist (
+  address     TEXT        NOT NULL,
+  chain       TEXT        NOT NULL,
+  note        TEXT,
+  added_by    TEXT,
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (address, chain)
+);
 `;
 
 async function runMigrations(): Promise<void> {

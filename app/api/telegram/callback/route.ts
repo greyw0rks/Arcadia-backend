@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ensureBooted } from "../../../../server/bootstrap";
 import { blacklistPlayer, unblacklistPlayer } from "../../../../server/blacklist";
-import { answerCallbackQuery, editMessageText } from "../../../../server/telegram";
+import { answerCallbackQuery, editMessageText, sendTelegramText } from "../../../../server/telegram";
+import { handleCommand, isAdminUser } from "../../../../server/telegramCommands";
 
 // POST /api/telegram/callback
 // Telegram's webhook target for inline-button taps on cheat alerts. Registered once via setWebhook
@@ -32,7 +33,24 @@ export async function POST(req: NextRequest) {
 
   const cb = update?.callback_query;
   if (!cb) {
-    // Not a button tap (e.g. a plain message). Nothing to do — ack.
+    // Not a button tap — check for a text command message from an allowlisted admin.
+    const msg = update?.message;
+    const text: string = msg?.text ?? "";
+    if (text.startsWith("/")) {
+      const fromId = msg?.from?.id;
+      if (!isAdminUser(fromId)) {
+        // Silently ignore commands from non-admins (don't leak that the bot exists).
+        return NextResponse.json({ ok: true });
+      }
+      const who = msg.from?.username ? `@${msg.from.username}` : String(fromId);
+      try {
+        const reply = await handleCommand(text, who);
+        if (reply) sendTelegramText(reply);
+      } catch (e) {
+        console.warn("[telegram] command failed:", (e as Error).message);
+        sendTelegramText("⚠️ Command failed — check server logs.");
+      }
+    }
     return NextResponse.json({ ok: true });
   }
 

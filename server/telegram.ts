@@ -29,6 +29,7 @@ export interface TelegramCheatAlert {
   unit?: string;
   multiplierBp: number;
   enforced: boolean;
+  watched?: boolean;
   classification: Classification;
 }
 
@@ -42,8 +43,9 @@ function messageHtml(a: TelegramCheatAlert): string {
   const money = a.stake != null ? `${a.stake} ${a.unit ?? ""}`.trim() : "n/a";
   const reasons = a.classification.reasons.map((r) => `• ${esc(r)}`).join("\n");
   const header = a.enforced ? "🚫 <b>Cheat BLOCKED</b>" : "🚨 <b>Suspected cheating</b>";
+  const watchLine = a.watched ? "👁️ <b>ON WATCHLIST</b>\n" : "";
   return [
-    `${header} (${esc(a.classification.verdict)})`,
+    `${watchLine}${header} (${esc(a.classification.verdict)})`,
     ``,
     `<b>Game:</b> ${esc(a.gameTitle)}`,
     `<b>Wallet:</b> <code>${esc(a.player)}</code>`,
