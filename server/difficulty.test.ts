@@ -4,6 +4,7 @@ import {
   BPS,
   STEP_BPS,
   MAX_STAKE,
+  MIN_DIFFICULTY,
   MIN_ROUNDS,
   MAX_ROUNDS,
   MAX_ROUNDS_CAP,
@@ -16,15 +17,21 @@ import {
 } from "./difficulty";
 
 describe("difficultyFromStake", () => {
-  it("is 0 at no stake and 1 at the cap, clamped", () => {
-    expect(difficultyFromStake(0, "celo")).toBe(0);
-    expect(difficultyFromStake(0.5, "celo")).toBeCloseTo(0.5);
+  it("applies the floor at no stake and reaches 1 at the cap, clamped", () => {
+    expect(difficultyFromStake(0, "celo")).toBe(MIN_DIFFICULTY);
+    expect(difficultyFromStake(0.5, "celo")).toBeCloseTo(MIN_DIFFICULTY + (1 - MIN_DIFFICULTY) * 0.5);
     expect(difficultyFromStake(1, "celo")).toBe(1);
     expect(difficultyFromStake(99, "celo")).toBe(1); // clamped
   });
 
   it("clamps an over-cap stake to d=1 (cannot buy past max difficulty)", () => {
     expect(difficultyFromStake(1.000001, "celo")).toBe(1);
+  });
+
+  it("never drops below the difficulty floor (closes the low-stake drain)", () => {
+    for (const s of [0, 0.01, 0.1, 0.25]) {
+      expect(difficultyFromStake(s, "celo")).toBeGreaterThanOrEqual(MIN_DIFFICULTY);
+    }
   });
 });
 
@@ -35,16 +42,17 @@ describe("MAX_STAKE cap", () => {
 });
 
 describe("difficultyFractionBaseUnits", () => {
-  it("is rake-independent: d == stake/maxStake even though both are post-rake", () => {
+  it("is rake-independent and floored: d remaps stake/maxStake onto [MIN_DIFFICULTY, 1]", () => {
     const maxStake = 1_000_000_000_000_000_000n; // 1e18 (cUSD base units)
     const eff = (s: bigint) => (s * BigInt(10000 - DEFAULT_RAKE_BPS)) / 10000n;
+    const floored = (f: number) => MIN_DIFFICULTY + (1 - MIN_DIFFICULTY) * f;
     expect(
       difficultyFractionBaseUnits(eff(maxStake), maxStake, DEFAULT_RAKE_BPS)
     ).toBeCloseTo(1, 4);
     expect(
       difficultyFractionBaseUnits(eff(maxStake / 2n), maxStake, DEFAULT_RAKE_BPS)
-    ).toBeCloseTo(0.5, 4);
-    expect(difficultyFractionBaseUnits(0n, maxStake, DEFAULT_RAKE_BPS)).toBe(0);
+    ).toBeCloseTo(floored(0.5), 4);
+    expect(difficultyFractionBaseUnits(0n, maxStake, DEFAULT_RAKE_BPS)).toBe(MIN_DIFFICULTY);
   });
 
   it("does not lose precision on 18-decimal stakes", () => {
@@ -67,28 +75,29 @@ describe("difficultyFractionBaseUnits", () => {
     expect(maxStakeBase6).toBe(1_000_000n);
 
     const eff = (s: bigint) => (s * BigInt(10000 - DEFAULT_RAKE_BPS)) / 10000n;
+    const floored = (f: number) => MIN_DIFFICULTY + (1 - MIN_DIFFICULTY) * f;
     expect(
       difficultyFractionBaseUnits(eff(maxStakeBase6), maxStakeBase6, DEFAULT_RAKE_BPS)
     ).toBeCloseTo(1, 4);
     expect(
       difficultyFractionBaseUnits(eff(maxStakeBase6 / 2n), maxStakeBase6, DEFAULT_RAKE_BPS)
-    ).toBeCloseTo(0.5, 4);
-    expect(difficultyFractionBaseUnits(0n, maxStakeBase6, DEFAULT_RAKE_BPS)).toBe(0);
+    ).toBeCloseTo(floored(0.5), 4);
+    expect(difficultyFractionBaseUnits(0n, maxStakeBase6, DEFAULT_RAKE_BPS)).toBe(MIN_DIFFICULTY);
   });
 });
 
 describe("roundsFor", () => {
-  it("scales from MIN_ROUNDS to MAX_ROUNDS with the bet", () => {
+  it("INVERTS with the bet: most rounds at low stake, fewest at high stake", () => {
     const big = 100000; // a bank that never caps
-    expect(roundsFor(0, big)).toBe(MIN_ROUNDS);
-    expect(roundsFor(1, big)).toBe(MAX_ROUNDS);
+    expect(roundsFor(0, big)).toBe(MAX_ROUNDS);
+    expect(roundsFor(1, big)).toBe(MIN_ROUNDS);
     expect(roundsFor(0.5, big)).toBe(Math.round((MIN_ROUNDS + MAX_ROUNDS) / 2));
   });
 
   it("never exceeds the game's question bank (no in-session repeats)", () => {
-    expect(roundsFor(1, 5)).toBe(5); // tiny bank (e.g. movie stills) — caps below MIN_ROUNDS
+    expect(roundsFor(1, 5)).toBe(5); // tiny bank (e.g. movie stills) — caps at bankSize
     expect(roundsFor(1, 4)).toBe(4);
-    expect(roundsFor(0, 100000)).toBe(MIN_ROUNDS); // large bank: floor is MIN_ROUNDS
+    expect(roundsFor(1, 100000)).toBe(MIN_ROUNDS); // high stake, large bank: floor is MIN_ROUNDS
   });
 
   it("stays within the on-chain max-rounds cap, so the payout ceiling never exceeds the contract clamp", () => {
@@ -101,8 +110,8 @@ describe("roundsFor", () => {
       const contractClamp = BPS + STEP_BPS * MAX_ROUNDS_CAP;
       expect(impliedMaxMul).toBeLessThanOrEqual(contractClamp);
     }
-    // At max stake the ceiling is MAX_ROUNDS (currently 15): 10000 + 1000*15 = 25000 bps.
-    expect(BPS + STEP_BPS * roundsFor(1, big)).toBe(BPS + STEP_BPS * MAX_ROUNDS);
+    // The payout ceiling is highest at the LOWEST stake now (most rounds = MAX_ROUNDS).
+    expect(BPS + STEP_BPS * roundsFor(0, big)).toBe(BPS + STEP_BPS * MAX_ROUNDS);
   });
 });
 
