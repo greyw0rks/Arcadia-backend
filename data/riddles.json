@@ -5438,5 +5438,175 @@
       "A will"
     ],
     "tier": "extreme"
+  },
+  {
+    "riddle": "What month of the year has 28 days?",
+    "correct": "All of them",
+    "decoys": [
+      "February",
+      "January",
+      "No month"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What question can you never answer yes to?",
+    "correct": "Are you asleep?",
+    "decoys": [
+      "Are you alive?",
+      "Are you sure?",
+      "Do you hear me?"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I'm found in socks, scarves and mittens, and often in the paws of playful kittens. What am I?",
+    "correct": "Yarn",
+    "decoys": [
+      "Wool",
+      "Cotton",
+      "Thread"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What runs but never walks, has a mouth but never talks?",
+    "correct": "A river",
+    "decoys": [
+      "A clock",
+      "An engine",
+      "The wind"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What breaks yet never falls, and what falls yet never breaks?",
+    "correct": "Day breaks and night falls",
+    "decoys": [
+      "Glass and rain",
+      "A wave and a leaf",
+      "Dawn and dusk"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What five-letter word becomes shorter when you add two letters to it?",
+    "correct": "Short",
+    "decoys": [
+      "Small",
+      "Brief",
+      "Least"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "I have a face and two hands but no arms or legs. What am I?",
+    "correct": "A clock",
+    "decoys": [
+      "A statue",
+      "A doll",
+      "A mirror"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has cities but no houses, and mountains but no trees?",
+    "correct": "A map",
+    "decoys": [
+      "A globe",
+      "A postcard",
+      "A painting"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What goes through towns and hills but never moves?",
+    "correct": "A road",
+    "decoys": [
+      "A river",
+      "A railway",
+      "The wind"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has keys but opens no doors?",
+    "correct": "A piano",
+    "decoys": [
+      "A map",
+      "A keyboard",
+      "A safe"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What kind of tree can you carry in your hand?",
+    "correct": "A palm",
+    "decoys": [
+      "An oak",
+      "A pine",
+      "A birch"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What can run but never walks?",
+    "correct": "Water",
+    "decoys": [
+      "A clock",
+      "A nose",
+      "All of these"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What has four legs in the morning, two at noon, and three in the evening?",
+    "correct": "A human (the Riddle of the Sphinx)",
+    "decoys": [
+      "A table",
+      "A horse",
+      "A chair"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has branches but no leaves, trunk, or fruit?",
+    "correct": "A bank",
+    "decoys": [
+      "A river",
+      "A family tree",
+      "A road"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "The person who makes it sells it, the person who buys it never uses it. What is it?",
+    "correct": "A coffin",
+    "decoys": [
+      "A gravestone",
+      "A gift",
+      "A ticket"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "riddle": "What has a tongue but cannot taste?",
+    "correct": "A shoe",
+    "decoys": [
+      "A bell",
+      "A snake",
+      "A river"
+    ],
+    "tier": "hard"
+  },
+  {
+    "riddle": "What kind of key is too big to fit in any lock?",
+    "correct": "A donkey / a monkey",
+    "decoys": [
+      "A turkey",
+      "A whiskey",
+      "A hockey"
+    ],
+    "tier": "extreme"
   }
 ]

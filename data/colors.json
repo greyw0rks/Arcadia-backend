@@ -838,5 +838,265 @@
       "#308D59"
     ],
     "tier": "extreme"
+  },
+  {
+    "name": "Slate Gray",
+    "hex": "#708090",
+    "decoys": [
+      "#807890",
+      "#608898",
+      "#788880"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Khaki",
+    "hex": "#BDB76B",
+    "decoys": [
+      "#CDAF6B",
+      "#ADBF73",
+      "#C5BF5B"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Steel Blue",
+    "hex": "#4682B4",
+    "decoys": [
+      "#567AB4",
+      "#368ABC",
+      "#4E8AA4"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Hot Pink",
+    "hex": "#FF69B4",
+    "decoys": [
+      "#FF61B4",
+      "#EF71BC",
+      "#FF71A4"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Orange",
+    "hex": "#FF8C00",
+    "decoys": [
+      "#FF8400",
+      "#EF9408",
+      "#FF9400"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Pale Green",
+    "hex": "#98FB98",
+    "decoys": [
+      "#A8F398",
+      "#88FFA0",
+      "#A0FF88"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Midnight Blue",
+    "hex": "#191970",
+    "decoys": [
+      "#291170",
+      "#092178",
+      "#212160"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Saddle Brown",
+    "hex": "#8B4513",
+    "decoys": [
+      "#9B3D13",
+      "#7B4D1B",
+      "#934D03"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Sea Shell",
+    "hex": "#FFF5EE",
+    "decoys": [
+      "#FFEDEE",
+      "#EFFDF6",
+      "#FFFDDE"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Forest Green",
+    "hex": "#228B22",
+    "decoys": [
+      "#328322",
+      "#12932A",
+      "#2A9312"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Royal Blue",
+    "hex": "#4169E1",
+    "decoys": [
+      "#5161E1",
+      "#3171E9",
+      "#4971D1"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Slate Blue",
+    "hex": "#483D8B",
+    "decoys": [
+      "#58358B",
+      "#384593",
+      "#50457B"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Light Coral",
+    "hex": "#F08080",
+    "decoys": [
+      "#FF7880",
+      "#E08888",
+      "#F88870"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Goldenrod",
+    "hex": "#B8860B",
+    "decoys": [
+      "#C87E0B",
+      "#A88E13",
+      "#C08E00"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Powder Blue",
+    "hex": "#B0E0E6",
+    "decoys": [
+      "#C0D8E6",
+      "#A0E8EE",
+      "#B8E8D6"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Cyan",
+    "hex": "#008B8B",
+    "decoys": [
+      "#10838B",
+      "#009393",
+      "#08937B"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Medium Violet Red",
+    "hex": "#C71585",
+    "decoys": [
+      "#D70D85",
+      "#B71D8D",
+      "#CF1D75"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Light Sea Green",
+    "hex": "#20B2AA",
+    "decoys": [
+      "#30AAAA",
+      "#10BAB2",
+      "#28BA9A"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Olive Green",
+    "hex": "#556B2F",
+    "decoys": [
+      "#65632F",
+      "#457337",
+      "#5D731F"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Pale Violet Red",
+    "hex": "#DB7093",
+    "decoys": [
+      "#EB6893",
+      "#CB789B",
+      "#E37883"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Burlywood",
+    "hex": "#DEB887",
+    "decoys": [
+      "#EEB087",
+      "#CEC08F",
+      "#E6C077"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Cornsilk",
+    "hex": "#FFF8DC",
+    "decoys": [
+      "#FFF0DC",
+      "#EFFFE4",
+      "#FFFFCC"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Dark Magenta",
+    "hex": "#8B008B",
+    "decoys": [
+      "#9B008B",
+      "#7B0893",
+      "#93087B"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Deep Sky Blue",
+    "hex": "#00BFFF",
+    "decoys": [
+      "#10B7FF",
+      "#00C7FF",
+      "#08C7EF"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Indian Red",
+    "hex": "#CD5C5C",
+    "decoys": [
+      "#DD545C",
+      "#BD6464",
+      "#D5644C"
+    ],
+    "tier": "hard"
+  },
+  {
+    "name": "Lawn Green",
+    "hex": "#7CFC00",
+    "decoys": [
+      "#8CF400",
+      "#6CFF08",
+      "#84FF00"
+    ],
+    "tier": "hard"
   }
 ]

@@ -16773,5 +16773,236 @@
     ],
     "answer": 0,
     "tier": "hard"
+  },
+  {
+    "q": "Which country is home to the tallest building in the world, the Burj Khalifa?",
+    "options": [
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Qatar",
+      "Malaysia"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which planet spins on its side, with an axial tilt of about 98 degrees?",
+    "options": [
+      "Uranus",
+      "Neptune",
+      "Saturn",
+      "Venus"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Who was the British Prime Minister at the start of World War II?",
+    "options": [
+      "Neville Chamberlain",
+      "Winston Churchill",
+      "Clement Attlee",
+      "Stanley Baldwin"
+    ],
+    "answer": 0,
+    "tier": "extreme"
+  },
+  {
+    "q": "Which country has a maple leaf on its flag?",
+    "options": [
+      "Canada",
+      "Lebanon",
+      "Norway",
+      "Austria"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which US city is the headquarters of the United Nations located?",
+    "options": [
+      "New York City",
+      "Washington D.C.",
+      "Geneva",
+      "Boston"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest island in the world?",
+    "options": [
+      "Greenland",
+      "New Guinea",
+      "Borneo",
+      "Madagascar"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which composer became completely deaf yet wrote his Ninth Symphony?",
+    "options": [
+      "Ludwig van Beethoven",
+      "Franz Liszt",
+      "Johannes Brahms",
+      "Robert Schumann"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Sphinx and the Great Pyramids are located near which modern city?",
+    "options": [
+      "Cairo",
+      "Luxor",
+      "Alexandria",
+      "Giza"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which ocean lies between Africa and Australia?",
+    "options": [
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Southern Ocean"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Who wrote the 'Harry Potter' series of novels?",
+    "options": [
+      "J.K. Rowling",
+      "Roald Dahl",
+      "C.S. Lewis",
+      "Philip Pullman"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the currency used in Japan?",
+    "options": [
+      "Yen",
+      "Won",
+      "Yuan",
+      "Ringgit"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which war was fought between the North and South regions of the United States?",
+    "options": [
+      "American Civil War",
+      "War of 1812",
+      "Revolutionary War",
+      "Mexican-American War"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which Renaissance genius painted the 'Mona Lisa'?",
+    "options": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Titian",
+      "Botticelli"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which gas makes up about 78% of Earth's atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which country was the first to send a human into space?",
+    "options": [
+      "Soviet Union",
+      "United States",
+      "China",
+      "Germany"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "The Leaning Tower is found in which Italian city?",
+    "options": [
+      "Pisa",
+      "Rome",
+      "Bologna",
+      "Genoa"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which mountain is the highest in Africa?",
+    "options": [
+      "Mount Kilimanjaro",
+      "Mount Kenya",
+      "Mount Elgon",
+      "Atlas Mountains"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the largest species of shark?",
+    "options": [
+      "Whale shark",
+      "Great white shark",
+      "Tiger shark",
+      "Hammerhead shark"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "In which country did the Renaissance begin?",
+    "options": [
+      "Italy",
+      "France",
+      "Germany",
+      "England"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "What is the official language of Egypt?",
+    "options": [
+      "Arabic",
+      "Egyptian",
+      "Coptic",
+      "Persian"
+    ],
+    "answer": 0,
+    "tier": "hard"
+  },
+  {
+    "q": "Which explorer is credited with first circumnavigating the globe (his expedition completed it)?",
+    "options": [
+      "Ferdinand Magellan",
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "James Cook"
+    ],
+    "answer": 0,
+    "tier": "extreme"
   }
 ]

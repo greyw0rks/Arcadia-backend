@@ -3002,5 +3002,295 @@
       "Hansel and Gretel"
     ],
     "tier": "hard"
+  },
+  {
+    "emoji": "🐭🏰",
+    "correct": "Cinderella",
+    "decoys": [
+      "Ratatouille",
+      "Beauty and the Beast",
+      "Snow White"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🧞‍♂️🪔",
+    "correct": "Aladdin",
+    "decoys": [
+      "Hercules",
+      "Sinbad",
+      "Prince of Persia"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐭🚀",
+    "correct": "Mickey Mouse",
+    "decoys": [
+      "Tom and Jerry",
+      "Stuart Little",
+      "Ratatouille"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🦕⛽",
+    "correct": "The Good Dinosaur",
+    "decoys": [
+      "The Land Before Time",
+      "Dinosaur",
+      "Ice Age"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌧️🍔",
+    "correct": "Cloudy with a Chance of Meatballs",
+    "decoys": [
+      "Ratatouille",
+      "Bee Movie",
+      "Chef"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🎩🐰🥚",
+    "correct": "Hop",
+    "decoys": [
+      "Peter Rabbit",
+      "Alice in Wonderland",
+      "Rise of the Guardians"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "👑🗣️",
+    "correct": "The King's Speech",
+    "decoys": [
+      "The Queen",
+      "Darkest Hour",
+      "The Crown"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🦔💨",
+    "correct": "Sonic the Hedgehog",
+    "decoys": [
+      "The Flash",
+      "Turbo",
+      "Speed Racer"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐧🎩",
+    "correct": "Batman Returns",
+    "decoys": [
+      "Happy Feet",
+      "Surf's Up",
+      "Mr. Popper's Penguins"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐟🌊👦",
+    "correct": "Ponyo",
+    "decoys": [
+      "Finding Nemo",
+      "The Little Mermaid",
+      "Moana"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🍄🔧👨",
+    "correct": "Super Mario Bros",
+    "decoys": [
+      "Sonic",
+      "Wreck-It Ralph",
+      "Donkey Kong"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "👽💙🏝️",
+    "correct": "Lilo & Stitch",
+    "decoys": [
+      "E.T.",
+      "Monsters Inc",
+      "Wall-E"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🏹🐻👧",
+    "correct": "Brave",
+    "decoys": [
+      "Tangled",
+      "Moana",
+      "Frozen"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🐜🏙️",
+    "correct": "Antz",
+    "decoys": [
+      "A Bug's Life",
+      "Bee Movie",
+      "The Ant Bully"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "😱🎨🌉",
+    "correct": "The Scream",
+    "decoys": [
+      "Mona Lisa",
+      "Starry Night",
+      "The Kiss"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "💋🎨",
+    "correct": "The Kiss",
+    "decoys": [
+      "The Scream",
+      "Mona Lisa",
+      "Girl with a Pearl Earring"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🌃🎨⭐",
+    "correct": "The Starry Night",
+    "decoys": [
+      "The Scream",
+      "Mona Lisa",
+      "Water Lilies"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🎵🐭🧙",
+    "correct": "Fantasia",
+    "decoys": [
+      "Pinocchio",
+      "Dumbo",
+      "Bambi"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🪵👦👃",
+    "correct": "Pinocchio",
+    "decoys": [
+      "Peter Pan",
+      "Geppetto",
+      "The BFG"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🕊️🎬",
+    "correct": "Ferdinand",
+    "decoys": [
+      "Babe",
+      "Charlotte's Web",
+      "The Jungle Book"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐗🌟🎶",
+    "correct": "Sing",
+    "decoys": [
+      "Zootopia",
+      "Trolls",
+      "Rio"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🌈🦄🎶",
+    "correct": "Trolls",
+    "decoys": [
+      "Sing",
+      "Rio",
+      "Shrek"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🧊🐿️🌰",
+    "correct": "Ice Age",
+    "decoys": [
+      "The Croods",
+      "Madagascar",
+      "The Wild"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🗿🏹🌴",
+    "correct": "The Road to El Dorado",
+    "decoys": [
+      "Atlantis",
+      "The Emperor's New Groove",
+      "Hercules"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "💪🏛️⚡",
+    "correct": "Hercules",
+    "decoys": [
+      "Tarzan",
+      "Aladdin",
+      "Sinbad"
+    ],
+    "tier": "hard"
+  },
+  {
+    "emoji": "🌴👑🦙",
+    "correct": "The Emperor's New Groove",
+    "decoys": [
+      "The Road to El Dorado",
+      "Atlantis",
+      "Brother Bear"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐻🌲🎣",
+    "correct": "Brother Bear",
+    "decoys": [
+      "Open Season",
+      "The Jungle Book",
+      "Balto"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🐕‍🦺❄️🛷",
+    "correct": "Balto",
+    "decoys": [
+      "Togo",
+      "Eight Below",
+      "Snow Dogs"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "emoji": "🎻🚢",
+    "correct": "The Legend of 1900",
+    "decoys": [
+      "Titanic",
+      "La La Land",
+      "Whiplash"
+    ],
+    "tier": "extreme"
   }
 ]

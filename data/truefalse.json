@@ -5188,5 +5188,160 @@
     "s": "The heart of a blue whale is roughly the size of a small car.",
     "a": true,
     "tier": "hard"
+  },
+  {
+    "s": "Mount Everest is the highest mountain above sea level on Earth.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Amazon River is longer than the Nile River.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "Sound cannot travel through a vacuum.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Statue of Liberty was a gift from Britain.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Penguins are found naturally at the North Pole.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The currency of India is the rupee.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Vatican City is the smallest country in the world.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Mercury is the hottest planet in the solar system.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The Pacific is the largest ocean on Earth.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Light travels faster than sound.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Eiffel Tower is located in London.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Humans and chimpanzees share more than 90% of their DNA.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Sahara is the largest hot desert in the world.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Water boils at 100 degrees Celsius at sea level.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The country with the largest land area is Canada.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "An octopus has three hearts.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Wright brothers made the first powered airplane flight.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Colosseum is located in Athens.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Gold is a chemical element.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Dead Sea is actually a lake.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "Napoleon Bonaparte was born on the island of Corsica.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The longest-reigning British monarch was Queen Victoria.",
+    "a": false,
+    "tier": "extreme"
+  },
+  {
+    "s": "The planet Saturn is famous for its rings.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The capital of the United States is New York City.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Spiders are insects.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "The Titanic sank in the Atlantic Ocean.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Antarctica is the coldest continent on Earth.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "Beethoven was completely deaf when he composed his final symphony.",
+    "a": true,
+    "tier": "extreme"
+  },
+  {
+    "s": "The human body has five senses traditionally recognized.",
+    "a": true,
+    "tier": "hard"
+  },
+  {
+    "s": "The Great Pyramid of Giza was built by the Romans.",
+    "a": false,
+    "tier": "hard"
+  },
+  {
+    "s": "Jupiter is the largest planet in the solar system.",
+    "a": true,
+    "tier": "hard"
   }
 ]

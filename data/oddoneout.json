@@ -3441,5 +3441,192 @@
     "odd": 2,
     "reason": "A carrot is a root vegetable; the others are fruits.",
     "tier": "hard"
+  },
+  {
+    "items": [
+      "Apple",
+      "Banana",
+      "Carrot",
+      "Orange"
+    ],
+    "odd": 2,
+    "reason": "A carrot is a vegetable; the others are fruits.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Venus",
+      "Sun",
+      "Mars"
+    ],
+    "odd": 2,
+    "reason": "The Sun is a star; the others are planets.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Pacific",
+      "Atlantic",
+      "Nile",
+      "Indian"
+    ],
+    "odd": 2,
+    "reason": "The Nile is a river; the others are oceans.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "France",
+      "Germany",
+      "Brazil",
+      "Italy"
+    ],
+    "odd": 2,
+    "reason": "Brazil is in South America; the others are in Europe.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Rose",
+      "Tulip",
+      "Oak",
+      "Daisy"
+    ],
+    "odd": 2,
+    "reason": "An oak is a tree; the others are flowers.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Spanish",
+      "French",
+      "Latin",
+      "Italian"
+    ],
+    "odd": 2,
+    "reason": "Latin is a dead language; the others are widely spoken today.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Everest",
+      "Kilimanjaro",
+      "Nile",
+      "Denali"
+    ],
+    "odd": 2,
+    "reason": "The Nile is a river; the others are mountains.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Cotton",
+      "Wool",
+      "Nylon",
+      "Silk"
+    ],
+    "odd": 2,
+    "reason": "Nylon is synthetic; the others are natural fibers.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Snake",
+      "Lizard",
+      "Frog",
+      "Crocodile"
+    ],
+    "odd": 2,
+    "reason": "A frog is an amphibian; the others are reptiles.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mars",
+      "Venus",
+      "Earth",
+      "Moon"
+    ],
+    "odd": 3,
+    "reason": "The Moon is a satellite; the others are planets.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Basketball",
+      "Soccer",
+      "Chess",
+      "Tennis"
+    ],
+    "odd": 2,
+    "reason": "Chess is a board game; the others are physical sports.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Iron",
+      "Oxygen",
+      "Helium",
+      "Nitrogen"
+    ],
+    "odd": 0,
+    "reason": "Iron is a metal/solid; the others are gases at room temperature.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Rome",
+      "Paris",
+      "Tokyo",
+      "Sydney"
+    ],
+    "odd": 3,
+    "reason": "Sydney is not a national capital; the others are.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Cheddar",
+      "Brie",
+      "Yogurt",
+      "Gouda"
+    ],
+    "odd": 2,
+    "reason": "Yogurt is not a cheese; the others are.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Piano",
+      "Trumpet",
+      "Guitar",
+      "Violin"
+    ],
+    "odd": 1,
+    "reason": "A trumpet is a brass instrument; the others are not.",
+    "tier": "hard"
+  },
+  {
+    "items": [
+      "Mercury",
+      "Mars",
+      "Jupiter",
+      "Sirius"
+    ],
+    "odd": 3,
+    "reason": "Sirius is a star; the others are planets.",
+    "tier": "extreme"
+  },
+  {
+    "items": [
+      "Hydrogen",
+      "Gold",
+      "Silver",
+      "Platinum"
+    ],
+    "odd": 0,
+    "reason": "Hydrogen is a gas/non-metal; the others are precious metals.",
+    "tier": "hard"
   }
 ]

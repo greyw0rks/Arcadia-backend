@@ -4178,5 +4178,155 @@
       "GYRATIONS"
     ],
     "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: VALFESTI",
+    "correct": "FESTIVAL",
+    "decoys": [
+      "FICTIONAL",
+      "FRACTURE",
+      "FASHIONS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: ONYHARM",
+    "correct": "HARMONY",
+    "decoys": [
+      "HORMONE",
+      "HABITAT",
+      "HERMITS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: NEYJOUR",
+    "correct": "JOURNEY",
+    "decoys": [
+      "JOINERY",
+      "JOKINGLY",
+      "JOYOUS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ERYMYST",
+    "correct": "MYSTERY",
+    "decoys": [
+      "MASTERY",
+      "MIGHTY",
+      "MISTRY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: STRAORCHE",
+    "correct": "ORCHESTRA",
+    "decoys": [
+      "ORCHARDS",
+      "ORCHIDS",
+      "OCTAGONS"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: IONQUEST",
+    "correct": "QUESTION",
+    "decoys": [
+      "QUOTIENT",
+      "QUARTETS",
+      "QUENCHES"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: BOWRAIN",
+    "correct": "RAINBOW",
+    "decoys": [
+      "RAINCOAT",
+      "REBORN",
+      "ROBBERY"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ICHSANDW",
+    "correct": "SANDWICH",
+    "decoys": [
+      "SANDWORM",
+      "SANCTITY",
+      "SNATCHED"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: IONVACAT",
+    "correct": "VACATION",
+    "decoys": [
+      "VOCATION",
+      "VALIDATE",
+      "VIOLATION"
+    ],
+    "tier": "extreme"
+  },
+  {
+    "prompt": "Unscramble: PERWHIS",
+    "correct": "WHISPER",
+    "decoys": [
+      "WORSHIP",
+      "WHIMPER",
+      "WISPIER"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: ONDDIAM",
+    "correct": "DIAMOND",
+    "decoys": [
+      "DEMANDS",
+      "DOMAINS",
+      "DIADEMS"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: HENKITC",
+    "correct": "KITCHEN",
+    "decoys": [
+      "THICKEN",
+      "CHICKEN",
+      "KNITTED"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: INEMACH",
+    "correct": "MACHINE",
+    "decoys": [
+      "MACHETE",
+      "MECHANIC",
+      "MIGRAINE"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: UREPICT",
+    "correct": "PICTURE",
+    "decoys": [
+      "PUNCTURE",
+      "PICTURES",
+      "PLACARD"
+    ],
+    "tier": "hard"
+  },
+  {
+    "prompt": "Unscramble: IUMSTAD",
+    "correct": "STADIUM",
+    "decoys": [
+      "MEDIUMS",
+      "STARDOM",
+      "STUDIED"
+    ],
+    "tier": "hard"
   }
 ]
