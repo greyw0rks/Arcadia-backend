@@ -4,6 +4,7 @@ import {
   BPS,
   STEP_BPS,
   MAX_STAKE,
+  MIN_STAKE,
   MIN_DIFFICULTY,
   MIN_ROUNDS,
   MAX_ROUNDS,
@@ -38,6 +39,14 @@ describe("difficultyFromStake", () => {
 describe("MAX_STAKE cap", () => {
   it("$1 display cap (mirrors the on-chain maxStake)", () => {
     expect(MAX_STAKE.celo).toBe(1);
+  });
+});
+
+describe("MIN_STAKE floor", () => {
+  it("$0.50 minimum bet, below the max", () => {
+    expect(MIN_STAKE.celo).toBe(0.5);
+    expect(MIN_STAKE.celo).toBeLessThan(MAX_STAKE.celo);
+    expect(MIN_STAKE.celo).toBeGreaterThan(0);
   });
 });
 

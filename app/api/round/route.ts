@@ -5,6 +5,8 @@ import { getSession, nextRound } from "../../../server/sessions";
 import { fetchOnchain } from "../../../server/chain";
 import {
   MAX_STAKE,
+  MIN_STAKE,
+  BPS,
   DEFAULT_RAKE_BPS,
   difficultyFractionBaseUnits,
   roundsFor,
@@ -46,6 +48,20 @@ export async function GET(req: NextRequest) {
     if (session.difficulty === undefined) {
       // Stake-token decimals: cUSD is 18-dec, USDC/USDT are 6-dec.
       const decimals = celoTokenMeta(session.token).decimals;
+
+      // Enforce the minimum bet against the REAL on-chain (effective, post-rake) stake — the API
+      // session route only checks the *requested* amount, so a player could request >= min but fund
+      // a dust bet on-chain. effectiveStake is post-rake, so compare against the post-rake minimum.
+      const minStakeBase = parseUnits(String(MIN_STAKE[session.chain]), decimals);
+      const minEffectiveBase =
+        (minStakeBase * BigInt(BPS - DEFAULT_RAKE_BPS)) / BigInt(BPS);
+      if (onchain.effectiveStake < minEffectiveBase) {
+        return NextResponse.json(
+          { error: `Min bet is ${MIN_STAKE[session.chain]} per game` },
+          { status: 400 }
+        );
+      }
+
       const maxStakeBase = parseUnits(String(MAX_STAKE[session.chain]), decimals);
       session.difficulty = difficultyFractionBaseUnits(
         onchain.effectiveStake,

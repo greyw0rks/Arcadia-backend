@@ -22,6 +22,12 @@ export const MAX_STAKE: Record<ChainId, number> = {
   celo: 1,
 };
 
+// Per-session MINIMUM stake in DISPLAY units. Blocks dust bets (e.g. $0.10) that dodge the
+// difficulty floor's intent. $0.50 aligns with the tournament-qualifying threshold (difficulty >= 0.5).
+export const MIN_STAKE: Record<ChainId, number> = {
+  celo: 0.5,
+};
+
 // Difficulty knobs.
 // Difficulty FLOOR applied to every real session. The bet-scaled fraction is remapped from
 // [0,1] onto [MIN_DIFFICULTY, 1] so even a minimum-stake game is hard. Closes a pool-drain

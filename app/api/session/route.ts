@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getGame } from "../../../server/games/registry";
 import { createSession, hasUsedDemo, markDemoUsed } from "../../../server/sessions";
 import { isAddress } from "viem";
-import { MAX_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
+import { MAX_STAKE, MIN_STAKE, difficultyFromStake, roundsFor } from "../../../server/difficulty";
 import { ensureBooted } from "../../../server/bootstrap";
 import { celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
@@ -78,6 +78,12 @@ export async function POST(req: NextRequest) {
   const stake = Number(body.stake);
   if (!(stake > 0)) {
     return NextResponse.json({ error: "stake must be greater than 0" }, { status: 400 });
+  }
+  if (stake < MIN_STAKE[chain]) {
+    return NextResponse.json(
+      { error: `Min bet is ${MIN_STAKE[chain]} ${celoTokenMeta(token).symbol} per game` },
+      { status: 400 }
+    );
   }
   if (stake > MAX_STAKE[chain]) {
     return NextResponse.json(
