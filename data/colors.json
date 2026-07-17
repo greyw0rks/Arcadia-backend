@@ -6,7 +6,8 @@
       "#FF3300",
       "#CC0000",
       "#FF0033"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Blue",
@@ -15,7 +16,8 @@
       "#0033FF",
       "#0000CC",
       "#3300FF"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Green",
@@ -24,7 +26,8 @@
       "#00CC00",
       "#33FF00",
       "#00FF33"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Yellow",
@@ -33,7 +36,8 @@
       "#FFCC00",
       "#CCFF00",
       "#FFFF33"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Purple",
@@ -42,7 +46,8 @@
       "#990099",
       "#660066",
       "#9900CC"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Orange",
@@ -51,7 +56,8 @@
       "#FF8C00",
       "#FFB347",
       "#FF9933"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Pink",
@@ -60,7 +66,8 @@
       "#FFB6C1",
       "#FF69B4",
       "#FFD1DC"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Cyan",
@@ -69,7 +76,8 @@
       "#00CCFF",
       "#33FFFF",
       "#00CCCC"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Magenta",
@@ -78,7 +86,8 @@
       "#FF33FF",
       "#CC00FF",
       "#FF00CC"
-    ]
+    ],
+    "tier": "medium"
   },
   {
     "name": "Lime",
@@ -87,7 +96,8 @@
       "#32CD32",
       "#7FFF00",
       "#00FA9A"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Navy",
@@ -96,7 +106,8 @@
       "#000066",
       "#000099",
       "#191970"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Teal",
@@ -105,7 +116,8 @@
       "#008B8B",
       "#20B2AA",
       "#00CED1"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Maroon",
@@ -114,7 +126,8 @@
       "#8B0000",
       "#A52A2A",
       "#B22222"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Olive",
@@ -123,7 +136,8 @@
       "#6B8E23",
       "#556B2F",
       "#9ACD32"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Silver",
@@ -132,7 +146,8 @@
       "#D3D3D3",
       "#A9A9A9",
       "#DCDCDC"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Teal",
@@ -141,7 +156,8 @@
       "#008888",
       "#088080",
       "#00806F"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Maroon",
@@ -150,7 +166,8 @@
       "#880000",
       "#800008",
       "#7A0000"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Olive",
@@ -159,7 +176,8 @@
       "#888000",
       "#808808",
       "#7A8000"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Indigo",
@@ -168,7 +186,8 @@
       "#4B0088",
       "#520082",
       "#450082"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Turquoise",
@@ -177,7 +196,8 @@
       "#40E0C8",
       "#48E0D0",
       "#40D8D0"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Coral",
@@ -186,7 +206,8 @@
       "#FF7F58",
       "#FF8750",
       "#FF7748"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Crimson",
@@ -195,7 +216,8 @@
       "#DC1440",
       "#D8143C",
       "#DC1838"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Chartreuse",
@@ -204,7 +226,8 @@
       "#77FF00",
       "#7FF700",
       "#87FF00"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Lavender",
@@ -213,7 +236,8 @@
       "#E6E6F5",
       "#E0E6FA",
       "#E6E0FA"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Salmon",
@@ -222,7 +246,8 @@
       "#FA8078",
       "#FA8872",
       "#F58072"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Khaki",
@@ -231,7 +256,8 @@
       "#F0E688",
       "#F0EE8C",
       "#EAE68C"
-    ]
+    ],
+    "tier": "hard"
   },
   {
     "name": "Plum",
@@ -240,6 +266,7 @@
       "#DDA0D5",
       "#D5A0DD",
       "#DDA8DD"
-    ]
+    ],
+    "tier": "hard"
   }
 ]

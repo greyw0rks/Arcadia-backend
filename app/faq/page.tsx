@@ -43,7 +43,7 @@ export default function FAQPage() {
     },
     {
       question: "Which games are available?",
-      answer: "We have 13 games: Trivia Rush, Letter League, GeoGuess, True/False Blitz, Odd One Out, Emoji Puzzle, Riddle Me This, Capital Quiz, Math Sprint, Name That Landmark, Logo Quiz, Movie Stills, and Hex Match. More coming soon!",
+      answer: "We have 13 games: Trivia Rush, GeoGuess, True/False Blitz, Odd One Out, Emoji Puzzle, Riddle Me This, Capital Quiz, Math Sprint, Name That Landmark, Logo Quiz, Movie Stills, and Hex Match, with Letter League coming soon. More on the way!",
     },
     {
       question: "Is this gambling?",

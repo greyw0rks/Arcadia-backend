@@ -1,13 +1,15 @@
-import { makeChoiceGame, pickIndex } from "./choiceGame";
+import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
 import colors from "../../data/colors.json";
 
 interface Color {
   name: string;
   hex: string;
   decoys: string[];
+  tier?: Tier; // difficulty tag (basic named colors = medium, subtle = hard); absent => medium
 }
 
 const BANK = colors as Color[];
+const TIERS = BANK.map((c) => tierNum(c.tier));
 
 // Generates a 200x200 solid-color PNG as a data URI (so no file download needed).
 function colorSwatchDataUri(hex: string): string {
@@ -27,8 +29,8 @@ export const colorModule = {
     timeLimitSec: 7,
     bankSize: BANK.length,
   },
-  (roundIndex, seed) => {
-    const e = BANK[pickIndex(BANK.length, roundIndex, seed)];
+  (roundIndex, seed, difficulty) => {
+    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
     return {
       prompt: `What is the hex code for this color?`,
       imageUrl: colorSwatchDataUri(e.hex),
