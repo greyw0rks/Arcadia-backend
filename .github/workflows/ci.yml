@@ -1,0 +1,40 @@
+name: ci
+
+on:
+  push:
+    branches: [main, v2]
+  pull_request:
+    branches: [main, v2]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      # Root install also resolves the packages/sdk workspace.
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Test
+        run: npm run test
+
+      # DATABASE_URL is deliberately unset: server/db.ts falls back to in-memory
+      # when absent, and the build must keep working on that path.
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_ARCADE_ADDRESS: '0x0000000000000000000000000000000000000001'
+          NEXT_PUBLIC_WC_PROJECT_ID: ci
