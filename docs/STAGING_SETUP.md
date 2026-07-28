@@ -19,7 +19,7 @@ Prereqs already in place (branch `v2`):
 2. Copy the **pooled connection string** (the one with `-pooler` in the host).
 3. Note the **prod** project's host (something like `ep-xxxx.<region>.aws.neon.tech`) — you need
    a substring of it for `PROD_DB_HOST_GUARD` below. The `ep-xxxx` part is ideal: unique to prod,
-   short, and won't accidentally match the staging host.
+   short, and won't accidentally match the staging host. -  --
 
 ## 2. Fresh settlement signer
 
@@ -27,8 +27,8 @@ Generate a keypair that has **never** touched production:
 
 ```bash
 cast wallet new
-# → Private key: 0x…   (SETTLEMENT_SIGNER_PRIVATE_KEY on the Railway staging service)
-# → Address:     0x…   (TRUSTED_SIGNER for the contract deploy in step 3)
+# → Private key: 0x…   (SETTLEMENT_SIGNER_PRIVATE_KEY on the Railway staging service) -- 
+# → Address:     0x…   (TRUSTED_SIGNER for the contract deploy in step 3) -- 
 ```
 
 Do not reuse prod's `SETTLEMENT_SIGNER_PRIVATE_KEY`. The EIP-712 domain binds signatures to a
@@ -45,16 +45,34 @@ From `arcadia-contracts/celo/`, with a throwaway deployer key funded from
 cp .env.example .env.staging
 # .env.staging:
 #   PRIVATE_KEY=<throwaway deployer key, S-CELO funded>
-#   TRUSTED_SIGNER=<address from step 2>
-#   CUSD_ADDRESS=0x0000000000000000000000000000000000000000   # zero → deploys mintable TestUSD
-#   MAINNET=false
+#   TRUSTED_SIGNER=<address from step 2 — NOT prod's signer>
+#   MAINNET=0
+#   CUSD_ADDRESS / USDC_ADDRESS / USDT_ADDRESS = 0x0  # zero → deploys mintable TestUSD
 
 set -a; source .env.staging; set +a
 forge script script/Deploy.s.sol --rpc-url https://forno.celo-sepolia.celo-testnet.org --broadcast
 ```
 
+> `MAINNET=0`, not `MAINNET=false` — the script reads it as a uint and `false` won't parse.
+> All three token addresses must be present even though the testnet path ignores them: Foundry
+> auto-loads `.env` (the mainnet file) and shell vars do **not** override it, so an omitted key
+> here silently inherits the mainnet value and the deploy takes the mainnet branch.
+
 Record from the output: **TestUSD address** and **QuizArcade address**. Testers get play money via
 `TestUSD.mint(tester, amount)` — mint is open by design.
+
+**Deployed 2026-07-28 (Celo Sepolia, chain 11142220):**
+
+| | address |
+|---|---|
+| QuizArcade | `0x312EbFf9cA16a17dc9F60958D27F51f4d7E9608D` |
+| TestUSD | `0x758B3eC662A594c1B8741FC36b388298331Ee2A2` |
+| trustedSigner | `0xfF4b87b6E9defF684fD97165Ef1203AabDEc2e9D` |
+| owner / deployer | `0xEbb41C00bA73bf1Bc86B8167a46156C1FE33fb2F` |
+
+Pool seeded with 1000 TestUSD; deployer holds 999,000 more for minting to testers. The matching
+signer private key is in `arcadia-contracts/celo/.env.staging.signer` (gitignored, mode 600) — it
+is the only copy and must be pasted into Railway as `SETTLEMENT_SIGNER_PRIVATE_KEY`.
 
 > Note: this deploys the *current* QuizArcade so the existing game loop works on staging
 > end-to-end. The pool-economy contract (`ArcadiaPool.sol`, not yet written) will be a separate
