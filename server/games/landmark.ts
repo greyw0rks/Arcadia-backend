@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import { GEO_TIME_LIMIT_SEC } from "../config";
 import landmarks from "../../data/landmarks.json";
 import geo from "../../data/geo.json";
@@ -32,7 +32,7 @@ export const landmarkModule = {
       bankSize: BANK.length,
     },
     (roundIndex, seed, difficulty) => {
-      const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+      const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
       const t = e.tier;
       const imageStyle = t === 'extreme' ? 'extreme' : t === 'hard' ? 'hard' : undefined;
       return {
@@ -41,6 +41,7 @@ export const landmarkModule = {
         imageStyle,
         correct: e.landmark,
         options: [e.landmark, ...e.decoys],
+        tier,
       };
     }
   ),

@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import words from "../../data/words.json";
 
 interface WordQuestion {
@@ -23,8 +23,8 @@ export const wordModule = {
       bankSize: BANK.length,
     },
     (roundIndex, seed, difficulty) => {
-      const w = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
-      return { prompt: w.prompt, correct: w.correct, options: [w.correct, ...w.decoys] };
+      const { entry: w, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+      return { prompt: w.prompt, correct: w.correct, options: [w.correct, ...w.decoys], tier };
     }
   ),
   available: false, // "Coming soon" — hidden from the live game list

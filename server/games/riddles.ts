@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import bank from "../../data/riddles.json";
 
 interface RiddleQuestion {
@@ -21,7 +21,7 @@ export const riddlesModule = makeChoiceGame(
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const r = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
-    return { prompt: r.riddle, correct: r.correct, options: [r.correct, ...r.decoys] };
+    const { entry: r, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+    return { prompt: r.riddle, correct: r.correct, options: [r.correct, ...r.decoys], tier };
   }
 );

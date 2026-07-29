@@ -40,7 +40,10 @@ predatory pattern and must not ship.
 
 **Caveat that matters:** every number rests on invented per-tier accuracies (easy 85% /
 medium 65% / hard 45% / extreme 30%) and an assumed skill distribution. The *shape* is
-validated — a tunable dial exists — the specific pass mark is not.
+validated — a tunable dial exists — the specific pass mark is not. The instrumentation to
+replace those four numbers with measured ones is now live (#5); it needs tester play, not
+more code. Sign-off can proceed on the shape, but **re-run `scripts/v2-bust-sim.py` against
+the measured accuracies before the pass mark is final.**
 
 ---
 
@@ -101,14 +104,46 @@ inflates accuracy and works against progressive difficulty. **Either** grow the 
 toward ~1,000 each, **or** weight round composition toward the large banks and `math` and
 accept a less even format mix.
 
-### 5. Instrument per-tier accuracy in the beta
+This now also contaminates #5: a tester who exhausts the ~310-entry banks in three weeks starts
+answering questions they have already seen, and those inflated answers land in
+`calibration_samples` indistinguishable from first sightings. If the beta runs longer than about
+three weeks, either grow the small banks first or read `byGame` with that in mind.
 
-**Status:** not started. Not blocked — should ship *with* the first tester build.
+### 5. ~~Instrument per-tier accuracy in the beta~~ — DONE 2026-07-29
 
-Record accuracy per question tier and per format from day one. These four numbers are the
-only free parameters in the entire difficulty model, and everything in §4.1/§4.2 is
-provisional until they are real. Also capture the **skill distribution** across testers —
-platform bust rate is driven more by skill spread than by individual luck.
+**Shipped.** The sampler is live on the V2 branch; it needs testers, not more code.
+
+Every scored answer now writes one row to `calibration_samples` (tier served, correct, on-time,
+response ms, session difficulty, game, player). The tier is threaded from the bank draw through
+`RoundState.tier` to `scoreAnswer` — previously the tier was known at pick time and discarded before
+scoring, so accuracy could not be attributed to a difficulty at all.
+
+Read it with `GET /api/admin/v2/calibration?minAnswers=20` (same `ADMIN_SECRET` as the other admin
+routes). It returns:
+
+- **`byTier`** — the four numbers §4.1 invents (easy 85% / medium 65% / hard 45% / extreme 30%).
+  Every bust rate and pass mark in §4.2 is provisional until these are real.
+- **`byGame`** — per-format accuracy, which says whether the tier tags mean the same thing across
+  banks or whether one format's "hard" is another's "medium".
+- **`skill`** — per-player accuracy, descending. The *spread* of this drives platform bust rate more
+  than any individual's luck (§5.2a), so read the distribution, not the mean.
+
+Three properties worth knowing before relying on the data:
+
+- **V2-only.** The table is created from `initV2Schema()` and `recordSample()` returns early unless
+  `V2_ENABLED`, so it exists on the private-tester staging deploy and nowhere else. No production
+  player is sampled, and merging to `main` creates nothing.
+- **Demo plays are excluded from the aggregate** (still recorded, flagged `is_demo`). A free session
+  has nothing at stake, so its answers aren't drawn from the same effort distribution as a paid one.
+- **`tier` is NULL for `math`** — it generates questions rather than drawing from a tagged bank, so
+  it contributes to `byGame` and `skill` but not to `byTier`.
+
+Note the timeout distinction: an out-of-time answer is scored wrong but recorded `on_time = false`,
+so a tier that looks hard because the timer is too short can be told apart from one that is hard
+because the question is. `scaleTimer` shrinks the timer as difficulty rises, which makes this
+confound real rather than hypothetical.
+
+**Still open:** nothing in code. This is now blocked on #10 — testers have to actually play.
 
 ---
 
@@ -184,12 +219,13 @@ Protection Bypass for Automation. Not obtainable via CLI. Full steps in
 
 ## Suggested order
 
-1. **#1** — unblocks the two big builds. Everything else is downstream.
-2. **#4 and #5** in parallel with it — neither is blocked, and #5 must ship with the first
-   tester build or the calibration data is lost.
-3. **#10** to get testers actually playing, which is what produces #5's data.
+1. **#10** — now the top of the list. The sampler (#5) is built but collects nothing until
+   testers play, and it is the only item that produces data rather than consuming it.
+2. **#1** — unblocks the two big builds. Everything else is downstream. Sign off the shape now;
+   re-check the pass mark once #5 has real accuracies.
+3. **#4** in parallel — not blocked, and repeat exposure biases #5's numbers upward.
 4. **#2 and #3** once #1 is settled.
-5. **#7** before any mainnet work — one `setMaxStake` call per token. (#6 is done.)
+5. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
 6. **#8 and #9** before public launch.
 
 ## Done recently (context, not work)

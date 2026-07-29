@@ -1,6 +1,6 @@
 import { GameModule, RoundState } from "./types";
 import { GEO_TIME_LIMIT_SEC } from "../config";
-import { shuffle, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { shuffle, drawTiered, tierNum, type Tier } from "./choiceGame";
 import locations from "../../data/geo.json";
 
 interface GeoEntry {
@@ -15,14 +15,8 @@ interface GeoEntry {
 const BANK = locations as GeoEntry[];
 const TIERS = BANK.map((e) => tierNum(e.tier));
 
-// Tier-aware, seeded, per-session, no-repeat pick (shared with the choice games). A higher bet draws
-// harder/obscure locations first; ordering differs per session.
-function pickEntry(roundIndex: number, seed: number, difficulty?: number): GeoEntry {
-  return BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
-}
-
 // Mapillary swap-in: to use real street-view imagery instead of this curated landmark set, replace
-// pickEntry/buildRound to fetch an image + its true location from the Mapillary API (set MAPILLARY_TOKEN
+// buildRound to fetch an image + its true location from the Mapillary API (set MAPILLARY_TOKEN
 // in the env) and derive the place options from reverse geocoding. The RoundView shape is unchanged.
 export const geoModule: GameModule = {
   id: "geo",
@@ -34,7 +28,7 @@ export const geoModule: GameModule = {
   available: true,
 
   buildRound(roundIndex: number, seed: number, difficulty?: number): RoundState {
-    const entry = pickEntry(roundIndex, seed, difficulty);
+    const { entry, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
     const options = shuffle([entry.answer, ...entry.decoys], seed + roundIndex + 1);
     const correctIndex = options.indexOf(entry.answer);
     const t = entry.tier;
@@ -54,6 +48,7 @@ export const geoModule: GameModule = {
       deadline: 0,
       servedAt: 0,
       timeLimitMs: 0,
+      tier,
     };
   },
 };

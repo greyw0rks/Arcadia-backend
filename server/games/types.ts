@@ -22,6 +22,11 @@ export interface RoundState {
   deadline: number; // ms epoch; answers after this are scored wrong
   servedAt: number; // ms epoch when the round was served — basis for the anti-cheat response time
   timeLimitMs: number; // the round's time budget in ms (for computing response time within the round)
+  // Difficulty tier of the question actually served (0=easy … 3=extreme), when the module knows it.
+  // Recorded so per-tier accuracy can be measured: the V2 difficulty curve is calibrated against
+  // assumed accuracies that have never been checked against real players. Absent for modules that
+  // generate questions rather than drawing from a tagged bank.
+  tier?: number;
 }
 
 export type Scored = "correct" | "wrong";

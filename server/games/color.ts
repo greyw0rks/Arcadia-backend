@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import colors from "../../data/colors.json";
 
 interface Color {
@@ -30,12 +30,13 @@ export const colorModule = {
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
     return {
       prompt: `What is the hex code for this color?`,
       imageUrl: colorSwatchDataUri(e.hex),
       correct: e.hex,
       options: [e.hex, ...e.decoys],
+      tier,
     };
   }
   ),

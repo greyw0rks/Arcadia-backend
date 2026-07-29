@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import bank from "../../data/capitals.json";
 
 interface Capital {
@@ -22,11 +22,12 @@ export const capitalsModule = makeChoiceGame(
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
     return {
       prompt: `${e.flag}  What is the capital of ${e.country}?`,
       correct: e.capital,
       options: [e.capital, ...e.decoys],
+      tier,
     };
   }
 );

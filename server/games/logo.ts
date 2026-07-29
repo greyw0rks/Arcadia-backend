@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import { GEO_TIME_LIMIT_SEC } from "../config";
 import logos from "../../data/logos.json";
 
@@ -25,12 +25,13 @@ export const logoModule = {
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
     return {
       prompt: "Which brand is this?",
       imageUrl: e.image,
       correct: e.answer,
       options: [e.answer, ...e.decoys],
+      tier,
     };
   }
   ),

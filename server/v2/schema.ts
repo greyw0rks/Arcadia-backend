@@ -31,6 +31,35 @@ CREATE TABLE IF NOT EXISTS code_redemptions (
 );
 
 CREATE INDEX IF NOT EXISTS code_redemptions_code ON code_redemptions (code);
+
+-- One row per scored answer during the private beta. This is the calibration sample: the V2
+-- difficulty curve (spec §4.1/§4.2) is built on four *invented* per-tier accuracies — easy 85% /
+-- medium 65% / hard 45% / extreme 30% — and a guessed skill spread. Until these are measured,
+-- every bust-rate and payout number downstream of them is provisional.
+--
+-- It is append-only and cannot be backfilled: an answer not recorded when it was given is gone.
+-- That is why this ships with the first tester build rather than after it.
+CREATE TABLE IF NOT EXISTS calibration_samples (
+  id           BIGSERIAL   PRIMARY KEY,
+  session_id   TEXT        NOT NULL,
+  player       TEXT        NOT NULL,
+  chain        TEXT        NOT NULL,
+  game_id      TEXT        NOT NULL,
+  round_index  INTEGER     NOT NULL,
+  tier         SMALLINT,               -- 0=easy … 3=extreme; NULL for procedural games (math)
+  correct      BOOLEAN     NOT NULL,
+  on_time      BOOLEAN     NOT NULL,   -- false = timed out; scored wrong but not a knowledge miss
+  response_ms  INTEGER     NOT NULL,
+  difficulty   NUMERIC,                -- session difficulty 0..1, i.e. which tier recipe was in use
+  is_demo      BOOLEAN     NOT NULL DEFAULT FALSE,
+  answered_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  -- A round is scored exactly once; the constraint makes a retried write a no-op rather than a
+  -- duplicate that would quietly bias the accuracy figures.
+  UNIQUE (session_id, round_index)
+);
+
+CREATE INDEX IF NOT EXISTS calibration_samples_tier ON calibration_samples (tier);
+CREATE INDEX IF NOT EXISTS calibration_samples_player ON calibration_samples (player);
 `;
 
 /** Create V2 tables. No-op unless V2_ENABLED; safe to run on every boot (idempotent DDL). */

@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import bank from "../../data/emoji.json";
 
 interface EmojiQuestion {
@@ -21,7 +21,7 @@ export const emojiModule = makeChoiceGame(
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
-    return { prompt: e.emoji, correct: e.correct, options: [e.correct, ...e.decoys] };
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+    return { prompt: e.emoji, correct: e.correct, options: [e.correct, ...e.decoys], tier };
   }
 );

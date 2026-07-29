@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import { TRIVIA_TIME_LIMIT_SEC } from "../config";
 import questions from "../../data/trivia.json";
 
@@ -26,7 +26,7 @@ export const triviaModule = makeChoiceGame(
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const raw = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
-    return { prompt: raw.q, correct: raw.options[raw.answer], options: raw.options };
+    const { entry: raw, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+    return { prompt: raw.q, correct: raw.options[raw.answer], options: raw.options, tier };
   }
 );

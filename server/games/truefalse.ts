@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import { TRIVIA_TIME_LIMIT_SEC } from "../config";
 import bank from "../../data/truefalse.json";
 
@@ -21,8 +21,8 @@ export const trueFalseModule = makeChoiceGame(
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
     const correct = e.a ? "True" : "False";
-    return { prompt: e.s, correct, options: ["True", "False"] };
+    return { prompt: e.s, correct, options: ["True", "False"], tier };
   }
 );

@@ -14,6 +14,7 @@ import { ANSWER_GRACE_MS } from "./config";
 import { scaleTimer } from "./difficulty";
 import { DEFAULT_CELO_TOKEN, type CeloToken, type ChainId } from "../lib/contract";
 import { query } from "./db";
+import { recordSample } from "./v2/calibration";
 
 export interface Session {
   id: `0x${string}`; // bytes32 / (buff 32), also the on-chain sessionId
@@ -174,6 +175,23 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
   const rawMs = now - round.servedAt;
   const responseMs = onTime ? Math.max(0, rawMs) : round.timeLimitMs;
   s.timings.push({ responseMs, correct: result === "correct", onTime });
+
+  // Beta calibration sample. No-op unless V2_ENABLED, so this only ever fires on the private-tester
+  // deploy. Recorded here because this is the one point where the served tier, the outcome and the
+  // timing all exist together — `s.current` is cleared a few lines below.
+  recordSample({
+    sessionId: s.id,
+    player: s.player,
+    chain: s.chain,
+    gameId: s.gameId,
+    roundIndex: s.roundIndex,
+    tier: round.tier,
+    correct: result === "correct",
+    onTime,
+    responseMs,
+    difficulty: s.difficulty,
+    isDemo: s.isDemo,
+  });
 
   s.multiplierBp = applyResult(s.multiplierBp, result);
   s.answered += 1;

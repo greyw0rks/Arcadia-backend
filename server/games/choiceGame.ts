@@ -11,6 +11,7 @@ export interface ChoiceRound {
   imageStyle?: 'hard' | 'extreme'; // visual treatment; absent = full colour
   correct: string; // must also appear in `options`
   options: string[];
+  tier?: number; // 0..3 from tierNum(); lets the server measure per-tier accuracy
 }
 
 export interface ChoiceMeta {
@@ -157,6 +158,23 @@ export function tieredPickIndex(
   return result;
 }
 
+/**
+ * `tieredPickIndex` + the bank lookup, returning the tier that was actually drawn alongside the
+ * entry. Every bank-backed module needs both halves — the entry to build the round and the tier to
+ * record it against — and returning them together is what stops a module from silently dropping the
+ * tier and leaving its rounds out of the calibration sample.
+ */
+export function drawTiered<T>(
+  bank: readonly T[],
+  tiers: number[],
+  roundIndex: number,
+  seed: number,
+  difficulty?: number
+): { entry: T; tier: number } {
+  const idx = tieredPickIndex(tiers, roundIndex, seed, difficulty);
+  return { entry: bank[idx], tier: tiers[idx] };
+}
+
 export function makeChoiceGame(
   meta: ChoiceMeta,
   build: (roundIndex: number, seed: number, difficulty?: number) => ChoiceRound
@@ -189,6 +207,7 @@ export function makeChoiceGame(
         deadline: 0, // stamped by the session manager when served
         servedAt: 0, // stamped by the session manager when served
         timeLimitMs: 0, // stamped by the session manager when served
+        tier: r.tier,
       };
     },
   };

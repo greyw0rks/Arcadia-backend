@@ -1,4 +1,4 @@
-import { makeChoiceGame, tieredPickIndex, tierNum, type Tier } from "./choiceGame";
+import { makeChoiceGame, drawTiered, tierNum, type Tier } from "./choiceGame";
 import bank from "../../data/oddoneout.json";
 
 interface OddQuestion {
@@ -21,8 +21,8 @@ export const oddOneOutModule = makeChoiceGame(
     bankSize: BANK.length,
   },
   (roundIndex, seed, difficulty) => {
-    const e = BANK[tieredPickIndex(TIERS, roundIndex, seed, difficulty)];
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
     const correctItem = e.items[e.odd];
-    return { prompt: "Which one doesn't belong?", correct: correctItem, options: e.items };
+    return { prompt: "Which one doesn't belong?", correct: correctItem, options: e.items, tier };
   }
 );
