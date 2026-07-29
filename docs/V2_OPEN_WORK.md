@@ -215,45 +215,46 @@ without a bypass token — Dashboard → `arcadia-celo` → Settings → Deploym
 Protection Bypass for Automation. Not obtainable via CLI. Full steps in
 [`V2_STAGING_HANDOFF.md`](./V2_STAGING_HANDOFF.md) §1.
 
-### 11. The tester gate is written but not wired up
+### 11. `requireTester()` is written but has no call sites
 
-**Status:** found 2026-07-29 while auditing "V2 is testers-only". Not blocked. **Do before #10.**
+**Status:** found 2026-07-29 while auditing "V2 is testers-only". Not blocked, but small.
 
-V2 is meant to be private-beta only, and two of the three layers that should enforce that are
-not actually in place:
+V2 is meant to be private-beta only. The **outer** gate is real and verified working — see below —
+but the **inner** one is not yet connected:
 
-- **`requireTester()` has no call sites.** `app/api/v2/_gate.ts` implements the two-layer check
-  (valid HMAC pass + still on the allowlist) and documents itself as "call as the FIRST line of
-  every /api/v2 route handler" — but `grep -rn requireTester` returns only the definition and its
-  own doc comment. Nothing calls it. Today the only route under `/api/v2` that needs it is
-  `access/redeem` (which is the thing that *issues* the pass), so nothing is currently exposed —
-  but any V2 gameplay route added for #3 is unprotected by default rather than protected by
-  default. Wire it in as those routes land.
-- **`middleware.ts` does not exist.** `app/api/v2/health/route.ts:6` states "Production
-  (V2_ENABLED unset) never reaches this: middleware.ts 404s the whole /api/v2 tree." There is no
-  such file anywhere in the repo and none in git history. The comment describes a defence that was
-  never built. `V2_ENABLED` gates the schema, the calibration sampler and the access-gate
-  hydration, so production creates no V2 tables and holds no allowlist — but the `/api/v2` route
-  tree itself is reachable in production, not 404'd.
+`app/api/v2/_gate.ts` implements the two-layer per-tester check (valid HMAC pass + still on the
+allowlist) and documents itself as "call as the FIRST line of every /api/v2 route handler". But
+`grep -rn requireTester` returns only the definition and its own doc comment. Nothing calls it.
 
-Neither is a live leak right now: there are no V2 gameplay routes yet, and `/api/v2/health` only
-reports a boolean. Both become real the moment #3 adds a route. Fix the comment or build the
-middleware — but do not leave a comment claiming protection that isn't there.
+Nothing is currently exposed by this: the only routes under `/api/v2` today are `health` (returns a
+boolean) and `access/redeem` (the route that *issues* the pass, so it authenticates by wallet
+signature instead). The problem is the default — any V2 gameplay route added for #3 is unprotected
+unless someone remembers this file exists. Wire it in as those routes land.
+
+**Corrected — the dark switch is fine.** An earlier revision of this section claimed `middleware.ts`
+was missing and that the `/api/v2` tree was reachable in production. That was wrong. The gate is
+`proxy.ts` at the repo root (Next 16 deprecated the `middleware.ts` convention in favour of it); it
+matches `/api/v2/:path*` and `/v2/:path*` and 404s both unless `V2_ENABLED=true`. Verified live on
+2026-07-29: prod `/api/v2/health` and `/api/v2/access/redeem` both 404 while prod `/api/games`
+returns 200. The misleading comment in `app/api/v2/health/route.ts` that named the wrong file has
+been fixed.
+
+Note the deliberate split, which is why the inner gate still matters: `proxy.ts` runs on the edge
+runtime and cannot reach Postgres, so it can only answer "does V2 exist on this deploy?" — never
+"is this caller allowed?". Only the route handlers can do the latter.
 
 ---
 
 ## Suggested order
 
-1. **#11** — small, and it decides whether V2 routes are private-by-default before #3 starts
-   adding them.
-2. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
+1. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
    only item that produces data rather than consuming it.
-3. **#1** — unblocks the two big builds. Everything else is downstream. Sign off the shape now;
+2. **#1** — unblocks the two big builds. Everything else is downstream. Sign off the shape now;
    re-check the pass mark once #5 has real accuracies.
-4. **#4** in parallel — not blocked, and repeat exposure biases #5's numbers upward.
-5. **#2 and #3** once #1 is settled.
-6. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
-7. **#8 and #9** before public launch.
+3. **#4** in parallel — not blocked, and repeat exposure biases #5's numbers upward.
+4. **#2 and #3** once #1 is settled — wire **#11** in as those routes land.
+5. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
+6. **#8 and #9** before public launch.
 
 ## Done recently (context, not work)
 
