@@ -114,24 +114,43 @@ platform bust rate is driven more by skill spread than by individual luck.
 
 ## Smaller / independent
 
-### 6. Reconcile the stale mainnet `TRUSTED_SIGNER`
+### 6. ~~Reconcile the stale mainnet `TRUSTED_SIGNER`~~ — DONE 2026-07-29
 
-**Status:** confirmed stale. Not blocked.
+**Resolved.** Investigated and closed; recorded here because the conclusion is worth keeping.
 
-`arcadia-contracts/celo/.env` reads `0x0A4Da252…`, but the live mainnet contract reports
-`trustedSigner()` = `0x350FA35efe85Bfce23Bdc090fF9dF0686fdab26b` (verified on-chain
-2026-07-29). Staging is unaffected, but a future mainnet deploy would bake in the wrong
-signer and every settlement would revert with `BadSignature`. Fix before touching mainnet.
+The contract was *deployed* with `0x0A4Da252…` and later rotated via `setSigner` to
+`0x350FA35efe85Bfce23Bdc090fF9dF0686fdab26b`; `.env` kept recording the original. **Production
+was never broken** — the backend's signing key derives to the rotated address, which matches
+`trustedSigner()` on chain exactly. So this was stale documentation, not an outage.
+
+The real exposure was a *future* deploy: `Deploy.s.sol` feeds `TRUSTED_SIGNER` straight into
+the constructor, so redeploying from the stale value would have baked in a signer the backend
+does not hold, and every `settle()` would revert with `BadSignature`. `.env` now carries the
+correct address, and the deploy script asserts the signer is non-zero and not the deployer key
+(contracts PR #2).
 
 ### 7. On-chain `maxStake` vs. app-enforced cap
 
-**Status:** found during the README rewrite. Not blocked.
+**Status:** deploy script fixed; **the live contract still needs a transaction.** Not blocked.
 
 The live contract's `maxStake` for USDm is `5e18` ($5) while the app enforces $1
 (`server/difficulty.ts`). The app is the stricter of the two, so this is a consistency gap
 rather than a live drain vector — difficulty clamps correctly and solvency accounting holds
-— but a transaction sent directly to the contract could stake up to $5. Bring `setMaxStake`
-down to match.
+— but a transaction sent directly to the contract could stake up to $5.
+
+The deploy script's defaults were the source (`5e18`/`5e6` in both the mainnet and testnet
+branches) and now mirror the backend at $1, so a fresh deploy is correct. **The already-deployed
+mainnet contract is unchanged** — closing this needs an owner-key `setMaxStake` call per token:
+
+```
+cast send 0xFb2F048B9A088D6ef0Cf3413B90F4Cef76D0eb49 "setMaxStake(address,uint256)" \
+  0x765DE816845861e75A25fCA122bb6898B8B1282a 1000000000000000000 \
+  --rpc-url https://forno.celo.org --private-key <owner key>
+```
+
+…and the same for USDC and USDT at `1000000` (6 decimals). Owner is
+`0xc61Bbc0CF5694EF410A578A9833f77C173790450`. Verify after with
+`cast call … "maxStake(address)(uint256)"`.
 
 ### 8. Scope private matches
 
@@ -170,7 +189,7 @@ Protection Bypass for Automation. Not obtainable via CLI. Full steps in
    tester build or the calibration data is lost.
 3. **#10** to get testers actually playing, which is what produces #5's data.
 4. **#2 and #3** once #1 is settled.
-5. **#6 and #7** before any mainnet work. Cheap, and both are foot-guns if forgotten.
+5. **#7** before any mainnet work — one `setMaxStake` call per token. (#6 is done.)
 6. **#8 and #9** before public launch.
 
 ## Done recently (context, not work)
