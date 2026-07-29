@@ -1,6 +1,6 @@
 # Arcadia V2 — Weekly Pool Economy Spec
 
-**Status:** Draft — ⚠ BLOCKED on §7.1: simulation shows the per-question scoring mechanic cannot produce a workable bust rate or payout spread
+**Status:** Draft — scoring mechanic reworked in §4.2 (per-round threshold) after §5.2a simulation showed the per-question design unworkable; awaiting sign-off
 **Author:** Greysuit
 **Last updated:** 2026-07-29
 
@@ -162,6 +162,103 @@ Two implementation constraints, both verified against the live banks:
 Timer scaling stays available as a second, independent lever but is **not** used by this curve —
 one axis is calibratable, two are not (the same argument that settled the stake-tier question).
 
+### 4.2 PROPOSED — per-round threshold scoring (the fix for §5.2a)
+
+**Replace per-question multiplier movement with one move per round, gated on a pass mark.**
+
+| | Old (broken) | Proposed |
+|---|---|---|
+| Multiplier events per week | 1,050 (one per question) | **70** (one per round) |
+| Step size | ±0.01x | **±0.10x** |
+| Rule | every answer moves the multiplier | **≥9 of 15 correct → +0.10x, otherwise −0.10x** |
+| Score within a round | determines the delta directly | determines only pass/fail |
+
+#### Why this specifically, and why nothing smaller would do
+
+The failure in §5.2a is governed by one ratio. For an additive walk of `K` events with step `s` and
+per-event drift `d`:
+
+```
+total drift   = K · d
+total noise   = s · √K
+dominance     = drift / noise = √K · (d / s)
+```
+
+Luck only matters when dominance is near or below 1. Measured against a 2-point accuracy edge:
+
+| Design | K | step | dominance |
+|---|---|---|---|
+| per-question, 10 rounds/day | 1,050 | 0.01 | **1.30** — accuracy determines everything |
+| per-question, 5 rounds/day | 525 | 0.01 | 0.92 — halving volume barely helps (√ scaling) |
+| **per-round, 10 rounds/day** | **70** | **0.10** | **0.33** — variance survives |
+| per-day outcome | 7 | 0.15 | 0.11 |
+
+This is why the fix has to be *fewer, bigger* events. Cutting the daily allowance was the intuitive
+move and it does almost nothing, because noise falls as `√K` while drift falls as `K`. Only changing
+the event granularity shifts the ratio meaningfully.
+
+#### The pass mark is the tuning dial that was missing
+
+Population simulation, 15,000 players, skill ~ N(1.0, 0.15):
+
+| Pass mark | Bust rate | p10 | Median | p90 | Spread (p99/p10) |
+|---|---|---|---|---|---|
+| 7 / 15 | 1.8% | 0.80 | 1.40 | 2.20 | 4.25× |
+| 8 / 15 | 8.4% | 0.60 | 1.20 | 1.60 | 3.67× |
+| **9 / 15** | **23.8%** | 0.40 | 0.80 | 1.40 | **4.50×** |
+| 10 / 15 | 48.2% | 0.40 | 0.80 | 1.20 | 3.50× |
+| 11 / 15 | 73.0% | 0.20 | 0.60 | 1.00 | 6.00× |
+
+Compare with §5.2a, where every difficulty setting gave either ~0% or ~85%. **Bust rate is now a
+smooth, monotonic function of a single integer**, so a target rate is reachable by choosing it.
+Payout spread also rises from 1.56× to ~4.5×, which means a pool split by multiplier actually
+discriminates between players.
+
+**Recommended starting point: pass mark 9/15, giving ~24% bust.** Slightly below the 30–35% the
+revenue model assumed — deliberately, because it is far better to launch lenient and tighten with
+real data than to bust testers out of a beta and lose the accuracy measurements that calibrate
+everything else.
+
+Note the population framing is doing real work here: platform bust rate comes mostly from the
+*spread of player skill*, not from one player's luck. That is why fixed-skill rows still look
+steppy while the population curve is smooth, and it is why measuring the real skill distribution in
+the beta matters as much as measuring per-tier accuracy.
+
+#### Purchased rounds must be upside-only
+
+Simulating extra-round purchases under symmetric scoring exposed a serious problem:
+
+| Rounds/day | Weekly spend | Bust (symmetric) | Bust (upside-only) | Median (upside-only) |
+|---|---|---|---|---|
+| 10 (free) | $0.00 | 23.8% | 23.8% | 0.80 |
+| 20 | $7.00 | 28.5% | **12.0%** | 1.20 |
+| 30 | $14.00 | 31.9% | **8.1%** | 1.50 |
+
+Under symmetric scoring, **a player spending $14/week to play more raises their own bust
+probability by ~8 points.** They pay real money to make ruin more likely, while the platform takes
+rake on every ticket. That is a textbook predatory pattern and it must not ship.
+
+**Therefore: rounds purchased beyond the free daily allowance can gain +0.10x but never subtract.**
+The buyer's downside is capped at the ticket price, and the purchase becomes honestly positive for
+them. This also keeps the pool healthy rather than draining it — a player paying 14× the entry fee
+for roughly 1.9× the median multiplier is *subsidising* the pool, since the tickets are raked into
+it. Free rounds stay symmetric, so the core game keeps its tension.
+
+#### What this changes elsewhere
+
+- **§4's per-question ±0.01x rule is superseded.** Per-question feedback stays in the UI as live
+  progress within a round — it just no longer moves the banked multiplier.
+- **Bust still means the multiplier reaching zero**, and the §4.1 difficulty bands are unchanged;
+  they now gate the *pass probability* rather than the size of each step.
+- **§5.4's revenue model can be re-derived**, because a target bust rate is now selectable.
+- The threshold is a single integer in config, so it can be tuned per week without a redeploy —
+  and it must be treated as a live economic parameter, not a constant.
+
+**Still assumption-bound.** Every number above rests on the same invented per-tier accuracies
+(easy 85% / medium 65% / hard 45% / extreme 30%) and on an assumed skill distribution. The
+mechanic's *shape* is validated — a smooth dial exists — but the specific pass mark is not. Measure
+both distributions in the private beta, then re-run `scripts/v2-bust-sim.py` before mainnet.
+
 ---
 
 ## 5. Revenue Model
@@ -244,9 +341,8 @@ there. Two candidate repairs — a neutral rather than generous recovery band, a
 were both simulated and **both still produce the same 0%→100% cliff**, confirming the problem is the
 step-size-to-volume ratio rather than the recipe values.
 
-Resolving this is a product decision, not a parameter tweak. See §7.1 for the candidate directions.
-**Everything downstream — §5.4's revenue table, the bust-driven rebuy loop, and `ArcadiaPool.sol`'s
-settlement shape — is blocked on it.**
+Resolving this is a product decision, not a parameter tweak. **§4.2 proposes the fix** — per-round
+threshold scoring, which restores variance and makes bust rate a smooth, tunable dial.
 
 ### 5.3 Why the difficulty/floor curve IS the revenue lever
 Because forfeited stakes stay in the pool (not platform revenue) and rebuys are flat-priced, **volume is the only thing that moves revenue** — and volume is driven by the bust rate:
@@ -305,17 +401,11 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 
 ## 7. Open Questions
 
-1. **⚠ BLOCKING — how to fix the scoring mechanic (§5.2a).** ±0.01x over 1,050 questions/week
-   leaves variance too small to matter, so bust rate cliffs 0%→85% with nothing usable in between
-   and final multipliers barely differentiate between players. Candidate directions:
-   - count only the **best N rounds per day** toward the multiplier (cuts effective volume, so
-     variance survives, and rewards peak play over grinding);
-   - **raise the step size** (fewer, bigger moves — back toward the ±0.1x design that had real
-     variance, but keeps per-question granularity);
-   - make scoring **non-linear** — streak bonuses, tier-weighted deltas — so outcomes fan out;
-   - **decouple pool ranking from the multiplier**: rank on a separate score with genuine spread and
-     let the multiplier be a progress/prestige display.
-   §5.4's revenue model, the rebuy loop, and `ArcadiaPool.sol`'s settlement shape all depend on this.
+1. **⚠ AWAITING SIGN-OFF — the scoring mechanic fix (§4.2).** The ±0.01x/question design is broken
+   (§5.2a). §4.2 proposes per-round threshold scoring: one ±0.10x move per round, gated on ≥9/15
+   correct, with purchased rounds upside-only. Simulation shows bust rate becomes a smooth dial
+   (1.8% → 73% across pass marks 7–11) and payout spread rises from 1.56× to ~4.5×. Needs a
+   decision before `ArcadiaPool.sol` or the weekly engine can be built.
 2. **Question-bank capacity (§3.1).** Five of the nine live banks are exhausted by a heavy player in
    under a month. Either grow them toward ~1,000 each, or weight round composition toward the large
    banks and procedural `math`, accepting a less even format mix.
@@ -334,7 +424,8 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 
 ## 8. Next Steps
 
-- [ ] **Fix the scoring mechanic (§7.1) — blocks everything else**
+- [ ] **Sign off the §4.2 scoring rework — blocks the pool contract and the weekly engine**
+- [ ] Decide extra-round scoring is upside-only (§4.2) — required before extra-round tickets ship
 - [ ] Decide bank growth vs. format weighting (§7.2)
 - [ ] Instrument per-tier accuracy in the private beta (§7.3)
 - [ ] Re-run `scripts/v2-bust-sim.py` against the revised mechanic and measured accuracy
