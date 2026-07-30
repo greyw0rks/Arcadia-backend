@@ -4,11 +4,15 @@
 **Author:** Greysuit
 **Last updated:** 2026-07-29
 
+> **This file is the only source of truth.** Older copies of this spec exist outside the repo (most
+> recently a 2026-07-23 draft). They predate the §5.2a simulation and still specify the
+> ±0.01x/question mechanic it disproved. Reconciled 2026-07-29 — see §8.
+
 ---
 
 ## 1. Overview
 
-Arcadia V2 replaces the current win-now/lose-now single-round model with a **weekly pooled buy-in system**. Users stake once per week, earn XP/multiplier through gameplay performance, and are paid out from a shared prize pool at week's end based on final standing. Buy-in amount also scales question difficulty — higher stakes face harder questions.
+Arcadia V2 replaces the current win-now/lose-now single-round model with a **weekly pooled buy-in system**. Users stake once per week, earn XP/multiplier through gameplay performance, and are paid out from a shared prize pool at week's end based on final standing. Entry is a single flat $1 — question difficulty scales with a player's current **multiplier**, not with what they paid (§2, §4.1).
 
 Core loop: **Buy in → Answer under difficulty pressure → Earn XP/multiplier → Survive or bust → (rebuy if busted) → Weekly cash payout**
 
@@ -26,9 +30,14 @@ This is structurally closer to a poker/DFS tournament (pooled entries, skill-wei
 
 - One entry required to begin playing for the week.
 - Early-bird window is a segmentation/urgency mechanic — rewards planning ahead, not a permanent discount tier.
-- Buy-in amount (stake tier) determines question difficulty band — higher stakes = harder questions.
+- **Difficulty is not bought.** It scales with the player's current multiplier (§4.1), not with entry
+  price — every entrant starts on the same 1.0x baseline and the same tier recipe.
 
-**Open question:** does the *stake tier* (i.e., paying more than $1 for a harder/higher-multiplier lane) still exist as a separate axis from the early-bird/regular split, or is $1 the only entry price and difficulty scales purely with performance/multiplier growth within that single tier? This needs to be resolved before difficulty-curve calibration — flagging here rather than assuming.
+> **Resolved — there is no stake tier.** An earlier draft asked whether paying above $1 should buy a
+> harder, higher-ceiling lane, and left the buy-in "determines the difficulty band". It does not:
+> §6 locks a single $1 flat entry. Two difficulty axes (stake *and* multiplier) cannot be
+> calibrated against each other, and a flat entry is also the cleanest skill-game framing — money
+> cannot buy a larger share of the pool. The $0.70 early-bird is a timing discount, not a tier.
 
 ---
 
@@ -88,10 +97,16 @@ neither, but preserves the design.
 
 ## 4. Multiplier Mechanic
 
+> **⚠ Read §4.2 first.** The per-question rule below is the ORIGINAL design. Simulation (§5.2a)
+> showed it cannot produce a workable economy, and §4.2 proposes the replacement — one ±0.10x move
+> per round gated on a pass mark. This section is kept because §4.1's difficulty bands and the
+> bust/rebuy rules survive the change intact; only the scoring granularity is superseded.
+
 The multiplier moves at **per-question granularity**, not a flat per-round win/loss:
 
 - Weekly buy-in ($1) grants a baseline multiplier of **1.0x**.
-- Each round = 15 questions. **Each correct answer: +0.01x. Each wrong answer: −0.01x.**
+- Each round = 15 questions. **Each correct answer: +0.01x. Each wrong answer: −0.01x.** *(Superseded
+  by §4.2 — retained to explain what §5.2a tested and why it failed.)*
 - Max possible swing per round is **±0.15x** (15/15 correct = +0.15x; 0/15 correct = −0.15x). Most rounds will land somewhere in between based on actual performance — there's no separate win/loss label anymore; the multiplier change per round **is** the outcome.
 - This replaces the earlier flat "±0.1x per round" / "lives" framing — performance within the round now directly determines the multiplier delta, rather than a binary pass/fail per round.
 - Multiplier **accumulates through the week and is tallied at the weekend**, when results are finalized and the pool is distributed.
@@ -101,7 +116,13 @@ The multiplier moves at **per-question granularity**, not a flat per-round win/l
 - **Multiplier reaching zero = bust.** The player's current run ends; multiplier progress for that run is forfeited.
 - To resume playing that week, the player must complete the **standard $1 buy-in again** (not the $0.10 extra-round ticket — that's a separate, smaller mechanic for extra daily volume within an active run).
 - Forfeited stake behavior on bust: unchanged from §6 below — returns to the weekly pool, not platform revenue.
-- **Open question:** since the multiplier now moves in small per-question increments rather than whole 0.1x "lives," bust will typically happen gradually across many rounds rather than in a small number of bad rounds. Bust-rate modeling (§5.2) needs to account for this — it changes the shape of the difficulty curve significantly from the earlier flat-lives version.
+
+> **Resolved — and this is what broke the design.** An earlier draft flagged that small per-question
+> increments would make bust gradual rather than sudden, and asked bust-rate modelling to account
+> for it. §5.2a did, and found the consequence is worse than "gradual": across 1,050 increments the
+> noise term is so small relative to drift that bust becomes a *cliff* — ~85% at one skill level and
+> ~0.2% one step up — with no setting in between. The bust and rebuy rules above are unchanged under
+> §4.2; only what moves the multiplier changes.
 
 ### Rebuy behavior (post-bust)
 - Price: flat $1, no escalation regardless of how many times a user rebuys in a week.
@@ -134,8 +155,16 @@ away with the pool.
 **The accuracy column is modelled, not measured.** It assumes per-tier accuracy of easy 85% /
 medium 65% / hard 45% / extreme 30% against 4-choice questions where a blind guess scores 25%.
 Those four numbers are invented. They are the *only* free parameters in the whole curve, and the
-private beta exists to measure them — instrument per-tier accuracy from the first day of testing
-and re-derive this table from real values before any mainnet exposure.
+private beta exists to measure them.
+
+**The instrumentation to replace them is live** (shipped 2026-07-29). Every scored answer during the
+private beta writes a `calibration_samples` row tagged with the tier actually served; read the
+aggregate at `GET /api/admin/v2/calibration`, which returns per-tier accuracy, per-format accuracy,
+and the per-player skill distribution. It is V2-gated, so only the private-tester deploy collects it,
+and demo plays are excluded from the aggregate — a free session has nothing at stake and is not drawn
+from the same effort distribution as a paid one. Timeouts are recorded separately from wrong answers,
+so a tier that only looks hard because the timer is short can be told apart from one that genuinely
+is. Re-derive this table from real values before any mainnet exposure.
 
 > **⚠ Simulating this curve broke it.** See §5.2a: the self-correcting recovery band turns out to
 > make bust almost impossible, and the resulting bust rate cliffs rather than curves. The band
@@ -393,7 +422,7 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 | Daily section allowance | 10 free sections/day (15 questions each) |
 | Extra-round pricing | $0.10/round after daily allowance used — feeds pool, same as buy-ins |
 | Format coverage | Every **live** format at least once per round, defined against the registry's `available` flag — currently 9, so 9 coverage slots + 6 repeats |
-| Per-question scoring | Correct = +0.01x, Wrong = −0.01x (max ±0.15x per 15-question round) — **⚠ see §5.2a, this does not produce a workable economy** |
+| Scoring granularity | **⚠ NOT LOCKED — the one open item in this table.** The original ±0.01x/question rule (max ±0.15x per round) was disproven by §5.2a. §4.2 proposes ±0.10x once per round, gated on ≥9/15 correct, with purchased rounds upside-only. Awaiting sign-off (§7.1) |
 | Bust condition | Cumulative multiplier reaches zero |
 | Difficulty scaling | Increases with current multiplier per the §4.1 band table, not fixed at buy-in. Unlocks the easy/medium banks V1 never served — safe only because payouts come from a player pool, not house funds |
 | Payout timing | Weekend tally, once per week |
@@ -410,8 +439,11 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
    under a month. Either grow them toward ~1,000 each, or weight round composition toward the large
    banks and procedural `math`, accepting a less even format mix.
 3. **Measure the per-tier accuracy assumptions.** The §4.1 curve rests on easy 85% / medium 65% /
-   hard 45% / extreme 30%, all invented. These are the only free parameters in the model —
-   instrument them from day one of the private beta and re-derive the curve.
+   hard 45% / extreme 30%, all invented. These are the only free parameters in the model.
+   **Instrumentation shipped 2026-07-29** — `calibration_samples` plus
+   `GET /api/admin/v2/calibration` (§4.1). What remains is not code: testers have to play, and then
+   the curve gets re-derived. Note the sample is only clean while banks hold out — see §3.1, where
+   five banks exhaust in ~3 weeks and repeat sightings inflate accuracy.
 4. Private match mechanics — entirely undefined. Needs its own spec (buy-in structure, pooled or
    peer-to-peer, does it reuse the difficulty/format system).
 5. Regulatory framing — pooled buy-in + skill-weighted scoring + delayed cash payout needs a
@@ -427,7 +459,9 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 - [ ] **Sign off the §4.2 scoring rework — blocks the pool contract and the weekly engine**
 - [ ] Decide extra-round scoring is upside-only (§4.2) — required before extra-round tickets ship
 - [ ] Decide bank growth vs. format weighting (§7.2)
-- [ ] Instrument per-tier accuracy in the private beta (§7.3)
+- [x] ~~Instrument per-tier accuracy in the private beta (§7.3)~~ — shipped 2026-07-29; now waiting
+      on tester play, not code
+- [ ] Distribute tester codes — the sampler collects nothing until someone plays
 - [ ] Re-run `scripts/v2-bust-sim.py` against the revised mechanic and measured accuracy
 - [ ] Re-derive the §5.4 revenue model once a real bust rate exists
 - [ ] Scope private match mechanics as a standalone spec (§7.4)
@@ -436,3 +470,10 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 **Resolved this pass:** stake-tier vs. progressive-difficulty overlap (single $1 entry) · rebuy
 friction (cooldown + nudge) · concrete difficulty curve (§4.1) · variance simulation (§5.2a, which
 surfaced the blocker) · format coverage against the 9 live games (§3) · bank-capacity analysis (§3.1)
+· per-tier accuracy instrumentation (§4.1, §7.3)
+
+**Superseded drafts.** A 2026-07-23 copy of this spec circulated separately (169 lines, "revenue
+model directional, difficulty/bust-rate calibration pending"). Everything in it is contained here;
+four of its six open questions are resolved above, and its §6 locks the ±0.01x/question rule that
+§5.2a later disproved. Reconciled 2026-07-29 — treat this file as the only source of truth, and
+discard older copies rather than merging from them.
