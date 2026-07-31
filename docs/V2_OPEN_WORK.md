@@ -286,19 +286,55 @@ Note the deliberate split, which is why the inner gate still matters: `proxy.ts`
 runtime and cannot reach Postgres, so it can only answer "does V2 exist on this deploy?" — never
 "is this caller allowed?". Only the route handlers can do the latter.
 
+### 12. Anti-cheat: every system active in V2
+
+**Status:** audited 2026-07-31 → **[`V2_ANTICHEAT_AUDIT.md`](./V2_ANTICHEAT_AUDIT.md)**.
+Splits into three pieces with different blockers.
+
+V1's posture is detect-only. The goal for V2 is every mechanism active. The audit found detection
+is already fully live — what is off is *enforcement* (one env var, `ANTICHEAT_ENFORCE`, gating both
+the sub-400ms rejection and settlement refusal) and the clawback sweep, which is built but has no
+scheduler.
+
+**12a. Schedule the clawback sweep.** Not blocked, small, do now. `runClawbackSweep()`
+auto-blacklists wallets with ≥3 hard flags; it is idempotent, has a dry-run mode and an operator
+Undo, but only runs when someone manually presses it via `/api/admin/clawback` or Telegram.
+
+**12b. Recalibrate the flag thresholds — blocked on beta data (#5, #10).** `FLAG_ACCURACY = 0.9` was
+set against V1's hard/extreme floor, where honest accuracy is 30–41%, leaving huge headroom. §4.1
+unlocks easy/medium and honest accuracy rises to 51–65% at average skill — and **a strong player in
+the recovery band expects 87% at the simulator's own skill cap, three points off the flag**, meaning
+about half such sessions clear it on expectation alone. That cohort is exactly the wrong one to
+false-positive: someone who already busted and paid another $1. Enabling enforcement on V2's curve
+without re-tuning risks refusing legitimate payouts, which under a pooled model is visible to every
+player at the weekend tally. The calibration sampler already records the accuracy *and* timing
+distributions needed to set these properly.
+
+**12c. Make flagging difficulty-aware.** Structural fix: one global accuracy threshold cannot serve
+a curve whose honest accuracy ranges 51–65% by design. Compare a session against expected accuracy
+for the bands it was actually served — `RoundState.tier` and `calibration_samples` already carry the
+data. Sits alongside #3.
+
+Also open: enforcement currently means "refuse to sign, stake refundable via `cancelExpired()`".
+Under a weekly pool, decide explicitly what a flagged player forfeits and whether their stake stays
+in the pool.
+
 ---
 
 ## Suggested order
 
 1. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
-   only item that produces data rather than consuming it.
-2. **#1** — unblocks the two big builds *and* #4. Everything else is downstream. Sign off the shape
+   only item that produces data rather than consuming it. **#12b also depends on this data.**
+2. **#12a** — schedule the clawback sweep. Small, unblocked, and it is the one anti-cheat
+   mechanism that is genuinely dormant rather than deliberately detect-only.
+3. **#1** — unblocks the two big builds *and* #4. Everything else is downstream. Sign off the shape
    now; re-check the pass mark once #5 has real accuracies.
-3. **#4** after #1, not in parallel. The pass mark decides which tier is scarce (extreme at pass 7,
+4. **#4** after #1, not in parallel. The pass mark decides which tier is scarce (extreme at pass 7,
    medium at pass 9, easy at pass 11), so buying content first risks growing the wrong tier.
-4. **#2 and #3** once #1 is settled — wire **#11** in as those routes land.
-5. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
-6. **#8 and #9** before public launch.
+5. **#2 and #3** once #1 is settled — wire **#11** in as those routes land, and **#12c** alongside.
+6. **#12b then enforcement** once beta data exists. Do not flip `ANTICHEAT_ENFORCE` before it.
+7. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
+8. **#8 and #9** before public launch.
 
 ## Done recently (context, not work)
 

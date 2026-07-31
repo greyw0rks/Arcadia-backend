@@ -289,6 +289,13 @@ Two implementation constraints, both verified against the live banks:
 Timer scaling stays available as a second, independent lever but is **not** used by this curve —
 one axis is calibratable, two are not (the same argument that settled the stake-tier question).
 
+> **⚠ This curve breaks the anti-cheat thresholds.** `FLAG_ACCURACY = 0.9` was set against V1's
+> hard/extreme floor, where honest accuracy is 30–41%. Unlocking easy/medium raises honest accuracy
+> to 51–65% at average skill, and a strong player in the recovery band expects **87%** — three points
+> below the flag. Enforcement must not be enabled on this curve until the thresholds are re-derived
+> from measured data and the classifier is made difficulty-aware. See
+> [`V2_ANTICHEAT_AUDIT.md`](./V2_ANTICHEAT_AUDIT.md).
+
 ### 4.2 PROPOSED — per-round threshold scoring (the fix for §5.2a)
 
 **Replace per-question multiplier movement with one move per round, gated on a pass mark.**
