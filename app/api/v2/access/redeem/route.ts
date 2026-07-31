@@ -33,22 +33,31 @@ import { issueProofNonce, verifyProofTx } from "../../../../../server/v2/onchain
 
 export async function GET(req: NextRequest) {
   // The proof nonce is address-bound, so it can only be issued once the caller names a wallet.
+  //
+  // Note isAddress() enforces the EIP-55 checksum on mixed-case input. An all-lowercase or
+  // correctly-checksummed address passes; a hand-typed mixed-case one may not. Rather than
+  // returning proof:null and leaving the client to guess why, say so.
   const player = req.nextUrl.searchParams.get("player");
+  const valid = Boolean(player && isAddress(player));
 
   return NextResponse.json({
     // Signature path (non-MiniPay wallets).
     nonce: issueNonce(),
     message: "Sign redeemMessage(code, nonce) with the wallet you are redeeming for.",
     // Transaction path (MiniPay, or any wallet). Requires ?player=0x… to bind the nonce.
-    proof:
-      player && isAddress(player)
-        ? {
-            ...issueProofNonce(player),
-            instructions:
-              "Send a 0-value transaction to your own address with `calldata` as the data field, " +
-              "then POST { code, player, proofNonce, txHash }.",
-          }
-        : null,
+    proof: valid
+      ? {
+          ...issueProofNonce(player!),
+          instructions:
+            "Send a 0-value transaction to your own address with `calldata` as the data field, " +
+            "then POST { code, player, proofNonce, txHash }.",
+        }
+      : null,
+    proofUnavailable: valid
+      ? undefined
+      : player
+        ? "player is not a valid address (mixed-case addresses must carry a valid EIP-55 checksum)"
+        : "pass ?player=0x… to receive a transaction-proof challenge",
   });
 }
 
