@@ -195,7 +195,7 @@ export default function RunPage() {
             </p>
           </div>
 
-          <a className="btn" href="/games" style={{ ...btn, display: "block", textAlign: "center", textDecoration: "none" }}>
+          <a className="btn" href="/v2/play" style={{ ...btn, display: "block", textAlign: "center", textDecoration: "none" }}>
             Play a round
           </a>
         </>

@@ -20,8 +20,8 @@ export const emojiModule = makeChoiceGame(
     timeLimitSec: 8,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     return { prompt: e.emoji, correct: e.correct, options: [e.correct, ...e.decoys], tier };
   }
 );

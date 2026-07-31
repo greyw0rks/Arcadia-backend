@@ -27,8 +27,8 @@ export const geoModule: GameModule = {
   bankSize: BANK.length,
   available: true,
 
-  buildRound(roundIndex: number, seed: number, difficulty?: number): RoundState {
-    const { entry, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  buildRound(roundIndex: number, seed: number, difficulty?: number, tierSchedule?: number[]): RoundState {
+    const { entry, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     const options = shuffle([entry.answer, ...entry.decoys], seed + roundIndex + 1);
     const correctIndex = options.indexOf(entry.answer);
     const t = entry.tier;

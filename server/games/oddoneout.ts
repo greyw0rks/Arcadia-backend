@@ -20,8 +20,8 @@ export const oddOneOutModule = makeChoiceGame(
     timeLimitSec: 8,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     const correctItem = e.items[e.odd];
     return { prompt: "Which one doesn't belong?", correct: correctItem, options: e.items, tier };
   }

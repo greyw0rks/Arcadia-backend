@@ -22,8 +22,8 @@ export const wordModule = {
       timeLimitSec: 8,
       bankSize: BANK.length,
     },
-    (roundIndex, seed, difficulty) => {
-      const { entry: w, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+    (roundIndex, seed, difficulty, tierSchedule) => {
+      const { entry: w, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
       return { prompt: w.prompt, correct: w.correct, options: [w.correct, ...w.decoys], tier };
     }
   ),

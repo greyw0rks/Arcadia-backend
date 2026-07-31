@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { tallyWeek, bestMultiplierBp } from "./tally";
 import { buildTree, leafFor, verifyProof } from "./merkle";
 import { bandFor, tierSlots, BANDS } from "./bands";
+import { tieredPickIndex } from "../games/choiceGame";
 
 const A = "0x1111111111111111111111111111111111111111" as const;
 const B = "0x2222222222222222222222222222222222222222" as const;
@@ -206,5 +207,31 @@ describe("difficulty bands — §4.1", () => {
   it("is deterministic in the seed, so a round cannot be re-rolled", () => {
     expect(tierSlots(10000, 7)).toEqual(tierSlots(10000, 7));
     expect(tierSlots(10000, 7)).not.toEqual(tierSlots(10000, 8));
+  });
+
+  // The schedule being correct is not enough — it has to survive the picker. Passing a V2 band
+  // through the bet-scaled `difficulty` argument instead silently inverted the curve: recovery's
+  // [4,7,4,0] was served as [0,0,11,4], the hardest questions to the players closest to bust.
+  // V1's TIER_RECIPES never serve easy or medium at any difficulty, so no fraction can express these.
+  it("is honoured by the picker, for every band", () => {
+    const bank = Array.from({ length: 400 }, (_, i) => i % 4);
+    for (const band of BANDS) {
+      const mid = Math.min(band.maxBp - 1, band.minBp + 100);
+      const counts = [0, 0, 0, 0];
+      const schedule = tierSlots(mid, 4242);
+      for (let r = 0; r < 15; r++) {
+        counts[bank[tieredPickIndex(bank, r, 999, 0, schedule)]]++;
+      }
+      expect(counts, band.label).toEqual([...band.recipe]);
+    }
+  });
+
+  it("leaves V1 untouched when no schedule is given", () => {
+    const bank = Array.from({ length: 400 }, (_, i) => i % 4);
+    for (let r = 0; r < 15; r++) {
+      expect(tieredPickIndex(bank, r, 999, 0.8)).toBe(
+        tieredPickIndex(bank, r, 999, 0.8, undefined)
+      );
+    }
   });
 });

@@ -27,6 +27,15 @@ export interface Session {
   // Free one-per-wallet trial: no stake, no on-chain tx, no payout. The funding gate and settlement
   // are skipped for these (see /api/round and /api/finalize).
   isDemo: boolean;
+  // V2: this session belongs to a weekly run. It has no PER-SESSION on-chain stake — the weekly
+  // entry paid for it — so it skips the same funding gate a demo does. It is emphatically NOT a
+  // demo: the round is banked against real weekly standing, and its answers must reach the
+  // calibration sample, which excludes demos. Kept as a separate flag for exactly that reason.
+  weeklyRun?: boolean;
+  // V2 only: the §4.1 band recipe expanded to one tier per round, fixed at creation from the run's
+  // multiplier. Overrides the bet-scaled tier mix, which cannot express these bands — V1's
+  // TIER_RECIPES never serve easy or medium at any difficulty, while most V2 bands are mostly both.
+  tierSchedule?: number[];
   stake?: number; // gross stake amount in token units (undefined for demo sessions)
   maxRounds: number;
   // Bet-scaled difficulty in [0,1] (0 == min stake, 1 == max stake). Set from the REAL on-chain stake
@@ -98,7 +107,7 @@ export function createSession(
   maxRounds: number,
   chain: ChainId,
   token?: CeloToken,
-  opts?: { isDemo?: boolean; difficulty?: number; stake?: number }
+  opts?: { isDemo?: boolean; difficulty?: number; stake?: number; weeklyRun?: boolean; tierSchedule?: number[] }
 ): Session {
   const id = newSessionId();
   const s: Session = {
@@ -108,6 +117,8 @@ export function createSession(
     token: token ?? DEFAULT_CELO_TOKEN,
     player: player.toLowerCase(),
     isDemo: opts?.isDemo ?? false,
+    weeklyRun: opts?.weeklyRun ?? false,
+    tierSchedule: opts?.tierSchedule,
     stake: opts?.stake,
     // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.
     difficulty: opts?.difficulty,
@@ -141,7 +152,7 @@ function sessionSeed(id: string): number {
 export function nextRound(game: GameModule, s: Session) {
   if (s.roundIndex >= s.maxRounds) return null;
   const difficulty = s.difficulty ?? 0;
-  const round = game.buildRound(s.roundIndex, sessionSeed(s.id), difficulty);
+  const round = game.buildRound(s.roundIndex, sessionSeed(s.id), difficulty, s.tierSchedule);
   // Bet-scaled difficulty: shrink the per-round timer as the stake rises, and report the session's
   // actual (stake-driven) round count rather than the module's base value.
   round.view.timeLimitSec = scaleTimer(round.view.timeLimitSec, difficulty);

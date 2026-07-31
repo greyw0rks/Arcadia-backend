@@ -75,6 +75,29 @@ Shipped:
 | `server/v2/settle.ts` | Weekend tally → signed root, idempotent |
 | `POST /api/v2/run` | Open a run (entry or rebuy) |
 | `POST /api/v2/run/round` | Bank one scored round |
+| `POST /api/v2/run/session` | Open a 15-question session belonging to the live run |
+| `/v2/play` | The round UI — 15 questions, progress shown against the pass mark |
+
+**Gap 3 — ~~the beta had no way to actually play a round~~ CLOSED 2026-08-01.** The run dashboard's
+"Play a round" button pointed at V1's `/games`, which takes a per-session stake and settles on its
+own. There was no route from a weekly run into a scored round.
+
+`POST /api/v2/run/session` opens a session against the caller's live run, and `/v2/play` plays it.
+Sessions carry a `weeklyRun` flag so V1's on-chain funding gate is skipped — the weekly entry already
+paid. Deliberately **not** `isDemo`, which would skip the same gate but also exclude every answer
+from the calibration sample (#5), which is the data the beta exists to gather.
+
+Two bugs found and fixed while wiring this up:
+
+- **The §4.1 difficulty curve was inverted.** The band was collapsed into V1's 0..1 `difficulty`
+  fraction, but V1's `TIER_RECIPES` never serve easy or medium at *any* difficulty — that floor is
+  the deliberate house-treasury protection `bands.ts` documents. So no fraction can express a V2
+  band. Measured, the recovery band's `[4,7,4,0]` was served as `[0,0,11,4]`: the **hardest**
+  questions to the players closest to bust, exactly reversing the recovery mechanic. Fixed by
+  passing the recipe through as an explicit `tierSchedule`, threaded `createSession` → `nextRound` →
+  `buildRound` → `drawTiered`. V1 omits it and is bit-identical; both directions are now tested.
+- **`/api/round` returns `{ done, round, multiplierBp }`, not the view.** The play page read the
+  body as the view itself, so every field was `undefined` and the question rendered blank.
 
 Verified against a production build: both routes return **401** without a valid tester pass, reject
 forged passes, and **404 in production** with `V2_ENABLED` unset. **#11 is closed** — `requireTester`
@@ -151,6 +174,12 @@ Three things make this sharper than a content-backlog item:
 
 Sustaining 12 weeks at the worst band would need ~8,300 more extreme and ~2,900 more easy
 questions.
+
+**Note (2026-08-01):** the whole table above assumes rounds are served the §4.1 recipe. Until the
+tier-schedule fix in #3 that was not true of served play — the curve was inverted, so easy/medium
+were never drawn at all. The projections are still valid *for the intended curve*; they were simply
+never what the code did. Nothing measured has been invalidated, because no beta rounds have been
+played yet.
 
 **But the worst band is not the realistic case — and the pass mark decides which tier binds.**
 `python3 scripts/v2-bust-sim.py` now simulates a whole population and reports tier consumption:
