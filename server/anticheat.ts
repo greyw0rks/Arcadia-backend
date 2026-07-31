@@ -12,6 +12,12 @@
 // still allow settlement — so real timing data can be gathered and thresholds tuned before any payout
 // is denied. When true, the signer refuses to sign a flagged session (funds are refundable instead).
 
+import {
+  isImplausiblyAccurate,
+  expectedAccuracy,
+  type DifficultyContext,
+} from "./v2/expectedAccuracy";
+
 // ── Tunables (ms) ──────────────────────────────────────────────────────────
 // Minimum plausible human response: reading a 4-option question and clicking. Below this is not a
 // human reading the screen — it's a script or a pre-known answer.
@@ -86,21 +92,38 @@ export function summarize(timings: AnswerTiming[]): SessionTimingStats {
 /**
  * Classify a finished session from its timing stats. Pure — no DB, no env. The signer uses the
  * verdict (combined with enforcementOn()) to decide whether to sign.
+ *
+ * `ctx.tiers` optionally supplies the difficulty actually served. When present, the accuracy
+ * threshold becomes relative to that difficulty instead of the fixed 90%. This matters under the
+ * V2 curve (§4.1), where honest accuracy runs 51–65% by band and a strong player in the recovery
+ * band expects ~87% — three points under the fixed threshold. Without the adjustment, enforcement
+ * would deny payouts to legitimate players who had just busted and paid again.
+ *
+ * Omitting `ctx` preserves V1 behaviour exactly.
  */
-export function classify(stats: SessionTimingStats): Classification {
+export function classify(stats: SessionTimingStats, ctx?: DifficultyContext): Classification {
   const reasons: string[] = [];
 
-  // Any physically-impossible answer time is on its own strong evidence of automation.
+  // Any physically-impossible answer time is on its own strong evidence of automation. This is
+  // difficulty-independent: no question is easy enough to answer in under 400ms.
   if (stats.subFloorCount > 0) {
     reasons.push(`${stats.subFloorCount} answer(s) under ${FAST_ANSWER_FLOOR_MS}ms (not human-possible)`);
   }
 
-  if (stats.answers >= FLAG_MIN_ANSWERS && stats.accuracy >= FLAG_ACCURACY) {
+  const hasTiers = Boolean(ctx?.tiers?.length);
+  const accuracyIsSuspicious = hasTiers
+    ? isImplausiblyAccurate(stats.accuracy, ctx!)
+    : stats.accuracy >= FLAG_ACCURACY;
+
+  if (stats.answers >= FLAG_MIN_ANSWERS && accuracyIsSuspicious) {
+    const context = hasTiers
+      ? ` (expected ~${(expectedAccuracy(ctx!.tiers) * 100).toFixed(0)}% for this difficulty)`
+      : "";
     if (stats.fastFraction >= FLAG_FAST_FRACTION) {
-      reasons.push(`high accuracy (${(stats.accuracy * 100).toFixed(0)}%) with ${(stats.fastFraction * 100).toFixed(0)}% suspiciously-fast answers`);
+      reasons.push(`high accuracy (${(stats.accuracy * 100).toFixed(0)}%)${context} with ${(stats.fastFraction * 100).toFixed(0)}% suspiciously-fast answers`);
     }
     if (stats.meanMs > 0 && stats.meanMs < FLAG_MEAN_MS) {
-      reasons.push(`high accuracy (${(stats.accuracy * 100).toFixed(0)}%) with ${stats.meanMs}ms mean response`);
+      reasons.push(`high accuracy (${(stats.accuracy * 100).toFixed(0)}%)${context} with ${stats.meanMs}ms mean response`);
     }
   }
 

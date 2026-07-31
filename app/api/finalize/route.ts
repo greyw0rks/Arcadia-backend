@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
   // ── Anti-cheat: classify the session's answer timings ──────────────────────
   // Only meaningful for real (staked) sessions with a positive payout at risk.
   const stats = summarize(session.timings);
-  const cls = classify(stats);
+  const cls = classify(stats, { tiers: session.servedTiers });
   if (cls.verdict !== "clean") {
     const enforced = enforcementOn() && cls.verdict === "flagged";
     const game = getGame(session.gameId);

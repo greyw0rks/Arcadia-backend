@@ -6,6 +6,7 @@ import { bandFor } from "../../../../server/v2/bands";
 import { FREE_ROUNDS_PER_DAY, passMark, QUESTIONS_PER_ROUND } from "../../../../server/v2/scoring";
 import { V2DatabaseError, mustQuery } from "../../../../server/v2/db";
 import { currentWeekId, todayKey } from "../../../../server/v2/week";
+import { checkPaidEntry, entryVerificationOn } from "../../../../server/v2/entry";
 
 export const dynamic = "force-dynamic";
 
@@ -16,9 +17,9 @@ export const dynamic = "force-dynamic";
 // returns the wallet from a verified pass — the address is never read from the request body, which
 // is the whole reason the pass exists (server/accessGate.ts).
 //
-// ⚠ This does NOT yet verify payment on-chain. Opening a run should require a confirmed entry
-// transaction to ArcadiaPool; until that is wired, runs are free. Safe only because V2 is gated to
-// invited testers on an isolated staging deploy with a testnet token — see the TODO below.
+// Opening a run requires a confirmed ArcadiaPool entry (server/v2/entry.ts). That check is skipped
+// only when ARCADIA_POOL_ADDRESS is unset, which logs a warning — a deploy in that state has a
+// fictional economy.
 
 export async function GET(req: NextRequest) {
   const gate = requireTester(req);
@@ -91,9 +92,34 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // TODO(#2 integration): require a confirmed ArcadiaPool.enter/rebuy transaction from this
-    // wallet for this week before opening a run. Until then a tester can open runs without paying,
-    // which is acceptable only because V2 is invite-only on staging with a testnet token.
+    // Payment. A run must be paid for — otherwise the multipliers the engine tracks are backed by
+    // nothing and the weekend payout is a redistribution of an empty pot.
+    //
+    // Counts ArcadiaPool `Entered` events of kind ENTRY/REBUY, deliberately excluding $0.10 ticket
+    // purchases: the contract's `contributed` aggregate would let ten tickets sum to a free entry.
+    if (entryVerificationOn()) {
+      const check = await checkPaidEntry(weekId, player, chain);
+      if (!check.canOpen) {
+        return NextResponse.json(
+          {
+            error:
+              check.paidEntries === 0
+                ? "no entry found for this week — buy in first"
+                : "all paid entries are already in use",
+            paidEntries: check.paidEntries,
+            runsOpened: check.runsOpened,
+          },
+          { status: 402 } // Payment Required
+        );
+      }
+    } else {
+      // Staging convenience only. Loud, because a production deploy reaching this line means runs
+      // are free and the economy is fictional.
+      console.warn(
+        "[v2/run] paid-entry verification is OFF — set ARCADIA_POOL_ADDRESS to enable it"
+      );
+    }
+
     const openedBy = (await hasBustedThisWeek(weekId, player, chain)) ? "rebuy" : "entry";
     const run = await openRun(weekId, player, chain, openedBy, body.entryTx);
 

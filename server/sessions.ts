@@ -40,6 +40,10 @@ export interface Session {
   createdAt: number;
   // Per-answer response timings for anti-cheat analysis (server-measured; served → answered).
   timings: import("./anticheat").AnswerTiming[];
+  // Difficulty tier of each question actually served (0=easy … 3=extreme). Used to judge accuracy
+  // against what the served mix makes plausible rather than a fixed threshold. Modules that
+  // generate questions (math) contribute nothing, which is why this can be shorter than `timings`.
+  servedTiers: number[];
 }
 
 const SESSIONS = new Map<string, Session>();
@@ -114,6 +118,7 @@ export function createSession(
     finalized: false,
     createdAt: Date.now(),
     timings: [],
+    servedTiers: [],
   };
   SESSIONS.set(id, s);
   return s;
@@ -175,6 +180,10 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
   const rawMs = now - round.servedAt;
   const responseMs = onTime ? Math.max(0, rawMs) : round.timeLimitMs;
   s.timings.push({ responseMs, correct: result === "correct", onTime });
+
+  // Difficulty actually served, for the classifier. A fixed accuracy threshold cannot serve the V2
+  // curve, where honest accuracy ranges 51–87% by band — see server/v2/expectedAccuracy.ts.
+  if (round.tier !== undefined) s.servedTiers.push(round.tier);
 
   // Beta calibration sample. No-op unless V2_ENABLED, so this only ever fires on the private-tester
   // deploy. Recorded here because this is the one point where the served tier, the outcome and the

@@ -25,35 +25,8 @@ What was locked is the *structure*, not the economy. Every number still rests on
 per-tier accuracies — re-run `scripts/v2-bust-sim.py` against measured values and revisit the pass
 mark before mainnet.
 
-The original design — multiplier moves ±0.01x per question — **does not work.** Simulation
-(`scripts/v2-bust-sim.py`, spec §5.2a) showed three structural failures:
-
-- Bust rate cliffs from 85% to 0.2% across one step of player skill. No difficulty setting
-  produces the 30–35% the revenue model assumes.
-- The self-correcting difficulty curve drifts *upward* at low multipliers, so busting from
-  0.30x needs roughly a 7-sigma run of bad luck.
-- Final multipliers span only 1.56× from p1 to p99, so a pool split by multiplier barely
-  discriminates between players.
-
-Root cause is the ratio `√K · (d/s)` — 1,050 questions of ±0.01x makes drift swamp variance.
-Reducing the daily allowance does not fix it (noise falls as `√K`, drift as `K`); only
-coarser events do.
-
-**The proposal (spec §4.2):** one **±0.10x move per round**, gated on **≥9 of 15 correct**.
-70 events instead of 1,050. Bust rate becomes a smooth dial — 1.8% / 8.4% / 23.8% / 48.2% /
-73.0% at pass marks 7/8/9/10/11 — and payout spread rises to ~4.5×.
-
-**Also needs an explicit yes:** purchased extra rounds must be **upside-only** (can gain,
-never subtract). Under symmetric scoring a player spending $14/week on extra rounds *raises
-their own bust probability by ~8 points* while the platform rakes every ticket. That is a
-predatory pattern and must not ship.
-
-**Caveat that matters:** every number rests on invented per-tier accuracies (easy 85% /
-medium 65% / hard 45% / extreme 30%) and an assumed skill distribution. The *shape* is
-validated — a tunable dial exists — the specific pass mark is not. The instrumentation to
-replace those four numbers with measured ones is now live (#5); it needs tester play, not
-more code. Sign-off can proceed on the shape, but **re-run `scripts/v2-bust-sim.py` against
-the measured accuracies before the pass mark is final.**
+For the full reasoning — why the old mechanic failed, why fewer/bigger events fix it, and what
+the pass mark trades off — see the decision record and spec §4.2/§5.2a.
 
 ---
 
@@ -61,8 +34,8 @@ the measured accuracies before the pass mark is final.**
 
 ### 2. ~~`ArcadiaPool.sol`~~ — WRITTEN 2026-07-31
 
-**Status:** implemented in `arcadia-contracts/celo/src/ArcadiaPool.sol`, 25 tests passing.
-**Not yet deployed** — needs a deploy script and a staging deployment.
+**Status:** implemented in `arcadia-contracts/celo/src/ArcadiaPool.sol`, 25 tests passing, with a
+deploy script (`script/DeployPool.s.sol`). **Not yet deployed** — see #14.
 
 → **[`ARCADIA_POOL_SCOPE.md`](./ARCADIA_POOL_SCOPE.md)** for the design rationale.
 
@@ -86,8 +59,8 @@ permanently.
 
 ### 3. Weekly buy-in / bust / payout engine
 
-**Status:** core built 2026-07-31, rounds now scored server-side. **One integration gap remains**
-(paid entry), marked with a TODO in the route.
+**Status:** complete 2026-07-31. Rounds are scored server-side and entries are verified on-chain.
+Remaining work is deployment, not code — see #14.
 
 Shipped:
 
@@ -121,9 +94,21 @@ retries of the same slot, but a player could POST a finished 15/15 session repea
 next slot each time and banking unlimited +0.10x. The `session_id` index stops the replay; a repeat
 submission returns the already-banked result with `replayed: true` instead of erroring.
 
-**Gap 2 — runs are still free.** Opening a run does not yet require a confirmed
-`ArcadiaPool.enter()` / `rebuy()` transaction, so entries cost nothing. Acceptable *only* because V2
-is invite-only on staging with a testnet token. **Must not reach mainnet.**
+**Gap 2 — ~~runs are still free~~ CLOSED 2026-07-31.** `server/v2/entry.ts` counts ArcadiaPool
+`Entered` events of kind ENTRY/REBUY for the wallet and week, and requires strictly more paid
+entries than runs already opened.
+
+It deliberately does **not** use the contract's `contributed` mapping, which is the obvious choice
+and is wrong: that aggregate includes $0.10 extra-round tickets, so ten ticket purchases would sum
+to $1 and read as a free entry. Kind must be checked, not just value — which is why the event
+carries it.
+
+Comparing counts rather than consuming individual transactions keeps it stateless and idempotent: a
+player who paid twice and opened once can open exactly one more run, whatever order requests arrive
+in. Returns **402 Payment Required** when no unused entry exists.
+
+Requires `ARCADIA_POOL_ADDRESS` on the deploy. Without it the check is skipped and the route logs a
+warning, because a deploy in that state has a fictional economy.
 
 ### 4. Question-bank capacity
 
@@ -388,29 +373,82 @@ without re-tuning risks refusing legitimate payouts, which under a pooled model 
 player at the weekend tally. The calibration sampler already records the accuracy *and* timing
 distributions needed to set these properly.
 
-**12c. Make flagging difficulty-aware.** Structural fix: one global accuracy threshold cannot serve
-a curve whose honest accuracy ranges 51–65% by design. Compare a session against expected accuracy
-for the bands it was actually served — `RoundState.tier` and `calibration_samples` already carry the
-data. Sits alongside #3.
+**12c. ~~Make flagging difficulty-aware~~ — DONE 2026-07-31.** `server/v2/expectedAccuracy.ts`
+compares a session's accuracy against what the **served tiers** make plausible, instead of a fixed
+90%. `Session.servedTiers` carries the data; `classify()` takes it as an optional second argument
+and behaves exactly as before when it is absent, so V1 is untouched.
+
+The threshold is expected accuracy × 1.45 — the skill ceiling in `v2-bust-sim.py`'s population
+model — capped just under 1 so a strong player scoring 100% on easy questions is never flagged on
+accuracy alone. Speed remains what separates "good player" from "not reading the screen", and
+sub-400ms answers still hard-flag regardless of difficulty.
+
+Both directions are tested: an 87% recovery-band session stays clean (the false positive that
+blocked enforcement), and an 87% all-extreme session is now caught — the old fixed threshold let
+that through.
+
+**This unblocks #12b/enforcement in principle, but the numbers are still assumptions.** P_TIER is
+the same invented easy 85 / medium 65 / hard 45 / extreme 30. Re-derive from
+`GET /api/admin/v2/calibration` before flipping `ANTICHEAT_ENFORCE`.
 
 Also open: enforcement currently means "refuse to sign, stake refundable via `cancelExpired()`".
 Under a weekly pool, decide explicitly what a flagged player forfeits and whether their stake stays
 in the pool.
 
+### 14. Deploy `ArcadiaPool` to staging
+
+**Status:** script written (`arcadia-contracts/celo/script/DeployPool.s.sol`), never run.
+**Blocks:** the entire beta economy — until this exists, `server/v2/entry.ts` cannot verify payment
+and runs open for free.
+
+```bash
+cd arcadia-contracts/celo
+forge script script/DeployPool.s.sol:DeployPool \
+  --rpc-url https://forno.celo-sepolia.celo-testnet.org --broadcast
+```
+
+Env: `PRIVATE_KEY`, `TRUSTED_SIGNER` (must be the address the backend's key derives to — the script
+asserts it is neither zero nor the deployer). Optional: `POOL_RAKE_BPS` (default 1500),
+`CLAIM_WINDOW` (default 4 weeks).
+
+Then:
+1. Set `ARCADIA_POOL_ADDRESS=<deployed>` on the staging backend. **Without it the paid-entry check
+   is skipped** — the route logs a warning but still opens runs.
+2. Call `openWeek(weekId, token)` for the current week. `weekId` is `YYYYWW` from
+   `server/v2/week.ts` — the two must agree or claims are built against a week with no pot.
+3. Mint TestUSD to each tester wallet (mint is open by design).
+
+Verify after: `getWeek(weekId)` shows `status = Open`, and a `POST /api/v2/run` without a paid entry
+returns **402** rather than opening a run.
+
+---
+
 ---
 
 ## Suggested order
 
-1. **#13** — decide the redeem flow. Small, and it gates #10 for MiniPay users, who are most of the
-   audience. Everything downstream waits on testers actually playing.
-2. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
-   only item that produces data rather than consuming it. **#12b also depends on this data.**
-3. **#3** — the weekly engine, now unblocked by the #1 sign-off and needed to build the merkle
-   roots #2 consumes. Wire **#11** (`requireTester`) in as those routes land, and **#12c** alongside.
-4. **#4** — unblocked and cheap: at pass mark 9 the binding tier is `medium`. Can run in parallel.
-5. **#12b then enforcement** once beta data exists. Do not flip `ANTICHEAT_ENFORCE` before it.
-6. **#7** before any mainnet work — one `setMaxStake` call per token. (#1, #2, #5, #6, #12a done.)
-7. **#8 and #9** before public launch.
+**The code for the beta is written.** What remains is deployment, decisions, and things only you
+can do.
+
+### Blocked on you
+1. **#14 — deploy `ArcadiaPool` to staging** and set `ARCADIA_POOL_ADDRESS`. Until then paid-entry
+   verification is skipped and the economy is fictional.
+2. **#10 — Vercel Protection Bypass token.** Dashboard-only, not obtainable via CLI. Nothing
+   calibrates until testers can load the preview.
+3. **#7 — one `setMaxStake` call per token** on the live mainnet contract. Owner key, real money.
+4. **#9 — legal/compliance review** of the skill-game framing. Not a writing task.
+
+### Unblocked engineering
+5. **#4 — bank capacity.** At pass mark 9 the binding tier is `medium` (~4.1 weeks). Decide
+   re-tagging vs. weighting vs. authoring.
+6. **#12b — recalibrate anti-cheat thresholds** once beta data exists, then enable enforcement.
+   `P_TIER` in `expectedAccuracy.ts` is still the invented set.
+7. **#8 — scope private matches.** Entirely undefined; needs its own pass.
+
+### Before mainnet, without exception
+- Re-run `scripts/v2-bust-sim.py` against **measured** per-tier accuracy and revisit the pass mark.
+- **Independent review of `ArcadiaPool.sol`.** It holds player money and I wrote both it and its
+  tests.
 
 ## Done recently (context, not work)
 
