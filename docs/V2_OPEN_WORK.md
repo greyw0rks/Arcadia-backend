@@ -266,13 +266,40 @@ just copywriting.
 
 ### 10. Distribute tester codes
 
-**Status:** blocked on a dashboard action only you can do.
+**Status:** blocked on a dashboard action only you can do — **and now also on #13.**
 
 Five unused codes exist in `arcadia-contracts/celo/.env.staging.tester-codes` (expire
 2026-08-27). The preview has Vercel Standard Protection on, so testers cannot load it
 without a bypass token — Dashboard → `arcadia-celo` → Settings → Deployment Protection →
 Protection Bypass for Automation. Not obtainable via CLI. Full steps in
 [`V2_STAGING_HANDOFF.md`](./V2_STAGING_HANDOFF.md) §1.
+
+**Second blocker found 2026-07-31:** the redeem flow requires a wallet signature, which MiniPay
+cannot produce. Any tester opening the app in MiniPay cannot redeem their code at all. See #13.
+
+### 13. MiniPay cannot sign the V2 redeem message
+
+**Status:** found 2026-07-31 → **[`MINIPAY_V2_CONSTRAINTS.md`](./MINIPAY_V2_CONSTRAINTS.md)**.
+Needs a decision. **Blocks #10 for MiniPay users**, which is most of the target audience.
+
+MiniPay does not support `personal_sign` or `eth_signTypedData` — not discouraged, unsupported, and
+the listing checklist explicitly rejects apps that use them. `app/api/v2/access/redeem` is built on
+exactly that: the wallet must sign a code+nonce message to prove it owns the address.
+
+The security reasoning is right (an allowlist cannot trust a body-supplied address) but it is
+unsatisfiable inside MiniPay. Four options are written up; the recommendation is **on-chain proof** —
+redeem by sending a transaction, so `msg.sender` is the proof. It keeps the real security property,
+works in MiniPay today, and costs one transaction on a chain where fees are ~$0.0005 and MiniPay
+abstracts them into stablecoins.
+
+**Checked and safe:** `ArcadiaPool.claim()` is unaffected. A claim is a contract call with a merkle
+proof in calldata, not a signed message, and the EIP-712 signature is produced server-side. The
+claim UI must still pass `type: "legacy"` and skip `feeCurrency` in MiniPay — reuse the existing
+helper in `lib/useArcade.ts` rather than a fresh `writeContract`.
+
+Also captured there: the listing copy rules (no "gas"/"crypto"), the never-show-CELO rule, the
+no-raw-addresses rule (relevant to V2 leaderboards), and the Add Cash deeplink for a busted player
+who wants to rebuy with no balance.
 
 ### 11. `requireTester()` is written but has no call sites
 
@@ -350,15 +377,16 @@ in the pool.
 
 ## Suggested order
 
-1. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
+1. **#13** — decide the redeem flow. Small, and it gates #10 for MiniPay users, who are most of the
+   audience. Everything downstream waits on testers actually playing.
+2. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
    only item that produces data rather than consuming it. **#12b also depends on this data.**
-2. **#2 and #3** — the two big builds, now unblocked by the #1 sign-off. Wire **#11**
-   (`requireTester`) in as those routes land, and **#12c** alongside.
-3. **#4** — unblocked and cheap: at pass mark 9 the binding tier is `medium`. Can run in parallel
-   with the builds.
-4. **#12b then enforcement** once beta data exists. Do not flip `ANTICHEAT_ENFORCE` before it.
-5. **#7** before any mainnet work — one `setMaxStake` call per token. (#1, #5, #6 and #12a done.)
-6. **#8 and #9** before public launch.
+3. **#3** — the weekly engine, now unblocked by the #1 sign-off and needed to build the merkle
+   roots #2 consumes. Wire **#11** (`requireTester`) in as those routes land, and **#12c** alongside.
+4. **#4** — unblocked and cheap: at pass mark 9 the binding tier is `medium`. Can run in parallel.
+5. **#12b then enforcement** once beta data exists. Do not flip `ANTICHEAT_ENFORCE` before it.
+6. **#7** before any mainnet work — one `setMaxStake` call per token. (#1, #2, #5, #6, #12a done.)
+7. **#8 and #9** before public launch.
 
 ## Done recently (context, not work)
 
