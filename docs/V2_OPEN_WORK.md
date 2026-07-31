@@ -86,22 +86,37 @@ permanently.
 
 ### 3. Weekly buy-in / bust / payout engine
 
-**Status:** not started. **UNBLOCKED 2026-07-31** — #1 signed off; the scoring rule it needs is in
-`server/v2/scoring.ts`.
+**Status:** core built 2026-07-31. **Two integration gaps remain before testers can play for real** —
+both marked with TODOs in the routes.
 
-Backend counterpart to #2: daily section allowance, multiplier tracking, bust detection,
-progressive difficulty selection, weekend tally.
+Shipped:
 
-Three constraints already established:
+| Piece | What it does |
+|---|---|
+| `server/v2/db.ts` | `mustQuery` — throws instead of returning `null`, so a dropped connection during the tally aborts rather than silently omitting a player who is owed money |
+| `server/v2/week.ts` | UTC week/day boundaries; `weekId` as `YYYYWW`, used on-chain |
+| `server/v2/bands.ts` | §4.1 difficulty curve — unlocks the easy/medium banks V1 never serves |
+| `server/v2/runs.ts` | Run lifecycle, round banking, bust detection |
+| `server/v2/tally.ts` | Multipliers → payout amounts, integer-only |
+| `server/v2/merkle.ts` | The tree `ArcadiaPool.claim()` verifies against |
+| `server/v2/settle.ts` | Weekend tally → signed root, idempotent |
+| `POST /api/v2/run` | Open a run (entry or rebuy) |
+| `POST /api/v2/run/round` | Bank one scored round |
 
-- `server/db.ts` runs `MIGRATIONS` on **every startup**, so V2 DDL must live in a separate
-  file or merging to `main` creates V2 tables in the production database.
-- `server/db.ts` `query()` returns `null` on error and callers read `null` as "no data" —
-  unsafe for money tables. Needs a different accessor.
-- The existing `TIER_RECIPES` in `server/games/choiceGame.ts` never serves easy or medium
-  questions at any stake. V2 needs that floor removed (spec §4.1) — safe **only** because
-  payouts come from a player pool rather than house funds. If any V2 mode ever pays from
-  house funds, the floor must come back.
+Verified against a production build: both routes return **401** without a valid tester pass, reject
+forged passes, and **404 in production** with `V2_ENABLED` unset. **#11 is closed** — `requireTester`
+now has real call sites.
+
+**Gap 1 — rounds are client-scored.** `POST /api/v2/run/round` takes `correct` from the request
+body, so a tester could claim 15/15 every round. The real flow must score server-side from
+`server/sessions.ts`, which already holds the answer keys and never sends them to the client. The
+route should take a `sessionId` and read the outcome rather than being told it.
+
+**Gap 2 — runs are free.** Opening a run does not yet require a confirmed `ArcadiaPool.enter()` /
+`rebuy()` transaction, so entries cost nothing.
+
+Both are acceptable *only* because V2 is invite-only on an isolated staging deploy with a testnet
+token. **Neither may reach mainnet.**
 
 ### 4. Question-bank capacity
 
@@ -300,12 +315,15 @@ deliberately does *not* burn the nonce, so a tester ahead of the chain can retry
 **Still to do:** the frontend two-step UI — request a nonce with `?player=0x…`, send the transaction,
 then POST `{ code, player, proofNonce, txHash }`.
 
-### 11. `requireTester()` is written but has no call sites
+### 11. ~~`requireTester()` is written but has no call sites~~ — CLOSED 2026-07-31
 
-**Status:** found 2026-07-29 while auditing "V2 is testers-only". Not blocked, but small.
+**Wired in** when the first V2 gameplay routes landed (#3). `POST /api/v2/run` and
+`POST /api/v2/run/round` both call it as their first line.
 
-V2 is meant to be private-beta only. The **outer** gate is real and verified working — see below —
-but the **inner** one is not yet connected:
+Verified against a production build: both return **401** without a pass and reject a forged one,
+and both **404 in production** with `V2_ENABLED` unset while `/api/games` still returns 200.
+
+The original finding, kept because the two-layer split is worth remembering:
 
 `app/api/v2/_gate.ts` implements the two-layer per-tester check (valid HMAC pass + still on the
 allowlist) and documents itself as "call as the FIRST line of every /api/v2 route handler". But
