@@ -13,7 +13,10 @@ for the economy design see [`ARCADIA_V2_ECONOMY_SPEC.md`](./ARCADIA_V2_ECONOMY_S
 ### 1. Sign off (or reject) the §4.2 scoring rework
 
 **Status:** proposed, simulated, awaiting a decision.
-**Blocks:** #2, #3, and any sizing of the revenue model.
+**Blocks:** #2, #3, #4, and any sizing of the revenue model.
+
+→ **[`V2_SCORING_DECISION.md`](./V2_SCORING_DECISION.md)** — the three yes/no items, what each
+commits to, and what breaks if it's wrong. Approve or amend there.
 
 The original design — multiplier moves ±0.01x per question — **does not work.** Simulation
 (`scripts/v2-bust-sim.py`, spec §5.2a) showed three structural failures:
