@@ -59,21 +59,30 @@ the measured accuracies before the pass mark is final.**
 
 ## Build work
 
-### 2. `ArcadiaPool.sol`
+### 2. ~~`ArcadiaPool.sol`~~ — WRITTEN 2026-07-31
 
-**Status:** not started. Nothing exists. **UNBLOCKED 2026-07-31** — #1 is signed off, so final
-standing is now defined: per-round ±0.10x on a ≥9/15 pass mark, bust at zero (`server/v2/scoring.ts`).
+**Status:** implemented in `arcadia-contracts/celo/src/ArcadiaPool.sol`, 25 tests passing.
+**Not yet deployed** — needs a deploy script and a staging deployment.
 
-Weekly pooled buy-in contract: entries, rebuys, extra-round tickets, rake split, weekend
-settlement to a ranked set of players.
+→ **[`ARCADIA_POOL_SCOPE.md`](./ARCADIA_POOL_SCOPE.md)** for the design rationale.
 
-Do **not** extend `QuizArcade.sol`. It is a house-treasury model — the house pays each
-session from its own reserve. The pool model is structurally different: players fund the
-pot and the contract redistributes it. Note also that `src/QuizArcadeV2.sol` is an *earlier
-draft* than `QuizArcade.sol` despite the name; neither is the right base.
+The three open sub-questions are resolved:
 
-Open sub-questions: how ranking is submitted on-chain (single signed merkle root vs.
-per-player claims), whether payouts push or pull, and what happens to an unclaimed share.
+- **Ranking submission: a backend-signed merkle root.** Push settlement is ~250M gas at 10k players
+  against Celo's ~50M block limit, and the cost falls on the platform. A root is O(1) regardless of
+  participant count.
+- **Payouts pull, not push.** One player at a reverting address cannot block everyone else, and
+  players can still claim if the backend is down.
+- **Unclaimed rolls into the next week's pot** after a 4-week claim window, via a permissionless
+  `sweepWeek`. Returning it to the platform would create an incentive to make claiming hard.
+
+The property the contract is built around: **the pot is the ceiling.** No reserve, no solvency check
+and no house exposure, because payouts for a week cannot exceed what that week took in. A wrong or
+malicious root can at worst misallocate one week's pot — proven by test, not just by construction.
+
+Also added beyond the original scope: `refund(weekId)` for the case where a week closes but results
+are never published. Without it a backend failure at settlement would strand every entrant's money
+permanently.
 
 ### 3. Weekly buy-in / bust / payout engine
 
