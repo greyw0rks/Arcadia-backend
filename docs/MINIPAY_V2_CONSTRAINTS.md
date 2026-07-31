@@ -10,7 +10,7 @@ real blocker.
 
 ---
 
-## 🔴 BLOCKER — the V2 tester redeem flow cannot work in MiniPay
+## ✅ RESOLVED 2026-07-31 — the V2 redeem flow now works in MiniPay
 
 **MiniPay does not support `personal_sign` or `eth_signTypedData`.** They are not merely discouraged
 — they are unsupported, and the submission checklist explicitly rejects apps that use them:
@@ -18,29 +18,33 @@ real blocker.
 > "**No Message Signing** — do not prompt users to `personal_sign` or `eth_signTypedData` to access
 > or authenticate. MiniPay does not support these methods."
 
-`app/api/v2/access/redeem` is built on exactly that. Its comment states the reasoning plainly:
+`app/api/v2/access/redeem` was built on exactly that, so a tester opening the app in MiniPay could
+not redeem their code — making invite-only V2 unreachable for most of the target audience.
 
-> "The signature is the whole point: an allowlist cannot trust a body-supplied address (anyone can
-> send a tester's wallet), so the wallet must sign the code+nonce message."
+**Fixed by option A: prove ownership with a transaction.** `server/v2/onchainProof.ts` issues a
+short-lived nonce, the tester sends a 0-value self-transfer carrying it, and the backend verifies
+on-chain that the transaction's `from` is the claimed address. A transaction is a signature the
+chain witnessed, so the security property is unchanged — the wallet's key still had to authorise
+something the server chose. The signature path is kept for non-MiniPay wallets; both are accepted.
 
-The reasoning is sound and the security property is real — but **it cannot be satisfied inside
-MiniPay**. A tester opening the app in MiniPay cannot redeem their code. Since V2 is invite-only,
-that means V2 is currently unreachable for MiniPay users, which is most of the target audience.
+**The design detail that matters: the invite code never goes on-chain.** Calldata is public from the
+moment it hits the mempool, so a code in calldata could be copied and redeemed by an observer,
+turning the proof into a race the legitimate tester can lose. Only the nonce is published, and it is
+**bound to one address** — presenting an observed nonce from a different wallet fails. Tested
+directly (`rejects a nonce presented by a different wallet`).
 
-### Options
+Other properties held by test: a transaction hash cannot be reused; a nonce is burned on success and
+on a wrong-sender attempt; reverted transactions are rejected; and a not-yet-mined transaction does
+**not** burn the nonce, so a tester polling ahead of the chain can retry rather than being stranded.
 
-| Option | How it proves ownership | Cost |
+### The options that were considered
+
+| Option | How it proves ownership | Verdict |
 |---|---|---|
-| **A. On-chain proof** — redeem by sending a tiny transaction (or calling a `redeem(code)` method) | The tx is signed by the wallet, so `msg.sender` IS the proof | Costs a transaction; MiniPay covers fees via fee abstraction, so the user pays no CELO. Strongest option, and it reuses the existing tx path that already works in MiniPay |
-| **B. Code-as-bearer-token** — drop the signature, treat the code itself as the secret | Nothing — whoever holds the code gets access | Weakest. A leaked code is transferable. Acceptable *only* because codes are one-use grants for a closed beta, not something protecting funds |
-| **C. Detect and branch** — signature outside MiniPay, on-chain or bearer inside | Varies by client | Two auth paths to maintain and test; the weaker one becomes the attack surface |
-| **D. ODIS phone attestation** | Phone → address via FederatedAttestations | Heaviest; solves identity properly but is a large build |
-
-**Recommendation: A.** It preserves the actual security property (the wallet demonstrably signed
-something), works in MiniPay today, and needs no new trust assumptions. The cost is one cheap
-transaction on a chain where fees are ~$0.0005 and MiniPay abstracts them into stablecoins.
-
-**This is a decision, not something to silently pick.** Recorded here rather than implemented.
+| **A. On-chain proof** ✅ | The tx is signed by the wallet, so `from` IS the proof | **Chosen.** Keeps the real security property, works in MiniPay, no new trust assumptions. Costs one tx at ~$0.0005, fee-abstracted into stablecoins |
+| B. Code-as-bearer-token | Nothing — whoever holds the code gets access | Rejected: a leaked code becomes transferable |
+| C. Detect and branch | Varies by client | Rejected: `isMiniPay()` is client-side and unverifiable server-side, so an attacker just takes the weaker path. Same security as B with twice the code |
+| D. ODIS phone attestation | Phone → address via FederatedAttestations | Deferred: solves identity properly but is a large build. Revisit for the "no raw `0x…`" listing requirement |
 
 ---
 
@@ -90,6 +94,8 @@ than retrofit:
 
 ## What to do next
 
-1. **Decide the redeem flow** (A–D above). Blocks MiniPay testers entirely, so it gates #10.
+1. ~~Decide the redeem flow.~~ **Done — option A implemented** (`server/v2/onchainProof.ts`).
+   The frontend still needs the two-step UI: request a proof nonce with `?player=0x…`, send the
+   0-value transaction, then POST `{ code, player, proofNonce, txHash }`.
 2. When building the claim UI, reuse the MiniPay-aware transaction helper.
 3. Fold the copy rules and the Add Cash deeplink into the V2 UI as it is built.

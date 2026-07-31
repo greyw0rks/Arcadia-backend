@@ -274,32 +274,31 @@ without a bypass token — Dashboard → `arcadia-celo` → Settings → Deploym
 Protection Bypass for Automation. Not obtainable via CLI. Full steps in
 [`V2_STAGING_HANDOFF.md`](./V2_STAGING_HANDOFF.md) §1.
 
-**Second blocker found 2026-07-31:** the redeem flow requires a wallet signature, which MiniPay
-cannot produce. Any tester opening the app in MiniPay cannot redeem their code at all. See #13.
+**Second blocker found 2026-07-31, now fixed:** the redeem flow required a wallet signature, which
+MiniPay cannot produce. Resolved by on-chain proof (#13) — but the **frontend redeem UI still needs
+building** before codes can go out.
 
-### 13. MiniPay cannot sign the V2 redeem message
+### 13. ~~MiniPay cannot sign the V2 redeem message~~ — FIXED 2026-07-31
 
-**Status:** found 2026-07-31 → **[`MINIPAY_V2_CONSTRAINTS.md`](./MINIPAY_V2_CONSTRAINTS.md)**.
-Needs a decision. **Blocks #10 for MiniPay users**, which is most of the target audience.
+**Backend done**, frontend UI still needed → **[`MINIPAY_V2_CONSTRAINTS.md`](./MINIPAY_V2_CONSTRAINTS.md)**.
 
-MiniPay does not support `personal_sign` or `eth_signTypedData` — not discouraged, unsupported, and
-the listing checklist explicitly rejects apps that use them. `app/api/v2/access/redeem` is built on
-exactly that: the wallet must sign a code+nonce message to prove it owns the address.
+MiniPay supports neither `personal_sign` nor `eth_signTypedData` — unsupported, and the listing
+checklist rejects apps that use them. The redeem flow required exactly that, so testers in MiniPay
+could not redeem at all.
 
-The security reasoning is right (an allowlist cannot trust a body-supplied address) but it is
-unsatisfiable inside MiniPay. Four options are written up; the recommendation is **on-chain proof** —
-redeem by sending a transaction, so `msg.sender` is the proof. It keeps the real security property,
-works in MiniPay today, and costs one transaction on a chain where fees are ~$0.0005 and MiniPay
-abstracts them into stablecoins.
+Fixed with **on-chain proof** (`server/v2/onchainProof.ts`): the backend issues an address-bound
+nonce, the tester sends a 0-value self-transfer carrying it, and the backend verifies on-chain that
+the transaction's `from` is the claimed address. A transaction is a signature the chain witnessed,
+so the security property is unchanged. The signature path is kept for non-MiniPay wallets — the
+route accepts either.
 
-**Checked and safe:** `ArcadiaPool.claim()` is unaffected. A claim is a contract call with a merkle
-proof in calldata, not a signed message, and the EIP-712 signature is produced server-side. The
-claim UI must still pass `type: "legacy"` and skip `feeCurrency` in MiniPay — reuse the existing
-helper in `lib/useArcade.ts` rather than a fresh `writeContract`.
+The invite code never goes on-chain: calldata is public in the mempool, so a code there could be
+copied and redeemed by an observer. Only the address-bound nonce is published, which is worthless to
+anyone else. 16 tests cover nonce theft, tx replay, reverted txs, and the not-yet-mined case (which
+deliberately does *not* burn the nonce, so a tester ahead of the chain can retry).
 
-Also captured there: the listing copy rules (no "gas"/"crypto"), the never-show-CELO rule, the
-no-raw-addresses rule (relevant to V2 leaderboards), and the Add Cash deeplink for a busted player
-who wants to rebuy with no balance.
+**Still to do:** the frontend two-step UI — request a nonce with `?player=0x…`, send the transaction,
+then POST `{ code, player, proofNonce, txHash }`.
 
 ### 11. `requireTester()` is written but has no call sites
 
