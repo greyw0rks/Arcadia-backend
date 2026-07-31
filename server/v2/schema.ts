@@ -60,6 +60,86 @@ CREATE TABLE IF NOT EXISTS calibration_samples (
 
 CREATE INDEX IF NOT EXISTS calibration_samples_tier ON calibration_samples (tier);
 CREATE INDEX IF NOT EXISTS calibration_samples_player ON calibration_samples (player);
+
+-- ── Weekly economy ─────────────────────────────────────────────────────────
+-- One row per (player, week, run). A "run" is a life: it starts at 1.0x on entry or rebuy and ends
+-- at bust. A player can hold several runs in a week — the busted ones plus at most one live one.
+--
+-- Money tables. Read them through server/v2/db.ts (mustQuery), NEVER server/db.ts query(), which
+-- returns null on failure and would make "database down" indistinguishable from "earned nothing".
+CREATE TABLE IF NOT EXISTS weekly_runs (
+  id            BIGSERIAL   PRIMARY KEY,
+  week_id       BIGINT      NOT NULL,
+  player        TEXT        NOT NULL,
+  chain         TEXT        NOT NULL,
+  -- Stored in basis points, not a float. 1.0x = 10000. The multiplier decides a payout, and
+  -- repeated float addition of 0.1 does not round-trip (0.1+0.2 !== 0.3).
+  multiplier_bp INTEGER     NOT NULL DEFAULT 10000,
+  busted        BOOLEAN     NOT NULL DEFAULT FALSE,
+  busted_at     TIMESTAMPTZ,
+  -- Entry that opened this run: 'entry' for the week's first, 'rebuy' after a bust.
+  opened_by     TEXT        NOT NULL DEFAULT 'entry',
+  -- On-chain transaction that paid for this run, so a run can always be traced to a payment.
+  entry_tx      TEXT,
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+-- A player may hold at most ONE live run per week. Enforced in the database rather than in code:
+-- the check has to hold under concurrent requests, and a partial unique index is the only place
+-- that is true regardless of how many processes are serving.
+CREATE UNIQUE INDEX IF NOT EXISTS weekly_runs_one_live
+  ON weekly_runs (week_id, player, chain) WHERE NOT busted;
+
+CREATE INDEX IF NOT EXISTS weekly_runs_week ON weekly_runs (week_id, chain);
+
+-- One row per scored round. Append-only: the audit trail behind every multiplier, so a disputed
+-- payout can be reconstructed round by round rather than taken on trust.
+CREATE TABLE IF NOT EXISTS weekly_rounds (
+  id             BIGSERIAL   PRIMARY KEY,
+  run_id         BIGINT      NOT NULL REFERENCES weekly_runs(id),
+  day            DATE        NOT NULL,
+  -- 0-based index within the day. Rounds at or beyond the free allowance are purchased.
+  day_index      INTEGER     NOT NULL,
+  purchased      BOOLEAN     NOT NULL DEFAULT FALSE,
+  correct        INTEGER     NOT NULL,
+  passed         BOOLEAN     NOT NULL,
+  delta_bp       INTEGER     NOT NULL,
+  multiplier_bp  INTEGER     NOT NULL,  -- resulting multiplier, for a replayable audit trail
+  session_id     TEXT,
+  scored_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  -- A round is scored once. Makes a retried write idempotent instead of double-counting a payout.
+  UNIQUE (run_id, day, day_index)
+);
+
+CREATE INDEX IF NOT EXISTS weekly_rounds_run ON weekly_rounds (run_id);
+
+-- The weekend tally: the exact per-player amounts that go into the merkle root. Written once when
+-- a week is settled, and kept so the published root can be re-derived and audited later.
+CREATE TABLE IF NOT EXISTS weekly_payouts (
+  week_id     BIGINT      NOT NULL,
+  player      TEXT        NOT NULL,
+  chain       TEXT        NOT NULL,
+  -- Best multiplier across the player's runs that week (busted runs score 0).
+  best_bp     INTEGER     NOT NULL,
+  -- Share of the pot in the token's smallest unit, as a string: amounts exceed Number.MAX_SAFE_INTEGER
+  -- for 18-decimal tokens, and this figure is what the contract pays.
+  amount      NUMERIC     NOT NULL,
+  leaf        TEXT        NOT NULL,
+  settled_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (week_id, player, chain)
+);
+
+-- One row per settled week: the root published on-chain plus the inputs it was derived from.
+CREATE TABLE IF NOT EXISTS weekly_settlements (
+  week_id       BIGINT      PRIMARY KEY,
+  chain         TEXT        NOT NULL,
+  root          TEXT        NOT NULL,
+  total_payout  NUMERIC     NOT NULL,
+  pot           NUMERIC     NOT NULL,
+  players       INTEGER     NOT NULL,
+  published_tx  TEXT,
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
 `;
 
 /** Create V2 tables. No-op unless V2_ENABLED; safe to run on every boot (idempotent DDL). */
