@@ -8,15 +8,22 @@ for the economy design see [`ARCADIA_V2_ECONOMY_SPEC.md`](./ARCADIA_V2_ECONOMY_S
 
 ---
 
-## The one that blocks the others
+## The one that blocked the others
 
-### 1. Sign off (or reject) the §4.2 scoring rework
+### 1. ~~Sign off (or reject) the §4.2 scoring rework~~ — DONE 2026-07-31
 
-**Status:** proposed, simulated, awaiting a decision.
-**Blocks:** #2, #3, #4, and any sizing of the revenue model.
+**Signed off in full**, all three parts as proposed → **[`V2_SCORING_DECISION.md`](./V2_SCORING_DECISION.md)**.
 
-→ **[`V2_SCORING_DECISION.md`](./V2_SCORING_DECISION.md)** — the three yes/no items, what each
-commits to, and what breaks if it's wrong. Approve or amend there.
+- One **±0.10x move per round**, replacing ±0.01x per question (70 events/week instead of 1,050).
+- **Pass mark 9 of 15** → ~24% bust, best payout spread (4.50×), 4.1 weeks of bank runway.
+- **Purchased rounds are upside-only** — can gain, never subtract.
+
+Implemented in `server/v2/scoring.ts`, tunable via `V2_PASS_MARK` without a redeploy. **#2, #3 and
+#4 are now unblocked.**
+
+What was locked is the *structure*, not the economy. Every number still rests on four invented
+per-tier accuracies — re-run `scripts/v2-bust-sim.py` against measured values and revisit the pass
+mark before mainnet.
 
 The original design — multiplier moves ±0.01x per question — **does not work.** Simulation
 (`scripts/v2-bust-sim.py`, spec §5.2a) showed three structural failures:
@@ -54,8 +61,8 @@ the measured accuracies before the pass mark is final.**
 
 ### 2. `ArcadiaPool.sol`
 
-**Status:** not started. Nothing exists.
-**Blocked by:** #1 — settlement shape depends on how final standing is computed.
+**Status:** not started. Nothing exists. **UNBLOCKED 2026-07-31** — #1 is signed off, so final
+standing is now defined: per-round ±0.10x on a ≥9/15 pass mark, bust at zero (`server/v2/scoring.ts`).
 
 Weekly pooled buy-in contract: entries, rebuys, extra-round tickets, rake split, weekend
 settlement to a ranked set of players.
@@ -70,8 +77,8 @@ per-player claims), whether payouts push or pull, and what happens to an unclaim
 
 ### 3. Weekly buy-in / bust / payout engine
 
-**Status:** not started.
-**Blocked by:** #1.
+**Status:** not started. **UNBLOCKED 2026-07-31** — #1 signed off; the scoring rule it needs is in
+`server/v2/scoring.ts`.
 
 Backend counterpart to #2: daily section allowance, multiplier tracking, bust detection,
 progressive difficulty selection, weekend tally.
@@ -89,8 +96,8 @@ Three constraints already established:
 
 ### 4. Question-bank capacity
 
-**Status:** re-measured 2026-07-31. **Now blocked by #1** — the pass mark decides which tier is
-scarce, so content authored first is partly wasted. Analysis is done; the buying decision waits.
+**Status:** re-measured 2026-07-31. **UNBLOCKED** — #1 is signed off at pass mark 9, which fixes
+which tier is scarce. Decision now ready to make.
 
 A maximally active player consumes 1,050 questions/week. The original analysis divided each bank
 by an even split across formats and concluded the five smallest banks last ~3 weeks. That
@@ -144,13 +151,13 @@ Extreme consumption swings 23× across that range (321 → 14 questions per play
 lenient mark lets everyone climb into the extreme-heavy bands and park, while a harsh one keeps
 resetting them to 1.0x where recipes are medium/hard-weighted.
 
-**So this item is effectively blocked by #1 after all.** The scarcest tier changes identity —
-extreme at pass 7, medium at pass 9, easy at pass 11 — so content authored before the pass mark is
-settled is partly wasted. At the recommended pass 9 the pressure is on `medium`, which inverts the
-"grow extreme" read that the worst-case table suggests.
+**Resolved by the #1 sign-off: pass mark 9 means `medium` is the binding tier, at ~4.1 weeks.**
+That inverts the "grow extreme" read the worst-case table suggests — at realistic occupancy the
+pressure sits mid-curve, because that is where a resetting population spends its time. `medium` is
+also the second-largest pool (1,456), which is the healthiest case available.
 
-Remaining options once #1 lands: re-tag toward whichever tier binds, flatten the curve's extremes,
-weight toward the large banks and `math`, or cap purchased volume.
+Options now that the target is known: re-tag toward `medium` (cheapest), flatten the curve's
+extremes, weight toward the large banks and `math`, or cap purchased volume.
 
 ### 5. ~~Instrument per-tier accuracy in the beta~~ — DONE 2026-07-29
 
@@ -336,16 +343,13 @@ in the pool.
 
 1. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
    only item that produces data rather than consuming it. **#12b also depends on this data.**
-2. **#12a** — schedule the clawback sweep. Small, unblocked, and it is the one anti-cheat
-   mechanism that is genuinely dormant rather than deliberately detect-only.
-3. **#1** — unblocks the two big builds *and* #4. Everything else is downstream. Sign off the shape
-   now; re-check the pass mark once #5 has real accuracies.
-4. **#4** after #1, not in parallel. The pass mark decides which tier is scarce (extreme at pass 7,
-   medium at pass 9, easy at pass 11), so buying content first risks growing the wrong tier.
-5. **#2 and #3** once #1 is settled — wire **#11** in as those routes land, and **#12c** alongside.
-6. **#12b then enforcement** once beta data exists. Do not flip `ANTICHEAT_ENFORCE` before it.
-7. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
-8. **#8 and #9** before public launch.
+2. **#2 and #3** — the two big builds, now unblocked by the #1 sign-off. Wire **#11**
+   (`requireTester`) in as those routes land, and **#12c** alongside.
+3. **#4** — unblocked and cheap: at pass mark 9 the binding tier is `medium`. Can run in parallel
+   with the builds.
+4. **#12b then enforcement** once beta data exists. Do not flip `ANTICHEAT_ENFORCE` before it.
+5. **#7** before any mainnet work — one `setMaxStake` call per token. (#1, #5, #6 and #12a done.)
+6. **#8 and #9** before public launch.
 
 ## Done recently (context, not work)
 

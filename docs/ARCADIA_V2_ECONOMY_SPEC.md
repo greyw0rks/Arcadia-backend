@@ -1,8 +1,9 @@
 # Arcadia V2 — Weekly Pool Economy Spec
 
-**Status:** Draft — scoring mechanic reworked in §4.2 (per-round threshold) after §5.2a simulation showed the per-question design unworkable; awaiting sign-off
+**Status:** Scoring mechanic **locked** (§4.2, signed off 2026-07-31). Difficulty curve and revenue
+model remain provisional pending measured per-tier accuracy from the private beta.
 **Author:** Greysuit
-**Last updated:** 2026-07-29
+**Last updated:** 2026-07-31
 
 > **This file is the only source of truth.** Older copies of this spec exist outside the repo (most
 > recently a 2026-07-23 draft). They predate the §5.2a simulation and still specify the
@@ -195,10 +196,11 @@ mark is partly wasted under another.
 
 ## 4. Multiplier Mechanic
 
-> **⚠ Read §4.2 first.** The per-question rule below is the ORIGINAL design. Simulation (§5.2a)
-> showed it cannot produce a workable economy, and §4.2 proposes the replacement — one ±0.10x move
-> per round gated on a pass mark. This section is kept because §4.1's difficulty bands and the
-> bust/rebuy rules survive the change intact; only the scoring granularity is superseded.
+> **⚠ Read §4.2 first.** The per-question rule below is the ORIGINAL design and is **superseded**.
+> Simulation (§5.2a) showed it cannot produce a workable economy; §4.2 replaced it on 2026-07-31
+> with one ±0.10x move per round gated on ≥9 of 15 correct. This section is kept because §4.1's
+> difficulty bands and the bust/rebuy rules survive the change intact — only the scoring granularity
+> changed.
 
 The multiplier moves at **per-question granularity**, not a flat per-round win/loss:
 
@@ -296,9 +298,12 @@ one axis is calibratable, two are not (the same argument that settled the stake-
 > from measured data and the classifier is made difficulty-aware. See
 > [`V2_ANTICHEAT_AUDIT.md`](./V2_ANTICHEAT_AUDIT.md).
 
-### 4.2 PROPOSED — per-round threshold scoring (the fix for §5.2a)
+### 4.2 LOCKED 2026-07-31 — per-round threshold scoring (the fix for §5.2a)
 
 **Replace per-question multiplier movement with one move per round, gated on a pass mark.**
+
+Signed off 2026-07-31, all three parts as proposed — see
+[`V2_SCORING_DECISION.md`](./V2_SCORING_DECISION.md). Implemented in `server/v2/scoring.ts`.
 
 | | Old (broken) | Proposed |
 |---|---|---|
@@ -527,7 +532,9 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 | Daily section allowance | 10 free sections/day (15 questions each) |
 | Extra-round pricing | $0.10/round after daily allowance used — feeds pool, same as buy-ins |
 | Format coverage | Every **live** format at least once per round, defined against the registry's `available` flag — currently 9, so 9 coverage slots + 6 repeats |
-| Scoring granularity | **⚠ NOT LOCKED — the one open item in this table.** The original ±0.01x/question rule (max ±0.15x per round) was disproven by §5.2a. §4.2 proposes ±0.10x once per round, gated on ≥9/15 correct, with purchased rounds upside-only. Awaiting sign-off (§7.1) |
+| Scoring granularity | **LOCKED 2026-07-31** — one **±0.10x move per round**, gated on **≥9 of 15 correct**. Replaces the ±0.01x/question rule disproven by §5.2a. `server/v2/scoring.ts` |
+| Pass mark | **9 / 15** (~24% bust). A live economic parameter, tunable weekly via `V2_PASS_MARK` without a redeploy — re-run the simulation against measured accuracy before changing it |
+| Purchased rounds | **Upside-only** — can gain +0.10x, never subtract. Safety property: symmetric scoring makes buying volume raise the buyer's own bust risk while the platform rakes the ticket |
 | Bust condition | Cumulative multiplier reaches zero |
 | Difficulty scaling | Increases with current multiplier per the §4.1 band table, not fixed at buy-in. Unlocks the easy/medium banks V1 never served — safe only because payouts come from a player pool, not house funds |
 | Payout timing | Weekend tally, once per week |
@@ -535,11 +542,11 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 
 ## 7. Open Questions
 
-1. **⚠ AWAITING SIGN-OFF — the scoring mechanic fix (§4.2).** The ±0.01x/question design is broken
-   (§5.2a). §4.2 proposes per-round threshold scoring: one ±0.10x move per round, gated on ≥9/15
-   correct, with purchased rounds upside-only. Simulation shows bust rate becomes a smooth dial
-   (1.8% → 73% across pass marks 7–11) and payout spread rises from 1.56× to ~4.5×. Needs a
-   decision before `ArcadiaPool.sol` or the weekly engine can be built.
+1. ~~**AWAITING SIGN-OFF — the scoring mechanic fix (§4.2).**~~ **RESOLVED 2026-07-31.** Per-round
+   threshold scoring signed off in full: one ±0.10x move per round gated on ≥9/15 correct, with
+   purchased rounds upside-only. Implemented in `server/v2/scoring.ts`. What remains is not a
+   decision but a measurement — re-run `scripts/v2-bust-sim.py` against real per-tier accuracy and
+   revisit the pass mark before mainnet.
 2. **Question-bank capacity (§3.1).** Worse than the original even-split estimate: the binding
    constraint is a *tier* cell, not a bank (§3.1a). But §3.1b shows the realistic runway is
    **2.9–5.8 weeks depending on the pass mark**, and that the scarcest tier changes identity across
@@ -567,10 +574,10 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 
 ## 8. Next Steps
 
-- [ ] **Sign off the §4.2 scoring rework — blocks the pool contract and the weekly engine**
-- [ ] Decide extra-round scoring is upside-only (§4.2) — required before extra-round tickets ship
-- [ ] Decide bank growth vs. format weighting (§7.2) — re-scope against §3.1a: the shortfall is in
-      `extreme` and `easy` specifically, not in the small banks generally
+- [x] ~~**Sign off the §4.2 scoring rework**~~ — done 2026-07-31, all three parts as proposed
+- [x] ~~Decide extra-round scoring is upside-only (§4.2)~~ — approved; enforced in `scoring.ts`
+- [ ] Decide bank growth vs. format weighting (§7.2) — now unblocked. Re-scope against §3.1b: at the
+      signed-off pass mark 9 the binding tier is `medium`, not `extreme`
 - [x] ~~Instrument per-tier accuracy in the private beta (§7.3)~~ — shipped 2026-07-29; now waiting
       on tester play, not code
 - [ ] Distribute tester codes — the sampler collects nothing until someone plays

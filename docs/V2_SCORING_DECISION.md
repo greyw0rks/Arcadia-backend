@@ -1,13 +1,16 @@
 # V2 Scoring — Decision Record (§4.2)
 
 **Date raised:** 2026-07-31
-**Decide by:** before `ArcadiaPool.sol` or the weekly engine starts
-**Status:** ⬜ awaiting sign-off
+**Decided:** 2026-07-31 — **all three approved as proposed**
+**Status:** ✅ signed off
 **Evidence:** `scripts/v2-bust-sim.py` · spec §4.2, §5.2a, §3.1b
 
-This is the blocker on items #1–#3 of [`V2_OPEN_WORK.md`](./V2_OPEN_WORK.md), and (since 2026-07-31)
-on #4 as well. Three questions. Answer each yes, or amend it — then this file becomes the record of
-why, and the spec gets updated to match.
+This was the blocker on items #1–#4 of [`V2_OPEN_WORK.md`](./V2_OPEN_WORK.md). All three decisions
+below were approved unamended, so `ArcadiaPool.sol` (#2), the weekly engine (#3) and the bank
+capacity decision (#4) are unblocked.
+
+The mechanic now lives in `server/v2/scoring.ts`. **What was approved is the structure, not the
+economy** — see "What is still assumption-bound" at the bottom.
 
 ---
 
@@ -58,7 +61,7 @@ and per-question feedback in the UI (it just stops moving the banked multiplier)
 that per-round feels less responsive to players — mitigated by keeping live per-question feedback
 in the round UI.
 
-☐ **Approve** ☐ Amend: ................................................................
+✅ **APPROVED** 2026-07-31 — as proposed.
 
 ---
 
@@ -94,7 +97,7 @@ without a redeploy. **It must be treated as a live economic parameter, not a con
 accuracies (easy 85% / medium 65% / hard 45% / extreme 30%). Re-run the simulation against measured
 values (`GET /api/admin/v2/calibration`) before mainnet.
 
-☐ **Approve 9/15** ☐ Amend to ......../15
+✅ **APPROVED** 2026-07-31 — pass mark **9/15**, as proposed.
 
 ---
 
@@ -121,7 +124,7 @@ so the core game keeps its tension.
 increases time spent in the extreme-heavy bands and shortens bank runway. Small at current volumes;
 re-check if extra-round purchase rates come in high.
 
-☐ **Approve** ☐ Amend: ................................................................
+✅ **APPROVED** 2026-07-31 — as proposed.
 
 ---
 
