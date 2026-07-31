@@ -206,3 +206,20 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
 export function finalMultiplierBp(s: Session): number {
   return clampFinalBp(s.multiplierBp, s.maxRounds);
 }
+
+/**
+ * The server's own count of correct answers in a session.
+ *
+ * Derived from `timings`, which `scoreAnswer` appends to using the answer key held in memory and
+ * never sent to the client. This is what V2 banks a round against — the alternative, taking a
+ * `correct` count from the request body, lets a tester claim 15/15 every round and would poison
+ * both the payouts and the calibration data the whole beta exists to gather.
+ */
+export function correctCount(s: Session): number {
+  return s.timings.filter((t) => t.correct).length;
+}
+
+/** True once every committed round has been answered. A partial session must not bank a V2 round. */
+export function isComplete(s: Session): boolean {
+  return s.answered >= s.maxRounds;
+}

@@ -113,6 +113,16 @@ CREATE TABLE IF NOT EXISTS weekly_rounds (
 
 CREATE INDEX IF NOT EXISTS weekly_rounds_run ON weekly_rounds (run_id);
 
+-- One game session banks at most ONE round, ever.
+--
+-- Without this, a player who finished a 15/15 session could POST it repeatedly: each submission
+-- gets the next day_index, passes the (run_id, day, day_index) constraint, and banks another
+-- +0.10x. The per-slot constraint above stops accidental retries of the SAME slot; this stops
+-- deliberate replay of the same WIN into new slots. Partial, because older rows and any future
+-- non-session-backed round may carry a NULL session_id.
+CREATE UNIQUE INDEX IF NOT EXISTS weekly_rounds_session
+  ON weekly_rounds (session_id) WHERE session_id IS NOT NULL;
+
 -- The weekend tally: the exact per-player amounts that go into the merkle root. Written once when
 -- a week is settled, and kept so the published root can be re-derived and audited later.
 CREATE TABLE IF NOT EXISTS weekly_payouts (

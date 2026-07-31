@@ -103,6 +103,8 @@ export interface RoundResult {
   /** Rounds left in today's free allowance after this one. */
   freeRoundsLeft: number;
   band: string;
+  /** True when this submission was already banked — a retry or a replayed session. */
+  replayed?: boolean;
 }
 
 /**
@@ -129,32 +131,47 @@ export async function recordRound(
   const busted = isBust(nextMultiplier);
   const deltaBp = Math.round(outcome.delta * BP);
 
-  // The round row is the idempotency key. If it already exists this request is a retry.
+  // The round row is the idempotency key. Two constraints guard it:
+  //   (run_id, day, day_index) — a retried write of the same slot is a no-op
+  //   (session_id)             — one game session banks at most one round, ever
+  // The second is what stops a player replaying a 15/15 session into new slots for unlimited gain.
   const inserted = await mustQuery<Record<string, unknown>>(
     `INSERT INTO weekly_rounds
        (run_id, day, day_index, purchased, correct, passed, delta_bp, multiplier_bp, session_id)
      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
-     ON CONFLICT (run_id, day, day_index) DO NOTHING
+     ON CONFLICT DO NOTHING
      RETURNING id`,
     [run.id, opts.day, opts.dayIndex, purchased, opts.correct, outcome.passed, deltaBp, nextBp, opts.sessionId ?? null]
   );
 
   if (inserted.rowCount === 0) {
-    // Retry of a round already scored. Return what was banked, without touching the multiplier.
-    const prior = await mustQueryOne<Record<string, unknown>>(
-      `SELECT passed, delta_bp, multiplier_bp, purchased
-         FROM weekly_rounds WHERE run_id = $1 AND day = $2 AND day_index = $3`,
-      [run.id, opts.day, opts.dayIndex]
-    );
-    const bankedBp = Number(prior.multiplier_bp);
+    // Already banked — either a retry of this slot, or a replay of a session that was already
+    // scored. Return what is on record without touching the multiplier. Look up by session first,
+    // since that is the case where the slot index differs from the original.
+    const prior = opts.sessionId
+      ? await mustQueryMaybe<Record<string, unknown>>(
+          `SELECT passed, delta_bp, multiplier_bp, purchased, day_index
+             FROM weekly_rounds WHERE session_id = $1`,
+          [opts.sessionId]
+        )
+      : null;
+    const row =
+      prior ??
+      (await mustQueryOne<Record<string, unknown>>(
+        `SELECT passed, delta_bp, multiplier_bp, purchased, day_index
+           FROM weekly_rounds WHERE run_id = $1 AND day = $2 AND day_index = $3`,
+        [run.id, opts.day, opts.dayIndex]
+      ));
+    const bankedBp = Number(row.multiplier_bp);
     return {
-      passed: Boolean(prior.passed),
-      deltaBp: Number(prior.delta_bp),
+      passed: Boolean(row.passed),
+      deltaBp: Number(row.delta_bp),
       multiplierBp: bankedBp,
       busted: bankedBp <= 0,
-      purchased: Boolean(prior.purchased),
-      freeRoundsLeft: Math.max(0, FREE_ROUNDS_PER_DAY - (opts.dayIndex + 1)),
+      purchased: Boolean(row.purchased),
+      freeRoundsLeft: Math.max(0, FREE_ROUNDS_PER_DAY - (Number(row.day_index) + 1)),
       band: bandFor(bankedBp).label,
+      replayed: true,
     };
   }
 

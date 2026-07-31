@@ -86,8 +86,8 @@ permanently.
 
 ### 3. Weekly buy-in / bust / payout engine
 
-**Status:** core built 2026-07-31. **Two integration gaps remain before testers can play for real** —
-both marked with TODOs in the routes.
+**Status:** core built 2026-07-31, rounds now scored server-side. **One integration gap remains**
+(paid entry), marked with a TODO in the route.
 
 Shipped:
 
@@ -107,16 +107,23 @@ Verified against a production build: both routes return **401** without a valid 
 forged passes, and **404 in production** with `V2_ENABLED` unset. **#11 is closed** — `requireTester`
 now has real call sites.
 
-**Gap 1 — rounds are client-scored.** `POST /api/v2/run/round` takes `correct` from the request
-body, so a tester could claim 15/15 every round. The real flow must score server-side from
-`server/sessions.ts`, which already holds the answer keys and never sends them to the client. The
-route should take a `sessionId` and read the outcome rather than being told it.
+**Gap 1 — ~~rounds are client-scored~~ CLOSED 2026-07-31.** `POST /api/v2/run/round` now takes a
+`sessionId` and reads the score from the server's own session state (`correctCount()`), which is
+derived from the answer keys held in memory and never sent to the client. Four checks guard it:
 
-**Gap 2 — runs are free.** Opening a run does not yet require a confirmed `ArcadiaPool.enter()` /
-`rebuy()` transaction, so entries cost nothing.
+- the session must belong to the wallet the pass proves (else a tester banks someone else's good run)
+- the session must be **complete** (else a player abandons bad rounds and submits only good ones)
+- it must be exactly 15 questions (else a 3-question session banks as a full round)
+- **one session banks at most one round, ever** — a partial unique index on `session_id`
 
-Both are acceptable *only* because V2 is invite-only on an isolated staging deploy with a testnet
-token. **Neither may reach mainnet.**
+That last one is the non-obvious hole: the `(run_id, day, day_index)` constraint stops accidental
+retries of the same slot, but a player could POST a finished 15/15 session repeatedly, taking the
+next slot each time and banking unlimited +0.10x. The `session_id` index stops the replay; a repeat
+submission returns the already-banked result with `replayed: true` instead of erroring.
+
+**Gap 2 — runs are still free.** Opening a run does not yet require a confirmed
+`ArcadiaPool.enter()` / `rebuy()` transaction, so entries cost nothing. Acceptable *only* because V2
+is invite-only on staging with a testnet token. **Must not reach mainnet.**
 
 ### 4. Question-bank capacity
 
