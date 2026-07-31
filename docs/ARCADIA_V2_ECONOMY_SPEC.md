@@ -156,6 +156,41 @@ Open question: which combination. Note this interacts with §4.2 — if the pass
 how long players sit in each band, it changes these numbers too, so re-run this analysis against
 whichever scoring mechanic is signed off.
 
+#### 3.1b The pass mark IS a bank-capacity lever
+
+The tables above hold one band fixed, which is the worst case but not the realistic one — players
+move between bands, and **the pass mark controls how much time they spend in each**. Simulated
+(`python3 scripts/v2-bust-sim.py`, population of skill ~ N(1.0, 0.15), consumption averaged per
+player-week and divided into the live pool):
+
+| Pass mark | Bust rate | easy | medium | hard | extreme | Scarcest tier |
+|---|---|---|---|---|---|---|
+| 7 / 15 | 1.8% | 14 | 223 | 483 | **321** | extreme @ **2.9 wk** |
+| 8 / 15 | 8.4% | 39 | 319 | 461 | 181 | hard @ 4.4 wk |
+| **9 / 15** | **23.8%** | 67 | 353 | 389 | 92 | medium @ **4.1 wk** |
+| 10 / 15 | 48.2% | 85 | 316 | 290 | 39 | medium @ 4.6 wk |
+| 11 / 15 | 73.0% | 77 | 228 | 187 | 14 | easy @ 5.8 wk |
+
+(Questions consumed per player-week. Ranking is stable across seeds.)
+
+Three things follow, and they make the two open decisions much less entangled than they first look:
+
+1. **Extreme consumption collapses as the pass mark rises** — 321/week at pass 7 down to 14 at pass
+   11, a 23× swing. A lenient mark lets nearly everyone climb into the extreme-heavy bands and park
+   there; a harsh one keeps resetting them to 1.0x, where the recipes are medium/hard-weighted.
+2. **The 1.2-week worst case is not the realistic case.** That figure assumes a player parked in the
+   elite band for a full week. Under an actual population the scarcest tier lasts **2.9–5.8 weeks**
+   depending on pass mark. §3.1a remains the right way to see *which cell is thin*, but this table
+   is the one to size content against.
+3. **At the recommended pass mark 9, runway is ~4.1 weeks and the binding tier is `medium`, not
+   `extreme`.** That inverts the §3.1a intuition: at realistic occupancy the pressure sits in the
+   middle of the curve, because that is where a resetting population spends its time. Growing
+   `extreme` — the obvious read from §3.1a — would be optimising the wrong tier for pass 9.
+
+**Practical consequence: settle the pass mark before buying content.** The scarcest tier changes
+identity (extreme → hard → medium → easy) across the plausible range, so content authored for one
+mark is partly wasted under another.
+
 ---
 
 ## 4. Multiplier Mechanic
@@ -499,18 +534,20 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
    (1.8% → 73% across pass marks 7–11) and payout spread rises from 1.56× to ~4.5×. Needs a
    decision before `ArcadiaPool.sol` or the weekly engine can be built.
 2. **Question-bank capacity (§3.1).** Worse than the original even-split estimate: the binding
-   constraint is a *tier* cell, not a bank, and the worst is `extreme` in the elite band at **1.2
-   weeks** (§3.1a). The two ends of the difficulty curve are the two scarcest cells, and two formats
-   have no easy questions at all. Options are re-tagging toward the scarce tiers, flattening the
-   curve's extremes, weighting toward the large banks and `math`, or capping purchased volume —
-   likely some combination.
+   constraint is a *tier* cell, not a bank (§3.1a). But §3.1b shows the realistic runway is
+   **2.9–5.8 weeks depending on the pass mark**, and that the scarcest tier changes identity across
+   that range — extreme at pass 7, medium at pass 9, easy at pass 11. **Decide §7.1 first**, or
+   content gets authored for the wrong tier. Options are re-tagging toward whichever tier binds,
+   flattening the curve's extremes, weighting toward the large banks and `math`, or capping
+   purchased volume.
 3. **Measure the per-tier accuracy assumptions.** The §4.1 curve rests on easy 85% / medium 65% /
    hard 45% / extreme 30%, all invented. These are the only free parameters in the model.
    **Instrumentation shipped 2026-07-29** — `calibration_samples` plus
    `GET /api/admin/v2/calibration` (§4.1). What remains is not code: testers have to play, and then
-   the curve gets re-derived. Note the sample is only clean while banks hold out — see §3.1a: the
-   scarcest tier cell lasts ~1.2 weeks and repeat sightings inflate measured accuracy, so the clean
-   measurement window is roughly the first 3 weeks and shorter for anyone who climbs.
+   the curve gets re-derived. Note the sample is only clean while banks hold out — §3.1b puts the
+   realistic runway at **~4 weeks at pass mark 9** (§3.1a's 1.2-week figure is the worst case, a
+   player parked in the elite band). Repeat sightings inflate measured accuracy, so measure early
+   and treat late-beta data with suspicion.
 4. Private match mechanics — entirely undefined. Needs its own spec (buy-in structure, pooled or
    peer-to-peer, does it reuse the difficulty/format system).
 5. Regulatory framing — pooled buy-in + skill-weighted scoring + delayed cash payout needs a

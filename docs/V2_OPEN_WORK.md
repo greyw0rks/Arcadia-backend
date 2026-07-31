@@ -86,7 +86,8 @@ Three constraints already established:
 
 ### 4. Question-bank capacity
 
-**Status:** re-measured 2026-07-31 — **worse than first reported**. Decision open, not blocked.
+**Status:** re-measured 2026-07-31. **Now blocked by #1** — the pass mark decides which tier is
+scarce, so content authored first is partly wasted. Analysis is done; the buying decision waits.
 
 A maximally active player consumes 1,050 questions/week. The original analysis divided each bank
 by an even split across formats and concluded the five smallest banks last ~3 weeks. That
@@ -123,10 +124,30 @@ Three things make this sharper than a content-backlog item:
   anyone who climbs.
 
 Sustaining 12 weeks at the worst band would need ~8,300 more extreme and ~2,900 more easy
-questions. Options are re-tagging toward the scarce tiers (cheaper than authoring), flattening the
-curve's extremes, weighting toward the large banks and `math`, or capping purchased volume. Note
-this interacts with #1 — a different scoring mechanic changes how long players sit in each band, so
-re-run the script against whatever gets signed off.
+questions.
+
+**But the worst band is not the realistic case — and the pass mark decides which tier binds.**
+`python3 scripts/v2-bust-sim.py` now simulates a whole population and reports tier consumption:
+
+| Pass mark | Bust rate | Scarcest tier | Runway |
+|---|---|---|---|
+| 7 / 15 | 1.8% | `extreme` | **2.9 wk** |
+| 8 / 15 | 8.4% | `hard` | 4.4 wk |
+| **9 / 15** (recommended) | 23.8% | **`medium`** | **4.1 wk** |
+| 10 / 15 | 48.2% | `medium` | 4.6 wk |
+| 11 / 15 | 73.0% | `easy` | 5.8 wk |
+
+Extreme consumption swings 23× across that range (321 → 14 questions per player-week), because a
+lenient mark lets everyone climb into the extreme-heavy bands and park, while a harsh one keeps
+resetting them to 1.0x where recipes are medium/hard-weighted.
+
+**So this item is effectively blocked by #1 after all.** The scarcest tier changes identity —
+extreme at pass 7, medium at pass 9, easy at pass 11 — so content authored before the pass mark is
+settled is partly wasted. At the recommended pass 9 the pressure is on `medium`, which inverts the
+"grow extreme" read that the worst-case table suggests.
+
+Remaining options once #1 lands: re-tag toward whichever tier binds, flatten the curve's extremes,
+weight toward the large banks and `math`, or cap purchased volume.
 
 ### 5. ~~Instrument per-tier accuracy in the beta~~ — DONE 2026-07-29
 
@@ -268,9 +289,10 @@ runtime and cannot reach Postgres, so it can only answer "does V2 exist on this 
 
 1. **#10** — the sampler (#5) is built but collects nothing until testers play, and it is the
    only item that produces data rather than consuming it.
-2. **#1** — unblocks the two big builds. Everything else is downstream. Sign off the shape now;
-   re-check the pass mark once #5 has real accuracies.
-3. **#4** in parallel — not blocked, and repeat exposure biases #5's numbers upward.
+2. **#1** — unblocks the two big builds *and* #4. Everything else is downstream. Sign off the shape
+   now; re-check the pass mark once #5 has real accuracies.
+3. **#4** after #1, not in parallel. The pass mark decides which tier is scarce (extreme at pass 7,
+   medium at pass 9, easy at pass 11), so buying content first risks growing the wrong tier.
 4. **#2 and #3** once #1 is settled — wire **#11** in as those routes land.
 5. **#7** before any mainnet work — one `setMaxStake` call per token. (#5 and #6 are done.)
 6. **#8 and #9** before public launch.

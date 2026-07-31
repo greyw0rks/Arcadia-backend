@@ -53,10 +53,16 @@ def recipe_for(multiplier):
     return BANDS[-1][2]
 
 
-def answer_round(multiplier, skill):
-    """Play 15 questions. Returns the number answered correctly."""
+def answer_round(multiplier, skill, consumed=None):
+    """Play 15 questions. Returns the number answered correctly.
+
+    `consumed` optionally accumulates how many questions of each tier were served,
+    which is what couples the pass mark to bank exhaustion (spec §3.1a).
+    """
     correct = 0
     for tier, count in recipe_for(multiplier).items():
+        if consumed is not None:
+            consumed[tier] += count
         p = min(0.97, max(0.03, P_TIER[tier] * skill))
         for _ in range(count):
             if random.random() < p:
@@ -65,12 +71,12 @@ def answer_round(multiplier, skill):
 
 
 def play_week(skill, mechanic="threshold", rounds_per_day=FREE_ROUNDS_PER_DAY,
-              upside_only_extras=True, pass_mark=PASS_MARK):
+              upside_only_extras=True, pass_mark=PASS_MARK, consumed=None):
     """Returns the final multiplier, or 0.0 if the player busted."""
     multiplier = 1.0
     for _ in range(DAYS):
         for round_index in range(rounds_per_day):
-            correct = answer_round(multiplier, skill)
+            correct = answer_round(multiplier, skill, consumed)
 
             if mechanic == "per-question":
                 multiplier += QUESTION_STEP * (2 * correct - QUESTIONS_PER_ROUND)
@@ -105,14 +111,36 @@ def fixed_skill(skill, trials=6000, seed=42, **kwargs):
     return summarise([play_week(skill, **kwargs) for _ in range(trials)])
 
 
-def population(trials=15000, seed=11, skill_sd=0.15, **kwargs):
+def population(trials=15000, seed=11, skill_sd=0.15, consumed=None, **kwargs):
     """Skill ~ N(1.0, sd), truncated. This drives platform-level bust rate."""
     random.seed(seed)
     finals = []
     for _ in range(trials):
         skill = max(0.55, min(1.45, random.gauss(1.0, skill_sd)))
-        finals.append(play_week(skill, **kwargs))
+        finals.append(play_week(skill, consumed=consumed, **kwargs))
     return summarise(finals)
+
+
+# Live bank sizes per tier, across the 8 bank-backed formats (math is procedural).
+# Keep in sync with `node scripts/bank-capacity.mjs`, which derives these from data/.
+BANK_POOL = {"easy": 443, "medium": 1456, "hard": 2009, "extreme": 921}
+
+
+def bank_runway(trials=4000, seed=11, **kwargs):
+    """Weeks until the scarcest tier runs dry, for one surviving player's play pattern.
+
+    The coupling the pass mark creates: a lenient mark keeps players climbing into the
+    high bands, which are extreme-heavy, so extreme burns fast. A harsh mark keeps
+    resetting them to 1.0x, which spreads consumption across medium and hard. Bank
+    runway is therefore a *consequence* of the scoring decision, not independent of it.
+    """
+    consumed = {"easy": 0, "medium": 0, "hard": 0, "extreme": 0}
+    population(trials=trials, seed=seed, consumed=consumed, **kwargs)
+    per_player_week = {t: n / trials for t, n in consumed.items()}
+    weeks = {t: (BANK_POOL[t] / v if v else float("inf"))
+             for t, v in per_player_week.items()}
+    scarcest = min(weeks, key=weeks.get)
+    return per_player_week, weeks, scarcest, weeks[scarcest]
 
 
 def table(title, rows):
@@ -143,3 +171,22 @@ if __name__ == "__main__":
            for r in (10, 20, 30)] +
           [(f"{r}/day upside", population(rounds_per_day=r, upside_only_extras=True))
            for r in (20, 30)])
+
+    # ── Pass mark vs. bank runway ─────────────────────────────────────────────
+    # The two open decisions (§7.1 scoring, §7.2 banks) are coupled: the pass mark
+    # sets how long players occupy each multiplier band, and each band has its own
+    # tier recipe. Deciding banks before scoring risks sizing content against a
+    # difficulty curve that then changes shape.
+    print("\nPASS MARK vs. BANK RUNWAY — questions consumed per player-week, and")
+    print("weeks until the scarcest tier is exhausted (pool: "
+          + ", ".join(f"{t} {n}" for t, n in BANK_POOL.items()) + ")")
+    print(f"{'':>14} {'easy':>7} {'medium':>7} {'hard':>7} {'extreme':>8}   scarcest")
+    for mark in (7, 8, 9, 10, 11):
+        per, weeks, tier, wk = bank_runway(pass_mark=mark)
+        cells = " ".join(f"{per[t]:7.0f}" for t in ("easy", "medium", "hard"))
+        print(f"    pass {mark}/15 {cells} {per['extreme']:8.0f}   "
+              f"{tier} @ {wk:.1f} wk")
+
+    print("\n  Read with the bust-rate table above: a harsher pass mark buys bank")
+    print("  runway because busted players reset to 1.0x instead of climbing into")
+    print("  the extreme-heavy bands. The two decisions trade against each other.")
