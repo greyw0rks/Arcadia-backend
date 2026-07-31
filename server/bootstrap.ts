@@ -12,6 +12,7 @@ import { hydrateWatchlist } from "./watchlist";
 import { hydrateAccessGate } from "./accessGate";
 import { V2_ENABLED } from "./v2/flag";
 import { initV2Schema } from "./v2/schema";
+import { startClawbackScheduler } from "./clawbackScheduler";
 
 let booted = false;
 let bootPromise: Promise<void> | null = null;
@@ -44,6 +45,9 @@ export async function ensureBooted(): Promise<void> {
       hydrateWatchlist(),
       ...(V2_ENABLED ? [hydrateAccessGate()] : []),
     ]);
+    // Started after hydration: the sweep reads the blacklist to skip already-banned wallets, so it
+    // must not run against an empty in-memory mirror.
+    startClawbackScheduler();
     booted = true;
   })();
   return bootPromise;

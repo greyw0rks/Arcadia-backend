@@ -19,19 +19,24 @@ for the others.
 | 3 | Settlement refusal on a hard flag | **detect-only** | `ANTICHEAT_ENFORCE` |
 | 4 | Operator alerts (Telegram, with Blacklist button) | **active** | none |
 | 5 | Wallet blacklist | **active**, manual | operator action |
-| 6 | Statistical clawback sweep | **built, never runs automatically** | no scheduler |
+| 6 | Statistical clawback sweep | **scheduled 2026-07-31, report-only** | `CLAWBACK_AUTO_ENFORCE` |
 
 So the accurate statement is: **detection is fully live and always has been. Enforcement is off, and
 the clawback sweep has no trigger.**
 
-### The one true gap — clawback has no scheduler
+### The one true gap — clawback had no scheduler ✅ FIXED 2026-07-31
 
 `runClawbackSweep()` auto-blacklists any wallet with ≥3 hard flags. It is reachable from
 `POST /api/admin/clawback` and the Telegram bot, and it is idempotent with a dry-run mode — but
-nothing calls it on a schedule. It only runs if someone remembers to press it.
+nothing called it on a schedule. It only ran if someone remembered to press it.
 
-This is the cheapest real win in the list: the logic is written, tested in shape, and the sweep is
-safe to repeat. It needs a cron trigger, nothing more.
+`server/clawbackScheduler.ts` now runs it every 6h from `ensureBooted()`. **Report-only by
+default**: it alerts the operator with candidates and Blacklist buttons rather than banning, because
+its 3-flag threshold sits on top of the uncalibrated thresholds described below — auto-banning there
+would turn three uncertain judgements into one certain ban with nobody in the loop.
+`CLAWBACK_AUTO_ENFORCE=true` enables real banning; even then the **first run after a restart always
+previews**, since `getRepeatOffenders()` has no time window and would otherwise act on the entire
+backlog accumulated since 2026-07-17 in one pass.
 
 ### The rest is one env var
 

@@ -296,9 +296,20 @@ is already fully live — what is off is *enforcement* (one env var, `ANTICHEAT_
 the sub-400ms rejection and settlement refusal) and the clawback sweep, which is built but has no
 scheduler.
 
-**12a. Schedule the clawback sweep.** Not blocked, small, do now. `runClawbackSweep()`
-auto-blacklists wallets with ≥3 hard flags; it is idempotent, has a dry-run mode and an operator
-Undo, but only runs when someone manually presses it via `/api/admin/clawback` or Telegram.
+**12a. ~~Schedule the clawback sweep~~ — DONE 2026-07-31.** `server/clawbackScheduler.ts`, started
+from `ensureBooted()` after hydration. Runs every 6h (`CLAWBACK_SWEEP_MINUTES`, 0 disables).
+
+**Report-only by default, deliberately.** The sweep bans wallets at ≥3 hard flags, and those flags
+come from thresholds that have never been validated against real play (12b). Auto-banning on top of
+unvalidated criteria turns three uncertain judgements into one certain ban with no human in the
+loop, so the default is to alert the operator with candidates and Blacklist buttons. Set
+`CLAWBACK_AUTO_ENFORCE=true` to actually ban.
+
+Two guards worth knowing: the **first run after any restart always previews**, because
+`getRepeatOffenders()` has no time window and flags have accumulated since 2026-07-17 under
+detect-only — an unattended first run would act on the whole backlog at once. And the env flag is
+strict `=== "true"`, so a typo fails closed. `POST /api/admin/clawback` remains the deliberate
+enforcement path; `GET` now also reports the scheduler's config.
 
 **12b. Recalibrate the flag thresholds — blocked on beta data (#5, #10).** `FLAG_ACCURACY = 0.9` was
 set against V1's hard/extreme floor, where honest accuracy is 30–41%, leaving huge headroom. §4.1
