@@ -86,28 +86,45 @@ Three constraints already established:
 
 ### 4. Question-bank capacity
 
-**Status:** measured, decision open. Not blocked — can start now.
+**Status:** re-measured 2026-07-31 — **worse than first reported**. Decision open, not blocked.
 
-A maximally active player consumes 1,050 questions/week. Five of the nine live banks are
-exhausted in under a month:
+A maximally active player consumes 1,050 questions/week. The original analysis divided each bank
+by an even split across formats and concluded the five smallest banks last ~3 weeks. That
+understates it, because the §4.1 difficulty curve draws from a **tier within a bank**, not from the
+bank. The binding constraint is a tier cell.
 
-| Bank | Size | Weeks to exhaust |
+Run `node scripts/bank-capacity.mjs` for current figures. As of 2026-07-31:
+
+| Multiplier band | Binding tier | Weeks |
 |---|---|---|
-| `trivia` | 1,546 | ~13 |
-| `truefalse` | 1,069 | ~9 |
-| `riddles` | 612 | ~5 |
-| `emoji` / `oddoneout` / `capitals` / `geo` / `landmark` | ~310–340 | **~3** |
-| `math` | procedural | never |
+| 2.21+ (elite) | `extreme` | **1.2** |
+| 0.01–0.50 (recovery) | `easy` | **1.6** |
+| 1.61–2.20 | `extreme` | 1.9 |
+| 0.51–0.90 | `medium` | 3.0 |
+| 0.91–1.20 (baseline) | `medium` | 3.5 |
+| 1.21–1.60 | `extreme` | 3.3 |
 
-Repeats are not just a content problem — a second sighting is effectively easier, which
-inflates accuracy and works against progressive difficulty. **Either** grow the small banks
-toward ~1,000 each, **or** weight round composition toward the large banks and `math` and
-accept a less even format mix.
+Total pool: 443 easy · 1,456 medium · 2,009 hard · 921 extreme.
 
-This now also contaminates #5: a tester who exhausts the ~310-entry banks in three weeks starts
-answering questions they have already seen, and those inflated answers land in
-`calibration_samples` indistinguishable from first sightings. If the beta runs longer than about
-three weeks, either grow the small banks first or read `byGame` with that in mind.
+Three things make this sharper than a content-backlog item:
+
+- **The two ends of the curve are the two scarcest cells.** The elite band burns 11 extreme
+  questions per round from a pool of 921. A winning player is exactly who sits there, so the
+  highest earners hit repeats first — and repeats inflate accuracy, pushing them further up. The
+  mechanic meant to pull strong players back toward breakeven decays first.
+- **`emoji` and `capitals` have zero easy questions.** `tiersNearTarget` silently substitutes
+  medium, so the recovery band already isn't delivering the accuracy §4.1 models — before any
+  exhaustion.
+- **It corrupts #5's calibration sample.** Measured per-tier accuracy drifts above true
+  first-sighting accuracy once repeats begin, so the numbers meant to replace the invented
+  parameters inherit the bias. **Clean measurement window: roughly the first 3 weeks**, shorter for
+  anyone who climbs.
+
+Sustaining 12 weeks at the worst band would need ~8,300 more extreme and ~2,900 more easy
+questions. Options are re-tagging toward the scarce tiers (cheaper than authoring), flattening the
+curve's extremes, weighting toward the large banks and `math`, or capping purchased volume. Note
+this interacts with #1 — a different scoring mechanic changes how long players sit in each band, so
+re-run the script against whatever gets signed off.
 
 ### 5. ~~Instrument per-tier accuracy in the beta~~ — DONE 2026-07-29
 

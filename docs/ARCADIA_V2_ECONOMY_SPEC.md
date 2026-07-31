@@ -76,8 +76,51 @@ live formats that's ~117 per format per week. Against the current banks:
 | `math` | procedural | never |
 
 **The five smallest banks run dry in under a month of heavy play.** The live game never hits this
-because a session is only 3–6 rounds; V2 changes the volume by two orders of magnitude. Three
-consequences:
+because a session is only 3–6 rounds; V2 changes the volume by two orders of magnitude.
+
+#### 3.1a The above is optimistic — the real limit is a tier, not a bank
+
+The table divides each bank by total questions. But §4.1 does not draw from a bank, it draws from a
+**tier within a bank**, so the binding constraint is a tier cell and it is much smaller. Measured
+across the 8 bank-backed formats (2026-07-31, via `node scripts/bank-capacity.mjs` — re-run it after
+any bank edit or recipe change rather than trusting these figures):
+
+| Tier | Questions available |
+|---|---|
+| easy | 443 |
+| medium | 1,456 |
+| hard | 2,009 |
+| extreme | 921 |
+
+Against the §4.1 recipes at 70 rounds/week, holding one band (weeks until that band's scarcest tier
+is exhausted):
+
+| Multiplier band | easy | medium | hard | extreme | **Binding** |
+|---|---|---|---|---|---|
+| 0.01–0.50 (recovery) | 1.6 | 3.0 | 7.2 | — | **easy @ 1.6 wk** |
+| 0.51–0.90 | 3.2 | 3.0 | 4.8 | — | medium @ 3.0 wk |
+| 0.91–1.20 (baseline) | — | 3.5 | 4.1 | 6.6 | medium @ 3.5 wk |
+| 1.21–1.60 | — | 6.9 | 3.6 | 3.3 | extreme @ 3.3 wk |
+| 1.61–2.20 | — | 20.8 | 4.1 | 1.9 | extreme @ 1.9 wk |
+| 2.21+ (elite) | — | — | 7.2 | 11 slots | **extreme @ 1.2 wk** |
+
+**The worst cell is 1.2 weeks, not 3.** And the two extremes of the curve are the two worst cells,
+which is the opposite of harmless:
+
+- **The elite band exhausts fastest (1.2 wk).** That band demands 11 extreme questions per round
+  from a pool of 921. A player who is winning is precisely the player parked there, so the highest
+  earners in the pool are the first to start seeing repeats — and repeats inflate accuracy, which
+  pushes them *further* up. The mechanic that was supposed to pull strong players back toward
+  breakeven is the one that decays first.
+- **The recovery band is second-worst (1.6 wk) and its tier barely exists.** It asks for 4 easy per
+  round against only 443 easy questions total. Worse, **`emoji` and `capitals` contain zero easy
+  questions**, so `tiersNearTarget` silently substitutes medium for them — the recovery band is
+  already not delivering the accuracy §4.1 models, before any exhaustion.
+
+Sustaining 12 weeks at the worst band would need roughly **8,300 more extreme** and **2,900 more
+easy** questions. That is not a content sprint; it is a different content strategy.
+
+#### Consequences
 
 1. **No-repeat can only be guaranteed per-round, not per-week.** The existing picker is seeded
    per-session and no-repeat within it. Extending that guarantee across a whole week is not
@@ -86,12 +129,28 @@ consequences:
 2. **Repeated questions leak difficulty.** A second sighting is effectively easier, which pushes
    accuracy up and multipliers with it — directly working against the progressive-difficulty
    mechanic in §4. Bank exhaustion is therefore an *economic* risk, not just a content one.
-3. **Bank growth is a launch dependency**, not a post-launch nicety. Either the small banks grow
-   (target: ≥1,000 each, matching `trivia`), or per-format weighting shifts volume toward the large
-   banks and `math`, at the cost of the even-coverage feel.
+3. **It also corrupts the calibration sample.** Per-tier accuracy (§4.1) is measured from live play,
+   so once repeats begin the measured accuracy drifts above the true first-sighting accuracy — and
+   the numbers meant to *replace* the invented parameters inherit the bias. **The beta's clean
+   measurement window is roughly the first 3 weeks**, and shorter for anyone who climbs.
+4. **Bank growth is a launch dependency**, not a post-launch nicety.
 
-Open question: which of those two. Weighting is cheap and immediate; authoring ~3,000 questions is
-neither, but preserves the design.
+#### Options, now that the shape is clearer
+
+- **Grow the scarce tiers, not the small banks.** The even-split model said "grow the five smallest
+  banks to ~1,000". The tier model says the shortfall is concentrated in `extreme` and `easy`
+  specifically. Re-tagging existing questions is cheaper than authoring new ones and should be
+  costed first.
+- **Flatten the curve's extremes.** The elite band's 11-extreme recipe is what creates the 1.2-week
+  cell. A less punishing top band would cost some of the pull-back effect and buy a lot of runway.
+- **Weight round composition** toward the large banks and procedural `math`, accepting a less even
+  format mix. `math` is the only format that never exhausts, and it is currently one slot in fifteen.
+- **Cap effective volume.** The 1,050/week figure assumes a player buys extra rounds daily. If
+  purchased rounds are upside-only (§4.2), their volume is a product decision, not a given.
+
+Open question: which combination. Note this interacts with §4.2 — if the pass-mark rework changes
+how long players sit in each band, it changes these numbers too, so re-run this analysis against
+whichever scoring mechanic is signed off.
 
 ---
 
@@ -435,15 +494,19 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
    correct, with purchased rounds upside-only. Simulation shows bust rate becomes a smooth dial
    (1.8% → 73% across pass marks 7–11) and payout spread rises from 1.56× to ~4.5×. Needs a
    decision before `ArcadiaPool.sol` or the weekly engine can be built.
-2. **Question-bank capacity (§3.1).** Five of the nine live banks are exhausted by a heavy player in
-   under a month. Either grow them toward ~1,000 each, or weight round composition toward the large
-   banks and procedural `math`, accepting a less even format mix.
+2. **Question-bank capacity (§3.1).** Worse than the original even-split estimate: the binding
+   constraint is a *tier* cell, not a bank, and the worst is `extreme` in the elite band at **1.2
+   weeks** (§3.1a). The two ends of the difficulty curve are the two scarcest cells, and two formats
+   have no easy questions at all. Options are re-tagging toward the scarce tiers, flattening the
+   curve's extremes, weighting toward the large banks and `math`, or capping purchased volume —
+   likely some combination.
 3. **Measure the per-tier accuracy assumptions.** The §4.1 curve rests on easy 85% / medium 65% /
    hard 45% / extreme 30%, all invented. These are the only free parameters in the model.
    **Instrumentation shipped 2026-07-29** — `calibration_samples` plus
    `GET /api/admin/v2/calibration` (§4.1). What remains is not code: testers have to play, and then
-   the curve gets re-derived. Note the sample is only clean while banks hold out — see §3.1, where
-   five banks exhaust in ~3 weeks and repeat sightings inflate accuracy.
+   the curve gets re-derived. Note the sample is only clean while banks hold out — see §3.1a: the
+   scarcest tier cell lasts ~1.2 weeks and repeat sightings inflate measured accuracy, so the clean
+   measurement window is roughly the first 3 weeks and shorter for anyone who climbs.
 4. Private match mechanics — entirely undefined. Needs its own spec (buy-in structure, pooled or
    peer-to-peer, does it reuse the difficulty/format system).
 5. Regulatory framing — pooled buy-in + skill-weighted scoring + delayed cash payout needs a
@@ -458,7 +521,8 @@ At 20k weekly actives: ~$19–25k/month in pure rake, before private match reven
 
 - [ ] **Sign off the §4.2 scoring rework — blocks the pool contract and the weekly engine**
 - [ ] Decide extra-round scoring is upside-only (§4.2) — required before extra-round tickets ship
-- [ ] Decide bank growth vs. format weighting (§7.2)
+- [ ] Decide bank growth vs. format weighting (§7.2) — re-scope against §3.1a: the shortfall is in
+      `extreme` and `easy` specifically, not in the small banks generally
 - [x] ~~Instrument per-tier accuracy in the private beta (§7.3)~~ — shipped 2026-07-29; now waiting
       on tester play, not code
 - [ ] Distribute tester codes — the sampler collects nothing until someone plays
