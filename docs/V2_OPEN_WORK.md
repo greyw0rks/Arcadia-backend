@@ -112,9 +112,11 @@ Three things make this sharper than a content-backlog item:
   questions per round from a pool of 921. A winning player is exactly who sits there, so the
   highest earners hit repeats first — and repeats inflate accuracy, pushing them further up. The
   mechanic meant to pull strong players back toward breakeven decays first.
-- **`emoji` and `capitals` have zero easy questions.** `tiersNearTarget` silently substitutes
-  medium, so the recovery band already isn't delivering the accuracy §4.1 models — before any
-  exhaustion.
+- **`emoji` and `capitals` have zero easy questions.** `tiersNearTarget` substitutes medium —
+  ~27% of the recovery band's easy slots in those two formats, 0% elsewhere. So that band already
+  serves slightly harder questions than §4.1 models, before any exhaustion. It does **not** corrupt
+  #5's data (`drawTiered` records the tier actually served, not the one requested); it makes the
+  band's modelled drift optimistic. Fix is content, not code.
 - **It corrupts #5's calibration sample.** Measured per-tier accuracy drifts above true
   first-sighting accuracy once repeats begin, so the numbers meant to replace the invented
   parameters inherit the bias. **Clean measurement window: roughly the first 3 weeks**, shorter for

@@ -114,8 +114,12 @@ which is the opposite of harmless:
   breakeven is the one that decays first.
 - **The recovery band is second-worst (1.6 wk) and its tier barely exists.** It asks for 4 easy per
   round against only 443 easy questions total. Worse, **`emoji` and `capitals` contain zero easy
-  questions**, so `tiersNearTarget` silently substitutes medium for them — the recovery band is
-  already not delivering the accuracy §4.1 models, before any exhaustion.
+  questions**, so `tiersNearTarget` substitutes medium for them — about **27% of that band's easy
+  slots in those two formats**, 0% elsewhere. The recovery band is therefore already serving
+  slightly harder questions than §4.1 models, before any exhaustion. This does *not* corrupt the
+  calibration sample: `drawTiered` records the tier of the question actually served, not the tier
+  requested, so measured per-tier accuracy stays honest. It does mean the band's *modelled* drift is
+  optimistic — the fix is content (tag or author easy questions for those two formats), not code.
 
 Sustaining 12 weeks at the worst band would need roughly **8,300 more extreme** and **2,900 more
 easy** questions. That is not a content sprint; it is a different content strategy.

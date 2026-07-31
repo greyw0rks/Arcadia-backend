@@ -63,8 +63,35 @@ for (const [name, c] of Object.entries(perFormat)) {
 const missing = TIERS.map((t) => [t, Object.entries(perFormat).filter(([, c]) => c[t] === 0).map(([n]) => n)])
   .filter(([, f]) => f.length);
 if (missing.length) {
-  console.log("\nTIERS WITH NO QUESTIONS IN SOME FORMATS (tiersNearTarget silently substitutes):");
+  console.log("\nTIERS WITH NO QUESTIONS IN SOME FORMATS");
   for (const [tier, formats] of missing) console.log(`  ${tier}: ${formats.join(", ")}`);
+  console.log("  → tiersNearTarget substitutes the nearest available tier for these slots.");
+  console.log("  → Harmless for calibration (drawTiered records the tier SERVED, not requested),");
+  console.log("    but it makes the affected band's modelled drift optimistic.");
+
+  // Quantify: for each band, what share of slots cannot be served at the requested tier?
+  const near = (t) => [0, 1, 2, 3].sort((a, b) => Math.abs(a - t) - Math.abs(b - t));
+  console.log("\n  Substitution rate per band (share of slots served at a different tier):");
+  for (const [band, recipe] of Object.entries(BANDS)) {
+    const rates = [];
+    for (const [name, file] of Object.entries(BANKS)) {
+      const buckets = [[], [], [], []];
+      load(file).forEach((e, i) => buckets[TIERS.indexOf(e.tier ?? "medium")].push(i));
+      const used = new Set();
+      let asked = 0, drifted = 0;
+      recipe.forEach((slots, ti) => {
+        for (let n = 0; n < slots; n++) {
+          asked++;
+          for (const t of near(ti)) {
+            const pick = buckets[t].find((i) => !used.has(i));
+            if (pick !== undefined) { used.add(pick); if (t !== ti) drifted++; break; }
+          }
+        }
+      });
+      if (drifted) rates.push(`${name} ${Math.round((drifted / asked) * 100)}%`);
+    }
+    if (rates.length) console.log(`    ${band.padEnd(22)} ${rates.join(", ")}`);
+  }
 }
 
 console.log("\nOPTIMISTIC MODEL — bank size / even split across formats");
