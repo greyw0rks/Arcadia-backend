@@ -485,3 +485,71 @@ Resolved: stake-tier question (single $1 entry, no tiers) · rebuy friction (15-
 + nudge from the 4th) · format coverage against the 9 live games · the §4.1 difficulty curve
 · the variance simulation that surfaced #1 · READMEs across all three repos · mobile token
 switcher, tournament coming-soon page, and topbar spacing.
+
+---
+
+## Session update — 2026-08-04 (mainnet deploy + $0.50 + Ranked/Casual)
+
+**Decisions locked this session:**
+- **Buy-in cut $1 → $0.50** (rebuy $0.50, early-bird $0.35). Canonical constant now
+  `server/v2/economy.ts` (`BUY_IN_USD` etc., decimals-aware `toBaseUnits`). Spec §2 + V2 UI copy
+  updated.
+- **Casual vs Ranked framing.** Casual = V1 (instant win/lose, per-session stake, USDm/USDC/USDT).
+  Ranked = V2 (weekly pool, **cUSD/USDm only**, $0.50). Pool is single-token-per-week by
+  construction → Ranked is USDm-only. See `docs/V2_MULTI_TOKEN.md` (decision RESOLVED there).
+- **Movie game reworked** screenshot-title → facts/description ("guess the film from a clue").
+  `server/games/movie.ts` filters to clued entries; 94 clues added to `data/movies.json`; module
+  now `available: true`. Renders text prompt like `emoji` (no image).
+- **`V2_PUBLIC` flag** (`server/v2/flag.ts`) opens Ranked to everyone: `_gate.ts` drops the
+  allowlist and the redeem route drops the invite code, both keeping wallet-ownership proof. Prod
+  stays 404 via `proxy.ts` (V2_ENABLED unset). Set V2_PUBLIC only where V2_ENABLED=true on an
+  isolated DB.
+
+**Audit (item #1 internal review):** `docs/V2_POOL_AUDIT.md`. Found + fixed **M-1** — `publishResults`
+and `refund` were not mutually exclusive, allowing a late publish after refunds to enable a
+double-claim (bounded by the pot). Fix: `publishResults` now reverts once `closedAt + claimWindow`
+passes. 2 regression tests added; **33/33 ArcadiaPool tests pass**. NOTE: internal review only —
+celopedia is a reference skill, NOT an external auditor (it defers to Pashov Audit Group skills).
+The independent third-party audit gate is **still open**.
+
+**DEPLOYED — ArcadiaPool is LIVE on Celo mainnet (chain 42220):**
+`0xb8dc827b5433575e84a1612512350c689c4c5d5e` — owner `0xc61Bbc…0450`, signer `0x350FA35e…`,
+rake 1500 bps, USDm-only enabled, not paused. Deployed per explicit informed owner decision despite
+open gates (no external audit, no legal review, params unvalidated). ~0.42 CELO gas; 0.545 CELO left
+on the key.
+
+### Remaining before it can actually take money (NONE done — no player money at risk yet)
+1. **`openWeek(currentWeekId(), 0x765DE816…)`** — the irreversible step that opens real-money entry.
+   Owner tx. `weekId` = YYYYWW from `server/v2/week.ts`; must match exactly.
+2. **Set `ARCADIA_POOL_ADDRESS=0xb8dc827b5433575e84a1612512350c689c4c5d5e`** on the live backend, or
+   `entry.ts` skips paid-entry verification (opens runs for free).
+3. **Set `V2_ENABLED=true` + `V2_PUBLIC=true`** on the live backend. WARNING: V2 schema DDL runs on
+   boot — point that deploy at an isolated DB or accept prod-DB contamination.
+4. **Build the frontend pool-entry UI** (the `enter()` transaction). Open work #10/#13 — never built.
+   Until it exists, players have no in-app way to pay in even with a week open.
+5. Before real volume: **third-party audit** of ArcadiaPool, **legal/compliance review** (#9), and
+   **re-run `scripts/v2-bust-sim.py`** against measured accuracy once the beta produces it.
+
+### Session update — 2026-08-04 (cont.): pool-entry UI built
+
+Open-work step 4 (frontend `enter()` UI) is **DONE**. The Ranked flow now exists end-to-end:
+- `lib/abi.ts` — `POOL_ABI` (enter/rebuy).
+- `lib/contract.ts` — `ARCADIA_POOL_ADDRESS` (defaults to the deployed mainnet address; override with
+  `NEXT_PUBLIC_ARCADIA_POOL_ADDRESS`).
+- `lib/useArcade.ts` — `usePool()` hook: approve USDm → `enter(weekId, amount)`/`rebuy`, with the
+  same CIP-64 feeCurrency, ERC-8021 attribution, and MiniPay-legacy handling as the arcade.
+- `app/v2/run/page.tsx` — the "Buy in — $0.50 USDm" button pays on-chain, waits for the receipt,
+  then re-POSTs `/api/v2/run` (which verifies the on-chain entry before opening the run).
+- `app/v2/redeem/page.tsx` + redeem GET — adapt to `V2_PUBLIC`: in open-beta mode the invite-code
+  field is hidden and unlock is wallet-proof only.
+
+`✓ Compiled successfully` with `V2_ENABLED=true V2_PUBLIC=true`. `tsc --noEmit` clean. 133 backend
+tests + 33 contract tests pass.
+
+**Now the ONLY remaining go-live steps are operator actions (still none done, no money at risk):**
+1. `openWeek(currentWeekId(), 0x765DE816…)` — owner tx, the irreversible one.
+2. Set `ARCADIA_POOL_ADDRESS` (server) + `NEXT_PUBLIC_ARCADIA_POOL_ADDRESS` (client, only if
+   overriding the baked-in default) on the live backend.
+3. Set `V2_ENABLED=true` + `V2_PUBLIC=true` on the live backend — on an ISOLATED DB (schema DDL runs
+   on boot).
+Then the loop is fully playable. Audit/legal/param-validation gates remain open (accepted risk).

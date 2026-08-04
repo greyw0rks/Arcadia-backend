@@ -74,6 +74,11 @@ export default function V2PlayPage() {
           router.replace("/v2/run");
           return;
         }
+        if (res.status === 428) {
+          // Day not opened yet. The check-in button lives on the run dashboard.
+          router.replace("/v2/run");
+          return;
+        }
         if (!res.ok) {
           const b = await res.json().catch(() => ({}));
           setError(b?.error ?? "Could not start a round.");

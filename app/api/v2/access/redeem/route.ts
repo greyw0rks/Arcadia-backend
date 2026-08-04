@@ -10,6 +10,7 @@ import {
   redeemMessage,
 } from "../../../../../server/v2/pass";
 import { issueProofNonce, verifyProofTx } from "../../../../../server/v2/onchainProof";
+import { V2_PUBLIC } from "../../../../../server/v2/flag";
 
 // Tester onboarding for the private V2 test.
 //
@@ -41,6 +42,9 @@ export async function GET(req: NextRequest) {
   const valid = Boolean(player && isAddress(player));
 
   return NextResponse.json({
+    // Whether this deploy is in open-beta mode — the client hides the invite-code field and unlocks
+    // on wallet proof alone when true.
+    public: V2_PUBLIC,
     // Signature path (non-MiniPay wallets).
     nonce: issueNonce(),
     message: "Sign redeemMessage(code, nonce) with the wallet you are redeeming for.",
@@ -82,7 +86,12 @@ export async function POST(req: NextRequest) {
 
   const { code, player } = body;
   const chain = "celo" as const;
-  if (!code || !player || !isAddress(player)) {
+  if (!player || !isAddress(player)) {
+    return NextResponse.json({ error: "a valid player address is required" }, { status: 400 });
+  }
+  // In public-beta mode there is no invite code — anyone who proves their wallet gets in. Outside it,
+  // a code is still mandatory (private test).
+  if (!V2_PUBLIC && !code) {
     return NextResponse.json({ error: "code and a valid player address are required" }, { status: 400 });
   }
 
@@ -109,7 +118,7 @@ export async function POST(req: NextRequest) {
     try {
       signatureValid = await verifyMessage({
         address: player,
-        message: redeemMessage(code, body.nonce!),
+        message: redeemMessage(code ?? "", body.nonce!),
         signature: body.signature as `0x${string}`,
       });
     } catch {
@@ -120,11 +129,14 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // ── Ownership proven; consume the code ────────────────────────────────────
-  const result = await redeemCode(code, player, chain);
-  if (!result.ok) {
-    const status = result.reason === "service unavailable" ? 503 : 403;
-    return NextResponse.json({ error: result.reason }, { status });
+  // ── Ownership proven; consume the code (private test only) ────────────────
+  // In public-beta mode there is no code to consume — ownership proof alone earns a pass.
+  if (!V2_PUBLIC) {
+    const result = await redeemCode(code!, player, chain);
+    if (!result.ok) {
+      const status = result.reason === "service unavailable" ? 503 : 403;
+      return NextResponse.json({ error: result.reason }, { status });
+    }
   }
 
   const pass = mintPass(player, chain);

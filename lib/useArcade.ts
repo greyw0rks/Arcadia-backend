@@ -2,15 +2,15 @@
 
 import { useAccount, usePublicClient, useWriteContract, useSendTransaction } from "wagmi";
 import { parseUnits, encodeFunctionData } from "viem";
-import { ARCADE_ADDRESS, celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "./contract";
-import { ARCADE_ABI, ERC20_ABI } from "./abi";
+import { ARCADE_ADDRESS, ARCADIA_POOL_ADDRESS, celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "./contract";
+import { ARCADE_ABI, ERC20_ABI, POOL_ABI } from "./abi";
 
 // ERC-8021 attribution tag appended to every arcade transaction calldata so Celo's
 // on-chain attribution indexer can credit volume to Arcadia. The EVM ignores trailing
 // calldata; contracts never see it.
 // Wire format: <code_utf8><len_byte><schema=0x00><marker:16 bytes>
 // code = "arcadia" (7 bytes, hex 61726361646961), schema 0.
-const ARCADIA_ATTRIBUTION_SUFFIX = "61726361646961070080218021802180218021802180218021";
+export const ARCADIA_ATTRIBUTION_SUFFIX = "61726361646961070080218021802180218021802180218021";
 
 // Detect MiniPay wallet — it injects window.ethereum.isMiniPay. MiniPay manages feeCurrency
 // itself, so we must NOT pass a custom feeCurrency or the tx will be rejected.
@@ -120,4 +120,78 @@ function useCeloArcade(token: CeloToken): ArcadeApi {
 
 export function useArcade(token: CeloToken = DEFAULT_CELO_TOKEN): ArcadeApi {
   return useCeloArcade(token);
+}
+
+// ---------------------------------------------------------------------------
+// ArcadiaPool (V2 "Ranked") — pay the weekly buy-in into the pool.
+//
+// Same approve-then-call + CIP-64 feeCurrency + ERC-8021 tagging + MiniPay-legacy handling as the
+// arcade above, but the spender/target is the pool and the call is enter()/rebuy(). Ranked is
+// USDm-only, so the token is fixed to the default (cUSD/USDm).
+// ---------------------------------------------------------------------------
+
+export interface PoolApi {
+  /** Pay the weekly buy-in. `usd` is the whole-dollar price (e.g. 0.5); `weekId` is YYYYWW. */
+  buyIn: (weekId: number, usd: number, kind?: "enter" | "rebuy") => Promise<void>;
+  balance: () => Promise<bigint>;
+}
+
+export function usePool(token: CeloToken = DEFAULT_CELO_TOKEN): PoolApi {
+  const { address } = useAccount();
+  const publicClient = usePublicClient();
+  const { writeContractAsync } = useWriteContract();
+  const { sendTransactionAsync } = useSendTransaction();
+  const { tokenAddress, decimals, feeCurrencyAddress } = celoTokenMeta(token);
+
+  const feeCurrency = feeCurrencyAddress && !isMiniPay() ? feeCurrencyAddress : undefined;
+
+  async function ensureAllowance(amountWei: bigint) {
+    if (!address || !publicClient) throw new Error("wallet not connected");
+    const current = (await publicClient.readContract({
+      address: tokenAddress,
+      abi: ERC20_ABI,
+      functionName: "allowance",
+      args: [address, ARCADIA_POOL_ADDRESS],
+    })) as bigint;
+    if (current >= amountWei) return;
+    const hash = await writeContractAsync({
+      address: tokenAddress,
+      abi: ERC20_ABI,
+      functionName: "approve",
+      args: [ARCADIA_POOL_ADDRESS, amountWei],
+      ...(feeCurrency ? { feeCurrency } : {}),
+    } as Parameters<typeof writeContractAsync>[0]);
+    await publicClient.waitForTransactionReceipt({ hash });
+  }
+
+  return {
+    async buyIn(weekId, usd, kind = "enter") {
+      if (!publicClient) throw new Error("no client");
+      // Price to the cent then scale, mirroring server/v2/economy.ts toBaseUnits — no float drift.
+      const amountWei = parseUnits(usd.toFixed(2), decimals);
+      await ensureAllowance(amountWei);
+      const calldata = encodeFunctionData({
+        abi: POOL_ABI,
+        functionName: kind,
+        args: [BigInt(weekId), amountWei],
+      });
+      const data = (calldata + ARCADIA_ATTRIBUTION_SUFFIX) as `0x${string}`;
+      const hash = await sendTransactionAsync({
+        to: ARCADIA_POOL_ADDRESS,
+        data,
+        ...(feeCurrency ? { feeCurrency } : {}),
+        ...(isMiniPay() ? { type: "legacy" as const } : {}),
+      });
+      await publicClient.waitForTransactionReceipt({ hash });
+    },
+    async balance() {
+      if (!address || !publicClient) return 0n;
+      return (await publicClient.readContract({
+        address: tokenAddress,
+        abi: ERC20_ABI,
+        functionName: "balanceOf",
+        args: [address],
+      })) as bigint;
+    },
+  };
 }

@@ -3,11 +3,12 @@ import { requireTester } from "../../_gate";
 import { ensureBooted } from "../../../../../server/bootstrap";
 import { getGame, listGameMeta } from "../../../../../server/games/registry";
 import { createSession } from "../../../../../server/sessions";
-import { liveRun } from "../../../../../server/v2/runs";
+import { liveRun, roundsToday } from "../../../../../server/v2/runs";
 import { bandFor, BANDS, tierSlots } from "../../../../../server/v2/bands";
-import { QUESTIONS_PER_ROUND } from "../../../../../server/v2/scoring";
+import { QUESTIONS_PER_ROUND, FREE_ROUNDS_PER_DAY } from "../../../../../server/v2/scoring";
+import { hasCheckedInToday, checkInRequest } from "../../../../../server/v2/checkin";
 import { V2DatabaseError } from "../../../../../server/v2/db";
-import { currentWeekId } from "../../../../../server/v2/week";
+import { currentWeekId, todayKey } from "../../../../../server/v2/week";
 
 export const dynamic = "force-dynamic";
 
@@ -48,6 +49,23 @@ export async function POST(req: NextRequest) {
     const run = await liveRun(weekId, player, chain);
     if (!run) {
       return NextResponse.json({ error: "no live run — start your week first" }, { status: 409 });
+    }
+
+    // Daily check-in gate. It covers the FREE allowance only: a player who has bought rounds has
+    // already paid for them, and withholding paid rounds over a missing free-tier formality would
+    // be taking money for nothing.
+    const day = todayKey();
+    const dayIndex = await roundsToday(run.id, day);
+    if (dayIndex < FREE_ROUNDS_PER_DAY && !(await hasCheckedInToday(player))) {
+      return NextResponse.json(
+        {
+          error: "check in to open today's free rounds",
+          needsCheckIn: true,
+          weekId,
+          checkIn: checkInRequest(weekId),
+        },
+        { status: 428 }
+      );
     }
 
     // Pick a game. A V2 round draws across formats; until round composition is built, honour an
