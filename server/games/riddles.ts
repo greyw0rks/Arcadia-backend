@@ -20,8 +20,8 @@ export const riddlesModule = makeChoiceGame(
     timeLimitSec: 9,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: r, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: r, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     return { prompt: r.riddle, correct: r.correct, options: [r.correct, ...r.decoys], tier };
   }
 );

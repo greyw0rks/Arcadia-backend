@@ -13,7 +13,7 @@ model remain provisional pending measured per-tier accuracy from the private bet
 
 ## 1. Overview
 
-Arcadia V2 replaces the current win-now/lose-now single-round model with a **weekly pooled buy-in system**. Users stake once per week, earn XP/multiplier through gameplay performance, and are paid out from a shared prize pool at week's end based on final standing. Entry is a single flat $1 — question difficulty scales with a player's current **multiplier**, not with what they paid (§2, §4.1).
+Arcadia V2 replaces the current win-now/lose-now single-round model with a **weekly pooled buy-in system**. Users stake once per week, earn XP/multiplier through gameplay performance, and are paid out from a shared prize pool at week's end based on final standing. Entry is a single flat $0.50 — question difficulty scales with a player's current **multiplier**, not with what they paid (§2, §4.1).
 
 Core loop: **Buy in → Answer under difficulty pressure → Earn XP/multiplier → Survive or bust → (rebuy if busted) → Weekly cash payout**
 
@@ -25,20 +25,22 @@ This is structurally closer to a poker/DFS tournament (pooled entries, skill-wei
 
 | Window | Price | Notes |
 |---|---|---|
-| Monday early-bird | Discounted (e.g. $0.70) | Fixed time window on Monday only |
-| Regular (post-window) | $1.00 flat | Standard weekly entry, available rest of week |
-| Rebuy (post-bust) | $1.00 flat | No escalation — same price every rebuy |
+| Monday early-bird | Discounted (e.g. $0.35) | Fixed time window on Monday only |
+| Regular (post-window) | $0.50 flat | Standard weekly entry, available rest of week |
+| Rebuy (post-bust) | $0.50 flat | No escalation — same price every rebuy |
 
 - One entry required to begin playing for the week.
 - Early-bird window is a segmentation/urgency mechanic — rewards planning ahead, not a permanent discount tier.
 - **Difficulty is not bought.** It scales with the player's current multiplier (§4.1), not with entry
   price — every entrant starts on the same 1.0x baseline and the same tier recipe.
+- Canonical prices live in `server/v2/economy.ts` (`BUY_IN_USD`, `REBUY_USD`, `EARLY_BIRD_USD`,
+  `EXTRA_ROUND_USD`). The entry UI reads them; keep this table in sync with that file.
 
-> **Resolved — there is no stake tier.** An earlier draft asked whether paying above $1 should buy a
+> **Resolved — there is no stake tier.** An earlier draft asked whether paying above the flat entry should buy a
 > harder, higher-ceiling lane, and left the buy-in "determines the difficulty band". It does not:
-> §6 locks a single $1 flat entry. Two difficulty axes (stake *and* multiplier) cannot be
+> §6 locks a single $0.50 flat entry. Two difficulty axes (stake *and* multiplier) cannot be
 > calibrated against each other, and a flat entry is also the cleanest skill-game framing — money
-> cannot buy a larger share of the pool. The $0.70 early-bird is a timing discount, not a tier.
+> cannot buy a larger share of the pool. The $0.35 early-bird is a timing discount, not a tier.
 
 ---
 
@@ -77,7 +79,8 @@ live formats that's ~117 per format per week. Against the current banks:
 | `math` | procedural | never |
 
 **The five smallest banks run dry in under a month of heavy play.** The live game never hits this
-because a session is only 3–6 rounds; V2 changes the volume by two orders of magnitude.
+because a Casual session is a single 12-question round; V2 changes the volume by two orders of
+magnitude.
 
 #### 3.1a The above is optimistic — the real limit is a tier, not a bank
 
@@ -204,7 +207,7 @@ mark is partly wasted under another.
 
 The multiplier moves at **per-question granularity**, not a flat per-round win/loss:
 
-- Weekly buy-in ($1) grants a baseline multiplier of **1.0x**.
+- Weekly buy-in ($0.50) grants a baseline multiplier of **1.0x**.
 - Each round = 15 questions. **Each correct answer: +0.01x. Each wrong answer: −0.01x.** *(Superseded
   by §4.2 — retained to explain what §5.2a tested and why it failed.)*
 - Max possible swing per round is **±0.15x** (15/15 correct = +0.15x; 0/15 correct = −0.15x). Most rounds will land somewhere in between based on actual performance — there's no separate win/loss label anymore; the multiplier change per round **is** the outcome.
@@ -214,7 +217,7 @@ The multiplier moves at **per-question granularity**, not a flat per-round win/l
 
 ### Floor / Bust
 - **Multiplier reaching zero = bust.** The player's current run ends; multiplier progress for that run is forfeited.
-- To resume playing that week, the player must complete the **standard $1 buy-in again** (not the $0.10 extra-round ticket — that's a separate, smaller mechanic for extra daily volume within an active run).
+- To resume playing that week, the player must complete the **standard $0.50 buy-in again** (not the $0.10 extra-round ticket — that's a separate, smaller mechanic for extra daily volume within an active run).
 - Forfeited stake behavior on bust: unchanged from §6 below — returns to the weekly pool, not platform revenue.
 
 > **Resolved — and this is what broke the design.** An earlier draft flagged that small per-question
@@ -225,7 +228,7 @@ The multiplier moves at **per-question granularity**, not a flat per-round win/l
 > §4.2; only what moves the multiplier changes.
 
 ### Rebuy behavior (post-bust)
-- Price: flat $1, no escalation regardless of how many times a user rebuys in a week.
+- Price: flat $0.50, no escalation regardless of how many times a user rebuys in a week.
 - Multiplier: **full reset** on rebuy — fresh 1.0x baseline, no carried-over progress from the busted run.
 - **Rebuy friction: 15-minute cooldown between rebuys, plus an in-app nudge from the 4th rebuy
   onward** ("you've rebought 3× this week — take a break?"). No hard cap. The cooldown stops

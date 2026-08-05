@@ -21,8 +21,8 @@ export const capitalsModule = makeChoiceGame(
     timeLimitSec: 7,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     return {
       prompt: `${e.flag}  What is the capital of ${e.country}?`,
       correct: e.capital,

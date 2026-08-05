@@ -29,8 +29,8 @@ export const colorModule = {
     timeLimitSec: 7,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     return {
       prompt: `What is the hex code for this color?`,
       imageUrl: colorSwatchDataUri(e.hex),

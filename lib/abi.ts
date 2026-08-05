@@ -132,3 +132,28 @@ export const ERC20_ABI = [
     outputs: [{ name: "", type: "uint8" }],
   },
 ] as const;
+
+// ArcadiaPool (V2 "Ranked" weekly pool) — the write functions the browser calls. Entry and rebuy
+// both take (weekId, amount); the contract splits rake and adds the remainder to the week's pot.
+export const POOL_ABI = [
+  {
+    type: "function",
+    name: "enter",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "weekId", type: "uint256" },
+      { name: "amount", type: "uint256" },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "rebuy",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "weekId", type: "uint256" },
+      { name: "amount", type: "uint256" },
+    ],
+    outputs: [],
+  },
+] as const;

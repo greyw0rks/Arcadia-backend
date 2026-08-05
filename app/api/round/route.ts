@@ -31,9 +31,10 @@ export async function GET(req: NextRequest) {
 
   const game = getGame(session.gameId)!;
 
-  // Demo sessions have no on-chain stake: skip the funding gate entirely. Their difficulty and round
-  // count are fixed at creation (see /api/session). Real sessions must pass the gate below.
-  if (!session.isDemo) {
+  // Sessions with no PER-SESSION on-chain stake skip the funding gate: demos (the free trial) and
+  // V2 weekly-run rounds, which the weekly entry already paid for (verified in /api/v2/run). Their
+  // difficulty and round count are fixed at creation. Real V1 sessions must pass the gate below.
+  if (!session.isDemo && !session.weeklyRun) {
     // On-chain funding gate: no stake, no questions. The read also yields the REAL staked amount and
     // round count, which we use as the authoritative source for bet-scaled difficulty.
     const onchain = await fetchOnchain(session);
@@ -67,8 +68,11 @@ export async function GET(req: NextRequest) {
         maxStakeBase,
         DEFAULT_RAKE_BPS
       );
+      // maxRounds is the on-chain SCORING-EVENT count (casual = 1), the basis for the payout clamp —
+      // NOT how many questions are served. The served count lives in session.questions (set at
+      // creation) and is deliberately left untouched here.
       if (onchain.maxRounds > 0) {
-        session.maxRounds = Math.min(onchain.maxRounds, game.bankSize);
+        session.maxRounds = onchain.maxRounds;
       }
     }
   }

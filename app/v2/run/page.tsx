@@ -1,9 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { useAccount, useConnect } from "wagmi";
+import { useAccount, useConnect, useSendTransaction, usePublicClient } from "wagmi";
 import { injected } from "wagmi/connectors";
-import { isMiniPay } from "../../../lib/useArcade";
+import { isMiniPay, ARCADIA_ATTRIBUTION_SUFFIX, usePool } from "../../../lib/useArcade";
+import { BUY_IN_USD } from "../../../server/v2/economy";
 
 // V2 weekly run dashboard.
 //
@@ -26,6 +27,9 @@ interface RunState {
   run: { id: string; multiplierBp: number; band: string; openedBy: string } | null;
   roundsPlayedToday?: number;
   freeRoundsLeft?: number;
+  checkedInToday?: boolean;
+  needsCheckIn?: boolean;
+  checkIn?: { to: `0x${string}`; data: `0x${string}`; value: "0x0" } | null;
   passMark: number;
   questionsPerRound: number;
   freeRoundsPerDay: number;
@@ -44,10 +48,15 @@ const BAND_COPY: Record<string, { title: string; blurb: string; tone: string }> 
 export default function RunPage() {
   const { address, isConnected } = useAccount();
   const { connect } = useConnect();
+  const { sendTransactionAsync } = useSendTransaction();
+  const publicClient = usePublicClient();
+  const pool = usePool();
   const [state, setState] = useState<RunState | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [needsEntry, setNeedsEntry] = useState(false);
+  const [buyingIn, setBuyingIn] = useState(false);
+  const [checkingIn, setCheckingIn] = useState(false);
 
   useEffect(() => {
     if (isMiniPay()) connect({ connector: injected() });
@@ -104,16 +113,67 @@ export default function RunPage() {
     }
   }
 
+  // Pay the weekly buy-in on-chain, then open the run. The backend verifies the ArcadiaPool entry
+  // event before it opens the run (server/v2/entry.ts), so the pay MUST land first — hence the await
+  // on the receipt inside pool.buyIn before openRun re-checks. `rebuy` when the player already
+  // started the week and busted; `enter` otherwise.
+  async function buyIn() {
+    if (!state) return;
+    setBuyingIn(true);
+    setError(null);
+    try {
+      const kind = state.run ? "rebuy" : "enter";
+      await pool.buyIn(state.weekId, BUY_IN_USD, kind);
+      setNeedsEntry(false);
+      await openRun();
+    } catch (e) {
+      // A user-rejected wallet prompt is not an error worth alarming over.
+      const msg = String((e as Error)?.message ?? "");
+      if (/reject|denied|cancell?ed/i.test(msg)) {
+        setError(null);
+      } else if (/insufficient|balance|transfer amount exceeds/i.test(msg)) {
+        setError("Not enough USDm to buy in. Add funds and try again.");
+      } else {
+        setError("Buy-in didn't go through. Please try again.");
+      }
+    } finally {
+      setBuyingIn(false);
+    }
+  }
+
+  async function checkIn() {
+    if (!state?.checkIn) return;
+    setCheckingIn(true);
+    setError(null);
+    try {
+      // Zero value — this opens the day, it never moves money. The attribution suffix rides along
+      // as it does on every other Arcadia transaction.
+      const hash = await sendTransactionAsync({
+        to: state.checkIn.to,
+        value: 0n,
+        data: (state.checkIn.data + ARCADIA_ATTRIBUTION_SUFFIX) as `0x${string}`,
+        // MiniPay processes legacy (type 0) only and manages its own fee currency.
+        ...(isMiniPay() ? { type: "legacy" as const } : {}),
+      });
+      if (publicClient) await publicClient.waitForTransactionReceipt({ hash });
+      await load();
+    } catch {
+      setError("Could not open today. Please try again.");
+    } finally {
+      setCheckingIn(false);
+    }
+  }
+
   if (error === "NEEDS_CODE") {
     return (
       <main style={wrap}>
-        <h1 style={h1}>Private Beta</h1>
+        <h1 style={h1}>Ranked</h1>
         <div className="panel" style={panel}>
           <p style={{ marginBottom: 18, lineHeight: 1.5 }}>
-            You need an invite code to join the weekly pool.
+            Unlock access to join this week&apos;s pool — it takes one wallet check and moves no money.
           </p>
           <a className="btn" href="/v2/redeem" style={{ ...btn, textDecoration: "none", display: "inline-block" }}>
-            Enter invite code
+            Unlock access
           </a>
         </div>
       </main>
@@ -128,10 +188,10 @@ export default function RunPage() {
 
   return (
     <main style={wrap}>
-      <h1 style={h1}>This Week</h1>
+      <h1 style={h1}>Ranked</h1>
       <p style={{ marginBottom: 24, lineHeight: 1.5, color: "var(--text-dim)" }}>
-        {state ? `Week ${state.weekId}` : "Loading…"} · everyone plays the same $1 entry, and the
-        pot is split at the weekend by where you finish.
+        {state ? `Week ${state.weekId}` : "Loading…"} · everyone plays the same $0.50 USDm entry, and the
+        pot is split at the weekend by where you finish. (Prefer instant play? That&apos;s Casual.)
       </p>
 
       {!run && state && (
@@ -195,18 +255,54 @@ export default function RunPage() {
             </p>
           </div>
 
-          <a className="btn" href="/games" style={{ ...btn, display: "block", textAlign: "center", textDecoration: "none" }}>
-            Play a round
-          </a>
+          {state?.needsCheckIn ? (
+            <div className="panel" style={{ ...panel, borderLeft: "10px solid #6BCDCF" }}>
+              <p style={{ fontWeight: 900, fontSize: 20, marginBottom: 8 }}>Open today</p>
+              <p style={{ lineHeight: 1.5, marginBottom: 14 }}>
+                Confirm once to unlock today&apos;s {state.freeRoundsPerDay} free rounds. It costs
+                nothing — no money leaves your wallet.
+              </p>
+              <button
+                className="btn"
+                onClick={checkIn}
+                disabled={checkingIn || !isConnected || !state.checkIn}
+                style={{ ...btn, width: "100%" }}
+              >
+                {checkingIn ? "Opening…" : "Open today"}
+              </button>
+              <p style={{ marginTop: 12, fontSize: 14, color: "var(--text-dim)", lineHeight: 1.5, marginBottom: 0 }}>
+                Once a day, so your streak is a matter of public record rather than something we
+                assert on your behalf.
+              </p>
+            </div>
+          ) : (
+            <a className="btn" href="/v2/play" style={{ ...btn, display: "block", textAlign: "center", textDecoration: "none" }}>
+              Play a round
+            </a>
+          )}
         </>
       )}
 
       {needsEntry && (
         <div className="panel" style={{ ...panel, borderLeft: "10px solid var(--accent)" }}>
-          <p style={{ fontWeight: 800, marginBottom: 8 }}>You need to buy in first</p>
+          <p style={{ fontWeight: 800, marginBottom: 8 }}>Buy in for the week</p>
           <p style={{ lineHeight: 1.5, marginBottom: 14 }}>
-            Your $1 entry for this week hasn&apos;t arrived yet. If you just paid, give it a moment
-            and try again.
+            One $0.50 USDm buy-in enters you into this week&apos;s pool and starts you at 1.00x. The
+            pot is split at the weekend by where you finish.
+          </p>
+          <button
+            className="btn"
+            onClick={buyIn}
+            disabled={buyingIn || !isConnected}
+            style={{ ...btn, width: "100%" }}
+          >
+            {buyingIn ? "Confirming…" : "Buy in — $0.50 USDm"}
+          </button>
+          {!isConnected && (
+            <p style={{ marginTop: 12, fontSize: 14 }}>Connect your wallet to buy in.</p>
+          )}
+          <p style={{ marginTop: 14, fontSize: 14, color: "var(--text-dim)", lineHeight: 1.5, marginBottom: 6 }}>
+            Not enough USDm?
           </p>
           <a
             className="btn"

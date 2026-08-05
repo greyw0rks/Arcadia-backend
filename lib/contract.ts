@@ -13,6 +13,12 @@ export type ChainId = "celo";
 export const ARCADE_ADDRESS = (process.env.NEXT_PUBLIC_ARCADE_ADDRESS ??
   "0x0000000000000000000000000000000000000000") as `0x${string}`;
 
+// ArcadiaPool — the V2 ("Ranked") weekly buy-in pool. Deployed to Celo mainnet 2026-08-04. The
+// backend reads the same address from ARCADIA_POOL_ADDRESS (server-side, no NEXT_PUBLIC_) to verify
+// paid entry; this NEXT_PUBLIC_ copy is what the browser sends enter()/rebuy() to.
+export const ARCADIA_POOL_ADDRESS = (process.env.NEXT_PUBLIC_ARCADIA_POOL_ADDRESS ??
+  "0xb8dc827b5433575e84a1612512350c689c4c5d5e") as `0x${string}`;
+
 // "mainnet" | "testnet". Drives which Celo network the app + signer target. Defaults to mainnet.
 export const CELO_NETWORK_NAME = (process.env.NEXT_PUBLIC_CELO_NETWORK ?? "mainnet") as
   | "mainnet"

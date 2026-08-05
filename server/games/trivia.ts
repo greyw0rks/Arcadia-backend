@@ -25,8 +25,8 @@ export const triviaModule = makeChoiceGame(
     timeLimitSec: TRIVIA_TIME_LIMIT_SEC,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: raw, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: raw, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     return { prompt: raw.q, correct: raw.options[raw.answer], options: raw.options, tier };
   }
 );

@@ -75,6 +75,29 @@ Shipped:
 | `server/v2/settle.ts` | Weekend tally → signed root, idempotent |
 | `POST /api/v2/run` | Open a run (entry or rebuy) |
 | `POST /api/v2/run/round` | Bank one scored round |
+| `POST /api/v2/run/session` | Open a 15-question session belonging to the live run |
+| `/v2/play` | The round UI — 15 questions, progress shown against the pass mark |
+
+**Gap 3 — ~~the beta had no way to actually play a round~~ CLOSED 2026-08-01.** The run dashboard's
+"Play a round" button pointed at V1's `/games`, which takes a per-session stake and settles on its
+own. There was no route from a weekly run into a scored round.
+
+`POST /api/v2/run/session` opens a session against the caller's live run, and `/v2/play` plays it.
+Sessions carry a `weeklyRun` flag so V1's on-chain funding gate is skipped — the weekly entry already
+paid. Deliberately **not** `isDemo`, which would skip the same gate but also exclude every answer
+from the calibration sample (#5), which is the data the beta exists to gather.
+
+Two bugs found and fixed while wiring this up:
+
+- **The §4.1 difficulty curve was inverted.** The band was collapsed into V1's 0..1 `difficulty`
+  fraction, but V1's `TIER_RECIPES` never serve easy or medium at *any* difficulty — that floor is
+  the deliberate house-treasury protection `bands.ts` documents. So no fraction can express a V2
+  band. Measured, the recovery band's `[4,7,4,0]` was served as `[0,0,11,4]`: the **hardest**
+  questions to the players closest to bust, exactly reversing the recovery mechanic. Fixed by
+  passing the recipe through as an explicit `tierSchedule`, threaded `createSession` → `nextRound` →
+  `buildRound` → `drawTiered`. V1 omits it and is bit-identical; both directions are now tested.
+- **`/api/round` returns `{ done, round, multiplierBp }`, not the view.** The play page read the
+  body as the view itself, so every field was `undefined` and the question rendered blank.
 
 Verified against a production build: both routes return **401** without a valid tester pass, reject
 forged passes, and **404 in production** with `V2_ENABLED` unset. **#11 is closed** — `requireTester`
@@ -151,6 +174,12 @@ Three things make this sharper than a content-backlog item:
 
 Sustaining 12 weeks at the worst band would need ~8,300 more extreme and ~2,900 more easy
 questions.
+
+**Note (2026-08-01):** the whole table above assumes rounds are served the §4.1 recipe. Until the
+tier-schedule fix in #3 that was not true of served play — the curve was inverted, so easy/medium
+were never drawn at all. The projections are still valid *for the intended curve*; they were simply
+never what the code did. Nothing measured has been invalidated, because no beta rounds have been
+played yet.
 
 **But the worst band is not the realistic case — and the pass mark decides which tier binds.**
 `python3 scripts/v2-bust-sim.py` now simulates a whole population and reports tier consumption:
@@ -456,3 +485,131 @@ Resolved: stake-tier question (single $1 entry, no tiers) · rebuy friction (15-
 + nudge from the 4th) · format coverage against the 9 live games · the §4.1 difficulty curve
 · the variance simulation that surfaced #1 · READMEs across all three repos · mobile token
 switcher, tournament coming-soon page, and topbar spacing.
+
+---
+
+## Session update — 2026-08-04 (mainnet deploy + $0.50 + Ranked/Casual)
+
+**Decisions locked this session:**
+- **Buy-in cut $1 → $0.50** (rebuy $0.50, early-bird $0.35). Canonical constant now
+  `server/v2/economy.ts` (`BUY_IN_USD` etc., decimals-aware `toBaseUnits`). Spec §2 + V2 UI copy
+  updated.
+- **Casual vs Ranked framing.** Casual = V1 (instant win/lose, per-session stake, USDm/USDC/USDT).
+  Ranked = V2 (weekly pool, **cUSD/USDm only**, $0.50). Pool is single-token-per-week by
+  construction → Ranked is USDm-only. See `docs/V2_MULTI_TOKEN.md` (decision RESOLVED there).
+- **Movie game reworked** screenshot-title → facts/description ("guess the film from a clue").
+  `server/games/movie.ts` filters to clued entries; 94 clues added to `data/movies.json`; module
+  now `available: true`. Renders text prompt like `emoji` (no image).
+- **`V2_PUBLIC` flag** (`server/v2/flag.ts`) opens Ranked to everyone: `_gate.ts` drops the
+  allowlist and the redeem route drops the invite code, both keeping wallet-ownership proof. Prod
+  stays 404 via `proxy.ts` (V2_ENABLED unset). Set V2_PUBLIC only where V2_ENABLED=true on an
+  isolated DB.
+
+**Audit (item #1 internal review):** `docs/V2_POOL_AUDIT.md`. Found + fixed **M-1** — `publishResults`
+and `refund` were not mutually exclusive, allowing a late publish after refunds to enable a
+double-claim (bounded by the pot). Fix: `publishResults` now reverts once `closedAt + claimWindow`
+passes. 2 regression tests added; **33/33 ArcadiaPool tests pass**. NOTE: internal review only —
+celopedia is a reference skill, NOT an external auditor (it defers to Pashov Audit Group skills).
+The independent third-party audit gate is **still open**.
+
+**DEPLOYED — ArcadiaPool is LIVE on Celo mainnet (chain 42220):**
+`0xb8dc827b5433575e84a1612512350c689c4c5d5e` — owner `0xc61Bbc…0450`, signer `0x350FA35e…`,
+rake 1500 bps, USDm-only enabled, not paused. Deployed per explicit informed owner decision despite
+open gates (no external audit, no legal review, params unvalidated). ~0.42 CELO gas; 0.545 CELO left
+on the key.
+
+### Remaining before it can actually take money (NONE done — no player money at risk yet)
+1. **`openWeek(currentWeekId(), 0x765DE816…)`** — the irreversible step that opens real-money entry.
+   Owner tx. `weekId` = YYYYWW from `server/v2/week.ts`; must match exactly.
+2. **Set `ARCADIA_POOL_ADDRESS=0xb8dc827b5433575e84a1612512350c689c4c5d5e`** on the live backend, or
+   `entry.ts` skips paid-entry verification (opens runs for free).
+3. **Set `V2_ENABLED=true` + `V2_PUBLIC=true`** on the live backend. WARNING: V2 schema DDL runs on
+   boot — point that deploy at an isolated DB or accept prod-DB contamination.
+4. **Build the frontend pool-entry UI** (the `enter()` transaction). Open work #10/#13 — never built.
+   Until it exists, players have no in-app way to pay in even with a week open.
+5. Before real volume: **third-party audit** of ArcadiaPool, **legal/compliance review** (#9), and
+   **re-run `scripts/v2-bust-sim.py`** against measured accuracy once the beta produces it.
+
+### Session update — 2026-08-04 (cont.): pool-entry UI built
+
+Open-work step 4 (frontend `enter()` UI) is **DONE**. The Ranked flow now exists end-to-end:
+- `lib/abi.ts` — `POOL_ABI` (enter/rebuy).
+- `lib/contract.ts` — `ARCADIA_POOL_ADDRESS` (defaults to the deployed mainnet address; override with
+  `NEXT_PUBLIC_ARCADIA_POOL_ADDRESS`).
+- `lib/useArcade.ts` — `usePool()` hook: approve USDm → `enter(weekId, amount)`/`rebuy`, with the
+  same CIP-64 feeCurrency, ERC-8021 attribution, and MiniPay-legacy handling as the arcade.
+- `app/v2/run/page.tsx` — the "Buy in — $0.50 USDm" button pays on-chain, waits for the receipt,
+  then re-POSTs `/api/v2/run` (which verifies the on-chain entry before opening the run).
+- `app/v2/redeem/page.tsx` + redeem GET — adapt to `V2_PUBLIC`: in open-beta mode the invite-code
+  field is hidden and unlock is wallet-proof only.
+
+`✓ Compiled successfully` with `V2_ENABLED=true V2_PUBLIC=true`. `tsc --noEmit` clean. 133 backend
+tests + 33 contract tests pass.
+
+**Now the ONLY remaining go-live steps are operator actions (still none done, no money at risk):**
+1. `openWeek(currentWeekId(), 0x765DE816…)` — owner tx, the irreversible one.
+2. Set `ARCADIA_POOL_ADDRESS` (server) + `NEXT_PUBLIC_ARCADIA_POOL_ADDRESS` (client, only if
+   overriding the baked-in default) on the live backend.
+3. Set `V2_ENABLED=true` + `V2_PUBLIC=true` on the live backend — on an ISOLATED DB (schema DDL runs
+   on boot).
+Then the loop is fully playable. Audit/legal/param-validation gates remain open (accepted risk).
+
+---
+
+## Session update — 2026-08-05 (Casual scoring rework — V1 only, V2 untouched)
+
+**Casual (V1) moved from a per-question multiplier walk to a graduated pass-mark round.** V2's
+`server/v2/scoring.ts` is deliberately **unchanged** — an earlier attempt edited it and was reverted.
+
+**The mechanic.** A Casual session is now **one round of 12 questions** (was 3–6 single-question
+rounds). The multiplier no longer moves during play; it is set once at finalize from the final
+correct-count, graduated per question past a mark:
+
+| Correct | Multiplier | | Correct | Multiplier |
+|---|---|---|---|---|
+| 12 | 1.4x | | 4 | 0.9x |
+| 11 | 1.3x | | 3 | 0.8x |
+| 10 | 1.2x | | 2 | 0.7x |
+| 9 (pass mark) | 1.1x | | 1 | 0.6x |
+| 5–8 | 1.0x (neutral — stake returned) | | 0 | 0.5x |
+
+**Why the neutral band matters:** an average round no longer bleeds the multiplier, so a loss has to
+be earned rather than drawn from variance.
+
+**Key structural change — `maxRounds` and `questions` are now separate.** `Session.maxRounds` is the
+on-chain **scoring-event count** (the payout-cap basis, `maxMult = 1.0 + 0.1·maxRounds`);
+`Session.questions` is how many questions are actually served. Casual commits `maxRounds =
+casualMaxSteps()` = 4 → an exact 1.4x on-chain ceiling, while serving 12 questions. `questions`
+defaults to `maxRounds`, so V2 (which creates with 15/15) is bit-identical.
+
+**No contract change needed.** `QuizArcadeV2.maxRoundsCap` is 20; committing 4 is well inside it, and
+`/api/round`'s reconcile no longer overwrites the served-question count.
+
+**Files:** `server/engine.ts` (`scoreCasualSession`, `casualPassMark/FailMark/MaxSteps`),
+`server/sessions.ts` (`questions` field, `finalMultiplierBp` branches on `!isDemo && !weeklyRun`),
+`app/api/session|round|finalize`, both repos' `app/play/[game]/page.tsx`.
+
+**Tunable without a redeploy:** `CASUAL_PASS_MARK` / `CASUAL_FAIL_MARK`. `casualFailMark()` clamps to
+`[0, pass-1]` so the neutral band can never invert.
+
+**UI.** The in-round HUD showed a live walking multiplier that would now be a lie (it bore no
+relation to the payout). Replaced with **"N / 9 to win"** plus a line that adapts once the win is
+locked, out of reach, or the loss is locked. Confetti now fires only above 1.0x (a neutral 1.0x is
+not a win). All player-facing copy updated in both repos: play pages, lobby hero, FAQ (4 answers),
+TutorialModal, homepage steps, mobile-demo chips, and backend README.
+
+**Dead code removed:** `roundsFor()` + `MIN_ROUNDS`/`MAX_ROUNDS` in both repos' `difficulty.ts` — the
+stake→round-count mapping no longer exists. Its 4 tests were replaced by one invariant asserting
+`casualMaxSteps() <= MAX_ROUNDS_CAP` (if a tuned pass mark ever pushed past the cap, every
+`startSession` would revert).
+
+**Verified:** `tsc --noEmit` clean both repos · 201 backend tests pass (12 new in
+`server/engine.casual.test.ts`) · both production builds succeed. **Not deployed, not merged.**
+
+### Open follow-ups from this change
+- **The house edge was never re-modelled.** The old mechanic's expected value is not this one's, and
+  `scripts/v2-bust-sim.py` models V2, not Casual. Pass mark 9 and fail mark 4 were chosen for feel,
+  not from a simulation of the new payout table. Worth a Casual-specific EV pass before volume.
+- Difficulty recipes (`TIER_RECIPES`, 7 per block) were tuned around 3–6-round sessions; at 12
+  questions a block-and-a-bit is served. Not a bug, but the tier mix per session shifted.
+

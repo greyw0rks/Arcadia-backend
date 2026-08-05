@@ -8,7 +8,8 @@
       "Scarface",
       "The Departed"
     ],
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A reluctant war-hero son is drawn into his family's New York mafia dynasty after his father is gunned down. Directed by Francis Ford Coppola, 1972."
   },
   {
     "id": "matrix",
@@ -20,7 +21,8 @@
     ],
     "image": "/movies/matrix.png",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/db/The_Matrix.png",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A hacker learns his reality is a simulation and joins a rebellion against machines, guided by a man named Morpheus. 'Red pill or blue pill?'"
   },
   {
     "id": "pulpfiction",
@@ -31,7 +33,8 @@
       "Kill Bill",
       "Goodfellas"
     ],
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "Interwoven L.A. crime stories — two philosophical hitmen, a boxer, and a mob boss's wife — told out of order by Quentin Tarantino."
   },
   {
     "id": "jurassicpark",
@@ -42,7 +45,8 @@
       "The Lost World",
       "Jaws"
     ],
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "Scientists clone dinosaurs from ancient DNA for a theme park on an island; it does not go to plan. Spielberg, 1993."
   },
   {
     "id": "starwars",
@@ -53,7 +57,8 @@
       "The Empire Strikes Back",
       "Dune"
     ],
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A farm boy joins a rebellion against a galactic empire, learning the ways of the Force from an old hermit. The original 1977 space opera."
   },
   {
     "id": "titanic",
@@ -65,7 +70,8 @@
     ],
     "image": "/movies/titanic.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A poor artist and a wealthy young woman fall in love aboard a doomed ocean liner on its maiden voyage in 1912."
   },
   {
     "id": "forrest_gump",
@@ -77,7 +83,8 @@
     ],
     "image": "/movies/forrest_gump.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A kind-hearted Alabama man with a low IQ unwittingly witnesses decades of American history from a park bench. 'Life is like a box of chocolates.'"
   },
   {
     "id": "dark_knight",
@@ -89,7 +96,8 @@
     ],
     "image": "/movies/dark_knight.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "Gotham's caped vigilante faces an anarchic clown who wants to watch the world burn. Heath Ledger won a posthumous Oscar."
   },
   {
     "id": "avengers_end",
@@ -101,7 +109,8 @@
     ],
     "image": "/movies/avengers_end.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "Earth's mightiest heroes attempt a time-spanning heist to undo a snap that erased half of all life. Marvel's 2019 climax."
   },
   {
     "id": "avatar",
@@ -113,7 +122,8 @@
     ],
     "image": "/movies/avatar.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A paraplegic marine pilots a blue alien body to live among the Na'vi on the moon Pandora. James Cameron's motion-capture epic."
   },
   {
     "id": "jaws",
@@ -125,7 +135,8 @@
     ],
     "image": "/movies/jaws.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/4/40/Jaws_movie_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A small beach town's police chief hunts a giant great white shark with an oceanographer and a grizzled fisherman. 'You're gonna need a bigger boat.'"
   },
   {
     "id": "et",
@@ -137,7 +148,8 @@
     ],
     "image": "/movies/et.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/66/E_t_the_extra_terrestrial_ver3.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A suburban boy hides a stranded alien in his home and helps it 'phone home.' Spielberg, 1982."
   },
   {
     "id": "lion_king",
@@ -149,7 +161,8 @@
     ],
     "image": "/movies/lion_king.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A young lion prince flees his kingdom after his father's death, guided back by 'Hakuna Matata' friends. Disney, 1994."
   },
   {
     "id": "toy_story",
@@ -161,7 +174,8 @@
     ],
     "image": "/movies/toy_story.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "Toys come to life when humans aren't looking; a cowboy doll resents a new spaceman action figure. Pixar's first feature."
   },
   {
     "id": "shrek",
@@ -173,7 +187,8 @@
     ],
     "image": "/movies/shrek.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7b/Shrek_%282001_animated_feature_film%29.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A grumpy ogre and a talking donkey rescue a princess for a vain lord, in a fairy-tale spoof by DreamWorks."
   },
   {
     "id": "frozen",
@@ -185,7 +200,8 @@
     ],
     "image": "/movies/frozen.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A princess with ice powers accidentally traps her kingdom in eternal winter; her sister sets out to save her. 'Let It Go.'"
   },
   {
     "id": "harry_potter",
@@ -197,7 +213,8 @@
     ],
     "image": "/movies/harry_potter.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "An orphaned boy discovers he's a wizard and attends a school of magic, learning he survived a dark lord as a baby."
   },
   {
     "id": "hunger_games",
@@ -209,7 +226,8 @@
     ],
     "image": "/movies/hunger_games.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "In a dystopian nation, a girl volunteers for a televised fight-to-the-death to save her sister."
   },
   {
     "id": "inception",
@@ -221,7 +239,8 @@
     ],
     "image": "/movies/inception.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "Thieves enter people's dreams to steal secrets, then attempt the reverse — planting an idea. Nolan's spinning-top puzzle."
   },
   {
     "id": "interstellar",
@@ -233,7 +252,8 @@
     ],
     "image": "/movies/interstellar.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A former pilot leaves his family to travel through a wormhole seeking a new home for humanity. Nolan, with relativity-bent time."
   },
   {
     "id": "gladiator",
@@ -245,7 +265,8 @@
     ],
     "image": "/movies/gladiator.png",
     "source": "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A betrayed Roman general is enslaved and rises as an arena fighter to avenge his murdered family. 'Are you not entertained?'"
   },
   {
     "id": "black_panther",
@@ -257,7 +278,8 @@
     ],
     "image": "/movies/black_panther.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d6/Black_Panther_%28film%29_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "The heir to a hidden, technologically advanced African nation defends his throne and its vibranium. Marvel, 2018."
   },
   {
     "id": "spider_man",
@@ -281,7 +303,8 @@
     ],
     "image": "/movies/top_gun.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/46/Top_Gun_Movie.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A hotshot Navy fighter pilot competes at an elite flight school while wrestling with recklessness. 1986, with Tom Cruise."
   },
   {
     "id": "rocky",
@@ -293,7 +316,8 @@
     ],
     "image": "/movies/rocky.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/18/Rocky_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A small-time Philadelphia boxer gets a once-in-a-lifetime shot at the heavyweight champion. 1976 Best Picture."
   },
   {
     "id": "home_alone",
@@ -305,7 +329,8 @@
     ],
     "image": "/movies/home_alone.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A boy accidentally left behind at Christmas defends his house from two bumbling burglars with booby traps."
   },
   {
     "id": "the_social_network",
@@ -341,7 +366,8 @@
     ],
     "image": "/movies/parasite.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A poor family cons its way into working for a wealthy household, until a hidden secret erupts. Bong Joon-ho's Palme d'Or / Best Picture winner."
   },
   {
     "id": "shawshank",
@@ -353,7 +379,8 @@
     ],
     "image": "/movies/shawshank.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A banker wrongly convicted of murder forms a decades-long friendship in prison and never loses hope. Based on a Stephen King novella."
   },
   {
     "id": "schindlers_list",
@@ -365,7 +392,8 @@
     ],
     "image": "/movies/schindlers_list.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A German businessman saves over a thousand Jewish workers during the Holocaust. Spielberg's black-and-white 1993 film."
   },
   {
     "id": "silence_lambs",
@@ -377,7 +405,8 @@
     ],
     "image": "/movies/silence_lambs.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A young FBI trainee consults an imprisoned cannibal psychiatrist to catch another serial killer."
   },
   {
     "id": "fight_club",
@@ -389,7 +418,8 @@
     ],
     "image": "/movies/fight_club.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "An insomniac office worker and a soap salesman start an underground bare-knuckle club that spirals into anarchy."
   },
   {
     "id": "goodfellas",
@@ -401,7 +431,8 @@
     ],
     "image": "/movies/goodfellas.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7b/Goodfellas.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "The rise and fall of a mob associate across three decades of New York organized crime. Scorsese, narrated by Ray Liotta."
   },
   {
     "id": "blade_runner",
@@ -413,7 +444,8 @@
     ],
     "image": "/movies/blade_runner.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A 'blade runner' hunts rogue bioengineered replicants in a rain-soaked neon future Los Angeles. Ridley Scott, 1982."
   },
   {
     "id": "alien",
@@ -425,7 +457,8 @@
     ],
     "image": "/movies/alien.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "The crew of a space freighter is picked off one by one by a lethal organism after answering a distress call. 'In space no one can hear you scream.'"
   },
   {
     "id": "terminator",
@@ -437,7 +470,8 @@
     ],
     "image": "/movies/terminator.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/6d/The_Terminator.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A cyborg assassin is sent back in time to kill a woman whose unborn son will lead a human resistance."
   },
   {
     "id": "die_hard",
@@ -449,7 +483,8 @@
     ],
     "image": "/movies/die_hard.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/ca/Die_Hard_%281988_film%29_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "An off-duty cop single-handedly fights terrorists who seize a Los Angeles skyscraper on Christmas Eve."
   },
   {
     "id": "raiders_ark",
@@ -461,7 +496,8 @@
     ],
     "image": "/movies/raiders_ark.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/4c/Raiders_of_the_Lost_Ark.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A whip-cracking archaeologist races the Nazis to recover a biblical artifact of great power. 1981."
   },
   {
     "id": "braveheart",
@@ -485,11 +521,12 @@
     ],
     "image": "/movies/saving_ryan.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "After D-Day, a squad is sent behind enemy lines to bring home the last surviving brother of four. Spielberg's WWII film."
   },
   {
     "id": "leon",
-    "answer": "L\u00e9on: The Professional",
+    "answer": "Léon: The Professional",
     "decoys": [
       "La Femme Nikita",
       "Columbiana",
@@ -509,7 +546,8 @@
     ],
     "image": "/movies/no_country.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A hunter takes a satchel of drug money and is stalked by a relentless killer with a cattle gun. Coen brothers."
   },
   {
     "id": "lotr_return",
@@ -521,7 +559,8 @@
     ],
     "image": "/movies/lotr_return.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/48/Lord_Rings_Return_King.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "The final march on a dark lord's tower as a hobbit struggles to reach the volcano with a cursed ring. Won 11 Oscars."
   },
   {
     "id": "lotr_fellowship",
@@ -533,7 +572,8 @@
     ],
     "image": "/movies/lotr_fellowship.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A hobbit sets out with a fellowship to destroy a powerful ring in a volcano. First of Peter Jackson's trilogy."
   },
   {
     "id": "joker",
@@ -545,7 +585,8 @@
     ],
     "image": "/movies/joker.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A failed clown and comedian in a decaying city descends into violence and becomes an icon of chaos. Joaquin Phoenix, 2019."
   },
   {
     "id": "everything_all",
@@ -557,7 +598,8 @@
     ],
     "image": "/movies/everything_all.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A stressed laundromat owner is pulled across the multiverse to save existence — with hot-dog fingers and a bagel. 2022 Best Picture."
   },
   {
     "id": "oppenheimer",
@@ -569,7 +611,8 @@
     ],
     "image": "/movies/oppenheimer.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "The theoretical physicist who led the Manhattan Project and later regretted the bomb he built. Nolan, 2023."
   },
   {
     "id": "dunkirk",
@@ -593,7 +636,8 @@
     ],
     "image": "/movies/wolf_wall_st.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "The excess-fuelled rise and fall of a corrupt stockbroker running a pump-and-dump empire. Scorsese, DiCaprio."
   },
   {
     "id": "django",
@@ -605,7 +649,8 @@
     ],
     "image": "/movies/django.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8b/Django_Unchained_Poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A freed slave becomes a bounty hunter and sets out to rescue his wife from a plantation owner. Tarantino."
   },
   {
     "id": "inglourious",
@@ -617,7 +662,8 @@
     ],
     "image": "/movies/inglourious.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A plot to assassinate Nazi leaders in a Paris cinema, plus a squad of Jewish-American soldiers. Tarantino's WWII revenge tale."
   },
   {
     "id": "reservoir_dogs",
@@ -641,7 +687,8 @@
     ],
     "image": "/movies/kill_bill.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/2/2c/Kill_Bill_Volume_1.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A betrayed assassin awakens from a coma and hunts down the squad that left her for dead. Tarantino, two volumes."
   },
   {
     "id": "memento",
@@ -653,7 +700,8 @@
     ],
     "image": "/movies/memento.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/c7/Memento_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A man with no short-term memory hunts his wife's killer using tattoos and Polaroids; the story runs backward. Nolan."
   },
   {
     "id": "eternal_sunshine",
@@ -665,7 +713,8 @@
     ],
     "image": "/movies/eternal_sunshine.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a4/Eternal_Sunshine_of_the_Spotless_Mind.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A couple undergo a procedure to erase each other from their memories, then fight to hold on. Charlie Kaufman script."
   },
   {
     "id": "spirited_away",
@@ -677,7 +726,8 @@
     ],
     "image": "/movies/spirited_away.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A girl wanders into a spirit world bathhouse and must work to free her parents, who've been turned into pigs. Miyazaki."
   },
   {
     "id": "wall_e",
@@ -689,7 +739,8 @@
     ],
     "image": "/movies/wall_e.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/4c/WALL-E_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A lonely trash-compacting robot on an abandoned Earth falls for a sleek probe and follows her to space. Pixar."
   },
   {
     "id": "up_movie",
@@ -701,7 +752,8 @@
     ],
     "image": "/movies/up_movie.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A widowed old man ties thousands of balloons to his house to fly to South America, with a stowaway boy scout. Pixar."
   },
   {
     "id": "inside_out",
@@ -725,7 +777,8 @@
     ],
     "image": "/movies/finding_nemo.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A timid clownfish crosses the ocean to find his captured son, aided by a forgetful blue fish. Pixar."
   },
   {
     "id": "gravity",
@@ -749,7 +802,8 @@
     ],
     "image": "/movies/mad_max_fury.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "In a desert wasteland, a drifter and a one-armed driver flee a tyrant in a roaring convoy chase. 2015."
   },
   {
     "id": "get_out",
@@ -761,7 +815,8 @@
     ],
     "image": "/movies/get_out.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A young Black man visits his white girlfriend's family and uncovers a sinister secret. Jordan Peele's debut."
   },
   {
     "id": "arrival",
@@ -773,7 +828,8 @@
     ],
     "image": "/movies/arrival.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A linguist tries to communicate with newly arrived aliens as the world edges toward war. Villeneuve, 2016."
   },
   {
     "id": "moonlight",
@@ -809,7 +865,8 @@
     ],
     "image": "/movies/big_short.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/16/The_Big_Short_%282015_film_poster%29.png",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A handful of outsiders bet against the housing market before the 2008 financial crash, explained to camera."
   },
   {
     "id": "spotlight",
@@ -845,7 +902,8 @@
     ],
     "image": "/movies/dune_2021.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "The heir of a noble house is thrust into a war over a desert planet that holds the universe's most valuable spice. Villeneuve."
   },
   {
     "id": "shape_water",
@@ -905,7 +963,8 @@
     ],
     "image": "/movies/casablanca.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/b/b3/CasablancaPoster-Gold.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A cynical nightclub owner in wartime Morocco must choose between love and the resistance. 'Here's looking at you, kid.' 1942."
   },
   {
     "id": "citizen_kane",
@@ -917,7 +976,8 @@
     ],
     "image": "/movies/citizen_kane.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "Reporters investigate the dying word 'Rosebud' of a newspaper tycoon. Orson Welles, 1941; often called the greatest film ever."
   },
   {
     "id": "vertigo",
@@ -929,7 +989,8 @@
     ],
     "image": "/movies/vertigo.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/7/75/Vertigomovie_restoration.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A retired detective with a fear of heights becomes obsessed with the woman he's hired to follow. Hitchcock, 1958."
   },
   {
     "id": "psycho",
@@ -941,7 +1002,8 @@
     ],
     "image": "/movies/psycho.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A woman on the run checks into a lonely motel run by a mother-fixated young man. Hitchcock's shower scene, 1960."
   },
   {
     "id": "2001",
@@ -953,7 +1015,8 @@
     ],
     "image": "/movies/2001.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A voyage to Jupiter turns deadly when the ship's AI, HAL 9000, rebels. Kubrick's monolith odyssey, 1968."
   },
   {
     "id": "apocalypse_now",
@@ -965,7 +1028,8 @@
     ],
     "image": "/movies/apocalypse_now.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/c2/Apocalypse_Now_poster.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A captain travels upriver during the Vietnam War to assassinate a renegade colonel. 'I love the smell of napalm.' Coppola."
   },
   {
     "id": "taxi_driver",
@@ -977,7 +1041,8 @@
     ],
     "image": "/movies/taxi_driver.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/3/33/Taxi_Driver_%281976_film_poster%29.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A lonely, insomniac New York cab driver spirals toward violence to 'clean up' the city. Scorsese, De Niro. 'You talkin' to me?'"
   },
   {
     "id": "raging_bull",
@@ -989,7 +1054,8 @@
     ],
     "image": "/movies/raging_bull.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/5/5f/Raging_Bull_poster.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "The self-destructive rise and fall of a jealous middleweight boxer. Scorsese's black-and-white biopic, De Niro."
   },
   {
     "id": "lawrence_arabia",
@@ -1001,7 +1067,8 @@
     ],
     "image": "/movies/lawrence_arabia.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lawrence_of_arabia_ver3_xxlg.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A British officer unites Arab tribes against the Ottomans in WWI across vast deserts. David Lean epic, 1962."
   },
   {
     "id": "gone_wind",
@@ -1025,7 +1092,8 @@
     ],
     "image": "/movies/wizard_oz.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/6/69/Wizard_of_oz_movie_poster.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A Kansas farm girl is swept by a tornado to a colorful land and follows a yellow brick road home. 1939."
   },
   {
     "id": "godfather2",
@@ -1037,7 +1105,8 @@
     ],
     "image": "/movies/godfather2.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/03/Godfather_part_ii.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A parallel tale: a young immigrant's rise in crime and his son's cold consolidation of power. Coppola's 1974 sequel."
   },
   {
     "id": "once_upon_time_amer",
@@ -1073,7 +1142,8 @@
     ],
     "image": "/movies/seven_samurai.png",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/c8/Seven_Samurai_Poster.png",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "Villagers hire seven masterless swordsmen to defend them from bandits in feudal Japan. Kurosawa, 1954."
   },
   {
     "id": "pan_labyrinth",
@@ -1085,7 +1155,8 @@
     ],
     "image": "/movies/pan_labyrinth.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/67/Pan%27s_Labyrinth.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A girl in Franco-era Spain escapes into a dark fairy-tale realm ruled by a faun. Guillermo del Toro."
   },
   {
     "id": "pianist",
@@ -1097,7 +1168,8 @@
     ],
     "image": "/movies/pianist.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Pianist_movie.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A Polish-Jewish pianist survives the Warsaw ghetto and Nazi occupation. Polanski; Adrien Brody won Best Actor."
   },
   {
     "id": "das_boot",
@@ -1121,13 +1193,14 @@
     ],
     "image": "/movies/life_beautiful.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7c/Vitaebella.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A father uses humor to shield his young son from the horror of a Nazi concentration camp. Roberto Benigni."
   },
   {
     "id": "cinema_paradiso",
     "answer": "Cinema Paradiso",
     "decoys": [
-      "8\u00bd",
+      "8½",
       "Amarcord",
       "Nuovo Cinema Paradiso"
     ],
@@ -1145,7 +1218,8 @@
     ],
     "image": "/movies/oldboy.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/67/Oldboykoreanposter.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A man imprisoned for 15 years without explanation is suddenly freed and given days to find out why. Park Chan-wook."
   },
   {
     "id": "handmaiden",
@@ -1161,7 +1235,7 @@
   },
   {
     "id": "cleo5to7",
-    "answer": "Cl\u00e9o from 5 to 7",
+    "answer": "Cléo from 5 to 7",
     "decoys": [
       "Hiroshima Mon Amour",
       "Jules and Jim",
@@ -1205,7 +1279,8 @@
     ],
     "image": "/movies/bicycle_thieves.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/2/20/Ladri3.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A poor father and his son search post-war Rome for the stolen bicycle he needs to keep his job. Italian neorealism."
   },
   {
     "id": "ran_kurosawa",
@@ -1223,13 +1298,14 @@
     "id": "princess_mononoke",
     "answer": "Princess Mononoke",
     "decoys": [
-      "Nausica\u00e4",
+      "Nausicaä",
       "Howl's Moving Castle",
       "The Tale of Princess Kaguya"
     ],
     "image": "/movies/princess_mononoke.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/8/8c/Princess_Mononoke_Japanese_poster.png",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A cursed prince is caught between forest gods and an iron-working town. Miyazaki's ecological epic."
   },
   {
     "id": "coco",
@@ -1337,7 +1413,8 @@
     ],
     "image": "/movies/barbie.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/0b/Barbie_2023_poster.jpg",
-    "tier": "easy"
+    "tier": "easy",
+    "clue": "A doll experiences an existential crisis and ventures from her pink plastic world into the real one. Greta Gerwig, 2023."
   },
   {
     "id": "dallas_buyers",
@@ -1493,7 +1570,8 @@
     ],
     "image": "/movies/martian.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "An astronaut stranded on Mars must grow food and survive alone while NASA plots a rescue. Ridley Scott."
   },
   {
     "id": "edge_tomorrow",
@@ -1565,7 +1643,8 @@
     ],
     "image": "/movies/prestige.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "Two rival Victorian stage magicians ruin each other chasing the perfect trick. Nolan."
   },
   {
     "id": "shining",
@@ -1577,7 +1656,8 @@
     ],
     "image": "/movies/shining.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/1/1d/The_Shining_%281980%29_U.K._release_poster_-_The_tide_of_terror_that_swept_America_IS_HERE.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A writer becomes caretaker of an isolated haunted hotel over winter and slowly loses his mind. Kubrick, from King."
   },
   {
     "id": "exorcist",
@@ -1589,7 +1669,8 @@
     ],
     "image": "/movies/exorcist.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7b/Exorcist_ver2.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "Two priests battle a demon possessing a young girl. 1973 horror landmark."
   },
   {
     "id": "rosemarys_baby",
@@ -1697,7 +1778,8 @@
     ],
     "image": "/movies/seven.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "Two detectives hunt a serial killer who stages murders around the seven deadly sins. 'What's in the box?'"
   },
   {
     "id": "usual_suspects",
@@ -1709,7 +1791,8 @@
     ],
     "image": "/movies/usual_suspects.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/9/9c/Usual_suspects_ver1.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "Five criminals are pulled into a job orchestrated by a phantom crime lord named Keyser Söze."
   },
   {
     "id": "chinatown",
@@ -1721,7 +1804,8 @@
     ],
     "image": "/movies/chinatown.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/3/38/Chinatownposter1.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "A 1930s private eye uncovers corruption over water rights and a family's dark secret in Los Angeles. Polanski, Nicholson."
   },
   {
     "id": "heat",
@@ -1913,7 +1997,8 @@
     ],
     "image": "/movies/requiem_dream.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/9/92/Requiem_for_a_dream.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "Four people in Brooklyn spiral into addiction as their dreams collapse. Aronofsky, 2000."
   },
   {
     "id": "black_swan",
@@ -1925,7 +2010,8 @@
     ],
     "image": "/movies/black_swan.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/68/Black_Swan_poster.jpg",
-    "tier": "medium"
+    "tier": "medium",
+    "clue": "A fragile ballerina unravels psychologically while chasing perfection in 'Swan Lake.' Aronofsky."
   },
   {
     "id": "natalie_portman",
@@ -1973,7 +2059,8 @@
     ],
     "image": "/movies/akira.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/5/5d/AKIRA_%281988_poster%29.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "In a neon future Neo-Tokyo, a biker gang member gains catastrophic psychic powers. Landmark 1988 anime."
   },
   {
     "id": "ghost_shell",
@@ -2021,7 +2108,8 @@
     ],
     "image": "/movies/grave_fireflies.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
-    "tier": "hard"
+    "tier": "hard",
+    "clue": "Two siblings struggle to survive in Japan during the final months of WWII. Studio Ghibli's devastating drama."
   },
   {
     "id": "my_neighbor",
@@ -2039,7 +2127,7 @@
     "id": "castle_sky",
     "answer": "Castle in the Sky",
     "decoys": [
-      "Nausica\u00e4",
+      "Nausicaä",
       "Howl's Moving Castle",
       "The Wind Rises"
     ],
@@ -2049,7 +2137,7 @@
   },
   {
     "id": "nausicaa",
-    "answer": "Nausica\u00e4 of the Valley of the Wind",
+    "answer": "Nausicaä of the Valley of the Wind",
     "decoys": [
       "Princess Mononoke",
       "Castle in the Sky",
@@ -2069,7 +2157,8 @@
     ],
     "image": "/movies/rashomon.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/6/61/Rashomon_poster.jpg",
-    "tier": "extreme"
+    "tier": "extreme",
+    "clue": "A murder in the woods is recounted in four contradictory versions by those involved. Kurosawa, 1950."
   },
   {
     "id": "wild_strawberries",
@@ -2093,7 +2182,8 @@
     ],
     "image": "/movies/seventh_seal.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/69/Seventhsealposter.jpg",
-    "tier": "extreme"
+    "tier": "extreme",
+    "clue": "A knight returning from the Crusades plays chess with Death during a plague. Ingmar Bergman."
   },
   {
     "id": "persona",
@@ -2105,13 +2195,14 @@
     ],
     "image": "/movies/persona.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/0/08/Persona_Poster.jpg",
-    "tier": "extreme"
+    "tier": "extreme",
+    "clue": "A nurse cares for an actress who has stopped speaking; their identities begin to blur. Bergman, 1966."
   },
   {
     "id": "amarcord",
     "answer": "Amarcord",
     "decoys": [
-      "8\u00bd",
+      "8½",
       "Rome",
       "Fellini Satyricon"
     ],
@@ -2121,7 +2212,7 @@
   },
   {
     "id": "eight_half",
-    "answer": "8\u00bd",
+    "answer": "8½",
     "decoys": [
       "Amarcord",
       "Roma",
@@ -2129,7 +2220,8 @@
     ],
     "image": "/movies/eight_half.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/46/8Mezzo.jpg",
-    "tier": "extreme"
+    "tier": "extreme",
+    "clue": "A blocked film director retreats into memory and fantasy while unable to make his next movie. Fellini."
   },
   {
     "id": "stalker_film",
@@ -2141,7 +2233,8 @@
     ],
     "image": "/movies/stalker_film.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/d/d4/Stalker_poster.jpg",
-    "tier": "extreme"
+    "tier": "extreme",
+    "clue": "A guide leads two men through a forbidden 'Zone' to a room said to grant one's deepest wish. Tarkovsky."
   },
   {
     "id": "solaris",
@@ -2189,7 +2282,8 @@
     ],
     "image": "/movies/in_mood_love.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/45/In_the_Mood_for_Love_movie.jpg",
-    "tier": "extreme"
+    "tier": "extreme",
+    "clue": "Two neighbors in 1960s Hong Kong bond after suspecting their spouses are having an affair. Wong Kar-wai."
   },
   {
     "id": "star_wars_new_hope",

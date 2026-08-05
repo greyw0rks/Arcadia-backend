@@ -45,8 +45,11 @@ export interface GameModule {
    * value (derived from the session id) so a module can lay out a per-session, no-repeat ordering
    * of its bank instead of showing every player the same sequence. `difficulty` is a 0..1 fraction
    * derived from the bet (1 == max stake); modules that generate questions use it to get harder.
+   *
+   * `tierSchedule` overrides the difficulty-derived tier mix with an explicit per-round tier list.
+   * V2 passes its §4.1 band recipe here; V1 omits it and keeps the bet-scaled behaviour.
    */
-  buildRound(roundIndex: number, seed: number, difficulty?: number): RoundState;
+  buildRound(roundIndex: number, seed: number, difficulty?: number, tierSchedule?: number[]): RoundState;
 }
 
 export interface GameMeta {

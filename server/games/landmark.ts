@@ -31,8 +31,8 @@ export const landmarkModule = {
       timeLimitSec: GEO_TIME_LIMIT_SEC,
       bankSize: BANK.length,
     },
-    (roundIndex, seed, difficulty) => {
-      const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+    (roundIndex, seed, difficulty, tierSchedule) => {
+      const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
       const t = e.tier;
       const imageStyle = t === 'extreme' ? 'extreme' : t === 'hard' ? 'hard' : undefined;
       return {

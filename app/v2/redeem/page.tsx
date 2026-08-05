@@ -41,6 +41,7 @@ export default function RedeemPage() {
   const [phase, setPhase] = useState<Phase>("idle");
   const [error, setError] = useState<string | null>(null);
   const [inMiniPay, setInMiniPay] = useState(false);
+  const [isPublic, setIsPublic] = useState<boolean | null>(null);
 
   // Zero-click connect: MiniPay requires no "Connect Wallet" button.
   useEffect(() => {
@@ -49,6 +50,17 @@ export default function RedeemPage() {
       connect({ connector: injected() });
     }
   }, [connect]);
+
+  // Learn whether this deploy is open-beta (no code) or private (code required). The GET route
+  // reports it; a player address isn't needed just to read the mode.
+  useEffect(() => {
+    let live = true;
+    fetch("/api/v2/access/redeem")
+      .then((r) => r.json())
+      .then((d) => { if (live) setIsPublic(Boolean(d?.public)); })
+      .catch(() => { if (live) setIsPublic(false); });
+    return () => { live = false; };
+  }, []);
 
   const busy = phase !== "idle" && phase !== "done";
 
@@ -59,7 +71,7 @@ export default function RedeemPage() {
       return;
     }
     const trimmed = code.trim();
-    if (!trimmed) {
+    if (!isPublic && !trimmed) {
       setError("Enter your invite code.");
       return;
     }
@@ -148,44 +160,49 @@ export default function RedeemPage() {
   return (
     <main style={{ maxWidth: 560, margin: "0 auto", padding: "32px 20px 80px" }}>
       <h1 style={{ fontSize: 32, fontWeight: 900, textTransform: "uppercase", marginBottom: 8 }}>
-        Private Beta
+        {isPublic ? "Join Ranked" : "Private Beta"}
       </h1>
       <p style={{ marginBottom: 28, lineHeight: 1.5 }}>
-        Arcadia&apos;s weekly pool is invite-only while we test it. Enter the code you were sent to
-        unlock access.
+        {isPublic
+          ? "Unlock the weekly pool by proving your wallet. It moves no money — just a one-time check that the wallet is yours."
+          : "Arcadia's weekly pool is invite-only while we test it. Enter the code you were sent to unlock access."}
       </p>
 
       <div className="panel" style={{ padding: 28, marginTop: 0 }}>
-        <label
-          htmlFor="invite-code"
-          style={{ display: "block", fontWeight: 800, marginBottom: 10, textTransform: "uppercase" }}
-        >
-          Invite code
-        </label>
-        <input
-          id="invite-code"
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-          placeholder="arcv2-…"
-          autoCapitalize="off"
-          autoCorrect="off"
-          spellCheck={false}
-          disabled={busy || phase === "done"}
-          style={{
-            width: "100%",
-            padding: "14px 16px",
-            fontSize: 16,
-            fontFamily: "inherit",
-            border: "4px solid #000",
-            background: "#fff",
-            marginBottom: 18,
-          }}
-        />
+        {!isPublic && (
+          <>
+            <label
+              htmlFor="invite-code"
+              style={{ display: "block", fontWeight: 800, marginBottom: 10, textTransform: "uppercase" }}
+            >
+              Invite code
+            </label>
+            <input
+              id="invite-code"
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              placeholder="arcv2-…"
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
+              disabled={busy || phase === "done"}
+              style={{
+                width: "100%",
+                padding: "14px 16px",
+                fontSize: 16,
+                fontFamily: "inherit",
+                border: "4px solid #000",
+                background: "#fff",
+                marginBottom: 18,
+              }}
+            />
+          </>
+        )}
 
         <button
           className="btn"
           onClick={handleRedeem}
-          disabled={busy || phase === "done" || !isConnected}
+          disabled={busy || phase === "done" || !isConnected || isPublic === null}
           style={{ width: "100%", fontSize: 17, padding: "16px 20px" }}
         >
           {busy ? "Verifying…" : phase === "done" ? "Unlocked" : "Unlock access"}

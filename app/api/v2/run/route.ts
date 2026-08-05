@@ -7,6 +7,7 @@ import { FREE_ROUNDS_PER_DAY, passMark, QUESTIONS_PER_ROUND } from "../../../../
 import { V2DatabaseError, mustQuery } from "../../../../server/v2/db";
 import { currentWeekId, todayKey } from "../../../../server/v2/week";
 import { checkPaidEntry, entryVerificationOn } from "../../../../server/v2/entry";
+import { hasCheckedInToday, checkInRequest } from "../../../../server/v2/checkin";
 
 export const dynamic = "force-dynamic";
 
@@ -41,6 +42,9 @@ export async function GET(req: NextRequest) {
     }
 
     const played = await roundsToday(run.id, todayKey());
+    // Only report the check-in as required while free rounds remain — once the allowance is spent,
+    // further rounds are purchased and the gate no longer applies.
+    const checkedIn = await hasCheckedInToday(player);
     return NextResponse.json({
       weekId,
       run: {
@@ -51,6 +55,9 @@ export async function GET(req: NextRequest) {
       },
       roundsPlayedToday: played,
       freeRoundsLeft: Math.max(0, FREE_ROUNDS_PER_DAY - played),
+      checkedInToday: checkedIn,
+      needsCheckIn: !checkedIn && played < FREE_ROUNDS_PER_DAY,
+      checkIn: checkInRequest(weekId),
       passMark: passMark(),
       questionsPerRound: QUESTIONS_PER_ROUND,
       freeRoundsPerDay: FREE_ROUNDS_PER_DAY,

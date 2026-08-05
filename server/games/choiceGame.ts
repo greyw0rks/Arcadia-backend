@@ -74,7 +74,7 @@ export function tierNum(t?: Tier): number {
   return 1; // medium or untagged
 }
 
-// Per-difficulty-level tier recipes (7 entries = one MIN_ROUNDS cycle).
+// Per-difficulty-level tier recipes (7 entries per block).
 // Each session block of 7 rounds is an independently shuffled copy, so the harder questions
 // don't always land in the same positions. Hard-only floor: NO easy/medium questions are ever
 // served — the lowest level already starts at hard, and difficulty scales UP into extreme.
@@ -127,7 +127,8 @@ export function tieredPickIndex(
   tiers: number[],
   roundIndex: number,
   seed: number,
-  difficulty = 0
+  difficulty = 0,
+  tierSchedule?: number[]
 ): number {
   // Sort shuffled bank indices into per-tier buckets for O(1) lookup.
   const buckets: number[][] = [[], [], [], []];
@@ -135,7 +136,11 @@ export function tieredPickIndex(
     buckets[Math.min(3, Math.max(0, tiers[idx] ?? 1))].push(idx);
   }
 
-  const schedule = buildSchedule(seed, difficulty);
+  // V2 supplies its own schedule from the §4.1 band recipe. It cannot be expressed as a `difficulty`
+  // value: TIER_RECIPES never serves easy or medium at ANY difficulty (V1's deliberate floor), while
+  // §4.1 bands are mostly easy/medium. Without this the recovery band's [4,7,4,0] serves as
+  // [0,0,11,4] — the opposite of the intended curve.
+  const schedule = tierSchedule ?? buildSchedule(seed, difficulty);
   const used = new Set<number>();
 
   function pickFor(targetTier: number): number {
@@ -169,15 +174,16 @@ export function drawTiered<T>(
   tiers: number[],
   roundIndex: number,
   seed: number,
-  difficulty?: number
+  difficulty?: number,
+  tierSchedule?: number[]
 ): { entry: T; tier: number } {
-  const idx = tieredPickIndex(tiers, roundIndex, seed, difficulty);
+  const idx = tieredPickIndex(tiers, roundIndex, seed, difficulty, tierSchedule);
   return { entry: bank[idx], tier: tiers[idx] };
 }
 
 export function makeChoiceGame(
   meta: ChoiceMeta,
-  build: (roundIndex: number, seed: number, difficulty?: number) => ChoiceRound
+  build: (roundIndex: number, seed: number, difficulty?: number, tierSchedule?: number[]) => ChoiceRound
 ): GameModule {
   return {
     id: meta.id,
@@ -187,8 +193,8 @@ export function makeChoiceGame(
     maxRounds: meta.maxRounds,
     bankSize: meta.bankSize,
     available: true,
-    buildRound(roundIndex: number, seed: number, difficulty?: number): RoundState {
-      const r = build(roundIndex, seed, difficulty);
+    buildRound(roundIndex: number, seed: number, difficulty?: number, tierSchedule?: number[]): RoundState {
+      const r = build(roundIndex, seed, difficulty, tierSchedule);
       // Fold the session seed into the option shuffle too, so answer ordering isn't identical
       // across every session for a given round.
       const options = shuffle(r.options, seed + roundIndex + 1);

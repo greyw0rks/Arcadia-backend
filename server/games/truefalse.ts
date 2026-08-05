@@ -20,8 +20,8 @@ export const trueFalseModule = makeChoiceGame(
     timeLimitSec: 5,
     bankSize: BANK.length,
   },
-  (roundIndex, seed, difficulty) => {
-    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty);
+  (roundIndex, seed, difficulty, tierSchedule) => {
+    const { entry: e, tier } = drawTiered(BANK, TIERS, roundIndex, seed, difficulty, tierSchedule);
     const correct = e.a ? "True" : "False";
     return { prompt: e.s, correct, options: ["True", "False"], tier };
   }
