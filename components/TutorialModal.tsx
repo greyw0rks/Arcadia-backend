@@ -16,11 +16,11 @@ export function TutorialModal({ onClose }: TutorialModalProps) {
     },
     {
       title: "How It Works 💰",
-      content: "Every game starts at 1.0x multiplier. Get a question right? +0.1x. Get it wrong? -0.1x. Your final payout = stake × multiplier.",
+      content: "Each game is one round of 12 questions. Answer 9+ right to win — 1.1x at 9, up to 1.4x for a perfect 12. Get 5–8 and your stake holds at 1.0x. Get 4 or fewer and you lose — 0.9x down to 0.5x. Payout = stake × multiplier.",
     },
     {
       title: "You Can Lose Money! ⚠️",
-      content: "The multiplier can go below 1.0x! If you get too many wrong, you'll lose part of your stake. Play carefully!",
+      content: "Land in the loss zone (4 or fewer of 12 correct) and the round settles at 0.9x, so you get back less than you staked. Play carefully!",
     },
     {
       title: "Entry Fee 💸",

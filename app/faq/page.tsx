@@ -11,15 +11,15 @@ export default function FAQPage() {
   const faqs = [
     {
       question: "What is Arcadia?",
-      answer: "Arcadia is an on-chain arcade where you stake USDm, USDC, or USDT on Celo on skill-based games. Your payout depends on your performance — get questions right to increase your multiplier, get them wrong and it decreases. It's like a quiz show where you bet on yourself!",
+      answer: "Arcadia is an on-chain arcade where you stake USDm, USDC, or USDT on Celo on skill-based games. Each game is one round of 12 questions — answer enough correctly to win a higher payout. It's like a quiz show where you bet on yourself!",
     },
     {
       question: "How does the multiplier work?",
-      answer: "Every game starts at 1.0x. For each correct answer, you gain +0.1x. For each wrong answer or timeout, you lose -0.1x. The multiplier can go below 1.0x, meaning you can lose money! Your final payout is: stake × multiplier × 0.97 (after 3% rake).",
+      answer: "Each game is one round of 12 questions. Answer 9 or more correctly and you win — 1.1x at 9, rising +0.1x for every extra correct up to 1.4x for a perfect 12. Get 4 or fewer and you lose — 0.9x at 4, dropping 0.1x for every further miss down to 0.5x at zero. Anything in between (5–8) holds at 1.0x. Your final payout is: stake × multiplier × 0.97 (after 3% rake).",
     },
     {
       question: "Can I lose money?",
-      answer: "Yes! The multiplier can drop below 1.0x if you get too many questions wrong. For example, if you stake 1 USDm and end at 0.8x, you'll only get back 0.776 USDm (1 × 0.97 × 0.8). This is what makes it exciting — you're betting on your skills!",
+      answer: "Yes! If you get 4 or fewer of the 12 questions right, the round settles at 0.9x. For example, staking 1 USDm and landing in the loss zone returns 0.873 USDm (1 × 0.97 × 0.9). That downside is what makes winning mean something!",
     },
     {
       question: "Is there a minimum or maximum bet?",
@@ -27,7 +27,7 @@ export default function FAQPage() {
     },
     {
       question: "Does the bet size change the game?",
-      answer: "Yes — the higher your bet, the more rounds you play: $0.10 is a quick 3-round game, up to 6 rounds at $1. Every session is hard regardless of bet size; a bigger bet just means more rounds and more upside.",
+      answer: "Every game is a fixed 12 questions with the same 9-to-win pass mark, no matter what you bet. Your bet sets how much is at stake and keeps the questions hard — a bigger bet raises your payout, not the number of questions or the odds.",
     },
     {
       question: "What is the 3% rake?",

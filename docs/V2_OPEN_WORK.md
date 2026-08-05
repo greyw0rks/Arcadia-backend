@@ -553,3 +553,63 @@ tests + 33 contract tests pass.
 3. Set `V2_ENABLED=true` + `V2_PUBLIC=true` on the live backend — on an ISOLATED DB (schema DDL runs
    on boot).
 Then the loop is fully playable. Audit/legal/param-validation gates remain open (accepted risk).
+
+---
+
+## Session update — 2026-08-05 (Casual scoring rework — V1 only, V2 untouched)
+
+**Casual (V1) moved from a per-question multiplier walk to a graduated pass-mark round.** V2's
+`server/v2/scoring.ts` is deliberately **unchanged** — an earlier attempt edited it and was reverted.
+
+**The mechanic.** A Casual session is now **one round of 12 questions** (was 3–6 single-question
+rounds). The multiplier no longer moves during play; it is set once at finalize from the final
+correct-count, graduated per question past a mark:
+
+| Correct | Multiplier | | Correct | Multiplier |
+|---|---|---|---|---|
+| 12 | 1.4x | | 4 | 0.9x |
+| 11 | 1.3x | | 3 | 0.8x |
+| 10 | 1.2x | | 2 | 0.7x |
+| 9 (pass mark) | 1.1x | | 1 | 0.6x |
+| 5–8 | 1.0x (neutral — stake returned) | | 0 | 0.5x |
+
+**Why the neutral band matters:** an average round no longer bleeds the multiplier, so a loss has to
+be earned rather than drawn from variance.
+
+**Key structural change — `maxRounds` and `questions` are now separate.** `Session.maxRounds` is the
+on-chain **scoring-event count** (the payout-cap basis, `maxMult = 1.0 + 0.1·maxRounds`);
+`Session.questions` is how many questions are actually served. Casual commits `maxRounds =
+casualMaxSteps()` = 4 → an exact 1.4x on-chain ceiling, while serving 12 questions. `questions`
+defaults to `maxRounds`, so V2 (which creates with 15/15) is bit-identical.
+
+**No contract change needed.** `QuizArcadeV2.maxRoundsCap` is 20; committing 4 is well inside it, and
+`/api/round`'s reconcile no longer overwrites the served-question count.
+
+**Files:** `server/engine.ts` (`scoreCasualSession`, `casualPassMark/FailMark/MaxSteps`),
+`server/sessions.ts` (`questions` field, `finalMultiplierBp` branches on `!isDemo && !weeklyRun`),
+`app/api/session|round|finalize`, both repos' `app/play/[game]/page.tsx`.
+
+**Tunable without a redeploy:** `CASUAL_PASS_MARK` / `CASUAL_FAIL_MARK`. `casualFailMark()` clamps to
+`[0, pass-1]` so the neutral band can never invert.
+
+**UI.** The in-round HUD showed a live walking multiplier that would now be a lie (it bore no
+relation to the payout). Replaced with **"N / 9 to win"** plus a line that adapts once the win is
+locked, out of reach, or the loss is locked. Confetti now fires only above 1.0x (a neutral 1.0x is
+not a win). All player-facing copy updated in both repos: play pages, lobby hero, FAQ (4 answers),
+TutorialModal, homepage steps, mobile-demo chips, and backend README.
+
+**Dead code removed:** `roundsFor()` + `MIN_ROUNDS`/`MAX_ROUNDS` in both repos' `difficulty.ts` — the
+stake→round-count mapping no longer exists. Its 4 tests were replaced by one invariant asserting
+`casualMaxSteps() <= MAX_ROUNDS_CAP` (if a tuned pass mark ever pushed past the cap, every
+`startSession` would revert).
+
+**Verified:** `tsc --noEmit` clean both repos · 201 backend tests pass (12 new in
+`server/engine.casual.test.ts`) · both production builds succeed. **Not deployed, not merged.**
+
+### Open follow-ups from this change
+- **The house edge was never re-modelled.** The old mechanic's expected value is not this one's, and
+  `scripts/v2-bust-sim.py` models V2, not Casual. Pass mark 9 and fail mark 4 were chosen for feel,
+  not from a simulation of the new payout table. Worth a Casual-specific EV pass before volume.
+- Difficulty recipes (`TIER_RECIPES`, 7 per block) were tuned around 3–6-round sessions; at 12
+  questions a block-and-a-bit is served. Not a bug, but the tier mix per session shifted.
+

@@ -79,7 +79,8 @@ live formats that's ~117 per format per week. Against the current banks:
 | `math` | procedural | never |
 
 **The five smallest banks run dry in under a month of heavy play.** The live game never hits this
-because a session is only 3–6 rounds; V2 changes the volume by two orders of magnitude.
+because a Casual session is a single 12-question round; V2 changes the volume by two orders of
+magnitude.
 
 #### 3.1a The above is optimistic — the real limit is a tier, not a bank
 

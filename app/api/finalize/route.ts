@@ -40,10 +40,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "demo sessions are not settled" }, { status: 400 });
   }
 
-  // Require all rounds answered before signing a payout.
-  if (session.answered < session.maxRounds) {
+  // Require all questions answered before signing a payout.
+  if (session.answered < session.questions) {
     return NextResponse.json(
-      { error: `game not complete (${session.answered}/${session.maxRounds})` },
+      { error: `game not complete (${session.answered}/${session.questions})` },
       { status: 409 }
     );
   }
