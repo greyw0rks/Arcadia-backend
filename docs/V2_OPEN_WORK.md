@@ -613,3 +613,36 @@ stake→round-count mapping no longer exists. Its 4 tests were replaced by one i
 - Difficulty recipes (`TIER_RECIPES`, 7 per block) were tuned around 3–6-round sessions; at 12
   questions a block-and-a-bit is served. Not a bug, but the tier mix per session shifted.
 
+### Shipping decision — V2 merges to `main` as DORMANT code (2026-08-05)
+
+Per explicit instruction ("ship both v1 and v2, but say Ranked is coming soon"), **both PRs now
+target `main`**, which changes the long-standing "never merge v2 into main" rule. The rule existed
+for one reason — V2 schema DDL hitting the production database — and that risk is flag-gated, not
+branch-gated. Verified before retargeting:
+
+- `server/bootstrap.ts:39` — `if (V2_ENABLED) await initV2Schema()`. Flag unset ⇒ **no V2 DDL runs**,
+  and `hydrateAccessGate()` is skipped too.
+- `proxy.ts` matches `/api/v2/:path*` + `/v2/:path*` and 404s unless `V2_ENABLED === "true"`.
+- `startClawbackScheduler()` runs unconditionally but is dry-run by default, and the first run after
+  any restart always previews.
+
+**THE OPERATIONAL RULE IS NOW AN ENV VAR, NOT A BRANCH: never set `V2_ENABLED` on the production
+deploy.** Ranked needs an isolated DB. Everything in "Remaining before it can actually take money"
+above still applies.
+
+`origin/v2` was fully contained in `v2-ranked-live` (0 commits ahead), so retargeting lost nothing.
+
+**PRs open (CI green on both, neither merged):**
+- Backend — [#3](https://github.com/greyw0rks/Arcadia-backend/pull/3), `v2-ranked-live` → `main`, 33 commits.
+- Frontend — [#7](https://github.com/greyw0rks/Arcadia-frontend/pull/7), `casual-passmark-scoring` → `main`.
+- **Merge the backend first** — the frontend HUD reads `questions`/`passMark`/`failMark` from
+  `/api/session` and falls back to defaults (12/9/4) if they are absent.
+
+**Ranked entry point:** a Casual/Ranked toggle at the top of `/games` in both repos. Ranked opens a
+coming-soon panel instead of routing into `/v2`. To launch Ranked later, replace the
+`setShowRankedSoon(true)` handler with a `router.push("/v2/run")` — the `/v2` pages already exist.
+
+**Not verified on a preview deploy:** Vercel SSO protection still fronts the previews (open-work
+#10), so the toggle was confirmed against a local production build (`next start`) instead — markup
+and `.mode-switch` CSS both served.
+
