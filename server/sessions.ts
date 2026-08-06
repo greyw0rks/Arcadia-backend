@@ -9,7 +9,7 @@
 import { randomBytes } from "crypto";
 import { GameModule } from "./games/types";
 import { RoundState } from "./games/types";
-import { initialMultiplierBp, applyResult, clampFinalBp } from "./engine";
+import { initialMultiplierBp, applyResult, clampFinalBp, scoreCasualSession } from "./engine";
 import { ANSWER_GRACE_MS } from "./config";
 import { scaleTimer } from "./difficulty";
 import { DEFAULT_CELO_TOKEN, type CeloToken, type ChainId } from "../lib/contract";
@@ -27,7 +27,15 @@ export interface Session {
   // are skipped for these (see /api/round and /api/finalize).
   isDemo: boolean;
   stake?: number; // gross stake amount in token units (undefined for demo sessions)
+  // On-chain SCORING EVENTS committed at startSession — the basis for the contract's payout cap and
+  // reserve (maxMult = 1.0 + 0.1·maxRounds). Casual now commits the graduated pass steps (4 at the
+  // default pass mark → a 1.4x ceiling); a perfect round earns exactly that many +0.1x steps.
   maxRounds: number;
+  // QUESTIONS actually served/played in this session. Decoupled from maxRounds by the casual
+  // graduated pass-mark rework: a casual session serves `questions` (12) but its payout cap is
+  // maxRounds (4). Defaults to maxRounds for modes that never split them (V2 weekly serves 15,
+  // maxRounds 15). This — not maxRounds — governs nextRound / isComplete / "all answered".
+  questions: number;
   // Bet-scaled difficulty in [0,1] (0 == min stake, 1 == max stake). Set from the REAL on-chain stake
   // when the first round is served (see /api/round). Until then it's undefined and rounds aren't built.
   difficulty?: number;
@@ -93,7 +101,7 @@ export function createSession(
   maxRounds: number,
   chain: ChainId,
   token?: CeloToken,
-  opts?: { isDemo?: boolean; difficulty?: number; stake?: number }
+  opts?: { isDemo?: boolean; difficulty?: number; stake?: number; questions?: number }
 ): Session {
   const id = newSessionId();
   const s: Session = {
@@ -107,6 +115,8 @@ export function createSession(
     // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.
     difficulty: opts?.difficulty,
     maxRounds,
+    // Questions served defaults to maxRounds; casual overrides it (12 questions, 1 scoring event).
+    questions: opts?.questions ?? maxRounds,
     roundIndex: 0,
     multiplierBp: initialMultiplierBp(),
     answered: 0,
@@ -133,13 +143,13 @@ function sessionSeed(id: string): number {
 
 /** Serve the next round: builds it from the module and stamps the authoritative deadline. */
 export function nextRound(game: GameModule, s: Session) {
-  if (s.roundIndex >= s.maxRounds) return null;
+  if (s.roundIndex >= s.questions) return null;
   const difficulty = s.difficulty ?? 0;
   const round = game.buildRound(s.roundIndex, sessionSeed(s.id), difficulty);
   // Bet-scaled difficulty: shrink the per-round timer as the stake rises, and report the session's
-  // actual (stake-driven) round count rather than the module's base value.
+  // question count so the client's "Question X / N" counter matches what will actually be served.
   round.view.timeLimitSec = scaleTimer(round.view.timeLimitSec, difficulty);
-  round.view.totalRounds = s.maxRounds;
+  round.view.totalRounds = s.questions;
   const servedAt = Date.now();
   const timeLimitMs = round.view.timeLimitSec * 1000;
   round.servedAt = servedAt;
@@ -175,16 +185,39 @@ export function scoreAnswer(s: Session, answerIndex: number): AnswerOutcome | nu
   const responseMs = onTime ? Math.max(0, rawMs) : round.timeLimitMs;
   s.timings.push({ responseMs, correct: result === "correct", onTime });
 
+  // The running walk is kept for demo display, but casual scoring ignores it — a casual session's
+  // payout is the single three-zone outcome computed at finalize from correctCount(), not this
+  // per-question walk. See scoreCasualSession() and finalMultiplierBp().
   s.multiplierBp = applyResult(s.multiplierBp, result);
   s.answered += 1;
   s.roundIndex += 1;
   s.current = undefined;
 
-  const roundsLeft = s.maxRounds - s.answered;
+  const roundsLeft = s.questions - s.answered;
   return { result, correctIndex, multiplierBp: s.multiplierBp, roundsLeft, done: roundsLeft <= 0 };
 }
 
-/** Final clamped multiplier (bps) for settlement. */
+/**
+ * Final clamped multiplier (bps) for settlement.
+ *
+ * Casual sessions (staked, non-demo) settle on the graduated pass-mark outcome: the correct-count
+ * out of `questions` maps to a single multiplier (0.5x…1.4x at the default marks), replacing the
+ * per-question walk. Demo sessions keep the running multiplier — they never settle on-chain, so the
+ * walk is only ever display. The clamp against `maxRounds` (= the graduated pass steps, 4 for casual
+ * → 1.4x ceiling) is the same bound the contract enforces on-chain.
+ */
 export function finalMultiplierBp(s: Session): number {
-  return clampFinalBp(s.multiplierBp, s.maxRounds);
+  const bp = s.isDemo ? s.multiplierBp : scoreCasualSession(correctCount(s)).multiplierBp;
+  return clampFinalBp(bp, s.maxRounds);
+}
+
+/**
+ * The server's own count of correct answers in a session.
+ *
+ * Derived from `timings`, which `scoreAnswer` appends to using the answer key held in memory and
+ * never sent to the client — the alternative, taking a `correct` count from the request body, lets
+ * a player claim a perfect round and mint the maximum payout.
+ */
+export function correctCount(s: Session): number {
+  return s.timings.filter((t) => t.correct).length;
 }

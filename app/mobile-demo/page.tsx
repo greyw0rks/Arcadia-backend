@@ -211,11 +211,11 @@ export default function MobileDemoPage() {
               and a dark minimalist style.
             </p>
             <div className="mechanic">
-              <span>Start at <b>1.0x</b></span>
+              <span className="up">9+ → ×1.1–1.4</span>
               <span>·</span>
-              <span className="up">+0.1x correct</span>
+              <span>5–8 → ×1.0</span>
               <span>·</span>
-              <span className="down">−0.1x wrong</span>
+              <span className="down">4− → ×0.9–0.5</span>
             </div>
           </div>
 

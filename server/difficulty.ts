@@ -3,8 +3,8 @@
 // See LICENSE in the repository root for full terms.
 
 // Bet-scaled difficulty. The higher the player's stake (relative to the $5 cap), the harder the
-// session: fewer seconds per round, more rounds, and harder generated questions. Pure + shared so
-// the client and the server compute IDENTICAL round counts.
+// session: fewer seconds per round and harder generated questions. Session LENGTH is fixed (12
+// questions) and does not scale with the bet. Pure + shared so the client and server agree.
 //
 // SECURITY: the difficulty fraction MUST be derived from the REAL on-chain stake (read in
 // /api/round), never a client-claimed value — otherwise a player could request an easy session but
@@ -35,10 +35,8 @@ export const MIN_STAKE: Record<ChainId, number> = {
 // low stakes to a reliable +EV multiplier and slowly drain the treasury.
 export const MIN_DIFFICULTY = 0.5;
 
-// Round count scales UP with the raw stake (bucketed to hit product anchors):
-//   $0.10 → 3 rounds, $0.30 → 4, $0.50 → 5, $1.00 → 6.
-export const MIN_ROUNDS = 3; // fewest rounds — served at the LOWEST stake
-export const MAX_ROUNDS = 6; // most rounds — served at the HIGHEST stake ($1)
+// Casual sessions are a fixed 12 questions at every stake (see server/engine.ts). The stake scales
+// difficulty and payout size, not the session length — so there is no stake→round-count mapping.
 export const MAX_ROUNDS_CAP = 20; // mirror the contracts' maxRoundsCap; defensive clamp
 export const TIMER_SHRINK = 0.75; // at max difficulty the timer is 25% of its base — brutal
 export const MIN_TIMER_SEC = 3; // hard floor
@@ -97,31 +95,6 @@ export function difficultyFractionBaseUnits(
 // Default rake (bps) mirroring the contracts' constructor default. Difficulty is rake-independent
 // (the rake cancels in the ratio), so an on-chain rake change does not skew the fraction.
 export const DEFAULT_RAKE_BPS = 300;
-
-/**
- * Number of rounds for a RAW stake fraction (0..1 = stake/MAX_STAKE), capped by the game's
- * unique-question bank so a session never repeats an entry.
- *
- * Rounds scale UP with the bet, bucketed to hit the product anchors:
- *   frac ≤ 0.20 ($0.10–$0.20) → 3 rounds
- *   frac ≤ 0.40 ($0.30–$0.40) → 4 rounds
- *   frac ≤ 0.70 ($0.50–$0.70) → 5 rounds
- *   frac >  0.70 ($0.80–$1.00) → 6 rounds
- * NOTE: pass the RAW fraction (rawStakeFraction), not the floored difficulty — difficulty is floored
- * to keep questions hard, but the round count must still track the actual stake.
- */
-export function roundsFor(frac: number, bankSize: number): number {
-  const f = clamp(frac, 0, 1);
-  let rounds: number;
-  if (f <= 0.20) rounds = 3;
-  else if (f <= 0.40) rounds = 4;
-  else if (f <= 0.70) rounds = 5;
-  else rounds = 6;
-  // Cap at bankSize directly so tiny banks (e.g. 5 movie stills) never repeat questions.
-  const ceiling = Math.min(MAX_ROUNDS, MAX_ROUNDS_CAP, bankSize);
-  const floor   = Math.min(MIN_ROUNDS, ceiling);
-  return clamp(rounds, floor, ceiling);
-}
 
 /** Per-round time limit (seconds) after shrinking the game's base limit by difficulty. */
 export function scaleTimer(baseSec: number, d: number): number {
