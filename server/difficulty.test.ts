@@ -6,17 +6,15 @@ import {
   MAX_STAKE,
   MIN_STAKE,
   MIN_DIFFICULTY,
-  MIN_ROUNDS,
-  MAX_ROUNDS,
   MAX_ROUNDS_CAP,
   MIN_TIMER_SEC,
   DEFAULT_RAKE_BPS,
   difficultyFromStake,
   difficultyFractionBaseUnits,
   rawStakeFraction,
-  roundsFor,
   scaleTimer,
 } from "./difficulty";
+import { casualMaxSteps } from "./engine";
 
 describe("difficultyFromStake", () => {
   it("applies the floor at no stake and reaches 1 at the cap, clamped", () => {
@@ -106,43 +104,14 @@ describe("difficultyFractionBaseUnits", () => {
   });
 });
 
-describe("roundsFor", () => {
-  it("scales UP with the raw stake, bucketed to product anchors", () => {
-    const big = 100000; // a bank that never caps
-    // frac = stake / MAX_STAKE ($1): 0.10 -> 3, 0.30 -> 4, 0.50 -> 5, 1.00 -> 6
-    expect(roundsFor(0.1, big)).toBe(3);
-    expect(roundsFor(0.2, big)).toBe(3);
-    expect(roundsFor(0.3, big)).toBe(4);
-    expect(roundsFor(0.4, big)).toBe(4);
-    expect(roundsFor(0.5, big)).toBe(5);
-    expect(roundsFor(0.7, big)).toBe(5);
-    expect(roundsFor(0.8, big)).toBe(6);
-    expect(roundsFor(1, big)).toBe(MAX_ROUNDS); // 6
-  });
-
-  it("floors at MIN_ROUNDS (3) for the smallest bets", () => {
-    expect(roundsFor(0, 100000)).toBe(MIN_ROUNDS);
-    expect(roundsFor(0.05, 100000)).toBe(MIN_ROUNDS);
-  });
-
-  it("never exceeds the game's question bank (no in-session repeats)", () => {
-    expect(roundsFor(1, 5)).toBe(5); // tiny bank — caps at bankSize
-    expect(roundsFor(1, 4)).toBe(4);
-    expect(roundsFor(1, 100000)).toBe(MAX_ROUNDS); // large bank, max stake: 6 rounds
-  });
-
-  it("stays within the on-chain max-rounds cap, so the payout ceiling never exceeds the contract clamp", () => {
-    const big = 100000;
-    expect(MAX_ROUNDS).toBeLessThanOrEqual(MAX_ROUNDS_CAP);
-    for (const f of [0, 0.25, 0.5, 0.75, 1]) {
-      const r = roundsFor(f, big);
-      expect(r).toBeLessThanOrEqual(MAX_ROUNDS_CAP);
-      const impliedMaxMul = BPS + STEP_BPS * r;
-      const contractClamp = BPS + STEP_BPS * MAX_ROUNDS_CAP;
-      expect(impliedMaxMul).toBeLessThanOrEqual(contractClamp);
-    }
-    // The payout ceiling is highest at the HIGHEST stake now (most rounds = MAX_ROUNDS).
-    expect(BPS + STEP_BPS * roundsFor(1, big)).toBe(BPS + STEP_BPS * MAX_ROUNDS);
+describe("casual payout ceiling vs the on-chain clamp", () => {
+  it("never lets a perfect round imply a multiplier above the contract's cap", () => {
+    // A casual session commits maxRounds = casualMaxSteps(), and QuizArcadeV2 rejects any
+    // maxRounds above maxRoundsCap at startSession. If a tuned pass mark ever pushed the step
+    // count past the cap, every session would revert on entry.
+    expect(casualMaxSteps()).toBeLessThanOrEqual(MAX_ROUNDS_CAP);
+    const impliedMaxMul = BPS + STEP_BPS * casualMaxSteps();
+    expect(impliedMaxMul).toBeLessThanOrEqual(BPS + STEP_BPS * MAX_ROUNDS_CAP);
   });
 });
 

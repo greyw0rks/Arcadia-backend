@@ -73,7 +73,7 @@ export function tierNum(t?: Tier): number {
   return 1; // medium or untagged
 }
 
-// Per-difficulty-level tier recipes (7 entries = one MIN_ROUNDS cycle).
+// Per-difficulty-level tier recipes (7 entries per block).
 // Each session block of 7 rounds is an independently shuffled copy, so the harder questions
 // don't always land in the same positions. Hard-only floor: NO easy/medium questions are ever
 // served — the lowest level already starts at hard, and difficulty scales UP into extreme.

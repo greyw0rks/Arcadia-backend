@@ -18,9 +18,10 @@
 
 ## What it is
 
-You stake a stablecoin, play a short run of timed multiple-choice rounds, and your **multiplier**
-moves with every answer. Get it right, it climbs. Get it wrong, it falls. At the end the backend
-signs your result and the contract pays out `effectiveStake × multiplier`.
+You stake a stablecoin and play one round of 12 timed multiple-choice questions. Your score decides
+a single **multiplier**: 9 or more right wins, 4 or fewer loses, anything between returns your
+stake. At the end the backend signs your result and the contract pays out
+`effectiveStake × multiplier`.
 
 The house never sees your answers before you do, and the server never trusts your client. Correct
 answers stay server-side, deadlines are stamped server-side, and your stake is read **from the
@@ -76,12 +77,12 @@ sequenceDiagram
         Note over A: difficulty derived from the REAL on-chain stake
         A-->>P: question + options (correct answer never sent)
         P->>A: POST /api/answer (answerIndex)
-        A->>A: grade vs server deadline, move multiplier
-        A-->>P: correct/wrong, new multiplier
+        A->>A: grade vs server deadline, tally correct count
+        A-->>P: correct/wrong, running score
     end
     P->>A: POST /api/finalize
     A->>A: anti-cheat review of answer timings
-    A-->>P: EIP-712 signature + final multiplier
+    A-->>P: EIP-712 signature + final multiplier (from the correct count)
     P->>C: settle(sessionId, multiplierBp, signature)
     C->>C: recover signer, check token, clamp, pay out
     C-->>W: effectiveStake × multiplier
@@ -96,7 +97,7 @@ If a session is never settled it expires after the TTL (1 hour by default) and a
 |---|---|
 | `POST /api/session` | Creates a session. Enforces stake range, per-game cooldown, blacklist. |
 | `GET /api/round` | Serves the next question. Returns **402** until the stake is confirmed on-chain. |
-| `POST /api/answer` | Grades one answer against a server-stamped deadline, moves the multiplier. |
+| `POST /api/answer` | Grades one answer against a server-stamped deadline, tallies the correct count. |
 | `POST /api/finalize` | Runs anti-cheat, signs the EIP-712 settlement. Idempotent. |
 | `GET /api/games` | Game registry — titles, bank sizes, `available` flags. |
 | `GET /api/leaderboard` · `/api/profile` | Rankings and player history, indexed from chain logs. |
@@ -151,11 +152,14 @@ Questions carry a `tier` — `easy`, `medium`, `hard`, `extreme`. Your stake pic
 decides the tier mix, and it also shrinks the clock.
 
 ```
-$0.10  →  3 rounds  ·  mostly hard, some extreme
-$0.30  →  4 rounds  ·  more extreme
-$0.50  →  5 rounds  ·  mostly extreme
-$1.00  →  6 rounds  ·  all extreme, timer at its floor
+$0.10  →  mostly hard, some extreme
+$0.30  →  more extreme
+$0.50  →  mostly extreme
+$1.00  →  all extreme, timer at its floor
 ```
+
+Every session is the same length — 12 questions — at every stake. The bet moves difficulty and the
+size of the payout, never the number of questions or the pass mark.
 
 Two deliberate choices worth knowing:
 
@@ -170,9 +174,25 @@ Timers shrink by up to 75% at maximum difficulty, with a hard 3-second floor.
 
 ### The multiplier
 
-Starts at **1.0x**. Every correct round is **+0.1x**, every wrong round **−0.1x**, floored at zero
-and capped by the `maxRounds` your session committed to on-chain. The contract clamps it again on
-settle, so a compromised signer still can't mint an arbitrary payout.
+A session is **one round of 12 questions**, and the multiplier moves exactly once — at the end,
+from the final correct-count:
+
+```
+9 correct  →  1.1x        4 correct  →  0.9x
+10         →  1.2x        3          →  0.8x
+11         →  1.3x        2          →  0.7x
+12         →  1.4x        1          →  0.6x
+                          0          →  0.5x
+
+5–8 correct  →  1.0x  (neutral — your stake comes back)
+```
+
+Past a mark, each further question is worth another ±0.1x. Between the marks nothing moves. The
+session commits `maxRounds = 4` on-chain (the steps a perfect round earns), so the contract reserves
+and clamps at exactly 1.4x — a compromised signer still can't mint an arbitrary payout.
+
+Both marks are live economic parameters, tunable per deploy via `CASUAL_PASS_MARK` /
+`CASUAL_FAIL_MARK` without a contract change.
 
 ---
 

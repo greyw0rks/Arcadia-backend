@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getGame } from "../../../server/games/registry";
 import { createSession, hasUsedDemo, markDemoUsed } from "../../../server/sessions";
 import { isAddress } from "viem";
-import { MAX_STAKE, MIN_STAKE, difficultyFromStake, rawStakeFraction, roundsFor } from "../../../server/difficulty";
+import { MAX_STAKE, MIN_STAKE, difficultyFromStake } from "../../../server/difficulty";
+import { CASUAL_QUESTIONS, casualPassMark, casualFailMark, casualMaxSteps } from "../../../server/engine";
 import { ensureBooted } from "../../../server/bootstrap";
 import { consumePlay, logPlay, MAX_PLAYS } from "../../../server/cooldown";
 import { isBlacklisted } from "../../../server/blacklist";
@@ -21,8 +22,8 @@ function parseCeloToken(value: unknown): CeloToken {
     : DEFAULT_CELO_TOKEN;
 }
 
-// Fixed stake-equivalent for the free demo. Uses the minimum-bet fraction so the demo is a short
-// 3-round taste; difficulty is still floored (hard questions) like every real session.
+// Fixed stake-equivalent for the free demo. Uses the minimum-bet fraction so difficulty is floored
+// (hard questions) like every real session; the demo plays the full 12-question three-zone round.
 const DEMO_STAKE_EQUIV = 0.1;
 
 export async function POST(req: NextRequest) {
@@ -66,16 +67,21 @@ export async function POST(req: NextRequest) {
       );
     }
     const difficulty = difficultyFromStake(DEMO_STAKE_EQUIV, chain);
-    const maxRounds = roundsFor(rawStakeFraction(DEMO_STAKE_EQUIV, chain), game.bankSize);
-    const session = createSession(game, player, maxRounds, chain, token, {
+    // One graduated round of 12 questions. maxRounds = the +0.1x steps a perfect round earns (the
+    // payout-cap basis; demos never settle on-chain but keep the same shape as a real session).
+    const session = createSession(game, player, casualMaxSteps(), chain, token, {
       isDemo: true,
       difficulty,
+      questions: CASUAL_QUESTIONS,
     });
     markDemoUsed(player, chain);
     logPlay({ player, chain, gameId: game.id, sessionId: session.id, isDemo: true });
     return NextResponse.json({
       sessionId: session.id,
-      maxRounds: session.maxRounds,
+      maxRounds: session.maxRounds, // graduated pass steps (payout-cap basis)
+      questions: session.questions, // 12 questions served
+      passMark: casualPassMark(),
+      failMark: casualFailMark(),
       bankSize: game.bankSize,
       chain: session.chain,
       token: session.token,
@@ -115,10 +121,13 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Bet-scaled round count from the RAW stake (the on-chain stake later confirms/overrides this in
-  // /api/round). Difficulty is floored separately so questions stay hard even at the minimum bet.
-  const maxRounds = roundsFor(rawStakeFraction(stake, chain), game.bankSize);
-  const session = createSession(game, player, maxRounds, chain, token, { stake });
+  // Casual is now one graduated round of 12 questions. maxRounds = the number of +0.1x steps a
+  // perfect round earns (4 at the default pass mark → the contract caps/reserves at 1.4x),
+  // independent of stake. Stake still scales difficulty and the absolute payout base, not the ceiling.
+  const session = createSession(game, player, casualMaxSteps(), chain, token, {
+    stake,
+    questions: CASUAL_QUESTIONS,
+  });
   logPlay({
     player,
     chain,
@@ -129,7 +138,10 @@ export async function POST(req: NextRequest) {
   });
   return NextResponse.json({
     sessionId: session.id,
-    maxRounds: session.maxRounds,
+    maxRounds: session.maxRounds, // graduated pass steps → payout cap 1.0 + 0.1·maxRounds
+    questions: session.questions, // 12 questions served
+    passMark: casualPassMark(),
+    failMark: casualFailMark(),
     bankSize: game.bankSize,
     chain: session.chain,
     token: session.token,

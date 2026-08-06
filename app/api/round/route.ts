@@ -67,8 +67,11 @@ export async function GET(req: NextRequest) {
         maxStakeBase,
         DEFAULT_RAKE_BPS
       );
+      // maxRounds is the on-chain SCORING-EVENT count (casual = 1), the basis for the payout clamp —
+      // NOT how many questions are served. The served count lives in session.questions (set at
+      // creation) and is deliberately left untouched here.
       if (onchain.maxRounds > 0) {
-        session.maxRounds = Math.min(onchain.maxRounds, game.bankSize);
+        session.maxRounds = onchain.maxRounds;
       }
     }
   }
