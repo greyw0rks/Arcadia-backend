@@ -14,7 +14,7 @@ export const trueFalseModule = makeChoiceGame(
   {
     id: "truefalse",
     title: "True / False Blitz",
-    description: "Rapid-fire: is the statement true or false? Each correct call is +0.1x.",
+    description: "Rapid-fire: is the statement true or false? Get 9 of 12 right to win.",
     thumbnail: "✅",
     maxRounds: 5,
     timeLimitSec: 5,

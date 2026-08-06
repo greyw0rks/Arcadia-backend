@@ -18,7 +18,7 @@ export const movieModule = {
   {
     id: "movie",
     title: "Movie Stills",
-    description: "Name the movie from a screenshot. Each correct answer is +0.1x.",
+    description: "Name the movie from a screenshot. Get 9 of 12 right to win.",
     thumbnail: "🎬",
     maxRounds: 5,
     timeLimitSec: GEO_TIME_LIMIT_SEC,

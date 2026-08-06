@@ -14,7 +14,7 @@ export const emojiModule = makeChoiceGame(
   {
     id: "emoji",
     title: "Emoji Puzzle",
-    description: "Decode the emojis into a movie title. Each correct guess is +0.1x.",
+    description: "Decode the emojis into a movie title. Get 9 of 12 right to win.",
     thumbnail: "🎬",
     maxRounds: 5,
     timeLimitSec: 8,

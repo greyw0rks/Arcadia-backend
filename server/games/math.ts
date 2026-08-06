@@ -49,7 +49,7 @@ export const mathModule = makeChoiceGame(
   {
     id: "math",
     title: "Math Sprint",
-    description: "Solve the arithmetic before the timer runs out. Each correct answer is +0.1x.",
+    description: "Solve the arithmetic before the timer runs out. Get 9 of 12 right to win.",
     thumbnail: "➗",
     maxRounds: 5,
     timeLimitSec: 6,

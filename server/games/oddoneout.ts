@@ -14,7 +14,7 @@ export const oddOneOutModule = makeChoiceGame(
   {
     id: "oddoneout",
     title: "Odd One Out",
-    description: "Four items, one doesn't belong. Spot it for +0.1x.",
+    description: "Four items, one doesn't belong. Spot 9 of 12 to win.",
     thumbnail: "🧩",
     maxRounds: 5,
     timeLimitSec: 8,

@@ -23,7 +23,7 @@ export const colorModule = {
   {
     id: "color",
     title: "Hex Match",
-    description: "Match the color swatch to its hex code. Each correct answer is +0.1x.",
+    description: "Match the color swatch to its hex code. Get 9 of 12 right to win.",
     thumbnail: "🎨",
     maxRounds: 5,
     timeLimitSec: 7,

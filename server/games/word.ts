@@ -16,7 +16,7 @@ export const wordModule = {
     {
       id: "word",
       title: "Letter League",
-      description: "Unscramble the letters or solve the word puzzle. Each correct answer is +0.1x.",
+      description: "Unscramble the letters or solve the word puzzle. Get 9 of 12 right to win.",
       thumbnail: "🔤",
       maxRounds: 5,
       timeLimitSec: 8,

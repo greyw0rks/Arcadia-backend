@@ -19,7 +19,7 @@ export const triviaModule = makeChoiceGame(
   {
     id: "trivia",
     title: "Trivia Rush",
-    description: "Answer general-knowledge questions against the clock. Each correct answer is +0.1x.",
+    description: "Answer general-knowledge questions against the clock. Get 9 of 12 right to win.",
     thumbnail: "🧠",
     maxRounds: 5,
     timeLimitSec: TRIVIA_TIME_LIMIT_SEC,

@@ -14,7 +14,7 @@ export const riddlesModule = makeChoiceGame(
   {
     id: "riddles",
     title: "Riddle Me This",
-    description: "Solve the riddle before time runs out. Each correct answer is +0.1x.",
+    description: "Solve the riddle before time runs out. Get 9 of 12 right to win.",
     thumbnail: "🧠",
     maxRounds: 5,
     timeLimitSec: 9,

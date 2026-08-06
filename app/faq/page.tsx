@@ -55,7 +55,7 @@ export default function FAQPage() {
     },
     {
       question: "How long do I have to answer?",
-      answer: "Most games give you 15-20 seconds per question. If time runs out, it counts as a wrong answer and you lose 0.1x from your multiplier. Stay focused!",
+      answer: "Between 6 seconds and 3 seconds per question, depending on the game and how much you bet — a bigger bet shortens the clock. If time runs out it counts as a wrong answer, which costs you one of the 9 correct you need to win. Stay focused!",
     },
     {
       question: "Can I play on mobile?",
