@@ -18,7 +18,7 @@ export const logoModule = {
   {
     id: "logo",
     title: "Logo Quiz",
-    description: "Identify the brand from its logo. Each correct answer is +0.1x.",
+    description: "Identify the brand from its logo. Get 9 of 12 right to win.",
     thumbnail: "🏷️",
     maxRounds: 5,
     timeLimitSec: GEO_TIME_LIMIT_SEC,

@@ -15,7 +15,7 @@ export const capitalsModule = makeChoiceGame(
   {
     id: "capitals",
     title: "Capital Quiz",
-    description: "Name the capital city of each country. Each correct answer is +0.1x.",
+    description: "Name the capital city of each country. Get 9 of 12 right to win.",
     thumbnail: "🚩",
     maxRounds: 5,
     timeLimitSec: 7,

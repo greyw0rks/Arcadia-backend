@@ -27,7 +27,7 @@ function pickEntry(roundIndex: number, seed: number, difficulty?: number): GeoEn
 export const geoModule: GameModule = {
   id: "geo",
   title: "GeoGuess",
-  description: "Look at the photo and guess where in the world it is. Each correct guess is +0.1x.",
+  description: "Look at the photo and guess where in the world it is. Get 9 of 12 right to win.",
   thumbnail: "🌍",
   maxRounds: 5,
   bankSize: BANK.length,
