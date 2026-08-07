@@ -25,6 +25,18 @@ const nextConfig = {
     };
   },
 
+  async headers() {
+    return [
+      {
+        // Quiz photos are immutable content under a stable filename, but Next serves /public
+        // with max-age=0, so every round refetches them. 30 days keeps repeat rounds free
+        // while still letting a swapped-in replacement image propagate within a month.
+        source: "/:dir(geo|logos|movies)/:file*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=2592000" }],
+      },
+    ];
+  },
+
   experimental: {
     // Pre-optimize large packages.
     optimizePackageImports: ["@rainbow-me/rainbowkit", "wagmi", "viem"],

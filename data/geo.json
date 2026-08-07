@@ -7,7 +7,7 @@
       "Madrid, Spain",
       "Rome, Italy"
     ],
-    "image": "/geo/eiffel.jpg",
+    "image": "/geo/eiffel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/1280px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
     "tier": "easy"
   },
@@ -19,7 +19,7 @@
       "Lisbon, Portugal",
       "Vienna, Austria"
     ],
-    "image": "/geo/colosseum.jpg",
+    "image": "/geo/colosseum.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
     "tier": "easy"
   },
@@ -31,7 +31,7 @@
       "Cape Town, South Africa",
       "Vancouver, Canada"
     ],
-    "image": "/geo/opera.jpg",
+    "image": "/geo/opera.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/1280px-Sydney_Australia._%2821339175489%29.jpg",
     "tier": "easy"
   },
@@ -43,7 +43,7 @@
       "Lahore, Pakistan",
       "Dhaka, Bangladesh"
     ],
-    "image": "/geo/taj.jpg",
+    "image": "/geo/taj.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg",
     "tier": "easy"
   },
@@ -55,7 +55,7 @@
       "Vancouver, Canada",
       "Lisbon, Portugal"
     ],
-    "image": "/geo/ggbridge.jpg",
+    "image": "/geo/ggbridge.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/1280px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
     "tier": "easy"
   },
@@ -67,7 +67,7 @@
       "Chicago, USA",
       "Philadelphia, USA"
     ],
-    "image": "/geo/liberty.jpg",
+    "image": "/geo/liberty.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/1280px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
     "tier": "easy"
   },
@@ -79,7 +79,7 @@
       "Edinburgh, UK",
       "Brussels, Belgium"
     ],
-    "image": "/geo/bigben.jpg",
+    "image": "/geo/bigben.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Elizabeth_Tower%2C_June_2022.jpg/1280px-Elizabeth_Tower%2C_June_2022.jpg",
     "tier": "easy"
   },
@@ -91,7 +91,7 @@
       "Bogota, Colombia",
       "Buenos Aires, Argentina"
     ],
-    "image": "/geo/redeemer.jpg",
+    "image": "/geo/redeemer.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/1280px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
     "tier": "easy"
   },
@@ -103,7 +103,7 @@
       "Vienna, Austria",
       "Warsaw, Poland"
     ],
-    "image": "/geo/brandenburg.jpg",
+    "image": "/geo/brandenburg.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/1280px-Brandenburger_Tor_abends.jpg",
     "tier": "medium"
   },
@@ -115,7 +115,7 @@
       "Abu Dhabi, UAE",
       "Riyadh, Saudi Arabia"
     ],
-    "image": "/geo/burj.jpg",
+    "image": "/geo/burj.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1280px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
     "tier": "easy"
   },
@@ -127,7 +127,7 @@
       "Jerusalem, Israel",
       "Beirut, Lebanon"
     ],
-    "image": "/geo/petra.jpg",
+    "image": "/geo/petra.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/1280px-Al_Deir_Petra.JPG",
     "tier": "medium"
   },
@@ -139,7 +139,7 @@
       "Florence, Italy",
       "Seville, Spain"
     ],
-    "image": "/geo/pisa.jpg",
+    "image": "/geo/pisa.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/1280px-Italy_-_Pisa_-_Leaning_Tower.jpg",
     "tier": "easy"
   },
@@ -151,7 +151,7 @@
       "Milan, Italy",
       "Cologne, Germany"
     ],
-    "image": "/geo/sagrada.jpg",
+    "image": "/geo/sagrada.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/SF_maig_2026.jpg/1280px-SF_maig_2026.jpg",
     "tier": "medium"
   },
@@ -163,7 +163,7 @@
       "Istanbul, Turkey",
       "Tirana, Albania"
     ],
-    "image": "/geo/acropolis.jpg",
+    "image": "/geo/acropolis.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/1280px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
     "tier": "medium"
   },
@@ -175,7 +175,7 @@
       "Seoul, South Korea",
       "Kyoto, Japan"
     ],
-    "image": "/geo/forbidden.jpg",
+    "image": "/geo/forbidden.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/1280px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
     "tier": "medium"
   },
@@ -187,7 +187,7 @@
       "Ulaanbaatar, Mongolia",
       "Xi'an, China"
     ],
-    "image": "/geo/greatwall.jpg",
+    "image": "/geo/greatwall.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1280px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
     "tier": "easy"
   },
@@ -199,7 +199,7 @@
       "Taiwan",
       "Luzon, Philippines"
     ],
-    "image": "/geo/fuji.jpg",
+    "image": "/geo/fuji.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/1280px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
     "tier": "medium"
   },
@@ -211,7 +211,7 @@
       "Osaka, Japan",
       "Seoul, South Korea"
     ],
-    "image": "/geo/senso.jpg",
+    "image": "/geo/senso.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/1280px-Sensoji_2023.jpg",
     "tier": "medium"
   },
@@ -223,7 +223,7 @@
       "Bagan, Myanmar",
       "Luang Prabang, Laos"
     ],
-    "image": "/geo/angkor.jpg",
+    "image": "/geo/angkor.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Buddhist_monks_in_front_of_the_Angkor_Wat.jpg/1280px-Buddhist_monks_in_front_of_the_Angkor_Wat.jpg",
     "tier": "medium"
   },
@@ -235,7 +235,7 @@
       "Kuala Lumpur, Malaysia",
       "Bangkok, Thailand"
     ],
-    "image": "/geo/marina.jpg",
+    "image": "/geo/marina.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Marina_Bay_Sands_%28I%29.jpg/1280px-Marina_Bay_Sands_%28I%29.jpg",
     "tier": "medium"
   },
@@ -247,7 +247,7 @@
       "Marrakesh, Morocco",
       "Petra, Jordan"
     ],
-    "image": "/geo/gizapyramid.jpg",
+    "image": "/geo/gizapyramid.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/1280px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
     "tier": "easy"
   },
@@ -259,7 +259,7 @@
       "Windhoek, Namibia",
       "Rio de Janeiro, Brazil"
     ],
-    "image": "/geo/tablemountain.jpg",
+    "image": "/geo/tablemountain.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Table_Mountain_DanieVDM.jpg/1280px-Table_Mountain_DanieVDM.jpg",
     "tier": "hard"
   },
@@ -271,7 +271,7 @@
       "Lucerne, Switzerland",
       "Loire Valley, France"
     ],
-    "image": "/geo/neuschwanstein.jpg",
+    "image": "/geo/neuschwanstein.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/1280px-Schloss_Neuschwanstein_2013.jpg",
     "tier": "medium"
   },
@@ -283,7 +283,7 @@
       "Warsaw, Poland",
       "Prague, Czechia"
     ],
-    "image": "/geo/stbasil.jpg",
+    "image": "/geo/stbasil.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kremlin_and_Red_Square.1.jpg/1280px-Kremlin_and_Red_Square.1.jpg",
     "tier": "medium"
   },
@@ -295,7 +295,7 @@
       "Vienna, Austria",
       "Kraków, Poland"
     ],
-    "image": "/geo/charlesbridge.jpg",
+    "image": "/geo/charlesbridge.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_img3.jpg/1280px-Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_img3.jpg",
     "tier": "medium"
   },
@@ -307,7 +307,7 @@
       "Luxembourg City",
       "Rotterdam, Netherlands"
     ],
-    "image": "/geo/atomium.jpg",
+    "image": "/geo/atomium.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Brussels_-_Atomium_2022.jpg/1280px-Brussels_-_Atomium_2022.jpg",
     "tier": "hard"
   },
@@ -319,7 +319,7 @@
       "Copenhagen, Denmark",
       "Hamburg, Germany"
     ],
-    "image": "/geo/windmills.jpg",
+    "image": "/geo/windmills.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/KinderdijkMolens02.jpg/1280px-KinderdijkMolens02.jpg",
     "tier": "hard"
   },
@@ -331,7 +331,7 @@
       "Oslo, Norway",
       "Helsinki, Finland"
     ],
-    "image": "/geo/littlemermaid.jpg",
+    "image": "/geo/littlemermaid.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Copenhagen_-_the_little_mermaid_statue_-_2013.jpg/1280px-Copenhagen_-_the_little_mermaid_statue_-_2013.jpg",
     "tier": "hard"
   },
@@ -343,7 +343,7 @@
       "Sofia, Bulgaria",
       "Yerevan, Armenia"
     ],
-    "image": "/geo/hagia.jpg",
+    "image": "/geo/hagia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/1280px-Hagia_Sophia_%28228968325%29.jpeg",
     "tier": "medium"
   },
@@ -355,7 +355,7 @@
       "Manama, Bahrain",
       "Kuwait City, Kuwait"
     ],
-    "image": "/geo/burjalarab.jpg",
+    "image": "/geo/burjalarab.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg/1280px-Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg",
     "tier": "medium"
   },
@@ -367,7 +367,7 @@
       "Beirut, Lebanon",
       "Damascus, Syria"
     ],
-    "image": "/geo/westernwall.jpg",
+    "image": "/geo/westernwall.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Westernwall2.jpg/1280px-Westernwall2.jpg",
     "tier": "hard"
   },
@@ -379,7 +379,7 @@
       "Tikal, Guatemala",
       "Belize City, Belize"
     ],
-    "image": "/geo/chichen.jpg",
+    "image": "/geo/chichen.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
     "tier": "medium"
   },
@@ -391,7 +391,7 @@
       "Vancouver, Canada",
       "San Francisco, USA"
     ],
-    "image": "/geo/spaceneedle.jpg",
+    "image": "/geo/spaceneedle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/1280px-Space_Needle_2011-07-04.jpg",
     "tier": "medium"
   },
@@ -403,7 +403,7 @@
       "Las Vegas, USA",
       "Phoenix, USA"
     ],
-    "image": "/geo/hollywood.jpg",
+    "image": "/geo/hollywood.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1280px-Hollywood_Sign_%28Zuschnitt%29.jpg",
     "tier": "easy"
   },
@@ -415,7 +415,7 @@
       "Boston, USA",
       "Richmond, USA"
     ],
-    "image": "/geo/whitehouse.jpg",
+    "image": "/geo/whitehouse.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/1280px-White_House_north_and_south_sides.jpg",
     "tier": "easy"
   },
@@ -427,7 +427,7 @@
       "Memphis, USA",
       "Chicago, USA"
     ],
-    "image": "/geo/gatewaymo.jpg",
+    "image": "/geo/gatewaymo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/1280px-St_Louis_night_expblend_cropped.jpg",
     "tier": "hard"
   },
@@ -439,7 +439,7 @@
       "Santiago, Chile",
       "Asunción, Paraguay"
     ],
-    "image": "/geo/obelisco.jpg",
+    "image": "/geo/obelisco.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Buenos_Aires_%2820234294752%29.jpg/1280px-Buenos_Aires_%2820234294752%29.jpg",
     "tier": "hard"
   },
@@ -451,7 +451,7 @@
       "Samoa",
       "Tahiti, French Polynesia"
     ],
-    "image": "/geo/moai.jpg",
+    "image": "/geo/moai.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/5/50/AhuTongariki.JPG",
     "tier": "medium"
   },
@@ -463,7 +463,7 @@
       "Alice Springs, Australia",
       "Kimberley, Australia"
     ],
-    "image": "/geo/uluru.jpg",
+    "image": "/geo/uluru.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/1280px-ULURU.jpg",
     "tier": "medium"
   },
@@ -475,7 +475,7 @@
       "Vientiane, Laos",
       "Yangon, Myanmar"
     ],
-    "image": "/geo/wat.jpg",
+    "image": "/geo/wat.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg/1280px-%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg",
     "tier": "medium"
   },
@@ -487,7 +487,7 @@
       "Chennai, India",
       "Karachi, Pakistan"
     ],
-    "image": "/geo/gateofindia.jpg",
+    "image": "/geo/gateofindia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg",
     "tier": "medium"
   },
@@ -499,7 +499,7 @@
       "Guangzhou, China",
       "Shenzhen, China"
     ],
-    "image": "/geo/tianjin.jpg",
+    "image": "/geo/tianjin.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Oriental_Pearl_Tower_20251126.jpg/1280px-Oriental_Pearl_Tower_20251126.jpg",
     "tier": "hard"
   },
@@ -511,7 +511,7 @@
       "Gothenburg, Sweden",
       "Amsterdam, Netherlands"
     ],
-    "image": "/geo/nblue.jpg",
+    "image": "/geo/nblue.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Nyhavn_Canal_3.jpg/1280px-The_Nyhavn_Canal_3.jpg",
     "tier": "hard"
   },
@@ -523,7 +523,7 @@
       "Quito, Ecuador",
       "Bogotá, Colombia"
     ],
-    "image": "/geo/machupicchu.jpg",
+    "image": "/geo/machupicchu.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/1280px-Machu_Picchu%2C_2023_%28012%29.jpg",
     "tier": "medium"
   },
@@ -535,7 +535,7 @@
       "Siem Reap, Cambodia",
       "Ayutthaya, Thailand"
     ],
-    "image": "/geo/borobudur.jpg",
+    "image": "/geo/borobudur.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/1280px-Pradaksina.jpg",
     "tier": "medium"
   },
@@ -547,7 +547,7 @@
       "Siem Reap, Cambodia",
       "Chiang Mai, Thailand"
     ],
-    "image": "/geo/bagan.jpg",
+    "image": "/geo/bagan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bagan%2C_Burma.jpg/1280px-Bagan%2C_Burma.jpg",
     "tier": "hard"
   },
@@ -559,7 +559,7 @@
       "Siem Reap, Cambodia",
       "Kandy, Sri Lanka"
     ],
-    "image": "/geo/prambanan.jpg",
+    "image": "/geo/prambanan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Prambanan_Temple_Yogyakarta_Indonesia.jpg/1280px-Prambanan_Temple_Yogyakarta_Indonesia.jpg",
     "tier": "hard"
   },
@@ -571,7 +571,7 @@
       "Osaka, Japan",
       "Nagoya, Japan"
     ],
-    "image": "/geo/himeji.jpg",
+    "image": "/geo/himeji.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/1280px-Himeji_castle_in_may_2015.jpg",
     "tier": "medium"
   },
@@ -583,7 +583,7 @@
       "Thimphu, Bhutan",
       "Leh, India"
     ],
-    "image": "/geo/potala.jpg",
+    "image": "/geo/potala.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/1280px-Potala_Palace_HQ.jpg",
     "tier": "hard"
   },
@@ -595,7 +595,7 @@
       "Córdoba, Spain",
       "Fez, Morocco"
     ],
-    "image": "/geo/alhambra.jpg",
+    "image": "/geo/alhambra.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/1280px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
     "tier": "medium"
   },
@@ -607,7 +607,7 @@
       "Cornwall, England",
       "Galicia, Spain"
     ],
-    "image": "/geo/montstmichel.jpg",
+    "image": "/geo/montstmichel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/1280px-Mont-Saint-Michel_vu_du_ciel.jpg",
     "tier": "medium"
   },
@@ -619,7 +619,7 @@
       "Cortina, Italy",
       "Innsbruck, Austria"
     ],
-    "image": "/geo/matterhorn.jpg",
+    "image": "/geo/matterhorn.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/1280px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg",
     "tier": "medium"
   },
@@ -631,7 +631,7 @@
       "Jakarta, Indonesia",
       "Bangkok, Thailand"
     ],
-    "image": "/geo/petronas.jpg",
+    "image": "/geo/petronas.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/1280px-Petronas_Towers_Logo.svg.png",
     "tier": "medium"
   },
@@ -643,7 +643,7 @@
       "Shanghai, China",
       "Seoul, South Korea"
     ],
-    "image": "/geo/taipei101.jpg",
+    "image": "/geo/taipei101.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Taipei_101_from_Xiangshan_20250905.jpg/1280px-Taipei_101_from_Xiangshan_20250905.jpg",
     "tier": "medium"
   },
@@ -655,7 +655,7 @@
       "Muscat, Oman",
       "Manama, Bahrain"
     ],
-    "image": "/geo/sheikhzayed.jpg",
+    "image": "/geo/sheikhzayed.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7d/Sheikh_Zayed_Mosque_view.jpg",
     "tier": "medium"
   },
@@ -667,7 +667,7 @@
       "Isfahan, Iran",
       "Bursa, Turkey"
     ],
-    "image": "/geo/bluemosque.jpg",
+    "image": "/geo/bluemosque.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/1280px-Istanbul_%2834223582516%29_%28cropped%29.jpg",
     "tier": "medium"
   },
@@ -679,7 +679,7 @@
       "Yucatán, Mexico",
       "Guatemala City, Guatemala"
     ],
-    "image": "/geo/teotihuacan.jpg",
+    "image": "/geo/teotihuacan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Teotihuac%C3%A1n-5973.JPG/1280px-Teotihuac%C3%A1n-5973.JPG",
     "tier": "hard"
   },
@@ -691,7 +691,7 @@
       "Copán, Honduras",
       "Belize City, Belize"
     ],
-    "image": "/geo/tikal.jpg",
+    "image": "/geo/tikal.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tikal_3.jpg/1280px-Tikal_3.jpg",
     "tier": "hard"
   },
@@ -703,7 +703,7 @@
       "Quebec, Canada",
       "Michigan, USA"
     ],
-    "image": "/geo/niagara.jpg",
+    "image": "/geo/niagara.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/1280px-3Falls_Niagara.jpg",
     "tier": "medium"
   },
@@ -715,7 +715,7 @@
       "Maun, Botswana",
       "Arusha, Tanzania"
     ],
-    "image": "/geo/victoriafalls.jpg",
+    "image": "/geo/victoriafalls.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg/1280px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg",
     "tier": "medium"
   },
@@ -727,7 +727,7 @@
       "Nevada, USA",
       "Colorado, USA"
     ],
-    "image": "/geo/grandcanyon.jpg",
+    "image": "/geo/grandcanyon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Canyon_River_Tree_%28165872763%29.jpeg/1280px-Canyon_River_Tree_%28165872763%29.jpeg",
     "tier": "medium"
   },
@@ -739,7 +739,7 @@
       "Montana, USA",
       "Colorado, USA"
     ],
-    "image": "/geo/mountrushmore.jpg",
+    "image": "/geo/mountrushmore.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/1280px-Mount_Rushmore_detail_view_%28100MP%29.jpg",
     "tier": "medium"
   },
@@ -751,7 +751,7 @@
       "Naxos, Greece",
       "Bodrum, Turkey"
     ],
-    "image": "/geo/santorini.jpg",
+    "image": "/geo/santorini.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/2011_Dimos_Thiras.png/1280px-2011_Dimos_Thiras.png",
     "tier": "medium"
   },
@@ -763,7 +763,7 @@
       "Kotor, Montenegro",
       "Venice, Italy"
     ],
-    "image": "/geo/dubrovnik.jpg",
+    "image": "/geo/dubrovnik.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg/1280px-The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg",
     "tier": "hard"
   },
@@ -775,7 +775,7 @@
       "Cappadocia, Turkey",
       "Mount Athos, Greece"
     ],
-    "image": "/geo/meteora.jpg",
+    "image": "/geo/meteora.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Meteora%27s_monastery_2.jpg/1280px-Meteora%27s_monastery_2.jpg",
     "tier": "hard"
   },
@@ -787,7 +787,7 @@
       "Dublin, Ireland",
       "York, England"
     ],
-    "image": "/geo/edinburghcastle.jpg",
+    "image": "/geo/edinburghcastle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/1280px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
     "tier": "medium"
   },
@@ -799,7 +799,7 @@
       "Orkney, Scotland",
       "County Meath, Ireland"
     ],
-    "image": "/geo/stonehenge.jpg",
+    "image": "/geo/stonehenge.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg",
     "tier": "medium"
   },
@@ -811,7 +811,7 @@
       "Madrid, Spain",
       "Potsdam, Germany"
     ],
-    "image": "/geo/versailles.jpg",
+    "image": "/geo/versailles.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Versailles-Chateau-Jardins02.jpg/1280px-Versailles-Chateau-Jardins02.jpg",
     "tier": "medium"
   },
@@ -823,7 +823,7 @@
       "Bologna, Italy",
       "Pisa, Italy"
     ],
-    "image": "/geo/florenceduomo.jpg",
+    "image": "/geo/florenceduomo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/1280px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg",
     "tier": "medium"
   },
@@ -835,7 +835,7 @@
       "Nanjing, China",
       "Chengdu, China"
     ],
-    "image": "/geo/terracotta.jpg",
+    "image": "/geo/terracotta.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/51714-Terracota-Army.jpg/1280px-51714-Terracota-Army.jpg",
     "tier": "medium"
   },
@@ -847,7 +847,7 @@
       "Beijing, China",
       "Busan, South Korea"
     ],
-    "image": "/geo/gyeongbokgung.jpg",
+    "image": "/geo/gyeongbokgung.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg/1280px-%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
     "tier": "hard"
   },
@@ -859,7 +859,7 @@
       "Montana, USA",
       "Patagonia, Argentina"
     ],
-    "image": "/geo/moraine.jpg",
+    "image": "/geo/moraine.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1280px-Moraine_Lake_17092005.jpg",
     "tier": "hard"
   },
@@ -871,7 +871,7 @@
       "Tyrol, Austria",
       "Bohemia, Czechia"
     ],
-    "image": "/geo/neuschwanstein2.jpg",
+    "image": "/geo/neuschwanstein2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Burg_Hohenzollern_10-2016.jpg/1280px-Burg_Hohenzollern_10-2016.jpg",
     "tier": "hard"
   },
@@ -883,7 +883,7 @@
       "Manchester, UK",
       "Liverpool, UK"
     ],
-    "image": "/geo/towerbridge.jpg",
+    "image": "/geo/towerbridge.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/1280px-Tower_Bridge_at_Dawn.jpg",
     "tier": "medium"
   },
@@ -895,7 +895,7 @@
       "Milan, Italy",
       "Vienna, Austria"
     ],
-    "image": "/geo/colognecathedral.jpg",
+    "image": "/geo/colognecathedral.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg/1280px-K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg",
     "tier": "medium"
   },
@@ -907,7 +907,7 @@
       "Verona, Italy",
       "Trieste, Italy"
     ],
-    "image": "/geo/sanmarco.jpg",
+    "image": "/geo/sanmarco.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg/1280px-Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg",
     "tier": "medium"
   },
@@ -919,7 +919,7 @@
       "Henan, China",
       "Gansu, China"
     ],
-    "image": "/geo/leshan.jpg",
+    "image": "/geo/leshan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/36275-Leshan_%2849067653383%29.jpg/1280px-36275-Leshan_%2849067653383%29.jpg",
     "tier": "hard"
   },
@@ -931,7 +931,7 @@
       "Guizhou, China",
       "Sapa, Vietnam"
     ],
-    "image": "/geo/zhangjiajie.jpg",
+    "image": "/geo/zhangjiajie.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1280px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
     "tier": "hard"
   },
@@ -943,7 +943,7 @@
       "Palawan, Philippines",
       "Guilin, China"
     ],
-    "image": "/geo/halongbay.jpg",
+    "image": "/geo/halongbay.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ha_Long_Bay_in_2019.jpg/1280px-Ha_Long_Bay_in_2019.jpg",
     "tier": "medium"
   },
@@ -955,7 +955,7 @@
       "Cappadocia, Turkey",
       "Yellowstone, USA"
     ],
-    "image": "/geo/pamukkale.jpg",
+    "image": "/geo/pamukkale.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Pamukkale%2C_Denizli_2026_68.jpg/1280px-Pamukkale%2C_Denizli_2026_68.jpg",
     "tier": "hard"
   },
@@ -967,7 +967,7 @@
       "Meteora, Greece",
       "Petra, Jordan"
     ],
-    "image": "/geo/cappadocia.jpg",
+    "image": "/geo/cappadocia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg/1280px-Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg",
     "tier": "medium"
   },
@@ -979,7 +979,7 @@
       "Khartoum, Sudan",
       "Cairo, Egypt"
     ],
-    "image": "/geo/abusimbel.jpg",
+    "image": "/geo/abusimbel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg/1280px-Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg",
     "tier": "hard"
   },
@@ -991,7 +991,7 @@
       "Isfahan, Iran",
       "Mashhad, Iran"
     ],
-    "image": "/geo/registan.jpg",
+    "image": "/geo/registan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Registan_square_Samarkand.jpg/1280px-Registan_square_Samarkand.jpg",
     "tier": "hard"
   },
@@ -1003,7 +1003,7 @@
       "Bohinj, Slovenia",
       "Bavaria, Germany"
     ],
-    "image": "/geo/plitvice.jpg",
+    "image": "/geo/plitvice.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/View_in_Plitvice_Lakes_National_Park.jpg/1280px-View_in_Plitvice_Lakes_National_Park.jpg",
     "tier": "hard"
   },
@@ -1015,7 +1015,7 @@
       "Murmansk Oblast, Russia",
       "Novaya Zemlya, Russia"
     ],
-    "image": "/geo/solovetsky-islands.jpg",
+    "image": "/geo/solovetsky-islands.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/View_of_the_Solovetsky_Islands_01.jpg/1280px-View_of_the_Solovetsky_Islands_01.jpg",
     "tier": "extreme"
   },
@@ -1027,7 +1027,7 @@
       "Bouvet Island, Norway",
       "Heard Island, Australia"
     ],
-    "image": "/geo/deception-island.jpg",
+    "image": "/geo/deception-island.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Deception_Island%2C_Antarctica.jpg/1280px-Deception_Island%2C_Antarctica.jpg",
     "tier": "extreme"
   },
@@ -1039,7 +1039,7 @@
       "Eysturoy, Faroe Islands",
       "Sandoy, Faroe Islands"
     ],
-    "image": "/geo/faroe-sea-cliffs.jpg",
+    "image": "/geo/faroe-sea-cliffs.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Vestmannabj%C3%B8rgini%2C_Faroe_Islands.JPG/1280px-Vestmannabj%C3%B8rgini%2C_Faroe_Islands.JPG",
     "tier": "extreme"
   },
@@ -1051,7 +1051,7 @@
       "Franz Josef Land, Russia",
       "Bear Island, Norway"
     ],
-    "image": "/geo/jan-mayen.jpg",
+    "image": "/geo/jan-mayen.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Jan_Mayen%2C_Beerenberg_Glacier_-_panoramio.jpg/1280px-Jan_Mayen%2C_Beerenberg_Glacier_-_panoramio.jpg",
     "tier": "extreme"
   },
@@ -1063,7 +1063,7 @@
       "St. Helena, UK",
       "Gough Island, UK"
     ],
-    "image": "/geo/tristan-da-cunha.jpg",
+    "image": "/geo/tristan-da-cunha.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/View_of_Tristan_da_Cunha_from_Nightingale_island.jpg/1280px-View_of_Tristan_da_Cunha_from_Nightingale_island.jpg",
     "tier": "extreme"
   },
@@ -1075,7 +1075,7 @@
       "Amsterdam Island, France",
       "Heard Island, Australia"
     ],
-    "image": "/geo/kerguelen-islands.jpg",
+    "image": "/geo/kerguelen-islands.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mont_Ross_-_Archipel_des_Kerguelen.jpg/1280px-Mont_Ross_-_Archipel_des_Kerguelen.jpg",
     "tier": "extreme"
   },
@@ -1087,7 +1087,7 @@
       "Afar Region, Ethiopia",
       "Mwanza Region, Tanzania"
     ],
-    "image": "/geo/lake-natron.jpg",
+    "image": "/geo/lake-natron.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_Natron%2C_Tanzania.jpg/1280px-Lake_Natron%2C_Tanzania.jpg",
     "tier": "extreme"
   },
@@ -1099,7 +1099,7 @@
       "Saskatchewan, Canada",
       "Washington State, USA"
     ],
-    "image": "/geo/spotted-lake.jpg",
+    "image": "/geo/spotted-lake.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Spotted_Lake_Osoyoos.JPG/1280px-Spotted_Lake_Osoyoos.JPG",
     "tier": "extreme"
   },
@@ -1111,7 +1111,7 @@
       "South Dakota, USA",
       "Idaho, USA"
     ],
-    "image": "/geo/devils-tower.jpg",
+    "image": "/geo/devils-tower.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Devil%27s_Tower_National_Monument_Wyoming.JPG/1280px-Devil%27s_Tower_National_Monument_Wyoming.JPG",
     "tier": "extreme"
   },
@@ -1123,7 +1123,7 @@
       "Yunnan, China",
       "Hunan, China"
     ],
-    "image": "/geo/reed-flute-cave.jpg",
+    "image": "/geo/reed-flute-cave.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Guilin_Reed_Flute_Cave.jpg/1280px-Guilin_Reed_Flute_Cave.jpg",
     "tier": "extreme"
   },
@@ -1135,7 +1135,7 @@
       "Betsiboka Region, Madagascar",
       "Sofia Region, Madagascar"
     ],
-    "image": "/geo/tsingy-bemaraha.jpg",
+    "image": "/geo/tsingy-bemaraha.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Grand_Tsingy_02.JPG/1280px-Grand_Tsingy_02.JPG",
     "tier": "extreme"
   },
@@ -1147,7 +1147,7 @@
       "Xinjiang, China",
       "East Kazakhstan, Kazakhstan"
     ],
-    "image": "/geo/tian-shan.jpg",
+    "image": "/geo/tian-shan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Beerenberg_Jan_Mayen.JPG/1280px-Beerenberg_Jan_Mayen.JPG",
     "tier": "extreme"
   },
@@ -1159,7 +1159,7 @@
       "Eritrea, Eritrea",
       "Somali Region, Ethiopia"
     ],
-    "image": "/geo/danakil-depression.jpg",
+    "image": "/geo/danakil-depression.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ethiopia_-_Dallol.jpg/1280px-Ethiopia_-_Dallol.jpg",
     "tier": "extreme"
   },
@@ -1171,7 +1171,7 @@
       "Northern Cape, South Africa",
       "Saharan Western Sahara, Morocco"
     ],
-    "image": "/geo/namib-dunes.jpg",
+    "image": "/geo/namib-dunes.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sossusvlei_Dune_Namib_Desert_Namibia_Luca_Galuzzi_2004.JPG/1280px-Sossusvlei_Dune_Namib_Desert_Namibia_Luca_Galuzzi_2004.JPG",
     "tier": "extreme"
   },
@@ -1183,7 +1183,7 @@
       "Sichuan, China",
       "Chongqing, China"
     ],
-    "image": "/geo/wulingyuan.jpg",
+    "image": "/geo/wulingyuan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1280px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
     "tier": "extreme"
   },
@@ -1195,7 +1195,7 @@
       "Djibouti, Djibouti",
       "Eritrea, Eritrea"
     ],
-    "image": "/geo/dallol-volcano.jpg",
+    "image": "/geo/dallol-volcano.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Erta_Ale-Lac_de_lave_%281%29.jpg/1280px-Erta_Ale-Lac_de_lave_%281%29.jpg",
     "tier": "extreme"
   },
@@ -1207,7 +1207,7 @@
       "Red Sea Governorate, Egypt",
       "South Sinai, Egypt"
     ],
-    "image": "/geo/white-desert.jpg",
+    "image": "/geo/white-desert.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/White_Desert%2C_Farafra_depression%2C_Egypt.jpg/1280px-White_Desert%2C_Farafra_depression%2C_Egypt.jpg",
     "tier": "extreme"
   },
@@ -1219,7 +1219,7 @@
       "Atacama Region, Chile",
       "Jujuy Province, Argentina"
     ],
-    "image": "/geo/salar-uyuni.jpg",
+    "image": "/geo/salar-uyuni.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_10-12_HDR.JPG/1280px-Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_10-12_HDR.JPG",
     "tier": "extreme"
   },
@@ -1231,7 +1231,7 @@
       "Upper Takutu-Upper Essequibo, Guyana",
       "Amazonas State, Venezuela"
     ],
-    "image": "/geo/roraima-tepui.jpg",
+    "image": "/geo/roraima-tepui.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Kukenan_Roraima_GS.jpg/1280px-Kukenan_Roraima_GS.jpg",
     "tier": "extreme"
   },
@@ -1243,7 +1243,7 @@
       "Qinghai, China",
       "Xinjiang, China"
     ],
-    "image": "/geo/zhangye-danxia.jpg",
+    "image": "/geo/zhangye-danxia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Zhangye_Danxia_2016.jpg/1280px-Zhangye_Danxia_2016.jpg",
     "tier": "extreme"
   },
@@ -1255,7 +1255,7 @@
       "Phang Nga Bay, Thailand",
       "Coron Bay, Philippines"
     ],
-    "image": "/geo/ha-long-bay.jpg",
+    "image": "/geo/ha-long-bay.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ha_Long_Bay%2C_Vietnam%2C_Islands.jpg/1280px-Ha_Long_Bay%2C_Vietnam%2C_Islands.jpg",
     "tier": "extreme"
   },
@@ -1267,7 +1267,7 @@
       "Lakshadweep, India",
       "Maldives, Maldives"
     ],
-    "image": "/geo/socotra-island.jpg",
+    "image": "/geo/socotra-island.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Socotra_-Ar%27ar.JPG/1280px-Socotra_-Ar%27ar.JPG",
     "tier": "extreme"
   },
@@ -1279,7 +1279,7 @@
       "Khyber Pakhtunkhwa, Pakistan",
       "Xinjiang, China"
     ],
-    "image": "/geo/deosai-plains.jpg",
+    "image": "/geo/deosai-plains.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Deosai_the_Land_of_Giants.jpg/1280px-Deosai_the_Land_of_Giants.jpg",
     "tier": "extreme"
   },
@@ -1291,7 +1291,7 @@
       "Cebu, Philippines",
       "Leyte, Philippines"
     ],
-    "image": "/geo/chocolate-hills.jpg",
+    "image": "/geo/chocolate-hills.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Chocolate_Hills_overview.JPG/1280px-Chocolate_Hills_overview.JPG",
     "tier": "extreme"
   },
@@ -1303,7 +1303,7 @@
       "Utah, USA",
       "Idaho, USA"
     ],
-    "image": "/geo/fly-geyser.jpg",
+    "image": "/geo/fly-geyser.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fly_Geyser%2C_Nevada.jpg/1280px-Fly_Geyser%2C_Nevada.jpg",
     "tier": "extreme"
   },
@@ -1315,7 +1315,7 @@
       "Rome, Italy",
       "Sofia, Bulgaria"
     ],
-    "image": "/geo/athens.jpg",
+    "image": "/geo/athens.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
     "tier": "easy"
   },
@@ -1327,7 +1327,7 @@
       "Amsterdam, Netherlands",
       "Dublin, Ireland"
     ],
-    "image": "/geo/london.jpg",
+    "image": "/geo/london.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/1280px-London_Skyline_%28125508655%29.jpeg",
     "tier": "easy"
   },
@@ -1339,7 +1339,7 @@
       "Toronto, Canada",
       "Boston, USA"
     ],
-    "image": "/geo/newyork.jpg",
+    "image": "/geo/newyork.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Southwest_corner_of_Central_Park%2C_looking_east%2C_NYC.jpg/1280px-Southwest_corner_of_Central_Park%2C_looking_east%2C_NYC.jpg",
     "tier": "easy"
   },
@@ -1351,7 +1351,7 @@
       "Beijing, China",
       "Shanghai, China"
     ],
-    "image": "/geo/tokyo.jpg",
+    "image": "/geo/tokyo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/1280px-Skyscrapers_of_Shinjuku_2009_January.jpg",
     "tier": "easy"
   },
@@ -1363,7 +1363,7 @@
       "Nairobi, Kenya",
       "Lagos, Nigeria"
     ],
-    "image": "/geo/cairo.jpg",
+    "image": "/geo/cairo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/1280px-All_Gizah_Pyramids.jpg",
     "tier": "easy"
   },
@@ -1375,7 +1375,7 @@
       "Quito, Ecuador",
       "Lima, Peru"
     ],
-    "image": "/geo/machu_picchu.jpg",
+    "image": "/geo/machu_picchu.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1280px-Machu_Picchu%2C_Peru.jpg",
     "tier": "medium"
   },
@@ -1387,7 +1387,7 @@
       "Kangchenjunga, Nepal",
       "Mont Blanc, France"
     ],
-    "image": "/geo/everest.jpg",
+    "image": "/geo/everest.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1280px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
     "tier": "easy"
   },
@@ -1399,7 +1399,7 @@
       "Colorado, USA",
       "Nevada, USA"
     ],
-    "image": "/geo/grand_canyon.jpg",
+    "image": "/geo/grand_canyon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg/1280px-Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg",
     "tier": "easy"
   },
@@ -1411,7 +1411,7 @@
       "Florence, Italy",
       "Capua, Italy"
     ],
-    "image": "/geo/coliseum_roman.jpg",
+    "image": "/geo/coliseum_roman.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
     "tier": "easy"
   },
@@ -1423,7 +1423,7 @@
       "Osaka, Japan",
       "Kyoto, Japan"
     ],
-    "image": "/geo/mt_fuji.jpg",
+    "image": "/geo/mt_fuji.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/080103_hakkai_fuji.jpg/1280px-080103_hakkai_fuji.jpg",
     "tier": "easy"
   },
@@ -1435,7 +1435,7 @@
       "Tulum, Mexico",
       "Palenque, Mexico"
     ],
-    "image": "/geo/chichen_itza.jpg",
+    "image": "/geo/chichen_itza.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
     "tier": "medium"
   },
@@ -1447,7 +1447,7 @@
       "Valencia, Spain",
       "Lisbon, Portugal"
     ],
-    "image": "/geo/sagradafamilia.jpg",
+    "image": "/geo/sagradafamilia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/e/ef/SF_maig_2_cropped.jpg",
     "tier": "easy"
   },
@@ -1459,7 +1459,7 @@
       "Brussels, Belgium",
       "Strasbourg, France"
     ],
-    "image": "/geo/notre_dame.jpg",
+    "image": "/geo/notre_dame.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/1280px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
     "tier": "easy"
   },
@@ -1471,7 +1471,7 @@
       "Dublin, Ireland",
       "Amsterdam, Netherlands"
     ],
-    "image": "/geo/westminster.jpg",
+    "image": "/geo/westminster.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Houses_of_Parliament_in_2022_%28cropped%29.jpg/1280px-Houses_of_Parliament_in_2022_%28cropped%29.jpg",
     "tier": "easy"
   },
@@ -1483,7 +1483,7 @@
       "Edinburgh, UK",
       "Oxford, UK"
     ],
-    "image": "/geo/buckingham.jpg",
+    "image": "/geo/buckingham.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/1280px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg",
     "tier": "easy"
   },
@@ -1495,7 +1495,7 @@
       "Berlin, Germany",
       "Amsterdam, Netherlands"
     ],
-    "image": "/geo/louvre.jpg",
+    "image": "/geo/louvre.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/1280px-Louvre_Museum_Wikimedia_Commons.jpg",
     "tier": "easy"
   },
@@ -1507,7 +1507,7 @@
       "Split, Croatia",
       "Pula, Croatia"
     ],
-    "image": "/geo/colosseum2.jpg",
+    "image": "/geo/colosseum2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
     "tier": "easy"
   },
@@ -1519,7 +1519,7 @@
       "Florence, Italy",
       "Milan, Italy"
     ],
-    "image": "/geo/st_peters.jpg",
+    "image": "/geo/st_peters.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1280px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
     "tier": "easy"
   },
@@ -1531,7 +1531,7 @@
       "Florence, Italy",
       "Venice, Italy"
     ],
-    "image": "/geo/trevi_fountain.jpg",
+    "image": "/geo/trevi_fountain.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg",
     "tier": "medium"
   },
@@ -1543,7 +1543,7 @@
       "Ephesus, Turkey",
       "Segesta, Italy"
     ],
-    "image": "/geo/parthenon.jpg",
+    "image": "/geo/parthenon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg",
     "tier": "easy"
   },
@@ -1555,7 +1555,7 @@
       "Paestum, Italy",
       "Ostia Antica, Italy"
     ],
-    "image": "/geo/pompeii.jpg",
+    "image": "/geo/pompeii.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg/1280px-Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg",
     "tier": "medium"
   },
@@ -1567,7 +1567,7 @@
       "Seville, Spain",
       "Toledo, Spain"
     ],
-    "image": "/geo/alhambra2.jpg",
+    "image": "/geo/alhambra2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/1280px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
     "tier": "medium"
   },
@@ -1579,7 +1579,7 @@
       "Granada, Spain",
       "Valencia, Spain"
     ],
-    "image": "/geo/seville_cathedral.jpg",
+    "image": "/geo/seville_cathedral.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sevilla_Cathedral_-_Southeast.jpg/1280px-Sevilla_Cathedral_-_Southeast.jpg",
     "tier": "hard"
   },
@@ -1591,7 +1591,7 @@
       "Braga, Portugal",
       "Évora, Portugal"
     ],
-    "image": "/geo/lisbon_tram.jpg",
+    "image": "/geo/lisbon_tram.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg/1280px-Lisboa_-_Portugal_%2852597836992%29.jpg",
     "tier": "medium"
   },
@@ -1603,7 +1603,7 @@
       "Seville, Spain",
       "Cádiz, Spain"
     ],
-    "image": "/geo/belem_tower.jpg",
+    "image": "/geo/belem_tower.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Torre_Bel%C3%A9m_April_2009-4a.jpg/1280px-Torre_Bel%C3%A9m_April_2009-4a.jpg",
     "tier": "hard"
   },
@@ -1615,7 +1615,7 @@
       "Coimbra, Portugal",
       "Obidos, Portugal"
     ],
-    "image": "/geo/sintra.jpg",
+    "image": "/geo/sintra.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sintra_-_Palacio_da_Pena_%2820332995770%29_%28cropped2%29.jpg/1280px-Sintra_-_Palacio_da_Pena_%2820332995770%29_%28cropped2%29.jpg",
     "tier": "hard"
   },
@@ -1627,7 +1627,7 @@
       "Utrecht, Netherlands",
       "Brussels, Belgium"
     ],
-    "image": "/geo/rijksmuseum.jpg",
+    "image": "/geo/rijksmuseum.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg/1280px-South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg",
     "tier": "hard"
   },
@@ -1639,7 +1639,7 @@
       "Delft, Netherlands",
       "Haarlem, Netherlands"
     ],
-    "image": "/geo/windmills_zaan.jpg",
+    "image": "/geo/windmills_zaan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Zaanstad_Zaanse_Schans_22.jpg/1280px-Zaanstad_Zaanse_Schans_22.jpg",
     "tier": "medium"
   },
@@ -1651,7 +1651,7 @@
       "Antwerp, Belgium",
       "Amsterdam, Netherlands"
     ],
-    "image": "/geo/bruges.jpg",
+    "image": "/geo/bruges.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Br%C3%BCgge_Blick_vom_Belfried_4.jpg/1280px-Br%C3%BCgge_Blick_vom_Belfried_4.jpg",
     "tier": "hard"
   },
@@ -1663,7 +1663,7 @@
       "Luxembourg City",
       "Eindhoven, Netherlands"
     ],
-    "image": "/geo/atomium2.jpg",
+    "image": "/geo/atomium2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Brussels_-_Atomium_2022.jpg/1280px-Brussels_-_Atomium_2022.jpg",
     "tier": "hard"
   },
@@ -1675,7 +1675,7 @@
       "Brisbane, Australia",
       "Auckland, New Zealand"
     ],
-    "image": "/geo/sealife_sydney.jpg",
+    "image": "/geo/sealife_sydney.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sydney_Harbour_Bridge-16_October_2025.jpg/1280px-Sydney_Harbour_Bridge-16_October_2025.jpg",
     "tier": "easy"
   },
@@ -1687,7 +1687,7 @@
       "Auckland, New Zealand",
       "Perth, Australia"
     ],
-    "image": "/geo/sydney_opera.jpg",
+    "image": "/geo/sydney_opera.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/1280px-Sydney_Australia._%2821339175489%29.jpg",
     "tier": "easy"
   },
@@ -1699,7 +1699,7 @@
       "New South Wales",
       "Western Australia"
     ],
-    "image": "/geo/great_ocean.jpg",
+    "image": "/geo/great_ocean.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/The_Twelve_Apostles_2011.jpg/1280px-The_Twelve_Apostles_2011.jpg",
     "tier": "hard"
   },
@@ -1711,7 +1711,7 @@
       "South Australia",
       "New South Wales"
     ],
-    "image": "/geo/uluru2.jpg",
+    "image": "/geo/uluru2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/1280px-ULURU.jpg",
     "tier": "medium"
   },
@@ -1723,7 +1723,7 @@
       "Rotorua, New Zealand",
       "Wellington, New Zealand"
     ],
-    "image": "/geo/hobbiton.jpg",
+    "image": "/geo/hobbiton.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Waterhouse_Lake_Front.jpg/1280px-Waterhouse_Lake_Front.jpg",
     "tier": "hard"
   },
@@ -1735,7 +1735,7 @@
       "Norwegian Fjords",
       "Patagonia, Chile"
     ],
-    "image": "/geo/milford_sound.jpg",
+    "image": "/geo/milford_sound.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Milford_Sound_%28New_Zealand%29.JPG/1280px-Milford_Sound_%28New_Zealand%29.JPG",
     "tier": "hard"
   },
@@ -1747,7 +1747,7 @@
       "Hokkaido, Japan",
       "Nagano, Japan"
     ],
-    "image": "/geo/mount_fuji.jpg",
+    "image": "/geo/mount_fuji.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/1280px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
     "tier": "easy"
   },
@@ -1759,7 +1759,7 @@
       "Shanghai, China",
       "Seoul, South Korea"
     ],
-    "image": "/geo/tokyo_tower.jpg",
+    "image": "/geo/tokyo_tower.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tokyo_Tower_2023.jpg/1280px-Tokyo_Tower_2023.jpg",
     "tier": "medium"
   },
@@ -1771,7 +1771,7 @@
       "Osaka, Japan",
       "Hiroshima, Japan"
     ],
-    "image": "/geo/fushimi_inari.jpg",
+    "image": "/geo/fushimi_inari.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/1280px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
     "tier": "medium"
   },
@@ -1783,7 +1783,7 @@
       "Osaka, Japan",
       "Tokyo, Japan"
     ],
-    "image": "/geo/kinkakuji.jpg",
+    "image": "/geo/kinkakuji.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/1280px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
     "tier": "medium"
   },
@@ -1795,7 +1795,7 @@
       "Osaka, Japan",
       "Hiroshima, Japan"
     ],
-    "image": "/geo/nara_deer.jpg",
+    "image": "/geo/nara_deer.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
     "tier": "hard"
   },
@@ -1807,7 +1807,7 @@
       "Osaka, Japan",
       "Kyoto, Japan"
     ],
-    "image": "/geo/hiroshima_dome.jpg",
+    "image": "/geo/hiroshima_dome.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Genbaku_Dome04-r.JPG/1280px-Genbaku_Dome04-r.JPG",
     "tier": "medium"
   },
@@ -1819,7 +1819,7 @@
       "Nanjing, China",
       "Xi'an, China"
     ],
-    "image": "/geo/forbidden_city.jpg",
+    "image": "/geo/forbidden_city.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/1280px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
     "tier": "easy"
   },
@@ -1831,7 +1831,7 @@
       "Nanjing, China",
       "Suzhou, China"
     ],
-    "image": "/geo/temple_heaven.jpg",
+    "image": "/geo/temple_heaven.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Temple_of_Heaven_20160323_01.jpg/1280px-Temple_of_Heaven_20160323_01.jpg",
     "tier": "medium"
   },
@@ -1843,7 +1843,7 @@
       "South Korea",
       "Japan"
     ],
-    "image": "/geo/great_wall2.jpg",
+    "image": "/geo/great_wall2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1280px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
     "tier": "easy"
   },
@@ -1855,7 +1855,7 @@
       "Yangshuo, China",
       "Guilin, China"
     ],
-    "image": "/geo/li_river.jpg",
+    "image": "/geo/li_river.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/87318-Li-River.jpg/1280px-87318-Li-River.jpg",
     "tier": "hard"
   },
@@ -1867,7 +1867,7 @@
       "Kathmandu, Nepal",
       "Dharamshala, India"
     ],
-    "image": "/geo/potala_palace.jpg",
+    "image": "/geo/potala_palace.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/1280px-Potala_Palace_HQ.jpg",
     "tier": "hard"
   },
@@ -1879,7 +1879,7 @@
       "Luang Prabang, Laos",
       "Bangkok, Thailand"
     ],
-    "image": "/geo/angkor_wat2.jpg",
+    "image": "/geo/angkor_wat2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/1280px-Angkor_Wat.jpg",
     "tier": "easy"
   },
@@ -1891,7 +1891,7 @@
       "Palawan, Philippines",
       "Krabi, Thailand"
     ],
-    "image": "/geo/halong_bay.jpg",
+    "image": "/geo/halong_bay.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ha_Long_Bay_in_2019.jpg/1280px-Ha_Long_Bay_in_2019.jpg",
     "tier": "medium"
   },
@@ -1903,7 +1903,7 @@
       "Phuket, Thailand",
       "Ha Long Bay, Vietnam"
     ],
-    "image": "/geo/phang_nga.jpg",
+    "image": "/geo/phang_nga.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dramatic_karst_landscape_of_Phang_Nga_Bay%2C_Thailand.jpg/1280px-Dramatic_karst_landscape_of_Phang_Nga_Bay%2C_Thailand.jpg",
     "tier": "hard"
   },
@@ -1915,7 +1915,7 @@
       "Chiang Mai, Thailand",
       "Sukhothai, Thailand"
     ],
-    "image": "/geo/ayutthaya.jpg",
+    "image": "/geo/ayutthaya.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ayutthaya_World_Heritage_sign.jpg/1280px-Ayutthaya_World_Heritage_sign.jpg",
     "tier": "hard"
   },
@@ -1927,7 +1927,7 @@
       "Java, Indonesia",
       "Sri Lanka"
     ],
-    "image": "/geo/bali_tanah.jpg",
+    "image": "/geo/bali_tanah.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TanahLot_2014.JPG/1280px-TanahLot_2014.JPG",
     "tier": "hard"
   },
@@ -1939,7 +1939,7 @@
       "Siem Reap, Cambodia",
       "Pagan, Myanmar"
     ],
-    "image": "/geo/borobudur2.jpg",
+    "image": "/geo/borobudur2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/1280px-Pradaksina.jpg",
     "tier": "medium"
   },
@@ -1951,7 +1951,7 @@
       "Kathmandu, Nepal",
       "Dharamshala, India"
     ],
-    "image": "/geo/tiger_nest.jpg",
+    "image": "/geo/tiger_nest.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Paro_Taktsang%2C_Bhutan_%28edited%29.jpg/1280px-Paro_Taktsang%2C_Bhutan_%28edited%29.jpg",
     "tier": "hard"
   },
@@ -1963,7 +1963,7 @@
       "Jaipur, India",
       "Lucknow, India"
     ],
-    "image": "/geo/taj_mahal2.jpg",
+    "image": "/geo/taj_mahal2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg",
     "tier": "easy"
   },
@@ -1975,7 +1975,7 @@
       "Udaipur, India",
       "Agra, India"
     ],
-    "image": "/geo/amber_fort.jpg",
+    "image": "/geo/amber_fort.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/1280px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
     "tier": "hard"
   },
@@ -1987,7 +1987,7 @@
       "Chandigarh, India",
       "Jalandhar, India"
     ],
-    "image": "/geo/golden_temple.jpg",
+    "image": "/geo/golden_temple.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1280px-The_Golden_Temple_of_Amrithsar_7.jpg",
     "tier": "medium"
   },
@@ -1999,7 +1999,7 @@
       "Hyderabad, India",
       "Chennai, India"
     ],
-    "image": "/geo/hampi.jpg",
+    "image": "/geo/hampi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg/1280px-Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg",
     "tier": "extreme"
   },
@@ -2011,7 +2011,7 @@
       "Galle, Sri Lanka",
       "Polonnaruwa, Sri Lanka"
     ],
-    "image": "/geo/sigiriya.jpg",
+    "image": "/geo/sigiriya.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sigiriya_%28141688197%29.jpeg/1280px-Sigiriya_%28141688197%29.jpeg",
     "tier": "hard"
   },
@@ -2023,7 +2023,7 @@
       "Jerash, Jordan",
       "Cairo, Egypt"
     ],
-    "image": "/geo/petra2.jpg",
+    "image": "/geo/petra2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/1280px-Al_Deir_Petra.JPG",
     "tier": "medium"
   },
@@ -2035,7 +2035,7 @@
       "Atacama, Chile",
       "Monument Valley, USA"
     ],
-    "image": "/geo/wadi_rum.jpg",
+    "image": "/geo/wadi_rum.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mountain_in_Wadi_Rum%2C_Jordan.jpg/1280px-Mountain_in_Wadi_Rum%2C_Jordan.jpg",
     "tier": "hard"
   },
@@ -2047,7 +2047,7 @@
       "Saqqara, Egypt",
       "Dahshur, Egypt"
     ],
-    "image": "/geo/pyramids_giza.jpg",
+    "image": "/geo/pyramids_giza.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramids_of_the_Giza_Necropolis.jpg/1280px-Pyramids_of_the_Giza_Necropolis.jpg",
     "tier": "easy"
   },
@@ -2059,7 +2059,7 @@
       "Cairo, Egypt",
       "Alexandria, Egypt"
     ],
-    "image": "/geo/valley_kings.jpg",
+    "image": "/geo/valley_kings.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Luxor%2C_Tal_der_K%C3%B6nige_%281995%2C_860x605%29.jpg",
     "tier": "medium"
   },
@@ -2071,7 +2071,7 @@
       "Cairo, Egypt",
       "Dendera, Egypt"
     ],
-    "image": "/geo/karnak.jpg",
+    "image": "/geo/karnak.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Temple_de_Louxor_68.jpg/1280px-Temple_de_Louxor_68.jpg",
     "tier": "hard"
   },
@@ -2083,7 +2083,7 @@
       "Khartoum, Sudan",
       "Cairo, Egypt"
     ],
-    "image": "/geo/abu_simbel.jpg",
+    "image": "/geo/abu_simbel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg/1280px-Ramsis%2C_Aswan_Governorate%2C_Egypt_-_panoramio.jpg",
     "tier": "hard"
   },
@@ -2095,7 +2095,7 @@
       "Rwanda",
       "Uganda"
     ],
-    "image": "/geo/mount_kilimanjaro.jpg",
+    "image": "/geo/mount_kilimanjaro.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kilimanjaro_from_Amboseli.jpg/1280px-Kilimanjaro_from_Amboseli.jpg",
     "tier": "medium"
   },
@@ -2107,7 +2107,7 @@
       "Botswana",
       "Zimbabwe"
     ],
-    "image": "/geo/serengeti.jpg",
+    "image": "/geo/serengeti.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tanzania-_Serengeti_National_Park-_elefante.jpg/1280px-Tanzania-_Serengeti_National_Park-_elefante.jpg",
     "tier": "medium"
   },
@@ -2119,7 +2119,7 @@
       "Windhoek, Namibia",
       "Gaborone, Botswana"
     ],
-    "image": "/geo/victoria_falls.jpg",
+    "image": "/geo/victoria_falls.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg/1280px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_04.jpg",
     "tier": "medium"
   },
@@ -2131,7 +2131,7 @@
       "Durban, South Africa",
       "Nairobi, Kenya"
     ],
-    "image": "/geo/table_mountain.jpg",
+    "image": "/geo/table_mountain.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Table_Mountain_DanieVDM.jpg/1280px-Table_Mountain_DanieVDM.jpg",
     "tier": "medium"
   },
@@ -2143,7 +2143,7 @@
       "Cape Agulhas",
       "Cape Verde"
     ],
-    "image": "/geo/cape_of_hope.jpg",
+    "image": "/geo/cape_of_hope.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Playa_Dias%2C_Cape_Point%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_103.jpg/1280px-Playa_Dias%2C_Cape_Point%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_103.jpg",
     "tier": "hard"
   },
@@ -2155,7 +2155,7 @@
       "Sahara, Algeria",
       "Danakil, Ethiopia"
     ],
-    "image": "/geo/sossusvlei.jpg",
+    "image": "/geo/sossusvlei.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sossusvlei.jpg/1280px-Sossusvlei.jpg",
     "tier": "extreme"
   },
@@ -2167,7 +2167,7 @@
       "Victoria Falls, Zambia/Zimbabwe",
       "Angel Falls, Venezuela"
     ],
-    "image": "/geo/iguazu.jpg",
+    "image": "/geo/iguazu.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Iguazu_Cataratas2.jpg/1280px-Iguazu_Cataratas2.jpg",
     "tier": "medium"
   },
@@ -2179,7 +2179,7 @@
       "Suriname",
       "Colombia"
     ],
-    "image": "/geo/angel_falls.jpg",
+    "image": "/geo/angel_falls.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/e/e9/SaltoAngel1.jpg",
     "tier": "hard"
   },
@@ -2191,7 +2191,7 @@
       "Patagonia, Argentina",
       "Altiplano, Peru"
     ],
-    "image": "/geo/salar_uyuni.jpg",
+    "image": "/geo/salar_uyuni.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Salar_Uyuni_au01.jpg",
     "tier": "hard"
   },
@@ -2203,7 +2203,7 @@
       "Patagonia, Argentina",
       "Sonoran, Mexico"
     ],
-    "image": "/geo/atacama.jpg",
+    "image": "/geo/atacama.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Atacama.png",
     "tier": "hard"
   },
@@ -2215,7 +2215,7 @@
       "Pitcairn Island",
       "French Polynesia"
     ],
-    "image": "/geo/easter_island.jpg",
+    "image": "/geo/easter_island.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Easter_Island_5.jpg/1280px-Easter_Island_5.jpg",
     "tier": "medium"
   },
@@ -2227,7 +2227,7 @@
       "Bariloche, Argentina",
       "El Calafate, Argentina"
     ],
-    "image": "/geo/patagonia.jpg",
+    "image": "/geo/patagonia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
     "tier": "hard"
   },
@@ -2239,7 +2239,7 @@
       "Cocos Island, Costa Rica",
       "Malpelo, Colombia"
     ],
-    "image": "/geo/galapagos.jpg",
+    "image": "/geo/galapagos.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Lobo_marino_%28Zalophus_californianus_wollebaeki%29%2C_Punta_Pitt%2C_isla_de_San_Crist%C3%B3bal%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-24%2C_DD_11.JPG/1280px-Lobo_marino_%28Zalophus_californianus_wollebaeki%29%2C_Punta_Pitt%2C_isla_de_San_Crist%C3%B3bal%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-24%2C_DD_11.JPG",
     "tier": "medium"
   },
@@ -2251,7 +2251,7 @@
       "Idaho, USA",
       "Alberta, Canada"
     ],
-    "image": "/geo/glacier_np.jpg",
+    "image": "/geo/glacier_np.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mountain_Goat_at_Hidden_Lake.jpg/1280px-Mountain_Goat_at_Hidden_Lake.jpg",
     "tier": "hard"
   },
@@ -2263,7 +2263,7 @@
       "Nevada, USA",
       "New Mexico, USA"
     ],
-    "image": "/geo/antelope_canyon.jpg",
+    "image": "/geo/antelope_canyon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/USA_Antelope-Canyon.jpg/1280px-USA_Antelope-Canyon.jpg",
     "tier": "medium"
   },
@@ -2275,7 +2275,7 @@
       "Yellowstone, Idaho",
       "Glacier, Montana"
     ],
-    "image": "/geo/yellowstone.jpg",
+    "image": "/geo/yellowstone.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grand_Canyon_of_yellowstone.jpg",
     "tier": "medium"
   },
@@ -2287,7 +2287,7 @@
       "Nevada, USA",
       "Colorado, USA"
     ],
-    "image": "/geo/zion_canyon.jpg",
+    "image": "/geo/zion_canyon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
     "tier": "medium"
   },
@@ -2299,7 +2299,7 @@
       "Nevada, USA",
       "Colorado, USA"
     ],
-    "image": "/geo/bryce_canyon.jpg",
+    "image": "/geo/bryce_canyon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg/1280px-Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg",
     "tier": "hard"
   },
@@ -2311,7 +2311,7 @@
       "Colorado, USA",
       "New Mexico, USA"
     ],
-    "image": "/geo/arches_np.jpg",
+    "image": "/geo/arches_np.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Delicate_arch_sunset.jpg/1280px-Delicate_arch_sunset.jpg",
     "tier": "hard"
   },
@@ -2323,7 +2323,7 @@
       "Nevada, USA",
       "New Mexico, USA"
     ],
-    "image": "/geo/wave_arizona.jpg",
+    "image": "/geo/wave_arizona.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/TheWave_1600pixels.jpg/1280px-TheWave_1600pixels.jpg",
     "tier": "extreme"
   },
@@ -2335,7 +2335,7 @@
       "Philadelphia, USA",
       "Washington D.C., USA"
     ],
-    "image": "/geo/statue_liberty.jpg",
+    "image": "/geo/statue_liberty.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/1280px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
     "tier": "easy"
   },
@@ -2347,7 +2347,7 @@
       "Chicago, USA",
       "Los Angeles, USA"
     ],
-    "image": "/geo/times_square.jpg",
+    "image": "/geo/times_square.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/1280px-New_york_times_square-terabass.jpg",
     "tier": "easy"
   },
@@ -2359,7 +2359,7 @@
       "Las Vegas, USA",
       "Miami, USA"
     ],
-    "image": "/geo/empire_state.jpg",
+    "image": "/geo/empire_state.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/1/10/Empire_State_Building_%28aerial_view%29.jpg",
     "tier": "easy"
   },
@@ -2371,7 +2371,7 @@
       "Portland, USA",
       "Los Angeles, USA"
     ],
-    "image": "/geo/golden_gate.jpg",
+    "image": "/geo/golden_gate.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/1280px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
     "tier": "easy"
   },
@@ -2383,7 +2383,7 @@
       "Atlantic City, USA",
       "Macau, China"
     ],
-    "image": "/geo/las_vegas_strip.jpg",
+    "image": "/geo/las_vegas_strip.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Las_Vegas_Strip_09_2017_4897.jpg/1280px-Las_Vegas_Strip_09_2017_4897.jpg",
     "tier": "easy"
   },
@@ -2395,7 +2395,7 @@
       "Toronto, Canada",
       "Buffalo, USA"
     ],
-    "image": "/geo/niagara_falls.jpg",
+    "image": "/geo/niagara_falls.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/1280px-3Falls_Niagara.jpg",
     "tier": "easy"
   },
@@ -2407,7 +2407,7 @@
       "Montana, USA",
       "Yukon, Canada"
     ],
-    "image": "/geo/banff.jpg",
+    "image": "/geo/banff.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1280px-Moraine_Lake_17092005.jpg",
     "tier": "medium"
   },
@@ -2419,7 +2419,7 @@
       "Northern Finland",
       "Northern Canada"
     ],
-    "image": "/geo/north_lights.jpg",
+    "image": "/geo/north_lights.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Aurora_borealis_over_Eielson_Air_Force_Base%2C_Alaska.jpg/1280px-Aurora_borealis_over_Eielson_Air_Force_Base%2C_Alaska.jpg",
     "tier": "medium"
   },
@@ -2431,7 +2431,7 @@
       "Iceland",
       "Northern Finland"
     ],
-    "image": "/geo/lofoten.jpg",
+    "image": "/geo/lofoten.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Moskenes_Reinebringen_lub_2025-07-21_img09_Aussicht.jpg/1280px-Moskenes_Reinebringen_lub_2025-07-21_img09_Aussicht.jpg",
     "tier": "hard"
   },
@@ -2443,7 +2443,7 @@
       "Bergen, Norway",
       "Ålesund, Norway"
     ],
-    "image": "/geo/preikestolen.jpg",
+    "image": "/geo/preikestolen.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lyse_Fjord_et_Preikestolen.jpg/1280px-Lyse_Fjord_et_Preikestolen.jpg",
     "tier": "hard"
   },
@@ -2455,7 +2455,7 @@
       "Rogaland, Norway",
       "Sogne og Fjordane, Norway"
     ],
-    "image": "/geo/trolltunga.jpg",
+    "image": "/geo/trolltunga.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Trolltunga_2017.jpg/1280px-Trolltunga_2017.jpg",
     "tier": "hard"
   },
@@ -2467,7 +2467,7 @@
       "Northern Iceland",
       "East Iceland"
     ],
-    "image": "/geo/thingvellir.jpg",
+    "image": "/geo/thingvellir.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/1280px-%C3%9Eingvellir_from_the_information_centre.JPG",
     "tier": "extreme"
   },
@@ -2479,7 +2479,7 @@
       "Kamchatka, Russia",
       "New Zealand"
     ],
-    "image": "/geo/geysir.jpg",
+    "image": "/geo/geysir.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Erupting_geysir.jpg",
     "tier": "hard"
   },
@@ -2491,7 +2491,7 @@
       "Vik, Iceland",
       "Selfoss, Iceland"
     ],
-    "image": "/geo/hallgrimskirkja.jpg",
+    "image": "/geo/hallgrimskirkja.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hallgrimskirkja_mai_2026.jpg/1280px-Hallgrimskirkja_mai_2026.jpg",
     "tier": "extreme"
   },
@@ -2503,7 +2503,7 @@
       "County Donegal, Ireland",
       "Cornwall, England"
     ],
-    "image": "/geo/giant_causeway.jpg",
+    "image": "/geo/giant_causeway.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Causeway-code_poet-4.jpg/1280px-Causeway-code_poet-4.jpg",
     "tier": "medium"
   },
@@ -2515,7 +2515,7 @@
       "Cornwall, England",
       "Brittany, France"
     ],
-    "image": "/geo/cliffs_moher.jpg",
+    "image": "/geo/cliffs_moher.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG/1280px-Cliffs-Of-Moher-OBriens-From-South.JPG",
     "tier": "medium"
   },
@@ -2527,7 +2527,7 @@
       "Galway, Ireland",
       "Kerry, Ireland"
     ],
-    "image": "/geo/blarney_castle.jpg",
+    "image": "/geo/blarney_castle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blarney_Castle_Ireland.jpg/1280px-Blarney_Castle_Ireland.jpg",
     "tier": "hard"
   },
@@ -2539,7 +2539,7 @@
       "County Meath, Ireland",
       "Cornwall, England"
     ],
-    "image": "/geo/stonehenge2.jpg",
+    "image": "/geo/stonehenge2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg",
     "tier": "easy"
   },
@@ -2551,7 +2551,7 @@
       "Peak District, England",
       "Snowdonia, Wales"
     ],
-    "image": "/geo/windermere.jpg",
+    "image": "/geo/windermere.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Derwent_Water%2C_Lake_District%2C_Cumbria_-_June_2009.jpg/1280px-Derwent_Water%2C_Lake_District%2C_Cumbria_-_June_2009.jpg",
     "tier": "hard"
   },
@@ -2563,7 +2563,7 @@
       "Wicklow, Ireland",
       "Peak District, England"
     ],
-    "image": "/geo/benmore_finger.jpg",
+    "image": "/geo/benmore_finger.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/BenNevis2005.jpg/1280px-BenNevis2005.jpg",
     "tier": "hard"
   },
@@ -2575,7 +2575,7 @@
       "Lake Windermere, England",
       "Lough Corrib, Ireland"
     ],
-    "image": "/geo/loch_ness.jpg",
+    "image": "/geo/loch_ness.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/5/51/LochNessUrquhart.jpg",
     "tier": "medium"
   },
@@ -2587,7 +2587,7 @@
       "Budapest, Hungary",
       "Prague, Czechia"
     ],
-    "image": "/geo/schoenbrunn.jpg",
+    "image": "/geo/schoenbrunn.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/1280px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
     "tier": "medium"
   },
@@ -2599,7 +2599,7 @@
       "Lucerne, Switzerland",
       "Bled, Slovenia"
     ],
-    "image": "/geo/hallstatt.jpg",
+    "image": "/geo/hallstatt.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Hallstatt_-_Zentrum_.JPG/1280px-Hallstatt_-_Zentrum_.JPG",
     "tier": "hard"
   },
@@ -2611,7 +2611,7 @@
       "Lucerne, Switzerland",
       "Plitvice, Croatia"
     ],
-    "image": "/geo/bled.jpg",
+    "image": "/geo/bled.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Lake_Bled_from_the_Mountain.jpg/1280px-Lake_Bled_from_the_Mountain.jpg",
     "tier": "hard"
   },
@@ -2623,7 +2623,7 @@
       "Switzerland",
       "Baden-Württemberg, Germany"
     ],
-    "image": "/geo/neuschwanstein3.jpg",
+    "image": "/geo/neuschwanstein3.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/1280px-Schloss_Neuschwanstein_2013.jpg",
     "tier": "easy"
   },
@@ -2635,7 +2635,7 @@
       "Heidelberg, Germany",
       "Bamberg, Germany"
     ],
-    "image": "/geo/rothenburg.jpg",
+    "image": "/geo/rothenburg.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Rothenburg_BW_4.JPG/1280px-Rothenburg_BW_4.JPG",
     "tier": "extreme"
   },
@@ -2647,7 +2647,7 @@
       "Hamburg, Germany",
       "Dresden, Germany"
     ],
-    "image": "/geo/berlin_wall.jpg",
+    "image": "/geo/berlin_wall.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Berlinermauer.jpg",
     "tier": "medium"
   },
@@ -2659,7 +2659,7 @@
       "Prague, Czechia",
       "Warsaw, Poland"
     ],
-    "image": "/geo/checkpoint_charlie.jpg",
+    "image": "/geo/checkpoint_charlie.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/7/75/Berlin_-_Checkpoint_Charlie_1963.jpg",
     "tier": "hard"
   },
@@ -2671,7 +2671,7 @@
       "Vienna, Austria",
       "Kraków, Poland"
     ],
-    "image": "/geo/prague_castle.jpg",
+    "image": "/geo/prague_castle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Karl%C5%AFv_most_Praha%2C_Star%C3%A9_M%C4%9Bsto_20170810_007.jpg/1280px-Karl%C5%AFv_most_Praha%2C_Star%C3%A9_M%C4%9Bsto_20170810_007.jpg",
     "tier": "medium"
   },
@@ -2683,7 +2683,7 @@
       "Vilnius, Lithuania",
       "Helsinki, Finland"
     ],
-    "image": "/geo/old_town_tallinn.jpg",
+    "image": "/geo/old_town_tallinn.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Old_Town_of_Tallinn%2C_Tallinn%2C_Estonia_-_panoramio_%2858%29.jpg/1280px-Old_Town_of_Tallinn%2C_Tallinn%2C_Estonia_-_panoramio_%2858%29.jpg",
     "tier": "hard"
   },
@@ -2695,7 +2695,7 @@
       "Wrocław, Poland",
       "Gdańsk, Poland"
     ],
-    "image": "/geo/krakow_main.jpg",
+    "image": "/geo/krakow_main.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sukiennice_and_Main_Market_Square_Krakow_Poland.JPG/1280px-Sukiennice_and_Main_Market_Square_Krakow_Poland.JPG",
     "tier": "hard"
   },
@@ -2707,7 +2707,7 @@
       "Warsaw, Poland",
       "Majdanek, Poland"
     ],
-    "image": "/geo/auschwitz.jpg",
+    "image": "/geo/auschwitz.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Auschwitz_I_%2822_May_2010%29_b.jpg/1280px-Auschwitz_I_%2822_May_2010%29_b.jpg",
     "tier": "medium"
   },
@@ -2719,7 +2719,7 @@
       "Kyiv, Ukraine",
       "Warsaw, Poland"
     ],
-    "image": "/geo/red_square.jpg",
+    "image": "/geo/red_square.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kremlin_and_Red_Square.1.jpg/1280px-Kremlin_and_Red_Square.1.jpg",
     "tier": "easy"
   },
@@ -2731,7 +2731,7 @@
       "Vienna, Austria",
       "Amsterdam, Netherlands"
     ],
-    "image": "/geo/hermitage.jpg",
+    "image": "/geo/hermitage.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/5174-3._St._Petersburg._Greater_Hermitage.jpg/1280px-5174-3._St._Petersburg._Greater_Hermitage.jpg",
     "tier": "medium"
   },
@@ -2743,7 +2743,7 @@
       "Stockholm, Sweden",
       "Copenhagen, Denmark"
     ],
-    "image": "/geo/peterhof.jpg",
+    "image": "/geo/peterhof.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Peterhof_Palace%2C_Saint_Petersburg%2C_Russia_%2844408938295%29.jpg/1280px-Peterhof_Palace%2C_Saint_Petersburg%2C_Russia_%2844408938295%29.jpg",
     "tier": "hard"
   },
@@ -2755,7 +2755,7 @@
       "Thessaloniki, Greece",
       "Sofia, Bulgaria"
     ],
-    "image": "/geo/istanbul_bosphorus.jpg",
+    "image": "/geo/istanbul_bosphorus.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Turkish_Strait_disambig.svg/1280px-Turkish_Strait_disambig.svg.png",
     "tier": "hard"
   },
@@ -2767,7 +2767,7 @@
       "Cairo, Egypt",
       "Tehran, Iran"
     ],
-    "image": "/geo/hagia_sophia.jpg",
+    "image": "/geo/hagia_sophia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/1280px-Hagia_Sophia_%28228968325%29.jpeg",
     "tier": "medium"
   },
@@ -2779,7 +2779,7 @@
       "Pamukkale, Turkey",
       "Wadi Rum, Jordan"
     ],
-    "image": "/geo/cappadocia2.jpg",
+    "image": "/geo/cappadocia2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg/1280px-Cappadocia_balloon_trip%2C_Ortahisar_Castle_%2811893715185%29.jpg",
     "tier": "medium"
   },
@@ -2791,7 +2791,7 @@
       "Medina, Saudi Arabia",
       "Cairo, Egypt"
     ],
-    "image": "/geo/dome_rock.jpg",
+    "image": "/geo/dome_rock.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg/1280px-Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg",
     "tier": "medium"
   },
@@ -2803,7 +2803,7 @@
       "Doha, Qatar",
       "Manama, Bahrain"
     ],
-    "image": "/geo/sheikh_zayed.jpg",
+    "image": "/geo/sheikh_zayed.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/7/7d/Sheikh_Zayed_Mosque_view.jpg",
     "tier": "medium"
   },
@@ -2815,7 +2815,7 @@
       "Doha, Qatar",
       "Manama, Bahrain"
     ],
-    "image": "/geo/burj_khalifa.jpg",
+    "image": "/geo/burj_khalifa.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1280px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
     "tier": "easy"
   },
@@ -2827,7 +2827,7 @@
       "Doha, Qatar",
       "Muscat, Oman"
     ],
-    "image": "/geo/palm_dubai.jpg",
+    "image": "/geo/palm_dubai.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dubai_Palm_Islands_from_the_air.jpg/1280px-Dubai_Palm_Islands_from_the_air.jpg",
     "tier": "medium"
   },
@@ -2839,7 +2839,7 @@
       "Chiapas, Mexico",
       "Campeche, Mexico"
     ],
-    "image": "/geo/chichen_itza2.jpg",
+    "image": "/geo/chichen_itza2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1280px-Chichen_Itza_3.jpg",
     "tier": "medium"
   },
@@ -2851,7 +2851,7 @@
       "Monterrey, Mexico",
       "Puebla, Mexico"
     ],
-    "image": "/geo/mexico_city.jpg",
+    "image": "/geo/mexico_city.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29_%28cropped%29.jpg/1280px-Z%C3%B3calo%2C_Ciudad_de_M%C3%A9xico_%2832846556446%29_%28cropped%29.jpg",
     "tier": "hard"
   },
@@ -2863,7 +2863,7 @@
       "San Juan, Puerto Rico",
       "Kingston, Jamaica"
     ],
-    "image": "/geo/havana.jpg",
+    "image": "/geo/havana.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Havana_Map_-_Habana_Vieja.png/1280px-Havana_Map_-_Habana_Vieja.png",
     "tier": "hard"
   },
@@ -2875,7 +2875,7 @@
       "Santa Marta, Colombia",
       "Havana, Cuba"
     ],
-    "image": "/geo/cartagena.jpg",
+    "image": "/geo/cartagena.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Museo_Naval_del_Caribe.JPG/1280px-Museo_Naval_del_Caribe.JPG",
     "tier": "hard"
   },
@@ -2887,7 +2887,7 @@
       "Belo Horizonte, Brazil",
       "Salvador, Brazil"
     ],
-    "image": "/geo/rio_carnival.jpg",
+    "image": "/geo/rio_carnival.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/1280px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
     "tier": "easy"
   },
@@ -2899,7 +2899,7 @@
       "Salvador, Brazil",
       "Buenos Aires, Argentina"
     ],
-    "image": "/geo/sugarloaf.jpg",
+    "image": "/geo/sugarloaf.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/P%C3%A3o_de_A%C3%A7ucar_-_Sugarloaf_Mountain_-_Zuckerhut_-_2022.jpg/1280px-P%C3%A3o_de_A%C3%A7ucar_-_Sugarloaf_Mountain_-_Zuckerhut_-_2022.jpg",
     "tier": "hard"
   },
@@ -2911,7 +2911,7 @@
       "Bolivia",
       "Ecuador"
     ],
-    "image": "/geo/colca_canyon.jpg",
+    "image": "/geo/colca_canyon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Colca_Canyon_Puno.jpg/1280px-Colca_Canyon_Puno.jpg",
     "tier": "extreme"
   },
@@ -2923,7 +2923,7 @@
       "Colombia",
       "Chile"
     ],
-    "image": "/geo/lake_titicaca.jpg",
+    "image": "/geo/lake_titicaca.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lake_Titicaca_ESA22522896.jpeg/1280px-Lake_Titicaca_ESA22522896.jpeg",
     "tier": "medium"
   },
@@ -2935,7 +2935,7 @@
       "Santiago, Chile",
       "Lima, Peru"
     ],
-    "image": "/geo/buenos_aires_obelisk.jpg",
+    "image": "/geo/buenos_aires_obelisk.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Buenos_Aires_%2820234294752%29.jpg/1280px-Buenos_Aires_%2820234294752%29.jpg",
     "tier": "hard"
   },
@@ -2947,7 +2947,7 @@
       "Iceland",
       "Greenland"
     ],
-    "image": "/geo/perito_moreno.jpg",
+    "image": "/geo/perito_moreno.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Perito_Moreno_Glacier_2023.jpg/1280px-Perito_Moreno_Glacier_2023.jpg",
     "tier": "hard"
   },
@@ -2959,7 +2959,7 @@
       "Casablanca, Morocco",
       "Tunis, Tunisia"
     ],
-    "image": "/geo/marrakech.jpg",
+    "image": "/geo/marrakech.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Djemaa_el_Fna.jpg/1280px-Djemaa_el_Fna.jpg",
     "tier": "hard"
   },
@@ -2971,7 +2971,7 @@
       "Tangier, Morocco",
       "Essaouira, Morocco"
     ],
-    "image": "/geo/chefchaouen.jpg",
+    "image": "/geo/chefchaouen.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chefchaouen_%2852189357475%29.jpg/1280px-Chefchaouen_%2852189357475%29.jpg",
     "tier": "hard"
   },
@@ -2983,7 +2983,7 @@
       "Axum, Ethiopia",
       "Addis Ababa, Ethiopia"
     ],
-    "image": "/geo/lalibela.jpg",
+    "image": "/geo/lalibela.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lalibela%2C_san_giorgio%2C_esterno_24.jpg/1280px-Lalibela%2C_san_giorgio%2C_esterno_24.jpg",
     "tier": "extreme"
   },
@@ -2995,7 +2995,7 @@
       "Dar es Salaam, Tanzania",
       "Pemba, Tanzania"
     ],
-    "image": "/geo/zanzibar.jpg",
+    "image": "/geo/zanzibar.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Zanzibar_sultan_palace.jpg/1280px-Zanzibar_sultan_palace.jpg",
     "tier": "extreme"
   },
@@ -3007,7 +3007,7 @@
       "Windhoek, Namibia",
       "Harare, Zimbabwe"
     ],
-    "image": "/geo/okavango.jpg",
+    "image": "/geo/okavango.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Okavango_Delta%2C_Botswana1.jpg/1280px-Okavango_Delta%2C_Botswana1.jpg",
     "tier": "extreme"
   },
@@ -3019,7 +3019,7 @@
       "Rhodes, Greece",
       "Corfu, Greece"
     ],
-    "image": "/geo/knossos.jpg",
+    "image": "/geo/knossos.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Crete_integrated_map-en.svg/1280px-Crete_integrated_map-en.svg.png",
     "tier": "extreme"
   },
@@ -3031,7 +3031,7 @@
       "Delphi, Greece",
       "Corinth, Greece"
     ],
-    "image": "/geo/olympia.jpg",
+    "image": "/geo/olympia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Ancient_Olympia%2C_Greece2.jpg",
     "tier": "hard"
   },
@@ -3043,7 +3043,7 @@
       "Olympia, Greece",
       "Corinth, Greece"
     ],
-    "image": "/geo/delphi.jpg",
+    "image": "/geo/delphi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Delphi%2C_Greece_-_panoramio.jpg/1280px-Delphi%2C_Greece_-_panoramio.jpg",
     "tier": "hard"
   },
@@ -3055,7 +3055,7 @@
       "Bodrum, Turkey",
       "Izmir, Turkey"
     ],
-    "image": "/geo/ephesus.jpg",
+    "image": "/geo/ephesus.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ephesus_Celsus_Library_Fa%C3%A7ade.jpg/1280px-Ephesus_Celsus_Library_Fa%C3%A7ade.jpg",
     "tier": "hard"
   },
@@ -3067,7 +3067,7 @@
       "Ephesus, Turkey",
       "Aphrodisias, Turkey"
     ],
-    "image": "/geo/hierapolis.jpg",
+    "image": "/geo/hierapolis.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Hierapolis_01.jpg/1280px-Hierapolis_01.jpg",
     "tier": "extreme"
   },
@@ -3079,7 +3079,7 @@
       "Mount Olympus, Greece",
       "Pelion, Greece"
     ],
-    "image": "/geo/mount_athos.jpg",
+    "image": "/geo/mount_athos.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mt._Athos_%283939757657%29.jpg",
     "tier": "extreme"
   },
@@ -3091,7 +3091,7 @@
       "Cappadocia, Turkey",
       "Hoodoos, USA"
     ],
-    "image": "/geo/meteora2.jpg",
+    "image": "/geo/meteora2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Meteora%27s_monastery_2.jpg/1280px-Meteora%27s_monastery_2.jpg",
     "tier": "hard"
   },
@@ -3103,7 +3103,7 @@
       "Mulhouse, France",
       "Basel, Switzerland"
     ],
-    "image": "/geo/colmar.jpg",
+    "image": "/geo/colmar.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg/1280px-View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg",
     "tier": "extreme"
   },
@@ -3115,7 +3115,7 @@
       "Cornwall, England",
       "Saint Malo, France"
     ],
-    "image": "/geo/mont_st_michel.jpg",
+    "image": "/geo/mont_st_michel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/1280px-Mont-Saint-Michel_vu_du_ciel.jpg",
     "tier": "medium"
   },
@@ -3127,7 +3127,7 @@
       "Tours, France",
       "Blois, France"
     ],
-    "image": "/geo/chateau_de_chambord.jpg",
+    "image": "/geo/chateau_de_chambord.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg/1280px-Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg",
     "tier": "hard"
   },
@@ -3139,7 +3139,7 @@
       "Blois, France",
       "Amboise, France"
     ],
-    "image": "/geo/chenonceau.jpg",
+    "image": "/geo/chenonceau.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Chateau_de_Chenonceau_2008E_%28adjusted2%29.jpg/1280px-Chateau_de_Chenonceau_2008E_%28adjusted2%29.jpg",
     "tier": "extreme"
   },
@@ -3151,7 +3151,7 @@
       "Montpellier, France",
       "Avignon, France"
     ],
-    "image": "/geo/carcassonne.jpg",
+    "image": "/geo/carcassonne.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/1_carcassonne_aerial_2016.jpg/1280px-1_carcassonne_aerial_2016.jpg",
     "tier": "hard"
   },
@@ -3163,7 +3163,7 @@
       "Nîmes, France",
       "Montpellier, France"
     ],
-    "image": "/geo/avignon_bridge.jpg",
+    "image": "/geo/avignon_bridge.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%22Sur_le_Pont_d%27Avignon_on_y_danse%22_is_the_famous_song%2C_but_now_we_see_only_many_tourist_just_standing_there_-_panoramio.jpg/1280px-%22Sur_le_Pont_d%27Avignon_on_y_danse%22_is_the_famous_song%2C_but_now_we_see_only_many_tourist_just_standing_there_-_panoramio.jpg",
     "tier": "extreme"
   },
@@ -3175,7 +3175,7 @@
       "Jungfrau, Switzerland",
       "Monte Rosa, Switzerland"
     ],
-    "image": "/geo/mont_blanc.jpg",
+    "image": "/geo/mont_blanc.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mont_Blanc_Aiguille.jpg",
     "tier": "medium"
   },
@@ -3187,7 +3187,7 @@
       "Positano, Italy",
       "Portofino, Italy"
     ],
-    "image": "/geo/cinque_terre.jpg",
+    "image": "/geo/cinque_terre.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg/1280px-Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg",
     "tier": "medium"
   },
@@ -3199,7 +3199,7 @@
       "Sardinia, Italy",
       "Sorrento, Italy"
     ],
-    "image": "/geo/amalfi_coast.jpg",
+    "image": "/geo/amalfi_coast.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Amalfi_Coast_%28Italy%2C_October_2020%29_-_75_%2850558355441%29.jpg/1280px-Amalfi_Coast_%28Italy%2C_October_2020%29_-_75_%2850558355441%29.jpg",
     "tier": "medium"
   },
@@ -3211,7 +3211,7 @@
       "Ravello, Italy",
       "Sorrento, Italy"
     ],
-    "image": "/geo/positano.jpg",
+    "image": "/geo/positano.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Positano_Sunset.JPG/1280px-Positano_Sunset.JPG",
     "tier": "hard"
   },
@@ -3223,7 +3223,7 @@
       "Swiss Alps",
       "Tatra Mountains, Poland"
     ],
-    "image": "/geo/dolomites.jpg",
+    "image": "/geo/dolomites.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Faloria_Cortina_d%27Ampezzo_10.jpg/1280px-Faloria_Cortina_d%27Ampezzo_10.jpg",
     "tier": "medium"
   },
@@ -3235,7 +3235,7 @@
       "Bologna, Italy",
       "Genoa, Italy"
     ],
-    "image": "/geo/milan_cathedral.jpg",
+    "image": "/geo/milan_cathedral.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Milan_Cathedral_from_Piazza_del_Duomo.jpg/1280px-Milan_Cathedral_from_Piazza_del_Duomo.jpg",
     "tier": "medium"
   },
@@ -3247,7 +3247,7 @@
       "Naples, Italy",
       "Venice, Italy"
     ],
-    "image": "/geo/piazza_navona.jpg",
+    "image": "/geo/piazza_navona.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/1280px-Piazza_Navona_%28Rome%29_at_night.jpg",
     "tier": "hard"
   },
@@ -3259,7 +3259,7 @@
       "Syracuse, Sicily",
       "Agrigento, Sicily"
     ],
-    "image": "/geo/palermo.jpg",
+    "image": "/geo/palermo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Palermo_Cathedral_Facade.jpg/1280px-Palermo_Cathedral_Facade.jpg",
     "tier": "extreme"
   },
@@ -3271,7 +3271,7 @@
       "Split, Croatia",
       "Budva, Montenegro"
     ],
-    "image": "/geo/kotor.jpg",
+    "image": "/geo/kotor.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/20090719_Crkva_Gospa_od_Zdravlja_Kotor_Bay_Montenegro.jpg/1280px-20090719_Crkva_Gospa_od_Zdravlja_Kotor_Bay_Montenegro.jpg",
     "tier": "hard"
   },
@@ -3283,7 +3283,7 @@
       "Prague, Czechia",
       "Warsaw, Poland"
     ],
-    "image": "/geo/budapest_parliament.jpg",
+    "image": "/geo/budapest_parliament.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hungarian_Parliament_Building_from_across_the_Danube%2C_2025-01-11.jpg/1280px-Hungarian_Parliament_Building_from_across_the_Danube%2C_2025-01-11.jpg",
     "tier": "medium"
   },
@@ -3295,7 +3295,7 @@
       "Prague, Czechia",
       "Bratislava, Slovakia"
     ],
-    "image": "/geo/buda_castle.jpg",
+    "image": "/geo/buda_castle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg/1280px-Budav%C3%A1ri_Palota%2C_ABCDEF_%C3%A9p%C3%BClet.jpg",
     "tier": "hard"
   },
@@ -3307,7 +3307,7 @@
       "Baden-Baden, Germany",
       "Karlovy Vary, Czechia"
     ],
-    "image": "/geo/szechenyi_bath.jpg",
+    "image": "/geo/szechenyi_bath.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Budapest_Sz%C3%A9chenyi_Baths_R02.jpg/1280px-Budapest_Sz%C3%A9chenyi_Baths_R02.jpg",
     "tier": "extreme"
   },
@@ -3319,7 +3319,7 @@
       "Istanbul, Turkey",
       "Rome, Italy"
     ],
-    "image": "/geo/monastiraki.jpg",
+    "image": "/geo/monastiraki.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Monastiraki_Square_on_June_6%2C_2020.jpg/1280px-Monastiraki_Square_on_June_6%2C_2020.jpg",
     "tier": "extreme"
   },
@@ -3331,7 +3331,7 @@
       "Naxos, Greece",
       "Paros, Greece"
     ],
-    "image": "/geo/mykonos.jpg",
+    "image": "/geo/mykonos.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/2011_Dimos_Mykonou.png/1280px-2011_Dimos_Mykonou.png",
     "tier": "medium"
   },
@@ -3343,7 +3343,7 @@
       "Mount Ida, Crete",
       "Mount Athos, Greece"
     ],
-    "image": "/geo/mount_olympus.jpg",
+    "image": "/geo/mount_olympus.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Olympus_National_Park_30.jpg/1280px-Olympus_National_Park_30.jpg",
     "tier": "hard"
   },
@@ -3355,7 +3355,7 @@
       "Casablanca, Morocco",
       "Tunis, Tunisia"
     ],
-    "image": "/geo/marrakech_medina.jpg",
+    "image": "/geo/marrakech_medina.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Pavillon_Menarag%C3%A4rten.jpg",
     "tier": "hard"
   },
@@ -3367,7 +3367,7 @@
       "Sahara, Algeria",
       "Rub al-Khali, Saudi Arabia"
     ],
-    "image": "/geo/sahara_dunes.jpg",
+    "image": "/geo/sahara_dunes.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Merzouga_Dunes_2011.jpg/1280px-Merzouga_Dunes_2011.jpg",
     "tier": "hard"
   },
@@ -3379,7 +3379,7 @@
       "Leptis Magna, Libya",
       "Timgad, Algeria"
     ],
-    "image": "/geo/volubilis.jpg",
+    "image": "/geo/volubilis.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Volubilis_Longshot_II.jpg/1280px-Volubilis_Longshot_II.jpg",
     "tier": "extreme"
   },
@@ -3391,7 +3391,7 @@
       "Algiers, Algeria",
       "Casablanca, Morocco"
     ],
-    "image": "/geo/carthage.jpg",
+    "image": "/geo/carthage.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Montage_ville_de_Carthage.png/1280px-Montage_ville_de_Carthage.png",
     "tier": "extreme"
   },
@@ -3403,7 +3403,7 @@
       "Sahara, Algeria",
       "Atacama, Chile"
     ],
-    "image": "/geo/namib_desert.jpg",
+    "image": "/geo/namib_desert.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Namib_desert_MODIS.jpg/1280px-Namib_desert_MODIS.jpg",
     "tier": "hard"
   },
@@ -3415,7 +3415,7 @@
       "Congo",
       "Kenya"
     ],
-    "image": "/geo/bwindi.jpg",
+    "image": "/geo/bwindi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bwindi_Impenetrable_National_Park_desde_el_Broadbill_Forest_Camp_20190925_085152.jpg/1280px-Bwindi_Impenetrable_National_Park_desde_el_Broadbill_Forest_Camp_20190925_085152.jpg",
     "tier": "extreme"
   },
@@ -3427,7 +3427,7 @@
       "Burundi",
       "Ethiopia"
     ],
-    "image": "/geo/virunga.jpg",
+    "image": "/geo/virunga.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Virunga_National_Park_Landscape.jpg/1280px-Virunga_National_Park_Landscape.jpg",
     "tier": "extreme"
   },
@@ -3439,7 +3439,7 @@
       "Doha, Qatar",
       "Manama, Bahrain"
     ],
-    "image": "/geo/dubai_frame.jpg",
+    "image": "/geo/dubai_frame.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/The_Dubai_Frame.jpg/1280px-The_Dubai_Frame.jpg",
     "tier": "hard"
   },
@@ -3451,7 +3451,7 @@
       "Jeddah, Saudi Arabia",
       "Riyadh, Saudi Arabia"
     ],
-    "image": "/geo/mecca.jpg",
+    "image": "/geo/mecca.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0_%28cropped%29.jpg/1280px-Edited_Great_Mosque_of_Mecca1_5-2019-ccsa4.0_%28cropped%29.jpg",
     "tier": "medium"
   },
@@ -3463,7 +3463,7 @@
       "Bethlehem, Palestine",
       "Jericho, Palestine"
     ],
-    "image": "/geo/jerusalem_walls.jpg",
+    "image": "/geo/jerusalem_walls.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg/1280px-Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg",
     "tier": "medium"
   },
@@ -3475,7 +3475,7 @@
       "Apamea, Syria",
       "Petra, Jordan"
     ],
-    "image": "/geo/palmyra.jpg",
+    "image": "/geo/palmyra.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Palmyra_03.jpg/1280px-Palmyra_03.jpg",
     "tier": "extreme"
   },
@@ -3487,7 +3487,7 @@
       "Shiraz, Iran",
       "Mashhad, Iran"
     ],
-    "image": "/geo/isfahan.jpg",
+    "image": "/geo/isfahan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Naqsh-i_Jahan_Square%2C_Jan._2018.jpg/1280px-Naqsh-i_Jahan_Square%2C_Jan._2018.jpg",
     "tier": "hard"
   },
@@ -3499,7 +3499,7 @@
       "Uttar Pradesh, India",
       "Odisha, India"
     ],
-    "image": "/geo/khajuraho.jpg",
+    "image": "/geo/khajuraho.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/1280px-1_Khajuraho.jpg",
     "tier": "extreme"
   },
@@ -3511,7 +3511,7 @@
       "Karnataka, India",
       "Rajasthan, India"
     ],
-    "image": "/geo/ajanta.jpg",
+    "image": "/geo/ajanta.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg",
     "tier": "extreme"
   },
@@ -3523,7 +3523,7 @@
       "Mathura, India",
       "Allahabad, India"
     ],
-    "image": "/geo/varanasi.jpg",
+    "image": "/geo/varanasi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg/1280px-Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg",
     "tier": "hard"
   },
@@ -3535,7 +3535,7 @@
       "Udaipur, India",
       "Hyderabad, India"
     ],
-    "image": "/geo/mysore_palace.jpg",
+    "image": "/geo/mysore_palace.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/1280px-Mysore_Palace_Morning.jpg",
     "tier": "hard"
   },
@@ -3547,7 +3547,7 @@
       "Bangalore, India",
       "Thanjavur, India"
     ],
-    "image": "/geo/meenakshi.jpg",
+    "image": "/geo/meenakshi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/1280px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg",
     "tier": "extreme"
   },
@@ -3559,7 +3559,7 @@
       "Bagan, Myanmar",
       "Naypyidaw, Myanmar"
     ],
-    "image": "/geo/yangon_shwedagon.jpg",
+    "image": "/geo/yangon_shwedagon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Shwedagon_Pagoda_2017.jpg/1280px-Shwedagon_Pagoda_2017.jpg",
     "tier": "hard"
   },
@@ -3571,7 +3571,7 @@
       "Chiang Mai, Thailand",
       "Siem Reap, Cambodia"
     ],
-    "image": "/geo/luang_prabang.jpg",
+    "image": "/geo/luang_prabang.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg/1280px-Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg",
     "tier": "hard"
   },
@@ -3583,7 +3583,7 @@
       "Yangon, Myanmar",
       "Pagan, Sri Lanka"
     ],
-    "image": "/geo/shwezigon.jpg",
+    "image": "/geo/shwezigon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Shwezigon.jpg/1280px-Shwezigon.jpg",
     "tier": "extreme"
   },
@@ -3595,7 +3595,7 @@
       "Ayutthaya, Thailand",
       "Sukhothai, Thailand"
     ],
-    "image": "/geo/wat_phra_kaew.jpg",
+    "image": "/geo/wat_phra_kaew.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Wat_Phra_Kaew_by_Ninara_TSP_edit_crop.jpg/1280px-Wat_Phra_Kaew_by_Ninara_TSP_edit_crop.jpg",
     "tier": "medium"
   },
@@ -3607,7 +3607,7 @@
       "Nusa Penida, Indonesia",
       "Gili Islands, Indonesia"
     ],
-    "image": "/geo/uluwatu.jpg",
+    "image": "/geo/uluwatu.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg/1280px-Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg",
     "tier": "hard"
   },
@@ -3619,7 +3619,7 @@
       "Flores, Indonesia",
       "Lombok, Indonesia"
     ],
-    "image": "/geo/komodo.jpg",
+    "image": "/geo/komodo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Komodo_dragon_at_Komodo_National_Park.jpg",
     "tier": "hard"
   },
@@ -3631,7 +3631,7 @@
       "Komodo, Indonesia",
       "Palawan, Philippines"
     ],
-    "image": "/geo/raja_ampat.jpg",
+    "image": "/geo/raja_ampat.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Raja_Ampat_Islands_-_journal.pbio.1001457.g001.png",
     "tier": "extreme"
   },
@@ -3643,7 +3643,7 @@
       "Boracay, Philippines",
       "Cebu, Philippines"
     ],
-    "image": "/geo/palawan.jpg",
+    "image": "/geo/palawan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kayangan_Lake%2C_Coron_-_Palawan.jpg/1280px-Kayangan_Lake%2C_Coron_-_Palawan.jpg",
     "tier": "medium"
   },
@@ -3655,7 +3655,7 @@
       "Mindanao, Philippines",
       "Leyte, Philippines"
     ],
-    "image": "/geo/chocolate_hills.jpg",
+    "image": "/geo/chocolate_hills.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chocolate_Hills_Bohol.JPG/1280px-Chocolate_Hills_Bohol.JPG",
     "tier": "hard"
   },
@@ -3667,7 +3667,7 @@
       "Bali, Indonesia",
       "Lombok, Indonesia"
     ],
-    "image": "/geo/mount_bromo.jpg",
+    "image": "/geo/mount_bromo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bromo-Semeru-Batok-Widodaren.jpg",
     "tier": "hard"
   },
@@ -3679,7 +3679,7 @@
       "Sagada, Philippines",
       "Benguet, Philippines"
     ],
-    "image": "/geo/banaue.jpg",
+    "image": "/geo/banaue.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Banaue-terrace.JPG/1280px-Banaue-terrace.JPG",
     "tier": "extreme"
   },
@@ -3691,7 +3691,7 @@
       "Yangshuo, China",
       "Guizhou, China"
     ],
-    "image": "/geo/guilin_karst.jpg",
+    "image": "/geo/guilin_karst.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Xiangshan_Scenic_Area_89468-Guilin_%2831130832628%29.jpg/1280px-Xiangshan_Scenic_Area_89468-Guilin_%2831130832628%29.jpg",
     "tier": "hard"
   },
@@ -3703,7 +3703,7 @@
       "Guizhou, China",
       "Chongqing, China"
     ],
-    "image": "/geo/zhangjiajie2.jpg",
+    "image": "/geo/zhangjiajie2.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1280px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
     "tier": "hard"
   },
@@ -3715,7 +3715,7 @@
       "Guizhou, China",
       "Gansu, China"
     ],
-    "image": "/geo/jiuzhaigou.jpg",
+    "image": "/geo/jiuzhaigou.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/1_jiuzhaigou_valley_wu_hua_hai_2011b.jpg/1280px-1_jiuzhaigou_valley_wu_hua_hai_2011b.jpg",
     "tier": "extreme"
   },
@@ -3727,7 +3727,7 @@
       "Zhangjiajie, China",
       "Sichuan, China"
     ],
-    "image": "/geo/huangshan.jpg",
+    "image": "/geo/huangshan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Huangshan_pic_4.jpg/1280px-Huangshan_pic_4.jpg",
     "tier": "hard"
   },
@@ -3739,7 +3739,7 @@
       "Guangzhou, China",
       "Nanjing, China"
     ],
-    "image": "/geo/the_bund.jpg",
+    "image": "/geo/the_bund.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Bund_2.jpg/1280px-The_Bund_2.jpg",
     "tier": "medium"
   }
