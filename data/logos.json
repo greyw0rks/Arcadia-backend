@@ -7,7 +7,7 @@
       "Samsung",
       "Google"
     ],
-    "image": "/logos/apple.png",
+    "image": "/logos/apple.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/960px-Apple_logo_black.svg.png",
     "tier": "easy"
   },
@@ -19,7 +19,7 @@
       "Bing",
       "DuckDuckGo"
     ],
-    "image": "/logos/google.jpg",
+    "image": "/logos/google.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/960px-Googleplex_HQ_%28cropped%29.jpg",
     "tier": "easy"
   },
@@ -31,7 +31,7 @@
       "Oracle",
       "Intel"
     ],
-    "image": "/logos/microsoft.jpg",
+    "image": "/logos/microsoft.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Aerial_Microsoft_West_Campus_August_2009.jpg/960px-Aerial_Microsoft_West_Campus_August_2009.jpg",
     "tier": "easy"
   },
@@ -43,7 +43,7 @@
       "Alibaba",
       "Walmart"
     ],
-    "image": "/logos/amazon.jpg",
+    "image": "/logos/amazon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon_Tower_I_topped_out%2C_June_2015.jpg/960px-Amazon_Tower_I_topped_out%2C_June_2015.jpg",
     "tier": "easy"
   },
@@ -55,7 +55,7 @@
       "Snapchat",
       "TikTok"
     ],
-    "image": "/logos/meta.png",
+    "image": "/logos/meta.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Meta_HQ_2023.png/960px-Meta_HQ_2023.png",
     "tier": "easy"
   },
@@ -67,7 +67,7 @@
       "BMW",
       "Toyota"
     ],
-    "image": "/logos/tesla.png",
+    "image": "/logos/tesla.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/960px-Tesla_Motors.svg.png",
     "tier": "medium"
   },
@@ -79,7 +79,7 @@
       "Puma",
       "Reebok"
     ],
-    "image": "/logos/nike.jpg",
+    "image": "/logos/nike.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg/960px-Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg",
     "tier": "easy"
   },
@@ -91,7 +91,7 @@
       "KFC",
       "Wendy's"
     ],
-    "image": "/logos/mcdonalds.png",
+    "image": "/logos/mcdonalds.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/960px-McDonald%27s_Golden_Arches.svg.png",
     "tier": "easy"
   },
@@ -103,7 +103,7 @@
       "Dr Pepper",
       "Sprite"
     ],
-    "image": "/logos/cocacola.jpg",
+    "image": "/logos/cocacola.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Coca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg/960px-Coca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg",
     "tier": "easy"
   },
@@ -115,7 +115,7 @@
       "Costa Coffee",
       "Peet's"
     ],
-    "image": "/logos/starbucks.jpg",
+    "image": "/logos/starbucks.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Starbuckscenter.jpg/960px-Starbuckscenter.jpg",
     "tier": "easy"
   },
@@ -127,7 +127,7 @@
       "Puma",
       "Under Armour"
     ],
-    "image": "/logos/adidas.png",
+    "image": "/logos/adidas.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Adidas_2022_logo.svg/960px-Adidas_2022_logo.svg.png",
     "tier": "easy"
   },
@@ -139,7 +139,7 @@
       "Reebok",
       "Fila"
     ],
-    "image": "/logos/puma.jpg",
+    "image": "/logos/puma.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Zeppelinstra%C3%9Fe_2_Herzogenaurach_03.JPG/960px-Zeppelinstra%C3%9Fe_2_Herzogenaurach_03.JPG",
     "tier": "medium"
   },
@@ -151,7 +151,7 @@
       "Fanta",
       "7 Up"
     ],
-    "image": "/logos/pepsi.png",
+    "image": "/logos/pepsi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/960px-Pepsi_2023.svg.png",
     "tier": "easy"
   },
@@ -163,7 +163,7 @@
       "Nvidia",
       "Qualcomm"
     ],
-    "image": "/logos/intel.jpg",
+    "image": "/logos/intel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Intel_Headquarters_in_2023.jpg/960px-Intel_Headquarters_in_2023.jpg",
     "tier": "medium"
   },
@@ -175,7 +175,7 @@
       "SAP",
       "Dell"
     ],
-    "image": "/logos/ibm.jpg",
+    "image": "/logos/ibm.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/IBM_CHQ_-_Oct_2014.jpg/960px-IBM_CHQ_-_Oct_2014.jpg",
     "tier": "hard"
   },
@@ -187,7 +187,7 @@
       "Sony",
       "Panasonic"
     ],
-    "image": "/logos/samsung.jpg",
+    "image": "/logos/samsung.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Samsung_headquarters.jpg/960px-Samsung_headquarters.jpg",
     "tier": "easy"
   },
@@ -199,7 +199,7 @@
       "Toshiba",
       "Sharp"
     ],
-    "image": "/logos/sony.jpg",
+    "image": "/logos/sony.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sony_headquaters_1.jpg/960px-Sony_headquaters_1.jpg",
     "tier": "easy"
   },
@@ -211,7 +211,7 @@
       "Nissan",
       "Mazda"
     ],
-    "image": "/logos/toyota.jpg",
+    "image": "/logos/toyota.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Headquarter_of_Toyota_Motor_Corporation_3.JPG",
     "tier": "easy"
   },
@@ -223,7 +223,7 @@
       "Yamaha",
       "Suzuki"
     ],
-    "image": "/logos/honda.jpg",
+    "image": "/logos/honda.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Honda_hq.jpg/960px-Honda_hq.jpg",
     "tier": "medium"
   },
@@ -235,7 +235,7 @@
       "Mercedes-Benz",
       "Volkswagen"
     ],
-    "image": "/logos/bmw.png",
+    "image": "/logos/bmw.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_BMW_Group_2021.svg/960px-Logo_BMW_Group_2021.svg.png",
     "tier": "easy"
   },
@@ -247,7 +247,7 @@
       "Audi",
       "Lexus"
     ],
-    "image": "/logos/mercedes.png",
+    "image": "/logos/mercedes.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg/960px-Mercedes-Benz_Star_%281969-1986%2C_2025-%29.svg.png",
     "tier": "easy"
   },
@@ -259,7 +259,7 @@
       "Volkswagen",
       "Porsche"
     ],
-    "image": "/logos/audi.jpg",
+    "image": "/logos/audi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Das_Audi_Forum_Ingolstadt.JPG/960px-Das_Audi_Forum_Ingolstadt.JPG",
     "tier": "medium"
   },
@@ -271,7 +271,7 @@
       "Škoda",
       "Opel"
     ],
-    "image": "/logos/volkswagen.png",
+    "image": "/logos/volkswagen.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/960px-Volkswagen_logo_2019.svg.png",
     "tier": "medium"
   },
@@ -283,7 +283,7 @@
       "Maserati",
       "Porsche"
     ],
-    "image": "/logos/ferrari.jpg",
+    "image": "/logos/ferrari.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_%2836309429124%29.jpg/960px-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_%2836309429124%29.jpg",
     "tier": "medium"
   },
@@ -295,7 +295,7 @@
       "Dodge",
       "Chrysler"
     ],
-    "image": "/logos/ford.jpg",
+    "image": "/logos/ford.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ford_World_Headquarters_from_sidewalk%2C_against_sun.jpg/960px-Ford_World_Headquarters_from_sidewalk%2C_against_sun.jpg",
     "tier": "easy"
   },
@@ -307,7 +307,7 @@
       "Universal",
       "Paramount"
     ],
-    "image": "/logos/disney.png",
+    "image": "/logos/disney.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Walt_Disney_company_logo.svg/960px-The_Walt_Disney_company_logo.svg.png",
     "tier": "easy"
   },
@@ -319,7 +319,7 @@
       "Twitch",
       "Dailymotion"
     ],
-    "image": "/logos/youtube.png",
+    "image": "/logos/youtube.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/960px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png",
     "tier": "easy"
   },
@@ -331,7 +331,7 @@
       "Pinterest",
       "Flickr"
     ],
-    "image": "/logos/instagram.png",
+    "image": "/logos/instagram.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png",
     "tier": "easy"
   },
@@ -343,7 +343,7 @@
       "Signal",
       "Viber"
     ],
-    "image": "/logos/whatsapp.png",
+    "image": "/logos/whatsapp.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WhatsApp_Logo_green.svg/960px-WhatsApp_Logo_green.svg.png",
     "tier": "medium"
   },
@@ -355,7 +355,7 @@
       "Grab",
       "Bolt"
     ],
-    "image": "/logos/uber.jpg",
+    "image": "/logos/uber.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg/960px-Uber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg",
     "tier": "medium"
   },
@@ -367,7 +367,7 @@
       "Vrbo",
       "Expedia"
     ],
-    "image": "/logos/airbnb.jpg",
+    "image": "/logos/airbnb.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/888_Brannan%2C_San_Francisco%2C_2016.jpg/960px-888_Brannan%2C_San_Francisco%2C_2016.jpg",
     "tier": "medium"
   },
@@ -379,7 +379,7 @@
       "Venmo",
       "Square"
     ],
-    "image": "/logos/paypal.jpg",
+    "image": "/logos/paypal.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/PayPal_San_Jose_Headquarters.jpg/960px-PayPal_San_Jose_Headquarters.jpg",
     "tier": "medium"
   },
@@ -391,7 +391,7 @@
       "American Express",
       "Discover"
     ],
-    "image": "/logos/visa.jpg",
+    "image": "/logos/visa.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/300_Toni_Stone_Crossing.jpg/960px-300_Toni_Stone_Crossing.jpg",
     "tier": "medium"
   },
@@ -403,7 +403,7 @@
       "American Express",
       "Maestro"
     ],
-    "image": "/logos/mastercard.png",
+    "image": "/logos/mastercard.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/960px-Mastercard_2019_logo.svg.png",
     "tier": "medium"
   },
@@ -415,7 +415,7 @@
       "Chick-fil-A",
       "Church's Chicken"
     ],
-    "image": "/logos/kfc.jpg",
+    "image": "/logos/kfc.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kentucky_Fried_Chicken_%28Tallulah%2C_Louisiana%29_01.jpg/960px-Kentucky_Fried_Chicken_%28Tallulah%2C_Louisiana%29_01.jpg",
     "tier": "medium"
   },
@@ -427,7 +427,7 @@
       "Wendy's",
       "Hardee's"
     ],
-    "image": "/logos/burgerking.png",
+    "image": "/logos/burgerking.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/960px-Burger_King_2020.svg.png",
     "tier": "medium"
   },
@@ -439,7 +439,7 @@
       "Jimmy John's",
       "Jersey Mike's"
     ],
-    "image": "/logos/subway.jpg",
+    "image": "/logos/subway.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/A_Subway_restaurant_in_a_strip_mall_in_Franklin%2C_North_Carolina%2C_United_States.jpg/960px-A_Subway_restaurant_in_a_strip_mall_in_Franklin%2C_North_Carolina%2C_United_States.jpg",
     "tier": "medium"
   },
@@ -451,7 +451,7 @@
       "Mega Bloks",
       "K'Nex"
     ],
-    "image": "/logos/lego.png",
+    "image": "/logos/lego.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/960px-LEGO_logo.svg.png",
     "tier": "medium"
   },
@@ -463,7 +463,7 @@
       "Ashley",
       "West Elm"
     ],
-    "image": "/logos/ikea.jpg",
+    "image": "/logos/ikea.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/IKEA_Shopping_centre_Sweden.jpg/960px-IKEA_Shopping_centre_Sweden.jpg",
     "tier": "medium"
   },
@@ -475,7 +475,7 @@
       "Versace",
       "Louis Vuitton"
     ],
-    "image": "/logos/gucci.jpg",
+    "image": "/logos/gucci.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gucci_NYC_Flagship_%2848064046878%29.jpg/960px-Gucci_NYC_Flagship_%2848064046878%29.jpg",
     "tier": "medium"
   },
@@ -487,7 +487,7 @@
       "Chanel",
       "Hermès"
     ],
-    "image": "/logos/louisvuitton.jpg",
+    "image": "/logos/louisvuitton.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Boutique_Louis_Vuitton_au_101_avenue_des_Champs-Elys%C3%A9es_%C3%A0_Paris.JPG/960px-Boutique_Louis_Vuitton_au_101_avenue_des_Champs-Elys%C3%A9es_%C3%A0_Paris.JPG",
     "tier": "medium"
   },
@@ -499,7 +499,7 @@
       "TAG Heuer",
       "Patek Philippe"
     ],
-    "image": "/logos/rolex.png",
+    "image": "/logos/rolex.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_da_Rolex.png/960px-Logo_da_Rolex.png",
     "tier": "medium"
   },
@@ -511,7 +511,7 @@
       "ExxonMobil",
       "Chevron"
     ],
-    "image": "/logos/shell.jpg",
+    "image": "/logos/shell.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Shell_Centre_%288709496019%29.jpg/960px-The_Shell_Centre_%288709496019%29.jpg",
     "tier": "hard"
   },
@@ -523,7 +523,7 @@
       "DHL",
       "USPS"
     ],
-    "image": "/logos/fedex.jpg",
+    "image": "/logos/fedex.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/N885FD_B777F_Fedex_%287001569004%29.jpg/960px-N885FD_B777F_Fedex_%287001569004%29.jpg",
     "tier": "hard"
   },
@@ -535,7 +535,7 @@
       "DHL",
       "USPS"
     ],
-    "image": "/logos/ups.png",
+    "image": "/logos/ups.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/United_Parcel_Service_logo_2014.svg/960px-United_Parcel_Service_logo_2014.svg.png",
     "tier": "hard"
   },
@@ -547,7 +547,7 @@
       "Bugatti",
       "Pagani"
     ],
-    "image": "/logos/lamborghini.jpg",
+    "image": "/logos/lamborghini.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Lamborghini_Showroom_Dubai.jpg/960px-Lamborghini_Showroom_Dubai.jpg",
     "tier": "medium"
   },
@@ -559,7 +559,7 @@
       "Lamborghini",
       "Aston Martin"
     ],
-    "image": "/logos/porsche.jpg",
+    "image": "/logos/porsche.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Porsche_logo.svg/960px-Porsche_logo.svg.png",
     "tier": "medium"
   },
@@ -571,7 +571,7 @@
       "Maybach",
       "Aston Martin"
     ],
-    "image": "/logos/rolls_royce.jpg",
+    "image": "/logos/rolls_royce.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Rolls-Royce_London_showroom.jpg/960px-Rolls-Royce_London_showroom.jpg",
     "tier": "hard"
   },
@@ -583,7 +583,7 @@
       "Lamborghini",
       "Alfa Romeo"
     ],
-    "image": "/logos/maserati.jpg",
+    "image": "/logos/maserati.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Maserati_logo.svg/960px-Maserati_logo.svg.png",
     "tier": "hard"
   },
@@ -595,7 +595,7 @@
       "Fiat",
       "Lancia"
     ],
-    "image": "/logos/alfromeo.jpg",
+    "image": "/logos/alfromeo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Alfa_Romeo_logo.svg/960px-Alfa_Romeo_logo.svg.png",
     "tier": "hard"
   },
@@ -607,7 +607,7 @@
       "Peugeot",
       "Renault"
     ],
-    "image": "/logos/fiat.jpg",
+    "image": "/logos/fiat.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Fiat_Chrysler_Automobiles_logo.svg/960px-Fiat_Chrysler_Automobiles_logo.svg.png",
     "tier": "hard"
   },
@@ -619,7 +619,7 @@
       "Mazda",
       "Mitsubishi"
     ],
-    "image": "/logos/nissan.jpg",
+    "image": "/logos/nissan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nissan_logo.svg/960px-Nissan_logo.svg.png",
     "tier": "medium"
   },
@@ -631,7 +631,7 @@
       "Genesis",
       "Daewoo"
     ],
-    "image": "/logos/hyundai.jpg",
+    "image": "/logos/hyundai.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hyundai_Motor_Company_logo.svg/960px-Hyundai_Motor_Company_logo.svg.png",
     "tier": "medium"
   },
@@ -643,7 +643,7 @@
       "Genesis",
       "SsangYong"
     ],
-    "image": "/logos/kia.jpg",
+    "image": "/logos/kia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kia-logo.svg/960px-Kia-logo.svg.png",
     "tier": "medium"
   },
@@ -655,7 +655,7 @@
       "Nissan",
       "Subaru"
     ],
-    "image": "/logos/mazda.jpg",
+    "image": "/logos/mazda.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mazda_logo.svg/960px-Mazda_logo.svg.png",
     "tier": "hard"
   },
@@ -667,7 +667,7 @@
       "Mitsubishi",
       "Isuzu"
     ],
-    "image": "/logos/subaru.jpg",
+    "image": "/logos/subaru.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Subaru_logo.svg/960px-Subaru_logo.svg.png",
     "tier": "hard"
   },
@@ -679,7 +679,7 @@
       "Subaru",
       "Isuzu"
     ],
-    "image": "/logos/mitsubishi.jpg",
+    "image": "/logos/mitsubishi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Mitsubishi_logo.svg/960px-Mitsubishi_logo.svg.png",
     "tier": "hard"
   },
@@ -691,7 +691,7 @@
       "Scania",
       "DAF"
     ],
-    "image": "/logos/volvo.png",
+    "image": "/logos/volvo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Volvo-Iron-Mark-Black.svg/960px-Volvo-Iron-Mark-Black.svg.png",
     "tier": "medium"
   },
@@ -703,7 +703,7 @@
       "Toyota",
       "Ford"
     ],
-    "image": "/logos/land_rover.jpg",
+    "image": "/logos/land_rover.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Land_Rover_logo.svg/960px-Land_Rover_logo.svg.png",
     "tier": "hard"
   },
@@ -715,7 +715,7 @@
       "Aston Martin",
       "Bentley"
     ],
-    "image": "/logos/jaguar.jpg",
+    "image": "/logos/jaguar.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jaguar_logo.svg/960px-Jaguar_logo.svg.png",
     "tier": "hard"
   },
@@ -727,7 +727,7 @@
       "Ford",
       "Toyota"
     ],
-    "image": "/logos/jeep.jpg",
+    "image": "/logos/jeep.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Jeep_logo.svg/960px-Jeep_logo.svg.png",
     "tier": "medium"
   },
@@ -739,7 +739,7 @@
       "Dodge",
       "GMC"
     ],
-    "image": "/logos/chevrolet.jpg",
+    "image": "/logos/chevrolet.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chevrolet_logo.svg/960px-Chevrolet_logo.svg.png",
     "tier": "medium"
   },
@@ -751,7 +751,7 @@
       "Acura",
       "Genesis"
     ],
-    "image": "/logos/infiniti.jpg",
+    "image": "/logos/infiniti.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Infiniti_logo.svg/960px-Infiniti_logo.svg.png",
     "tier": "hard"
   },
@@ -763,7 +763,7 @@
       "Infiniti",
       "Genesis"
     ],
-    "image": "/logos/acura.jpg",
+    "image": "/logos/acura.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Acura_logo.svg/960px-Acura_logo.svg.png",
     "tier": "hard"
   },
@@ -775,7 +775,7 @@
       "Citroën",
       "Fiat"
     ],
-    "image": "/logos/peugeot.png",
+    "image": "/logos/peugeot.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Peugeot_2021_Logo.svg/330px-Peugeot_2021_Logo.svg.png",
     "tier": "hard"
   },
@@ -787,7 +787,7 @@
       "Citroën",
       "Fiat"
     ],
-    "image": "/logos/renault.jpg",
+    "image": "/logos/renault.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Renault_2021_Text.svg/960px-Renault_2021_Text.svg.png",
     "tier": "hard"
   },
@@ -799,7 +799,7 @@
       "SEAT",
       "Audi"
     ],
-    "image": "/logos/skoda.jpg",
+    "image": "/logos/skoda.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Skoda_Auto_logo.svg/960px-Skoda_Auto_logo.svg.png",
     "tier": "hard"
   },
@@ -811,7 +811,7 @@
       "Koenigsegg",
       "Lamborghini"
     ],
-    "image": "/logos/bugatti.jpg",
+    "image": "/logos/bugatti.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bugatti_logo.svg/960px-Bugatti_logo.svg.png",
     "tier": "hard"
   },
@@ -823,7 +823,7 @@
       "Intel",
       "Qualcomm"
     ],
-    "image": "/logos/nvidia.jpg",
+    "image": "/logos/nvidia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/960px-Nvidia_logo.svg.png",
     "tier": "medium"
   },
@@ -835,7 +835,7 @@
       "Intel",
       "Qualcomm"
     ],
-    "image": "/logos/amd.jpg",
+    "image": "/logos/amd.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/960px-AMD_Logo.svg.png",
     "tier": "hard"
   },
@@ -847,7 +847,7 @@
       "NVIDIA",
       "Intel"
     ],
-    "image": "/logos/qualcomm.jpg",
+    "image": "/logos/qualcomm.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Qualcomm-Logo.svg/960px-Qualcomm-Logo.svg.png",
     "tier": "hard"
   },
@@ -859,7 +859,7 @@
       "Salesforce",
       "IBM"
     ],
-    "image": "/logos/oracle.jpg",
+    "image": "/logos/oracle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/960px-Oracle_logo.svg.png",
     "tier": "hard"
   },
@@ -871,7 +871,7 @@
       "Arista",
       "HP"
     ],
-    "image": "/logos/cisco.jpg",
+    "image": "/logos/cisco.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/960px-Cisco_logo.svg.png",
     "tier": "hard"
   },
@@ -883,7 +883,7 @@
       "Lenovo",
       "Acer"
     ],
-    "image": "/logos/hp.jpg",
+    "image": "/logos/hp.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/960px-HP_logo_2012.svg.png",
     "tier": "hard"
   },
@@ -895,7 +895,7 @@
       "Lenovo",
       "ASUS"
     ],
-    "image": "/logos/dell.jpg",
+    "image": "/logos/dell.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/960px-Dell_Logo.png",
     "tier": "hard"
   },
@@ -907,7 +907,7 @@
       "HP",
       "ASUS"
     ],
-    "image": "/logos/lenovo.jpg",
+    "image": "/logos/lenovo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/960px-Lenovo_logo_2015.svg.png",
     "tier": "hard"
   },
@@ -919,7 +919,7 @@
       "MSI",
       "Gigabyte"
     ],
-    "image": "/logos/asus.jpg",
+    "image": "/logos/asus.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/960px-ASUS_Logo.svg.png",
     "tier": "hard"
   },
@@ -931,7 +931,7 @@
       "Lenovo",
       "Dell"
     ],
-    "image": "/logos/acer.jpg",
+    "image": "/logos/acer.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Acer_2011.svg/960px-Acer_2011.svg.png",
     "tier": "hard"
   },
@@ -943,7 +943,7 @@
       "Sony",
       "Panasonic"
     ],
-    "image": "/logos/lg.jpg",
+    "image": "/logos/lg.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/960px-LG_logo_%282015%29.svg.png",
     "tier": "medium"
   },
@@ -955,7 +955,7 @@
       "LG",
       "Philips"
     ],
-    "image": "/logos/panasonic.jpg",
+    "image": "/logos/panasonic.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Panasonic_logo_%28Blue%29.svg/960px-Panasonic_logo_%28Blue%29.svg.png",
     "tier": "hard"
   },
@@ -967,7 +967,7 @@
       "Sony",
       "Siemens"
     ],
-    "image": "/logos/philips.jpg",
+    "image": "/logos/philips.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Philips_logo_new.svg/960px-Philips_logo_new.svg.png",
     "tier": "medium"
   },
@@ -979,7 +979,7 @@
       "Bosch",
       "Philips"
     ],
-    "image": "/logos/siemens.jpg",
+    "image": "/logos/siemens.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/960px-Siemens-logo.svg.png",
     "tier": "hard"
   },
@@ -991,7 +991,7 @@
       "Corel",
       "Canva"
     ],
-    "image": "/logos/adobe.jpg",
+    "image": "/logos/adobe.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Adobe_wall_%28detail%29_1.jpg/960px-Adobe_wall_%28detail%29_1.jpg",
     "tier": "medium"
   },
@@ -1003,7 +1003,7 @@
       "SAP",
       "Microsoft"
     ],
-    "image": "/logos/salesforce.jpg",
+    "image": "/logos/salesforce.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/960px-Salesforce.com_logo.svg.png",
     "tier": "hard"
   },
@@ -1015,7 +1015,7 @@
       "Google Meet",
       "Skype"
     ],
-    "image": "/logos/zoom.jpg",
+    "image": "/logos/zoom.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Zoom_logo.svg/960px-Zoom_logo.svg.png",
     "tier": "hard"
   },
@@ -1027,7 +1027,7 @@
       "Discord",
       "Zoom"
     ],
-    "image": "/logos/slack.jpg",
+    "image": "/logos/slack.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/960px-Slack_Technologies_Logo.svg.png",
     "tier": "hard"
   },
@@ -1039,7 +1039,7 @@
       "BigCommerce",
       "Magento"
     ],
-    "image": "/logos/shopify.jpg",
+    "image": "/logos/shopify.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/960px-Shopify_logo_2018.svg.png",
     "tier": "hard"
   },
@@ -1051,7 +1051,7 @@
       "Square",
       "Braintree"
     ],
-    "image": "/logos/stripe.jpg",
+    "image": "/logos/stripe.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/960px-Stripe_Logo%2C_revised_2016.svg.png",
     "tier": "hard"
   },
@@ -1063,7 +1063,7 @@
       "OnePlus",
       "OPPO"
     ],
-    "image": "/logos/xiaomi.jpg",
+    "image": "/logos/xiaomi.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Xiaomi_logo.svg/960px-Xiaomi_logo.svg.png",
     "tier": "hard"
   },
@@ -1075,7 +1075,7 @@
       "OPPO",
       "Vivo"
     ],
-    "image": "/logos/huawei.jpg",
+    "image": "/logos/huawei.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Huawei_Standard_logo.svg/960px-Huawei_Standard_logo.svg.png",
     "tier": "hard"
   },
@@ -1087,7 +1087,7 @@
       "Instagram",
       "Threads"
     ],
-    "image": "/logos/twitter.jpg",
+    "image": "/logos/twitter.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/960px-X_logo_2023_%28white%29.png",
     "tier": "medium"
   },
@@ -1099,7 +1099,7 @@
       "Glassdoor",
       "Monster"
     ],
-    "image": "/logos/linkedin.jpg",
+    "image": "/logos/linkedin.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/960px-LinkedIn_Logo.svg.png",
     "tier": "medium"
   },
@@ -1111,7 +1111,7 @@
       "Snapchat",
       "YouTube"
     ],
-    "image": "/logos/tiktok.png",
+    "image": "/logos/tiktok.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/6/6d/TikTok.com_Screenshot.png",
     "tier": "medium"
   },
@@ -1123,7 +1123,7 @@
       "Tumblr",
       "Flickr"
     ],
-    "image": "/logos/pinterest.jpg",
+    "image": "/logos/pinterest.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/960px-Pinterest-logo.png",
     "tier": "hard"
   },
@@ -1135,7 +1135,7 @@
       "TeamSpeak",
       "Skype"
     ],
-    "image": "/logos/discord.png",
+    "image": "/logos/discord.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/4/4e/Discord_screenshot.png",
     "tier": "hard"
   },
@@ -1147,7 +1147,7 @@
       "Kick",
       "Trovo"
     ],
-    "image": "/logos/twitch.png",
+    "image": "/logos/twitch.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/f/ff/Twitch_Website_Screenshot.png",
     "tier": "hard"
   },
@@ -1159,7 +1159,7 @@
       "Quora",
       "Twitter"
     ],
-    "image": "/logos/reddit.jpg",
+    "image": "/logos/reddit.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Reddit_logo.svg/960px-Reddit_logo.svg.png",
     "tier": "hard"
   },
@@ -1171,7 +1171,7 @@
       "Burger King",
       "Arby's"
     ],
-    "image": "/logos/wendys.jpg",
+    "image": "/logos/wendys.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Wendy%27s_full_logo_2012.svg/960px-Wendy%27s_full_logo_2012.svg.png",
     "tier": "hard"
   },
@@ -1183,7 +1183,7 @@
       "Del Taco",
       "Qdoba"
     ],
-    "image": "/logos/tacobell.jpg",
+    "image": "/logos/tacobell.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Taco_Bell_2016.svg/960px-Taco_Bell_2016.svg.png",
     "tier": "hard"
   },
@@ -1195,7 +1195,7 @@
       "Qdoba",
       "Moe's"
     ],
-    "image": "/logos/chipotle.jpg",
+    "image": "/logos/chipotle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chipotle_Mexican_Grill_logo.svg/960px-Chipotle_Mexican_Grill_logo.svg.png",
     "tier": "hard"
   },
@@ -1207,7 +1207,7 @@
       "Papa John's",
       "Little Caesars"
     ],
-    "image": "/logos/dominos.jpg",
+    "image": "/logos/dominos.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/960px-Domino%27s_pizza_logo.svg.png",
     "tier": "hard"
   },
@@ -1219,7 +1219,7 @@
       "Tim Hortons",
       "Costa Coffee"
     ],
-    "image": "/logos/dunkin.jpg",
+    "image": "/logos/dunkin.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/A_Dunkin%27_Donuts_restaurant_in_Hiawassee%2C_Georgia%2C_United_States_01.jpg/3840px-A_Dunkin%27_Donuts_restaurant_in_Hiawassee%2C_Georgia%2C_United_States_01.jpg",
     "tier": "hard"
   },
@@ -1231,7 +1231,7 @@
       "Papa John's",
       "Little Caesars"
     ],
-    "image": "/logos/pizzahut.jpg",
+    "image": "/logos/pizzahut.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pizza_Hut_logo.svg/960px-Pizza_Hut_logo.svg.png",
     "tier": "hard"
   },
@@ -1243,7 +1243,7 @@
       "Rockstar",
       "Bang"
     ],
-    "image": "/logos/redbull.png",
+    "image": "/logos/redbull.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/RedBullEnergyDrink.svg/500px-RedBullEnergyDrink.svg.png",
     "tier": "medium"
   },
@@ -1255,7 +1255,7 @@
       "Rockstar",
       "Bang"
     ],
-    "image": "/logos/monster.jpg",
+    "image": "/logos/monster.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Monster_Energy_logo.svg/960px-Monster_Energy_logo.svg.png",
     "tier": "hard"
   },
@@ -1267,7 +1267,7 @@
       "Budweiser",
       "Modelo"
     ],
-    "image": "/logos/corona.png",
+    "image": "/logos/corona.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Corona_Extra.svg/500px-Corona_Extra.svg.png",
     "tier": "hard"
   },
@@ -1279,7 +1279,7 @@
       "Budweiser",
       "Murphy's"
     ],
-    "image": "/logos/guinness.png",
+    "image": "/logos/guinness.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Guinness_logo_dark_text.svg/500px-Guinness_logo_dark_text.svg.png",
     "tier": "hard"
   },
@@ -1291,7 +1291,7 @@
       "Kraft",
       "Mars"
     ],
-    "image": "/logos/nestle.jpg",
+    "image": "/logos/nestle.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nestle.svg/960px-Nestle.svg.png",
     "tier": "medium"
   },
@@ -1303,7 +1303,7 @@
       "Unilever",
       "Mars"
     ],
-    "image": "/logos/kraft.jpg",
+    "image": "/logos/kraft.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Kraft_Heinz_Company_Logo.svg/960px-The_Kraft_Heinz_Company_Logo.svg.png",
     "tier": "hard"
   },
@@ -1315,7 +1315,7 @@
       "KFC",
       "Wendy's"
     ],
-    "image": "/logos/mcdonalds_arch.jpg",
+    "image": "/logos/mcdonalds_arch.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/960px-McDonald%27s_Golden_Arches.svg.png",
     "tier": "easy"
   },
@@ -1327,7 +1327,7 @@
       "In-N-Out",
       "Smashburger"
     ],
-    "image": "/logos/fiveguys.jpg",
+    "image": "/logos/fiveguys.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Five_Guys_logo.svg/960px-Five_Guys_logo.svg.png",
     "tier": "hard"
   },
@@ -1339,7 +1339,7 @@
       "In-N-Out",
       "Smashburger"
     ],
-    "image": "/logos/shakeshack.jpg",
+    "image": "/logos/shakeshack.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Shake_Shack_Logo.svg/960px-Shake_Shack_Logo.svg.png",
     "tier": "hard"
   },
@@ -1351,7 +1351,7 @@
       "Chick-fil-A",
       "Raising Cane's"
     ],
-    "image": "/logos/popeyes.jpg",
+    "image": "/logos/popeyes.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Popeyes_logo.svg/960px-Popeyes_logo.svg.png",
     "tier": "hard"
   },
@@ -1363,7 +1363,7 @@
       "Uniqlo",
       "Mango"
     ],
-    "image": "/logos/zara.jpg",
+    "image": "/logos/zara.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/960px-Zara_Logo.svg.png",
     "tier": "medium"
   },
@@ -1375,7 +1375,7 @@
       "Uniqlo",
       "Primark"
     ],
-    "image": "/logos/hm.jpg",
+    "image": "/logos/hm.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/960px-H%26M-Logo.svg.png",
     "tier": "medium"
   },
@@ -1387,7 +1387,7 @@
       "Zara",
       "Gap"
     ],
-    "image": "/logos/uniqlo.jpg",
+    "image": "/logos/uniqlo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UNIQLO_logo.svg/960px-UNIQLO_logo.svg.png",
     "tier": "hard"
   },
@@ -1399,7 +1399,7 @@
       "Lee",
       "Calvin Klein"
     ],
-    "image": "/logos/levis.jpg",
+    "image": "/logos/levis.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Levi%27s_Times_Square_NYC_-_May_2026.jpg/960px-Levi%27s_Times_Square_NYC_-_May_2026.jpg",
     "tier": "medium"
   },
@@ -1411,7 +1411,7 @@
       "Calvin Klein",
       "Hugo Boss"
     ],
-    "image": "/logos/ralph_lauren.jpg",
+    "image": "/logos/ralph_lauren.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ralph_Lauren_logo.svg/960px-Ralph_Lauren_logo.svg.png",
     "tier": "medium"
   },
@@ -1423,7 +1423,7 @@
       "Calvin Klein",
       "Hugo Boss"
     ],
-    "image": "/logos/tommy_hilfiger.jpg",
+    "image": "/logos/tommy_hilfiger.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tommy_Hilfiger_logo.svg/960px-Tommy_Hilfiger_logo.svg.png",
     "tier": "hard"
   },
@@ -1435,7 +1435,7 @@
       "Ralph Lauren",
       "Hugo Boss"
     ],
-    "image": "/logos/calvin_klein.jpg",
+    "image": "/logos/calvin_klein.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Calvin_Klein_Logo.svg/960px-Calvin_Klein_Logo.svg.png",
     "tier": "hard"
   },
@@ -1447,7 +1447,7 @@
       "Versace",
       "Burberry"
     ],
-    "image": "/logos/prada.jpg",
+    "image": "/logos/prada.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Prada_logo.svg/960px-Prada_logo.svg.png",
     "tier": "medium"
   },
@@ -1459,7 +1459,7 @@
       "Prada",
       "Dolce & Gabbana"
     ],
-    "image": "/logos/versace.jpg",
+    "image": "/logos/versace.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Versace_logo.svg/960px-Versace_logo.svg.png",
     "tier": "medium"
   },
@@ -1471,7 +1471,7 @@
       "Aquascutum",
       "Hackett"
     ],
-    "image": "/logos/burberry.jpg",
+    "image": "/logos/burberry.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Burberry_logo.svg/960px-Burberry_logo.svg.png",
     "tier": "hard"
   },
@@ -1483,7 +1483,7 @@
       "Givenchy",
       "Valentino"
     ],
-    "image": "/logos/chanel.jpg",
+    "image": "/logos/chanel.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chanel_logo_interlocking_cs.svg/960px-Chanel_logo_interlocking_cs.svg.png",
     "tier": "medium"
   },
@@ -1495,7 +1495,7 @@
       "Givenchy",
       "Valentino"
     ],
-    "image": "/logos/dior.jpg",
+    "image": "/logos/dior.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Christian_Dior_logo.svg/960px-Christian_Dior_logo.svg.png",
     "tier": "medium"
   },
@@ -1507,7 +1507,7 @@
       "Alexander McQueen",
       "Off-White"
     ],
-    "image": "/logos/balenciaga.jpg",
+    "image": "/logos/balenciaga.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Balenciaga_logo.svg/960px-Balenciaga_logo.svg.png",
     "tier": "hard"
   },
@@ -1519,7 +1519,7 @@
       "Givenchy",
       "Dior"
     ],
-    "image": "/logos/ysl.jpg",
+    "image": "/logos/ysl.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yves_Saint_Laurent_%28logo%29.svg/960px-Yves_Saint_Laurent_%28logo%29.svg.png",
     "tier": "hard"
   },
@@ -1531,7 +1531,7 @@
       "Chanel",
       "Dior"
     ],
-    "image": "/logos/hermes.jpg",
+    "image": "/logos/hermes.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Hermes_Paris_logo.svg/960px-Hermes_Paris_logo.svg.png",
     "tier": "hard"
   },
@@ -1543,7 +1543,7 @@
       "Bulgari",
       "Van Cleef"
     ],
-    "image": "/logos/tiffany.jpg",
+    "image": "/logos/tiffany.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tiffany_%26_Co._logo.svg/960px-Tiffany_%26_Co._logo.svg.png",
     "tier": "hard"
   },
@@ -1555,7 +1555,7 @@
       "Kmart",
       "Costco"
     ],
-    "image": "/logos/target.png",
+    "image": "/logos/target.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Target_2004_bullseye.svg/960px-Target_2004_bullseye.svg.png",
     "tier": "medium"
   },
@@ -1567,7 +1567,7 @@
       "Costco",
       "Sam's Club"
     ],
-    "image": "/logos/walmart.jpg",
+    "image": "/logos/walmart.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/960px-Walmart_logo.svg.png",
     "tier": "medium"
   },
@@ -1579,7 +1579,7 @@
       "BJ's Wholesale",
       "Walmart"
     ],
-    "image": "/logos/costco.jpg",
+    "image": "/logos/costco.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Costco_Wholesale_logo_2010-10-26.svg/960px-Costco_Wholesale_logo_2010-10-26.svg.png",
     "tier": "hard"
   },
@@ -1591,7 +1591,7 @@
       "Etsy",
       "Alibaba"
     ],
-    "image": "/logos/ebay.jpg",
+    "image": "/logos/ebay.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/960px-EBay_logo.svg.png",
     "tier": "medium"
   },
@@ -1603,7 +1603,7 @@
       "Amazon",
       "Poshmark"
     ],
-    "image": "/logos/etsy.jpg",
+    "image": "/logos/etsy.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Etsy_logo.svg/960px-Etsy_logo.svg.png",
     "tier": "hard"
   },
@@ -1615,7 +1615,7 @@
       "eBay",
       "JD.com"
     ],
-    "image": "/logos/alibaba.jpg",
+    "image": "/logos/alibaba.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Alibaba_Group_logo.svg/960px-Alibaba_Group_logo.svg.png",
     "tier": "hard"
   },
@@ -1627,7 +1627,7 @@
       "Mastercard",
       "Discover"
     ],
-    "image": "/logos/amex.jpg",
+    "image": "/logos/amex.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/960px-American_Express_logo_%282018%29.svg.png",
     "tier": "hard"
   },
@@ -1639,7 +1639,7 @@
       "Bank of America",
       "Wells Fargo"
     ],
-    "image": "/logos/jpmorgan.jpg",
+    "image": "/logos/jpmorgan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/J.P._Morgan_Logo_2008_1.svg/960px-J.P._Morgan_Logo_2008_1.svg.png",
     "tier": "hard"
   },
@@ -1651,7 +1651,7 @@
       "Lloyds",
       "NatWest"
     ],
-    "image": "/logos/hsbc.jpg",
+    "image": "/logos/hsbc.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/960px-HSBC_logo_%282018%29.svg.png",
     "tier": "hard"
   },
@@ -1663,7 +1663,7 @@
       "JPMorgan",
       "BlackRock"
     ],
-    "image": "/logos/goldman.jpg",
+    "image": "/logos/goldman.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/960px-Goldman_Sachs.svg.png",
     "tier": "hard"
   },
@@ -1675,7 +1675,7 @@
       "Kraken",
       "Gemini"
     ],
-    "image": "/logos/coinbase.jpg",
+    "image": "/logos/coinbase.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/960px-Coinbase.svg.png",
     "tier": "extreme"
   },
@@ -1687,7 +1687,7 @@
       "Kraken",
       "OKX"
     ],
-    "image": "/logos/binance.jpg",
+    "image": "/logos/binance.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/960px-Binance_logo.svg.png",
     "tier": "extreme"
   },
@@ -1699,7 +1699,7 @@
       "Qatar Airways",
       "Flydubai"
     ],
-    "image": "/logos/emirates.jpg",
+    "image": "/logos/emirates.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/960px-Emirates_logo.svg.png",
     "tier": "medium"
   },
@@ -1711,7 +1711,7 @@
       "ANA",
       "Malaysian Airlines"
     ],
-    "image": "/logos/singapore_air.jpg",
+    "image": "/logos/singapore_air.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Singapore_Airlines_logo_2.svg/960px-Singapore_Airlines_logo_2.svg.png",
     "tier": "hard"
   },
@@ -1723,7 +1723,7 @@
       "KLM",
       "Swiss"
     ],
-    "image": "/logos/lufthansa.jpg",
+    "image": "/logos/lufthansa.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Lufthansa_Logo_2018.svg/960px-Lufthansa_Logo_2018.svg.png",
     "tier": "medium"
   },
@@ -1735,7 +1735,7 @@
       "EasyJet",
       "Ryanair"
     ],
-    "image": "/logos/british_airways.jpg",
+    "image": "/logos/british_airways.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/British_Airways_Logo.svg/960px-British_Airways_Logo.svg.png",
     "tier": "medium"
   },
@@ -1747,7 +1747,7 @@
       "Lufthansa",
       "Iberia"
     ],
-    "image": "/logos/air_france.jpg",
+    "image": "/logos/air_france.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/960px-Air_France_Logo.svg.png",
     "tier": "hard"
   },
@@ -1759,7 +1759,7 @@
       "Etihad",
       "Turkish Airlines"
     ],
-    "image": "/logos/qatar_airways.jpg",
+    "image": "/logos/qatar_airways.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Qatar_Airways_Logo.svg/960px-Qatar_Airways_Logo.svg.png",
     "tier": "hard"
   },
@@ -1771,7 +1771,7 @@
       "Anadolujet",
       "Onur Air"
     ],
-    "image": "/logos/turkish_airlines.jpg",
+    "image": "/logos/turkish_airlines.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Turkish_Airlines_logo_2019_compact.svg/960px-Turkish_Airlines_logo_2019_compact.svg.png",
     "tier": "hard"
   },
@@ -1783,7 +1783,7 @@
       "American Airlines",
       "Southwest"
     ],
-    "image": "/logos/delta.jpg",
+    "image": "/logos/delta.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Delta_logo.svg/960px-Delta_logo.svg.png",
     "tier": "hard"
   },
@@ -1795,7 +1795,7 @@
       "American Airlines",
       "Southwest"
     ],
-    "image": "/logos/united.jpg",
+    "image": "/logos/united.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/United_Airlines_Logo.svg/960px-United_Airlines_Logo.svg.png",
     "tier": "hard"
   },
@@ -1807,7 +1807,7 @@
       "JetBlue",
       "Frontier"
     ],
-    "image": "/logos/southwest.jpg",
+    "image": "/logos/southwest.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Southwest_Airlines_logo_2014.svg/960px-Southwest_Airlines_logo_2014.svg.png",
     "tier": "hard"
   },
@@ -1819,7 +1819,7 @@
       "Wizz Air",
       "Vueling"
     ],
-    "image": "/logos/ryanair.jpg",
+    "image": "/logos/ryanair.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ryanair_Logo.svg/960px-Ryanair_Logo.svg.png",
     "tier": "hard"
   },
@@ -1831,7 +1831,7 @@
       "Hyatt",
       "InterContinental"
     ],
-    "image": "/logos/marriott.jpg",
+    "image": "/logos/marriott.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Marriott_International_Headquarters_01.jpg",
     "tier": "hard"
   },
@@ -1843,7 +1843,7 @@
       "Hyatt",
       "Four Seasons"
     ],
-    "image": "/logos/hilton.jpg",
+    "image": "/logos/hilton.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hilton_logo.svg/960px-Hilton_logo.svg.png",
     "tier": "hard"
   },
@@ -1855,7 +1855,7 @@
       "HBO Max",
       "Disney+"
     ],
-    "image": "/logos/netflix.jpg",
+    "image": "/logos/netflix.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/960px-Netflix_2015_logo.svg.png",
     "tier": "easy"
   },
@@ -1867,7 +1867,7 @@
       "Showtime",
       "Starz"
     ],
-    "image": "/logos/hbo.jpg",
+    "image": "/logos/hbo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png",
     "tier": "medium"
   },
@@ -1879,7 +1879,7 @@
       "Disney+",
       "Peacock"
     ],
-    "image": "/logos/hulu.jpg",
+    "image": "/logos/hulu.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hulu_Logo.svg/960px-Hulu_Logo.svg.png",
     "tier": "hard"
   },
@@ -1891,7 +1891,7 @@
       "Hulu",
       "HBO Max"
     ],
-    "image": "/logos/disney_plus.jpg",
+    "image": "/logos/disney_plus.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/960px-Disney%2B_logo.svg.png",
     "tier": "medium"
   },
@@ -1903,7 +1903,7 @@
       "NBC Sports",
       "CBS Sports"
     ],
-    "image": "/logos/espn.jpg",
+    "image": "/logos/espn.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png",
     "tier": "medium"
   },
@@ -1915,7 +1915,7 @@
       "NBC",
       "BBC"
     ],
-    "image": "/logos/cnn.jpg",
+    "image": "/logos/cnn.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/960px-CNN.svg.png",
     "tier": "medium"
   },
@@ -1927,7 +1927,7 @@
       "Paramount",
       "Sony Pictures"
     ],
-    "image": "/logos/warner_bros.jpg",
+    "image": "/logos/warner_bros.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/960px-Warner_Bros_logo.svg.png",
     "tier": "hard"
   },
@@ -1939,7 +1939,7 @@
       "Paramount",
       "Sony Pictures"
     ],
-    "image": "/logos/universal.jpg",
+    "image": "/logos/universal.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Universal_Pictures_logo.svg/960px-Universal_Pictures_logo.svg.png",
     "tier": "hard"
   },
@@ -1951,7 +1951,7 @@
       "Warner Bros.",
       "20th Century"
     ],
-    "image": "/logos/paramount.jpg",
+    "image": "/logos/paramount.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Paramount_Plus.svg/960px-Paramount_Plus.svg.png",
     "tier": "hard"
   },
@@ -1963,7 +1963,7 @@
       "Nintendo",
       "Sega"
     ],
-    "image": "/logos/playstation.jpg",
+    "image": "/logos/playstation.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/960px-Playstation_logo_colour.svg.png",
     "tier": "medium"
   },
@@ -1975,7 +1975,7 @@
       "Nintendo",
       "Sega"
     ],
-    "image": "/logos/xbox.jpg",
+    "image": "/logos/xbox.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/XBOX_logo_2012.svg/960px-XBOX_logo_2012.svg.png",
     "tier": "medium"
   },
@@ -1987,7 +1987,7 @@
       "Xbox",
       "Sega"
     ],
-    "image": "/logos/nintendo.jpg",
+    "image": "/logos/nintendo.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/960px-Nintendo.svg.png",
     "tier": "medium"
   },
@@ -1999,7 +1999,7 @@
       "GOG",
       "Origin"
     ],
-    "image": "/logos/steam.jpg",
+    "image": "/logos/steam.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/960px-Steam_icon_logo.svg.png",
     "tier": "hard"
   },
@@ -2011,7 +2011,7 @@
       "Ubisoft",
       "Take-Two"
     ],
-    "image": "/logos/ea.jpg",
+    "image": "/logos/ea.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/EA_logo.svg/960px-EA_logo.svg.png",
     "tier": "hard"
   },
@@ -2023,7 +2023,7 @@
       "Activision",
       "Capcom"
     ],
-    "image": "/logos/ubisoft.jpg",
+    "image": "/logos/ubisoft.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Ubisoft_logo.svg/960px-Ubisoft_logo.svg.png",
     "tier": "hard"
   },
@@ -2035,7 +2035,7 @@
       "Ubisoft",
       "Take-Two"
     ],
-    "image": "/logos/activision.jpg",
+    "image": "/logos/activision.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Activision.svg/960px-Activision.svg.png",
     "tier": "hard"
   },
@@ -2047,7 +2047,7 @@
       "T-Mobile",
       "Sprint"
     ],
-    "image": "/logos/verizon.jpg",
+    "image": "/logos/verizon.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Verizon_logo.svg/960px-Verizon_logo.svg.png",
     "tier": "medium"
   },
@@ -2059,7 +2059,7 @@
       "T-Mobile",
       "Sprint"
     ],
-    "image": "/logos/att.jpg",
+    "image": "/logos/att.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/AT%26T_logo_2016.svg/960px-AT%26T_logo_2016.svg.png",
     "tier": "medium"
   },
@@ -2071,7 +2071,7 @@
       "AT&T",
       "Sprint"
     ],
-    "image": "/logos/tmobile.jpg",
+    "image": "/logos/tmobile.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/T-Mobile_New_Logo_Primary.svg/960px-T-Mobile_New_Logo_Primary.svg.png",
     "tier": "hard"
   },
@@ -2083,7 +2083,7 @@
       "EE",
       "Three"
     ],
-    "image": "/logos/vodafone.jpg",
+    "image": "/logos/vodafone.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vodafone_icon.svg/960px-Vodafone_icon.svg.png",
     "tier": "hard"
   },
@@ -2095,7 +2095,7 @@
       "Atletico Madrid",
       "Sevilla"
     ],
-    "image": "/logos/real_madrid.jpg",
+    "image": "/logos/real_madrid.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/960px-Real_Madrid_CF.svg.png",
     "tier": "medium"
   },
@@ -2107,7 +2107,7 @@
       "Atletico Madrid",
       "Valencia"
     ],
-    "image": "/logos/barcelona.jpg",
+    "image": "/logos/barcelona.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/960px-FC_Barcelona_%28crest%29.svg.png",
     "tier": "medium"
   },
@@ -2119,7 +2119,7 @@
       "Liverpool",
       "Arsenal"
     ],
-    "image": "/logos/man_utd.jpg",
+    "image": "/logos/man_utd.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/960px-Manchester_United_FC_crest.svg.png",
     "tier": "medium"
   },
@@ -2131,7 +2131,7 @@
       "Liverpool",
       "Chelsea"
     ],
-    "image": "/logos/man_city.jpg",
+    "image": "/logos/man_city.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/960px-Manchester_City_FC_badge.svg.png",
     "tier": "hard"
   },
@@ -2143,7 +2143,7 @@
       "Manchester United",
       "Chelsea"
     ],
-    "image": "/logos/liverpool.jpg",
+    "image": "/logos/liverpool.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/960px-Liverpool_FC.svg.png",
     "tier": "hard"
   },
@@ -2155,7 +2155,7 @@
       "Tottenham",
       "Fulham"
     ],
-    "image": "/logos/chelsea.jpg",
+    "image": "/logos/chelsea.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/960px-Chelsea_FC.svg.png",
     "tier": "hard"
   },
@@ -2167,7 +2167,7 @@
       "Tottenham",
       "Crystal Palace"
     ],
-    "image": "/logos/arsenal.jpg",
+    "image": "/logos/arsenal.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/960px-Arsenal_FC.svg.png",
     "tier": "hard"
   },
@@ -2179,7 +2179,7 @@
       "RB Leipzig",
       "Bayer Leverkusen"
     ],
-    "image": "/logos/bayern.jpg",
+    "image": "/logos/bayern.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/960px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
     "tier": "medium"
   },
@@ -2191,7 +2191,7 @@
       "Inter Milan",
       "AS Roma"
     ],
-    "image": "/logos/juventus.jpg",
+    "image": "/logos/juventus.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/960px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png",
     "tier": "hard"
   },
@@ -2203,7 +2203,7 @@
       "Lyon",
       "Monaco"
     ],
-    "image": "/logos/psg.jpg",
+    "image": "/logos/psg.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/960px-Paris_Saint-Germain_F.C..svg.png",
     "tier": "hard"
   },
@@ -2215,7 +2215,7 @@
       "Juventus",
       "Napoli"
     ],
-    "image": "/logos/acmilan.jpg",
+    "image": "/logos/acmilan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/960px-Logo_of_AC_Milan.svg.png",
     "tier": "hard"
   },
@@ -2227,7 +2227,7 @@
       "Juventus",
       "Napoli"
     ],
-    "image": "/logos/intermilan.jpg",
+    "image": "/logos/intermilan.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/960px-FC_Internazionale_Milano_2021.svg.png",
     "tier": "hard"
   },
@@ -2239,7 +2239,7 @@
       "Golden State Warriors",
       "Phoenix Suns"
     ],
-    "image": "/logos/lakers.jpg",
+    "image": "/logos/lakers.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/960px-Los_Angeles_Lakers_logo.svg.png",
     "tier": "medium"
   },
@@ -2251,7 +2251,7 @@
       "Indiana Pacers",
       "Cleveland Cavaliers"
     ],
-    "image": "/logos/bulls.png",
+    "image": "/logos/bulls.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/330px-Chicago_Bulls_logo.svg.png",
     "tier": "medium"
   },
@@ -2263,7 +2263,7 @@
       "Phoenix Suns",
       "Sacramento Kings"
     ],
-    "image": "/logos/warriors.jpg",
+    "image": "/logos/warriors.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/960px-Golden_State_Warriors_logo.svg.png",
     "tier": "hard"
   },
@@ -2275,7 +2275,7 @@
       "Philadelphia Eagles",
       "NY Giants"
     ],
-    "image": "/logos/cowboys.jpg",
+    "image": "/logos/cowboys.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/960px-Dallas_Cowboys.svg.png",
     "tier": "hard"
   },
@@ -2287,7 +2287,7 @@
       "Buffalo Bills",
       "Miami Dolphins"
     ],
-    "image": "/logos/patriots.png",
+    "image": "/logos/patriots.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/250px-New_England_Patriots_logo.svg.png",
     "tier": "hard"
   },
@@ -2299,7 +2299,7 @@
       "NY Mets",
       "LA Dodgers"
     ],
-    "image": "/logos/yankees.jpg",
+    "image": "/logos/yankees.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/New_York_Yankees_Primary_Logo.svg/960px-New_York_Yankees_Primary_Logo.svg.png",
     "tier": "medium"
   },
@@ -2311,7 +2311,7 @@
       "Tidal",
       "Deezer"
     ],
-    "image": "/logos/spotify.jpg",
+    "image": "/logos/spotify.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/960px-Spotify_logo_without_text.svg.png",
     "tier": "hard"
   },
@@ -2323,7 +2323,7 @@
       "Grubhub",
       "Instacart"
     ],
-    "image": "/logos/doordash.png",
+    "image": "/logos/doordash.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/DoorDash_operations_world_map.svg/960px-DoorDash_operations_world_map.svg.png",
     "tier": "hard"
   },
@@ -2335,7 +2335,7 @@
       "Airbnb",
       "Hotels.com"
     ],
-    "image": "/logos/booking.jpg",
+    "image": "/logos/booking.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/960px-Booking.com_logo.svg.png",
     "tier": "extreme"
   },
@@ -2347,7 +2347,7 @@
       "TripAdvisor",
       "Kayak"
     ],
-    "image": "/logos/expedia.png",
+    "image": "/logos/expedia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Expedia_Group_logo.svg/960px-Expedia_Group_logo.svg.png",
     "tier": "extreme"
   },
@@ -2359,7 +2359,7 @@
       "Adidas",
       "Puma"
     ],
-    "image": "/logos/under_armour.jpg",
+    "image": "/logos/under_armour.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/960px-Under_armour_logo.svg.png",
     "tier": "extreme"
   },
@@ -2371,7 +2371,7 @@
       "Adidas",
       "ASICS"
     ],
-    "image": "/logos/new_balance.jpg",
+    "image": "/logos/new_balance.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/New_Balance_logo.svg/960px-New_Balance_logo.svg.png",
     "tier": "extreme"
   },
@@ -2383,7 +2383,7 @@
       "Puma",
       "New Balance"
     ],
-    "image": "/logos/reebok.jpg",
+    "image": "/logos/reebok.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Reebok_2019_logo.svg/960px-Reebok_2019_logo.svg.png",
     "tier": "extreme"
   },
@@ -2395,7 +2395,7 @@
       "Nike",
       "Adidas"
     ],
-    "image": "/logos/converse.png",
+    "image": "/logos/converse.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Converse_logo.svg/1280px-Converse_logo.svg.png",
     "tier": "extreme"
   },
@@ -2407,7 +2407,7 @@
       "Skate",
       "DC Shoes"
     ],
-    "image": "/logos/vans.jpg",
+    "image": "/logos/vans.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Vans-logo.svg/960px-Vans-logo.svg.png",
     "tier": "extreme"
   },
@@ -2419,7 +2419,7 @@
       "Dr. Martens",
       "Red Wing"
     ],
-    "image": "/logos/timberland.png",
+    "image": "/logos/timberland.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Image_of_a_pair_of_Tmerberland_boots.png",
     "tier": "extreme"
   },
@@ -2431,7 +2431,7 @@
       "Arc'teryx",
       "Columbia"
     ],
-    "image": "/logos/north_face.jpg",
+    "image": "/logos/north_face.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/115_Boulevard_Saint-Germain%2C_Paris_%2801%29.jpg/960px-115_Boulevard_Saint-Germain%2C_Paris_%2801%29.jpg",
     "tier": "extreme"
   },
@@ -2443,7 +2443,7 @@
       "Arc'teryx",
       "Columbia"
     ],
-    "image": "/logos/patagonia.jpg",
+    "image": "/logos/patagonia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Pat_map.PNG",
     "tier": "extreme"
   },
@@ -2455,7 +2455,7 @@
       "The North Face",
       "Marmot"
     ],
-    "image": "/logos/columbia.jpg",
+    "image": "/logos/columbia.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Columbia_Sportswear_headquarters_-_Cedar_Mill%2C_Oregon.jpg/960px-Columbia_Sportswear_headquarters_-_Cedar_Mill%2C_Oregon.jpg",
     "tier": "extreme"
   },
@@ -2467,7 +2467,7 @@
       "Stüssy",
       "BAPE"
     ],
-    "image": "/logos/supreme.png",
+    "image": "/logos/supreme.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Supreme_Logo.svg/960px-Supreme_Logo.svg.png",
     "tier": "extreme"
   },
@@ -2479,7 +2479,7 @@
       "Adidas",
       "Reebok"
     ],
-    "image": "/logos/champion.jpg",
+    "image": "/logos/champion.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/9/95/Beowulf_-_cempan.jpg",
     "tier": "extreme"
   },
@@ -2491,7 +2491,7 @@
       "Komatsu",
       "Volvo CE"
     ],
-    "image": "/logos/caterpillar.jpg",
+    "image": "/logos/caterpillar.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chenille_de_Grand_porte_queue_%28macaon%29.jpg/960px-Chenille_de_Grand_porte_queue_%28macaon%29.jpg",
     "tier": "extreme"
   },
@@ -2503,7 +2503,7 @@
       "Case",
       "New Holland"
     ],
-    "image": "/logos/john_deere.png",
+    "image": "/logos/john_deere.webp",
     "source": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/John_Deere_Logo_%E2%80%93_Flat_2_Color.svg/500px-John_Deere_Logo_%E2%80%93_Flat_2_Color.svg.png",
     "tier": "extreme"
   },
@@ -2515,7 +2515,7 @@
       "ABB",
       "Philips"
     ],
-    "image": "/logos/bosch.jpg",
+    "image": "/logos/bosch.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/BoschRenningen-pjt.jpg/960px-BoschRenningen-pjt.jpg",
     "tier": "extreme"
   },
@@ -2527,7 +2527,7 @@
       "Honeywell",
       "Emerson"
     ],
-    "image": "/logos/3m.jpg",
+    "image": "/logos/3m.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/3M_wordmark.svg/960px-3M_wordmark.svg.png",
     "tier": "extreme"
   },
@@ -2539,7 +2539,7 @@
       "Moderna",
       "AstraZeneca"
     ],
-    "image": "/logos/pfizer.jpg",
+    "image": "/logos/pfizer.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pfizer_%282021%29.svg/960px-Pfizer_%282021%29.svg.png",
     "tier": "extreme"
   },
@@ -2551,7 +2551,7 @@
       "Henkel",
       "Colgate"
     ],
-    "image": "/logos/pg.jpg",
+    "image": "/logos/pg.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Procter_%26_Gamble_logo.svg/960px-Procter_%26_Gamble_logo.svg.png",
     "tier": "extreme"
   },
@@ -2563,7 +2563,7 @@
       "Nestlé",
       "Kraft"
     ],
-    "image": "/logos/unilever.jpg",
+    "image": "/logos/unilever.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Unilever_House_Mars_2014_01.jpg/960px-Unilever_House_Mars_2014_01.jpg",
     "tier": "extreme"
   },
@@ -2575,7 +2575,7 @@
       "Crest",
       "Sensodyne"
     ],
-    "image": "/logos/colgate.jpg",
+    "image": "/logos/colgate.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/0/04/Colgate-Palmolive_Building_300_Park_Avenue.jpg",
     "tier": "extreme"
   },
@@ -2587,7 +2587,7 @@
       "SpaceX",
       "Boeing"
     ],
-    "image": "/logos/nasa.jpg",
+    "image": "/logos/nasa.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/960px-NASA_logo.svg.png",
     "tier": "extreme"
   },
@@ -2599,7 +2599,7 @@
       "Blue Origin",
       "Rocket Lab"
     ],
-    "image": "/logos/spacex.jpg",
+    "image": "/logos/spacex.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/SpaceX_logo_black.svg/960px-SpaceX_logo_black.svg.png",
     "tier": "extreme"
   },
@@ -2611,7 +2611,7 @@
       "MSF",
       "UNHCR"
     ],
-    "image": "/logos/red_cross.jpg",
+    "image": "/logos/red_cross.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Croixrouge_logos.jpg/960px-Croixrouge_logos.jpg",
     "tier": "extreme"
   },
@@ -2623,7 +2623,7 @@
       "UNHCR",
       "WFP"
     ],
-    "image": "/logos/unicef.jpg",
+    "image": "/logos/unicef.webp",
     "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/960px-Logo_of_UNICEF.svg.png",
     "tier": "extreme"
   }
