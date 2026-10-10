@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSession, finalMultiplierBp } from "../../../server/sessions";
+import { getSession, finalMultiplierBp, correctCount } from "../../../server/sessions";
 import { signSettlement } from "../../../server/signer";
 import { recordCompletedGame } from "../../../server/gameHistory";
 import { DEFAULT_RAKE_BPS, BPS } from "../../../server/difficulty";
@@ -11,6 +11,7 @@ import { isBlacklisted } from "../../../server/blacklist";
 import { isWatched } from "../../../server/watchlist";
 import { getGame } from "../../../server/games/registry";
 import { recordFlag } from "../../../server/cheatLog";
+import { xpForGame, awardPoints, getPoints } from "../../../server/points";
 
 // POST /api/finalize  { sessionId: "0x.." }
 // Computes the final (clamped) multiplier and returns an EIP-712 signature the client submits to
@@ -32,6 +33,40 @@ export async function POST(req: NextRequest) {
   const session = getSession(sessionId);
   if (!session) {
     return NextResponse.json({ error: "unknown session" }, { status: 404 });
+  }
+
+  // ── Free-to-play XP mode ───────────────────────────────────────────────────
+  // No stake, no on-chain settlement, no signature. Completing the game awards Arcade XP. The paid
+  // signing path below is untouched and runs whenever PLAY_MODE=stake. Blacklisted wallets earn
+  // nothing. Idempotent: XP is credited exactly once (guarded by session.finalized).
+  if (session.isFree) {
+    if (session.answered < session.questions) {
+      return NextResponse.json(
+        { error: `game not complete (${session.answered}/${session.questions})` },
+        { status: 409 }
+      );
+    }
+    const correct = correctCount(session);
+    const earned = xpForGame(correct);
+    if (isBlacklisted(session.player, session.chain)) {
+      session.finalized = true;
+      return NextResponse.json({ error: "This wallet is not permitted to play." }, { status: 403 });
+    }
+    let totalXp: number;
+    if (!session.finalized) {
+      session.finalized = true;
+      totalXp = awardPoints(session.player, session.chain, earned).points;
+    } else {
+      totalXp = getPoints(session.player, session.chain).points;
+    }
+    return NextResponse.json({
+      mode: "free",
+      sessionId: session.id,
+      correct,
+      questions: session.questions,
+      xpEarned: earned,
+      totalXp,
+    });
   }
 
   // Demo sessions never settle on-chain — there's no stake to pay out. The client ends the game

@@ -15,6 +15,7 @@ import { BPS } from "./difficulty";
 import { ARCADE_ABI } from "../lib/abi";
 import { getProfileOverlay } from "./profileStore";
 import { getPlayerHistory } from "./gameHistory";
+import { getPoints } from "./points";
 
 export type Period = "daily" | "weekly" | "monthly" | "allTime";
 export type Metric = "winnings" | "winRate" | "gamesPlayed" | "highestMultiplier";
@@ -394,6 +395,7 @@ export interface PlayerProfile {
   username: string | null;
   avatar: string | null;
   unit: string;
+  xp: number; // cumulative Arcade XP earned from free-play games (server/points.ts)
   stats: {
     totalGamesPlayed: number;
     totalGamesWon: number;
@@ -444,6 +446,7 @@ export async function getPlayerProfile(address: string): Promise<PlayerProfile> 
     username: overlay?.username ?? null,
     avatar: overlay?.avatar ?? null,
     unit: stub.unit,
+    xp: getPoints(address).points,
     stats: {
       totalGamesPlayed: s.gamesPlayed,
       totalGamesWon: s.gamesWon,

@@ -65,6 +65,20 @@ CREATE TABLE IF NOT EXISTS game_history (
 
 CREATE INDEX IF NOT EXISTS game_history_player ON game_history (player);
 
+-- Per-wallet Arcade XP ("points"). Accumulated by completing free-play games (PLAY_MODE=free).
+-- The authoritative lifetime cumulative counter per wallet; survives restarts. Incremented
+-- atomically on award (see server/points.ts), never recomputed.
+CREATE TABLE IF NOT EXISTS player_points (
+  address     TEXT        NOT NULL,
+  chain       TEXT        NOT NULL,
+  points      BIGINT      NOT NULL DEFAULT 0,
+  games       BIGINT      NOT NULL DEFAULT 0,
+  updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (address, chain)
+);
+
+CREATE INDEX IF NOT EXISTS player_points_points ON player_points (points DESC);
+
 -- Permanent, append-only log of every game played (real + demo). Records WHICH game a wallet
 -- played and its on-chain session id — the game identity is not stored on-chain, so this table is
 -- the authoritative answer to "what game did address X play?".

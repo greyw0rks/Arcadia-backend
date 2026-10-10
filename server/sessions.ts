@@ -26,6 +26,10 @@ export interface Session {
   // Free one-per-wallet trial: no stake, no on-chain tx, no payout. The funding gate and settlement
   // are skipped for these (see /api/round and /api/finalize).
   isDemo: boolean;
+  // Free-to-play XP session (PLAY_MODE=free). Like demo it has no stake, skips the funding gate and
+  // never settles on-chain — but it is unlimited (not one-per-wallet) and awards Arcade XP at
+  // finalize instead of a token payout. See server/playMode.ts and server/points.ts.
+  isFree: boolean;
   stake?: number; // gross stake amount in token units (undefined for demo sessions)
   // On-chain SCORING EVENTS committed at startSession — the basis for the contract's payout cap and
   // reserve (maxMult = 1.0 + 0.1·maxRounds). Casual now commits the graduated pass steps (4 at the
@@ -101,7 +105,7 @@ export function createSession(
   maxRounds: number,
   chain: ChainId,
   token?: CeloToken,
-  opts?: { isDemo?: boolean; difficulty?: number; stake?: number; questions?: number }
+  opts?: { isDemo?: boolean; isFree?: boolean; difficulty?: number; stake?: number; questions?: number }
 ): Session {
   const id = newSessionId();
   const s: Session = {
@@ -111,8 +115,9 @@ export function createSession(
     token: token ?? DEFAULT_CELO_TOKEN,
     player: player.toLowerCase(),
     isDemo: opts?.isDemo ?? false,
+    isFree: opts?.isFree ?? false,
     stake: opts?.stake,
-    // Demo sessions skip the on-chain reconcile, so their difficulty is fixed up front.
+    // Demo and free sessions skip the on-chain reconcile, so their difficulty is fixed up front.
     difficulty: opts?.difficulty,
     maxRounds,
     // Questions served defaults to maxRounds; casual overrides it (12 questions, 1 scoring event).

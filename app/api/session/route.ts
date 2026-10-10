@@ -7,6 +7,7 @@ import { CASUAL_QUESTIONS, casualPassMark, casualFailMark, casualMaxSteps } from
 import { ensureBooted } from "../../../server/bootstrap";
 import { consumePlay, logPlay, MAX_PLAYS } from "../../../server/cooldown";
 import { isBlacklisted } from "../../../server/blacklist";
+import { isFreeMode } from "../../../server/playMode";
 import { celoTokenMeta, DEFAULT_CELO_TOKEN, type CeloToken } from "../../../lib/contract";
 
 // POST /api/session  { game, player, token?, stake?, demo? }
@@ -25,6 +26,10 @@ function parseCeloToken(value: unknown): CeloToken {
 // Fixed stake-equivalent for the free demo. Uses the minimum-bet fraction so difficulty is floored
 // (hard questions) like every real session; the demo plays the full 12-question three-zone round.
 const DEMO_STAKE_EQUIV = 0.1;
+
+// Fixed stake-equivalent used for difficulty in free-to-play XP mode (PLAY_MODE=free). No money is
+// staked; this only picks the difficulty recipe. Mirrors the demo floor so free games stay hard.
+const FREE_STAKE_EQUIV = 0.1;
 
 export async function POST(req: NextRequest) {
   await ensureBooted();
@@ -56,6 +61,45 @@ export async function POST(req: NextRequest) {
   // Blacklisted wallets cannot start any session (demo or real).
   if (isBlacklisted(player, chain)) {
     return NextResponse.json({ error: "This wallet is not permitted to play." }, { status: 403 });
+  }
+
+  // ---- free-to-play XP mode (PLAY_MODE=free) ----
+  // The whole arcade is stakeless: no on-chain tx, no payout. Completing a game awards Arcade XP
+  // (see /api/finalize + server/points.ts). A wallet is still required so XP accrues to an address.
+  // The paid staking path below is fully preserved and runs again the moment PLAY_MODE=stake.
+  if (isFreeMode()) {
+    // Keep the per-game cooldown as light anti-abuse (bot farming), but it's the only limit — free
+    // play is unlimited within the cooldown, unlike the one-per-wallet demo.
+    const cd = await consumePlay(player, chain, game.id);
+    if (!cd.allowed) {
+      const mins = Math.ceil(cd.retryAfterMs / 60000);
+      return NextResponse.json(
+        {
+          error: `You've played ${game.title} ${MAX_PLAYS} times in a row. Take a short break — try again in about ${mins} minute${mins === 1 ? "" : "s"}.`,
+          cooldown: { lockedUntil: cd.lockedUntil, retryAfterMs: cd.retryAfterMs },
+        },
+        { status: 429 }
+      );
+    }
+    const difficulty = difficultyFromStake(FREE_STAKE_EQUIV, chain);
+    const session = createSession(game, player, casualMaxSteps(), chain, token, {
+      isFree: true,
+      difficulty,
+      questions: CASUAL_QUESTIONS,
+    });
+    logPlay({ player, chain, gameId: game.id, sessionId: session.id });
+    return NextResponse.json({
+      sessionId: session.id,
+      maxRounds: session.maxRounds,
+      questions: session.questions,
+      passMark: casualPassMark(),
+      failMark: casualFailMark(),
+      bankSize: game.bankSize,
+      chain: session.chain,
+      token: session.token,
+      mode: "free",
+      game: { id: game.id, title: game.title },
+    });
   }
 
   // ---- free one-time demo ----
