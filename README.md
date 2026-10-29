@@ -5,7 +5,7 @@
 **A skill-based quiz arcade on Celo. Stake stablecoins, answer under pressure, settle on-chain.**
 
 [![Celo](https://img.shields.io/badge/Celo-mainnet%2042220-FCFF52?style=flat-square&logo=celo&logoColor=black)](https://celoscan.io/address/0xFb2F048B9A088D6ef0Cf3413B90F4Cef76D0eb49)
-[![Next.js](https://img.shields.io/badge/Next.js-16.2-000000?style=flat-square&logo=nextdotjs)](https://nextjs.org)
+[![Next.js](https://img.shields.io/badge/Next.js-16.4-000000?style=flat-square&logo=nextdotjs)](https://nextjs.org)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?style=flat-square&logo=solidity)](https://soliditylang.org)
 [![Foundry](https://img.shields.io/badge/Foundry-tested-orange?style=flat-square)](https://book.getfoundry.sh)
 [![License](https://img.shields.io/badge/license-proprietary-red?style=flat-square)](./LICENSE)
@@ -234,7 +234,7 @@ Notable hardening in v2, each fixing something real:
 
 ## Stack
 
-**App** — Next.js 16.2 (App Router) · React 19.2 · TypeScript 5.6 · wagmi 2.19 + viem 2.52 ·
+**App** — Next.js 16.4 (App Router) · React 19.3 · TypeScript · wagmi 2.19 + viem 2.57 ·
 RainbowKit 2.2 · TanStack Query 5 · Vitest · Neon Postgres
 
 **Contracts** — Solidity ^0.8.24 · Foundry · OpenZeppelin 5.6
@@ -262,22 +262,51 @@ lib/contract.ts    chain/token/contract constants — shared with the frontend
 
 ## Run it locally
 
-```bash
-npm install
-cp .env.example .env.local     # NEXT_PUBLIC_* + SETTLEMENT_SIGNER_PRIVATE_KEY
-npm run dev                    # http://localhost:3000
-```
-
-Point `NEXT_PUBLIC_CELO_NETWORK=testnet` at Celo Sepolia so you're not playing with real money.
-Demo sessions skip the on-chain funding gate entirely, which is the fastest way to exercise the
-game loop.
+Use Node.js 22 LTS (22.12 or newer). For a reproducible check without a database,
+wallet, API keys or funds, leave `.env.local` absent and `BACKEND_URL` unset:
 
 ```bash
-npm test                       # vitest
-cd ../arcadia-contracts/celo && forge test
+npm ci
+npm test
+npx tsc --noEmit
+npm run build
+npm start                      # http://localhost:3000
 ```
 
-CI runs typecheck, tests and build on every push and PR.
+In another terminal, inspect the games and create a free demo:
+
+```bash
+curl http://localhost:3000/api/games
+curl --fail-with-body http://localhost:3000/api/session \
+  -H 'Content-Type: application/json' \
+  -d '{"game":"trivia","player":"0x1111111111111111111111111111111111111111","demo":true}'
+```
+
+Copy the returned `sessionId` into `GET /api/round?sessionId=...`, then submit
+`{"sessionId":"...","answerIndex":0}` to `POST /api/answer`. Repeat for 12 questions.
+The demo is one use per address and skips funding and settlement; `/api/finalize`
+deliberately rejects demo sessions. With no database, restarting the server resets
+the local session/demo state. Wallet connection needs a WalletConnect project ID;
+this API walkthrough does not connect a wallet.
+
+For configured development, copy `.env.example` to `.env.local` and run `npm run dev`.
+Choose `NEXT_PUBLIC_CELO_NETWORK=testnet`, the Celo Sepolia RPC and your testnet
+contract/token addresses. Funded settlement also needs a dedicated server-only
+`SETTLEMENT_SIGNER_PRIVATE_KEY` whose address matches the contract's trusted signer.
+The all-zero example is an invalid placeholder. Never use a funded key in tests.
+
+CI runs typecheck, tests, build, a production dependency audit and a full-history
+secret scan on pushes and PRs. To reproduce the security checks:
+
+```bash
+npm run audit:production
+# Install Gitleaks 8.30.1 from https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1
+npm run scan:secrets
+```
+
+The audit still reports upstream wallet SDK findings; see the exact remaining
+risks and update rationale in [the security review](docs/SECURITY_REVIEW.md).
+Solidity tests live in the separate contracts repository (`forge test`).
 
 ---
 

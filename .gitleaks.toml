@@ -1,0 +1,27 @@
+title = "Arcadia secret scanning"
+
+[extend]
+useDefault = true
+
+# These four exact public ERC-20 addresses account for the generic-api-key
+# findings reviewed in issue #8. Do not exclude entire files or all hex strings.
+[[allowlists]]
+description = "Public Celo USDm/USDC/USDT and historical Base USDC token addresses"
+targetRules = ["generic-api-key"]
+regexTarget = "secret"
+regexes = ['''(?i)^0x(?:765DE816845861e75A25fCA122bb6898B8B1282a|cebA9300f2b948710d2653dD7B07f33A8B32118C|48065fbBE25f71C9282ddf5e1cD6D6A887483D5e|833589fCD6eDb6E08f4c7C32D4f71b54bdA02913)$''']
+
+# Default rules do not reliably flag raw EVM private-key assignments.
+[[rules]]
+id = "evm-private-key"
+description = "EVM private key assigned to a key variable"
+regex = '''(?i)(?:[a-z0-9_]*(?:private[_-]?key|test_pk)|\bpk)[\s"']*[:=][\s"']*(0x[a-f0-9]{64})\b'''
+secretGroup = 1
+
+[[rules.allowlists]]
+description = "Invalid all-zero placeholder and public Hardhat account #1 test fixture"
+regexTarget = "secret"
+regexes = [
+  '''^0x0{64}$''',
+  '''^0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d$''',
+]

@@ -1,0 +1,503 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@base-org/account": {
+      "name": "@base-org/account",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@coinbase/cdp-sdk"
+      ],
+      "effects": [
+        "@reown/appkit-utils",
+        "@wagmi/connectors"
+      ],
+      "range": "2.5.6 - 2.5.13",
+      "nodes": [
+        "node_modules/@base-org/account"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@coinbase/cdp-sdk": {
+      "name": "@coinbase/cdp-sdk",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "abitype",
+        "zod"
+      ],
+      "effects": [
+        "@base-org/account"
+      ],
+      "range": ">=1.0.0",
+      "nodes": [
+        "node_modules/@base-org/account/node_modules/@coinbase/cdp-sdk"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@gemini-wallet/core": {
+      "name": "@gemini-wallet/core",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@metamask/rpc-errors"
+      ],
+      "effects": [
+        "@wagmi/connectors"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@gemini-wallet/core"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@metamask/rpc-errors": {
+      "name": "@metamask/rpc-errors",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@metamask/utils"
+      ],
+      "effects": [
+        "@gemini-wallet/core"
+      ],
+      "range": ">=6.3.1",
+      "nodes": [
+        "node_modules/@metamask/eth-json-rpc-provider/node_modules/@metamask/rpc-errors",
+        "node_modules/@metamask/json-rpc-engine/node_modules/@metamask/rpc-errors",
+        "node_modules/@metamask/providers/node_modules/@metamask/rpc-errors",
+        "node_modules/@metamask/rpc-errors"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@metamask/sdk": {
+      "name": "@metamask/sdk",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@metamask/sdk-communication-layer",
+        "uuid"
+      ],
+      "effects": [
+        "@wagmi/connectors"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@metamask/sdk"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@metamask/sdk-communication-layer": {
+      "name": "@metamask/sdk-communication-layer",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "uuid"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@metamask/sdk-communication-layer"
+      ],
+      "fixAvailable": true
+    },
+    "@metamask/utils": {
+      "name": "@metamask/utils",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "uuid"
+      ],
+      "effects": [
+        "@metamask/rpc-errors"
+      ],
+      "range": "8.4.0 - 12.0.0",
+      "nodes": [
+        "node_modules/@metamask/eth-json-rpc-provider/node_modules/@metamask/json-rpc-engine/node_modules/@metamask/utils",
+        "node_modules/@metamask/eth-json-rpc-provider/node_modules/@metamask/rpc-errors/node_modules/@metamask/utils",
+        "node_modules/@metamask/json-rpc-engine/node_modules/@metamask/rpc-errors/node_modules/@metamask/utils",
+        "node_modules/@metamask/json-rpc-engine/node_modules/@metamask/utils",
+        "node_modules/@metamask/json-rpc-middleware-stream/node_modules/@metamask/utils",
+        "node_modules/@metamask/providers/node_modules/@metamask/rpc-errors/node_modules/@metamask/utils",
+        "node_modules/@metamask/providers/node_modules/@metamask/utils",
+        "node_modules/@metamask/utils"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@rainbow-me/rainbowkit": {
+      "name": "@rainbow-me/rainbowkit",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "wagmi"
+      ],
+      "effects": [],
+      "range": "2.0.0-beta.0 - 2.0.0-beta.6 || >=2.1.0",
+      "nodes": [
+        "node_modules/@rainbow-me/rainbowkit"
+      ],
+      "fixAvailable": {
+        "name": "@rainbow-me/rainbowkit",
+        "version": "2.0.8",
+        "isSemVerMajor": true
+      }
+    },
+    "@reown/appkit": {
+      "name": "@reown/appkit",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@reown/appkit-controllers",
+        "@reown/appkit-pay",
+        "@reown/appkit-scaffold-ui",
+        "@reown/appkit-ui",
+        "@reown/appkit-utils",
+        "@reown/appkit-wallet"
+      ],
+      "effects": [
+        "@walletconnect/ethereum-provider"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@reown/appkit"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@reown/appkit-controllers": {
+      "name": "@reown/appkit-controllers",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@reown/appkit-wallet"
+      ],
+      "effects": [
+        "@reown/appkit",
+        "@reown/appkit-scaffold-ui",
+        "@reown/appkit-utils"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@reown/appkit-controllers"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@reown/appkit-pay": {
+      "name": "@reown/appkit-pay",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@reown/appkit-controllers",
+        "@reown/appkit-ui",
+        "@reown/appkit-utils"
+      ],
+      "effects": [
+        "@reown/appkit",
+        "@reown/appkit-scaffold-ui"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@reown/appkit-pay"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@reown/appkit-scaffold-ui": {
+      "name": "@reown/appkit-scaffold-ui",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@reown/appkit-controllers",
+        "@reown/appkit-pay",
+        "@reown/appkit-ui",
+        "@reown/appkit-utils",
+        "@reown/appkit-wallet"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@reown/appkit-scaffold-ui"
+      ],
+      "fixAvailable": true
+    },
+    "@reown/appkit-ui": {
+      "name": "@reown/appkit-ui",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@reown/appkit-controllers",
+        "@reown/appkit-wallet"
+      ],
+      "effects": [
+        "@reown/appkit",
+        "@reown/appkit-pay",
+        "@reown/appkit-scaffold-ui"
+      ],
+      "range": ">=1.7.1-449657bc8f95adcfd295a2e883c4bcd439045044.0",
+      "nodes": [
+        "node_modules/@reown/appkit-ui"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@reown/appkit-utils": {
+      "name": "@reown/appkit-utils",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@base-org/account",
+        "@reown/appkit-controllers",
+        "@reown/appkit-wallet"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@reown/appkit-utils"
+      ],
+      "fixAvailable": true
+    },
+    "@reown/appkit-wallet": {
+      "name": "@reown/appkit-wallet",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "zod"
+      ],
+      "effects": [
+        "@reown/appkit",
+        "@reown/appkit-controllers",
+        "@reown/appkit-scaffold-ui",
+        "@reown/appkit-ui",
+        "@reown/appkit-utils"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@reown/appkit-wallet"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@wagmi/connectors": {
+      "name": "@wagmi/connectors",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@base-org/account",
+        "@gemini-wallet/core",
+        "@metamask/sdk",
+        "@walletconnect/ethereum-provider"
+      ],
+      "effects": [
+        "wagmi"
+      ],
+      "range": "<=0.0.0-wc-links-20240926225814 || 4.0.0-alpha.0 - 4.0.0-rc.3 || >=4.0.1",
+      "nodes": [
+        "node_modules/@wagmi/connectors"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "@walletconnect/ethereum-provider": {
+      "name": "@walletconnect/ethereum-provider",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@reown/appkit"
+      ],
+      "effects": [
+        "@wagmi/connectors"
+      ],
+      "range": "0.0.0-canary-rollup.0 || 2.17.1-canary-0 - 2.17.1-canary-appkit.0 || 2.17.4-canary-ak-1 - 2.17.4-canary-ak-4 || 2.18.0-canary-ak-1 - 2.18.0-rc-1 || 2.19.0-canary-ak-1 - 2.19.0-rc-1 || 2.19.4-canary-ak-1 || >=2.20.0",
+      "nodes": [
+        "node_modules/@walletconnect/ethereum-provider"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "abitype": {
+      "name": "abitype",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "zod"
+      ],
+      "effects": [
+        "@coinbase/cdp-sdk"
+      ],
+      "range": "<=0.0.0-main-20230430000127 || 0.7.0-canary.20230307T162852 - 1.0.9",
+      "nodes": [
+        "node_modules/@base-org/account/node_modules/abitype"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "uuid": {
+      "name": "uuid",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1119441,
+          "name": "uuid",
+          "dependency": "uuid",
+          "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+          "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-787",
+            "CWE-1285"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": "<11.1.1"
+        }
+      ],
+      "effects": [
+        "@metamask/sdk",
+        "@metamask/sdk-communication-layer",
+        "@metamask/utils"
+      ],
+      "range": "<11.1.1",
+      "nodes": [
+        "node_modules/@metamask/eth-json-rpc-provider/node_modules/uuid",
+        "node_modules/@metamask/json-rpc-engine/node_modules/uuid",
+        "node_modules/@metamask/json-rpc-middleware-stream/node_modules/uuid",
+        "node_modules/@metamask/providers/node_modules/uuid",
+        "node_modules/@metamask/utils/node_modules/uuid",
+        "node_modules/uuid"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "wagmi": {
+      "name": "wagmi",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "@wagmi/connectors"
+      ],
+      "effects": [
+        "@rainbow-me/rainbowkit"
+      ],
+      "range": "<=0.0.0-wc-links-20240926225814 || 2.0.0-alpha.0 - 2.0.0-rc.3 || 2.0.1 - 3.5.0",
+      "nodes": [
+        "node_modules/wagmi"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    },
+    "zod": {
+      "name": "zod",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1243066,
+          "name": "zod",
+          "dependency": "zod",
+          "title": "Zod can exhaust memory while validating oversized constrained collections",
+          "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5",
+          "severity": "high",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<4.6.6"
+        }
+      ],
+      "effects": [
+        "@coinbase/cdp-sdk",
+        "@reown/appkit-wallet",
+        "abitype"
+      ],
+      "range": "<4.6.6",
+      "nodes": [
+        "node_modules/@reown/appkit-wallet/node_modules/zod",
+        "node_modules/zod"
+      ],
+      "fixAvailable": {
+        "name": "wagmi",
+        "version": "3.7.9",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 8,
+      "high": 13,
+      "critical": 0,
+      "total": 21
+    },
+    "dependencies": {
+      "prod": 489,
+      "dev": 155,
+      "optional": 118,
+      "peer": 26,
+      "peerOptional": 0,
+      "total": 682
+    }
+  }
+}
