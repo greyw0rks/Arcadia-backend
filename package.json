@@ -2,6 +2,9 @@
   "name": "arcadia-backend",
   "version": "1.2.1",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "description": "An arcade of skill games where your stake rides a live multiplier. Built on Celo.",
   "type": "module",
   "repository": {
@@ -25,6 +28,8 @@
     "build": "next build",
     "start": "next start",
     "test": "vitest run",
+    "audit:production": "npm audit --omit=dev",
+    "scan:secrets": "gitleaks git --log-opts=--all --redact",
     "sdk:build": "npm run build --workspace=packages/sdk",
     "sdk:publish": "npm run build --workspace=packages/sdk && npm publish --workspace=packages/sdk"
   },
@@ -34,19 +39,35 @@
     "@rainbow-me/rainbowkit": "^2.2.11",
     "@tanstack/react-query": "^5.100.14",
     "@types/pg": "^8.20.0",
-    "next": "^16.2.7",
+    "next": "^16.4.3",
     "pg": "^8.22.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "viem": "^2.52.0",
+    "viem": "^2.57.13",
     "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^5.6.1",
-    "@types/node": "^20.16.0",
+    "@types/node": "^22.0.0",
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "typescript": "^5.6.0",
-    "vitest": "^2.1.0"
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "overrides": {
+    "@wagmi/connectors": {
+      "@walletconnect/ethereum-provider": "2.26.0"
+    },
+    "@rainbow-me/rainbowkit": {
+      "@vanilla-extract/css": "1.21.3"
+    },
+    "@coinbase/cdp-sdk": {
+      ".": "1.51.0",
+      "axios": "^1.21.0"
+    },
+    "tsup": {
+      "esbuild": "^0.27.7"
+    }
   }
 }
